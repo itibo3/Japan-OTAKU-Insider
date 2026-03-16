@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan OTAKU Insider - Your Database of Japanese Otaku Culture</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">O</div>
+            <div class="logo-text">Japan <span>OTAKU</span> Insider</div>
+        </a>
+        <nav class="nav">
+            <a href="index.html" class="nav-btn active">Database</a>
+            <a href="about.html" class="nav-btn">About</a>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search events, figures, cafes..." id="searchInput">
+    </div>
+
+    <div class="stats-bar" id="statsBar">
+        <!-- Stats loaded via JS -->
+    </div>
+
+    <div class="category-tabs">
+        <button class="cat-tab active" data-cat="all">All</button>
+        <button class="cat-tab" data-cat="cafe"><span class="cat-dot" style="background:var(--accent-pink)"></span>
+            Collab Cafes</button>
+        <button class="cat-tab" data-cat="figure"><span class="cat-dot" style="background:var(--accent-cyan)"></span>
+            Figures</button>
+        <button class="cat-tab" data-cat="event"><span class="cat-dot" style="background:var(--accent-green)"></span>
+            Events</button>
+        <button class="cat-tab" data-cat="anime"><span class="cat-dot" style="background:var(--accent-yellow)"></span>
+            Anime News</button>
+    </div>
+
+    <div class="cards-grid" id="cardsGrid">
+        <!-- Cards loaded via JS -->
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal"></div>
+    </div>
+
+    <footer class="footer">
+        Japan OTAKU Insider &copy; 2026 — Built by <a href="#">ichibo</a> | Your insider source for Japanese otaku
+        culture
+    </footer>
+
+    <script src="js/render.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

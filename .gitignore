@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/pending_translation.json
+data/archive/
+.DS_Store
+*.swp
+*.swo

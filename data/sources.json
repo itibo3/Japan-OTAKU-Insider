@@ -1,0 +1,54 @@
+{
+    "sources": [
+        {
+            "id": "akiba-blog",
+            "name": "Akiba Blog",
+            "url": "http://blog.livedoor.jp/geek/",
+            "rss": "http://blog.livedoor.jp/geek/index.rdf",
+            "type": "rss",
+            "categories": [
+                "cafe",
+                "event",
+                "figure"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
+            "id": "goodsmile",
+            "name": "Good Smile Company Blog",
+            "url": "https://www.goodsmile.info/ja/posts/category/information/date/",
+            "rss": null,
+            "type": "scrape",
+            "categories": [
+                "figure"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
+            "id": "animejapan",
+            "name": "AnimeJapan Official",
+            "url": "https://www.anime-japan.jp/",
+            "rss": null,
+            "type": "scrape",
+            "categories": [
+                "event"
+            ],
+            "language": "ja",
+            "update_frequency": "weekly"
+        },
+        {
+            "id": "natalie-anime",
+            "name": "Comic Natalie / Anime Natalie",
+            "url": "https://natalie.mu/comic",
+            "rss": "https://natalie.mu/comic/feed/news",
+            "type": "rss",
+            "categories": [
+                "anime"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        }
+    ]
+}
