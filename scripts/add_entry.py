@@ -23,6 +23,48 @@ def save_entries(db):
     with open(ENTRIES_FILE, 'w', encoding='utf-8') as f:
         json.dump(db, f, ensure_ascii=False, indent=2)
 
+def check_duplicate(new_entry, existing_entries):
+    """
+    重複チェック
+    Returns: (is_duplicate: bool, reason: str, is_warning: bool)
+    """
+    new_id = new_entry.get("id", "")
+    new_title = new_entry.get("title", "")
+    new_title_ja = new_entry.get("title_ja", "")
+    new_source_url = new_entry.get("source", {}).get("url", "")
+
+    for existing in existing_entries:
+        ex_id = existing.get("id", "")
+        ex_title = existing.get("title", "")
+        ex_title_ja = existing.get("title_ja", "")
+        ex_source_url = existing.get("source", {}).get("url", "")
+
+        # チェック1: ID完全一致
+        if new_id and new_id == ex_id:
+            return True, f"ID一致", False
+
+        # チェック2: 英語タイトル完全一致
+        if new_title and new_title == ex_title:
+            return True, f"タイトル一致", False
+
+        # チェック3: 日本語タイトル完全一致
+        if new_title_ja and new_title_ja == ex_title_ja:
+            return True, f"日本語タイトル一致", False
+
+        # チェック4: ソースURL完全一致
+        if new_source_url and new_source_url == ex_source_url:
+            return True, f"ソースURL一致", False
+
+        # チェック5: タイトル類似（包含関係）→ 警告のみ
+        if new_title and ex_title:
+            new_lower = new_title.lower()
+            ex_lower = ex_title.lower()
+            if len(new_lower) > 10 and len(ex_lower) > 10:  # 短すぎる場合は除外
+                if new_lower in ex_lower or ex_lower in new_lower:
+                    return False, f"既存「{ex_title}」", True
+
+    return False, "", False
+
 def add_entries_from_file(filepath):
     """Geminiの出力JSONファイルからエントリーを追加"""
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -33,16 +75,22 @@ def add_entries_from_file(filepath):
         new_entries = [new_entries]
 
     db = load_entries()
-    existing_ids = {e["id"] for e in db["entries"]}
+    existing_entries = db["entries"]
 
     added = 0
     for entry in new_entries:
-        if entry["id"] not in existing_ids:
+        is_dup, reason, is_warn = check_duplicate(entry, existing_entries)
+        
+        if is_dup:
+            title_disp = entry.get('title_ja', entry.get('title', 'Unknown'))
+            print(f"  SKIP (duplicate): {title_disp} — 理由: {reason}")
+        else:
+            if is_warn:
+                print(f"  ⚠ WARNING: \"{entry.get('title', 'Unknown')}\" may be similar to {reason} — 確認してください")
+            
             db["entries"].append(entry)
             added += 1
-            print(f"  Added: {entry['title']}")
-        else:
-            print(f"  Skip (duplicate): {entry['title']}")
+            print(f"  Added: {entry.get('title', 'Unknown')}")
 
     save_entries(db)
     print(f"\n{added} entries added. Total: {db['total_entries']}")
