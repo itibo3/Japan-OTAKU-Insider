@@ -105,6 +105,8 @@ Japan OTAKU Insider/
 - [x] カテゴリタブの横スクロール対応
 - [x] ヘッダーロゴをアイコン画像に変更
 - [x] `node_modules/` を `.gitignore` に追加
+- [x] **Google Analytics 4 導入完了** (2026-03-17追加)
+- [x] **`add_entry.py` 重複チェック強化**（タイトル・URL等での多角的な重複防御） (2026-03-17追加)
 
 ---
 
@@ -148,7 +150,7 @@ Japan OTAKU Insider/
 
 | タスク | 詳細 |
 |---|---|
-| **Google Analytics導入** | アクセス解析・人気カテゴリの把握 |
+| **~~Google Analytics導入~~** | 【導入完了: 2026-03-17】アクセス解析・人気カテゴリの把握 |
 | **Google AdSense** | エントリー50件以上・月間PV1000以上が目安 |
 | **X (Twitter) BOT** | 新着エントリーを自動ポスト |
 | **地図機能** | Google Maps埋め込みでイベント場所をビジュアル化 |
