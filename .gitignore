@@ -1,10 +1,26 @@
-__pycache__/
-*.pyc
+# 非公開：運用スクリプト
+scripts/
+
+# 非公開：プロンプトテンプレート
+prompts/
+
+# 非公開：引継書・仕様書
+HANDOVER.md
+japan_otaku_insider_spec.md
+
+# 非公開：RSS取得の中間ファイル
 data/pending_translation.json
+data/new_entries.json
 data/archive/
-.DS_Store
-*.swp
-*.swo
+
+# 非公開：ノードモジュール
 node_modules/
 package.json
 package-lock.json
+
+# その他
+__pycache__/
+*.pyc
+.DS_Store
+*.swp
+*.swo

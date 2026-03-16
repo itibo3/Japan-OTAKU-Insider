@@ -1,19 +1,28 @@
-# Japan OTAKU Insider
+# Japan OTAKU Insider 🇯🇵
 
-Your Database of Japanese Otaku Culture. This is a statically generated site that aggregates the latest news, announcements, and limited-time events from Japan for overseas otaku.
+Your insider database of Japanese otaku culture — updated daily from Japan.
 
-## Directory Structure
-- `index.html` - Main database page
-- `about.html` - About page
-- `css/` - Stylesheets
-- `js/` - Frontend logic
-- `data/` - JSON data files (`entries.json`, `sources.json`)
-- `scripts/` - Python automation scripts for fetching and updating data
-- `prompts/` - Markdown files for AI prompt templates
+## What is this?
 
-## Daily Operation Workflow
-1. Use `prompts/perplexity_daily.md` to get the latest news via Perplexity AI.
-2. Feed the results to Gemini using `prompts/gemini_json_convert.md`.
-3. Save the resulting JSON and use `python scripts/add_entry.py <file.json>`.
-4. Run `python scripts/update_status.py` to sync status based on dates.
-5. Push to GitHub!
+A free, open database of Japanese otaku events, collab cafes, figure releases, and anime news — all in English for overseas fans.
+
+## Features
+
+- 🍵 Collab Cafe listings with dates, locations, and reservation info
+- 🎮 Figure & merchandise release tracking
+- 📅 Anime event calendar
+- 📺 Anime & manga news
+- 🔍 Search and filter by category
+- 📱 Mobile-friendly (PWA supported)
+
+## Visit
+
+👉 [https://itibo3.github.io/Japan-OTAKU-Insider/](https://itibo3.github.io/Japan-OTAKU-Insider/)
+
+## Built by
+
+ichibo — a Japanese otaku who wants to bridge the gap between Japan's otaku culture and overseas fans.
+
+## License
+
+MIT
