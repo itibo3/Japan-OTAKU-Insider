@@ -49,6 +49,31 @@
             ],
             "language": "ja",
             "update_frequency": "daily"
+        },
+        {
+            "id": "collabo-cafe",
+            "name": "Collabo Cafe",
+            "url": "https://collabo-cafe.com",
+            "rss": "https://collabo-cafe.com/feed/",
+            "type": "scrape",
+            "categories": [
+                "cafe",
+                "event"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
+            "id": "4gamer",
+            "name": "4Gamer.net",
+            "url": "https://www.4gamer.net/",
+            "rss": "https://www.4gamer.net/rss/index.xml",
+            "type": "rss",
+            "categories": [
+                "anime"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
         }
     ]
 }

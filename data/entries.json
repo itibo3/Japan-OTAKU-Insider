@@ -1,7 +1,398 @@
 {
-  "last_updated": "2026-03-16T19:00:00+09:00",
-  "total_entries": 12,
+  "last_updated": "2026-03-16T21:38:36.204038+09:00",
+  "total_entries": 32,
   "entries": [
+    {
+      "id": "cafe-20260316-001",
+      "category": "cafe",
+      "status": "upcoming",
+      "title": "Touken Ranbu Touneko Danshi Cafe 5th Edition",
+      "title_ja": "刀剣乱舞 刀猫男士カフェ 第5弾",
+      "location": "Collabo Cafe Honpo Akihabara",
+      "dates": {
+        "display": "Mar 6 - Apr 5, 2026"
+      },
+      "reservation": "Required",
+      "access": "Akihabara Station",
+      "description": "Collaboration cafe featuring Touken Ranbu's Touneko Danshi in Akihabara. Offers exclusive menus and merchandise. Advance reservations required.",
+      "source": {
+        "url": "https://akihabara-bc.jp/202603-eventlist/"
+      },
+      "tags": [
+        "touken ranbu",
+        "cafe",
+        "akihabara"
+      ]
+    },
+    {
+      "id": "cafe-20260316-002",
+      "category": "cafe",
+      "status": "active",
+      "title": "Medalist × Hyakki Yako Ver. Pop-up Store",
+      "title_ja": "メダリスト × 百鬼夜行Ver. ストア",
+      "location": "Asakusa ROX Main Building 1F",
+      "dates": {
+        "display": "Mar 7 - Mar 15, 2026"
+      },
+      "description": "Pop-up store for the TV anime 'Medalist' with a Hyakki Yako (Night Parade of One Hundred Demons) theme. Features exclusive merchandise with newly drawn illustrations.",
+      "source": {
+        "url": "https://collabo-cafe.com/events/collabo/medalist-hyakki-yako-pop-up-store-tokyo-osaka2026/"
+      },
+      "tags": [
+        "medalist",
+        "pop-up store",
+        "merchandise"
+      ]
+    },
+    {
+      "id": "event-20260316-003",
+      "category": "event",
+      "status": "active",
+      "title": "Fate/Grand Order Ritsuka Fujimaru Doesn't Get It BOUQUETver. POPUPSHOP",
+      "title_ja": "Fate/Grand Order 藤丸立香はわからない BOUQUETver. POPUPSHOP",
+      "location": "Animate Shibuya",
+      "dates": {
+        "display": "Mar 14 - Mar 29, 2026"
+      },
+      "description": "Pop-up shop for 'Fate/Grand Order Ritsuka Fujimaru Doesn't Get It'. Sells original goods featuring new bouquet-themed illustrations in Shibuya.",
+      "source": {
+        "url": "https://www.enjoytokyo.jp/event/list/cat0209/"
+      },
+      "tags": [
+        "fate/grand order",
+        "fgo",
+        "pop-up store",
+        "shibuya"
+      ]
+    },
+    {
+      "id": "event-20260316-004",
+      "category": "event",
+      "status": "upcoming",
+      "title": "Touhou Project × Maid Outfit Store",
+      "title_ja": "東方Project × メイド服 ストア",
+      "location": "Kotobukiya Akihabara 5F",
+      "dates": {
+        "display": "Mar 28 - Apr 5, 2026"
+      },
+      "description": "Touhou Project pop-up store with a maid outfit theme at Kotobukiya Akihabara. Features a wide variety of newly drawn merchandise.",
+      "source": {
+        "url": "https://www.otamonth.com/en/categories/COLLAB"
+      },
+      "tags": [
+        "touhou project",
+        "akihabara",
+        "kotobukiya",
+        "merchandise"
+      ]
+    },
+    {
+      "id": "figure-20260316-005",
+      "category": "figure",
+      "status": "upcoming",
+      "title": "Kotobukiya PUNI☆MOFU Ginran",
+      "title_ja": "コトブキヤ PUNI☆MOFU 銀ラン",
+      "manufacturer": "Kotobukiya",
+      "releaseDate": "March 2026",
+      "description": "1/1 scale plastic model kit of the cute fluffy character 'Ginran' by Kotobukiya. Features highly detailed sculpting aimed at collectors.",
+      "source": {
+        "url": "https://hjweb.jp/article/2406851/"
+      },
+      "tags": [
+        "kotobukiya",
+        "plastic model",
+        "mecha girl"
+      ]
+    },
+    {
+      "id": "figure-20260316-006",
+      "category": "figure",
+      "status": "upcoming",
+      "title": "Kotobukiya BULLET KNIGHTS Executioner HELL BLAZE",
+      "title_ja": "コトブキヤ BULLET KNIGHTS エクスキューショナー HELL BLAZE",
+      "series": "Megami Device",
+      "manufacturer": "Kotobukiya",
+      "releaseDate": "March 2026",
+      "description": "New addition to the 'BULLET KNIGHTS' action figure series. Features heavy proportions and allows for dynamic battle scene recreation.",
+      "source": {
+        "url": "https://hjweb.jp/article/2406851/"
+      },
+      "tags": [
+        "kotobukiya",
+        "megami device",
+        "plastic model"
+      ]
+    },
+    {
+      "id": "figure-20260316-007",
+      "category": "figure",
+      "status": "upcoming",
+      "title": "Megami Device BUSTER DOLL Knight Alice",
+      "title_ja": "メガミデバイス BUSTER DOLL ナイト Alice",
+      "manufacturer": "Kotobukiya",
+      "releaseDate": "March 2026",
+      "description": "Kotobukiya's new Megami Device model featuring a collaboration with Honda AB12 Motocompo. Highly customizable plastic model.",
+      "source": {
+        "url": "http://blog.livedoor.jp/hobisima-rittai/kts-2026-03-2026-03-04"
+      },
+      "tags": [
+        "kotobukiya",
+        "megami device",
+        "honda"
+      ]
+    },
+    {
+      "id": "figure-20260316-008",
+      "category": "figure",
+      "status": "upcoming",
+      "title": "My Dress-Up Darling Desktop Cute Figure",
+      "title_ja": "その着せ替え人形は恋をする Desktop Cute フィギュア",
+      "series": "My Dress-Up Darling",
+      "releaseDate": "Mid-March 2026",
+      "description": "New prize figure featuring Sajuna Inui in her T-shirt version. Desktop size makes it easy and fun to display.",
+      "source": {
+        "url": "https://premium.gamepedia.jp/hobby/calendar/01J7JQ88CGQJHRFVFW2PW3QZVA"
+      },
+      "tags": [
+        "my dress-up darling",
+        "prize figure",
+        "sajuna inui"
+      ]
+    },
+    {
+      "id": "anime-20260316-009",
+      "category": "anime",
+      "status": "active",
+      "title": "BEASTARS FINAL SEASON Part 2 Premiere",
+      "title_ja": "BEASTARS FINAL SEASON 第2クール開始",
+      "series": "BEASTARS",
+      "dates": {
+        "display": "Starts Mar 7, 2026"
+      },
+      "description": "Part 2 of the final season of the popular anime 'BEASTARS' is now streaming on Netflix, featuring the series climax.",
+      "source": {
+        "url": "https://www.kansou.me"
+      },
+      "tags": [
+        "beastars",
+        "netflix",
+        "anime premiere"
+      ]
+    },
+    {
+      "id": "anime-20260316-010",
+      "category": "anime",
+      "status": "upcoming",
+      "title": "Steel Ball Run Premiere",
+      "title_ja": "スティール・ボール・ラン 配信開始",
+      "series": "JoJo's Bizarre Adventure",
+      "dates": {
+        "display": "Starts Mar 19, 2026"
+      },
+      "description": "A new chapter of 'JoJo's Bizarre Adventure', Steel Ball Run, starts its exclusive streaming release on Netflix.",
+      "source": {
+        "url": "https://www.kansou.me"
+      },
+      "tags": [
+        "jojo",
+        "steel ball run",
+        "netflix"
+      ]
+    },
+    {
+      "id": "anime-20260316-011",
+      "category": "anime",
+      "status": "upcoming",
+      "title": "I Got a Cheat Skill in Another World and Became Unrivaled in the Real World, Too - Special",
+      "title_ja": "異世界でチート能力を手にした俺は、現実世界をも無双する スペシャル",
+      "dates": {
+        "display": "Starts Mar 30, 2026"
+      },
+      "description": "A new TV special broadcast for the popular isekai anime. Highlights the protagonist's cheat abilities.",
+      "source": {
+        "url": "https://www.kansou.me"
+      },
+      "tags": [
+        "isekai",
+        "anime special",
+        "tv broadcast"
+      ]
+    },
+    {
+      "id": "event-20260316-012",
+      "category": "event",
+      "status": "ended",
+      "title": "Bright Fes 2026",
+      "title_ja": "ブライトフェス 2026",
+      "location": "Akihabara UDX 2F Akiba Square",
+      "dates": {
+        "display": "Mar 8, 2026"
+      },
+      "description": "Official free TCG event held for one day in Akihabara. A must-attend gathering for trading card game fans.",
+      "source": {
+        "url": "https://akihabara-bc.jp/202603-eventlist/"
+      },
+      "tags": [
+        "tcg",
+        "akihabara",
+        "card game"
+      ]
+    },
+    {
+      "id": "event-20260316-013",
+      "category": "event",
+      "status": "active",
+      "title": "TV Anime 'Brave Punishment' POP UP CORNER",
+      "title_ja": "TVアニメ『勇者刑に処す』POP UP CORNER",
+      "location": "Kotobukiya Akihabara 1F",
+      "dates": {
+        "display": "Mar 13 - Mar 22, 2026"
+      },
+      "description": "GraffArt merchandise sales event for the new anime at Kotobukiya Akihabara. Many store-exclusive items available.",
+      "source": {
+        "url": "https://akihabara-bc.jp/202603-eventlist/"
+      },
+      "tags": [
+        "akihabara",
+        "kotobukiya",
+        "merchandise"
+      ]
+    },
+    {
+      "id": "event-20260316-014",
+      "category": "event",
+      "status": "active",
+      "title": "School-Live! Megunee Birthday POP UP",
+      "title_ja": "がっこうぐらし！ めぐねえ誕生日POP UP",
+      "location": "AKIHABARA Gamers Main Store",
+      "dates": {
+        "display": "Mar 10 - Mar 29, 2026"
+      },
+      "description": "Birthday memorial pop-up for 'School-Live!'. Exclusive merchandise with new illustrations available at Gamers.",
+      "source": {
+        "url": "https://akihabara-bc.jp/202603-eventlist/"
+      },
+      "tags": [
+        "school-live",
+        "akihabara",
+        "gamers"
+      ]
+    },
+    {
+      "id": "cafe-20260316-015",
+      "category": "cafe",
+      "status": "upcoming",
+      "title": "HANA × Big Echo Collab",
+      "title_ja": "HANA × ビッグエコー コラボ",
+      "dates": {
+        "display": "Mar 19 - Jun 21, 2026"
+      },
+      "description": "Collaboration campaign between 'HANA' and karaoke chain Big Echo. Enjoy limited-time collab drinks and exclusive goods.",
+      "source": {
+        "url": "https://collabo-cafe.com/events/collabo/medalist-hyakki-yako-pop-up-store-tokyo-osaka2026/"
+      },
+      "tags": [
+        "karaoke",
+        "collaboration",
+        "big echo"
+      ]
+    },
+    {
+      "id": "cafe-20260316-016",
+      "category": "cafe",
+      "status": "active",
+      "title": "Ensemble Stars!! 10th Anniversary Cafe",
+      "title_ja": "あんさんぶるスターズ!! 10周年コラボカフェ",
+      "location": "Animate Cafe Ikebukuro and others",
+      "dates": {
+        "display": "Mar 15 - May 10, 2026"
+      },
+      "description": "Ensemble Stars 10th anniversary collaboration cafe opening in Ikebukuro and other locations. Features a captivating limited menu.",
+      "source": {
+        "url": "https://collabo-cafe.com/events/collabo/medalist-hyakki-yako-pop-up-store-tokyo-osaka2026/"
+      },
+      "tags": [
+        "ensemble stars",
+        "cafe",
+        "ikebukuro"
+      ]
+    },
+    {
+      "id": "event-20260316-017",
+      "category": "event",
+      "status": "upcoming",
+      "title": "Gnosia Pop-up Store",
+      "title_ja": "グノーシア ポップアップストア",
+      "location": "GEO stores nationwide",
+      "dates": {
+        "display": "Mar 17 - Apr 12, 2026"
+      },
+      "description": "Pop-up store for the sci-fi game 'Gnosia' featuring super-deformed character goods at GEO locations across the country.",
+      "source": {
+        "url": "https://collabo-cafe.com/events/collabo/medalist-hyakki-yako-pop-up-store-tokyo-osaka2026/"
+      },
+      "tags": [
+        "gnosia",
+        "pop-up store",
+        "merchandise"
+      ]
+    },
+    {
+      "id": "cafe-20260316-018",
+      "category": "cafe",
+      "status": "upcoming",
+      "title": "Assassination Classroom 10th Anniversary Cafe",
+      "title_ja": "暗殺教室 10周年コラボカフェ",
+      "location": "Tokyo, Osaka, Aichi, Hiroshima",
+      "dates": {
+        "display": "Starts Mar 17, 2026"
+      },
+      "description": "Anime 10th anniversary memorial cafe expanding across 4 venues including Tokyo and Osaka, starting mid-March.",
+      "source": {
+        "url": "https://collabo-cafe.com/events/collabo/medalist-hyakki-yako-pop-up-store-tokyo-osaka2026/"
+      },
+      "tags": [
+        "assassination classroom",
+        "cafe",
+        "anniversary"
+      ]
+    },
+    {
+      "id": "anime-20260316-019",
+      "category": "anime",
+      "status": "active",
+      "title": "Demon Slayer: Kimetsu no Yaiba - To the Hashira Training Final Screenings",
+      "title_ja": "劇場版「鬼滅の刃」4月9日で終映、PVと新たな特典を公開　鬼と鬼殺隊の応援上映も",
+      "dates": {
+        "display": "Ends Apr 9, 2026"
+      },
+      "description": "Theatrical screenings for Demon Slayer will conclude on April 9 in most theaters. New final promotional videos and finale bonuses have been revealed, including special cheer screenings.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/664269"
+      },
+      "tags": [
+        "demon slayer",
+        "kimetsu no yaiba",
+        "anime movie"
+      ]
+    },
+    {
+      "id": "figure-20260316-020",
+      "category": "figure",
+      "status": "active",
+      "title": "Persona 3 Reload SEGA LABBIES Plushies",
+      "title_ja": "「ペルソナ３ リロード」などのぬいぐるみが「SEGA LABBIES」より登場",
+      "manufacturer": "SEGA",
+      "description": "New plush toys for popular characters from 'Persona 3 Reload' are now available through the 'SEGA LABBIES' merchandise line.",
+      "source": {
+        "url": "https://www.4gamer.net/games/714/G071477/20260316059/"
+      },
+      "tags": [
+        "persona 3",
+        "plushie",
+        "sega"
+      ]
+    },
     {
       "id": "cafe-20260314-001",
       "category": "cafe",
@@ -14,7 +405,9 @@
       "reservation": "Required (Animate Cafe app)",
       "access": "2 min walk from Ikebukuro Station East Exit",
       "description": "Limited collaboration featuring themed drinks and food inspired by the Forger family. Exclusive merchandise available for visitors.",
-      "source": { "url": "https://example.com/spyxfamily-cafe" },
+      "source": {
+        "url": "https://example.com/spyxfamily-cafe"
+      },
       "price": "¥800-1,500 per item"
     },
     {
@@ -27,7 +420,9 @@
       "releaseDate": "July 2026",
       "price": "¥5,800 (excl. tax)",
       "description": "Nendoroid of Makima from Chainsaw Man. Includes 3 face plates, chain accessories, and alternate hand parts.",
-      "source": { "url": "https://example.com/makima-nendoroid" },
+      "source": {
+        "url": "https://example.com/makima-nendoroid"
+      },
       "whereToBuy": "Good Smile Online Shop, AmiAmi, CDJapan"
     },
     {
@@ -40,7 +435,9 @@
         "display": "Mar 22 - Mar 25, 2026"
       },
       "description": "Japan's largest anime event featuring studio exhibits, stage events, exclusive merchandise, and industry panels. Over 100 exhibitors expected.",
-      "source": { "url": "https://example.com/animejapan2026" },
+      "source": {
+        "url": "https://example.com/animejapan2026"
+      },
       "price": "Advance: ¥2,200 / Door: ¥2,600",
       "access": "Direct access from Kokusai-Tenjijo Station (Rinkai Line)"
     },
@@ -56,7 +453,9 @@
       "reservation": "Walk-in OK (weekday) / Reservation recommended (weekend)",
       "access": "5 min walk from Harajuku Station",
       "description": "Themed dessert buffet featuring Frieren characters. All-you-can-eat sweets plus limited collab menu items.",
-      "source": { "url": "https://example.com/frieren-sweets" },
+      "source": {
+        "url": "https://example.com/frieren-sweets"
+      },
       "price": "¥1,800 (90 min buffet + collab drink)"
     },
     {
@@ -69,7 +468,9 @@
       "releaseDate": "Available Now",
       "price": "¥16,500 (excl. tax)",
       "description": "1/7 scale figure of Ruby in her idol costume. Highly detailed sculpt with LED-compatible base.",
-      "source": { "url": "https://example.com/ruby-figure" },
+      "source": {
+        "url": "https://example.com/ruby-figure"
+      },
       "whereToBuy": "Kotobukiya Online, AmiAmi, HobbySearch"
     },
     {
@@ -78,7 +479,9 @@
       "status": "upcoming",
       "title": "Spring 2026 Anime Season Preview",
       "description": "Key titles: Chainsaw Man S2, Dandadan S2, Solo Leveling S3, Blue Box, new original from MAPPA. Full lineup of 40+ new series starting April 2026.",
-      "source": { "url": "https://example.com/spring-2026-anime" },
+      "source": {
+        "url": "https://example.com/spring-2026-anime"
+      },
       "dates": {
         "display": "Starts April 2026"
       }
@@ -93,7 +496,9 @@
         "display": "Jul 26, 2026"
       },
       "description": "The world's largest garage kit and figure event. Hundreds of independent creators showcase original figures alongside major manufacturers.",
-      "source": { "url": "https://example.com/wonfes2026" },
+      "source": {
+        "url": "https://example.com/wonfes2026"
+      },
       "price": "¥3,000 (advance)",
       "access": "Kaihin-Makuhari Station (JR Keiyo Line)"
     },
@@ -109,7 +514,9 @@
       "reservation": "Required",
       "access": "Shibuya Station Hachiko Exit",
       "description": "Collaboration cafe featuring themed menu items based on Jujutsu Kaisen characters. Limited acrylic stands included with orders.",
-      "source": { "url": "https://example.com/jjk-cafe" },
+      "source": {
+        "url": "https://example.com/jjk-cafe"
+      },
       "price": "¥1,000-2,000 per item"
     },
     {
@@ -122,7 +529,9 @@
       "releaseDate": "September 2026",
       "price": "¥22,000 (excl. tax)",
       "description": "Premium 1/6 scale of Frieren casting magic. Translucent magic effect parts included.",
-      "source": { "url": "https://example.com/frieren-figure" },
+      "source": {
+        "url": "https://example.com/frieren-figure"
+      },
       "whereToBuy": "Aniplex+ Exclusive"
     },
     {
@@ -131,7 +540,9 @@
       "status": "active",
       "title": "Brave Punishment (Yuusha-kei ni Shosuru) - Manga Spotlight",
       "description": "Rising manga series gaining massive popularity. Unique premise of heroes being punished for saving the world. Currently serialized in Weekly Shonen Jump+.",
-      "source": { "url": "https://example.com/brave-punishment" },
+      "source": {
+        "url": "https://example.com/brave-punishment"
+      },
       "dates": {
         "display": "Ongoing"
       }
@@ -146,7 +557,9 @@
         "display": "Mar 10 - Mar 20, 2026"
       },
       "description": "Pop-up market featuring discounted anime merchandise, exclusive Akihabara-only items, and free photo spots.",
-      "source": { "url": "https://example.com/akiba-market" },
+      "source": {
+        "url": "https://example.com/akiba-market"
+      },
       "price": "Free entry",
       "access": "1 min from Akihabara Station Electric Town Exit"
     },
@@ -160,7 +573,9 @@
       "releaseDate": "Available Now",
       "price": "¥4,800 (excl. tax)",
       "description": "Affordable Pop Up Parade line figure of Miku in her NT design. Great entry-level collectible.",
-      "source": { "url": "https://example.com/miku-pop-up" },
+      "source": {
+        "url": "https://example.com/miku-pop-up"
+      },
       "whereToBuy": "Good Smile Online Shop, AmiAmi, Amazon JP"
     }
   ]
