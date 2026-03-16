@@ -378,11 +378,74 @@ body {
   margin-bottom: 16px;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  .nav { display: none; }
-  .cards-grid { grid-template-columns: 1fr; }
+/* Mobile (768px以下) */
+@media (max-width: 768px) {
+  /* カードを縦1列に */
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0 12px;
+  }
+
+  /* ヘッダーのナビを非表示 */
+  .nav {
+    display: none;
+  }
+
   .header { padding: 12px 16px; }
-  .search-bar, .stats-bar, .category-tabs, .cards-grid { padding: 0 16px; }
+
+  /* 検索バーのパディング調整 */
+  .search-bar {
+    padding: 0 12px;
+    margin: 20px auto 16px;
+  }
+
+  /* カテゴリタブの横スクロール対応 */
+  .category-tabs {
+    padding: 0 12px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cat-tab {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* stats barの調整 */
+  .stats-bar {
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  /* ロゴサイズ調整 */
+  .logo-text {
+    font-size: 15px;
+  }
+
+  /* モーダルの全画面表示 */
+  .modal {
+    max-height: 90vh;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  /* フッターの調整 */
+  .footer {
+    padding: 16px 12px;
+  }
+
   .about-content { padding: 0 16px; }
+}
+
+/* タブレット表示 (769px〜1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

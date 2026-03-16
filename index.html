@@ -5,6 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japan OTAKU Insider - Your Database of Japanese Otaku Culture</title>
+
+    <!-- 基本SEO -->
+    <meta name="description" content="Your insider database of Japanese otaku culture. Collab cafes, figures, anime events, and more — updated daily from Japan.">
+    <meta name="keywords" content="Japan, otaku, anime, manga, collab cafe, figure, event, Akihabara, Tokyo, database">
+    <meta name="author" content="ichibo">
+
+    <!-- OpenGraph (SNSシェア時の表示) -->
+    <meta property="og:title" content="Japan OTAKU Insider">
+    <meta property="og:description" content="Your insider database of Japanese otaku culture. Collab cafes, figures, anime events, and more — updated daily from Japan.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itibo3.github.io/Japan-OTAKU-Insider/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Japan OTAKU Insider">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Japan OTAKU Insider">
+    <meta name="twitter:description" content="Your insider database of Japanese otaku culture. Updated daily from Japan.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://itibo3.github.io/Japan-OTAKU-Insider/">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ff3366">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;700&display=swap"
         rel="stylesheet">
@@ -60,6 +88,13 @@
     <script src="/Japan-OTAKU-Insider/js/render.js"></script>
     <script src="/Japan-OTAKU-Insider/js/search.js"></script>
     <script src="/Japan-OTAKU-Insider/js/app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+                .then(reg => console.log('SW registered:', reg.scope))
+                .catch(err => console.log('SW registration failed:', err));
+        }
+    </script>
 </body>
 
 </html>
