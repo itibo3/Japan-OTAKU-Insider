@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-16T21:38:36.204038+09:00",
-  "total_entries": 20,
+  "last_updated": "2026-03-18T15:30:00.000000+09:00",
+  "total_entries": 30,
   "entries": [
     {
       "id": "cafe-20260316-001",
@@ -391,6 +391,222 @@
         "persona 3",
         "plushie",
         "sega"
+      ]
+    },
+    {
+      "id": "cafe-20260318-021",
+      "category": "cafe",
+      "status": "upcoming",
+      "title": "BOYS be MAID! × THE Chara CAFE Collaboration",
+      "title_ja": "BOYS be MAID! × THEキャラCAFE コラボカフェ",
+      "location": "THE Chara CAFE (Tokyo)",
+      "dates": {
+        "display": "Mar 19 - Apr 7, 2026"
+      },
+      "description": "A collaboration cafe themed around 'BOYS be MAID!', a work set in a maid cafe. Offers limited-edition food and drinks along with newly drawn exclusive merchandise.",
+      "source": {
+        "url": "https://collabo-cafe.com"
+      },
+      "tags": [
+        "boys be maid",
+        "maid cafe",
+        "collaboration",
+        "tokyo",
+        "limited goods"
+      ]
+    },
+    {
+      "id": "cafe-20260318-022",
+      "category": "cafe",
+      "status": "upcoming",
+      "title": "Gintama × BOX cafe&space Collaboration Cafe (Shibuya & Ikebukuro)",
+      "title_ja": "銀魂 × BOX cafe&space コラボ（渋谷・池袋・ソラマチ）",
+      "location": "BOX cafe&space GEMS Shibuya / Grande Scape Ikebukuro / Tokyo Solamachi",
+      "dates": {
+        "display": "Apr 10 - Jun 28, 2026 (Shibuya) / Apr 17 - Aug 2, 2026 (Ikebukuro)"
+      },
+      "description": "A collaboration cafe at BOX cafe&space to commemorate the release of the new Gintama theatrical film 'Yoshiwara Daiensho'. Features newly drawn visuals on menus and exclusive merchandise.",
+      "source": {
+        "url": "https://www.enjoytokyo.jp/event/list/cat08/"
+      },
+      "tags": [
+        "gintama",
+        "box cafe",
+        "shibuya",
+        "ikebukuro",
+        "anime movie"
+      ]
+    },
+    {
+      "id": "cafe-20260318-023",
+      "category": "cafe",
+      "status": "upcoming",
+      "title": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You - Cat Theme Store",
+      "title_ja": "「100カノ」猫テーマ ストア in eeo Store 池袋本店",
+      "location": "eeo Store Ikebukuro Main Store",
+      "dates": {
+        "display": "Mar 27 - Apr 12, 2026"
+      },
+      "description": "A limited-time pop-up store for '100 Girlfriends' featuring an exclusive cat-themed artwork. Offers newly drawn cat-motif illustration goods and purchase bonuses.",
+      "source": {
+        "url": "https://www.otamonth.com/en/categories/COLLAB"
+      },
+      "tags": [
+        "100 girlfriends",
+        "100 kano",
+        "ikebukuro",
+        "pop-up store",
+        "merchandise"
+      ]
+    },
+    {
+      "id": "figure-20260318-024",
+      "category": "figure",
+      "status": "upcoming",
+      "title": "Kotobukiya Gakuen Idolm@ster Tamari Tsukimura -Luna say maybe- Scale Figure",
+      "title_ja": "コトブキヤ「学園アイドルマスター」月村手毬 -Luna say maybe-",
+      "series": "Gakuen Idolm@ster",
+      "manufacturer": "Kotobukiya",
+      "releaseDate": "2026 (TBD)",
+      "description": "A new scale figure of Tamari Tsukimura from 'Gakuen Idolm@ster', showcasing her live performance costume in a standing pose with highly detailed sculpting.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/backno/top/index.html"
+      },
+      "tags": [
+        "gakuen idolmaster",
+        "kotobukiya",
+        "scale figure",
+        "tamari tsukimura"
+      ]
+    },
+    {
+      "id": "figure-20260318-025",
+      "category": "figure",
+      "status": "active",
+      "title": "Gakuen Idolm@ster Mini Plush vol.3 - GiGO Limited Prize",
+      "title_ja": "「学園アイドルマスター」ちびぐるみ ～GiGO限定～ vol.3",
+      "series": "Gakuen Idolm@ster",
+      "manufacturer": "GiGO",
+      "releaseDate": "From March 14, 2026",
+      "description": "The third volume of deformed mini plush toys featuring characters from 'Gakuen Idolm@ster', available exclusively as crane game prizes at GiGO arcades.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/backno/top/index.html"
+      },
+      "tags": [
+        "gakuen idolmaster",
+        "plushie",
+        "gigo",
+        "prize figure",
+        "crane game"
+      ]
+    },
+    {
+      "id": "anime-20260318-026",
+      "category": "anime",
+      "status": "upcoming",
+      "title": "Shunkashuuto Daiko-sha Haru no Mai TV Anime Premiere",
+      "title_ja": "「春夏秋冬代行者 春の舞」TVアニメ放送開始",
+      "series": "Shunkashuuto Daiko-sha",
+      "dates": {
+        "display": "Starts Mar 28, 2026"
+      },
+      "description": "TV anime adaptation of the light novel 'Shunkashuuto Daiko-sha Haru no Mai' premieres in the Spring 2026 season. A battle fantasy following the agents of the four seasons, airing on TOKYO MX and other channels.",
+      "source": {
+        "url": "https://www.kansou.me"
+      },
+      "tags": [
+        "spring 2026 anime",
+        "battle fantasy",
+        "light novel adaptation",
+        "tokyo mx"
+      ]
+    },
+    {
+      "id": "anime-20260318-027",
+      "category": "anime",
+      "status": "upcoming",
+      "title": "Chitose-kun wa Ramune-bin no Naka - Ashikaze Arc Episodes 11-13 Simulcast Special",
+      "title_ja": "「千歳くんはラムネ瓶のなか」明日風編 TVアニメ第1クール（11〜13話）一挙放送",
+      "series": "Chitose-kun wa Ramune-bin no Naka",
+      "dates": {
+        "display": "Mar 30 - Mar 31, 2026"
+      },
+      "description": "Episodes 11-13 of the first cour (Ashikaze arc) of 'Chitose-kun wa Ramune-bin no Naka' will be broadcast consecutively, delivering the climax of the heroine Ashikaze's route.",
+      "source": {
+        "url": "https://www.kansou.me"
+      },
+      "tags": [
+        "chitose kun",
+        "ramune bottle",
+        "anime",
+        "simulcast",
+        "spring 2026"
+      ]
+    },
+    {
+      "id": "anime-20260318-028",
+      "category": "anime",
+      "status": "upcoming",
+      "title": "Nintama Rantaro Season 34 Premiere",
+      "title_ja": "「忍たま乱太郎」第34シリーズ放送開始",
+      "series": "Nintama Rantaro",
+      "dates": {
+        "display": "Starts Mar 30, 2026"
+      },
+      "description": "The long-running anime 'Nintama Rantaro' enters its 34th season on NHK E-tele. The new school year brings fresh slapstick ninja comedy airing on weekdays.",
+      "source": {
+        "url": "https://www.kansou.me"
+      },
+      "tags": [
+        "nintama rantaro",
+        "nhk",
+        "kids anime",
+        "spring 2026",
+        "long-running series"
+      ]
+    },
+    {
+      "id": "event-20260318-029",
+      "category": "event",
+      "status": "active",
+      "title": "Ghost in the Shell Anime 30th Anniversary Exhibition",
+      "title_ja": "「攻殻機動隊」アニメ制作30周年記念展",
+      "location": "Toranomon Hills Area, Tokyo (nearest: Toranomon Hills / Kamiyacho Station)",
+      "dates": {
+        "display": "Jan 30 - Apr 5, 2026"
+      },
+      "description": "A large-scale exhibition commemorating the 30th anniversary of Ghost in the Shell anime production. Features original art, setting materials, and visuals from all series across the franchise.",
+      "source": {
+        "url": "https://www.walkerplus.com/event_list/03/eg0127/"
+      },
+      "tags": [
+        "ghost in the shell",
+        "exhibition",
+        "anniversary",
+        "tokyo",
+        "anime art"
+      ]
+    },
+    {
+      "id": "event-20260318-030",
+      "category": "event",
+      "status": "active",
+      "title": "Gintama Spring Stroll: Keio Line Stamp Rally",
+      "title_ja": "「銀魂」春のぶらり旅 ～どうせ暇だろ、コノヤロー。～",
+      "location": "Keio Line area (accessible from Shinjuku Station)",
+      "dates": {
+        "display": "Feb 21 - Mar 29, 2026"
+      },
+      "description": "A Gintama-themed stamp rally and walking event held along the Keio train line to celebrate the theatrical film release. Fans visiting designated spots along the route can earn exclusive rewards.",
+      "source": {
+        "url": "https://www.enjoytokyo.jp/event/list/cat08/"
+      },
+      "tags": [
+        "gintama",
+        "stamp rally",
+        "keio line",
+        "shinjuku",
+        "fan event"
       ]
     }
   ]
