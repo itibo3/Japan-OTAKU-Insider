@@ -6,7 +6,7 @@
 ## やること（実行手順）
 
 1. **RSSからの新着記事取得**
-   - ターミナルで `python3 scripts/rss_fetch.py` を実行してください。
+   - ターミナルで `python3 scripts/rss_fetch.py --fetch-thumbnails` を実行してください。
    - 実行後、新着記事が存在する場合は `data/staging/` ディレクトリ配下に新着記事の入ったJSONファイルが生成されます。
    - （※ 取得できた新規記事が0件だった場合は、ここで処理を終了して結果を報告してください）
 
@@ -19,7 +19,7 @@
    - 英語化が完了したJSONファイルを対象に、`python3 scripts/add_entry.py <翻訳済みJSONへの絶対パス>` を実行し、本番環境のデータである `data/entries.json` へデータを追加してください。
 
 4. **OGPサムネイル埋め（thumbnail）**
-   - 追加された（または未設定の）記事について `og:image` から `thumbnail` を埋めるため、次を実行してください。
+   - `rss_fetch.py` の取得で `thumbnail` が埋まらなかった（または未設定の）記事について `og:image` から `thumbnail` を補完するため、次を実行してください。
    - `python3 scripts/fill_og_images.py --only-missing`
 
 5. **ステータス自動更新**
