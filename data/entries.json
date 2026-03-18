@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-18T17:51:04.237121+09:00",
-  "total_entries": 70,
+  "last_updated": "2026-03-18T17:54:11.914811+09:00",
+  "total_entries": 90,
   "entries": [
     {
       "id": "cafe-20260316-001",
@@ -1338,6 +1338,406 @@
         "amiami"
       ],
       "_source_id": "amiami-news"
+    },
+    {
+      "id": "anime-20260318-rss-f84ae2",
+      "category": "anime",
+      "status": "active",
+      "title": "'Touken Ranbu Medi Nui Collection: Toukabu / Tousute' Official Pre-orders Open March 16!",
+      "title_ja": "「刀剣乱舞 めでぃぬいこれくしょん ～刀かぶ～／～刀ステ～」公式通販(国内)において3/16(月)12:00(正午)～二次受付決定！",
+      "dates": {
+        "display": "Mar 13, 2026"
+      },
+      "description": "The 2nd and 3rd lineup of the official Touken Ranbu ONLINE media mix plushies will start pre-orders on the Nitroplus official store.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/news/2026/12209.php"
+      },
+      "tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-news"
+    },
+    {
+      "id": "anime-20260318-rss-cdf7ec",
+      "category": "anime",
+      "status": "active",
+      "title": "'Touken Ranbu Medi Nui Collection: Toumyu' Official Pre-orders Open March 9!",
+      "title_ja": "「刀剣乱舞 めでぃぬいこれくしょん ～刀ミュ～」(全6種)、公式通販(国内)において3/9(月)12:00(正午)～二次受付決定！",
+      "dates": {
+        "display": "Mar 6, 2026"
+      },
+      "description": "The 1st lineup of the official Touken Ranbu ONLINE media mix plushies (Toumyu) will start pre-orders on March 9.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/news/2026/12208.php"
+      },
+      "tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-news"
+    },
+    {
+      "id": "anime-20260318-rss-8801e7",
+      "category": "anime",
+      "status": "active",
+      "title": "Anime Movie 'Puella Magi Madoka Magica: Walpurgisnacht Rising' Releases August 28!",
+      "title_ja": "劇場アニメ『劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉』8/28(金)～公開決定！",
+      "dates": {
+        "display": "Mar 2, 2026"
+      },
+      "description": "The release date for the anime movie 'Walpurgis no Kaiten', written by Nitroplus's Gen Urobuchi, is set for August 28, 2026!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/news/2026/12207.php"
+      },
+      "tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-news"
+    },
+    {
+      "id": "anime-20260318-rss-29c317",
+      "category": "anime",
+      "status": "active",
+      "title": "'Touken Ranbu ONLINE' First Ice Show 'ICE BLADE' at Yoyogi National Stadium Oct 3-4!",
+      "title_ja": "『刀剣乱舞ONLINE』初のアイスショー「刀剣乱舞 - ICE BLADE -」国立代々木競技場 第一体育館で10/3(土)～4(日)開催決定！",
+      "dates": {
+        "display": "Feb 24, 2026"
+      },
+      "description": "The very first ice show for the sword raising simulation game 'Touken Ranbu ONLINE' will take place in Tokyo on October 3-4, 2026.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/news/2026/12206.php"
+      },
+      "tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-news"
+    },
+    {
+      "id": "anime-20260318-rss-f2df19",
+      "category": "anime",
+      "status": "active",
+      "title": "Kabuki 'Touken Ranbu: Azuma Kagami Yuki no Midare' Blu-ray Released Today!",
+      "title_ja": "歌舞伎『刀剣乱舞 東鑑雪魔縁』Blu-ray、本日1/28(水)発売！",
+      "dates": {
+        "display": "Jan 28, 2026"
+      },
+      "description": "The Blu-ray for the second Touken Ranbu Kabuki adaptation, which garnered huge acclaim in Tokyo and Kyoto, is out today.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/news/2026/12204.php"
+      },
+      "tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-news"
+    },
+    {
+      "id": "anime-20260318-rss-a74764",
+      "category": "anime",
+      "status": "active",
+      "title": "'Touken Ranbu Medi Nui Collection: Toukabu / Tousute' Releasing Early July!",
+      "title_ja": "「刀剣乱舞 めでぃぬいこれくしょん ～刀かぶ～／～刀ステ～」7月上旬に発売決定！　公式通販(国内)において本日1/23(金)～2/20(金)12:00(正午)の期間限定で予約受付中!!",
+      "dates": {
+        "display": "Jan 23, 2026"
+      },
+      "description": "New additions to the Touken Ranbu Medi Nui official plushie series featuring characters from the Kabuki and Stage play adaptations.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/news/2026/12203.php"
+      },
+      "tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-news"
+    },
+    {
+      "id": "anime-20260318-rss-994c64",
+      "category": "anime",
+      "status": "active",
+      "title": "'Touken Ranbu ONLINE 10th Anniversary Memorial Book' Available on Official Store!",
+      "title_ja": "「刀剣乱舞ONLINE十周年記念　本丸録」本日1/20(火)12:00(正午)～公式通販(国内／海外向け)で取り扱い決定！",
+      "dates": {
+        "display": "Jan 20, 2026"
+      },
+      "description": "The gorgeous memorial book celebrating the 10th anniversary of Touken Ranbu ONLINE will be available on the official Nitroplus store.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/news/2026/12200.php"
+      },
+      "tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-news"
+    },
+    {
+      "id": "anime-20260318-rss-2032b0",
+      "category": "anime",
+      "status": "active",
+      "title": "'Nitro Face Collection' Acrylic Keychains Available for Limited Pre-order!",
+      "title_ja": "「ニトロお顔コレクション」公式通販(国内／海外向け)において本日1/7(水)～16(金)12:00(正午)の期間限定で予約受付中！",
+      "dates": {
+        "display": "Jan 7, 2026"
+      },
+      "description": "Pre-orders have opened for the 'Nitro Face Collection' featuring 50 characters from Nitroplus, Nitro Origin, and Nitro Chiral works.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/news/2026/12194.php"
+      },
+      "tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-news"
+    },
+    {
+      "id": "anime-20260318-rss-4d256a",
+      "category": "anime",
+      "status": "active",
+      "title": "Happy New Year!",
+      "title_ja": "あけましておめでとうございます！",
+      "dates": {
+        "display": "Jan 1, 2026"
+      },
+      "description": "Thank you for supporting Nitroplus content last year. Our staff will continue to do our best to deliver enjoyable content this year.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/news/2026/12197.php"
+      },
+      "tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-news"
+    },
+    {
+      "id": "anime-20260318-rss-1d32e2",
+      "category": "anime",
+      "status": "active",
+      "title": "'Comiket 107' Held December 30-31!",
+      "title_ja": "「コミックマーケット107」12/30(火)～31(水)いよいよ開催！",
+      "dates": {
+        "display": "Dec 26, 2025"
+      },
+      "description": "Comic Market 107 will be held at Tokyo Big Sight! We've prepared a 2.4m giant gacha machine at the Nitroplus booth.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/news/2025/12188.php"
+      },
+      "tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-news"
+    },
+    {
+      "id": "figure-20260318-rss-f460c4",
+      "category": "figure",
+      "status": "active",
+      "title": "Touken Ranbu Medi Nui Collection: Toukabu",
+      "title_ja": "刀剣乱舞 めでぃぬいこれくしょん ～刀かぶ～",
+      "dates": {
+        "display": "Jul 1, 2026"
+      },
+      "description": "Official plushies of the Touken Ranbu ONLINE media mix works! The 2nd lineup features 6 characters from the Kabuki adaptation.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/goods/other/12201.php"
+      },
+      "tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-goods"
+    },
+    {
+      "id": "figure-20260318-rss-8eacae",
+      "category": "figure",
+      "status": "active",
+      "title": "Touken Ranbu Medi Nui Collection: Tousute",
+      "title_ja": "刀剣乱舞 めでぃぬいこれくしょん ～刀ステ～",
+      "dates": {
+        "display": "Jul 1, 2026"
+      },
+      "description": "Official plushies of the Touken Ranbu ONLINE media mix works! The 3rd lineup features 6 characters from the Stage Play adaptation.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/goods/other/12202.php"
+      },
+      "tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-goods"
+    },
+    {
+      "id": "figure-20260318-rss-91df2f",
+      "category": "figure",
+      "status": "active",
+      "title": "Nitro Face Collection",
+      "title_ja": "ニトロお顔コレクション",
+      "dates": {
+        "display": "Feb 24, 2026"
+      },
+      "description": "Acrylic keychains featuring the 'faces' of 9 characters from Nitroplus works. Large size with roughly 10-13cm long sides.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/goods/other/12195.php"
+      },
+      "tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-goods"
+    },
+    {
+      "id": "figure-20260318-rss-c51e0e",
+      "category": "figure",
+      "status": "active",
+      "title": "Touken Ranbu Medi Nui Collection: Toumyu",
+      "title_ja": "刀剣乱舞 めでぃぬいこれくしょん ～刀ミュ～",
+      "dates": {
+        "display": "Feb 20, 2026"
+      },
+      "description": "Official plushies of the Touken Ranbu ONLINE media mix works! The 1st lineup features 6 characters from the Musical adaptation.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/goods/other/12158.php"
+      },
+      "tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-goods"
+    },
+    {
+      "id": "figure-20260318-rss-080ecd",
+      "category": "figure",
+      "status": "active",
+      "title": "Touken Ranbu ONLINE Official Setting Material Book Vol.5 'Touken Ranbu Kenran Zuroku Go'",
+      "title_ja": "『刀剣乱舞ONLINE』公式設定画集第5弾「刀剣乱舞絢爛図録 五」",
+      "dates": {
+        "display": "Dec 19, 2025"
+      },
+      "description": "The 5th official visual book covering the Touken Danshi from Touken Ranbu ONLINE is set for release in December 2025!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/goods/book/12132.php"
+      },
+      "tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-goods"
+    },
+    {
+      "id": "figure-20260318-rss-705dcc",
+      "category": "figure",
+      "status": "active",
+      "title": "'Touken Ranbu Kenran Zuroku Go' Digital Edition",
+      "title_ja": "「刀剣乱舞絢爛図録 五」電子書籍版",
+      "dates": {
+        "display": "Dec 19, 2025"
+      },
+      "description": "The digital edition of the 5th official visual book covering the Touken Danshi from Touken Ranbu ONLINE will be available simultaneously!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/goods/book/12191.php"
+      },
+      "tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-goods"
+    },
+    {
+      "id": "figure-20260318-rss-26108f",
+      "category": "figure",
+      "status": "active",
+      "title": "The Choice History of 'Choices': How Nitroplus Scenario Writers Make Novel Games",
+      "title_ja": "「選択肢」の選択史 ニトロプラスのシナリオライターはノベルゲームをどう作ってきたか(星海社新書)",
+      "dates": {
+        "display": "Sep 18, 2025"
+      },
+      "description": "A new paperback book discussing novel game scenario writing by Nitroplus writer Baio Shimokura is coming from Seikaisha!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/goods/book/12130.php"
+      },
+      "tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-goods"
+    },
+    {
+      "id": "figure-20260318-rss-12e4c2",
+      "category": "figure",
+      "status": "active",
+      "title": "Blu-ray & DVD 'Thunderbolt Fantasy: Sword Seekers Final Chapter'",
+      "title_ja": "Blu-ray＆DVD「Thunderbolt Fantasy 東離劍遊紀 最終章」",
+      "dates": {
+        "display": "May 28, 2025"
+      },
+      "description": "The finale of the martial arts fantasy puppet show 'Thunderbolt Fantasy Project' directed by Gen Urobuchi comes to Blu-ray & DVD.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/goods/dvdcd/12108.php"
+      },
+      "tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-goods"
+    },
+    {
+      "id": "figure-20260318-rss-20ec02",
+      "category": "figure",
+      "status": "active",
+      "title": "Digital Edition 'Thunderbolt Fantasy: Sword Seekers Final Chapter Pamphlet'",
+      "title_ja": "「Thunderbolt Fantasy 東離劍遊紀 最終章 パンフレット」電子書籍版",
+      "dates": {
+        "display": "May 27, 2025"
+      },
+      "description": "The official pamphlet for the final theatrical release of the Thunderbolt Fantasy Project is now available as a digital book!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/goods/book/12095.php"
+      },
+      "tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-goods"
+    },
+    {
+      "id": "figure-20260318-rss-05e2e2",
+      "category": "figure",
+      "status": "active",
+      "title": "Digital Edition 'Thunderbolt Fantasy Gaiden Short Stories'",
+      "title_ja": "「Thunderbolt Fantasy 外伝小噺」電子書籍版",
+      "dates": {
+        "display": "May 27, 2025"
+      },
+      "description": "The short story collection originally distributed as a theatrical bonus for 'Thunderbolt Fantasy Final Chapter' is now a digital book!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/goods/book/12103.php"
+      },
+      "tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-goods"
     }
   ]
 }
