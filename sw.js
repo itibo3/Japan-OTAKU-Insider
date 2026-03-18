@@ -1,4 +1,4 @@
-const CACHE_NAME = 'otaku-insider-v1';
+const CACHE_NAME = 'otaku-insider-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -19,23 +19,39 @@ self.addEventListener('install', event => {
   );
 });
 
-// フェッチ時にキャッシュ優先、なければネットワーク
+// データファイルはネットワーク優先、それ以外はキャッシュ優先
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) {
-          // キャッシュにあればキャッシュを返しつつ、バックグラウンドで更新
-          fetch(event.request).then(freshResponse => {
+  const url = new URL(event.request.url);
+  const isDataFile = url.pathname.includes('/data/');
+
+  if (isDataFile) {
+    // Network First: データは常に最新を取得、失敗時のみキャッシュ
+    event.respondWith(
+      fetch(event.request)
+        .then(response => {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+  } else {
+    // Stale While Revalidate: キャッシュを返しつつバックグラウンド更新
+    event.respondWith(
+      caches.match(event.request)
+        .then(response => {
+          const fetchPromise = fetch(event.request).then(freshResponse => {
             caches.open(CACHE_NAME).then(cache => {
               cache.put(event.request, freshResponse);
             });
           });
-          return response;
-        }
-        return fetch(event.request);
-      })
-  );
+          if (response) {
+            return response;
+          }
+          return fetch(event.request);
+        })
+    );
+  }
 });
 
 // 古いキャッシュの削除
