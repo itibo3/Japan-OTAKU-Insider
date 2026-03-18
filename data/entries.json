@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-18T17:54:11.914811+09:00",
-  "total_entries": 90,
+  "last_updated": "2026-03-18T17:55:53.392737+09:00",
+  "total_entries": 120,
   "entries": [
     {
       "id": "cafe-20260316-001",
@@ -1738,6 +1738,586 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods"
+    },
+    {
+      "id": "anime-20260318-rss-5117ac",
+      "category": "anime",
+      "status": "active",
+      "title": "Nitroplus Jobs [Part 4: Game Development]",
+      "title_ja": "ニトロプラスのお仕事【その4：ゲーム開発編】",
+      "dates": {
+        "display": "Aug 18, 2023"
+      },
+      "description": "Hello! Nitro-kun here. We are currently recruiting staff to help with game development. No experience needed! Must love Nitroplus games!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/staff/blog/2023/11887.php"
+      },
+      "tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-blog"
+    },
+    {
+      "id": "anime-20260318-rss-3be999",
+      "category": "anime",
+      "status": "active",
+      "title": "Nitroplus Jobs [Part 3: Daily Time Schedule]",
+      "title_ja": "ニトロプラスのお仕事【その3：一日のタイムスケジュール編】",
+      "dates": {
+        "display": "Jul 21, 2023"
+      },
+      "description": "Nice to meet you! I'm Morio, a newbie who joined in May. I work in the promo and marketing department planning events.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/staff/blog/2023/11867.php"
+      },
+      "tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-blog"
+    },
+    {
+      "id": "anime-20260318-rss-e38749",
+      "category": "anime",
+      "status": "active",
+      "title": "Nitroplus Jobs [Part 2: Newbie Edition]",
+      "title_ja": "ニトロプラスのお仕事【その2：新人編】",
+      "dates": {
+        "display": "Jul 14, 2023"
+      },
+      "description": "Nice to meet you, I'm Ronriko. My hobby is finding the origins of internet memes. I'll introduce what a newbie does at the company.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/staff/blog/2023/11869.php"
+      },
+      "tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-blog"
+    },
+    {
+      "id": "anime-20260318-rss-83772b",
+      "category": "anime",
+      "status": "active",
+      "title": "Nitroplus Jobs [Part 1: Event Planning & Management]",
+      "title_ja": "ニトロプラスのお仕事【その1：イベントの企画運営編】",
+      "dates": {
+        "display": "Jul 7, 2023"
+      },
+      "description": "Nice to meet you, I'm K.K. We've decided to introduce the jobs of Nitroplus staff on this blog. This time, it's Event Planning & Management.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/staff/blog/2023/11868.php"
+      },
+      "tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-blog"
+    },
+    {
+      "id": "anime-20260318-rss-d33c8e",
+      "category": "anime",
+      "status": "active",
+      "title": "Congratulations! Comic Market 100!!",
+      "title_ja": "祝！　コミックマーケット100!!",
+      "dates": {
+        "display": "Jul 29, 2022"
+      },
+      "description": "Hello! It's been a while, but Nitro-kun from PR here, now reborn as 'Nitro-kun NEO'! Our staff image has also been renewed.",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/staff/blog/2022/11745.php"
+      },
+      "tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-blog"
+    },
+    {
+      "id": "anime-20260318-rss-9209d4",
+      "category": "anime",
+      "status": "active",
+      "title": "'Smile of the Arsnotoria' is Now Available!",
+      "title_ja": "「咲う アルスノトリア」配信中です！",
+      "dates": {
+        "display": "Apr 2, 2021"
+      },
+      "description": "Have you played 'Smile of the Arsnotoria' yet? It's an authentic fantasy RPG where you become a wizard and fight alongside girls!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/staff/blog/2021/11522.php"
+      },
+      "tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-blog"
+    },
+    {
+      "id": "anime-20260318-rss-d25e6b",
+      "category": "anime",
+      "status": "active",
+      "title": "'The Ugly Mojika Child' is Now on Sale!!",
+      "title_ja": "『みにくいモジカの子』発売しました！！",
+      "dates": {
+        "display": "Jul 30, 2018"
+      },
+      "description": "Hello! Katatsumuri here, PR for 'Minikui Mojika no Ko'. Our mind-and-body violating ADV is finally on sale at PC game and online shops!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/staff/blog/2018/8452.php"
+      },
+      "tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-blog"
+    },
+    {
+      "id": "anime-20260318-rss-a84b20",
+      "category": "anime",
+      "status": "active",
+      "title": "'The Ugly Mojika Child' Pre-orders Now Open!",
+      "title_ja": "『みにくいモジカの子』予約受付中！",
+      "dates": {
+        "display": "Jun 8, 2018"
+      },
+      "description": "Hello! Nekokan Masshigura here. It's getting hotter, feeling like summer. Speaking of summer, it's 'Minikui Mojika no Ko'!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/staff/blog/2018/8394.php"
+      },
+      "tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-blog"
+    },
+    {
+      "id": "anime-20260318-rss-7a3b50",
+      "category": "anime",
+      "status": "active",
+      "title": "'Thunderbolt Fantasy: The Sword of Life and Death' Released Today!",
+      "title_ja": "「Thunderbolt Fantasy 生死一劍」本日公開！",
+      "dates": {
+        "display": "Dec 2, 2017"
+      },
+      "description": "'Thunderbolt Fantasy: Seishi Ikken' premieres today! The transcended martial arts puppet show returns with a big screen and rich 5.1ch sound!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/staff/blog/2017/8205.php"
+      },
+      "tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-blog"
+    },
+    {
+      "id": "anime-20260318-rss-ce3a3c",
+      "category": "anime",
+      "status": "active",
+      "title": "'Full Metal Daemon Muramasa 8th Anniversary' Sansei (Swimsuit) Muramasa",
+      "title_ja": "『装甲悪鬼村正８周年』三世（水着）村正",
+      "dates": {
+        "display": "Nov 2, 2017"
+      },
+      "description": "Posting the 'Muramasa 8th Anniversary' illustration so I don't forget it. Released back on Oct 30, 2009. Still going strong on its 8th anniversary!",
+      "source": {
+        "url": "https://www.nitroplus.co.jp/staff/blog/2017/8176.php"
+      },
+      "tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "_source_id": "nitroplus-blog"
+    },
+    {
+      "id": "figure-20260318-rss-b5eb03",
+      "category": "figure",
+      "status": "active",
+      "title": "'Super Robot Wars OG' Weissritter Gets Action Figure in Kuro Kara Kuri Series! Pre-orders Open on Amazon",
+      "title_ja": "『スーパーロボット大戦OG』ヴァイスリッターが鉄機巧シリーズにて可動フィギュア化！多彩な展開ギミックで迫力のポージングが楽しめる！Amazonで予約受付中",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "From 'Super Robot Wars OG', Excellen Browning's silver fallen angel Weissritter gets an action figure in the Kuro Kara Kuri series with built-in LED!",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2946761/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260318-rss-030116",
+      "category": "figure",
+      "status": "active",
+      "title": "Idol 'Rino Yumetsuki' in Bunny Outfit Gets Figure! Normal Swimsuit Ver & Nearly Nude Adult Ver Released!!",
+      "title_ja": "色気をまとったバニー衣装のアイドル「夢月りの」がフィギュア化！過激な水着姿の通常版に加え、ほぼ全裸なアダルト版も同時リリース!!",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "Original figure 'Rino Yumetsuki' gets a 1/6 scale figure! Normal version by Bfull FOTS JAPAN and Adult version by Insight set for October 2026.",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2946691/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260318-rss-be0018",
+      "category": "figure",
+      "status": "active",
+      "title": "'Gundam Char's Counterattack' METAL ROBOT Spirits Sazabi 2nd Pre-order Lottery Decided! Starts March 19!",
+      "title_ja": "『機動戦士ガンダム 逆襲のシャア』METAL ROBOT魂 サザビーの2次受注分が抽選販売決定！3月19日（木）16時より受付開始！別売りの「νガンダム」と組み合わせたいアイテム！",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "From 'Mobile Suit Gundam Char's Counterattack', the 2nd pre-order for METAL ROBOT Spirits Sazabi will be sold via lottery starting March 19.",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2946988/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260318-rss-d28e96",
+      "category": "figure",
+      "status": "active",
+      "title": "Highlighting March 18 Kindle Comics: 'Uma Musume Pretty Derby Umamusumeshi' Vol.7, 'Jaja' Vol.39, etc!",
+      "title_ja": "『ウマ娘 プリティーダービー うまむすめし』7巻、『ジャジャ』39巻、『尾守つみきと奇日常。』9巻など3月18日配信のKindle本コミックをピックアップ！",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "Picking up Kindle comics released on March 18 on Amazon Kindle Store, including 'Uma Musume' spin-off manga and more!",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2946903/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260318-rss-5bfdf7",
+      "category": "figure",
+      "status": "active",
+      "title": "Machines from 'Kamen Rider' Series Join 'Machibouke' Gashapon Figures! Featuring Gouram and Auto Vajin!",
+      "title_ja": "『仮面ライダー』シリーズに登場するマシンたちがガシャポンフィギュア「まちぼうけ」に仲間入り！ゴウラムやオートバジンなどを哀愁漂う姿で収録！",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "Kamen Rider series machines join the 'Machibouke' gashapon line. Gouram, Auto Vajin, Lazer, and Code Zeroider are sculpted in melancholic poses.",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2946487/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260318-rss-28138c",
+      "category": "figure",
+      "status": "active",
+      "title": "Official Apparel for Disney & Pixar's Latest 'When I Become a Beaver' on Sale via Amazon Merch on Demand!",
+      "title_ja": "ディズニー＆ピクサー最新作『私がビーバーになる時』のTシャツやパーカーなど公式アパレルがAmazonのオンデマンドプリントサービス Merch on Demandで販売中！",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "Cute designs! Official T-shirts and sweatshirts for Disney & Pixar's latest 'When I Become a Beaver' are available on Amazon Merch on Demand!",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2946760/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260318-rss-8d6275",
+      "category": "figure",
+      "status": "active",
+      "title": "'Honkai: Star Rail' Cute Sparkle Hugging Plush Gets Deformed Figure in 'Huggy Good Smile'! Pre-orders at AmiAmi",
+      "title_ja": "『崩壊：スターレイル』キュートな表情の「火花だっこぬいぐるみ」がデフォルメフィギュア「Huggy Good Smile」シリーズに登場！あみあみで予約受付中",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "Attention to her adorable expression! From 'Honkai: Star Rail', Sparkle Hugging Plush gets a deformed figure in the 'Huggy Good Smile' series.",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2946628/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260318-rss-198106",
+      "category": "figure",
+      "status": "active",
+      "title": "Sanrio Characters Design Capsule Toys 'minimini Folding Table Part 2' and 'minimini Rug-style Keychain' Released!",
+      "title_ja": "サンリオキャラクターズデザインのカプセルトイ「minimini折りたたみテーブルその2」と「miniminiラグマット風キーホルダー」が登場！組み合わせれば小さなお部屋にも！",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "Two new Sanrio capsule toys launching sequentially from late March. Combine the 'minimini Folding Table Part 2' and 'minimini Rug-style Keychain'.",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2946840/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260318-rss-69ddce",
+      "category": "figure",
+      "status": "active",
+      "title": "Two Medusa Girl Figures 'Green Viper' and 'Crimson Viper' from WE ART DOING! Pre-orders Open at AmiAmi!",
+      "title_ja": "2種類のメデューサガール「グリーンバイパー」「クリムゾンバイパー」フィギュアがWE ART DOINGから登場！あみあみで予約受付中！",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "What lies beneath the snakes...? Two Medusa girls 'Green Viper' and 'Crimson Viper' get figures from WE ART DOING!",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2946639/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260318-rss-6705a1",
+      "category": "figure",
+      "status": "active",
+      "title": "'Chiikawa' Smartphone App 'Chiikawa Pocket' Official Goods Vol.2 Launch April 10! Many New Items!!",
+      "title_ja": "『ちいかわ』のスマホアプリ「ちいかわぽけっと」公式グッズ第2弾が4月10日（金）発売！フルーツ＆ファンタジーがモチーフの新作アイテムが多数登場!!ポップアップストアも全国5会場で開催",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "'Chiikawa's' first smartphone app 'Chiikawa Pocket' official goods Vol.2! New goods like mascots, can badges, and acrylic stands featuring fruit motifs.",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2946867/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260318-rss-c6fafa",
+      "category": "figure",
+      "status": "active",
+      "title": "Digital Figure 'HoloModels' First Overseas Expansion: Sales Start at Animate Stores & EC in South Korea",
+      "title_ja": "デジタルフィギュア「ホロモデル」海外進出第一弾　韓国のアニメイトなど店舗・ECで販売開始",
+      "dates": {},
+      "description": "Gugenka announced the start of sales for digital figure 'HoloModels' in South Korea starting March 18, 2026.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000309.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "_source_id": "prtimes-kotobukiya"
+    },
+    {
+      "id": "figure-20260318-rss-b3e303",
+      "category": "figure",
+      "status": "active",
+      "title": "Gugenka Creates Immersive WebAR Photo Spot for 'My Melody & Kuromi' Exhibition Held Until Feb 2026",
+      "title_ja": "2026年2月まで開催された『My Melody & Kuromi』展示会でWebARによる没入型フォトスポットをGugenkaが制作",
+      "dates": {},
+      "description": "Gugenka produced an immersive photo spot using WebAR for the 'My Melody & Kuromi' exhibition held at the Tokyo Anime Center.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000306.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "_source_id": "prtimes-kotobukiya"
+    },
+    {
+      "id": "figure-20260318-rss-64c7f9",
+      "category": "figure",
+      "status": "active",
+      "title": "Holiday Shows Sold Out: 'SNOW MIKU 2026' Wotaru-za Digital Show powered by XREAL Event Report",
+      "title_ja": "休日公演完売・全席満席の盛況「SNOW MIKU 2026」ヲタル座デジタルショー powered by XREAL 開催レポート",
+      "dates": {},
+      "description": "Gugenka reported huge success at the 'SNOW MIKU 2026 Digital Show powered by XREAL' held at Wing Bay Otaru.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000307.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "_source_id": "prtimes-kotobukiya"
+    },
+    {
+      "id": "figure-20260318-rss-752dac",
+      "category": "figure",
+      "status": "active",
+      "title": "Second 'Nekopara' Series: Maple, Cinnamon, Azuki, and Coconut HoloModels Now on Sale",
+      "title_ja": "『ネコぱら』シリーズ第二弾 メイプル・シナモン・アズキ・ココナツのホロモデル販売を開始",
+      "dates": {},
+      "description": "Gugenka released the second batch of HoloModels for the popular 11th-anniversary series 'Nekopara', featuring Maple, Cinnamon, Azuki, and Coconut.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000308.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "_source_id": "prtimes-kotobukiya"
+    },
+    {
+      "id": "figure-20260318-rss-55634e",
+      "category": "figure",
+      "status": "active",
+      "title": "3D Spatial Video Platform 'Spatial Disc' Releases 'Love Live! Sunshine!!' Aqours: 4 Single Tracks & 4-Track Set",
+      "title_ja": "3D空間映像プラットフォーム「スペーシャルディスク」『ラブライブ！サンシャイン!!』Aqours 発売 単曲4商品に加え、MCパート付き4曲セットを同時リリース",
+      "dates": {},
+      "description": "Gugenka released Spatial Discs featuring the school idol group Aqours from 'Love Live! Sunshine!!' on their 3D spatial video platform.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000304.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "_source_id": "prtimes-kotobukiya"
+    },
+    {
+      "id": "figure-20260318-rss-c73595",
+      "category": "figure",
+      "status": "active",
+      "title": "Belcook and Hapidanbui Turned into Digital Figures! AR-enjoyable 'HoloModels' & WebAR Content Released",
+      "title_ja": "ベルクックとはぴだんぶいがデジタルフィギュア化　ARで楽しめる「ホロモデル」＆WebARコンテンツ配信開始",
+      "dates": {},
+      "description": "Gugenka released digital figures of Belc's character 'Belcook' and Sanrio's 'Hapidanbui' on the HoloModels app.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000300.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "_source_id": "prtimes-kotobukiya"
+    },
+    {
+      "id": "figure-20260318-rss-2b3d17",
+      "category": "figure",
+      "status": "active",
+      "title": "Gugenka and Sanrio Jointly Develop LBE Content for 'and ST TOKYO' Flagship Store",
+      "title_ja": "Gugenkaとサンリオ共同開発「and ST TOKYO」にてLBE（ロケーションベース・エンターテインメント）コンテンツを提供",
+      "dates": {},
+      "description": "Gugenka provided Location-Based Entertainment content at the 'and ST TOKYO' flagship store in Shibuya.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000299.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "_source_id": "prtimes-kotobukiya"
+    },
+    {
+      "id": "figure-20260318-rss-cf7ff7",
+      "category": "figure",
+      "status": "active",
+      "title": "Gugenka Provides Interactive MR Video Content at 'Assault Lily Last Bullet' 5th Anniversary Event",
+      "title_ja": "「アサルトリリィ Last Bullet」5周年記念イベントにてGugenkaがMR映像を楽しめる体験型コンテンツを提供",
+      "dates": {},
+      "description": "Gugenka debuted Mixed Reality (MR) video experiences at the 5th-anniversary event of the app game 'Assault Lily Last Bullet'.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000298.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "_source_id": "prtimes-kotobukiya"
+    },
+    {
+      "id": "figure-20260318-rss-9ef368",
+      "category": "figure",
+      "status": "active",
+      "title": "Shoot Everyday Life with Your Oshi! New Version of 'HoloModels' Officially Released",
+      "title_ja": "「推し」との日常を撮影できる　新バージョン「ホロモデル」正式リリース",
+      "dates": {},
+      "description": "Gugenka officially released a new version of the 'HoloModels' app, allowing users to carry and photograph their favorite digital figures on a smartphone.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000296.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "_source_id": "prtimes-kotobukiya"
+    },
+    {
+      "id": "figure-20260318-rss-72aca4",
+      "category": "figure",
+      "status": "active",
+      "title": "Gugenka Exhibits at 'SNOW MIKU 2026', Deploying Cutting-Edge XREAL Digital Show and Interactive Wall",
+      "title_ja": "株式会社Gugenka『SNOW MIKU 2026』に出展　XREALによる最先端デジタルショーと、来場者参加型「デジタルピアプロの壁」を展開",
+      "dates": {},
+      "description": "Gugenka exhibited at 'SNOW MIKU 2026', organizing the digital show powered by XREAL at Wotaru-za and an interactive wall for attendees.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000294.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "_source_id": "prtimes-kotobukiya"
     }
   ]
 }
