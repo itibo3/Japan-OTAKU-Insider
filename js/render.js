@@ -18,7 +18,7 @@ function renderCards(filter = 'all', search = '') {
 
     grid.innerHTML = filtered.map(item => {
         const catClass = `cat-${item.category}`;
-        const catLabel = { cafe: 'Collab Cafe', figure: 'Figure', event: 'Event', anime: 'Anime News' }[item.category];
+        const catLabel = { cafe: 'Collab Cafe', figure: 'Figure', event: 'Event', anime: 'Anime News', game: 'Game News' }[item.category] || item.category;
         const statusClass = `status-${item.status}`;
         const statusLabel = { active: 'Active', upcoming: 'Upcoming', ended: 'Ended' }[item.status] || item.status;
 
@@ -45,7 +45,7 @@ function openModal(id) {
     if (!item) return;
 
     const catClass = `cat-${item.category}`;
-    const catLabel = { cafe: 'Collab Cafe', figure: 'Figure', event: 'Event', anime: 'Anime News' }[item.category];
+    const catLabel = { cafe: 'Collab Cafe', figure: 'Figure', event: 'Event', anime: 'Anime News', game: 'Game News' }[item.category] || item.category;
 
     let sections = '';
     const datesDisplay = item.dates && item.dates.display ? item.dates.display : item.dates;

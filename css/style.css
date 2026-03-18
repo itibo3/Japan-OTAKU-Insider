@@ -6,13 +6,18 @@
   --accent-cyan: #00ccff;
   --accent-green: #00ff88;
   --accent-yellow: #ffcc00;
+  --accent-purple: #b366ff;
   --text-primary: #e8e8f0;
   --text-secondary: #8888aa;
   --text-dim: #555570;
   --border: #2a2a3a;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Outfit', 'Noto Sans JP', sans-serif;
@@ -57,7 +62,9 @@ body {
   letter-spacing: -0.5px;
 }
 
-.logo-text span { color: var(--accent-pink); }
+.logo-text span {
+  color: var(--accent-pink);
+}
 
 .nav {
   display: flex;
@@ -77,7 +84,8 @@ body {
   text-decoration: none;
 }
 
-.nav-btn:hover, .nav-btn.active {
+.nav-btn:hover,
+.nav-btn.active {
   background: var(--bg-card-hover);
   color: var(--text-primary);
   border-color: var(--accent-cyan);
@@ -103,8 +111,13 @@ body {
   transition: border-color 0.2s;
 }
 
-.search-input::placeholder { color: var(--text-dim); }
-.search-input:focus { border-color: var(--accent-cyan); }
+.search-input::placeholder {
+  color: var(--text-dim);
+}
+
+.search-input:focus {
+  border-color: var(--accent-cyan);
+}
 
 /* Stats */
 .stats-bar {
@@ -155,7 +168,9 @@ body {
   gap: 6px;
 }
 
-.cat-tab:hover { border-color: var(--text-secondary); }
+.cat-tab:hover {
+  border-color: var(--text-secondary);
+}
 
 .cat-tab.active {
   background: var(--accent-pink);
@@ -207,10 +222,30 @@ body {
   margin-bottom: 12px;
 }
 
-.cat-cafe { background: rgba(255, 51, 102, 0.15); color: var(--accent-pink); }
-.cat-figure { background: rgba(0, 204, 255, 0.15); color: var(--accent-cyan); }
-.cat-event { background: rgba(0, 255, 136, 0.15); color: var(--accent-green); }
-.cat-anime { background: rgba(255, 204, 0, 0.15); color: var(--accent-yellow); }
+.cat-cafe {
+  background: rgba(255, 51, 102, 0.15);
+  color: var(--accent-pink);
+}
+
+.cat-figure {
+  background: rgba(0, 204, 255, 0.15);
+  color: var(--accent-cyan);
+}
+
+.cat-event {
+  background: rgba(0, 255, 136, 0.15);
+  color: var(--accent-green);
+}
+
+.cat-anime {
+  background: rgba(255, 204, 0, 0.15);
+  color: var(--accent-yellow);
+}
+
+.cat-game {
+  background: rgba(179, 102, 255, 0.15);
+  color: var(--accent-purple);
+}
 
 .card-title {
   font-size: 16px;
@@ -231,8 +266,18 @@ body {
   font-size: 12px;
 }
 
-.meta-label { color: var(--text-dim); }
-.meta-value { color: var(--text-secondary); text-align: right; max-width: 70%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.meta-label {
+  color: var(--text-dim);
+}
+
+.meta-value {
+  color: var(--text-secondary);
+  text-align: right;
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .card-status {
   position: absolute;
@@ -245,9 +290,20 @@ body {
   text-transform: uppercase;
 }
 
-.status-active { background: rgba(0, 255, 136, 0.15); color: var(--accent-green); }
-.status-upcoming { background: rgba(0, 204, 255, 0.15); color: var(--accent-cyan); }
-.status-ended { background: rgba(85, 85, 112, 0.3); color: var(--text-dim); }
+.status-active {
+  background: rgba(0, 255, 136, 0.15);
+  color: var(--accent-green);
+}
+
+.status-upcoming {
+  background: rgba(0, 204, 255, 0.15);
+  color: var(--accent-cyan);
+}
+
+.status-ended {
+  background: rgba(85, 85, 112, 0.3);
+  color: var(--text-dim);
+}
 
 /* Detail Modal */
 .modal-overlay {
@@ -261,7 +317,9 @@ body {
   padding: 24px;
 }
 
-.modal-overlay.show { display: flex; }
+.modal-overlay.show {
+  display: flex;
+}
 
 .modal {
   background: var(--bg-card);
@@ -283,7 +341,9 @@ body {
   cursor: pointer;
 }
 
-.modal-close:hover { color: var(--text-primary); }
+.modal-close:hover {
+  color: var(--text-primary);
+}
 
 .modal-title {
   font-size: 24px;
@@ -334,7 +394,9 @@ body {
   transition: opacity 0.2s;
 }
 
-.modal-link:hover { opacity: 0.85; }
+.modal-link:hover {
+  opacity: 0.85;
+}
 
 /* Footer */
 .footer {
@@ -347,7 +409,10 @@ body {
   font-size: 12px;
 }
 
-.footer a { color: var(--accent-cyan); text-decoration: none; }
+.footer a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
 
 /* About specific */
 .about-content {
@@ -376,6 +441,7 @@ body {
 
 /* Mobile (768px以下) */
 @media (max-width: 768px) {
+
   /* カードを縦1列に */
   .cards-grid {
     grid-template-columns: 1fr;
@@ -388,7 +454,9 @@ body {
     display: none;
   }
 
-  .header { padding: 12px 16px; }
+  .header {
+    padding: 12px 16px;
+  }
 
   /* 検索バーのパディング調整 */
   .search-bar {
@@ -436,7 +504,9 @@ body {
     padding: 16px 12px;
   }
 
-  .about-content { padding: 0 16px; }
+  .about-content {
+    padding: 0 16px;
+  }
 }
 
 /* タブレット表示 (769px〜1024px) */
