@@ -74,6 +74,161 @@
             ],
             "language": "ja",
             "update_frequency": "daily"
+        },
+        {
+            "id": "amiami-news",
+            "name": "あみあみニュース",
+            "url": "https://news.amiami.jp",
+            "rss": "https://news.amiami.jp/feed",
+            "type": "rss",
+            "categories": [
+                "figure",
+                "cafe",
+                "event"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
+            "id": "nitroplus-news",
+            "name": "ニトロプラス 最新ニュース",
+            "url": "https://www.nitroplus.co.jp/news/",
+            "rss": "https://www.nitroplus.co.jp/news/index.xml",
+            "type": "rss",
+            "categories": [
+                "anime",
+                "event"
+            ],
+            "language": "ja",
+            "update_frequency": "weekly"
+        },
+        {
+            "id": "nitroplus-goods",
+            "name": "ニトロプラス グッズ",
+            "url": "https://www.nitroplus.co.jp/goods/",
+            "rss": "https://www.nitroplus.co.jp/goods/index.xml",
+            "type": "rss",
+            "categories": [
+                "figure"
+            ],
+            "language": "ja",
+            "update_frequency": "weekly"
+        },
+        {
+            "id": "nitroplus-support",
+            "name": "ニトロプラス サポート",
+            "url": "https://www.nitroplus.co.jp/support/",
+            "rss": "https://www.nitroplus.co.jp/support/index.xml",
+            "type": "rss",
+            "categories": [
+                "event"
+            ],
+            "language": "ja",
+            "update_frequency": "weekly"
+        },
+        {
+            "id": "nitroplus-blog",
+            "name": "モットニトロ（スタッフブログ）",
+            "url": "https://www.nitroplus.co.jp/staff/",
+            "rss": "https://www.nitroplus.co.jp/staff/index.xml",
+            "type": "rss",
+            "categories": [
+                "anime",
+                "event"
+            ],
+            "language": "ja",
+            "update_frequency": "weekly"
+        },
+        {
+            "id": "animatetimes",
+            "name": "アニメイトタイムズ",
+            "url": "https://www.animatetimes.com/",
+            "rss": "https://www.animatetimes.com/feed/",
+            "type": "rss",
+            "categories": [
+                "anime",
+                "cafe",
+                "event"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
+            "id": "anime-eiga",
+            "name": "アニメ映画.com",
+            "url": "https://anime.eiga.com/news/",
+            "rss": "https://anime.eiga.com/news/rss/",
+            "type": "rss",
+            "categories": [
+                "anime",
+                "event"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
+            "id": "natalie-news",
+            "name": "ナタリー（総合ニュース）",
+            "url": "https://natalie.mu/news",
+            "rss": "https://natalie.mu/news/feed/news",
+            "type": "rss",
+            "categories": [
+                "anime",
+                "event"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
+            "id": "eeo-media",
+            "name": "eeo today メディア",
+            "url": "https://eeo.today/media/",
+            "rss": null,
+            "type": "scrape",
+            "categories": [
+                "cafe",
+                "event",
+                "figure"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
+            "id": "dengeki-hobby",
+            "name": "電撃ホビーウェブ",
+            "url": "https://hobby.dengeki.com/",
+            "rss": "https://hobby.dengeki.com/feed/",
+            "type": "rss",
+            "categories": [
+                "figure"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
+            "id": "prtimes-kotobukiya",
+            "name": "PR TIMES（コトブキヤ）",
+            "url": "https://prtimes.jp/main/html/searchrlp/company_id/74603",
+            "rss": "https://prtimes.jp/companyrdf.php?company_id=74603",
+            "type": "rss",
+            "categories": [
+                "figure",
+                "event"
+            ],
+            "language": "ja",
+            "update_frequency": "weekly"
+        },
+        {
+            "id": "hobby-watch",
+            "name": "HOBBY Watch",
+            "url": "https://hobby.watch.impress.co.jp/",
+            "rss": "https://hobby.watch.impress.co.jp/data/rss/1.0/hob/feed.rdf",
+            "type": "rss",
+            "categories": [
+                "figure"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
         }
     ]
 }
