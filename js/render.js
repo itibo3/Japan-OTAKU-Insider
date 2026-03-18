@@ -23,10 +23,14 @@ function renderCards(filter = 'all', search = '') {
         const statusLabel = { active: 'Active', upcoming: 'Upcoming', ended: 'Ended' }[item.status] || item.status;
 
         const datesDisplay = item.dates && item.dates.display ? item.dates.display : item.dates;
+        const thumbHtml = item.thumbnail
+            ? `<img class="card-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">`
+            : '';
 
         return `
       <div class="card" onclick="openModal('${item.id}')">
         <span class="card-status ${statusClass}">${statusLabel}</span>
+        ${thumbHtml}
         <div class="card-category ${catClass}">${catLabel}</div>
         <div class="card-title">${item.title}</div>
         <div class="card-meta">
@@ -68,6 +72,7 @@ function openModal(id) {
     <button class="modal-close" onclick="closeModal()">&times;</button>
     <div class="modal-category ${catClass}">${catLabel}</div>
     <div class="modal-title">${item.title}</div>
+    ${item.thumbnail ? `<img class="modal-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">` : ''}
     ${sections}
     ${sourceUrl ? `<a href="${sourceUrl}" target="_blank" class="modal-link">View Source &rarr;</a>` : ''}
   `;
