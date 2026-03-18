@@ -12,11 +12,18 @@ japan_otaku_insider_spec.md
 data/pending_translation.json
 data/new_entries.json
 data/archive/
+data/staging/
 
 # 非公開：ノードモジュール
 node_modules/
 package.json
 package-lock.json
+
+# 非公開：RSS Manager V2（ローカル専用ツール）
+rss_manager.py
+rss_manager/
+rss_manager_ui/
+rss_manager_data/
 
 # その他
 __pycache__/

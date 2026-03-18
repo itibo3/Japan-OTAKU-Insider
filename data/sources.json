@@ -11,6 +11,11 @@
                 "event",
                 "figure"
             ],
+            "content_tags": [
+                "akihabara",
+                "event",
+                "figure"
+            ],
             "language": "ja",
             "update_frequency": "daily"
         },
@@ -22,6 +27,11 @@
             "type": "scrape",
             "categories": [
                 "figure"
+            ],
+            "content_tags": [
+                "figure",
+                "merchandise",
+                "good-smile"
             ],
             "language": "ja",
             "update_frequency": "daily"
@@ -35,6 +45,11 @@
             "categories": [
                 "event"
             ],
+            "content_tags": [
+                "anime-japan",
+                "event",
+                "exhibition"
+            ],
             "language": "ja",
             "update_frequency": "weekly"
         },
@@ -46,6 +61,11 @@
             "type": "rss",
             "categories": [
                 "anime"
+            ],
+            "content_tags": [
+                "anime-news",
+                "manga",
+                "pop-culture"
             ],
             "language": "ja",
             "update_frequency": "daily"
@@ -60,6 +80,11 @@
                 "cafe",
                 "event"
             ],
+            "content_tags": [
+                "cafe",
+                "collaboration",
+                "event"
+            ],
             "language": "ja",
             "update_frequency": "daily"
         },
@@ -70,6 +95,10 @@
             "rss": "https://www.4gamer.net/rss/index.xml",
             "type": "rss",
             "categories": [
+                "anime"
+            ],
+            "content_tags": [
+                "game-news",
                 "anime"
             ],
             "language": "ja",
@@ -86,6 +115,11 @@
                 "cafe",
                 "event"
             ],
+            "content_tags": [
+                "figure",
+                "merchandise",
+                "amiami"
+            ],
             "language": "ja",
             "update_frequency": "daily"
         },
@@ -99,6 +133,11 @@
                 "anime",
                 "event"
             ],
+            "content_tags": [
+                "visual-novel",
+                "anime",
+                "nitroplus"
+            ],
             "language": "ja",
             "update_frequency": "weekly"
         },
@@ -111,17 +150,10 @@
             "categories": [
                 "figure"
             ],
-            "language": "ja",
-            "update_frequency": "weekly"
-        },
-        {
-            "id": "nitroplus-support",
-            "name": "ニトロプラス サポート",
-            "url": "https://www.nitroplus.co.jp/support/",
-            "rss": "https://www.nitroplus.co.jp/support/index.xml",
-            "type": "rss",
-            "categories": [
-                "event"
+            "content_tags": [
+                "merchandise",
+                "figure",
+                "nitroplus"
             ],
             "language": "ja",
             "update_frequency": "weekly"
@@ -135,6 +167,11 @@
             "categories": [
                 "anime",
                 "event"
+            ],
+            "content_tags": [
+                "visual-novel",
+                "behind-the-scenes",
+                "nitroplus"
             ],
             "language": "ja",
             "update_frequency": "weekly"
@@ -150,6 +187,11 @@
                 "cafe",
                 "event"
             ],
+            "content_tags": [
+                "anime-news",
+                "merchandise",
+                "animate"
+            ],
             "language": "ja",
             "update_frequency": "daily"
         },
@@ -163,6 +205,11 @@
                 "anime",
                 "event"
             ],
+            "content_tags": [
+                "anime-movie",
+                "film",
+                "anime-news"
+            ],
             "language": "ja",
             "update_frequency": "daily"
         },
@@ -175,6 +222,10 @@
             "categories": [
                 "anime",
                 "event"
+            ],
+            "content_tags": [
+                "anime-news",
+                "pop-culture"
             ],
             "language": "ja",
             "update_frequency": "daily"
@@ -190,6 +241,11 @@
                 "event",
                 "figure"
             ],
+            "content_tags": [
+                "cafe",
+                "collaboration",
+                "merchandise"
+            ],
             "language": "ja",
             "update_frequency": "daily"
         },
@@ -201,6 +257,11 @@
             "type": "rss",
             "categories": [
                 "figure"
+            ],
+            "content_tags": [
+                "hobby",
+                "figure",
+                "model-kit"
             ],
             "language": "ja",
             "update_frequency": "daily"
@@ -215,6 +276,11 @@
                 "figure",
                 "event"
             ],
+            "content_tags": [
+                "figure",
+                "kotobukiya",
+                "merchandise"
+            ],
             "language": "ja",
             "update_frequency": "weekly"
         },
@@ -226,6 +292,11 @@
             "type": "rss",
             "categories": [
                 "figure"
+            ],
+            "content_tags": [
+                "hobby",
+                "figure",
+                "model-kit"
             ],
             "language": "ja",
             "update_frequency": "daily"
