@@ -13,6 +13,7 @@ data/pending_translation.json
 data/new_entries.json
 data/archive/
 data/staging/
+data/sources.json
 
 # 非公開：ノードモジュール
 node_modules/
