@@ -67,17 +67,21 @@ jobs:
         env:
           DEEPL_AUTH_KEY: ${{ secrets.DEEPL_AUTH_KEY }}
         run: |
-          set -e
           echo "==> Translate staging"
           mkdir -p data/staging
           count=0
+          fail=0
           for f in data/staging/*.json; do
             [ -f "$f" ] || continue
             echo "Translating $f ..."
-            python3 scripts/translate_with_deepl.py "$f"
-            count=$((count+1))
+            if python3 scripts/translate_with_deepl.py "$f"; then
+              count=$((count+1))
+            else
+              echo "WARNING: $f の翻訳に失敗（スキップして続行）"
+              fail=$((fail+1))
+            fi
           done
-          echo "Translated $count file(s)."
+          echo "Translated $count file(s), failed $fail file(s)."
 
       - name: Add entries
         run: |
@@ -112,7 +116,11 @@ jobs:
           echo "==> Commit and push"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main || true
+          if ! git pull --rebase origin main; then
+            echo "WARNING: rebase にコンフリクトが発生。abort して push をスキップします。"
+            git rebase --abort || true
+            exit 0
+          fi
           git add data/entries.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
