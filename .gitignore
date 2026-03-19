@@ -8,6 +8,7 @@ scripts/
 !scripts/sort_entries.py
 !scripts/fill_og_images.py
 !scripts/reset_entries_from_rss.py
+!scripts/post_to_x.py
 
 # 非公開：プロンプトテンプレート（Perplexity用は例外）
 prompts/
@@ -28,6 +29,7 @@ data/new_entries.json
 data/archive/
 data/staging/
 data/entries_clean.json
+# data/.x_posted_ids は X BOT の投稿済みID追跡用（リポジトリに含める）
 # data/sources.json は Actions で RSS 取得に必要なのでリポジトリに含める
 
 # 非公開：ノードモジュール

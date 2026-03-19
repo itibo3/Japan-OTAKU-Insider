@@ -31,6 +31,65 @@ function sortByNewestFirst(entries) {
     });
 }
 
+const CARDS_PER_PAGE = 24;
+let currentFiltered = [];
+let currentShown = 0;
+
+function renderCardHtml(item) {
+    const categoryPills = renderCategoryPills(item);
+    const statusClass = `status-${item.status}`;
+    const statusLabel = { active: 'Active', upcoming: 'Upcoming', ended: 'Ended' }[item.status] || item.status;
+
+    const datesDisplay = item.dates && item.dates.display ? item.dates.display : item.dates;
+    const thumbHtml = item.thumbnail
+        ? `<img class="card-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">`
+        : '';
+
+    return `
+      <div class="card" onclick="openModal('${item.id}')">
+        ${thumbHtml}
+        <div class="card-toolbar">
+          <span class="card-status ${statusClass}">${statusLabel}</span>
+          ${categoryPills}
+        </div>
+        <div class="card-title">${item.title}</div>
+        <div class="card-meta">
+          ${datesDisplay ? `<div class="meta-row"><span class="meta-label">Dates</span><span class="meta-value">${datesDisplay}</span></div>` : ''}
+          ${item.price ? `<div class="meta-row"><span class="meta-label">Price</span><span class="meta-value">${item.price}</span></div>` : ''}
+          ${item.location && typeof item.location === 'object' ? `<div class="meta-row"><span class="meta-label">Location</span><span class="meta-value">${item.location.name || item.location.area || item.location}</span></div>` : (item.location ? `<div class="meta-row"><span class="meta-label">Location</span><span class="meta-value">${item.location}</span></div>` : '')}
+          ${item.manufacturer ? `<div class="meta-row"><span class="meta-label">Maker</span><span class="meta-value">${item.manufacturer}</span></div>` : ''}
+        </div>
+      </div>`;
+}
+
+function updateLoadMoreButton() {
+    let btn = document.getElementById('loadMoreBtn');
+    const remaining = currentFiltered.length - currentShown;
+    if (remaining <= 0) {
+        if (btn) btn.remove();
+        return;
+    }
+    if (!btn) {
+        btn = document.createElement('button');
+        btn.id = 'loadMoreBtn';
+        btn.className = 'load-more-btn';
+        btn.addEventListener('click', loadMoreCards);
+        const grid = document.getElementById('cardsGrid');
+        grid.parentNode.insertBefore(btn, grid.nextSibling);
+    }
+    const next = Math.min(remaining, CARDS_PER_PAGE);
+    btn.textContent = `Load More (${remaining} remaining)`;
+}
+
+function loadMoreCards() {
+    const grid = document.getElementById('cardsGrid');
+    if (!grid) return;
+    const next = currentFiltered.slice(currentShown, currentShown + CARDS_PER_PAGE);
+    grid.insertAdjacentHTML('beforeend', next.map(renderCardHtml).join(''));
+    currentShown += next.length;
+    updateLoadMoreButton();
+}
+
 function renderCards(filter = 'all', search = '') {
     const grid = document.getElementById('cardsGrid');
     if (!grid) return;
@@ -50,34 +109,19 @@ function renderCards(filter = 'all', search = '') {
     }
 
     filtered = sortByNewestFirst(filtered);
+    currentFiltered = filtered;
 
-    grid.innerHTML = filtered.map(item => {
-        const categoryPills = renderCategoryPills(item);
-        const statusClass = `status-${item.status}`;
-        const statusLabel = { active: 'Active', upcoming: 'Upcoming', ended: 'Ended' }[item.status] || item.status;
+    if (filtered.length === 0) {
+        grid.innerHTML = '<div class="empty-state">No results found. Try a different search or category.</div>';
+        const oldBtn = document.getElementById('loadMoreBtn');
+        if (oldBtn) oldBtn.remove();
+        return;
+    }
 
-        const datesDisplay = item.dates && item.dates.display ? item.dates.display : item.dates;
-        const thumbHtml = item.thumbnail
-            ? `<img class="card-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">`
-            : '';
-
-        return `
-      <div class="card" onclick="openModal('${item.id}')">
-        ${thumbHtml}
-        <div class="card-toolbar">
-          <span class="card-status ${statusClass}">${statusLabel}</span>
-          ${categoryPills}
-        </div>
-        <div class="card-title">${item.title}</div>
-        <div class="card-meta">
-          ${datesDisplay ? `<div class="meta-row"><span class="meta-label">Dates</span><span class="meta-value">${datesDisplay}</span></div>` : ''}
-          ${item.price ? `<div class="meta-row"><span class="meta-label">Price</span><span class="meta-value">${item.price}</span></div>` : ''}
-          ${item.location && typeof item.location === 'object' ? `<div class="meta-row"><span class="meta-label">Location</span><span class="meta-value">${item.location.name || item.location.area || item.location}</span></div>` : (item.location ? `<div class="meta-row"><span class="meta-label">Location</span><span class="meta-value">${item.location}</span></div>` : '')}
-          ${item.manufacturer ? `<div class="meta-row"><span class="meta-label">Maker</span><span class="meta-value">${item.manufacturer}</span></div>` : ''}
-        </div>
-      </div>
-    `;
-    }).join('');
+    const initial = filtered.slice(0, CARDS_PER_PAGE);
+    grid.innerHTML = initial.map(renderCardHtml).join('');
+    currentShown = initial.length;
+    updateLoadMoreButton();
 }
 
 function openModal(id) {
@@ -110,12 +154,31 @@ function openModal(id) {
     if (item.releaseDate) sections += `<div class="modal-section"><div class="modal-section-title">Release</div><div class="modal-section-content">${item.releaseDate}</div></div>`;
     if (item.whereToBuy) sections += `<div class="modal-section"><div class="modal-section-title">Where to Buy</div><div class="modal-section-content">${item.whereToBuy}</div></div>`;
 
+    let journeyHtml = '';
+    if (item.series_id) {
+        const related = dbEntries.filter(e => e.series_id === item.series_id && e.id !== item.id);
+        if (related.length > 0) {
+            const relatedItems = related.map(e => {
+                const cats = getCategories(e).map(c => categoryLabel(c)).join(', ');
+                return `<li class="journey-item" onclick="openModal('${e.id}')">
+                    <span class="journey-title">${e.title}</span>
+                    ${cats ? `<span class="journey-cats">${cats}</span>` : ''}
+                </li>`;
+            }).join('');
+            journeyHtml = `<div class="modal-section journey-section">
+                <div class="modal-section-title">Series: ${item.series || item.series_id}</div>
+                <ul class="journey-list">${relatedItems}</ul>
+            </div>`;
+        }
+    }
+
     document.getElementById('modal').innerHTML = `
     <button class="modal-close" onclick="closeModal()">&times;</button>
     ${modalCategoriesHtml}
     <div class="modal-title">${item.title}</div>
     ${item.thumbnail ? `<img class="modal-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">` : ''}
     ${sections}
+    ${journeyHtml}
     ${sourceUrl ? `<a href="${sourceUrl}" target="_blank" class="modal-link">View Source &rarr;</a>` : ''}
   `;
 
@@ -133,4 +196,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.target === e.currentTarget) closeModal();
         });
     }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+    });
 });

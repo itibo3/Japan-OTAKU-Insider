@@ -45,12 +45,21 @@ function updateStats() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+  const grid = document.getElementById('cardsGrid');
+  if (grid) {
+    grid.innerHTML = '<div class="loading-spinner"><div class="spinner"></div><p>Loading entries...</p></div>';
+  }
+
   dbEntries = await loadDatabase();
 
-  if (document.getElementById('cardsGrid')) {
-    updateStats();
-    renderCards('all', '');
-    setupFilters();
-    setupSearch();
+  if (grid) {
+    if (dbEntries.length === 0) {
+      grid.innerHTML = '<div class="empty-state">Failed to load entries. Please try refreshing the page.</div>';
+    } else {
+      updateStats();
+      renderCards('all', '');
+      setupFilters();
+      setupSearch();
+    }
   }
 });

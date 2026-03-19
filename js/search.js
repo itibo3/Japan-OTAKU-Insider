@@ -13,9 +13,13 @@ function setupSearch() {
     const searchInput = document.getElementById('searchInput');
     if (!searchInput) return;
 
+    let debounceTimer;
     searchInput.addEventListener('input', (e) => {
-        const activeTab = document.querySelector('.cat-tab.active');
-        const activeCat = activeTab ? activeTab.dataset.cat : 'all';
-        renderCards(activeCat, e.target.value);
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+            const activeTab = document.querySelector('.cat-tab.active');
+            const activeCat = activeTab ? activeTab.dataset.cat : 'all';
+            renderCards(activeCat, e.target.value);
+        }, 300);
     });
 }

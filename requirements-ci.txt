@@ -1,0 +1,4 @@
+# GitHub Actions (daily-update.yml) で使用する依存パッケージ
+# バージョンを固定して再現性を確保する
+feedparser>=6.0,<7
+requests>=2.28,<3

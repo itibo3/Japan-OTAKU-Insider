@@ -67,4 +67,4 @@ Daily Update ワークフローを動かすまでの手順です。
 ## 次回以降
 
 - 手動実行はいつでも「Actions」→「Daily Update」→「Run workflow」
-- 日次自動実行: 毎日 4:00 JST に schedule で自動実行される
+- 日次自動実行: 毎日 19:00 JST (UTC 10:00) に schedule で自動実行される

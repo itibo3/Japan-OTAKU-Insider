@@ -46,7 +46,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install feedparser requests
+        run: pip install -r requirements-ci.txt
 
       - name: RSS Fetch
         run: |
@@ -103,8 +103,8 @@ jobs:
 
       - name: Fill missing thumbnails
         run: |
-          echo "==> Fill missing thumbnails (CI: --limit 10)"
-          python3 scripts/fill_og_images.py --only-missing --limit 10
+          echo "==> Fill missing thumbnails (CI: --limit 30)"
+          python3 scripts/fill_og_images.py --only-missing --limit 30
 
       - name: Update status
         run: |
@@ -127,6 +127,24 @@ jobs:
           else
             git commit -m "chore: auto-update entries ($(date -u +%Y-%m-%d))"
             git push origin main
+          fi
+
+      - name: Post new entries to X
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: |
+          echo "==> Post to X (Twitter)"
+          python3 scripts/post_to_x.py || true
+
+      - name: Save X posted IDs
+        run: |
+          if [ -f data/.x_posted_ids ] && ! git diff --quiet data/.x_posted_ids 2>/dev/null; then
+            git add data/.x_posted_ids
+            git commit -m "chore: update X posted IDs" || true
+            git push origin main || true
           fi
 
       - name: Diagnose on failure
