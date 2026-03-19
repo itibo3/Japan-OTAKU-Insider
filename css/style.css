@@ -153,6 +153,12 @@ body {
   gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.category-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .cat-tab {
