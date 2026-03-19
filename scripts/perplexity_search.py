@@ -4,11 +4,8 @@ perplexity_search.py — Perplexity API でカテゴリ別検索し、staging JS
 
 使い方:
   python3 scripts/perplexity_search.py --category cafe
-  python3 scripts/perplexity_search.py --category vtuber
-  python3 scripts/perplexity_search.py --category figure
-  python3 scripts/perplexity_search.py --category game
-  python3 scripts/perplexity_search.py --category anime
-  python3 scripts/perplexity_search.py --category other
+  python3 scripts/perplexity_search.py --category cafe --debug   # 生レスポンス保存・0件時の診断
+  python3 scripts/perplexity_search.py --category cafe --dry-run # 送信内容のみ表示（キー不要）
 
 環境変数 PERPLEXITY_API_KEY が未設定の場合は何もしずに終了（exit 0）
 出力: data/staging/perplexity_{category}_YYYYMMDD.json
@@ -153,10 +150,20 @@ def to_entry(raw: dict, category: str, index: int) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--category", choices=CATEGORIES, required=True)
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="生レスポンスをファイルに保存し、パース失敗時も診断情報を出力する",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="API を呼ばず、送信するプロンプト内容だけ表示する（キー不要）",
+    )
     args = parser.parse_args()
 
     api_key = os.getenv("PERPLEXITY_API_KEY", "").strip()
-    if not api_key:
+    if not api_key and not args.dry_run:
         print("PERPLEXITY_API_KEY が未設定なので、検索をスキップします。", file=sys.stderr)
         sys.exit(0)
 
@@ -173,12 +180,28 @@ def main() -> None:
         {"role": "user", "content": user_content},
     ]
 
+    if args.dry_run:
+        print(f"[dry-run] キー未設定でも送信内容を確認できます")
+        print(f"  category: {args.category}")
+        print(f"  user_prompt: {user_query[:80]}...")
+        print(f"  user_content: {user_content[:100]}...")
+        print(f"  system_prompt: {SYSTEM_PROMPT[:80]}...")
+        return
+
     print(f"Perplexity 検索中: {args.category} (sonar-pro) ...")
     try:
         content = call_perplexity(api_key, messages, model="sonar-pro")
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
         sys.exit(1)
+
+    # debug: 生レスポンスを保存
+    if args.debug:
+        STAGING_DIR.mkdir(parents=True, exist_ok=True)
+        raw_path = STAGING_DIR / f"perplexity_debug_raw_{args.category}.txt"
+        raw_path.write_text(content, encoding="utf-8")
+        print(f"  [DEBUG] 生レスポンス保存: {raw_path} ({len(content)} 文字)")
+        print(f"  [DEBUG] 先頭 500 文字: {repr(content[:500])}")
 
     raw_list = extract_json(content)
     if not isinstance(raw_list, list):
@@ -194,6 +217,9 @@ def main() -> None:
 
     if not entries:
         print(f"  {args.category}: 0 件（パースできなかったか、結果なし）")
+        if args.debug:
+            print(f"  [DEBUG] extract_json の結果: type={type(raw_list)}, len={len(raw_list) if isinstance(raw_list, list) else 'N/A'}")
+            print(f"  [DEBUG] 想定形式: {{cat:int, news:[{{title, desc, date, place?, url}}]}} または [...]")
         return
 
     seen_urls = set()

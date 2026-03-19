@@ -1,0 +1,71 @@
+# Perplexity 検索の動作検証ワークフロー
+#
+# 目的: Perplexity が記事を取得しているか、パースは成功しているかを確認
+# 実行: Actions タブ → "Verify Perplexity" → "Run workflow"
+# 結果: data/staging/ の perplexity_*.json と debug ログを Artifact でダウンロード可能
+
+name: Verify Perplexity
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements-ci.txt
+
+      - name: Check PERPLEXITY_API_KEY
+        run: |
+          if [ -z "$PERPLEXITY_API_KEY" ]; then
+            echo "PERPLEXITY_API_KEY が未設定です。Secrets を確認してください。"
+            exit 1
+          fi
+          echo "PERPLEXITY_API_KEY は設定されています。"
+
+      - name: Perplexity Search (cafe, game) with --debug
+        run: |
+          mkdir -p data/staging
+          echo "==> cafe"
+          python3 scripts/perplexity_search.py --category cafe --debug || true
+          echo ""
+          echo "==> game"
+          python3 scripts/perplexity_search.py --category game --debug || true
+
+      - name: List staging output
+        run: |
+          echo "=== data/staging の内容 ==="
+          ls -la data/staging/ 2>/dev/null || echo "(empty or not found)"
+          echo ""
+          echo "=== perplexity_*.json の件数（先頭5件） ==="
+          for f in data/staging/perplexity_*.json; do
+            [ -f "$f" ] || continue
+            count=$(python3 -c "import json; d=json.load(open('$f')); print(len(d) if isinstance(d,list) else '?')" 2>/dev/null || echo "?")
+            echo "$f: $count 件"
+          done
+          echo ""
+          echo "=== debug raw ファイル ==="
+          for f in data/staging/perplexity_debug_raw_*.txt; do
+            [ -f "$f" ] || continue
+            echo "--- $f (先頭300文字) ---"
+            head -c 300 "$f"
+            echo ""
+          done
+
+      - name: Upload staging as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: perplexity-verify-${{ github.run_id }}
+          path: data/staging/
+          if-no-files-found: ignore
