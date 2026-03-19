@@ -117,18 +117,18 @@ jobs:
           echo "==> Commit and push"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/entries.json data/.x_posted_ids 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: auto-update entries ($(date -u +%Y-%m-%d))"
           if ! git pull --rebase origin main; then
             echo "WARNING: rebase にコンフリクトが発生。abort して push をスキップします。"
             git rebase --abort || true
             exit 0
           fi
-          git add data/entries.json
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "chore: auto-update entries ($(date -u +%Y-%m-%d))"
-            git push origin main
-          fi
+          git push origin main
 
       - name: Post new entries to X
         env:
