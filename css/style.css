@@ -7,6 +7,7 @@
   --accent-green: #00ff88;
   --accent-yellow: #ffcc00;
   --accent-purple: #b366ff;
+  --accent-vtuber: #bb33ff;
   --text-primary: #e8e8f0;
   --text-secondary: #8888aa;
   --text-dim: #555570;
@@ -229,6 +230,12 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.card-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
   margin-bottom: 12px;
 }
 
@@ -255,6 +262,11 @@ body {
 .cat-game {
   background: rgba(179, 102, 255, 0.15);
   color: var(--accent-purple);
+}
+
+.cat-vtuber {
+  background: rgba(187, 51, 255, 0.15);
+  color: var(--accent-vtuber);
 }
 
 .card-title {
@@ -378,6 +390,12 @@ body {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.modal-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
   margin-bottom: 20px;
 }
 

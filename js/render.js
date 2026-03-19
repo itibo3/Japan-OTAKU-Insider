@@ -1,10 +1,33 @@
+function getCategories(entry) {
+    if (Array.isArray(entry && entry.categories)) return entry.categories.filter(Boolean);
+    if (entry && entry.category) return [entry.category];
+    return [];
+}
+
+function categoryLabel(cat) {
+    return { cafe: 'Collab Cafe', figure: 'Figure', event: 'Event', anime: 'Anime News', vtuber: 'VTuber', game: 'Game News' }[cat] || cat;
+}
+
+function renderCategoryPills(entry) {
+    const cats = getCategories(entry).slice(0, 3);
+    if (cats.length === 0) return '';
+    const pills = cats
+        .map((c) => {
+            const cls = `cat-${c}`;
+            const label = categoryLabel(c);
+            return `<span class="card-category ${cls}">${label}</span>`;
+        })
+        .join('');
+    return `<div class="card-categories">${pills}</div>`;
+}
+
 function renderCards(filter = 'all', search = '') {
     const grid = document.getElementById('cardsGrid');
     if (!grid) return;
     let filtered = dbEntries;
 
     if (filter !== 'all') {
-        filtered = filtered.filter(item => item.category === filter);
+        filtered = filtered.filter(item => getCategories(item).includes(filter));
     }
 
     if (search) {
@@ -17,8 +40,7 @@ function renderCards(filter = 'all', search = '') {
     }
 
     grid.innerHTML = filtered.map(item => {
-        const catClass = `cat-${item.category}`;
-        const catLabel = { cafe: 'Collab Cafe', figure: 'Figure', event: 'Event', anime: 'Anime News', game: 'Game News' }[item.category] || item.category;
+        const categoryPills = renderCategoryPills(item);
         const statusClass = `status-${item.status}`;
         const statusLabel = { active: 'Active', upcoming: 'Upcoming', ended: 'Ended' }[item.status] || item.status;
 
@@ -31,7 +53,7 @@ function renderCards(filter = 'all', search = '') {
       <div class="card" onclick="openModal('${item.id}')">
         <span class="card-status ${statusClass}">${statusLabel}</span>
         ${thumbHtml}
-        <div class="card-category ${catClass}">${catLabel}</div>
+        ${categoryPills}
         <div class="card-title">${item.title}</div>
         <div class="card-meta">
           ${datesDisplay ? `<div class="meta-row"><span class="meta-label">Dates</span><span class="meta-value">${datesDisplay}</span></div>` : ''}
@@ -48,8 +70,14 @@ function openModal(id) {
     const item = dbEntries.find(i => String(i.id) === String(id));
     if (!item) return;
 
-    const catClass = `cat-${item.category}`;
-    const catLabel = { cafe: 'Collab Cafe', figure: 'Figure', event: 'Event', anime: 'Anime News', game: 'Game News' }[item.category] || item.category;
+    const modalCategoriesHtml = (() => {
+        const cats = getCategories(item).slice(0, 3);
+        if (cats.length === 0) return '';
+        const pills = cats
+            .map((c) => `<span class="modal-category cat-${c}">${categoryLabel(c)}</span>`)
+            .join('');
+        return `<div class="modal-categories">${pills}</div>`;
+    })();
 
     let sections = '';
     const datesDisplay = item.dates && item.dates.display ? item.dates.display : item.dates;
@@ -70,7 +98,7 @@ function openModal(id) {
 
     document.getElementById('modal').innerHTML = `
     <button class="modal-close" onclick="closeModal()">&times;</button>
-    <div class="modal-category ${catClass}">${catLabel}</div>
+    ${modalCategoriesHtml}
     <div class="modal-title">${item.title}</div>
     ${item.thumbnail ? `<img class="modal-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">` : ''}
     ${sections}

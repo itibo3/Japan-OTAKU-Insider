@@ -1,6 +1,12 @@
 let dbEntries = [];
 let dbMeta = {};
 
+function getCategories(entry) {
+  if (Array.isArray(entry && entry.categories)) return entry.categories.filter(Boolean);
+  if (entry && entry.category) return [entry.category];
+  return [];
+}
+
 async function loadDatabase() {
   try {
     const response = await fetch('/Japan-OTAKU-Insider/data/entries.json');
@@ -21,7 +27,7 @@ function updateStats() {
   if (!statsContainer) return;
 
   const total = dbEntries.length;
-  const categories = new Set(dbEntries.map(e => e.category)).size;
+  const categories = new Set(dbEntries.flatMap(getCategories)).size;
   const active = dbEntries.filter(e => e.status === 'active').length;
 
   let dateStr = "Unknown";
