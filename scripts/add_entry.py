@@ -81,8 +81,8 @@ def check_duplicate(new_entry, existing_entries):
 
     return False, "", False
 
-def add_entries_from_file(filepath):
-    """Geminiの出力JSONファイルからエントリーを追加"""
+def add_entries_from_file(filepath, reset=False):
+    """Geminiの出力JSONファイルからエントリーを追加。reset=True のときは既存を空にしてから追加"""
     with open(filepath, 'r', encoding='utf-8') as f:
         new_entries = json.load(f)
 
@@ -91,6 +91,9 @@ def add_entries_from_file(filepath):
         new_entries = [new_entries]
 
     db = load_entries()
+    if reset:
+        db["entries"] = []
+        print("  (reset: entries を空にしました)")
     existing_entries = db["entries"]
 
     added = 0
@@ -105,7 +108,7 @@ def add_entries_from_file(filepath):
             if is_warn:
                 print(f"  ⚠ WARNING: \"{entry.get('title', 'Unknown')}\" may be similar to {reason} — 確認してください")
             
-            db["entries"].append(entry)
+            db["entries"].insert(0, entry)
             added += 1
             print(f"  Added: {entry.get('title', 'Unknown')}")
 
@@ -113,10 +116,18 @@ def add_entries_from_file(filepath):
     print(f"\n{added} entries added. Total: {db['total_entries']}")
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python add_entry.py <gemini_output.json>")
-        print("  or:  python add_entry.py --from <filepath>")
+    args = sys.argv[1:]
+    if not args:
+        print("Usage: python add_entry.py [--reset] <gemini_output.json>")
+        print("  --reset : entries を空にしてから追加（リセット後の再構築用）")
         sys.exit(1)
 
-    filepath = sys.argv[-1]
-    add_entries_from_file(filepath)
+    reset = "--reset" in args
+    if reset:
+        args = [a for a in args if a != "--reset"]
+    filepath = args[-1] if args else ""
+    if not filepath or filepath.startswith("--"):
+        print("ERROR: ファイルパスを指定してください")
+        sys.exit(1)
+
+    add_entries_from_file(filepath, reset=reset)

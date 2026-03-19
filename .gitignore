@@ -4,6 +4,10 @@ scripts/
 !scripts/add_entry.py
 !scripts/update_status.py
 !scripts/perplexity_search.py
+!scripts/rss_fetch.py
+!scripts/sort_entries.py
+!scripts/fill_og_images.py
+!scripts/reset_entries_from_rss.py
 
 # 非公開：プロンプトテンプレート（Perplexity用は例外）
 prompts/

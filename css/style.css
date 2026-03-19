@@ -301,15 +301,25 @@ body {
   text-overflow: ellipsis;
 }
 
+.card-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.card-toolbar .card-categories {
+  margin-bottom: 0;
+}
+
 .card-status {
-  position: absolute;
-  top: 16px;
-  right: 16px;
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 .status-active {

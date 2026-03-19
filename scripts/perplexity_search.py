@@ -153,7 +153,6 @@ def to_entry(raw: dict, category: str, index: int) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--category", choices=CATEGORIES, required=True)
-    parser.add_argument("--model", default="sonar-pro", help="Perplexity model (sonar-pro recommended)")
     args = parser.parse_args()
 
     api_key = os.getenv("PERPLEXITY_API_KEY", "").strip()
@@ -176,7 +175,7 @@ def main() -> None:
 
     print(f"Perplexity 検索中: {args.category} (sonar-pro) ...")
     try:
-        content = call_perplexity(api_key, messages, model=args.model)
+        content = call_perplexity(api_key, messages, model="sonar-pro")
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
         sys.exit(1)
@@ -196,6 +195,15 @@ def main() -> None:
     if not entries:
         print(f"  {args.category}: 0 件（パースできなかったか、結果なし）")
         return
+
+    seen_urls = set()
+    for entry in entries:
+        url = (entry.get("source") or {}).get("url", "").strip()
+        if url and url in seen_urls:
+            entry["source"] = {}
+            print(f"  WARNING: 重複URLをクリア — {entry.get('title_ja', entry.get('title', ''))[:40]}...")
+        elif url:
+            seen_urls.add(url)
 
     STAGING_DIR.mkdir(parents=True, exist_ok=True)
     date_str = datetime.now(JST).strftime("%Y%m%d_%H%M")

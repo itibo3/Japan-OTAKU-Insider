@@ -21,6 +21,16 @@ function renderCategoryPills(entry) {
     return `<div class="card-categories">${pills}</div>`;
 }
 
+function sortByNewestFirst(entries) {
+    const idDateRe = /^\w+-(\d{8})-/;
+    return [...entries].sort((a, b) => {
+        const da = (idDateRe.exec(a.id) || [null, '00000000'])[1];
+        const db = (idDateRe.exec(b.id) || [null, '00000000'])[1];
+        if (da !== db) return db.localeCompare(da);
+        return (b.id || '').localeCompare(a.id || '');
+    });
+}
+
 function renderCards(filter = 'all', search = '') {
     const grid = document.getElementById('cardsGrid');
     if (!grid) return;
@@ -39,6 +49,8 @@ function renderCards(filter = 'all', search = '') {
         );
     }
 
+    filtered = sortByNewestFirst(filtered);
+
     grid.innerHTML = filtered.map(item => {
         const categoryPills = renderCategoryPills(item);
         const statusClass = `status-${item.status}`;
@@ -51,9 +63,11 @@ function renderCards(filter = 'all', search = '') {
 
         return `
       <div class="card" onclick="openModal('${item.id}')">
-        <span class="card-status ${statusClass}">${statusLabel}</span>
         ${thumbHtml}
-        ${categoryPills}
+        <div class="card-toolbar">
+          <span class="card-status ${statusClass}">${statusLabel}</span>
+          ${categoryPills}
+        </div>
         <div class="card-title">${item.title}</div>
         <div class="card-meta">
           ${datesDisplay ? `<div class="meta-row"><span class="meta-label">Dates</span><span class="meta-value">${datesDisplay}</span></div>` : ''}

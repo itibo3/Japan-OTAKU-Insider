@@ -78,6 +78,9 @@ jobs:
             python3 scripts/add_entry.py "$f"
           done
 
+      - name: Sort entries (newest first)
+        run: python3 scripts/sort_entries.py
+
       - name: Fill missing thumbnails
         run: python3 scripts/fill_og_images.py --only-missing
 

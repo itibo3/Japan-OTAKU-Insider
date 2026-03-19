@@ -7,6 +7,7 @@ rss_fetch.py — RSSソースから記事を取得し、重複チェック後に
   python3 scripts/rss_fetch.py --source amiami-news # 特定ソースのみ
   python3 scripts/rss_fetch.py --limit 10          # 1ソースあたりの上限件数を指定
   python3 scripts/rss_fetch.py --fetch-thumbnails # URL先HTMLから先頭画像をthumbnailとして埋める
+  python3 scripts/rss_fetch.py --reset            # リセット用: 重複チェックなしで全件取得、reset_*.json に出力
 
 終了後、 data/staging/YYYYMMDD.json に未翻訳の記事が保存されます。
 そのJSONをGeminiへ渡して英語化 → add_entry.py で entries.json に追加してください。
@@ -280,6 +281,9 @@ def main():
     target_source = None
     limit = 20
     fetch_thumbnails = "--fetch-thumbnails" in args
+    reset_mode = "--reset" in args
+    if reset_mode:
+        fetch_thumbnails = True
     thumb_timeout = 12
     thumb_max_bytes = 2_000_000
 
@@ -295,7 +299,7 @@ def main():
             pass
 
     sources = load_sources()
-    existing_entries = load_entries()
+    existing_entries = [] if reset_mode else load_entries()
 
     # 対象ソースをフィルタ
     rss_sources = [s for s in sources if s.get("rss")]
@@ -306,6 +310,8 @@ def main():
             sys.exit(1)
 
     print(f"=== RSS Fetch 開始 ===")
+    if reset_mode:
+        print("  [RESET モード] 重複チェックなし、全件取得")
     print(f"対象ソース: {len(rss_sources)} 件 / 上限: 各 {limit} 件")
 
     all_new_items = []
@@ -321,13 +327,13 @@ def main():
         all_new_items.extend(items)
 
     if not all_new_items:
-        print("\n✅ 新規記事はありませんでした（全て重複）")
+        print("\n✅ 新規記事はありませんでした（全て重複）" if not reset_mode else "新規記事がありませんでした")
         return
 
     # ステージングJSONに保存
     STAGING_DIR.mkdir(parents=True, exist_ok=True)
     date_str = datetime.now(JST).strftime("%Y%m%d_%H%M")
-    staging_file = STAGING_DIR / f"{date_str}.json"
+    staging_file = STAGING_DIR / f"reset_{date_str}.json" if reset_mode else STAGING_DIR / f"{date_str}.json"
 
     with open(staging_file, "w", encoding="utf-8") as f:
         json.dump(all_new_items, f, ensure_ascii=False, indent=2)
@@ -336,9 +342,14 @@ def main():
     print(f"✅ 完了！ {len(all_new_items)} 件の新規記事をステージングに保存しました")
     print(f"   ファイル: {staging_file}")
     print(f"\n🛑 次のステップ:")
-    print(f"   1. Antigravity の Gemini に切り替えてください")
-    print(f"   2. 「{staging_file} の記事を英語化して entries.json に追加し、")
-    print(f"      GitHub にプッシュしてください」と依頼してください")
+    if reset_mode:
+        print(f"   1. entries.json をバックアップ済みなら空にする")
+        print(f"   2. translate_with_deepl.py で {staging_file} を英訳")
+        print(f"   3. add_entry.py --reset {staging_file} で entries.json を再構築")
+    else:
+        print(f"   1. Antigravity の Gemini に切り替えてください")
+        print(f"   2. 「{staging_file} の記事を英語化して entries.json に追加し、")
+        print(f"      GitHub にプッシュしてください」と依頼してください")
     print(f"{'='*50}")
 
 if __name__ == "__main__":
