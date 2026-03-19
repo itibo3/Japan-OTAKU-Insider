@@ -10,6 +10,8 @@ name: Daily Update
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 19 * * *'  # 毎日 4:00 JST (UTC 19:00)
 
 jobs:
   check:
@@ -48,6 +50,14 @@ jobs:
 
       - name: RSS Fetch
         run: python3 scripts/rss_fetch.py --limit 15 --fetch-thumbnails
+
+      - name: Perplexity Search (6 categories)
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+        run: |
+          for cat in cafe vtuber figure game anime other; do
+            python3 scripts/perplexity_search.py --category "$cat" || true
+          done
 
       - name: Translate staging
         env:

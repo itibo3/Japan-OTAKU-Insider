@@ -3,9 +3,16 @@ scripts/
 !scripts/translate_with_deepl.py
 !scripts/add_entry.py
 !scripts/update_status.py
+!scripts/perplexity_search.py
 
-# 非公開：プロンプトテンプレート
+# 非公開：プロンプトテンプレート（Perplexity用は例外）
 prompts/
+!prompts/perplexity_cafe.md
+!prompts/perplexity_vtuber.md
+!prompts/perplexity_figure.md
+!prompts/perplexity_game.md
+!prompts/perplexity_anime.md
+!prompts/perplexity_other.md
 
 # 非公開：引継書・仕様書
 HANDOVER.md
