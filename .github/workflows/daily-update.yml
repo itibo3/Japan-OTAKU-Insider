@@ -78,6 +78,9 @@ jobs:
             python3 scripts/add_entry.py "$f"
           done
 
+      - name: Fill missing thumbnails
+        run: python3 scripts/fill_og_images.py --only-missing
+
       - name: Update status
         run: python3 scripts/update_status.py
 
