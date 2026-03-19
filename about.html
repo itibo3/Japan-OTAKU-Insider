@@ -69,27 +69,43 @@
 
     <main class="about-content">
         <h1>About Japan OTAKU Insider</h1>
-        <p>Welcome to Japan OTAKU Insider! This is your ultimate English database for Japanese otaku culture, tailored
-            specifically for overseas otaku.</p>
+        <p>Japan OTAKU Insider is a free, English-language database that tracks Japanese otaku culture in near real-time.
+            Built for overseas fans who want to stay up to date without reading Japanese.</p>
 
-        <h2>What We Offer</h2>
-        <p>We aggregate the latest news, announcements, and limited-time events from Japan across 7 categories:</p>
+        <h2>What We Cover</h2>
+        <p>Articles are sorted into 7 categories:</p>
         <ul>
-            <li><strong>Collab Cafes:</strong> Pop-up restaurants and themed cafes featuring your favorite anime and game characters.</li>
-            <li><strong>Figures:</strong> New announcements covering Nendoroids, scale figures, prize figures, and model kits.</li>
-            <li><strong>Events:</strong> Anime conventions, doujinshi markets, and special exhibitions in Japan.</li>
-            <li><strong>Anime News:</strong> Breaking updates on new series, manga adaptations, and broadcast schedules.</li>
-            <li><strong>VTuber:</strong> Virtual YouTuber news, events, and collaborations.</li>
-            <li><strong>Game News:</strong> Japanese game releases, updates, and gaming culture.</li>
-            <li><strong>OTAKU NEWS:</strong> General otaku culture news that spans multiple categories.</li>
+            <li><strong>Collab Cafes:</strong> Anime/game-themed pop-up cafes and restaurants across Japan.</li>
+            <li><strong>Figures:</strong> Nendoroids, scale figures, prize figures, model kits, and merchandise announcements.</li>
+            <li><strong>Events:</strong> AnimeJapan, Comiket, exhibitions, and other otaku events.</li>
+            <li><strong>Anime News:</strong> New series, adaptations, broadcast schedules, and industry updates.</li>
+            <li><strong>VTuber:</strong> Virtual YouTuber news, live events, and collaborations.</li>
+            <li><strong>Game News:</strong> Japanese game releases, updates, esports, and gaming culture.</li>
+            <li><strong>OTAKU NEWS:</strong> Akihabara reports, cross-category otaku culture news, and more.</li>
         </ul>
 
-        <h2>Data Sources &amp; Updates</h2>
-        <p>We pull from 27+ Japanese RSS feeds (including Natalie, 4Gamer, Amiami, MoguLive, and more) and supplement with AI-powered search to ensure comprehensive coverage. Our database is updated automatically every day.</p>
+        <h2>How It Works</h2>
+        <p>Every day, a fully automated pipeline collects, translates, and publishes articles:</p>
+        <ul>
+            <li><strong>RSS collection:</strong> 21 Japanese RSS feeds are fetched automatically (Natalie, 4Gamer, Amiami, Collabo Cafe, Dengeki Hobby, MoguLive VR, and more).</li>
+            <li><strong>AI-powered search:</strong> Perplexity AI searches 6 topic areas to catch stories that RSS misses.</li>
+            <li><strong>Translation:</strong> DeepL API translates titles and descriptions into English.</li>
+            <li><strong>Thumbnails:</strong> Article images are extracted from each source page automatically.</li>
+            <li><strong>Publishing:</strong> Everything is committed to GitHub and deployed to this site via GitHub Pages &mdash; zero server cost.</li>
+        </ul>
+        <p>27 sources are registered in total. 6 sources without RSS feeds are covered by the AI search layer.</p>
+
+        <h2>Tech Stack</h2>
+        <ul>
+            <li>Static site on GitHub Pages (HTML / CSS / Vanilla JS)</li>
+            <li>Data stored in a single JSON file (<code>entries.json</code>)</li>
+            <li>Daily updates via GitHub Actions (RSS + Perplexity + DeepL + auto-commit)</li>
+            <li>New articles posted to <a href="https://x.com/" style="color:var(--accent-cyan)">X (Twitter)</a> automatically</li>
+        </ul>
 
         <h2>Disclaimer</h2>
-        <p>Information provided on this site is aggregated from various sources and summarized using AI. Please verify
-            details using the source links on each entry. We are not affiliated with any of the sources listed.</p>
+        <p>All information is aggregated from publicly available sources and translated/summarized with the help of AI.
+            Please verify details via the source links on each entry. We are not affiliated with any of the listed sources or publishers.</p>
     </main>
 
     <footer class="footer">
