@@ -1,13 +1,1 @@
-今日（または直近数日）に発表・開始された日本国内のコラボカフェ・ポップアップストアの情報を教えてください。3〜5件程度お願いします。
-
-各ニュースについて以下を含めてください：
-- タイトル
-- 簡単な説明（2-3文）
-- 開催期間
-- 場所
-- 元記事のURL
-
-秋葉原、池袋、新宿、渋谷、浅草周辺を優先してください。
-
-以下のJSON配列形式で出力してください。説明の前後に余計な文は付けないでください。
-[{"title_ja":"日本語タイトル","description":"説明文","dates":"Mar 1 - Mar 31, 2026 など","location":"場所","source_url":"https://..."},{"title_ja":"...",...}]
+Tokyo akiba ikebukuro shibuya shinjuku asakusa collab cafe popup store new open event

@@ -35,14 +35,20 @@ JSON_BLOCK_RE = re.compile(r"```(?:json)?\s*([\s\S]*?)\s*```", re.IGNORECASE)
 ARRAY_RE = re.compile(r"\[\s*\{[\s\S]*\}\s*\]")
 
 
-def load_prompt(category: str) -> str:
+SYSTEM_PROMPT = (
+    'JSON only. Output: {cat:int, news:[{title:str, desc:str(2sent), date:str, place:str?, url:str}]}. '
+    "Return Japanese content for title and desc from Japanese sources."
+)
+
+
+def load_user_prompt(category: str) -> str:
     path = PROMPTS_DIR / f"perplexity_{category}.md"
     if not path.exists():
         raise FileNotFoundError(f"Prompt not found: {path}")
     return path.read_text(encoding="utf-8").strip()
 
 
-def call_perplexity(api_key: str, prompt: str, model: str = "sonar") -> str:
+def call_perplexity(api_key: str, messages: list, model: str = "sonar-pro") -> str:
     import requests
 
     url = "https://api.perplexity.ai/v1/sonar"
@@ -52,7 +58,7 @@ def call_perplexity(api_key: str, prompt: str, model: str = "sonar") -> str:
     }
     payload = {
         "model": model,
-        "messages": [{"role": "user", "content": prompt}],
+        "messages": messages,
         "max_tokens": 4096,
         "temperature": 0.2,
     }
@@ -70,36 +76,52 @@ def call_perplexity(api_key: str, prompt: str, model: str = "sonar") -> str:
 
 
 def extract_json(text: str) -> list:
-    """レスポンスから JSON 配列を抽出する"""
+    """
+    レスポンスから JSON を抽出する。
+    新スキーマ {cat:int, news:[...]} または旧スキーマ [...] の両方に対応。
+    """
+    def try_parse(s: str):
+        try:
+            return json.loads(s.strip())
+        except json.JSONDecodeError:
+            return None
+
     m = JSON_BLOCK_RE.search(text)
     if m:
-        try:
-            return json.loads(m.group(1).strip())
-        except json.JSONDecodeError:
-            pass
+        parsed = try_parse(m.group(1))
+        if parsed is not None:
+            return _normalize_to_list(parsed)
 
     m = ARRAY_RE.search(text)
     if m:
-        try:
-            return json.loads(m.group(0))
-        except json.JSONDecodeError:
-            pass
+        parsed = try_parse(m.group(0))
+        if isinstance(parsed, list):
+            return parsed
 
-    try:
-        return json.loads(text.strip())
-    except json.JSONDecodeError:
-        pass
+    obj = try_parse(text)
+    if obj is not None:
+        return _normalize_to_list(obj)
 
     return []
 
 
+def _normalize_to_list(parsed) -> list:
+    """{cat, news:[...]} または [...] を list に正規化"""
+    if isinstance(parsed, list):
+        return parsed
+    if isinstance(parsed, dict) and "news" in parsed:
+        news = parsed.get("news")
+        return news if isinstance(news, list) else []
+    return []
+
+
 def to_entry(raw: dict, category: str, index: int) -> dict:
-    """Perplexity の生データを entries 形式に変換"""
+    """Perplexity の生データを entries 形式に変換。新スキーマ(title/desc)と旧スキーマ(title_ja/description)の両対応"""
     title_ja = str(raw.get("title_ja", raw.get("title", "")) or "").strip()
-    description = str(raw.get("description", "")) or ""
-    dates_str = str(raw.get("dates", "")) or ""
-    location = str(raw.get("location", "")) or ""
-    source_url = str(raw.get("source_url", raw.get("url", "")) or "").strip()
+    description = str(raw.get("desc", raw.get("description", "")) or "").strip()
+    dates_str = str(raw.get("date", raw.get("dates", "")) or "").strip()
+    location = str(raw.get("place", raw.get("location", "")) or "").strip()
+    source_url = str(raw.get("url", raw.get("source_url", "")) or "").strip()
 
     if not title_ja:
         return None
@@ -131,7 +153,7 @@ def to_entry(raw: dict, category: str, index: int) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--category", choices=CATEGORIES, required=True)
-    parser.add_argument("--model", default="sonar", help="Perplexity model (sonar, sonar-pro)")
+    parser.add_argument("--model", default="sonar-pro", help="Perplexity model (sonar-pro recommended)")
     args = parser.parse_args()
 
     api_key = os.getenv("PERPLEXITY_API_KEY", "").strip()
@@ -140,14 +162,21 @@ def main() -> None:
         sys.exit(0)
 
     try:
-        prompt = load_prompt(args.category)
+        user_query = load_user_prompt(args.category)
     except FileNotFoundError as e:
         print(f"ERROR: {e}", file=sys.stderr)
         sys.exit(1)
 
-    print(f"Perplexity 検索中: {args.category} ...")
+    today = datetime.now(JST).strftime("%Y/%m/%d")
+    user_content = f"{today} {user_query}"
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": user_content},
+    ]
+
+    print(f"Perplexity 検索中: {args.category} (sonar-pro) ...")
     try:
-        content = call_perplexity(api_key, prompt, model=args.model)
+        content = call_perplexity(api_key, messages, model=args.model)
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
         sys.exit(1)

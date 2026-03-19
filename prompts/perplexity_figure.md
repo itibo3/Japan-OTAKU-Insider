@@ -1,12 +1,1 @@
-今日（または直近数日）に発表されたフィギュア・グッズの新作情報を教えてください。3〜5件程度お願いします。
-
-グッドスマイル、コトブキヤ、FREEing、アルター等のメーカーや、アニメ・ゲームのフィギュア化、予約開始、発売日発表が対象です。
-
-各ニュースについて以下を含めてください：
-- タイトル
-- 簡単な説明（2-3文）
-- 発売日・予約期間
-- 元記事のURL
-
-以下のJSON配列形式で出力してください。説明の前後に余計な文は付けないでください。
-[{"title_ja":"日本語タイトル","description":"説明文","dates":"2026年4月発売 など","location":"該当する場合のみ","source_url":"https://..."},{"title_ja":"...",...}]
+Japan figure goods goodsmile kotobukiya FREEing Alter anime figure preorder release date
