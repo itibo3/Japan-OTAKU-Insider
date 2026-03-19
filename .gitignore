@@ -1,5 +1,8 @@
-# 非公開：運用スクリプト
+# 非公開：運用スクリプト（Actions用は例外）
 scripts/
+!scripts/translate_with_deepl.py
+!scripts/add_entry.py
+!scripts/update_status.py
 
 # 非公開：プロンプトテンプレート
 prompts/
@@ -14,6 +17,7 @@ data/new_entries.json
 data/archive/
 data/staging/
 data/sources.json
+data/entries_clean.json
 
 # 非公開：ノードモジュール
 node_modules/
@@ -25,6 +29,9 @@ rss_manager.py
 rss_manager/
 rss_manager_ui/
 rss_manager_data/
+
+# 非公開：仮想環境
+.venv/
 
 # その他
 __pycache__/
