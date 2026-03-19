@@ -49,12 +49,16 @@ jobs:
         run: pip install feedparser requests
 
       - name: RSS Fetch
-        run: python3 scripts/rss_fetch.py --limit 15 --fetch-thumbnails
+        run: |
+          echo "==> RSS Fetch"
+          python3 scripts/rss_fetch.py --limit 15 --fetch-thumbnails
 
       - name: Perplexity Search (6 categories)
         env:
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
         run: |
+          echo "==> Perplexity Search"
+          mkdir -p data/staging
           for cat in cafe vtuber figure game anime other; do
             python3 scripts/perplexity_search.py --category "$cat" || true
           done
@@ -64,37 +68,64 @@ jobs:
           DEEPL_AUTH_KEY: ${{ secrets.DEEPL_AUTH_KEY }}
         run: |
           set -e
+          echo "==> Translate staging"
+          mkdir -p data/staging
+          count=0
           for f in data/staging/*.json; do
             [ -f "$f" ] || continue
             echo "Translating $f ..."
             python3 scripts/translate_with_deepl.py "$f"
+            count=$((count+1))
           done
+          echo "Translated $count file(s)."
 
       - name: Add entries
         run: |
+          set -e
+          echo "==> Add entries"
+          count=0
           for f in data/staging/*.json; do
             [ -f "$f" ] || continue
             echo "Adding entries from $f ..."
             python3 scripts/add_entry.py "$f"
+            count=$((count+1))
           done
+          echo "Added from $count file(s)."
 
       - name: Sort entries (newest first)
-        run: python3 scripts/sort_entries.py
+        run: |
+          echo "==> Sort entries"
+          python3 scripts/sort_entries.py
 
       - name: Fill missing thumbnails
-        run: python3 scripts/fill_og_images.py --only-missing
+        run: |
+          echo "==> Fill missing thumbnails (CI: --limit 10)"
+          python3 scripts/fill_og_images.py --only-missing --limit 10
 
       - name: Update status
-        run: python3 scripts/update_status.py
+        run: |
+          echo "==> Update status"
+          python3 scripts/update_status.py
 
       - name: Commit and push
         run: |
+          echo "==> Commit and push"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
           git add data/entries.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
             git commit -m "chore: auto-update entries ($(date -u +%Y-%m-%d))"
-            git push
+            git push origin main
           fi
+
+      - name: Diagnose on failure
+        if: failure()
+        run: |
+          echo "=== 失敗診断 ==="
+          echo "data/staging:"
+          ls -la data/staging 2>/dev/null || echo "(dir not found)"
+          echo "entries.json head:"
+          head -20 data/entries.json 2>/dev/null || echo "(not found)"

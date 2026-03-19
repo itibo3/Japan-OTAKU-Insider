@@ -492,6 +492,20 @@ body {
   margin-bottom: 16px;
 }
 
+/* カテゴリタブ: 769px〜950px も横スクロール（OTAKU NEWS単独2行目を回避） */
+@media (min-width: 769px) and (max-width: 950px) {
+  .category-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cat-tab {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
 /* Mobile (768px以下) */
 @media (max-width: 768px) {
 
