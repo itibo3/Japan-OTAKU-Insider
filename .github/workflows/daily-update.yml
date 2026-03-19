@@ -104,8 +104,8 @@ jobs:
 
       - name: Fill missing thumbnails
         run: |
-          echo "==> Fill missing thumbnails (CI: --limit 30)"
-          python3 scripts/fill_og_images.py --only-missing --limit 30
+          echo "==> Fill missing thumbnails (CI: --limit 200)"
+          python3 scripts/fill_og_images.py --only-missing --replace-generic --limit 200
 
       - name: Update status
         run: |

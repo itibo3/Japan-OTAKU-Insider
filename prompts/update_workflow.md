@@ -36,7 +36,7 @@
 ## JSON作成・英語化ルール（絶対に守ること）
 - タイトルや説明文（description）は、情報を正確に伝える高品質なオタク向け英語に翻訳すること。
 - 自動取得された `id`, `category`, `tags`, `source` 等の既存のデータ構造・フィールドは絶対に壊さず保持すること。
-- 手動作成時の `category` に指定可能な文字列は `cafe`, `figure`, `event`, `anime`, `game` のいずれかのみとすること。
+- 手動作成時の `category` に指定可能な文字列は `cafe`, `figure`, `event`, `anime`, `game`, `otaku-news`, `vtuber` のいずれかのみとすること。
 
 ---
 

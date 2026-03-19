@@ -38,6 +38,13 @@ GENERIC_THUMB_PATTERNS = (
     "/logo",
     "og-image",
     "banner",
+    "ico_header",
+    "ico_sns",
+    "common/img",
+    "shared/img",
+    "noimage",
+    "no_image",
+    "dummy",
 )
 
 META_OG_IMAGE_RE = re.compile(
@@ -106,6 +113,8 @@ def extract_lead_image(html: str, base_url: str) -> Optional[str]:
     skip_keywords = (
         "favicon", "icon", "logo", "avatar", "sprite", "badge", "button",
         "twitter", "pixel", "1x1", "spacer", "blank", "banner",
+        "ico_", "common/img", "shared/img", "noimage", "no_image",
+        "dummy", "sns_icon",
     )
 
     for img_match in IMG_TAG_RE.finditer(segment):

@@ -71,8 +71,8 @@
             "id": "animatetimes",
             "name": "アニメイトタイムズ",
             "url": "https://www.animatetimes.com/",
-            "rss": "https://www.animatetimes.com/feed/",
-            "type": "rss",
+            "rss": null,
+            "type": "scrape",
             "categories": [
                 "anime",
                 "cafe",
@@ -90,8 +90,8 @@
             "id": "anime-eiga",
             "name": "アニメ映画.com",
             "url": "https://anime.eiga.com/news/",
-            "rss": "https://anime.eiga.com/news/rss/",
-            "type": "rss",
+            "rss": null,
+            "type": "scrape",
             "categories": [
                 "anime",
                 "event"
@@ -271,7 +271,7 @@
             "id": "hobby-watch",
             "name": "HOBBY Watch",
             "url": "https://hobby.watch.impress.co.jp/",
-            "rss": "https://hobby.watch.impress.co.jp/data/rss/1.0/hob/feed.rdf",
+            "rss": "https://hobby.watch.impress.co.jp/data/rss/1.0/hbw/feed.rdf",
             "type": "rss",
             "categories": [
                 "figure"
@@ -337,7 +337,7 @@
             "id": "natalie-news",
             "name": "ナタリー（総合ニュース）",
             "url": "https://natalie.mu/news",
-            "rss": "https://natalie.mu/news/feed/news",
+            "rss": "https://natalie.mu/eiga/feed/news",
             "type": "rss",
             "categories": [
                 "anime",

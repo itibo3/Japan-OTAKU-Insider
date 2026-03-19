@@ -57,6 +57,13 @@ GENERIC_THUMB_PATTERNS = (
     "/logo",
     "og-image",
     "banner",
+    "ico_header",
+    "ico_sns",
+    "common/img",
+    "shared/img",
+    "noimage",
+    "no_image",
+    "dummy",
 )
 
 
@@ -135,6 +142,13 @@ def extract_lead_image(html: str, base_url: str) -> Optional[str]:
         "spacer",
         "blank",
         "banner",
+        "ico_",
+        "common/img",
+        "shared/img",
+        "noimage",
+        "no_image",
+        "dummy",
+        "sns_icon",
     ]
 
     for img_match in IMG_TAG_RE.finditer(segment):
