@@ -30,13 +30,14 @@ ENTRIES_FILE = Path("data/entries.json")
 
 IMG_TAG_RE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
 
-# サイトロゴ・デフォルトOGPっぽいURL（先頭画像を優先したい）
+# サイトロゴ・デフォルトOGP・バナー広告っぽいURL（先頭画像を優先したい）
 GENERIC_THUMB_PATTERNS = (
     "oglogo",
     "default_ogp",
     "apple-touch-icon",
     "/logo",
     "og-image",
+    "banner",
 )
 
 META_OG_IMAGE_RE = re.compile(
@@ -104,7 +105,7 @@ def extract_lead_image(html: str, base_url: str) -> Optional[str]:
 
     skip_keywords = (
         "favicon", "icon", "logo", "avatar", "sprite", "badge", "button",
-        "twitter", "pixel", "1x1", "spacer", "blank",
+        "twitter", "pixel", "1x1", "spacer", "blank", "banner",
     )
 
     for img_match in IMG_TAG_RE.finditer(segment):
@@ -149,7 +150,7 @@ def is_generic_thumbnail(url: str) -> bool:
 
 
 # og:image を優先するドメイン（記事シェア時と同じ画像を安定して取得）
-OG_FIRST_DOMAINS = ("news.amiami.jp",)
+OG_FIRST_DOMAINS = ("news.amiami.jp", "www.4gamer.net")
 
 
 def choose_thumbnail(lead: Optional[str], og: Optional[str], source_url: str) -> Optional[str]:

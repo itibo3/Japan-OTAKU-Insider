@@ -492,8 +492,8 @@ body {
   margin-bottom: 16px;
 }
 
-/* カテゴリタブ: 769px〜950px も横スクロール（OTAKU NEWS単独2行目を回避） */
-@media (min-width: 769px) and (max-width: 950px) {
+/* カテゴリタブ: 769px以上は横スクロール（コンテナ900pxでは8タブが収まらないため常に1行） */
+@media (min-width: 769px) {
   .category-tabs {
     overflow-x: auto;
     flex-wrap: nowrap;

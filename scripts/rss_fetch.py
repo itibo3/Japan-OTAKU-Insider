@@ -48,7 +48,7 @@ META_OG_IMAGE_SECURE_RE = re.compile(
 IMG_TAG_RE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
 
 # og:image を優先するドメイン（記事シェア時と同じ画像を安定して取得）
-OG_FIRST_DOMAINS = ("news.amiami.jp",)
+OG_FIRST_DOMAINS = ("news.amiami.jp", "www.4gamer.net")
 
 GENERIC_THUMB_PATTERNS = (
     "oglogo",
@@ -56,6 +56,7 @@ GENERIC_THUMB_PATTERNS = (
     "apple-touch-icon",
     "/logo",
     "og-image",
+    "banner",
 )
 
 
@@ -133,6 +134,7 @@ def extract_lead_image(html: str, base_url: str) -> Optional[str]:
         "1x1",
         "spacer",
         "blank",
+        "banner",
     ]
 
     for img_match in IMG_TAG_RE.finditer(segment):
