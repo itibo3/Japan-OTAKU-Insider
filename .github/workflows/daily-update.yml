@@ -11,7 +11,7 @@ name: Daily Update
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 19 * * *'  # 毎日 4:00 JST (UTC 19:00)
+    - cron: '0 10 * * *'  # 毎日 19:00 JST (UTC 10:00) / 米東部 5-6時
 
 jobs:
   check:
