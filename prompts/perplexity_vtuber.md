@@ -1,1 +1,1 @@
-Japan VTuber vtuber livestream 3D debut new outfit collab event announcement
+Japan VTuber vtuber livestream 3D debut new outfit collab event announcement this week

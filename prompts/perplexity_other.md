@@ -1,1 +1,1 @@
-Japan otaku event comiket doujinshi fair exhibition screening live seiyuu
+Japan otaku event comiket doujinshi fair exhibition screening live seiyuu this week

@@ -34,14 +34,14 @@ jobs:
           fi
           echo "PERPLEXITY_API_KEY は設定されています。"
 
-      - name: Perplexity Search (cafe, game) with --debug
+      - name: Perplexity Search (all 6 categories) with --debug
         run: |
           mkdir -p data/staging
-          echo "==> cafe"
-          python3 scripts/perplexity_search.py --category cafe --debug || true
-          echo ""
-          echo "==> game"
-          python3 scripts/perplexity_search.py --category game --debug || true
+          for cat in cafe vtuber figure game anime other; do
+            echo "==> $cat"
+            python3 scripts/perplexity_search.py --category "$cat" --debug || true
+            echo ""
+          done
 
       - name: List staging output
         run: |

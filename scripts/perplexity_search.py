@@ -33,8 +33,9 @@ ARRAY_RE = re.compile(r"\[\s*\{[\s\S]*\}\s*\]")
 
 
 SYSTEM_PROMPT = (
-    'JSON only. Output: {cat:int, news:[{title:str, desc:str(2sent), date:str, place:str?, url:str}]}. '
-    "Return Japanese content for title and desc from Japanese sources."
+    "You are a JSON API. You MUST respond with ONLY a single JSON object, no markdown, no explanation, no text before or after. "
+    'Format: {"cat":1,"news":[{"title":"日本語タイトル","desc":"日本語2文の説明","date":"YYYY-MM-DD or range","place":"場所","url":"https://source-url"}]}. '
+    "Search Japanese sources only. Return title and desc in Japanese. Return 5-8 news items."
 )
 
 
@@ -58,6 +59,7 @@ def call_perplexity(api_key: str, messages: list, model: str = "sonar-pro") -> s
         "messages": messages,
         "max_tokens": 4096,
         "temperature": 0.2,
+        "search_recency_filter": "week",
     }
 
     resp = requests.post(url, json=payload, headers=headers, timeout=60)
@@ -72,10 +74,17 @@ def call_perplexity(api_key: str, messages: list, model: str = "sonar-pro") -> s
     return content.strip()
 
 
+OBJ_RE = re.compile(r"\{[\s\S]*\}")
+
+
 def extract_json(text: str) -> list:
     """
     レスポンスから JSON を抽出する。
-    新スキーマ {cat:int, news:[...]} または旧スキーマ [...] の両方に対応。
+    対応パターン（優先順）:
+      1. ```json ... ``` コードブロック内
+      2. テキスト全体がそのまま JSON
+      3. テキスト中の [...] 配列
+      4. テキスト中の {...} オブジェクト（Markdown 混在対応）
     """
     def try_parse(s: str):
         try:
@@ -83,21 +92,31 @@ def extract_json(text: str) -> list:
         except json.JSONDecodeError:
             return None
 
+    # 1. ```json ... ``` ブロック
     m = JSON_BLOCK_RE.search(text)
     if m:
         parsed = try_parse(m.group(1))
         if parsed is not None:
             return _normalize_to_list(parsed)
 
+    # 2. テキスト全体
+    obj = try_parse(text)
+    if obj is not None:
+        return _normalize_to_list(obj)
+
+    # 3. [...] 配列を探す
     m = ARRAY_RE.search(text)
     if m:
         parsed = try_parse(m.group(0))
         if isinstance(parsed, list):
             return parsed
 
-    obj = try_parse(text)
-    if obj is not None:
-        return _normalize_to_list(obj)
+    # 4. {...} オブジェクトを探す（Markdown 混在時のフォールバック）
+    m = OBJ_RE.search(text)
+    if m:
+        parsed = try_parse(m.group(0))
+        if parsed is not None:
+            return _normalize_to_list(parsed)
 
     return []
 

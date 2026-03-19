@@ -19,9 +19,10 @@ prompts/
 !prompts/perplexity_anime.md
 !prompts/perplexity_other.md
 
-# 非公開：引継書・仕様書
+# 非公開：引継書・仕様書・キーメモ
 HANDOVER.md
 japan_otaku_insider_spec.md
+X_API_KEYS.md
 
 # 非公開：RSS取得の中間ファイル
 data/pending_translation.json

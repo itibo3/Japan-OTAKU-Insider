@@ -336,16 +336,23 @@ def main():
 
     # 対象ソースをフィルタ
     rss_sources = [s for s in sources if s.get("rss")]
+    skipped_no_rss = [s["id"] for s in sources if not s.get("rss")]
+
+    print(f"=== RSS Fetch 開始 ===")
+    print(f"Using {len(sources)} sources from data/sources.json")
+    print(f"  RSS あり（取得対象）: {len(rss_sources)} 件 — {[s['id'] for s in rss_sources]}")
+    if skipped_no_rss:
+        print(f"  RSS なし（スキップ）: {len(skipped_no_rss)} 件 — {skipped_no_rss}")
+
     if target_source:
         rss_sources = [s for s in rss_sources if s["id"] == target_source]
         if not rss_sources:
             print(f"ERROR: ソース '{target_source}' が見つかりません")
             sys.exit(1)
 
-    print(f"=== RSS Fetch 開始 ===")
     if reset_mode:
         print("  [RESET モード] 重複チェックなし、全件取得")
-    print(f"対象ソース: {len(rss_sources)} 件 / 上限: 各 {limit} 件")
+    print(f"フェッチ対象: {len(rss_sources)} 件 / 上限: 各 {limit} 件")
 
     all_new_items = []
     for source in rss_sources:

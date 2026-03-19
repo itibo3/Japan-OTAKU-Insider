@@ -51,6 +51,7 @@ jobs:
       - name: RSS Fetch
         run: |
           echo "==> RSS Fetch"
+          python3 -c "import json; d=json.load(open('data/sources.json')); print('Using', len(d.get('sources',[])), 'sources from data/sources.json')"
           python3 scripts/rss_fetch.py --limit 15 --fetch-thumbnails
 
       - name: Perplexity Search (6 categories)
