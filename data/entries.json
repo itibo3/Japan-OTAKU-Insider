@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-20T00:39:19.297846+09:00",
-  "total_entries": 331,
+  "last_updated": "2026-03-20T01:10:08.311232+09:00",
+  "total_entries": 373,
   "entries": [
     {
       "id": "vtuber-20260320-rss-fe2a5d",
@@ -692,7 +692,8 @@
         "other"
       ],
       "_source": "perplexity",
-      "location": "東京ビッグサイト"
+      "location": "東京ビッグサイト",
+      "thumbnail": "https://img.alicdn.com/imgextra/i1/O1CN01hx5aSV209f5DVAo9a_!!6000000006807-0-tps-1024-1024.jpg"
     },
     {
       "id": "other-20260320-pplx-c60aab",
@@ -713,7 +714,51 @@
       "dates": {
         "display": "2026-05-10"
       },
-      "location": "広島産業会館"
+      "location": "広島産業会館",
+      "thumbnail": "https://res-5.cloudinary.com/dbm1qiew0/image/upload/q_auto/v1/blog-images/ghost_import_kix.9btfat57dmu4.jpg"
+    },
+    {
+      "id": "other-20260320-pplx-bd7a8d",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "Comiket Winter Event December 30-31, 2025 Recap",
+      "title_ja": "コミケ冬イベント 2025年12月30-31日振り返り",
+      "description": "Comiket Winter, the world's largest anime/manga fan convention, was well received. Tokyo Big Sight, the mecca of otaku culture, prepares for the next Summer Comiket.",
+      "source": {
+        "url": "https://www.tripadvisor.com/Attractions-g298184-Activities-c42-t232-Tokyo_Tokyo_Prefecture_Kanto.html"
+      },
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2025-12-30 to 2025-12-31"
+      },
+      "location": "東京"
+    },
+    {
+      "id": "other-20260320-pplx-324739",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "Sakura Jidai Festival to end on March 14, but spring events will continue",
+      "title_ja": "サクラ時代祭 3月14日終了も春イベント続々",
+      "description": "The Sakura Jidai Matsuri, a historical reenactment, was held on March 14, and we recommend AnimeJapan and other anime and otaku events in late March. Tokyo Spring Festival Guide.",
+      "source": {
+        "url": "https://tokyocheapo.com/events/sakura-jidai-festival/"
+      },
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-14"
+      },
+      "location": "東京",
+      "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2020/07/crouching-tiger-hidden-sumo-362x193.jpg"
     },
     {
       "id": "other-20260320-pplx-2b8773",
@@ -734,7 +779,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "東京・上野 飛行船シアター"
+      "location": "東京・上野 飛行船シアター",
+      "thumbnail": "https://i0.wp.com/uploads.saigacdn.com/2026/03/bang-dream-movie-festival-spring-break-00.jpg"
     },
     {
       "id": "other-20260320-pplx-244bbb",
@@ -755,7 +801,8 @@
       "dates": {
         "display": "2026-08-15 - 2026-08-16"
       },
-      "location": "東京"
+      "location": "東京",
+      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
     },
     {
       "id": "game-20260320-rss-fe36de",
@@ -937,6 +984,27 @@
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1694749.jpg",
       "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-20260320-rss-dbd336",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Solo developer tears up at the success of his game - \"I don't have to worry about money any more\" - as he shares his story of a \"very successful\" tower defense game.",
+      "title_ja": "「もうお金の心配をしなくて済む」ソロ開発者がゲーム成功に感涙―“非常に好評”タワーディフェンスにまつわる一幕が大きな注目",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "Tangy TD\" was just launched in March 2026, and the developer shares his joy with his wife over its success.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/20/164141.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1105444.jpg",
+      "_source_id": "game-spark"
     },
     {
       "id": "game-20260320-rss-d9e5bf",
@@ -1734,7 +1802,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "全国"
+      "location": "全国",
+      "thumbnail": "https://kamigame.jp/wp-content/uploads/app_RPG.png"
     },
     {
       "id": "game-20260320-pplx-53eba7",
@@ -1755,7 +1824,8 @@
       "dates": {
         "display": "2026-04-08"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://i0.wp.com/www.igda.jp/wp-content/uploads/2026/03/short.png?resize=382%2C100&ssl=1"
     },
     {
       "id": "game-20260320-pplx-2c624c",
@@ -1776,7 +1846,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "東京都新宿区"
+      "location": "東京都新宿区",
+      "thumbnail": "https://d28w2qw7dtr435.cloudfront.net/uploaded/cover_images/images/29591/normal.jpg?1773831674"
     },
     {
       "id": "game-20260320-pplx-1e9f06",
@@ -1797,7 +1868,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "オンライン"
+      "location": "オンライン",
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/50979/482/50979-482-69c66306835daf82b2784577ebb68bf0-2025x2700.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff"
     },
     {
       "id": "game-20260320-pplx-092243",
@@ -1818,7 +1890,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/02/ce1c550a8bb99e9b36b3edf15b4b866d.webp"
     },
     {
       "id": "figure-20260320-rss-fe3f94",
@@ -1867,6 +1940,27 @@
       "_source_id": "dengeki-hobby"
     },
     {
+      "id": "figure-20260320-rss-f1dccc",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "S.H.Figuarts Jotaro Kujo\" from \"JoJo`s Bizarre Adventure Stardust Crusaders\" is released today!",
+      "title_ja": "「ジョジョの奇妙な冒険 スターダストクルセイダース」より「S.H.Figuarts 空条承太郎」本日発売！",
+      "dates": {},
+      "description": "BANDAI SPIRITS will release the figure \"S.H.Figuarts Sorajo Jotaro\" on March 20. The price is 11,000 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094246.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/246/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
       "id": "figure-20260320-rss-ea2009",
       "categories": [
         "figure"
@@ -1913,6 +2007,69 @@
       "_source_id": "dengeki-hobby"
     },
     {
+      "id": "figure-20260320-rss-ddd711",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Subaru Ozora and Noel Shiragane from prize figure \"Hololive #hololive IF -Relax time-\" to be released sequentially from March 26.",
+      "title_ja": "プライズフィギュア「ホロライブ #hololive IF -Relax time-」より大空スバルさん、白銀ノエルさんが登場。3月26日より順次展開",
+      "dates": {},
+      "description": "BANDAI SPIRITS plans to sequentially roll out the prize figures \"Hololive #hololive IF -Relax time- Ozora Subaru\" and \"Hololive #hololive IF -Relax time- Shirogane Noel - Danchomu ver.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094878.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/878/main_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-20260320-rss-d92a0e",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Rosalinde from \"Unicorn Overlord\" is now available as a 1/6 scale figure from Fat Company!",
+      "title_ja": "「ユニコーンオーバーロード」よりロザリンデがファット・カンパニーから1/6スケールフィギュア化！",
+      "dates": {},
+      "description": "Phat Company will release the figure \"Rosalinde\" in February 2027. The price is 26,800 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094908.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "_source_id": "hobby-watch",
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/908/011_l.jpg"
+    },
+    {
+      "id": "figure-20260320-rss-d84489",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Ichiban Kuji Lottery One Piece: Envisioning the Future\" goes on sale sequentially from today!",
+      "title_ja": "「一番くじ ワンピース 思い描く未来」本日より順次発売！",
+      "dates": {},
+      "description": "BANDAI SPIRITS will release \"Ichiban Kuji Lottery One Piece: Imagine the Future,\" a character lottery without any lottery winners, sequentially from March 20. The price will be 790 yen per ticket.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094637.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/637/002_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
       "id": "figure-20260320-rss-b3c5c7",
       "categories": [
         "figure"
@@ -1934,6 +2091,27 @@
       ],
       "thumbnail": "https://images-fe.ssl-images-amazon.com/images/I/71rBfiJc3AL._AC_SL1500_.jpg",
       "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260320-rss-a45641",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Aoshima, Hasegawa, and Tamiya will be open for tours along with the Shizuoka Hobby Show. Plan to/from Tokyo Shinagawa Station also available.",
+      "title_ja": "アオシマ、ハセガワ、タミヤを静岡ホビーショーとともに見学できるツアーが開催。東京品川駅発着のプランも",
+      "dates": {},
+      "description": "TIPS will offer tours that include visits to Aoshima, Tamiya, and Hasegawa headquarters in conjunction with the 64th Shizuoka Hobby Show scheduled to be held at Twinmesse Shizuoka from May 13 to 17. Prices start at 15,800 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094854.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/854/01_l.jpg",
+      "_source_id": "hobby-watch"
     },
     {
       "id": "figure-20260320-rss-96a6cd",
@@ -1982,6 +2160,90 @@
       "_source_id": "dengeki-hobby"
     },
     {
+      "id": "figure-20260320-rss-7f50e0",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "McDonald's] I played with Happy Set \"Doraemon\" ahead of time! A large number of toys based on the motif of \"Doraemon the Movie: Nobita's New Undersea Oniwashiro Castle\"!",
+      "title_ja": "【マクドナルド】ハッピーセット「ドラえもん」を一足先に遊んでみた！「映画ドラえもん 新・のび太の海底鬼岩城」をモチーフにした大量のおもちゃが登場",
+      "dates": {},
+      "description": "McDonald's Japan will release Happy Set \"Doraemon\" at McDonald's stores nationwide for a limited time starting March 20. Happy Set prices start at 510 yen (tax included). Prices may differ at some stores. Each toy will be available in limited quantities and will end as soon as they are gone.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2094558.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/558/1_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-20260320-rss-7c0838",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "JAWS Figure Collection 4\" [Gacha Shooting] The long-awaited \"Jaws 4/Vengeance\" also makes its first appearance! The scene from \"Jaws 3\" has also been sculpted into a figure!",
+      "title_ja": "「JAWS フィギュアコレクション 4」【ガチャ撮り下ろし】待望の『ジョーズ4/復讐篇』も初登場！『ジョーズ3』の飛び出すシーンも立体化",
+      "dates": {},
+      "description": "The \"JAWS Figure Collection 4\" gacha from Takara Tomy Arts will be released in mid-March. These mini figures are based on the \"JAWS\" action thriller film series, which depicts the terror of a giant great white shark attacking people.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2093795.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2093/795/1_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-20260320-rss-713991",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Wave \"Bloodsucker [PS version]\" begins shipping March 23. Reproduction of cockpit interior and descent mechanism.",
+      "title_ja": "ウェーブ「ブラッドサッカー［PS版］」3月23日出荷開始。コックピット内部や降着機構を再現",
+      "dates": {},
+      "description": "Wave will begin shipping the 1/35 scale plastic model \"Bloodsucker [PS version]\" on March 23. The price is 6,380 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094947.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/947/01_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-20260320-rss-63d8bb",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Tank top in the image of \"Heero Yui\" from \"New Mobile Suit Gundam W\" is open for reservation now at Pre-ban!",
+      "title_ja": "「新機動戦記ガンダムW」より「ヒイロ・ユイ」をイメージしたタンクトップがプレバンにて予約受付中",
+      "dates": {},
+      "description": "Bandai is accepting reservations for the apparel goods \"STRICT-G 'New Mobile Suit Gundam W' Tank Top Heero Model\" at the online shopping site Premium Bandai. Shipping is scheduled for April, and the price is 8,800 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094948.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/948/main_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
       "id": "figure-20260320-rss-4b2465",
       "categories": [
         "figure"
@@ -2003,6 +2265,48 @@
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/GOODS-04778723_01_6_pAjvKYe3DnGLlUpMceWtsjsLsiIuW5_pDAehKkzhREIE6jOIi1_pFafUqa1nz0c.jpg",
       "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-20260320-rss-49fee1",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Hatsune Miku in a Heavy Metal Body? METAL BUILD Hatsune Miku\" information will be released on March 26.",
+      "title_ja": "重厚なメタルボディで初音ミクが登場？ 「METAL BUILD 初音ミク」が3月26日に情報解禁",
+      "dates": {},
+      "description": "BANDAI SPIRITS will release information on the \"METAL BUILD Hatsune Miku\" movable figure on March 26.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094906.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/906/main_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-20260320-rss-3bb60a",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "MODEROID SIDE:GR Vektor Knighthood Specification\" from \"Titanomachia\" to be released in August \"MODEROID Knighthood Equipment Set from Titanomachia SIDE:CE\" also available",
+      "title_ja": "『ティタノマキア』より「MODEROID SIDE：GR ヴェクトール 騎士団仕様」が8月に発売「MODEROID 騎士団装備セット from ティタノマキアSIDE:CE」も登場",
+      "dates": {},
+      "description": "Good Smile Company will release a plastic model \"MODEROID SIDE: GR Vektor Knighthood Specification\" in August. The price is 8,800 yen. MODEROID Knights Equipment Set from Titanomachia SIDE: CE\" will also be released on the same day. It is priced at 2,400 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094776.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/776/main_l.jpg",
+      "_source_id": "hobby-watch"
     },
     {
       "id": "figure-20260320-rss-38ee49",
@@ -2028,6 +2332,111 @@
       "_source_id": "dengeki-hobby"
     },
     {
+      "id": "figure-20260320-rss-36a5f3",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Lara\" and \"Yui Kotegawa\" on a float from \"To LOVE-Ru Darkness\" will appear in Taito's \"Aqua Float Girls!",
+      "title_ja": "「To LOVEる ダークネス」より浮き輪に乗った「ララ」と「古手川唯」がタイトーの「Aqua Float Girls」に登場決定！",
+      "dates": {},
+      "description": "Taito announced the prize \"To LOVE-Ru: Toraburu Darkness Aqua Float Girls Figure Lala/Kotegawa Yui\". The rollout date has not yet been determined.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094957.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/957/011_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-20260320-rss-21c851",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Hobby Shop Visit] Model trains are the mainstay of the store!　Report on \"Kuru Kuru Akihabara,\" a secondhand specialty store, with a large layout that can accommodate up to 15 cars and a variety of expressions of the railroad tracks, capturing the hearts of fans.",
+      "title_ja": "【ホビーショップ訪問】鉄道模型が主力！　中古専門店「クルクル秋葉原店」レポート多彩な線路の表情演出、15両編成も可能な大きなレイアウトでファンの心を掴む",
+      "dates": {},
+      "description": "Hobby is a hobby in which one is \"surrounded by things. Figurines, plastic models, RC, model trains, dolls, and so on. Before the \"I'm satisfied with all I have\" tongue is even dry, the desire to search for and buy new products grows, and as a result, the number of new items in the house increases.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2093379.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2093/379/at_01_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-20260320-rss-1fa418",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Sylpha Langlais\" from \"Reincarnated as the Seventh Prince, I will master sorcery as I please\" is now available as a figure!",
+      "title_ja": "「転生したら第七王子だったので、気ままに魔術を極めます」より「囚われの剣姫 “シルファ=ラングリス”」がフィギュア化",
+      "dates": {},
+      "description": "Boxed Girl will release a figure, \"Prisoner Sword Princess \"Sylpha=Langris\"\" in October. The price is 25,300 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094929.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/929/main_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-20260320-rss-132e1b",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Jumbo Machine-Der Yusha Raideen\" from \"Yusha Raideen\" is released today! Equipped with new \"God Gogan\" and \"God Breaker\" action gimmicks!",
+      "title_ja": "「勇者ライディーン」より「ジャンボマシンダー 勇者ライディーン」本日発売！新たに「ゴッド・ゴーガン」、「ゴッド・ブレイカー」のアクションギミックを装備",
+      "dates": {},
+      "description": "BANDAI SPIRITS will release the figure \"Jumbo Machinder Yusha Raideen\" on March 20. The price is 24,200 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094636.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/636/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-20260320-pplx-d8d9c3",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Metal Robot Spirits Sara Bi Lottery starts",
+      "title_ja": "メタルロボットスピリッツ 沙羅ビ 抽選受付開始",
+      "description": "Lottery pre-orders for the METAL ROBOT SPIRITS Sara Bi, priced at 26,400 yen (including tax), will begin today, March 19, at 12:00 pm. The acceptance period is from March 19, 12:00 to April 26, 23:00, and the lottery results will be announced in late April. New Gunpla-related products.",
+      "source": {
+        "url": "https://en.gundam-official.com/news/tkbb7ju0q50lgloyov2qyo0k"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本"
+    },
+    {
       "id": "figure-20260320-pplx-c40a5c",
       "categories": [
         "figure"
@@ -2046,7 +2455,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://tamashiiweb.com/images/item/item_0000015814_iTELyClH_400.jpg"
     },
     {
       "id": "figure-20260320-pplx-874599",
@@ -2067,7 +2477,30 @@
       "dates": {
         "display": "2026-03-22"
       },
-      "location": "ヨーロッパ"
+      "location": "ヨーロッパ",
+      "thumbnail": "https://goodsmileeurope.com/cdn/shop/articles/Good_Smile_Europe_Ending_Preorders_520x500_f99c10cb-a9df-43de-8d75-1e2070bfbe7a.webp?v=1773644178&width=1600"
+    },
+    {
+      "id": "figure-20260320-pplx-49e12e",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Ichiban Kuji Lottery Uma Musume Pretty Derby Vol. 13 will go on sale sequentially on March 21.",
+      "title_ja": "一番くじ ウマ娘プリティーダービー 第13弾 3月21日順次発売",
+      "description": "The thirteenth Ichiban Kuji Lottery of the Uma Musume 5th Anniversary collaboration will go on sale sequentially at about 5,000 stores nationwide from March 21 at 10:00 a.m. The lottery, priced at 890 yen, will include high-end items such as figures of the three Gran Alegria sisters.",
+      "source": {
+        "url": "https://saiganak.com/news/familymart-umamusume-campaign-mar2026/"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-21"
+      },
+      "location": "日本",
+      "thumbnail": "https://i0.wp.com/uploads.saigacdn.com/2026/03/family-2603umamusume-cp-announcement-00.jpg"
     },
     {
       "id": "figure-20260320-pplx-356d04",
@@ -2088,7 +2521,8 @@
       "dates": {
         "display": "2026-03-17 - 2026-03-31"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://assets.hldycdn.com/cdn-cgi/image/format=webp,width=1024,quality=75/14c32d8f-cd1d-4a3f-8db0-2cf378b5e33c.jpeg"
     },
     {
       "id": "figure-20260320-pplx-02ea4c",
@@ -2109,7 +2543,8 @@
       "dates": {
         "display": "2026-03-14"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://tamashiiweb.com/special/jumpcs/images/hum-menu/thumb-series_09.png"
     },
     {
       "id": "cafe-20260320-pplx-fc63be",
@@ -2130,7 +2565,8 @@
       "dates": {
         "display": "2026-03-17"
       },
-      "location": "東京・五反田"
+      "location": "東京・五反田",
+      "thumbnail": "https://a1.cdn.japantravel.com/photo/72269-245960/460x460!/tokyo-takeshi-fukazawa-cherry-blossoms-photography-exhibition-245960.jpg"
     },
     {
       "id": "cafe-20260320-pplx-e991bf",
@@ -2151,7 +2587,8 @@
       "dates": {
         "display": "2026-03-28 to 2026-04-05"
       },
-      "location": "東京・秋葉原"
+      "location": "東京・秋葉原",
+      "thumbnail": "https://cdn.essential-japan.com/wp-content/uploads/2026/03/c4a3f37ed086b0e40bc61cdb04cbbf65.jpeg"
     },
     {
       "id": "cafe-20260320-pplx-c717b9",
@@ -2193,7 +2630,94 @@
       "dates": {
         "display": "2026-03"
       },
-      "location": "東京"
+      "location": "東京",
+      "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2014/11/ueno-cherry-blossom-GettyImages-1996449432-362x193.jpeg"
+    },
+    {
+      "id": "cafe-20260320-pplx-3c1659",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "Yosuga no Sora \"Beach Wedding\" themed pop-up store in Akiba",
+      "title_ja": "ヨスガノソラ「ビーチウェディング」テーマポップアップストアがアキバで開催",
+      "description": "Amiami Akihabara Figure Tower Store's Beach Wedding theme pop-up store for Yosuga no Sora is currently being held on the 8th floor of the Akihabara Figure Tower Store from March 6 to March 22. There are limited-edition illustrated goods and a campaign to receive a random postcard for every 2,000 yen. A must-see event for anime fans in Akihabara.",
+      "source": {
+        "url": "https://essential-japan.com/events/yosuga-no-sora-beach-wedding-themed-pop-up-store-in-tokyo-2026/"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-06 - 2026-03-22"
+      },
+      "location": "東京・秋葉原",
+      "thumbnail": "https://cdn.essential-japan.com/wp-content/uploads/2026/03/7fcb6f090175a3eebd03e94f7ae044d8.jpeg"
+    },
+    {
+      "id": "cafe-20260320-pplx-09e04f",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "American BBQ Cook-Off at Halumi Pier Park",
+      "title_ja": "ハルミピアパークでアメリカンBBQクックオフ",
+      "description": "American BBQ Cook-Off at Tokyo Halumi Pier Park on Friday, March 20; free admission at this event for BBQ fans. Enjoy the charm of American BBQ.",
+      "source": {
+        "url": "https://en.japantravel.com/events/tokyo?from=2026-03-18&to=2026-03-25"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-20"
+      },
+      "location": "東京・ハルミピアパーク",
+      "thumbnail": "https://a3.cdn.japantravel.com/photo/70631-238167/460x460!/tokyo-american-bbq-cook-off-harumi-pier-park-238167.jpg"
+    },
+    {
+      "id": "anime-20260320-rss-fc5983",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Special video of \"Etoile in Paris,\" \"I got courage\" from the girls chasing their dreams.",
+      "title_ja": "「パリに咲くエトワール」特別映像、夢追う少女たちに「勇気をもらった」の声続々",
+      "dates": {},
+      "description": "A special trailer titled \"Cheering Edition\" of the theatrical anime \"Paris ni Saku Etoile\" currently being screened nationwide has been released on YouTube.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664639"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/parieto_202603.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-f7e8ca",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "WBC documentary film \"Beyond the Battle: Record of the Samurai,\" available exclusively on Netflix, takes a look behind the heavy pressure.",
+      "title_ja": "WBCの記録映画「戦いの向こう 侍たちの記録」Netflixで独占配信、重圧の裏側に迫る",
+      "dates": {},
+      "description": "The Netflix documentary film \"Beyond the Battle: Record of the Samurai 2026 WORLD BASEBALL CLASSIC\" will be available exclusively on Netflix in mid-April.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664697"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/wbc_Netflix_202603.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
     },
     {
       "id": "anime-20260320-rss-f62c82",
@@ -2259,6 +2783,48 @@
       "_source_id": "natalie-anime"
     },
     {
+      "id": "anime-20260320-rss-d3e037",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "The third and final episode of \"Jyujutsu Kaisen\" \"Shiketsu Kaiyou Part 1\" is an expanded version of the main story \"Sendai Kaiyoukai\".",
+      "title_ja": "「呪術廻戦」第3期「死滅回游 前編」最終話「仙台結界」は本編拡大SP",
+      "dates": {},
+      "description": "It has been announced that episode 59, the final episode of the third season of the TV anime \"Jyutsu Kaisen,\" based on the original story by Akutomi Shimoda, will be broadcast on March 26, 2012 at 24:26 as an extended special.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/664808"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0320/JJKS_3rd_charaposter_okkotsu_fix.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-20260320-rss-d1f158",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Sequel to \"Silence of the Fleet\" to be Decided, Drawing to the End of the Original Work: Takao Osawa and Hiroshi Tamaki \"The True Essence of the Work Begins Here\".",
+      "title_ja": "「沈黙の艦隊」続編決定、原作の最後まで描く　大沢たかお・玉木宏「ここからが真骨頂」",
+      "dates": {},
+      "description": "A sequel to the film \"The Silent Fleet: The Arctic Sea Battle\" starring and produced by Takao Osawa has been decided to be produced. Prior to the film's worldwide exclusive distribution on Prime Video starting March 20, an event was held in Kanagawa Prefecture on March 19, where Osawa, Hiroshi Tamaki, 12 actors who played the Yamato crew, and director Kohei Yoshino gathered. The new development of the series was announced at the location with a real submarine in the background.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664717"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/event_202603_01.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
       "id": "anime-20260320-rss-c8ad6e",
       "categories": [
         "anime"
@@ -2278,6 +2844,90 @@
       ],
       "thumbnail": "https://ogre.natalie.mu/asset/natalie/common/polar/common/image/follow_tag.png?impolicy=thumb_fit&width=180&height=180",
       "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-20260320-rss-c43039",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Program \"Gokudo Sweets\" featuring Yasufu Motomiya and Yoshiyuki Yamaguchi touring sweets stores, enjoying mille crepe and night parfait.",
+      "title_ja": "本宮泰風と山口祥行がスイーツ店を巡る番組「極道スイーツ」、ミルクレープと夜パフェ堪能",
+      "dates": {},
+      "description": "The program \"Gokudo Sweets: Two actors with a sense of humor touring around a sweet store\" by Yasufu Motomiya and Yoshiyuki Yamaguchi of \"Nippon Unity\" will be broadcast on Fuji TV TWO on March 21 and 22, respectively, in \"Ueno: Reservations Sold Out Immediately, Milcrepe Edition\" and \"Harajuku: Temptation at Night! Mille Crepe\" on March 21 and \"Harajuku Yoru no Seduction! Shime Parfait\" will air on March 22.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664180"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0316/gokudosweets_202603_01.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-b59b61",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Ayaka Imoto's 2nd photo book \"BEST,\" a collection of her 22-year-old life, is released today.",
+      "title_ja": "井本彩花の2nd写真集「BEST,」本日発売、22歳の今をぎゅっとした1冊に",
+      "dates": {},
+      "description": "Ayaka Imoto's second photo book \"BEST,\" was released today, March 19, from Tokyo News Press.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664653"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/imotoayaka_20260319_01.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-b4b8b9",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Zazie Beetz and others at the premiere of the horror action film \"Zay Will Kill You\".",
+      "title_ja": "ホラーアクション映画「ゼイ・ウィル・キル・ユー」プレミアにザジー・ビーツらが登場",
+      "dates": {},
+      "description": "The world premiere of the escapist horror action film \"Zay Will Kill You\" was held on March 18, local time in the U.S. inside South by Southwest (SXSW) 2026 in Texas, with Zazie Beetz, Patricia Arquette, Tom Felton, Heather Graham and director Kirill Sokolov were in attendance. Photos of the event have arrived.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664678"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/theywillkillyou_20260317_01.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-9f868a",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Fumino Kimura to appear in WOWOW drama starring Kentaro Ito; GACKT also sings theme song",
+      "title_ja": "伊藤健太郎主演のWOWOWドラマに木村文乃が出演、GACKTは主題歌も担当",
+      "dates": {},
+      "description": "Kentaro Ito stars in \"Serial Drama W Consultant - The Man Who Writes Death\" with Fumino Kimura and GACKT. The theme song will be \"FALL AGAIN,\" GACKT's first new song in about 9 years.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664635"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/consultant_20260319_01.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
     },
     {
       "id": "anime-20260320-rss-9c7825",
@@ -2322,6 +2972,48 @@
       "_source_id": "natalie-anime"
     },
     {
+      "id": "anime-20260320-rss-89fcba",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "New Information on \"Mobile Police Patlabor EZY\" Chapter 1: Trailer, Theme Song, and Synopsis Released",
+      "title_ja": "「機動警察パトレイバー EZY」第1章の新情報が続々、本予告・主題歌・あらすじ解禁",
+      "dates": {},
+      "description": "The key visual, trailer, episode synopsis, scene cuts, and theme song information for the first chapter \"Mobile Police Patlabor EZY File 1\" of the new \"Mobile Police Patlabor\" series animation \"Mobile Police Patlabor EZY\" have all been released.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664686"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/patlabor_file1_202603_poster.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-842c15",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Keep walking until you're the last one standing...New photo of \"The Long Walk\" by Stephen King",
+      "title_ja": "最後の1人になるまで歩き続けろ…スティーヴン・キング原作「ロングウォーク」新写真",
+      "dates": {},
+      "description": "The Long Walk\" is an adaptation of Stephen King's novel by Francis Lawrence of \"The Hunger Games\" series. Ten scene photos and information on the Mubiciche Card have been released. The release date has been set for June 26.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664684"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/longwalk_20260319_01.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
       "id": "anime-20260320-rss-78cd8a",
       "categories": [
         "anime"
@@ -2362,6 +3054,27 @@
       ],
       "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0319/motoinkya_1.jpg?imwidth=640&imdensity=1",
       "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-20260320-rss-669b78",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Mats Mikkelsen and Anas Thomas Jensen's latest film, \"Goodbye, My Hero,\" opens.",
+      "title_ja": "マッツ・ミケルセン×アナス・トマス・イェンセンの最新作「さよなら、僕の英雄」公開",
+      "dates": {},
+      "description": "The Last Viking,\" starring Mads Mikkelsen and directed by Anas Thomas Jensen, will open in Shinjuku Piccadilly, Tokyo and other theaters nationwide on June 19 under the Japanese title \"Farewell, My Hero. This is the sixth feature film by Jensen, who is known for his screenplays such as \"A Purge for the Scoundrels\" and \"Ai wo Kosu Hito\" and has also worked with Mikkelsen on \"Breakaway,\" \"Adam's Apple,\" and \"Men & Chicken. Starcat Albatross Film will distribute the film.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664574"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0318/sayonarabokunoeiyu_202603_01.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
     },
     {
       "id": "anime-20260320-rss-61325b",
@@ -2406,6 +3119,48 @@
       "_source_id": "natalie-anime"
     },
     {
+      "id": "anime-20260320-rss-567f5c",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "National Cinema Essay Contest\" by Small Movie Theaters Opens to the Public; Over 50 Theaters Write Essays on Current Situation and Their Thoughts",
+      "title_ja": "小さな映画館による「全国映画館想文」が公開、50館以上が現状や思いを作文につづる",
+      "dates": {},
+      "description": "Kinelp, a movie theater support application scheduled for release in the future, has released \"Zenkoku Eiga-kan Soumon\" on its website. Small movie theaters (mini-theaters) from all over Japan cooperated to publish their essays on the current situation and thoughts of their respective theaters in the form of manuscript paper-like images.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664632"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/eigakansoubun_202603_02.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-44e9dc",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Behind-the-scenes look at \"Project Hail Mary,\" a NASA-supervised, science-in-depth",
+      "title_ja": "「プロジェクト・ヘイル・メアリー」舞台裏を紹介、NASA監修で科学を徹底追求",
+      "dates": {},
+      "description": "The making of the film \"Project Hail Mary,\" starring Ryan Gosling, is now available on YouTube.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664679"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/projecthm_202603_making1.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
       "id": "anime-20260320-rss-446e2e",
       "categories": [
         "anime"
@@ -2446,6 +3201,69 @@
       ],
       "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0319/reikokukishi.jpg?imwidth=640&imdensity=1",
       "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-20260320-rss-2efa92",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Nanana Mori stayed overnight in Shinjuku to prepare for her role, playing a girl who arrives at the toe side of the road. new photo of \"Flame\".",
+      "title_ja": "森七菜が新宿に泊まり込んで役作り、トー横にたどり着く少女演じた「炎上」新写真",
+      "dates": {},
+      "description": "The scene photos and making-of photos of the movie \"On Fire,\" in which Nanana Mori plays the main role, have been released. The main character, Jurie Kobayashi, a.k.a. \"Juju\", who lives in Shinjuku Kabukicho, Tokyo, was captured in these photos.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664583"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0318/enjou_202603_01.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-2977a5",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Ren Nagase \"Another Sky\" to Osaka, the place of his \"origin,\" with a passionate message from Kaito Takahashi.",
+      "title_ja": "永瀬廉「アナザースカイ」で“原点”が詰まった大阪へ、髙橋海人からは熱いメッセージが",
+      "dates": {},
+      "description": "Ren Nagase (King & Prince) will appear as a guest on \"Another Sky\" on March 21 on Nippon Television Network Corporation. He will tour Osaka, the place where he spent his youth and started his career as an idol.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664659"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/anothersky_20260319_01.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-249db9",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "status": "active",
+      "title": "Character visuals and video of Naoto Takenaka, Takumi Saito, Yuya Endo, and Takuya Kusakawa in \"Kill Hands #4",
+      "title_ja": "「殺手#4」竹中直人、斎藤工、遠藤雄弥、草川拓弥のキャラクタービジュアル＆動画が公開",
+      "dates": {},
+      "description": "The Hong Kong/Japan co-production action film \"Killer #4 (殺手#4),\" starring Jeffrey Guy (魏浚笙) and Sara Minami, will be released on April 3. A character visual has now been released that captures the characters played by Naoto Takenaka, Takumi Saito, Yuya Endo, and Takuya Kusakawa (Super Tokkyu). In addition, a character video was also released on YouTube.",
+      "source": {
+        "url": "https://natalie.mu/eiga/news/664643"
+      },
+      "tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/killernumber4_20260317_04.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-news"
     },
     {
       "id": "anime-20260320-rss-1f4155",
@@ -2511,6 +3329,49 @@
       "_source_id": "natalie-anime"
     },
     {
+      "id": "anime-20260320-pplx-d4a155",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "JoJo's Bizarre Adventure Steel Ball Run March Anime Adaptation",
+      "title_ja": "JoJoの奇妙な冒険 Steel Ball Run 3月アニメ化",
+      "description": "Part 7 of JoJo's Bizarre Adventure, \"Steel Ball Run,\" is scheduled to air in March 2026, with Beastars final season part 2, Rooster Fighter, and the third season of Jutsu Kaisen also in the works.",
+      "source": {
+        "url": "https://gaming.lenovo.com/emea/threads/52992-%F0%9F%8C%B8-Anime-Watchlist-March-2026-%F0%9F%8C%B8"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03"
+      },
+      "location": "日本"
+    },
+    {
+      "id": "anime-20260320-pplx-bd4d73",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Spring 2026 Anime Original Manga Info: Beastars, JoJo, etc.",
+      "title_ja": "春2026アニメ原作マンガ情報：Beastars, JoJoなど",
+      "description": "All Beastars, JoJo Steel Ball Run, and Rooster Fighter are recommended as original works for the Spring 2026 anime; Snowball Earth and Daemons of the Shadow Realm are also new series of note.",
+      "source": {
+        "url": "https://www.animenewsnetwork.com/feature/2026-03-18/read-it-first-manga-light-novel-sources-for-spring-2026-anime/.234350"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03"
+      },
+      "location": "日本",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/crop600x315gE0/cms/feature/234350/mar-2026-read-it-first-fixed.jpg"
+    },
+    {
       "id": "anime-20260320-pplx-9a8b55",
       "categories": [
         "anime"
@@ -2529,7 +3390,8 @@
       "dates": {
         "display": "2026-03 early"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://st.cdjapan.co.jp/pictures/s/16/23/NEOBK-3181844.jpg?v=1"
     },
     {
       "id": "anime-20260320-pplx-8c0fc1",
@@ -2550,7 +3412,30 @@
       "dates": {
         "display": "2026-03-19"
       },
-      "location": "Netflix"
+      "location": "Netflix",
+      "thumbnail": "https://comicbook.com/wp-content/uploads/sites/4/2026/03/Rooster-Fighter-Adult-Swim-Viz-Media.jpg?w=1024"
+    },
+    {
+      "id": "anime-20260320-pplx-5143e7",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "From Far Away Animation to be aired in 2026!",
+      "title_ja": "From Far Away アニメ化決定！2026年放送へ",
+      "description": "The TV anime adaptation of Kyoko Kyoka's classic shoujo manga \"Distant Girl\" has been officially announced, scheduled to begin airing in 2026, and has become a major topic of discussion among fans.",
+      "source": {
+        "url": "https://essential-japan.com/news/from-far-away-anime-adaptation-coming-in-2026/"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026"
+      },
+      "location": "日本",
+      "thumbnail": "https://cdn.essential-japan.com/wp-content/uploads/2026/03/from-far-away-anime-announcement-illustration-header.png"
     },
     {
       "id": "anime-20260320-pplx-2f2416",
@@ -2571,7 +3456,30 @@
       "dates": {
         "display": "2026-03"
       },
-      "location": "Titan Manga"
+      "location": "Titan Manga",
+      "thumbnail": "https://www.comicsbeat.com/wp-content/uploads/2025/07/the-five-star-stories.jpg"
+    },
+    {
+      "id": "anime-20260320-pplx-0ba6c1",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Space Brothers Three more episodes to the manga's conclusion",
+      "title_ja": "Space Brothers マンガ完結へあと3話",
+      "description": "The \"Space Brothers\" manga is complete after 19 years. The final 46 volumes will be released on July 23, shocking fans as the latest news this week.",
+      "source": {
+        "url": "https://www.crunchyroll.com/news/latest/2026/3/19/space-brothers-manga-to-conclude-in-three-chapters-after-19-years"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本",
+      "thumbnail": "https://www.crunchyroll.com/news/img/favicons/favicon-v2-96x96.png"
     },
     {
       "id": "vtuber-20260319-rss-ff77d2",
