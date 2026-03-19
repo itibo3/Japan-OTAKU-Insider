@@ -1,0 +1,84 @@
+# Japan OTAKU Insider — 日次更新ワークフロー（手動トリガ版）
+#
+# 目的: RSS取得 → DeepL翻訳 → entries.json 反映 → ステータス更新 → デプロイ
+# 前提: DEEPL_AUTH_KEY が Secrets に設定されている場合のみ実行
+#       未設定の場合は安全終了（何も変更せず exit 0）
+#
+# 実行: Actions タブ → "Daily Update" → "Run workflow"
+
+name: Daily Update
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      has_key: ${{ steps.check.outputs.has_key }}
+    steps:
+      - name: Check DEEPL_AUTH_KEY
+        id: check
+        run: |
+          if [ -n "${{ secrets.DEEPL_AUTH_KEY }}" ]; then
+            echo "DEEPL_AUTH_KEY が設定されています。更新処理を実行します。"
+            echo "has_key=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "DEEPL_AUTH_KEY が未設定です。更新処理をスキップして正常終了します。"
+            echo "has_key=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  update:
+    needs: check
+    if: needs.check.outputs.has_key == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install feedparser requests
+
+      - name: RSS Fetch
+        run: python3 scripts/rss_fetch.py --limit 15 --fetch-thumbnails
+
+      - name: Translate staging
+        env:
+          DEEPL_AUTH_KEY: ${{ secrets.DEEPL_AUTH_KEY }}
+        run: |
+          set -e
+          for f in data/staging/*.json; do
+            [ -f "$f" ] || continue
+            echo "Translating $f ..."
+            python3 scripts/translate_with_deepl.py "$f"
+          done
+
+      - name: Add entries
+        run: |
+          for f in data/staging/*.json; do
+            [ -f "$f" ] || continue
+            echo "Adding entries from $f ..."
+            python3 scripts/add_entry.py "$f"
+          done
+
+      - name: Update status
+        run: python3 scripts/update_status.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/entries.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update entries ($(date -u +%Y-%m-%d))"
+            git push
+          fi

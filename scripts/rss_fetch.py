@@ -96,6 +96,8 @@ def extract_lead_image(html: str, base_url: str) -> Optional[str]:
         "avatar",
         "sprite",
         "badge",
+        "button",
+        "twitter",
         "pixel",
         "1x1",
         "spacer",
@@ -132,6 +134,10 @@ def extract_lead_image(html: str, base_url: str) -> Optional[str]:
 
         src_lower = src.lower()
         if any(k in src_lower for k in skip_keywords):
+            continue
+
+        # 明らかな装飾用gif（例: SNSボタン）を避ける
+        if src_lower.endswith(".gif"):
             continue
 
         return src
@@ -251,7 +257,7 @@ def fetch_source(
 
         item = {
             "id": entry_id_from_url(url, category),
-            "category": category,
+            "categories": [category],
             "status": "active",
             "title": f"[未翻訳] {title_ja}",
             "title_ja": title_ja,

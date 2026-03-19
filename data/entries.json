@@ -1,10 +1,9 @@
 {
-  "last_updated": "2026-03-19T00:40:34.765150+09:00",
-  "total_entries": 120,
+  "last_updated": "2026-03-19T15:22:20.805073+09:00",
+  "total_entries": 125,
   "entries": [
     {
       "id": "cafe-20260316-001",
-      "category": "cafe",
       "status": "upcoming",
       "title": "Touken Ranbu Touneko Danshi Cafe 5th Edition",
       "title_ja": "刀剣乱舞 刀猫男士カフェ 第5弾",
@@ -23,11 +22,13 @@
         "cafe",
         "akihabara"
       ],
-      "thumbnail": "https://akihabara-bc.jp/wp-content/uploads/2026/03/Gemini_Generated_Image_b9sldjb9sldjb9sl.jpg"
+      "thumbnail": "https://akihabara-bc.jp/wp-content/uploads/2026/03/Gemini_Generated_Image_b9sldjb9sldjb9sl.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260316-002",
-      "category": "cafe",
       "status": "active",
       "title": "Medalist × Hyakki Yako Ver. Pop-up Store",
       "title_ja": "メダリスト × 百鬼夜行Ver. ストア",
@@ -44,11 +45,13 @@
         "pop-up store",
         "merchandise"
       ],
-      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/e48dd68d5850ce3e3e06e9ebd51378c8.jpeg"
+      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/e48dd68d5850ce3e3e06e9ebd51378c8.jpeg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "event-20260316-003",
-      "category": "event",
       "status": "active",
       "title": "Fate/Grand Order Ritsuka Fujimaru Doesn't Get It BOUQUETver. POPUPSHOP",
       "title_ja": "Fate/Grand Order 藤丸立香はわからない BOUQUETver. POPUPSHOP",
@@ -66,11 +69,13 @@
         "pop-up store",
         "shibuya"
       ],
-      "thumbnail": "https://rstatic.enjoytokyo.jp/assets/img/oglogo.png?p=t&w=1200"
+      "thumbnail": "https://rstatic.enjoytokyo.jp/assets/img/oglogo.png?p=t&w=1200",
+      "categories": [
+        "event"
+      ]
     },
     {
       "id": "event-20260316-004",
-      "category": "event",
       "status": "upcoming",
       "title": "Touhou Project × Maid Outfit Store",
       "title_ja": "東方Project × メイド服 ストア",
@@ -87,11 +92,13 @@
         "akihabara",
         "kotobukiya",
         "merchandise"
+      ],
+      "categories": [
+        "event"
       ]
     },
     {
       "id": "figure-20260316-005",
-      "category": "figure",
       "status": "upcoming",
       "title": "Kotobukiya PUNI☆MOFU Ginran",
       "title_ja": "コトブキヤ PUNI☆MOFU 銀ラン",
@@ -106,11 +113,13 @@
         "plastic model",
         "mecha girl"
       ],
-      "thumbnail": "https://hjweb.jp/wp-content/uploads/2025/10/1c921d2c7f5d83a2bb620fd1e3cdebed.jpg"
+      "thumbnail": "https://hjweb.jp/wp-content/uploads/2025/10/1c921d2c7f5d83a2bb620fd1e3cdebed.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260316-006",
-      "category": "figure",
       "status": "upcoming",
       "title": "Kotobukiya BULLET KNIGHTS Executioner HELL BLAZE",
       "title_ja": "コトブキヤ BULLET KNIGHTS エクスキューショナー HELL BLAZE",
@@ -126,11 +135,13 @@
         "megami device",
         "plastic model"
       ],
-      "thumbnail": "https://hjweb.jp/wp-content/uploads/2025/10/1c921d2c7f5d83a2bb620fd1e3cdebed.jpg"
+      "thumbnail": "https://hjweb.jp/wp-content/uploads/2025/10/1c921d2c7f5d83a2bb620fd1e3cdebed.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260316-007",
-      "category": "figure",
       "status": "upcoming",
       "title": "Megami Device BUSTER DOLL Knight Alice",
       "title_ja": "メガミデバイス BUSTER DOLL ナイト Alice",
@@ -145,11 +156,13 @@
         "megami device",
         "honda"
       ],
-      "thumbnail": "https://livedoor.blogimg.jp/hobisima-rittai/imgs/9/d/9d1bbf7e.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/hobisima-rittai/imgs/9/d/9d1bbf7e.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260316-008",
-      "category": "figure",
       "status": "upcoming",
       "title": "My Dress-Up Darling Desktop Cute Figure",
       "title_ja": "その着せ替え人形は恋をする Desktop Cute フィギュア",
@@ -164,11 +177,13 @@
         "prize figure",
         "sajuna inui"
       ],
-      "thumbnail": "https://images.gamepedia.jp/common/default_ogp.png"
+      "thumbnail": "https://images.gamepedia.jp/common/default_ogp.png",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "anime-20260316-009",
-      "category": "anime",
       "status": "active",
       "title": "BEASTARS FINAL SEASON Part 2 Premiere",
       "title_ja": "BEASTARS FINAL SEASON 第2クール開始",
@@ -184,11 +199,13 @@
         "beastars",
         "netflix",
         "anime premiere"
+      ],
+      "categories": [
+        "anime"
       ]
     },
     {
       "id": "anime-20260316-010",
-      "category": "anime",
       "status": "upcoming",
       "title": "Steel Ball Run Premiere",
       "title_ja": "スティール・ボール・ラン 配信開始",
@@ -204,11 +221,13 @@
         "jojo",
         "steel ball run",
         "netflix"
+      ],
+      "categories": [
+        "anime"
       ]
     },
     {
       "id": "anime-20260316-011",
-      "category": "anime",
       "status": "upcoming",
       "title": "I Got a Cheat Skill in Another World and Became Unrivaled in the Real World, Too - Special",
       "title_ja": "異世界でチート能力を手にした俺は、現実世界をも無双する スペシャル",
@@ -223,11 +242,13 @@
         "isekai",
         "anime special",
         "tv broadcast"
+      ],
+      "categories": [
+        "anime"
       ]
     },
     {
       "id": "event-20260316-012",
-      "category": "event",
       "status": "ended",
       "title": "Bright Fes 2026",
       "title_ja": "ブライトフェス 2026",
@@ -244,11 +265,13 @@
         "akihabara",
         "card game"
       ],
-      "thumbnail": "https://akihabara-bc.jp/wp-content/uploads/2026/03/Gemini_Generated_Image_b9sldjb9sldjb9sl.jpg"
+      "thumbnail": "https://akihabara-bc.jp/wp-content/uploads/2026/03/Gemini_Generated_Image_b9sldjb9sldjb9sl.jpg",
+      "categories": [
+        "event"
+      ]
     },
     {
       "id": "event-20260316-013",
-      "category": "event",
       "status": "active",
       "title": "TV Anime 'Brave Punishment' POP UP CORNER",
       "title_ja": "TVアニメ『勇者刑に処す』POP UP CORNER",
@@ -265,11 +288,13 @@
         "kotobukiya",
         "merchandise"
       ],
-      "thumbnail": "https://akihabara-bc.jp/wp-content/uploads/2026/03/Gemini_Generated_Image_b9sldjb9sldjb9sl.jpg"
+      "thumbnail": "https://akihabara-bc.jp/wp-content/uploads/2026/03/Gemini_Generated_Image_b9sldjb9sldjb9sl.jpg",
+      "categories": [
+        "event"
+      ]
     },
     {
       "id": "event-20260316-014",
-      "category": "event",
       "status": "active",
       "title": "School-Live! Megunee Birthday POP UP",
       "title_ja": "がっこうぐらし！ めぐねえ誕生日POP UP",
@@ -286,11 +311,13 @@
         "akihabara",
         "gamers"
       ],
-      "thumbnail": "https://akihabara-bc.jp/wp-content/uploads/2026/03/Gemini_Generated_Image_b9sldjb9sldjb9sl.jpg"
+      "thumbnail": "https://akihabara-bc.jp/wp-content/uploads/2026/03/Gemini_Generated_Image_b9sldjb9sldjb9sl.jpg",
+      "categories": [
+        "event"
+      ]
     },
     {
       "id": "cafe-20260316-015",
-      "category": "cafe",
       "status": "upcoming",
       "title": "HANA × Big Echo Collab",
       "title_ja": "HANA × ビッグエコー コラボ",
@@ -306,11 +333,13 @@
         "collaboration",
         "big echo"
       ],
-      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/e48dd68d5850ce3e3e06e9ebd51378c8.jpeg"
+      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/e48dd68d5850ce3e3e06e9ebd51378c8.jpeg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260316-016",
-      "category": "cafe",
       "status": "active",
       "title": "Ensemble Stars!! 10th Anniversary Cafe",
       "title_ja": "あんさんぶるスターズ!! 10周年コラボカフェ",
@@ -327,11 +356,13 @@
         "cafe",
         "ikebukuro"
       ],
-      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/e48dd68d5850ce3e3e06e9ebd51378c8.jpeg"
+      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/e48dd68d5850ce3e3e06e9ebd51378c8.jpeg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "event-20260316-017",
-      "category": "event",
       "status": "upcoming",
       "title": "Gnosia Pop-up Store",
       "title_ja": "グノーシア ポップアップストア",
@@ -348,11 +379,13 @@
         "pop-up store",
         "merchandise"
       ],
-      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/e48dd68d5850ce3e3e06e9ebd51378c8.jpeg"
+      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/e48dd68d5850ce3e3e06e9ebd51378c8.jpeg",
+      "categories": [
+        "event"
+      ]
     },
     {
       "id": "cafe-20260316-018",
-      "category": "cafe",
       "status": "upcoming",
       "title": "Assassination Classroom 10th Anniversary Cafe",
       "title_ja": "暗殺教室 10周年コラボカフェ",
@@ -369,11 +402,13 @@
         "cafe",
         "anniversary"
       ],
-      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/e48dd68d5850ce3e3e06e9ebd51378c8.jpeg"
+      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/e48dd68d5850ce3e3e06e9ebd51378c8.jpeg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "anime-20260316-019",
-      "category": "anime",
       "status": "active",
       "title": "Demon Slayer: Kimetsu no Yaiba - To the Hashira Training Final Screenings",
       "title_ja": "劇場版「鬼滅の刃」4月9日で終映、PVと新たな特典を公開　鬼と鬼殺隊の応援上映も",
@@ -389,11 +424,13 @@
         "kimetsu no yaiba",
         "anime movie"
       ],
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0316/kimetsu_mugenjo_akaza_finaletokuten.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0316/kimetsu_mugenjo_akaza_finaletokuten.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "figure-20260316-020",
-      "category": "figure",
       "status": "active",
       "title": "Persona 3 Reload SEGA LABBIES Plushies",
       "title_ja": "「ペルソナ３ リロード」などのぬいぐるみが「SEGA LABBIES」より登場",
@@ -407,11 +444,13 @@
         "plushie",
         "sega"
       ],
-      "thumbnail": "https://www.4gamer.net/games/714/G071477/20260316059/SS/001.jpg"
+      "thumbnail": "https://www.4gamer.net/games/714/G071477/20260316059/SS/001.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "cafe-20260318-021",
-      "category": "cafe",
       "status": "upcoming",
       "title": "BOYS be MAID! × THE Chara CAFE Collaboration",
       "title_ja": "BOYS be MAID! × THEキャラCAFE コラボカフェ",
@@ -430,11 +469,13 @@
         "tokyo",
         "limited goods"
       ],
-      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/og1500.png"
+      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/og1500.png",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-022",
-      "category": "cafe",
       "status": "upcoming",
       "title": "Gintama × BOX cafe&space Collaboration Cafe (Shibuya & Ikebukuro)",
       "title_ja": "銀魂 × BOX cafe&space コラボ（渋谷・池袋・ソラマチ）",
@@ -453,11 +494,13 @@
         "ikebukuro",
         "anime movie"
       ],
-      "thumbnail": "https://rstatic.enjoytokyo.jp/assets/img/oglogo.png?p=t&w=1200"
+      "thumbnail": "https://rstatic.enjoytokyo.jp/assets/img/oglogo.png?p=t&w=1200",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-023",
-      "category": "cafe",
       "status": "upcoming",
       "title": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You - Cat Theme Store",
       "title_ja": "「100カノ」猫テーマ ストア in eeo Store 池袋本店",
@@ -475,11 +518,13 @@
         "ikebukuro",
         "pop-up store",
         "merchandise"
+      ],
+      "categories": [
+        "cafe"
       ]
     },
     {
       "id": "figure-20260318-024",
-      "category": "figure",
       "status": "upcoming",
       "title": "Kotobukiya Gakuen Idolm@ster Tamari Tsukimura -Luna say maybe- Scale Figure",
       "title_ja": "コトブキヤ「学園アイドルマスター」月村手毬 -Luna say maybe-",
@@ -495,11 +540,13 @@
         "kotobukiya",
         "scale figure",
         "tamari tsukimura"
+      ],
+      "categories": [
+        "figure"
       ]
     },
     {
       "id": "figure-20260318-025",
-      "category": "figure",
       "status": "active",
       "title": "Gakuen Idolm@ster Mini Plush vol.3 - GiGO Limited Prize",
       "title_ja": "「学園アイドルマスター」ちびぐるみ ～GiGO限定～ vol.3",
@@ -516,11 +563,13 @@
         "gigo",
         "prize figure",
         "crane game"
+      ],
+      "categories": [
+        "figure"
       ]
     },
     {
       "id": "anime-20260318-026",
-      "category": "anime",
       "status": "upcoming",
       "title": "Shunkashuuto Daiko-sha Haru no Mai TV Anime Premiere",
       "title_ja": "「春夏秋冬代行者 春の舞」TVアニメ放送開始",
@@ -537,11 +586,13 @@
         "battle fantasy",
         "light novel adaptation",
         "tokyo mx"
+      ],
+      "categories": [
+        "anime"
       ]
     },
     {
       "id": "anime-20260318-027",
-      "category": "anime",
       "status": "upcoming",
       "title": "Chitose-kun wa Ramune-bin no Naka - Ashikaze Arc Episodes 11-13 Simulcast Special",
       "title_ja": "「千歳くんはラムネ瓶のなか」明日風編 TVアニメ第1クール（11〜13話）一挙放送",
@@ -559,11 +610,13 @@
         "anime",
         "simulcast",
         "spring 2026"
+      ],
+      "categories": [
+        "anime"
       ]
     },
     {
       "id": "anime-20260318-028",
-      "category": "anime",
       "status": "upcoming",
       "title": "Nintama Rantaro Season 34 Premiere",
       "title_ja": "「忍たま乱太郎」第34シリーズ放送開始",
@@ -581,11 +634,13 @@
         "kids anime",
         "spring 2026",
         "long-running series"
+      ],
+      "categories": [
+        "anime"
       ]
     },
     {
       "id": "event-20260318-029",
-      "category": "event",
       "status": "active",
       "title": "Ghost in the Shell Anime 30th Anniversary Exhibition",
       "title_ja": "「攻殻機動隊」アニメ制作30周年記念展",
@@ -604,11 +659,13 @@
         "tokyo",
         "anime art"
       ],
-      "thumbnail": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/04/l/580704_1.jpg"
+      "thumbnail": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/04/l/580704_1.jpg",
+      "categories": [
+        "event"
+      ]
     },
     {
       "id": "event-20260318-030",
-      "category": "event",
       "status": "active",
       "title": "Gintama Spring Stroll: Keio Line Stamp Rally",
       "title_ja": "「銀魂」春のぶらり旅 ～どうせ暇だろ、コノヤロー。～",
@@ -627,11 +684,13 @@
         "shinjuku",
         "fan event"
       ],
-      "thumbnail": "https://rstatic.enjoytokyo.jp/assets/img/oglogo.png?p=t&w=1200"
+      "thumbnail": "https://rstatic.enjoytokyo.jp/assets/img/oglogo.png?p=t&w=1200",
+      "categories": [
+        "event"
+      ]
     },
     {
       "id": "cafe-20260318-rss-d65a17",
-      "category": "cafe",
       "status": "active",
       "title": "Dream☆Jumbo☆Girl Vol.4: \"Tens of millions of yen is cheap for my friends!\"",
       "title_ja": "ドリーム☆ジャンボ☆ガール４巻　「数千万円くらい仲間のためなら安いものさ！」",
@@ -646,11 +705,13 @@
         "figure"
       ],
       "_source_id": "akiba-blog",
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/8/d/8dcb0178.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/8/d/8dcb0178.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-rss-f64450",
-      "category": "cafe",
       "status": "active",
       "title": "Idolatry Vol.3: \"Junna's crazy love destroys the concept of Otaku and Oshi\"",
       "title_ja": "アイドラトリィ３巻　「オタクと推しという概念をぶっ壊してる循菜の狂気的な愛」",
@@ -665,11 +726,13 @@
         "figure"
       ],
       "_source_id": "akiba-blog",
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/3/e/3e211025.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/3/e/3e211025.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-rss-e564ce",
-      "category": "cafe",
       "status": "active",
       "title": "Keichi Kiyuna's 'Athena-san Who Demands a Return' Vol.1: 'Runaway Beautiful Girl x Yare-yare Boy!'",
       "title_ja": "喜友名恵一　見返りを求めるアテナさん１巻　「暴走美少女×ヤレヤレ系男子！」",
@@ -684,11 +747,13 @@
         "figure"
       ],
       "_source_id": "akiba-blog",
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/1/5/1582c565.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/1/5/1582c565.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-rss-67a7cd",
-      "category": "cafe",
       "status": "active",
       "title": "There's a Hole in the Student Council Too! Vol.12: \"Love stories are also progressing♪\"",
       "title_ja": "生徒会にも穴はある！１２巻　「恋のハナシも進行中♪」",
@@ -703,11 +768,13 @@
         "figure"
       ],
       "_source_id": "akiba-blog",
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/7/1/71cf529d.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/7/1/71cf529d.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-rss-8a59b2",
-      "category": "cafe",
       "status": "active",
       "title": "The Vampire Wants to be Blood-Taken Final Vol.3: 'The fate that awaits after the blood-taking fetish is exposed'",
       "title_ja": "吸血鬼さんはチトラレたい最終３巻　「血取られ性癖がバレたその先に待つ運命は」",
@@ -722,11 +789,13 @@
         "figure"
       ],
       "_source_id": "akiba-blog",
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/d/f/df008446.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/d/f/df008446.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-rss-98908b",
-      "category": "cafe",
       "status": "active",
       "title": "Circle nikukyu 'Yoduki Sisters' Emergency Rations 6': 'Doing the deed in the abandoned school building after class'",
       "title_ja": "サークルnikukyu　夜月姉妹の非常食６　「放課後の旧校舎にて本番行為」",
@@ -741,11 +810,13 @@
         "figure"
       ],
       "_source_id": "akiba-blog",
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/c/a/caa1838d.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/c/a/caa1838d.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-rss-416f2a",
-      "category": "cafe",
       "status": "active",
       "title": "[Digital Doujinshi Intro] Gloomy Zaibatsu Heir Makes Babies with Busty Maids: 'I Want to Impregnate Maids Even if I\\'m Unpopular! Omnibus'",
       "title_ja": "【電子エロ同人紹介シリーズ】 陰キャな財閥の跡取り男子が巨乳のメイドさん達を相手に子作りHに励む「非モテでもメイドを孕ませたい！ 総集編」",
@@ -760,11 +831,13 @@
         "figure"
       ],
       "_source_id": "akiba-blog",
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/6/d/6dccfc0f.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/6/d/6dccfc0f.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-rss-d20801",
-      "category": "cafe",
       "status": "active",
       "title": "Writhe, Adam-kun Vol.7: 'Finally crossing the line with their stepbrother!?'",
       "title_ja": "悶えてよ、アダムくん７巻　「ついに超えちゃう！？義兄との一線」",
@@ -779,11 +852,13 @@
         "figure"
       ],
       "_source_id": "akiba-blog",
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/d/c/dc609c21.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/d/c/dc609c21.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-rss-211fa2",
-      "category": "cafe",
       "status": "active",
       "title": "Ayatsuri Calendar Vol.1: 'Doing whatever you want with schedules using a calendar app♥'",
       "title_ja": "あやつりカレンダー１巻　「カレンダーアプリで予定をヤリたい放題♥」",
@@ -798,11 +873,13 @@
         "figure"
       ],
       "_source_id": "akiba-blog",
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/7/6/7639d156.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/7/6/7639d156.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "cafe-20260318-rss-b3c572",
-      "category": "cafe",
       "status": "active",
       "title": "Comic Adaptation 'Comrade Girl, Shoot the Enemy' Vol.3: 'The all-female sniper platoon heads to the fierce battleground'",
       "title_ja": "コミカライズ　同志少女よ、敵を撃て３巻　「女性だけの狙撃小隊は、独ソ戦の激戦地へ」",
@@ -817,11 +894,13 @@
         "figure"
       ],
       "_source_id": "akiba-blog",
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/3/4/340d05fd.jpg"
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/3/4/340d05fd.jpg",
+      "categories": [
+        "cafe"
+      ]
     },
     {
       "id": "anime-20260318-rss-758ab9",
-      "category": "anime",
       "status": "active",
       "title": "Chika Umino Appears on Expanded Special of 'Naoki Urasawa's Manben neo' on NHK BS",
       "title_ja": "羽海野チカ出演の「浦沢直樹の漫勉neo」拡大SPがNHK BSで、未公開シーンも",
@@ -836,11 +915,13 @@
         "pop-culture"
       ],
       "_source_id": "natalie-anime",
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/L55X42RV3Z_8.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/L55X42RV3Z_8.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-9d5899",
-      "category": "anime",
       "status": "active",
       "title": "'Steel Ball Run' Anime Streaming Starts Tomorrow, New Scene Cuts Revealed",
       "title_ja": "「スティール・ボール・ラン」明日配信開始、1st STAGEの新規場面カット公開",
@@ -855,11 +936,13 @@
         "pop-culture"
       ],
       "_source_id": "natalie-anime",
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/sbr_new01.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/sbr_new01.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-10e437",
-      "category": "anime",
       "status": "active",
       "title": "One Year Until School Closure: A Youth Story Capturing the School Across Four Seasons",
       "title_ja": "廃校まで1年、四季折々の校舎を写真に収め続ける少女たちの青春譚",
@@ -874,11 +957,13 @@
         "pop-culture"
       ],
       "_source_id": "natalie-anime",
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/harunohikari_h1.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/harunohikari_h1.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-8d9113",
-      "category": "anime",
       "status": "active",
       "title": "Dark Fantasy of a Little Girl with Highly Poisonous Lips: 'Kiss of the Amphisbaena'",
       "title_ja": "猛毒の唇を持つ幼女のダークファンタジー「アンフィスバエナのくちづけ」",
@@ -893,11 +978,13 @@
         "pop-culture"
       ],
       "_source_id": "natalie-anime",
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0317/re_1zfd_gfanta_1920_04_0161.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0317/re_1zfd_gfanta_1920_04_0161.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-6d0f9c",
-      "category": "anime",
       "status": "active",
       "title": "Kyoko Hikawa's 'From Far Away' Gets TV Anime! Directed by Noriyuki Abe",
       "title_ja": "ひかわきょうこ「彼方から」TVアニメ化！イラスト＆特報PV公開　監督は阿部記之",
@@ -912,11 +999,13 @@
         "pop-culture"
       ],
       "_source_id": "natalie-anime",
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/hikawakyoko_illustration.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/hikawakyoko_illustration.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-e33ebe",
-      "category": "anime",
       "status": "active",
       "title": "Anime 'Matakoro' Main PV & Visual Released, Broadcasting Starts April 2nd",
       "title_ja": "アニメ「またころ」メインPV＆ビジュアル公開、OPテーマは多次元制御機構よだか",
@@ -931,11 +1020,13 @@
         "pop-culture"
       ],
       "_source_id": "natalie-anime",
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/matakoro_kv.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/matakoro_kv.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-de91bb",
-      "category": "anime",
       "status": "active",
       "title": "An Unknown Academy on the Dark Side of Tokyo: Exorcist Action 'Ura Tokyo no Osoroshidokoro'",
       "title_ja": "東京の裏側には知られざる学園あり…除霊師学園アクション「裏東京のオソロシドコロ」",
@@ -950,11 +1041,13 @@
         "pop-culture"
       ],
       "_source_id": "natalie-anime",
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/osoroshidokoro.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/osoroshidokoro.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-351a18",
-      "category": "anime",
       "status": "active",
       "title": "Yonehiko Kitagawa Passes Away from Pneumonia, Known as Chairman in 'Kinnikuman'",
       "title_ja": "北川米彦が肺炎で死去　「キン肉マン」委員長役など",
@@ -969,11 +1062,13 @@
         "pop-culture"
       ],
       "_source_id": "natalie-anime",
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2023/0920/default_fuho.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2023/0920/default_fuho.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-e22caa",
-      "category": "anime",
       "status": "active",
       "title": "A Princess Turned Chicken & Clueless Emperor Seek True Love in 'Princess of the Birdcage'",
       "title_ja": "ニワトリにされた姫＆恋愛オンチの皇帝が真実の愛を求めて空回る「鳥籠のお姫様」",
@@ -988,11 +1083,13 @@
         "pop-culture"
       ],
       "_source_id": "natalie-anime",
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/torikagonoohimesama_comic1.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/torikagonoohimesama_comic1.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-62a9b7",
-      "category": "anime",
       "status": "active",
       "title": "A Dropout Hero Saves the World with 'Holy Light' in Comedy Adventure 'Seijun Ecstasy'",
       "title_ja": "落ちこぼれ勇者が“聖なる光”で世界を救う、エロコメ冒険譚「聖巡エクスタシー」1巻",
@@ -1007,11 +1104,13 @@
         "pop-culture"
       ],
       "_source_id": "natalie-anime",
-      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/seijunecstasy01.jpg?impolicy=twitter_card_face_crop"
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0318/seijunecstasy01.jpg?impolicy=twitter_card_face_crop",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-48cb34",
-      "category": "game",
       "status": "active",
       "title": "'Apex Legends': 3 Special Gunpla to Commemorate Gundam Collab. Pre-orders Start March 19",
       "title_ja": "「Apex Legends」，ガンダムコラボを記念した特別なガンプラ3種が登場。3月19日12：00に数量限定で予約受付を開始",
@@ -1025,11 +1124,13 @@
         "anime"
       ],
       "_source_id": "4gamer",
-      "thumbnail": "https://www.4gamer.net/games/449/G044914/20260318043/SS/003.jpg"
+      "thumbnail": "https://www.4gamer.net/games/449/G044914/20260318043/SS/003.jpg",
+      "categories": [
+        "game"
+      ]
     },
     {
       "id": "anime-20260318-rss-c55d55",
-      "category": "game",
       "status": "active",
       "title": "'Chaos Zero Nightmare': Final Chapter 'Heart, Promise' of Season 2 Implemented. New Fighter 'Rita' Appears",
       "title_ja": "「カオスゼロナイトメア」，銀河系災害シーズン2の最終章「心、約束」を実装。新たなサイオニック戦闘員「リタ」が登場",
@@ -1043,11 +1144,13 @@
         "anime"
       ],
       "_source_id": "4gamer",
-      "thumbnail": "https://www.4gamer.net/games/793/G079350/20260318041/SS/003.jpg"
+      "thumbnail": "https://www.4gamer.net/games/793/G079350/20260318041/SS/003.jpg",
+      "categories": [
+        "game"
+      ]
     },
     {
       "id": "anime-20260318-rss-b55b3e",
-      "category": "game",
       "status": "active",
       "title": "'Uma Musume Pretty Derby': New 3-Star Victoire Pisa Coming March 19",
       "title_ja": "「ウマ娘 プリティーダービー」，新★3ヴィクトワールピサ（CV：嶋野 花）を3月19日に実装。ドバイワールドCなどを勝利した競走馬がモチーフ",
@@ -1061,11 +1164,13 @@
         "anime"
       ],
       "_source_id": "4gamer",
-      "thumbnail": "https://www.4gamer.net/games/414/G041434/20260318042/SS/001.jpg"
+      "thumbnail": "https://www.4gamer.net/games/414/G041434/20260318042/SS/001.jpg",
+      "categories": [
+        "game"
+      ]
     },
     {
       "id": "anime-20260318-rss-e1c856",
-      "category": "game",
       "status": "active",
       "title": "Persuade Grandpa for $10 Million No Matter What. New Visual Novel 'Scam Grandpa' Demo Released",
       "title_ja": "なんとしてもおじいちゃんを説得して1000万ドルを引き出そう。新作ビジュアルノベル「Scam Grandpa」，体験版を配信",
@@ -1079,11 +1184,13 @@
         "anime"
       ],
       "_source_id": "4gamer",
-      "thumbnail": "https://www.4gamer.net/games/991/G099186/20260318039/SS/007.jpg"
+      "thumbnail": "https://www.4gamer.net/games/991/G099186/20260318039/SS/007.jpg",
+      "categories": [
+        "game"
+      ]
     },
     {
       "id": "anime-20260318-rss-e60b5a",
-      "category": "game",
       "status": "active",
       "title": "Arcade Archives Version of 'Garuka' (Devastators) Releasing March 19. 1988 Konami STG",
       "title_ja": "アケアカ版「餓流禍（ガルカ）」，3月19日配信。戦闘のプロが前方から迫り来る敵を撃破する，1988年にKONAMIから発売されたSTG",
@@ -1097,11 +1204,13 @@
         "anime"
       ],
       "_source_id": "4gamer",
-      "thumbnail": "https://www.4gamer.net/games/991/G099169/20260318025/SS/005.jpg"
+      "thumbnail": "https://www.4gamer.net/games/991/G099169/20260318025/SS/005.jpg",
+      "categories": [
+        "game"
+      ]
     },
     {
       "id": "anime-20260318-rss-974c65",
-      "category": "game",
       "status": "active",
       "title": "Enjoy a Puzzle Game at Mos Premium Stores: 'Mos Premium Theater' Preview Report",
       "title_ja": "モスプレミアムの店舗で謎解きゲームを楽しめる。イベント「モスプレミアムシアター　〜トラベリン家の言い伝え〜」先行体験レポート",
@@ -1115,11 +1224,13 @@
         "anime"
       ],
       "_source_id": "4gamer",
-      "thumbnail": "https://www.4gamer.net/games/991/G999111/20260318038/SS/022.jpg"
+      "thumbnail": "https://www.4gamer.net/games/991/G999111/20260318038/SS/022.jpg",
+      "categories": [
+        "game"
+      ]
     },
     {
       "id": "anime-20260318-rss-a2efca",
-      "category": "game",
       "status": "active",
       "title": "'Katamari' Series Celebrates its 22nd Anniversary. Plentiful Goods Info Revealed",
       "title_ja": "「塊魂」シリーズは22周年。「ならぶんです。 塊魂2」などグッズ情報を多数公開",
@@ -1133,11 +1244,13 @@
         "anime"
       ],
       "_source_id": "4gamer",
-      "thumbnail": "https://www.4gamer.net/games/933/G093375/20260318037/SS/010.jpg"
+      "thumbnail": "https://www.4gamer.net/games/933/G093375/20260318037/SS/010.jpg",
+      "categories": [
+        "game"
+      ]
     },
     {
       "id": "anime-20260318-rss-6a0b69",
-      "category": "game",
       "status": "active",
       "title": "Merge Puzzle 'Planet Nine' Where You Shoot and Combine Planets Gets Steam Store Page",
       "title_ja": "1回のプレイ時間は2分から5分。ビリヤードのように惑星を弾いて，合体させていくマージパズル「第九惑星」，Steamストアページを公開",
@@ -1151,11 +1264,13 @@
         "anime"
       ],
       "_source_id": "4gamer",
-      "thumbnail": "https://www.4gamer.net/games/991/G099177/20260318036/SS/001.jpg"
+      "thumbnail": "https://www.4gamer.net/games/991/G099177/20260318036/SS/001.jpg",
+      "categories": [
+        "game"
+      ]
     },
     {
       "id": "anime-20260318-rss-43ce0b",
-      "category": "game",
       "status": "active",
       "title": "PS5 Digital Edition Console Bundle with Two DualSense Controllers Launching April 24",
       "title_ja": "PS5 デジタル・エディション本体に，2台のDualSense ワイヤレスコントローラーを同梱したセット商品が4月24日発売",
@@ -1169,11 +1284,13 @@
         "anime"
       ],
       "_source_id": "4gamer",
-      "thumbnail": "https://www.4gamer.net/games/990/G999027/20260318034/SS/001.jpg"
+      "thumbnail": "https://www.4gamer.net/games/990/G999027/20260318034/SS/001.jpg",
+      "categories": [
+        "game"
+      ]
     },
     {
       "id": "anime-20260318-rss-d9860c",
-      "category": "game",
       "status": "active",
       "title": "Strategy Board Game 'Kakegurui ALL IN' Starts Advance Play Campaign on March 19",
       "title_ja": "戦略すごろくを楽しめる「賭ケグルイ ALL IN」，先行プレイキャンペーンを3月19日に開始",
@@ -1187,11 +1304,13 @@
         "anime"
       ],
       "_source_id": "4gamer",
-      "thumbnail": "https://www.4gamer.net/games/889/G088912/20260318033/SS/001.jpg"
+      "thumbnail": "https://www.4gamer.net/games/889/G088912/20260318033/SS/001.jpg",
+      "categories": [
+        "game"
+      ]
     },
     {
       "id": "figure-20260318-rss-41181d",
-      "category": "figure",
       "status": "active",
       "title": "'Resident Evil: Requiem' Capcom Figure Builder Creator's Model Grace Ashcroft 1/6 Scale Figure",
       "title_ja": "『バイオハザード レクイエム』 カプコンフィギュアビルダー クリエイターズモデル グレース・アッシュクロフト 1/6 完成品フィギュア[カプコン]",
@@ -1207,11 +1326,13 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-042f6a",
-      "category": "figure",
       "status": "active",
       "title": "Empress from TV Anime 'Black★★Rock Shooter DAWN FALL' Gets a 1/4 Scale Figure!",
       "title_ja": "TVアニメ『ブラック★★ロックシューターDAWN FALL』より、「エンプレス」が1/4スケールフィギュア化！",
@@ -1227,11 +1348,13 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-72f7c6",
-      "category": "figure",
       "status": "active",
       "title": "PLAfig. No.PF-04 Godzilla (2001) Plastic Model Kit [Aoshima]",
       "title_ja": "PLAfig. No.PF-04 ゴジラ (2001) プラモデル[アオシマ]",
@@ -1247,11 +1370,13 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-876097",
-      "category": "figure",
       "status": "active",
       "title": "From 'SSSS.GRIDMAN', 'Rikka Takarada & Akane Shinjo' Get Figures Based on Toridamono's Illustration!",
       "title_ja": "『SSSS.GRIDMAN』より、トリダモノ氏による描き下ろしイラストの「宝多六花＆新条アカネ」が立体化！",
@@ -1267,11 +1392,13 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-175e49",
-      "category": "figure",
       "status": "active",
       "title": "From the Game 'Genshin Impact', 'Columbina' in a Pure White Dress Gets a 1/8 Scale Figure!",
       "title_ja": "ゲーム『原神』より、純白のワンピースに身を包んだ「コロンビーナ」が1/8スケールフィギュア化！",
@@ -1287,11 +1414,13 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-d9708d",
-      "category": "figure",
       "status": "active",
       "title": "March 2026 3rd Week: Delivering the AmiAmi Akihabara Radio Kaikan Store Exhibition!",
       "title_ja": "＜2026年3月3週目＞あみあみ秋葉原ラジオ会館店展示の様子をお届け！",
@@ -1307,11 +1436,13 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-a7f2f2",
-      "category": "figure",
       "status": "active",
       "title": "From 'Arknights: Endfield', 'Yvon' Gets a Figure Surrounded by Multiple Layered Displays!",
       "title_ja": "『アークナイツ：エンドフィールド』より、「イヴォンヌ」が幾重にも重なるディスプレイに囲まれた姿で立体化！",
@@ -1327,11 +1458,13 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-b74474",
-      "category": "figure",
       "status": "active",
       "title": "From TV Anime 'Oshi no Ko', Hologram BIG Stands & Acrylic Keychains Available from AmiAmi!",
       "title_ja": "TVアニメ『【推しの子】』より、「ホログラムBIGスタンド Vol.4」「ナウプレ♪アクリルキーホルダー」があみあみから登場！",
@@ -1347,11 +1480,13 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-030119",
-      "category": "figure",
       "status": "active",
       "title": "From the Drama 'Fallout', 'Lucy MacLean' Gets 1/4 Scale Figure! Pre-orders Open at Prime 1 Studio!",
       "title_ja": "ドラマ『フォールアウト』から、「ルーシー・マクレーン」が1/4スケールで立体化！プライム１スタジオ オンラインストアにて予約開始！",
@@ -1367,11 +1502,13 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-ee1b06",
-      "category": "figure",
       "status": "active",
       "title": "'Girls' Frontline 2: Exilium' Springfield Queen Under the Lights Ver. 1/7 Scale Figure [Kotobukiya]",
       "title_ja": "『ドールズフロントライン2：エクシリウム』 スプリングフィールド 灯下の女王Ver. 1/7 完成品フィギュア[コトブキヤ]",
@@ -1387,11 +1524,13 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "anime-20260318-rss-f84ae2",
-      "category": "anime",
       "status": "active",
       "title": "'Touken Ranbu Medi Nui Collection: Toukabu / Tousute' Official Pre-orders Open March 16!",
       "title_ja": "「刀剣乱舞 めでぃぬいこれくしょん ～刀かぶ～／～刀ステ～」公式通販(国内)において3/16(月)12:00(正午)～二次受付決定！",
@@ -1408,11 +1547,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-news",
-      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/Medinui_NitroNews_IMG02-thumb-480x270-8883.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/Medinui_NitroNews_IMG02-thumb-480x270-8883.jpg",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-cdf7ec",
-      "category": "anime",
       "status": "active",
       "title": "'Touken Ranbu Medi Nui Collection: Toumyu' Official Pre-orders Open March 9!",
       "title_ja": "「刀剣乱舞 めでぃぬいこれくしょん ～刀ミュ～」(全6種)、公式通販(国内)において3/9(月)12:00(正午)～二次受付決定！",
@@ -1429,11 +1570,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-news",
-      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/03/01Medinui_MusicalV2Data_main-thumb-480x480-8890.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/03/01Medinui_MusicalV2Data_main-thumb-480x480-8890.jpg",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-8801e7",
-      "category": "anime",
       "status": "active",
       "title": "Anime Movie 'Puella Magi Madoka Magica: Walpurgisnacht Rising' Releases August 28!",
       "title_ja": "劇場アニメ『劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉』8/28(金)～公開決定！",
@@ -1450,11 +1593,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-news",
-      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/03/0302-thumb-340x480-8891.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/03/0302-thumb-340x480-8891.jpg",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-29c317",
-      "category": "anime",
       "status": "active",
       "title": "'Touken Ranbu ONLINE' First Ice Show 'ICE BLADE' at Yoyogi National Stadium Oct 3-4!",
       "title_ja": "『刀剣乱舞ONLINE』初のアイスショー「刀剣乱舞 - ICE BLADE -」国立代々木競技場 第一体育館で10/3(土)～4(日)開催決定！",
@@ -1471,11 +1616,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-news",
-      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/02/c6272362bd926fec2f57468e53f613de7f3fce0d-thumb-480x270-8887.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/02/c6272362bd926fec2f57468e53f613de7f3fce0d-thumb-480x270-8887.jpg",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-f2df19",
-      "category": "anime",
       "status": "active",
       "title": "Kabuki 'Touken Ranbu: Azuma Kagami Yuki no Midare' Blu-ray Released Today!",
       "title_ja": "歌舞伎『刀剣乱舞 東鑑雪魔縁』Blu-ray、本日1/28(水)発売！",
@@ -1492,11 +1639,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-news",
-      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/a6d1681d2213525738d4bca76430e81ff597d159-thumb-480x450-8886.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/a6d1681d2213525738d4bca76430e81ff597d159-thumb-480x450-8886.jpg",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-a74764",
-      "category": "anime",
       "status": "active",
       "title": "'Touken Ranbu Medi Nui Collection: Toukabu / Tousute' Releasing Early July!",
       "title_ja": "「刀剣乱舞 めでぃぬいこれくしょん ～刀かぶ～／～刀ステ～」7月上旬に発売決定！　公式通販(国内)において本日1/23(金)～2/20(金)12:00(正午)の期間限定で予約受付中!!",
@@ -1513,11 +1662,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-news",
-      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/Medinui_NitroNews_IMG02-thumb-480x270-8883.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/Medinui_NitroNews_IMG02-thumb-480x270-8883.jpg",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-994c64",
-      "category": "anime",
       "status": "active",
       "title": "'Touken Ranbu ONLINE 10th Anniversary Memorial Book' Available on Official Store!",
       "title_ja": "「刀剣乱舞ONLINE十周年記念　本丸録」本日1/20(火)12:00(正午)～公式通販(国内／海外向け)で取り扱い決定！",
@@ -1534,11 +1685,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-news",
-      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/dfc227ce6eb0bf93987d9ca4769f49edd2fe96df-thumb-480x480-8878.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/dfc227ce6eb0bf93987d9ca4769f49edd2fe96df-thumb-480x480-8878.jpg",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-2032b0",
-      "category": "anime",
       "status": "active",
       "title": "'Nitro Face Collection' Acrylic Keychains Available for Limited Pre-order!",
       "title_ja": "「ニトロお顔コレクション」公式通販(国内／海外向け)において本日1/7(水)～16(金)12:00(正午)の期間限定で予約受付中！",
@@ -1555,11 +1708,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-news",
-      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/12/948effad32ff69a1e50385bdbbdcf55543b1bc48-thumb-480x270-8870.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/12/948effad32ff69a1e50385bdbbdcf55543b1bc48-thumb-480x270-8870.jpg",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-4d256a",
-      "category": "anime",
       "status": "active",
       "title": "Happy New Year!",
       "title_ja": "あけましておめでとうございます！",
@@ -1576,11 +1731,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-news",
-      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/12/60556f7c2c07f6517b75f15c56e330db376d5c15-thumb-480x270-8873.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/12/60556f7c2c07f6517b75f15c56e330db376d5c15-thumb-480x270-8873.jpg",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-1d32e2",
-      "category": "anime",
       "status": "active",
       "title": "'Comiket 107' Held December 30-31!",
       "title_ja": "「コミックマーケット107」12/30(火)～31(水)いよいよ開催！",
@@ -1597,11 +1754,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-news",
-      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/11/5f381281db04c8b89243a5e9d1a37712e0d1a06a-thumb-540x284-8858.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/11/5f381281db04c8b89243a5e9d1a37712e0d1a06a-thumb-540x284-8858.jpg",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "figure-20260318-rss-f460c4",
-      "category": "figure",
       "status": "active",
       "title": "Touken Ranbu Medi Nui Collection: Toukabu",
       "title_ja": "刀剣乱舞 めでぃぬいこれくしょん ～刀かぶ～",
@@ -1618,11 +1777,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods",
-      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2026/01/afdfff25972cee7a8663033d7a6035004a22afcc-thumb-480x480-8881.png"
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2026/01/afdfff25972cee7a8663033d7a6035004a22afcc-thumb-480x480-8881.png",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-8eacae",
-      "category": "figure",
       "status": "active",
       "title": "Touken Ranbu Medi Nui Collection: Tousute",
       "title_ja": "刀剣乱舞 めでぃぬいこれくしょん ～刀ステ～",
@@ -1639,11 +1800,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods",
-      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2026/01/02Medinui_StageKigurumi_all-thumb-480x480-8882.png"
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2026/01/02Medinui_StageKigurumi_all-thumb-480x480-8882.png",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-91df2f",
-      "category": "figure",
       "status": "active",
       "title": "Nitro Face Collection",
       "title_ja": "ニトロお顔コレクション",
@@ -1660,11 +1823,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods",
-      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/12/4b1da4ae5ab94db0bbfceb393956c93a60887fab-thumb-480x270-8868.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/12/4b1da4ae5ab94db0bbfceb393956c93a60887fab-thumb-480x270-8868.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-c51e0e",
-      "category": "figure",
       "status": "active",
       "title": "Touken Ranbu Medi Nui Collection: Toumyu",
       "title_ja": "刀剣乱舞 めでぃぬいこれくしょん ～刀ミュ～",
@@ -1681,11 +1846,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods",
-      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2026/03/01Medinui_MusicalV2Data_goods-thumb-400x400-8892.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2026/03/01Medinui_MusicalV2Data_goods-thumb-400x400-8892.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-080ecd",
-      "category": "figure",
       "status": "active",
       "title": "Touken Ranbu ONLINE Official Setting Material Book Vol.5 'Touken Ranbu Kenran Zuroku Go'",
       "title_ja": "『刀剣乱舞ONLINE』公式設定画集第5弾「刀剣乱舞絢爛図録 五」",
@@ -1702,11 +1869,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods",
-      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/09/5cf6a5158f783ecce2d8d33c37798b652c40df84-thumb-339x480-8778.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/09/5cf6a5158f783ecce2d8d33c37798b652c40df84-thumb-339x480-8778.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-705dcc",
-      "category": "figure",
       "status": "active",
       "title": "'Touken Ranbu Kenran Zuroku Go' Digital Edition",
       "title_ja": "「刀剣乱舞絢爛図録 五」電子書籍版",
@@ -1723,11 +1892,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods",
-      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/09/5cf6a5158f783ecce2d8d33c37798b652c40df84-thumb-339x480-8778.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/09/5cf6a5158f783ecce2d8d33c37798b652c40df84-thumb-339x480-8778.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-26108f",
-      "category": "figure",
       "status": "active",
       "title": "The Choice History of 'Choices': How Nitroplus Scenario Writers Make Novel Games",
       "title_ja": "「選択肢」の選択史 ニトロプラスのシナリオライターはノベルゲームをどう作ってきたか(星海社新書)",
@@ -1744,11 +1915,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods",
-      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/09/349_cover%2Bnon_main-thumb-294x480-8795.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/09/349_cover%2Bnon_main-thumb-294x480-8795.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-12e4c2",
-      "category": "figure",
       "status": "active",
       "title": "Blu-ray & DVD 'Thunderbolt Fantasy: Sword Seekers Final Chapter'",
       "title_ja": "Blu-ray＆DVD「Thunderbolt Fantasy 東離劍遊紀 最終章」",
@@ -1765,11 +1938,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods",
-      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/tbff_bddvd_4_1-thumb-332x450-8733.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/tbff_bddvd_4_1-thumb-332x450-8733.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-20ec02",
-      "category": "figure",
       "status": "active",
       "title": "Digital Edition 'Thunderbolt Fantasy: Sword Seekers Final Chapter Pamphlet'",
       "title_ja": "「Thunderbolt Fantasy 東離劍遊紀 最終章 パンフレット」電子書籍版",
@@ -1786,11 +1961,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods",
-      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/TBF5_PMF_cover-thumb-339x480-8741.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/TBF5_PMF_cover-thumb-339x480-8741.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-05e2e2",
-      "category": "figure",
       "status": "active",
       "title": "Digital Edition 'Thunderbolt Fantasy Gaiden Short Stories'",
       "title_ja": "「Thunderbolt Fantasy 外伝小噺」電子書籍版",
@@ -1807,11 +1984,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-goods",
-      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/TBF_finale_gaiden-thumb-318x450-8730.jpg"
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/TBF_finale_gaiden-thumb-318x450-8730.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "anime-20260318-rss-5117ac",
-      "category": "anime",
       "status": "active",
       "title": "Nitroplus Jobs [Part 4: Game Development]",
       "title_ja": "ニトロプラスのお仕事【その4：ゲーム開発編】",
@@ -1828,11 +2007,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-blog",
-      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png"
+      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-3be999",
-      "category": "anime",
       "status": "active",
       "title": "Nitroplus Jobs [Part 3: Daily Time Schedule]",
       "title_ja": "ニトロプラスのお仕事【その3：一日のタイムスケジュール編】",
@@ -1849,11 +2030,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-blog",
-      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png"
+      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-e38749",
-      "category": "anime",
       "status": "active",
       "title": "Nitroplus Jobs [Part 2: Newbie Edition]",
       "title_ja": "ニトロプラスのお仕事【その2：新人編】",
@@ -1870,11 +2053,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-blog",
-      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png"
+      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-83772b",
-      "category": "anime",
       "status": "active",
       "title": "Nitroplus Jobs [Part 1: Event Planning & Management]",
       "title_ja": "ニトロプラスのお仕事【その1：イベントの企画運営編】",
@@ -1891,11 +2076,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-blog",
-      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png"
+      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-d33c8e",
-      "category": "anime",
       "status": "active",
       "title": "Congratulations! Comic Market 100!!",
       "title_ja": "祝！　コミックマーケット100!!",
@@ -1912,11 +2099,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-blog",
-      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png"
+      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-9209d4",
-      "category": "anime",
       "status": "active",
       "title": "'Smile of the Arsnotoria' is Now Available!",
       "title_ja": "「咲う アルスノトリア」配信中です！",
@@ -1933,11 +2122,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-blog",
-      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png"
+      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-d25e6b",
-      "category": "anime",
       "status": "active",
       "title": "'The Ugly Mojika Child' is Now on Sale!!",
       "title_ja": "『みにくいモジカの子』発売しました！！",
@@ -1954,11 +2145,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-blog",
-      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png"
+      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-a84b20",
-      "category": "anime",
       "status": "active",
       "title": "'The Ugly Mojika Child' Pre-orders Now Open!",
       "title_ja": "『みにくいモジカの子』予約受付中！",
@@ -1975,11 +2168,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-blog",
-      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png"
+      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-7a3b50",
-      "category": "anime",
       "status": "active",
       "title": "'Thunderbolt Fantasy: The Sword of Life and Death' Released Today!",
       "title_ja": "「Thunderbolt Fantasy 生死一劍」本日公開！",
@@ -1996,11 +2191,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-blog",
-      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png"
+      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "anime-20260318-rss-ce3a3c",
-      "category": "anime",
       "status": "active",
       "title": "'Full Metal Daemon Muramasa 8th Anniversary' Sansei (Swimsuit) Muramasa",
       "title_ja": "『装甲悪鬼村正８周年』三世（水着）村正",
@@ -2017,11 +2214,13 @@
         "nitroplus"
       ],
       "_source_id": "nitroplus-blog",
-      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png"
+      "thumbnail": "https://www.nitroplus.co.jp/apple-touch-icon.png",
+      "categories": [
+        "anime"
+      ]
     },
     {
       "id": "figure-20260318-rss-b5eb03",
-      "category": "figure",
       "status": "active",
       "title": "'Super Robot Wars OG' Weissritter Gets Action Figure in Kuro Kara Kuri Series! Pre-orders Open on Amazon",
       "title_ja": "『スーパーロボット大戦OG』ヴァイスリッターが鉄機巧シリーズにて可動フィギュア化！多彩な展開ギミックで迫力のポージングが楽しめる！Amazonで予約受付中",
@@ -2038,11 +2237,13 @@
         "model-kit"
       ],
       "_source_id": "dengeki-hobby",
-      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/DTWcard_P7l3IsLz9Ao97pkbKZC206q2YzKBV_Xb_1fjdyjDxCZRh5hZ05zQN82tRrsqvtJE-.jpg"
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/DTWcard_P7l3IsLz9Ao97pkbKZC206q2YzKBV_Xb_1fjdyjDxCZRh5hZ05zQN82tRrsqvtJE-.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-030116",
-      "category": "figure",
       "status": "active",
       "title": "Idol 'Rino Yumetsuki' in Bunny Outfit Gets Figure! Normal Swimsuit Ver & Nearly Nude Adult Ver Released!!",
       "title_ja": "色気をまとったバニー衣装のアイドル「夢月りの」がフィギュア化！過激な水着姿の通常版に加え、ほぼ全裸なアダルト版も同時リリース!!",
@@ -2059,11 +2260,13 @@
         "model-kit"
       ],
       "_source_id": "dengeki-hobby",
-      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/0c1f60797039bb06a02d33867bd7c88e_xtqPLWugO77gxBD55eDdfmeOKAwogKIq_rjMGfc5AJfprGUMQhCaAqBtXTgUkYaV_.jpg"
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/0c1f60797039bb06a02d33867bd7c88e_xtqPLWugO77gxBD55eDdfmeOKAwogKIq_rjMGfc5AJfprGUMQhCaAqBtXTgUkYaV_.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-be0018",
-      "category": "figure",
       "status": "active",
       "title": "'Gundam Char's Counterattack' METAL ROBOT Spirits Sazabi 2nd Pre-order Lottery Decided! Starts March 19!",
       "title_ja": "『機動戦士ガンダム 逆襲のシャア』METAL ROBOT魂 サザビーの2次受注分が抽選販売決定！3月19日（木）16時より受付開始！別売りの「νガンダム」と組み合わせたいアイテム！",
@@ -2080,11 +2283,13 @@
         "model-kit"
       ],
       "_source_id": "dengeki-hobby",
-      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/02card_AmFWNhV9NtIMVV62CpwMA-jtgcjN7Pum_93NJYseU9WF9MQt2dTujz0-VKJwb7I0G.jpg"
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/02card_AmFWNhV9NtIMVV62CpwMA-jtgcjN7Pum_93NJYseU9WF9MQt2dTujz0-VKJwb7I0G.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-d28e96",
-      "category": "figure",
       "status": "active",
       "title": "Highlighting March 18 Kindle Comics: 'Uma Musume Pretty Derby Umamusumeshi' Vol.7, 'Jaja' Vol.39, etc!",
       "title_ja": "『ウマ娘 プリティーダービー うまむすめし』7巻、『ジャジャ』39巻、『尾守つみきと奇日常。』9巻など3月18日配信のKindle本コミックをピックアップ！",
@@ -2101,11 +2306,13 @@
         "model-kit"
       ],
       "_source_id": "dengeki-hobby",
-      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/card-2_HjnOGHHEVkxkLAg2YBnUl4shQhiUrkHj_L2df2IuW_S3LdMa8EZUsbiMLodTFljcY.jpg"
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/card-2_HjnOGHHEVkxkLAg2YBnUl4shQhiUrkHj_L2df2IuW_S3LdMa8EZUsbiMLodTFljcY.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-5bfdf7",
-      "category": "figure",
       "status": "active",
       "title": "Machines from 'Kamen Rider' Series Join 'Machibouke' Gashapon Figures! Featuring Gouram and Auto Vajin!",
       "title_ja": "『仮面ライダー』シリーズに登場するマシンたちがガシャポンフィギュア「まちぼうけ」に仲間入り！ゴウラムやオートバジンなどを哀愁漂う姿で収録！",
@@ -2122,11 +2329,13 @@
         "model-kit"
       ],
       "_source_id": "dengeki-hobby",
-      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/samu_7Ubp0Y5bY3D_uDp1LS4rwCG4YwWopZgd_c81hmNVZI1J_wlaX8wR4l1oL3o5-tsHs.jpg"
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/samu_7Ubp0Y5bY3D_uDp1LS4rwCG4YwWopZgd_c81hmNVZI1J_wlaX8wR4l1oL3o5-tsHs.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-28138c",
-      "category": "figure",
       "status": "active",
       "title": "Official Apparel for Disney & Pixar's Latest 'When I Become a Beaver' on Sale via Amazon Merch on Demand!",
       "title_ja": "ディズニー＆ピクサー最新作『私がビーバーになる時』のTシャツやパーカーなど公式アパレルがAmazonのオンデマンドプリントサービス Merch on Demandで販売中！",
@@ -2143,11 +2352,13 @@
         "model-kit"
       ],
       "_source_id": "dengeki-hobby",
-      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/card_6pmwSV8s_gKjtWn5pscoEO9dWvZ-9kC5_ye9VpRV3NsSpRSStQR_cSTV7Tno2t633.jpg"
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/card_6pmwSV8s_gKjtWn5pscoEO9dWvZ-9kC5_ye9VpRV3NsSpRSStQR_cSTV7Tno2t633.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-8d6275",
-      "category": "figure",
       "status": "active",
       "title": "'Honkai: Star Rail' Cute Sparkle Hugging Plush Gets Deformed Figure in 'Huggy Good Smile'! Pre-orders at AmiAmi",
       "title_ja": "『崩壊：スターレイル』キュートな表情の「火花だっこぬいぐるみ」がデフォルメフィギュア「Huggy Good Smile」シリーズに登場！あみあみで予約受付中",
@@ -2164,11 +2375,13 @@
         "model-kit"
       ],
       "_source_id": "dengeki-hobby",
-      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/card_HTr5j73A3oPDBQNhiZz0Frp-0gJWeumd_Nn7ZuHIbzv4V7uta9dxWWvG7G0G1l7W8.jpg"
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/card_HTr5j73A3oPDBQNhiZz0Frp-0gJWeumd_Nn7ZuHIbzv4V7uta9dxWWvG7G0G1l7W8.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-198106",
-      "category": "figure",
       "status": "active",
       "title": "Sanrio Characters Design Capsule Toys 'minimini Folding Table Part 2' and 'minimini Rug-style Keychain' Released!",
       "title_ja": "サンリオキャラクターズデザインのカプセルトイ「minimini折りたたみテーブルその2」と「miniminiラグマット風キーホルダー」が登場！組み合わせれば小さなお部屋にも！",
@@ -2185,11 +2398,13 @@
         "model-kit"
       ],
       "_source_id": "dengeki-hobby",
-      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/twi_main_EIM1cM7gtfFgCuqIxD134akHsY_z7FWf_A3kEUeuxEsgcLfagYw0odjMRL6JtvBpn.jpg"
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/twi_main_EIM1cM7gtfFgCuqIxD134akHsY_z7FWf_A3kEUeuxEsgcLfagYw0odjMRL6JtvBpn.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-69ddce",
-      "category": "figure",
       "status": "active",
       "title": "Two Medusa Girl Figures 'Green Viper' and 'Crimson Viper' from WE ART DOING! Pre-orders Open at AmiAmi!",
       "title_ja": "2種類のメデューサガール「グリーンバイパー」「クリムゾンバイパー」フィギュアがWE ART DOINGから登場！あみあみで予約受付中！",
@@ -2206,11 +2421,13 @@
         "model-kit"
       ],
       "_source_id": "dengeki-hobby",
-      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/469b052e3131133723f1851142a51ec0_69nkL9H5SwWH0GEZa-jjhkN3irCZK6Q9_VLjTssUr3T70mndxU3p-N_F2NgkfdzA3.jpg"
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/469b052e3131133723f1851142a51ec0_69nkL9H5SwWH0GEZa-jjhkN3irCZK6Q9_VLjTssUr3T70mndxU3p-N_F2NgkfdzA3.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-6705a1",
-      "category": "figure",
       "status": "active",
       "title": "'Chiikawa' Smartphone App 'Chiikawa Pocket' Official Goods Vol.2 Launch April 10! Many New Items!!",
       "title_ja": "『ちいかわ』のスマホアプリ「ちいかわぽけっと」公式グッズ第2弾が4月10日（金）発売！フルーツ＆ファンタジーがモチーフの新作アイテムが多数登場!!ポップアップストアも全国5会場で開催",
@@ -2227,11 +2444,13 @@
         "model-kit"
       ],
       "_source_id": "dengeki-hobby",
-      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/260318-1200x630_o9ZQtq1ln8DQQgGJUYHQKQ_d0XAQ9zLx_1UoPA4D4n_SOLoWmRbO_I2cTKAtb4iyo.jpg"
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/260318-1200x630_o9ZQtq1ln8DQQgGJUYHQKQ_d0XAQ9zLx_1UoPA4D4n_SOLoWmRbO_I2cTKAtb4iyo.jpg",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-c6fafa",
-      "category": "figure",
       "status": "active",
       "title": "Digital Figure 'HoloModels' First Overseas Expansion: Sales Start at Animate Stores & EC in South Korea",
       "title_ja": "デジタルフィギュア「ホロモデル」海外進出第一弾　韓国のアニメイトなど店舗・ECで販売開始",
@@ -2246,11 +2465,13 @@
         "merchandise"
       ],
       "_source_id": "prtimes-kotobukiya",
-      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/309/74603-309-f8a35d781dda16740bb139ae79dac2a0-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/309/74603-309-f8a35d781dda16740bb139ae79dac2a0-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-b3e303",
-      "category": "figure",
       "status": "active",
       "title": "Gugenka Creates Immersive WebAR Photo Spot for 'My Melody & Kuromi' Exhibition Held Until Feb 2026",
       "title_ja": "2026年2月まで開催された『My Melody & Kuromi』展示会でWebARによる没入型フォトスポットをGugenkaが制作",
@@ -2265,11 +2486,13 @@
         "merchandise"
       ],
       "_source_id": "prtimes-kotobukiya",
-      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/306/74603-306-8384ce2afd83c6a9e1ff182fb33c7691-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/306/74603-306-8384ce2afd83c6a9e1ff182fb33c7691-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-64c7f9",
-      "category": "figure",
       "status": "active",
       "title": "Holiday Shows Sold Out: 'SNOW MIKU 2026' Wotaru-za Digital Show powered by XREAL Event Report",
       "title_ja": "休日公演完売・全席満席の盛況「SNOW MIKU 2026」ヲタル座デジタルショー powered by XREAL 開催レポート",
@@ -2284,11 +2507,13 @@
         "merchandise"
       ],
       "_source_id": "prtimes-kotobukiya",
-      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/307/74603-307-edc48a4d74d5dcf988c1f66defe657ca-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/307/74603-307-edc48a4d74d5dcf988c1f66defe657ca-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-752dac",
-      "category": "figure",
       "status": "active",
       "title": "Second 'Nekopara' Series: Maple, Cinnamon, Azuki, and Coconut HoloModels Now on Sale",
       "title_ja": "『ネコぱら』シリーズ第二弾 メイプル・シナモン・アズキ・ココナツのホロモデル販売を開始",
@@ -2303,11 +2528,13 @@
         "merchandise"
       ],
       "_source_id": "prtimes-kotobukiya",
-      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/308/74603-308-9e3decbfd7e6b24c1e31492439030fbc-1920x1260.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/308/74603-308-9e3decbfd7e6b24c1e31492439030fbc-1920x1260.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-55634e",
-      "category": "figure",
       "status": "active",
       "title": "3D Spatial Video Platform 'Spatial Disc' Releases 'Love Live! Sunshine!!' Aqours: 4 Single Tracks & 4-Track Set",
       "title_ja": "3D空間映像プラットフォーム「スペーシャルディスク」『ラブライブ！サンシャイン!!』Aqours 発売 単曲4商品に加え、MCパート付き4曲セットを同時リリース",
@@ -2322,11 +2549,13 @@
         "merchandise"
       ],
       "_source_id": "prtimes-kotobukiya",
-      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/304/74603-304-89f939da5ec7b1603b55b364160ca7f1-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/304/74603-304-89f939da5ec7b1603b55b364160ca7f1-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-c73595",
-      "category": "figure",
       "status": "active",
       "title": "Belcook and Hapidanbui Turned into Digital Figures! AR-enjoyable 'HoloModels' & WebAR Content Released",
       "title_ja": "ベルクックとはぴだんぶいがデジタルフィギュア化　ARで楽しめる「ホロモデル」＆WebARコンテンツ配信開始",
@@ -2341,11 +2570,13 @@
         "merchandise"
       ],
       "_source_id": "prtimes-kotobukiya",
-      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/300/74603-300-a31e21a46c27cc586fad82d9108c4fdd-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/300/74603-300-a31e21a46c27cc586fad82d9108c4fdd-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-2b3d17",
-      "category": "figure",
       "status": "active",
       "title": "Gugenka and Sanrio Jointly Develop LBE Content for 'and ST TOKYO' Flagship Store",
       "title_ja": "Gugenkaとサンリオ共同開発「and ST TOKYO」にてLBE（ロケーションベース・エンターテインメント）コンテンツを提供",
@@ -2360,11 +2591,13 @@
         "merchandise"
       ],
       "_source_id": "prtimes-kotobukiya",
-      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/299/74603-299-7a1a2b0a8111cdd240d44a8d39844416-1920x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/299/74603-299-7a1a2b0a8111cdd240d44a8d39844416-1920x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-cf7ff7",
-      "category": "figure",
       "status": "active",
       "title": "Gugenka Provides Interactive MR Video Content at 'Assault Lily Last Bullet' 5th Anniversary Event",
       "title_ja": "「アサルトリリィ Last Bullet」5周年記念イベントにてGugenkaがMR映像を楽しめる体験型コンテンツを提供",
@@ -2379,11 +2612,13 @@
         "merchandise"
       ],
       "_source_id": "prtimes-kotobukiya",
-      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/298/74603-298-e159840455ddb412e7b802d323fef9e8-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/298/74603-298-e159840455ddb412e7b802d323fef9e8-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-9ef368",
-      "category": "figure",
       "status": "active",
       "title": "Shoot Everyday Life with Your Oshi! New Version of 'HoloModels' Officially Released",
       "title_ja": "「推し」との日常を撮影できる　新バージョン「ホロモデル」正式リリース",
@@ -2398,11 +2633,13 @@
         "merchandise"
       ],
       "_source_id": "prtimes-kotobukiya",
-      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/296/74603-296-84aa70c8cc7fbb194ea6c33b1a4f9c9e-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/296/74603-296-84aa70c8cc7fbb194ea6c33b1a4f9c9e-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "categories": [
+        "figure"
+      ]
     },
     {
       "id": "figure-20260318-rss-72aca4",
-      "category": "figure",
       "status": "active",
       "title": "Gugenka Exhibits at 'SNOW MIKU 2026', Deploying Cutting-Edge XREAL Digital Show and Interactive Wall",
       "title_ja": "株式会社Gugenka『SNOW MIKU 2026』に出展　XREALによる最先端デジタルショーと、来場者参加型「デジタルピアプロの壁」を展開",
@@ -2417,7 +2654,115 @@
         "merchandise"
       ],
       "_source_id": "prtimes-kotobukiya",
-      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/294/74603-294-bc621f6b83f89e55b56a1a3b36a317fa-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/294/74603-294-bc621f6b83f89e55b56a1a3b36a317fa-1920x1080.png?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "categories": [
+        "figure"
+      ]
+    },
+    {
+      "id": "vtuber-20260319-rss-643ae9",
+      "status": "active",
+      "title": "The biggest hit in VR game history began with a failure. The path of \"UG,\" the No. 1 selling title in the Meta Quest store.",
+      "title_ja": "VRゲーム史上最大のヒット作は失敗から始まった Meta Questストアで売上No1タイトル「UG」の道のり",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "GDC 2026, the world's largest game developer conference, was held in San Francisco, California, from March 9 to 13, 2026. Among its many sessions, one that was packed every day was the \"We [&#8230;]\" session held on March 11.\nThe post The Biggest Hit in VR Game History Started with a Failure: The Path of UG, the No. 1 Sales Title in the Meta Quest Store appeared first on Mogura VR.",
+      "source": {
+        "url": "https://www.moguravr.com/gdc-2026-meta-session-ug/"
+      },
+      "tags": [
+        "moguravr"
+      ],
+      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/4bbbf96a887c1855244217520385c0be-kix.hhu6bslcqkcl-1024x578.webp",
+      "_source_id": "moguravr",
+      "categories": [
+        "vtuber"
+      ]
+    },
+    {
+      "id": "vtuber-20260319-rss-e80cfc",
+      "status": "active",
+      "title": "A new user base is coming to VR,\" Meta executive says of current and future trends in the VR market.",
+      "title_ja": "「VRには新たなユーザー層がやってくる」Meta幹部が語ったVR市場の現在と将来動向",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "The GDC Festival of Gaming, the world's largest conference for game developers, was held at the Moscone Center in San Francisco, California, from March 9 to 13, 2026. At this event, March 1 [&#8230;].\nThe post \"A New User Base is Coming to VR,\" Meta Executives Say of Current and Future Trends in the VR Market appeared first on Mogura VR.",
+      "source": {
+        "url": "https://www.moguravr.com/gdc-2026-meta-session-vr-eco-system/"
+      },
+      "tags": [
+        "moguravr"
+      ],
+      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/594ceaa3442798b09fe9c1332abca36f-kix.kwqq6hflyole-1024x576.webp",
+      "_source_id": "moguravr",
+      "categories": [
+        "vtuber"
+      ]
+    },
+    {
+      "id": "vtuber-20260319-rss-1126ef",
+      "status": "active",
+      "title": "Honda Motanion Lab, the official world of Honda's VRChat, is a must-see spot for motorcyclists!",
+      "title_ja": "【体験レポ】ホンダのVRChat公式ワールド「Honda Motanion Lab」はバイク乗り必見の“映え”スポットだ！",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "On March 16, Honda Motanion Lab, the official world of automaker Honda Motor Company (Honda), opened to the public on the social VR \"VRChat. This world is part of the company's co-creation project Honda Mot [&#8230;].\nThe post [Experience Report] Honda Motanion Lab, Honda's official VRChat world, is a \"must-see\" spot for motorcycle riders! appeared first on Mogura VR.",
+      "source": {
+        "url": "https://www.moguravr.com/honda-motanion-lab-vrchat-report/"
+      },
+      "tags": [
+        "moguravr"
+      ],
+      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/cbc7e4289d86183d53b87c1b40b537f1-kix.gx7kut3xig0y-1024x576.webp",
+      "_source_id": "moguravr",
+      "categories": [
+        "vtuber"
+      ]
+    },
+    {
+      "id": "vtuber-20260319-rss-79c13e",
+      "status": "active",
+      "title": "MESON releases demonstration test results \"XR ads show higher advertising effectiveness than traditional 2D ads\".",
+      "title_ja": "MESONが実証実験結果を公開「XR広告は従来の2D広告よりも高い広告効果を示す」",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "On March 17, MESON announced the results of an experiment to test the effectiveness of its Immersive Showroom, an XR product developed for its Apple Vision Pro. The results revealed that \"XR ads show higher advertising effectiveness than traditional 2D ads.\nThe post MESON Releases Results of Demonstration Experiment \"XR Ads Show Higher Advertising Effectiveness than Conventional 2D Ads\" appeared first on Mogura VR.",
+      "source": {
+        "url": "https://www.moguravr.com/meson-immersive_showroom-experiment-2026/"
+      },
+      "tags": [
+        "moguravr"
+      ],
+      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/6ca8dda6a794e07f52411b6911e66a13-kix.3bx2zenkru6l-1024x536.webp",
+      "_source_id": "moguravr",
+      "categories": [
+        "vtuber"
+      ]
+    },
+    {
+      "id": "vtuber-20260319-rss-2c01a7",
+      "status": "active",
+      "title": "Meta's VR space capture feature \"Hyperscape Capture\" excluded from Horizon Worlds on March 24",
+      "title_ja": "MetaのVR空間キャプチャ機能「Hyperscape Capture」3月24日にHorizon Worldsから除外",
+      "dates": {
+        "display": "Mar 18, 2026"
+      },
+      "description": "As of March 24, 2026, Meta's Hyperscape Capture VR space capture feature will be removed from Horizon Worlds in the capture view. After the transition, existing captures will be Q [&#8230;].\nThe post Meta's VR space capture feature \"Hyperscape Capture\" excluded from Horizon Worlds on March 24 appeared first on Mogura VR.",
+      "source": {
+        "url": "https://www.moguravr.com/meta-hyperscape-capture-horizon-worlds-migration-20260324/"
+      },
+      "tags": [
+        "moguravr"
+      ],
+      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/a68a5018b2d355493b338b1b90d348ae-kix.gibh6en2qwph-1024x576.webp",
+      "_source_id": "moguravr",
+      "categories": [
+        "vtuber"
+      ]
     }
   ]
 }
