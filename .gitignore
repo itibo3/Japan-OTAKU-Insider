@@ -20,10 +20,16 @@ prompts/
 !prompts/perplexity_other.md
 !prompts/update_workflow.md
 
-# 非公開：引継書・仕様書・キーメモ
+# 非公開：引継書・仕様書・キーメモ・ロードマップ
 HANDOVER.md
 japan_otaku_insider_spec.md
 X_API_KEYS.md
+ROADMAP_LATEST.md
+ANTIGRAVITY_RSS_MANAGER_UI_FIX.md
+docs/
+
+# 非公開：プロトタイプ・デモHTML
+japan_geeks_insider_prototype.html
 
 # 非公開：RSS取得の中間ファイル
 data/pending_translation.json
