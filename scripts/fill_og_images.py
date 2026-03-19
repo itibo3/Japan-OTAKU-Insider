@@ -5,8 +5,8 @@ fill_og_images.py — entries.json の missing thumbnail を埋める
 狙い:
 - cards/list & modal のサムネ表示を安定させるために
 - 各 entry の `source.url` 先HTMLから画像を抽出して `entry.thumbnail` に書き込む
-- 取得順序: 先頭画像（article/main内の最初のimg）を優先、なければ og:image
-- og:image がサイトロゴ等の汎用画像の場合も、先頭画像があればそちらを採用
+- 取得順序: news.amiami.jp は og:image 優先（シェア時と同じ画像）。その他は先頭画像優先、なければ og:image
+- og:image がサイトロゴ等の汎用画像の場合は先頭画像にフォールバック
 
 実行例:
   python3 scripts/fill_og_images.py --only-missing
@@ -22,7 +22,7 @@ from datetime import datetime, timezone, timedelta
 from html import unescape
 from pathlib import Path
 from typing import Optional
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
 JST = timezone(timedelta(hours=9))
@@ -148,6 +148,21 @@ def is_generic_thumbnail(url: str) -> bool:
     return any(p in url_lower for p in GENERIC_THUMB_PATTERNS)
 
 
+# og:image を優先するドメイン（記事シェア時と同じ画像を安定して取得）
+OG_FIRST_DOMAINS = ("news.amiami.jp",)
+
+
+def choose_thumbnail(lead: Optional[str], og: Optional[str], source_url: str) -> Optional[str]:
+    """
+    ドメインに応じて lead / og の優先順位を決める。
+    OG_FIRST_DOMAINS の場合は og:image を優先（シェア時と同じ画像）。
+    """
+    domain = urlparse(source_url).netloc
+    if domain in OG_FIRST_DOMAINS and og and not is_generic_thumbnail(og):
+        return og
+    return lead or og
+
+
 def normalize_thumb_url(og_url: str, source_url: str) -> str:
     og_url = og_url.strip()
     if og_url.startswith("//"):
@@ -174,7 +189,7 @@ def main() -> None:
     parser.add_argument("--only-missing", action="store_true", default=False, help="thumbnail が未設定/空だけ処理する")
     parser.add_argument("--replace-generic", action="store_true", default=False, help="ロゴ等の汎用サムネを先頭画像で差し替える")
     parser.add_argument("--limit", type=int, default=0, help="処理件数の上限（0は無制限）")
-    parser.add_argument("--timeout", type=int, default=15, help="1サイトあたりのタイムアウト（秒）")
+    parser.add_argument("--timeout", type=int, default=20, help="1サイトあたりのタイムアウト（秒）")
     parser.add_argument("--sleep", type=float, default=0.6, help="サイト取得間の待機（秒）")
     parser.add_argument("--max-bytes", type=int, default=2_000_000, help="取得するHTMLの最大サイズ（バイト）")
     args = parser.parse_args()
@@ -209,7 +224,7 @@ def main() -> None:
             html = fetch_html(source_url, timeout_sec=args.timeout, max_bytes=args.max_bytes)
             lead = extract_lead_image(html, base_url=source_url)
             og = extract_og_image(html)
-            thumb = lead or og
+            thumb = choose_thumbnail(lead, og, source_url)
             if not thumb:
                 skipped += 1
                 continue

@@ -269,6 +269,11 @@ body {
   color: var(--accent-vtuber);
 }
 
+.cat-otaku-news {
+  background: rgba(255, 140, 0, 0.2);
+  color: #ff8c00;
+}
+
 .card-title {
   font-size: 16px;
   font-weight: 700;

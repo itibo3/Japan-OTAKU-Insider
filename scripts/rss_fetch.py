@@ -6,7 +6,7 @@ rss_fetch.py — RSSソースから記事を取得し、重複チェック後に
   python3 scripts/rss_fetch.py                       # 全ソースを取得
   python3 scripts/rss_fetch.py --source amiami-news # 特定ソースのみ
   python3 scripts/rss_fetch.py --limit 10          # 1ソースあたりの上限件数を指定
-  python3 scripts/rss_fetch.py --fetch-thumbnails # URL先HTMLから先頭画像をthumbnailとして埋める
+  python3 scripts/rss_fetch.py --fetch-thumbnails # URL先HTMLから画像を抽出。news.amiami.jpはog:image優先、他は先頭画像優先
   python3 scripts/rss_fetch.py --reset            # リセット用: 重複チェックなしで全件取得、reset_*.json に出力
 
 終了後、 data/staging/YYYYMMDD.json に未翻訳の記事が保存されます。
@@ -20,7 +20,7 @@ import hashlib
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from html import unescape
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 from typing import Optional
 
@@ -46,6 +46,36 @@ META_OG_IMAGE_SECURE_RE = re.compile(
 )
 
 IMG_TAG_RE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
+
+# og:image を優先するドメイン（記事シェア時と同じ画像を安定して取得）
+OG_FIRST_DOMAINS = ("news.amiami.jp",)
+
+GENERIC_THUMB_PATTERNS = (
+    "oglogo",
+    "default_ogp",
+    "apple-touch-icon",
+    "/logo",
+    "og-image",
+)
+
+
+def is_generic_thumbnail(url: str) -> bool:
+    """サイトロゴ等の汎用画像かどうか"""
+    if not url:
+        return False
+    url_lower = url.lower()
+    return any(p in url_lower for p in GENERIC_THUMB_PATTERNS)
+
+
+def choose_thumbnail(lead: Optional[str], og: Optional[str], source_url: str) -> Optional[str]:
+    """
+    ドメインに応じて lead / og の優先順位を決める。
+    OG_FIRST_DOMAINS の場合は og:image を優先（シェア時と同じ画像）。
+    """
+    domain = urlparse(source_url).netloc
+    if domain in OG_FIRST_DOMAINS and og and not is_generic_thumbnail(og):
+        return og
+    return lead or og
 
 
 def fetch_html(url: str, timeout_sec: int, max_bytes: int) -> str:
@@ -193,7 +223,7 @@ def fetch_source(
     existing_entries,
     limit=20,
     fetch_thumbnails: bool = False,
-    thumb_timeout: int = 12,
+    thumb_timeout: int = 20,
     thumb_max_bytes: int = 2_000_000,
 ):
     """1ソースのRSSをフェッチして新規記事のリストを返す"""
@@ -240,8 +270,9 @@ def fetch_source(
         if fetch_thumbnails:
             try:
                 page_html = fetch_html(url, timeout_sec=thumb_timeout, max_bytes=thumb_max_bytes)
-                # 先頭画像優先。無ければ保険として og:image を使う。
-                thumbnail = extract_lead_image(page_html, base_url=url) or extract_og_image(page_html)
+                lead = extract_lead_image(page_html, base_url=url)
+                og = extract_og_image(page_html)
+                thumbnail = choose_thumbnail(lead, og, url)
                 if thumbnail:
                     thumbnail = thumbnail.strip()
                     if thumbnail.startswith("//"):
@@ -258,7 +289,7 @@ def fetch_source(
 
         item = {
             "id": entry_id_from_url(url, category),
-            "categories": [category],
+            "categories": source.get("categories", [category]),
             "status": "active",
             "title": f"[未翻訳] {title_ja}",
             "title_ja": title_ja,
@@ -284,7 +315,7 @@ def main():
     reset_mode = "--reset" in args
     if reset_mode:
         fetch_thumbnails = True
-    thumb_timeout = 12
+    thumb_timeout = 20
     thumb_max_bytes = 2_000_000
 
     if "--source" in args:
