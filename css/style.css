@@ -642,6 +642,7 @@ body {
     padding: 0 12px;
     overflow-x: auto;
     flex-wrap: nowrap;
+    justify-content: flex-start;
     -webkit-overflow-scrolling: touch;
   }
 
