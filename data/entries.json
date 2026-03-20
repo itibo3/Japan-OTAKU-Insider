@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-21T00:52:58.183995+09:00",
-  "total_entries": 570,
+  "last_updated": "2026-03-21T00:55:36.353658+09:00",
+  "total_entries": 603,
   "entries": [
     {
       "id": "other-20260320-pplx-bbe3b4",
@@ -157,6 +157,25 @@
       },
       "location": "日本",
       "thumbnail": "https://i0.wp.com/www.igda.jp/wp-content/uploads/2026/03/short.png?resize=382%2C100&ssl=1"
+    },
+    {
+      "id": "other-202603210015-pplx-701f70",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "Meguro River Cherry Blossom Festival",
+      "title_ja": "目黒川桜まつり",
+      "description": "Cherry blossom festival in Tokyo from March 27 to April 5, 2026. May be visited by geeks as a spring event.",
+      "source": {},
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-27 to 2026-04-05"
+      },
+      "location": "東京"
     },
     {
       "id": "cafe-20260320-pplx-e991bf",
@@ -612,6 +631,428 @@
       "thumbnail": "https://cdn.essential-japan.com/wp-content/uploads/2026/03/7fcb6f090175a3eebd03e94f7ae044d8.jpeg"
     },
     {
+      "id": "other-202603210015-pplx-bd7a8d",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "Akihabara Anime & Pop Culture Tour",
+      "title_ja": "秋葉原アニメ＆ポップカルチャーツアー",
+      "description": "Otaku culture tour of anime, manga, and video games in Akihabara, Tokyo. Maid cafes, arcades, and shopping. Possibility to include voice actor related spots.",
+      "source": {},
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "通年"
+      },
+      "location": "東京（秋葉原）"
+    },
+    {
+      "id": "anime-202603210015-pplx-e9ae98",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "For the Dark Prince, animated in Winter 2026.",
+      "title_ja": "暗黒王子の為に 冬2026年アニメ化",
+      "description": "The 1990s shoujo manga classic \"For the Dark Prince (From Far Away)\" will be animated in 2026. Noted as a revival of other 90s works. The fantasy adventure story will be revived in the modern age.",
+      "source": {
+        "url": "https://comicbook.com/anime/list/3-1990s-classic-series-returning-with-anime-adaptations-in-2026/"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026"
+      },
+      "location": "日本",
+      "thumbnail": "https://comicbook.com/wp-content/uploads/sites/4/2026/03/Hana-Kimi.jpg?w=1024"
+    },
+    {
+      "id": "anime-202603210015-pplx-e48b27",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "AnimeJapan 2026 Event Information",
+      "title_ja": "AnimeJapan 2026 開催情報",
+      "description": "AnimeJapan 2026 is under active discussion. The event is attracting attention as a place for the announcement of new anime, and many series continuations and new information are expected.",
+      "source": {
+        "url": "https://boards.4chan.org/a/thread/286825877/animejapan-2026"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026"
+      },
+      "location": "日本",
+      "thumbnail": "https://i.4cdn.org/a/1773862449993637s.jpg"
+    },
+    {
+      "id": "anime-202603210012-rss-f9f28d",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "[March 21, 2026] List of Manga Books Released Today",
+      "title_ja": "【2026年3月21日】本日発売のマンガ単行本リスト",
+      "dates": {},
+      "description": "Comic Natalie is pleased to announce today's March 21, 2026 book release. Click here to see the list of magazines on sale today.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/661737"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0218/re_kaisyatoshiseikatsu_signkai.jpg?impolicy=thumb_fit&width=140&height=140",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202603210012-rss-82349a",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Saint Seiya\" will be serialized in a new \"Heavenly Realm Arc\" series, and \"From Beyond\" will be adapted into a TV anime.",
+      "title_ja": "【今週の注目記事】「聖闘士星矢」の新作“天界篇”連載決定、「彼方から」TVアニメ化",
+      "dates": {},
+      "description": "From March 12 to March 18, 2026, the most popular article in Comic Natalie was a news article about the new \"Saint Seiya\" \"Heavenly Realm Arc.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/664853"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0312/Weekly_Champion_2026_15.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "figure-202603210011-rss-d54a49",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "MG 1/100 Gundam Vulculus Extension Parts Set\" is on display. Check out the power of the Valkyria Buster Sword [Gundam Base photo].",
+      "title_ja": "「MG 1/100 ガンダムバルバトスルプス用 拡張パーツセット」が展示中。ヴァルキュリアバスターソードの迫力をチェック【ガンダムベース撮り下ろし】",
+      "dates": {},
+      "description": "An expansion parts set for the \"MG 1/100 Gundam Barbatos Lupus\" is now available through Premium Bandai, and the first pre-order users received their shipment in February. Samples of these parts are now on display at Gundam Base Tokyo.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2094644.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/644/01_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603210011-rss-9e701a",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "We took down the \"RG 1/144 Gundam Base Limited Edition Gundam Epion [Special Coating]\" which will be released on March 20. The brightness of the plating is very beautiful! Gundam Base new photos!",
+      "title_ja": "3月20日発売の「RG 1/144 ガンダムベース限定 ガンダムエピオン [スペシャルコーティング]」を撮り下ろし。メッキの輝きが映える！【ガンダムベース撮り下ろし】",
+      "dates": {},
+      "description": "Gundam Base's limited item \"RG 1/144 Gundam Base Limited Gundam Epion [Special Coating]\" will be released on March 20. A sample of this item is on display at Gundam Base Tokyo.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2094617.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/617/01_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603210011-rss-968f37",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Plastic model \"Figure-rise Standard Kamen Rider Shin-1\" from \"Kamen Rider\" is released today!",
+      "title_ja": "「仮面ライダー」よりプラモデル「Figure-rise Standard 仮面ライダー新1号」本日発売！",
+      "dates": {},
+      "description": "BANDAI SPIRITS will release a plastic model \"Figure-rise Standard Kamen Rider Shin-1\" on March 21. The price is 4,180 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094639.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/639/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603210011-rss-89f055",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "HG 1/144 MSN-04II Nightingale [Clear Color]\" now on sale!　The large MS that appears in the novel is molded in bright clear red [Gundam Base photo].",
+      "title_ja": "「HG 1/144 MSN-04II ナイチンゲール [クリアカラー]」発売中！　小説に登場の大型MSを鮮やかなクリアレッドで成形【ガンダムベース撮り下ろし】",
+      "dates": {},
+      "description": "The limited item \"HG 1/144 MSN-04II Nightingale [clear color]\" released last August was reproduced, and a completed sample of it was displayed at Gundam Base Tokyo.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2094620.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/620/01_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603210011-rss-68e075",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "HG 1/144 Ξ Gundam (Mobile Suit Gundam: Senko no Hathaway Kilkee no Witch)\" to be released in April!　Reproduction of Gundam face and shield in destroyed state [Gundam Base shooting].",
+      "title_ja": "「HG 1/144 Ξガンダム (機動戦士ガンダム 閃光のハサウェイ キルケーの魔女)」4月発売予定！　ガンダムフェイスや破壊状態のシールドを再現【ガンダムベース撮り下ろし】",
+      "dates": {},
+      "description": "From the movie \"Mobile Suit Gundam: Senko no Hathaway Kilkee no Majo\" currently in theaters, the \"Ξ Gundam\" that is the star of the movie will be released in April as a new \"HG 1/144 Ξ Gundam (Mobile Suit Gundam: Senko no Hathaway Kilkee no Majo.jpg\" with new sculpted parts. A sample of this model is on display at Gundam Base Tokyo.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2094645.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/645/01_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603210011-rss-5036a4",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "A plastic model \"Figure-rise Standard Amplified -The Three Descended Gods- Osiris no Tenku Ryu\" is released today from \"Yu-Gi-Oh!",
+      "title_ja": "「遊☆戯☆王」よりプラモデル「Figure-rise Standard Amplified -三幻神降臨- オシリスの天空竜」本日発売！",
+      "dates": {},
+      "description": "BANDAI SPIRITS will release a plastic model \"Figure-rise Standard Amplified -Three Phantom Gods Descending- Sky Dragon of Osiris\" on March 21. The price is 9,900 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094638.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/638/002_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603210011-rss-25a1e2",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Tamiya released the plastic model \"1/24 Porsche 934 Turbo RSR Vaillant\" for resale today!",
+      "title_ja": "タミヤ、プラモデル「1/24 ポルシェ 934 ターボ RSR ヴァイラント」再販分を本日発売！",
+      "dates": {},
+      "description": "Tamiya will release the plastic model \"1/24 Porsche 934 Turbo RSR Vaillant\" for resale around March 21. The price is 3,850 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094903.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/903/002_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603210011-rss-0bc2da",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Plastic model \"HG 1/100 VF-25F Messiah Valkyrie (Alto Saotome)\" from \"Macross F\" is released today! A deluxe set with exclusive water transfer decals and acuta is also released on the same day!",
+      "title_ja": "「マクロスF」よりプラモデル「HG 1/100 VF-25F メサイアバルキリー（早乙女アルト機）」本日発売！専用水転写式デカールとアクスタ付きデラックスセットも同日発売",
+      "dates": {},
+      "description": "BANDAI SPIRITS will release the plastic model \"HG 1/100 VF-25F Messiah Valkyrie (by Alto Saotome)\" on March 21. The price is 4,730 yen. The \"HG 1/100 VF-25F Messiah Valkyrie (Alto Saotome) Water Transfer Decal\" will be available for 770 yen, and the \"HG 1/100 VF-25F Messiah Valkyrie (Alto Saotome) Deluxe Set\" for 7,480 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2094640.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/640/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603210011-rss-087417",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Fumbari~nu 3\" [Gacha Shooting] - Reproduction of doggies' fumbari scenes down to their butts! Huskies and popular small dog Pekinese appear!",
+      "title_ja": "「ふんばり～ぬ3」【ガチャ撮り下ろし】ワンちゃんたちのふんばりシーンをお尻まで再現！ハスキーや人気の小型犬ペキニーズが登場",
+      "dates": {},
+      "description": "The \"Fumbari~nu 3\" gacha will be released by Takara Tomy Arts in late March. The \"Fumbari-Nu 3\" mini-figures feature a variety of dogs in a \"moment of gusto\". This is the third in the popular \"Fumbari-Nu 3\" series, and is a new creation from the production team that has worked on \"SR+,\" \"Genshoku,\" and \"Hobby Gacha.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2093841.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2093/841/1_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "other-202603210015-pplx-bbe3b4",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "Japan-USA Yokosuka Spring Festa",
+      "title_ja": "日本-米国横須賀スプリングフェスタ",
+      "description": "Saturday, March 21, 2026 in Yokosuka, Kanagawa, Japan. International exchange event, but could be enjoyed as an alternative to Otaku events in the Tokyo area.",
+      "source": {},
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-21"
+      },
+      "location": "神奈川（横須賀）"
+    },
+    {
+      "id": "game-202603210012-rss-8c747f",
+      "categories": [
+        "game",
+        "vtuber",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Second re-release of the \"ZABUNGLE\" plastic model! Combined deformation by arranging the original mechanism, reproduce the specifications of the Giron boarding machine!",
+      "title_ja": "「ザブングル」プラモデルが2次再販！独自の機構アレンジで合体変形、ジロン搭乗機仕様も再現",
+      "dates": {
+        "display": "Mar 21, 2026"
+      },
+      "description": "MODEROID ZABUNGLE\" is now available for a second resale! Reservations will be accepted until March 25.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/21/178834.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1690366.webp",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "figure-202603210014-pplx-e9145a",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "FREEing Pre-order new scale figures this week, shipping 3/21",
+      "title_ja": "FREEing 今週プレオーダー 新スケールフィギュア 3/21発送",
+      "description": "FREEing's newest Bunny Ver. figure is available for pre-order starting March 21 and is scheduled to ship this week. A must-have quality for anime fans and only available while supplies last.",
+      "source": {
+        "url": "https://hobby.freeing.co.jp"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-21"
+      },
+      "location": "日本"
+    },
+    {
+      "id": "figure-202603210014-pplx-e75080",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "FREEing Scale Figure New reservation 3/21 Start",
+      "title_ja": "FREEing スケールフィギュア 新予約 3/21スタート",
+      "description": "1/4 scale figure of popular anime heroine from FREEing is open for reservation on March 21. Detailed specs and images are officially announced.",
+      "source": {
+        "url": "https://www.freeing.ne.jp"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-21"
+      },
+      "location": "日本"
+    },
+    {
+      "id": "figure-202603210014-pplx-d55f66",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Goodsmile New Pre-Order List Updated March 21",
+      "title_ja": "Goodsmile 新プレオーダー一覧 3月21日更新",
+      "description": "New items added to Good Smile Company's figure reservation list this week, mainly for March 21 release, expected to sell out immediately.",
+      "source": {
+        "url": "https://www.goodsmile.info"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-21"
+      },
+      "location": "日本",
+      "thumbnail": "https://images.goodsmile.info/media/general/btn_ptop-f43cffaa0626e52f741ac7f73f232ca9.png"
+    },
+    {
+      "id": "figure-202603210014-pplx-7e1628",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Kotobukiya×Alter collaboration figure March 21 on sale pre-order",
+      "title_ja": "Kotobukiya×Alter コラボフィギュア 3月21日発売予約",
+      "description": "New collaboration between Kotobukiya and Alter is available for pre-order today, with a release date of March 21, 2026, for delivery in Japan.",
+      "source": {
+        "url": "https://www.alter.co.jp"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-21"
+      },
+      "location": "日本",
+      "thumbnail": "https://www.alter.co.jp/img/common/menu_bt.png"
+    },
+    {
       "id": "figure-20260320-pplx-49e12e",
       "categories": [
         "figure"
@@ -632,6 +1073,47 @@
       },
       "location": "日本",
       "thumbnail": "https://i0.wp.com/uploads.saigacdn.com/2026/03/family-2603umamusume-cp-announcement-00.jpg"
+    },
+    {
+      "id": "cafe-202603210014-pplx-e23fad",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "CHARLES & KEITH Pop-up Event in Nishi-Azabu, Tokyo",
+      "title_ja": "CHARLES & KEITH ポップアップイベント、西麻布で開催",
+      "description": "Global fashion brand CHARLES & KEITH will hold a limited pop-up at MARKET LAGOICE on March 18, 19 and 21. The new capsule collection with fruit motifs will be exhibited in advance.",
+      "source": {
+        "url": "https://www.haveagood-holiday.com/en/articles/charles-keith-popup-nishi-azabu"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-18、2026-03-19、2026-03-21"
+      },
+      "location": "西麻布（港区）",
+      "thumbnail": "https://assets.hldycdn.com/cdn-cgi/image/format=webp,width=1024,quality=75/34b33c4f-c30d-4410-86de-78d67c9e7d79.jpeg"
+    },
+    {
+      "id": "cafe-202603210014-pplx-764177",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "[未翻訳] Tokyo Indie Games Summit 2026",
+      "title_ja": "Tokyo Indie Games Summit 2026",
+      "description": "Summit will bring together the latest trends in the indie game industry. Game developers and enthusiasts will gather.",
+      "source": {},
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-20～2026-03-21"
+      },
+      "location": "東京"
     },
     {
       "id": "vtuber-20260320-rss-f02e6f",
@@ -3556,7 +4038,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/04/l/580704_1.jpg"
     },
     {
       "id": "game-20260320-pplx-d07a2b",
@@ -4496,6 +4979,28 @@
         "display": "2026-03-20"
       },
       "location": "日本"
+    },
+    {
+      "id": "cafe-202603210014-pplx-a6e051",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "[未翻訳] Pixar World Exhibition 2026",
+      "title_ja": "Pixar World Exhibition 2026",
+      "description": "An exhibition where visitors can experience the world of Pixar films. Characters and artwork will be on display.",
+      "source": {
+        "url": "https://en.japantravel.com/events/tokyo-ota-city?type=event&from=2026-03-20&to=2026-03-27&p=5"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-20～"
+      },
+      "location": "東京",
+      "thumbnail": "https://a3.cdn.japantravel.com/photo/72289-246131/460x460!/tokyo-pixar-world-exhibition-246131.jpg"
     },
     {
       "id": "cafe-20260320-pplx-764177",
@@ -6034,6 +6539,25 @@
       "location": "北米"
     },
     {
+      "id": "vtuber-202603210014-pplx-f3c5ff",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "Tenjin Konomi x TAITO ONLINE CRANE collaboration goods details released",
+      "title_ja": "天神子乃美×TAITO ONLINE CRANEコラボグッズ詳細公開",
+      "description": "The limited collaboration prizes include a BIG plushie (2 types), a long cushion (2 types), and a clear phone stand (1 type). Newly illustrated, the plushies are the largest ever, measuring approximately 30 cm, and will be available at TAITO ONLINE CRANE from March 26 at 8:00 p.m.",
+      "source": {},
+      "tags": [
+        "vtuber"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本"
+    },
+    {
       "id": "vtuber-20260320-rss-fe2a5d",
       "categories": [
         "vtuber"
@@ -7400,6 +7924,94 @@
       ],
       "thumbnail": "https://animeanime.jp/imgs/thumb_l/854450.jpg",
       "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "game-202603210014-pplx-f7fb00",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "New information on the animated film \"WITCH ON THE HOLY NIGHT\" will be released on March 21 at 6:00 p.m.",
+      "title_ja": "劇場アニメ『魔法使いの夜』の新情報が3月21日18時に解禁",
+      "description": "Officials of \"WITCH ON THE HOLY NIGHT\" announced new information about the theatrical anime scheduled for release in 2026 on March 21 at 6 p.m. The follow-up, which was teased in a promotion by ufotable, has attracted attention. Denfami News reported. [4]",
+      "source": {
+        "url": "https://news.denfaminicogamer.jp/news/2603192t"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本",
+      "thumbnail": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/02/ce1c550a8bb99e9b36b3edf15b4b866d.webp"
+    },
+    {
+      "id": "game-202603210014-pplx-ccb382",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "The latest information on \"WITCH ON THE HOLY NIGHT,\" a movie based on TYPE-MOON's original work, will be released on March 21, 18:00.",
+      "title_ja": "TYPE-MOON原作の劇場版「魔法使いの夜」，最新情報を3月21日18：00に解禁",
+      "description": "Aniplex will release the latest information on \"WITCH ON THE HOLY NIGHT\" the movie version on March 21 at 6:00 p.m. The TYPE-MOON original anime film, scheduled to be released by the end of 2026, will continue to be released, details of which are reported on 4Gamer.net. [1]",
+      "source": {
+        "url": "https://www.4gamer.net/games/115/G011514/20260319062/"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本",
+      "thumbnail": "https://www.4gamer.net/games/115/G011514/20260319062/SS/001.jpg"
+    },
+    {
+      "id": "game-202603210014-pplx-7fd615",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "The latest information on the \"WITCH ON THE HOLY NIGHT\" movie will be released on March 21 at 6:00 p.m.",
+      "title_ja": "映画『魔法使いの夜』最新情報が3月21日18時に解禁",
+      "description": "The latest information on the theatrical anime \"WITCH ON THE HOLY NIGHT\" was released on March 21 at 6:00 p.m. Reported by Famitsu as a follow-up to the decision to release the film in 2026, expectations are high for information related to ufotable's new promo. [6]",
+      "source": {
+        "url": "https://www.famitsu.com/article/202603/69258"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本",
+      "thumbnail": "https://cimg.kgl-systems.io/camion/files/69258/thumbnail_UjtM.jpg?x=1280"
+    },
+    {
+      "id": "game-202603210014-pplx-02a56c",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "RYAT Games' Tactical FPS \"VALORANT\" Season 2026 // Act 2 Begins March 19",
+      "title_ja": "ライアットゲームズ、タクティカルFPS『VALORANT』Season 2026 // Act 2 が3月19日より開幕",
+      "description": "Season 2026 Act 2 of \"VALORANT\" begins March 19. With new agent \"Mixx\" and new \"Knockout\" mode, popular eSports title updated in Japan; announced in PR TIMES; \"Season 2026 Act 2 of \"VALORANT\" begins on March 19. [2]",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000747.000024470.html"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本",
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/24470/747/24470-747-eb7f680e29a63fa8b9321e6a08afafbc-2048x1152.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff"
     },
     {
       "id": "game-20260320-rss-fe36de",
@@ -9447,6 +10059,28 @@
       "_source_id": "dengeki-hobby"
     },
     {
+      "id": "anime-202603210015-pplx-3b300e",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Wash it all off, spring visual release Volume 12 on sale March 25.",
+      "title_ja": "洗いざらい流して 春季ビジュアル公開 第12巻3月25日発売",
+      "description": "Spring visuals for the currently airing anime \"Wash Away. The main character Waka is shown eating a steamed bun. The story continues with volume 12 scheduled for release on March 25.",
+      "source": {
+        "url": "https://www.anitrendz.com/news/2026/03/19/wakana-enjoys-a-snack-in-new-wash-it-all-away-seasonal-visual"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本",
+      "thumbnail": "https://www.anitrendz.com/_next/image?url=https%3A%2F%2Fi0.wp.com%2Fanitrendz.net%2Fnews%2Fwp-content%2Fuploads%2F2026%2F03%2Fwash-it-all-away-spring-visual-1-scaled-e1773957260914.jpeg%3Ffit%3D1809%252C1019%26ssl%3D1&w=1920&q=75"
+    },
+    {
       "id": "anime-20260320-pplx-8c0fc1",
       "categories": [
         "anime"
@@ -10134,6 +10768,28 @@
       "_source_id": "moguravr-com"
     },
     {
+      "id": "game-202603210014-pplx-a5596b",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "The latest demo of the upcoming release will be shown for the first time! Shochiku Games to Exhibit at Indie Game Festival in Koenji",
+      "title_ja": "発売間近の最新デモを初公開！松竹ゲームズが高円寺でインディーゲーム祭典に出展",
+      "description": "At TOKYO INDIE GAMES SUMMIT 2026 (March 20-21, Koenji, Tokyo), Shochiku Games will be showing the latest demo of \"Yumenzakurakaku\" and the Japanese version of \"Yog-Sothothoth's Garden\" for trial play. New Japanese indie titles will be highlighted. [3]",
+      "source": {
+        "url": "https://game8.jp/articles/569588"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-17"
+      },
+      "location": "東京・高円寺",
+      "thumbnail": "https://img.game8.jp/12402839/4c0bde83396f5f2ef38d599de15b4db7.webp/original"
+    },
+    {
       "id": "game-20260319-rss-e78426",
       "categories": [
         "game"
@@ -10626,6 +11282,28 @@
       "thumbnail": "https://news.amiami.jp/wp-content/uploads/2026/02/REMFOBonus0225-ic.jpg"
     },
     {
+      "id": "game-202603210014-pplx-f625e7",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Offline trial play and large-scale testing of \"Yuan Night Twelve Stories\" will be conducted as soon as possible.",
+      "title_ja": "『元夜十二談』早速オフライン試遊＆大規模テストを実施予定",
+      "description": "Oriental urban fantasy RPG \"Yuan Night Twelve Stories\" is planning an offline trial and large-scale testing. The game was revealed in a development team Q&A session and is expected to be a hot indie title that has not yet landed in Japan. [5]",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/15/178613.html"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-15"
+      },
+      "location": "日本",
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1704059.webp"
+    },
+    {
       "id": "game-20260319-rss-40128c",
       "categories": [
         "game"
@@ -10761,6 +11439,25 @@
       "_source_id": "nitroplus-news",
       "series_id": "刀剣乱舞-めでぃぬいこれくしょん-刀かぶ刀ステ",
       "series": "刀剣乱舞 めでぃぬいこれくしょん ～刀かぶ～／～刀ステ～"
+    },
+    {
+      "id": "anime-202603210015-pplx-5143e7",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "For the Dark Prince & Red River Revival Anime Announced March 10",
+      "title_ja": "暗黒王子の為に＆紅河 リバイバルアニメ 3月10日発表",
+      "description": "Red River\" anime update was shared on March 10, followed by the announcement of \"From a Distant Sea,\" a rush of revived 90s shoujo manga that has fans excited.",
+      "source": {},
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-10"
+      },
+      "location": "日本"
     },
     {
       "id": "anime-20260319-rss-cdf7ec",
