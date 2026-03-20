@@ -37,6 +37,18 @@ CATEGORY_EMOJI = {
     "otaku-news": "\U0001F4E2",
 }
 
+# カテゴリ毎のハッシュタグ（最大2個）。未定義は #CategoryName #JapanOtaku
+CATEGORY_HASHTAGS = {
+    "cafe": ["#CollabCafe", "#JapanOtaku"],
+    "figure": ["#Figure", "#JapanOtaku"],
+    "event": ["#Event", "#JapanOtaku"],
+    "anime": ["#AnimeNews", "#JapanOtaku"],
+    "vtuber": ["#VTuber", "#JapanOtaku"],
+    "game": ["#GameNews", "#JapanOtaku"],
+    "otaku-news": ["#OtakuNews", "#JapanOtaku"],
+    "other": ["#JapanOtaku", "#Otaku"],
+}
+
 
 def get_credentials():
     keys = ["X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET"]
@@ -73,11 +85,11 @@ def format_tweet(entry):
         parts.append(emoji)
     parts.append(title)
 
-    tags = []
-    for c in cats[:2]:
-        tag = c.replace("-", "").capitalize()
-        tags.append(f"#{tag}")
-    tags.append("#JapanOtaku")
+    primary = (cats[0] if cats else "other")
+    tags = CATEGORY_HASHTAGS.get(primary)
+    if not tags:
+        tags = [f"#{primary.replace('-', '').capitalize()}", "#JapanOtaku"]
+    tags = tags[:2]
 
     parts.append(" ".join(tags))
     if source_url:
