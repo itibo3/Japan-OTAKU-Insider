@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-03-21T01:10:38.466891+09:00",
-  "total_entries": 597,
+  "last_updated": "2026-03-21T01:28:13.777279+09:00",
+  "total_entries": 612,
   "entries": [
+    {
+      "id": "other-202603210126-pplx-45e7e9",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "Notice of Comic Market Summer",
+      "title_ja": "コミックマーケット夏開催予告",
+      "description": "Summer Comiket scheduled for August 15-16, 2026 in Tokyo; not in the week of March 21, but related information as the largest otaku doujinshi sale event. There have also been voice actor stages in the past.",
+      "source": {
+        "url": "https://en.japantravel.com/events?from=2026-03-17&to=2026-03-24"
+      },
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-08-15 to 2026-08-16"
+      },
+      "location": "東京",
+      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
+    },
     {
       "id": "other-20260320-pplx-bbe3b4",
       "categories": [
@@ -66,7 +88,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2026/01/afdfff25972cee7a8663033d7a6035004a22afcc-thumb-400xauto-8881.png",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -89,7 +111,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2026/01/02Medinui_StageKigurumi_all-thumb-400xauto-8882.png",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -159,6 +181,28 @@
       "thumbnail": "https://i0.wp.com/www.igda.jp/wp-content/uploads/2026/03/short.png?resize=382%2C100&ssl=1"
     },
     {
+      "id": "other-202603210126-pplx-06cde9",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "Spring Events in Fukui",
+      "title_ja": "福井の春イベント",
+      "description": "Free event in Fukui from March 21 to April 5, 2026. Related as a fair starting this week, although it is mainly a cultural exhibition and not for otaku.",
+      "source": {
+        "url": "https://en.japantravel.com/events?from=2026-03-15&to=2026-03-22"
+      },
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-21 to 2026-04-05"
+      },
+      "location": "福井",
+      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
+    },
+    {
       "id": "cafe-20260320-pplx-e991bf",
       "categories": [
         "cafe"
@@ -199,7 +243,51 @@
       "dates": {
         "display": "2026-03-19 to 2026-04-05"
       },
-      "location": "東京・原宿（渋谷区）"
+      "location": "東京・原宿（渋谷区）",
+      "thumbnail": "https://assets.hldycdn.com/cdn-cgi/image/format=webp,width=1024,quality=75/aa91c8da-61f1-4345-a809-ae16b9fd18d9.jpeg"
+    },
+    {
+      "id": "vtuber-202603210126-pplx-286f4f",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "Kanome Naota joins STARAZO PRODUCTION",
+      "title_ja": "Kanome Naota、STARAZO PRODUCTIONに加入",
+      "description": "Independent VTuber Kanome Naota joins STARAZO PRODUCTION as its first \"generation 0\" member. Her debut delivery is scheduled for April 4.",
+      "source": {
+        "url": "https://onlyhit.us/en/news/vtuber-kanome-naota-joins-starazo-production-as-0th-generation-member"
+      },
+      "tags": [
+        "vtuber"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-04"
+      },
+      "location": "STARAZO PRODUCTION",
+      "thumbnail": "https://onlyhit.us/cdn//uploads/prtimes/2026/03/69b792f738376.png?width=800&height=450&webp=1&.webp"
+    },
+    {
+      "id": "vtuber-202603210126-pplx-c9899a",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "FUWAMOCO 3D Birthday Party held",
+      "title_ja": "FUWAMOCO 3Dバースデーパーティー開催",
+      "description": "FUWAMOCO's 3D birthday party was held. New outfit 2026 is also on sale.",
+      "source": {
+        "url": "https://www.youtube.com/watch?v=ouQF2A1l_cI"
+      },
+      "tags": [
+        "vtuber"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03"
+      },
+      "location": "YouTube"
     },
     {
       "id": "vtuber-20260320-pplx-f3d7f5",
@@ -244,6 +332,28 @@
       },
       "location": "Steam",
       "thumbnail": "https://automaton-media.com/en/wp-content/uploads/2024/04/display-pic-65x65.jpg"
+    },
+    {
+      "id": "other-202603210126-pplx-26b340",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "Tokyo Cheap Event List",
+      "title_ja": "東京チープイベント一覧",
+      "description": "Comprehensive list of Tokyo events with festivals, markets, exhibitions, and concerts; no otaku events confirmed for the week of March 21 except indie games, and no doujinshi or seiyu live performances.",
+      "source": {
+        "url": "https://tokyocheapo.com/it/events"
+      },
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03"
+      },
+      "location": "東京",
+      "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2014/11/ueno-cherry-blossom-GettyImages-1996449432-362x193.jpeg"
     },
     {
       "id": "other-20260320-pplx-4574cb",
@@ -372,7 +482,8 @@
       "dates": {
         "display": "2026-03"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://www.kotobukiya.co.jp/sm_files/co/other/parts/fv_under_info/2026/sousaifes_5th_1200.jpg"
     },
     {
       "id": "figure-20260320-pplx-6283aa",
@@ -414,7 +525,8 @@
       "dates": {
         "display": "2026-03"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://galactictoys.com/cdn/shop/files/4573102688033_1.jpg?v=1752112100"
     },
     {
       "id": "figure-20260320-pplx-356d04",
@@ -457,7 +569,8 @@
       "dates": {
         "display": "2026-03"
       },
-      "location": "東京"
+      "location": "東京",
+      "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/3/2023/03/P1036225-362x193.jpeg"
     },
     {
       "id": "cafe-20260320-pplx-7772c7",
@@ -480,6 +593,28 @@
       },
       "location": "東京",
       "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2014/11/ueno-cherry-blossom-GettyImages-1996449432-362x193.jpeg"
+    },
+    {
+      "id": "anime-202603210126-pplx-946653",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Kanatakara\" manga to be animated in 2026",
+      "title_ja": "『カナタカラ』マンガが2026年アニメ化",
+      "description": "TV anime adaptation of \"Kanatakara (From Far Away)\" manga announced, slated to premiere in 2026; anime adaptation of 1990s shoujo manga classic. [2][3]",
+      "source": {
+        "url": "https://anitrendz.net/news/2026/03/18/from-far-away-manga-gets-2026-anime/"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03"
+      },
+      "location": "日本",
+      "thumbnail": "https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2026/03/From-Far-Away-anime-announcement-screenshot.png?resize=696%2C392&ssl=1"
     },
     {
       "id": "anime-20260320-pplx-d4a155",
@@ -887,6 +1022,94 @@
       "_source_id": "hobby-watch"
     },
     {
+      "id": "vtuber-202603210126-pplx-449f1a",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "FUWAMOCO MORNING episode 181 to be distributed",
+      "title_ja": "FUWAMOCO MORNING episode 181 配信予定",
+      "description": "FUWAMOCO will deliver FUWAMOCO MORNING episode 181 on March 21 at midnight (GMT+9). This will be the last FUWAMOCO MORNING until the return from the FUWAMOCO Hospital.",
+      "source": {
+        "url": "https://www.youtube.com/watch?v=2Q_Z4PVnMdk"
+      },
+      "tags": [
+        "vtuber"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-21"
+      },
+      "location": "YouTube Live"
+    },
+    {
+      "id": "game-202603210124-rss-287f4d",
+      "categories": [
+        "game",
+        "vtuber",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Customize \"W Gundam\" and \"Zeta Plus\"! The long-awaited re-release of the 14th Gashapon \"Mobile Suit Ensemble",
+      "title_ja": "「Wガンダム」や「ゼータプラス」らをカスタマイズ！ガシャポン「モビルスーツ アンサンブル」第14弾が待望の再販",
+      "dates": {
+        "display": "Mar 21, 2026"
+      },
+      "description": "Resale reservations for Mobile Suit Gundam Mobile Suit Ensemble 14 are now available at Gashapon Online!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/21/178836.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1698807.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603210124-rss-1e0c10",
+      "categories": [
+        "game",
+        "vtuber",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Neo Universe\" from \"Uma Musume\" is now available in \"L size\" at POP UP PARADE! The gradation of her hair and tail are reproduced to give her a unique atmosphere!",
+      "title_ja": "『ウマ娘』より「ネオユニヴァース」がPOP UP PARADEの“Lサイズ”に！髪や尻尾のグラデーションなど、独特の雰囲気を再現",
+      "dates": {
+        "display": "Mar 21, 2026"
+      },
+      "description": "POP UP PARADE Neo Universe L size\" non-scale figure is now available for pre-order! The period is until March 25.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/21/178835.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1693862.webp",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603210123-rss-46a839",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Red Desert\" sold more than 2 million units worldwide in less than a day after its release. Open world action ADV finally released.",
+      "title_ja": "『紅の砂漠』発売から1日も経たず全世界販売本数200万本を突破。ついに発売のオープンワールドアクションADV",
+      "dates": {
+        "display": "Mar 21, 2026"
+      },
+      "description": "Available March 20 for PS5, Xbox Series X|S, and PC.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/21/164164.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1105568.jpg",
+      "_source_id": "game-spark"
+    },
+    {
       "id": "game-202603210012-rss-8c747f",
       "categories": [
         "game",
@@ -908,6 +1131,27 @@
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1690366.webp",
       "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "figure-202603210126-pplx-2371e9",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "FREEing, Blossom Doll \"Love Live! New color ver. premium pre-order this week",
+      "title_ja": "FREEing、ブロッサムドール「ラブライブ！」新色ver.今週プレミアム先行予約",
+      "description": "FREEing's Blossom Doll series includes \"Love Live! Superstar!\" Superstar!\" character added to FREEing's Blossom Doll series. Superstar!\" character to FREEing's Blossom Doll series, available for pre-order on March 21. The dolls will be shipped at the end of this week.",
+      "source": {
+        "url": "https://hobby.freeing.ne.jp/"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-21"
+      },
+      "location": "千葉"
     },
     {
       "id": "figure-202603210014-pplx-e9145a",
@@ -2466,6 +2710,28 @@
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/03/morinaga-biscuit-tanemura-clearfile-campaign.jpg",
       "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "game-202603210126-pplx-6a501b",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Deluxe Edition of \"Ryu ga Gotoku 8 Gaiden\" 70% off through March 25.",
+      "title_ja": "『龍が如く8外伝』デラックス版が70%OFF、3月25日まで",
+      "description": "Sega-Atlas \"Mega March Sale\" on PS Store and Nintendo eShop offers big discounts on popular Japanese games. eSports-related sale is also underway. [6]",
+      "source": {
+        "url": "https://esports-world.jp/news/59396"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-20"
+      },
+      "location": "日本",
+      "thumbnail": "https://esports-world.jp/api/image/crop/216x148/images/upload/2023/11/a3db7e5274b7c976864cfdc054014af0.jpg"
     },
     {
       "id": "game-20260320-rss-ff2647",
@@ -10345,6 +10611,27 @@
       "_source_id": "natalie-anime"
     },
     {
+      "id": "vtuber-202603210126-pplx-e78b50",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "Riko Jinno (Jinjin) Jakumon Distribution",
+      "title_ja": "神野莉子（じんじん）雀魂配信",
+      "description": "VTuber Riko Jinno will be distributing a Dan competition on March 18, 2012 at Jakumon. She aims to win points as a rookie VTuber.",
+      "source": {
+        "url": "https://www.youtube.com/watch?v=LWDDnAkz2OI"
+      },
+      "tags": [
+        "vtuber"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-18"
+      },
+      "location": "YouTube Live"
+    },
+    {
       "id": "vtuber-20260320-rss-da5dc2",
       "categories": [
         "vtuber"
@@ -10629,6 +10916,48 @@
       ],
       "_source_id": "amiami-news",
       "thumbnail": "https://news.amiami.jp/wp-content/uploads/2026/03/BRS260313-IC.jpg"
+    },
+    {
+      "id": "anime-202603210126-pplx-ad426b",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Maho Yashiro's \"Tank Chair\" manga to be adapted into a TV anime in Fall 2026.",
+      "title_ja": "八代万歩『タンクチェア』マンガが2026年秋TVアニメ化",
+      "description": "Animated TV adaptation of violent sci-fi manga \"Tank Chair\" announced; teaser trailer/visuals to premiere Fall 2026. [4]",
+      "source": {
+        "url": "https://www.crunchyroll.com/news/latest/2026/3/18/manabu-yashiro-tank-chair-manga-anime-announced-2026-premiere-teaser-trailer-visual"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-18"
+      },
+      "location": "日本"
+    },
+    {
+      "id": "anime-202603210126-pplx-26d85f",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Abandoned Saint's Gohan Journey in Another World: TV Anime Adaptation Announced for 2026",
+      "title_ja": "捨てられ聖女の異世界ごはん旅 2026年TVアニメ化発表",
+      "description": "TV anime adaptation of the light novel \"Abandoned Seijo no Isekai Gohan Tabi (捨てれ聖女の異世界ごはん旅) ~Hidden Skill Summoned a Camper~\" announced on March 18 with the opening of its official website and X account; scheduled to air in 2026; voice actors Aozora Tokui and Yuki Ono are cast as the main character Rin; produced by EMT Squared; the series will be broadcast in 2026. [1]",
+      "source": {
+        "url": "https://essential-japan.com/news/the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-anime-debuts-in-2026/"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-18"
+      },
+      "location": "日本"
     },
     {
       "id": "vtuber-20260320-rss-a0bdea",
