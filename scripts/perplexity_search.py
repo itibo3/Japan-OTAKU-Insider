@@ -242,13 +242,16 @@ def main() -> None:
         return
 
     seen_urls = set()
+    unique_entries = []
     for entry in entries:
         url = (entry.get("source") or {}).get("url", "").strip()
         if url and url in seen_urls:
-            entry["source"] = {}
-            print(f"  WARNING: 重複URLをクリア — {entry.get('title_ja', entry.get('title', ''))[:40]}...")
-        elif url:
+            print(f"  SKIP (同一URL): {entry.get('title_ja', entry.get('title', ''))[:40]}...")
+            continue
+        if url:
             seen_urls.add(url)
+        unique_entries.append(entry)
+    entries = unique_entries
 
     STAGING_DIR.mkdir(parents=True, exist_ok=True)
     date_str = datetime.now(JST).strftime("%Y%m%d_%H%M")
