@@ -1,7 +1,29 @@
 {
-  "last_updated": "2026-03-21T01:28:13.777279+09:00",
-  "total_entries": 612,
+  "last_updated": "2026-03-21T02:52:18.292190+09:00",
+  "total_entries": 622,
   "entries": [
+    {
+      "id": "other-202603210251-pplx-f94abb",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "Comic Market (Summer Comiket)",
+      "title_ja": "コミックマーケット（Summer Comiket）",
+      "description": "Summer **Comiket** to be held in Tokyo on August 15-16, 2026. Representative of **Otaku** event with doujinshi sales. A large scale fair accompanied by voice actor events, live performances and exhibitions.",
+      "source": {
+        "url": "https://en.japantravel.com/events?from=2026-03-20&to=2026-03-27"
+      },
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-08-15 to 2026-08-16"
+      },
+      "location": "東京",
+      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
+    },
     {
       "id": "other-202603210126-pplx-45e7e9",
       "categories": [
@@ -334,6 +356,28 @@
       "thumbnail": "https://automaton-media.com/en/wp-content/uploads/2024/04/display-pic-65x65.jpg"
     },
     {
+      "id": "other-202603210251-pplx-83fbc5",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "NMB48 Performance",
+      "title_ja": "NMB48 公演",
+      "description": "Idol** Live at NMB48 Theater on March 28-31, 2026. This is an event for **Otaku** with an overlapping fan base of **voice actors**. **Doujinshi** circles are also involved.",
+      "source": {
+        "url": "https://sell.pia.jp/inbound/eventList.php?list=english"
+      },
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-28 to 2026-03-31"
+      },
+      "location": "NMB48 THEATER",
+      "thumbnail": "https://image.pia.jp/images/202603/202603150003_ex.png"
+    },
+    {
       "id": "other-202603210126-pplx-26b340",
       "categories": [
         "other"
@@ -617,6 +661,28 @@
       "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2014/11/ueno-cherry-blossom-GettyImages-1996449432-362x193.jpeg"
     },
     {
+      "id": "anime-202603210251-pplx-4149a2",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "JoJo's Bizarre Adventure Steel Ball Run Mid-2026 release",
+      "title_ja": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2026年中盤リリース",
+      "description": "A new JoJo's Bizarre Adventure Steel Ball Run series has been announced as one of the top anime releases for mid-March 2026. A theatrical and Blu-ray expansion is expected.",
+      "source": {
+        "url": "https://fullondrama.com/top-anime-releasing-mid-march-2026/"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03"
+      },
+      "location": "日本",
+      "thumbnail": "https://fullondrama.com/wp-content/uploads/2026/03/6_11zon-1-768x432.jpg"
+    },
+    {
       "id": "anime-202603210126-pplx-946653",
       "categories": [
         "anime"
@@ -722,7 +788,8 @@
       "dates": {
         "display": "2026-03-23 to 2026-03-29"
       },
-      "location": "東京"
+      "location": "東京",
+      "thumbnail": "https://cdn.savvytokyo.com/app/uploads/2015/07/SavvyTeam1-150x150.png"
     },
     {
       "id": "figure-20260320-pplx-874599",
@@ -9352,6 +9419,48 @@
       "_source_id": "4gamer"
     },
     {
+      "id": "figure-202603210251-pplx-96c6fc",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Kotobukiya begins accepting pre-orders for \"KOF XV\" Yuri Sakazaki 1/7th scale figure.",
+      "title_ja": "コトブキヤが『KOF XV』ユリ・サカザキ 1/7スケールフィギュアの予約受付を開始",
+      "description": "Kotobukiya has begun taking pre-orders for a 1/7th scale figure of Yuri Sakazaki from \"The King of Fighters XV\" (21 cm tall, priced at 19,800 yen). The figure comes with a bonus head part for official website pre-orders, and is scheduled for release in September 2026.",
+      "source": {
+        "url": "https://ixbt.games/en/news/2026/03/19/kotobukiya-otkryla-predzakaz-na-statuiu-iuri-sakadzaki-iz-faitinga-the-king-of-fighters-xv.html"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本"
+    },
+    {
+      "id": "figure-202603210251-pplx-71e547",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Good Smile Company Nendoroid Makina is open for reservation now.",
+      "title_ja": "グッドスマイルカンパニー ねんどろいど 槙奈 予約開始",
+      "description": "Nendoroid Makina from \"MILKY☆SUBWAY THE GALACTIC LIMITED EXPRESS\" is now available for pre-order (2026/03/19-04/29). She is approximately 100mm in height and will be shipped in September 2026. Comes with expression parts and props, including a glaring face, panic face, etc.",
+      "source": {
+        "url": "https://www.goodsmile.com/en/product/1141474/Nendoroid+Makina"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本"
+    },
+    {
       "id": "figure-20260320-rss-fe3f94",
       "categories": [
         "figure"
@@ -11024,6 +11133,27 @@
       "_source_id": "moguravr-com"
     },
     {
+      "id": "game-202603210251-pplx-180ff3",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Closed Beta test of \"'83\" will be held from March 21, 0:00 a.m. Japan time.",
+      "title_ja": "「'83」のクローズドβテストが日本時間の3月21日0：00から開催",
+      "description": "Blue Dot Games is conducting a closed beta test of '83, a 40 vs. 40 large-scale competitive FPS under development by Blue Dot Games, on March 21 at midnight. The spiritual successor to the \"Rising Storm\" series, the game is available for participation requests via Steam. Attention military FPS fans. [1]",
+      "source": {
+        "url": "https://www.4gamer.net/games/991/G099150/20260317057/"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-17"
+      },
+      "location": "日本"
+    },
+    {
       "id": "game-202603210014-pplx-a5596b",
       "categories": [
         "game"
@@ -11358,6 +11488,27 @@
       "thumbnail": "https://www.dexerto.com/cdn-image/wp-content/uploads/2024/03/08/most-popular-vtubers-2024.jpg?width=1200&quality=75&format=auto"
     },
     {
+      "id": "game-202603210251-pplx-21835e",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Eight \"eFootball\" players for \"ASIA esports EXPO 2026\" to be announced on March 21.",
+      "title_ja": "「ASIA esports EXPO 2026」『eFootball』出場選手8名決定、3月21日に代表候補発表",
+      "description": "Eight contestants have been selected for Konami's \"eFootball\" eSports event; two Asian national team candidates will be chosen on March 21 to compete for the top spot in Asia. [7]",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000001378.000050711.html"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-16"
+      },
+      "location": "アジア"
+    },
+    {
       "id": "game-20260319-rss-8cf125",
       "categories": [
         "game"
@@ -11646,6 +11797,27 @@
       "thumbnail": "https://tamashiiweb.com/special/jumpcs/images/hum-menu/thumb-series_09.png"
     },
     {
+      "id": "figure-202603210251-pplx-f40a92",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "native STORE March shipping schedule announced",
+      "title_ja": "native STORE 3月発送商品の日程発表",
+      "description": "native STORE announces March 13, 2026 shipping date for items scheduled for March 2026 release; MOONDRAGON will ship March 17; pre-order information available for other adult figures.",
+      "source": {
+        "url": "https://native-store.net/en/"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-13"
+      },
+      "location": "日本"
+    },
+    {
       "id": "figure-20260319-rss-ee1b06",
       "categories": [
         "figure",
@@ -11695,6 +11867,27 @@
       "_source_id": "nitroplus-news",
       "series_id": "刀剣乱舞-めでぃぬいこれくしょん-刀かぶ刀ステ",
       "series": "刀剣乱舞 めでぃぬいこれくしょん ～刀かぶ～／～刀ステ～"
+    },
+    {
+      "id": "cafe-202603210251-pplx-49167e",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "[未翻訳] AAA at LINE CUBE SHIBUYA",
+      "title_ja": "AAA at LINE CUBE SHIBUYA",
+      "description": "Popular J-Pop group AAA performs at LINE CUBE SHIBUYA in Shibuya. There will be an afternoon performance, a long-awaited live event for their fans.",
+      "source": {
+        "url": "https://www.japanconcerttickets.com/japan-march-2026/"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-08"
+      },
+      "location": "東京・渋谷（LINE CUBE SHIBUYA）"
     },
     {
       "id": "anime-20260319-rss-cdf7ec",
