@@ -21,11 +21,49 @@ function renderCategoryPills(entry) {
     return `<div class="card-categories">${pills}</div>`;
 }
 
+const idDateRe = /^\w+-(\d{8,12})-/;
+
+function idDateFromId(id) {
+    const m = idDateRe.exec(id || '');
+    return (m ? m[1] : '00000000').padEnd(12, '0');
+}
+
+function parseDateForSort(entry) {
+    const datesVal = entry && entry.dates;
+    let display = '';
+    if (datesVal && typeof datesVal === 'object') display = datesVal.display || '';
+    else if (typeof datesVal === 'string') display = datesVal;
+    if (!display) return null;
+
+    const isoDateRe = /(\d{4})-(\d{2})-(\d{2})/g;
+    let match;
+    let last = null;
+    while ((match = isoDateRe.exec(display)) !== null) last = match;
+    if (last) return last[1] + last[2] + last[3];
+
+    const isoMonthRe = /^(\d{4})-(\d{2})(?:\s|$|-)/;
+    const monthMatch = display.trim().match(isoMonthRe);
+    if (monthMatch) {
+        const y = parseInt(monthMatch[1], 10);
+        const m = parseInt(monthMatch[2], 10);
+        if (m >= 1 && m <= 12) {
+            const lastDay = new Date(y, m, 0).getDate();
+            return y + String(m).padStart(2, '0') + String(lastDay).padStart(2, '0');
+        }
+    }
+
+    const d = new Date(display.trim());
+    if (!isNaN(d.getTime())) {
+        const iso = d.toISOString().slice(0, 10);
+        return iso.replace(/-/g, '');
+    }
+    return null;
+}
+
 function sortByNewestFirst(entries) {
-    const idDateRe = /^\w+-(\d{8,12})-/;
     return [...entries].sort((a, b) => {
-        const da = ((idDateRe.exec(a.id) || [null, '00000000'])[1] || '00000000').padEnd(12, '0');
-        const db = ((idDateRe.exec(b.id) || [null, '00000000'])[1] || '00000000').padEnd(12, '0');
+        const da = (parseDateForSort(a) || idDateFromId(a.id)).padEnd(12, '0');
+        const db = (parseDateForSort(b) || idDateFromId(b.id)).padEnd(12, '0');
         if (da !== db) return db.localeCompare(da);
         return (b.id || '').localeCompare(a.id || '');
     });
