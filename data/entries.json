@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-20T19:50:03.447493+09:00",
-  "total_entries": 544,
+  "last_updated": "2026-03-21T00:00:43.303903+09:00",
+  "total_entries": 570,
   "entries": [
     {
       "id": "vtuber-20260320-rss-fe2a5d",
@@ -253,6 +253,27 @@
       ],
       "thumbnail": "https://assets.moguravr.com/uploads/2026/03/b4038f1dbfb6781d67f0dbf5b5f96160-kix.ks6l4f8rf4-1024x576.webp",
       "_source_id": "moguravr-com"
+    },
+    {
+      "id": "vtuber-20260320-rss-9d4502",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "Stage \"The Magician\" Retrospective\nThe stage \"The Magician\" opens today!\nOfficial cast comments and stage photos",
+      "title_ja": "舞台『魔道祖師』遡洄編\n＼本日開幕／\nオフィシャルキャストコメント及び舞台写真を公開",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "Stage \"The Magician\nThe stage \"The Magician\" opens today!\nOfficial cast comments and stage photos\n\n\n\n                    Sony Music Solutions Inc.\n\n\n                                    2026-03-20 23:00\n\n\n\n\n\n\n\n\n\n\n        Ⓒmai...",
+      "source": {
+        "url": "https://newscast.jp/news/9613237"
+      },
+      "tags": [
+        "newscast-jp"
+      ],
+      "thumbnail": "https://newscast.jp/attachments/B03whF3YFDn23CNCDbYe.jpg?w=940&h=940&a=1",
+      "_source_id": "newscast-jp"
     },
     {
       "id": "vtuber-20260320-rss-98f0cf",
@@ -886,6 +907,28 @@
       "thumbnail": "https://onlyhit.us/cdn//uploads/prtimes/2026/03/69ba01cfee722.png?width=800&height=450&webp=1&.webp"
     },
     {
+      "id": "vtuber-20260320-pplx-f3c5ff",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "TAITO ONLINE CRANE Announces First Collaboration with VTuber Tenjo Konomi from Million P",
+      "title_ja": "TAITO ONLINE CRANEがミリオンP所属VTuber天上こ乃美との初コラボを発表",
+      "description": "TAITO ONLINE CRANE announces its first collaboration with Tenjo Konomi. Limited prizes with newly drawn \"nightwear\" illustrations will be available on March 26 at 20:00. On the same day at 19:00, Konomi Amagami will hold a live broadcast on YouTube to challenge the first crane game. The prizes are a BIG plushie (2 kinds), a long cushion (2 kinds), and a clear phone stand (1 kind).",
+      "source": {
+        "url": "https://www.haveagood-holiday.com/en/articles/taito-online-crane-amakami-konomi-collaboration"
+      },
+      "tags": [
+        "vtuber"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-19"
+      },
+      "location": "日本",
+      "thumbnail": "https://assets.hldycdn.com/cdn-cgi/image/format=webp,width=1024,quality=75/f29b3efe-f7a8-467b-960c-f5dfc81faa88.jpeg"
+    },
+    {
       "id": "vtuber-20260320-pplx-efb4b9",
       "categories": [
         "vtuber"
@@ -1157,6 +1200,28 @@
       "_source": "perplexity",
       "dates": {
         "display": "2026-08-15 - 2026-08-16"
+      },
+      "location": "東京",
+      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
+    },
+    {
+      "id": "other-20260320-pplx-701f70",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "Tokyo Indie Game Summit",
+      "title_ja": "東京インディーゲームサミット",
+      "description": "An indie game event to be held in Tokyo on March 20, 2026. Related to otaku culture, the summit will bring together game developers and fans, and will include exhibits and talk sessions. You can attend this afternoon.",
+      "source": {
+        "url": "https://en.japantravel.com/events?from=2026-03-14&to=2026-03-21"
+      },
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-20"
       },
       "location": "東京",
       "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
@@ -1743,6 +1808,27 @@
       "_source_id": "4gamer"
     },
     {
+      "id": "game-20260320-rss-ba7ed0",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Twelve songs from \"Ongeki\" appear in a \"very popular\" sound game! Collaboration DLC for \"DJMAX RESPECT V\" will be released on March 26 - 80% off sale on Steam!",
+      "title_ja": "『オンゲキ』12曲が“非常に好評”音ゲーに登場！『DJMAX RESPECT V』向けコラボDLCが3月26日配信―ゲーム本体Steamで80%オフセール中",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "The 996 yen game console alone has more songs than you can play.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/20/164163.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1105534.png",
+      "_source_id": "game-spark"
+    },
+    {
       "id": "game-20260320-rss-ba39a7",
       "categories": [
         "game"
@@ -1910,6 +1996,27 @@
       ],
       "thumbnail": "https://www.4gamer.net/games/950/G095079/20260314012/SS/015.jpg",
       "_source_id": "4gamer"
+    },
+    {
+      "id": "game-20260320-rss-a3e67b",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "It's not \"Can you do it?\", it's \"Do it! ...The Japanese title of the maintenance shop sim \"Car Service Together\" has a mysterious sense of style.",
+      "title_ja": "「\"できるか\"じゃない、\"やれ！\"」…整備工場シム『Car Service Together』日本語タイトルがまさかの謎センスに",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "A mechanic shop simulator with a mysterious Japanese title that will never appear in a direct translation of the original title.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/20/164162.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1105524.jpg",
+      "_source_id": "game-spark"
     },
     {
       "id": "game-20260320-rss-a3a692",
@@ -2407,6 +2514,29 @@
       ],
       "thumbnail": "https://www.4gamer.net/games/732/G073225/20260319065/SS/002.jpg",
       "_source_id": "4gamer"
+    },
+    {
+      "id": "game-20260320-rss-5c38cc",
+      "categories": [
+        "game",
+        "vtuber",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Beautiful S-curves drawn by her beautiful legs peeking out from the slit! The elegant beauty of Cheshire in a Chinese dress from \"Azuren\" [7 photos].",
+      "title_ja": "【コスプレ】スリットから覗く美脚で描くS字カーブが麗しい！『アズレン』チェシャーのチャイナドレス姿が優雅な美しさだった【写真7枚】",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "Here are some beautiful female cosplayers found in Taiwan.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/20/178833.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1698990.jpg",
+      "_source_id": "inside-games-jp"
     },
     {
       "id": "game-20260320-rss-5bdcce",
@@ -3474,6 +3604,29 @@
       "_source_id": "dengeki-hobby"
     },
     {
+      "id": "figure-20260320-rss-e81ca4",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Hasegawa is re-releasing two 1/72 scale kits of the giant weapon developed by Germany during the Great War, the Karl self-propelled mortar!",
+      "title_ja": "大戦時にドイツが開発した巨大兵器「カール自走臼砲」の1/72スケールキット2種をハセガワが再販！IV号特殊弾薬運搬車、運搬貨車とそれぞれセットの2商品！",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "The huge shell is a sight to behold! Hasegawa is re-releasing two 1/72 scale kits of the Karl self-propelled mortar, a huge weapon developed in Germany during WWII! #hasegawa #plastic model",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2925371/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/MT56_XF0ktdyhejmKAeV31fnvh3y5FI2NYZfC_UBlXyAqx8FIbTB38fyc2cOHIEJq8dw2g-440x285.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
       "id": "figure-20260320-rss-e7f3ff",
       "categories": [
         "figure"
@@ -3675,6 +3828,29 @@
       "_source_id": "dengeki-hobby"
     },
     {
+      "id": "figure-20260320-rss-bd6bdf",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Monster Scene, a horror-inspired snap kit from the 1970s, is being reissued by Dencom in the 55th anniversary package! The lineup includes four items, including a frightened woman and a terrifying torture device!",
+      "title_ja": "1970年代に発売されたホラーテイストなスナップキット「モンスターシーン」が55周年パッケージでデンコムから復刻！怯える女性や恐怖の拷問器具など4アイテムをラインナップ！",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "Dencom is reissuing the legendary 1970s horror kit, Aurora's Monster Scene, in 55th anniversary limited edition packaging! Four snap kits that can be combined to enjoy the bizarre world of Viktim, Vampirella, and the torture devices of terror! #plastic model #Dencom",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2940623/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/den632_01_MfjzomHogpGb9SyJZAE822ESbP8GAAjf_3oEqatw5e4C6UUNNHYnkLBEUS8v3Pojb-440x361.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
       "id": "figure-20260320-rss-b3c5c7",
       "categories": [
         "figure"
@@ -3740,6 +3916,29 @@
       ],
       "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2094/854/01_l.jpg",
       "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-20260320-rss-9f4bf2",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "From the \"Mechatro Wego\" series, Hasegawa re-releases a set of two plastic models of Wego, inspired by the anime \"Hello WeGo! Connect the parts together and the arms extend with a whizzing motion!",
+      "title_ja": "「メカトロウィーゴ」シリーズより、アニメ『Hello WeGo!』をイメージしたウィーゴのプラモデル2体セットがハセガワより再登場！パーツをつなげて腕がグイ～ンと伸びる！",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "Hasegawa is pleased to announce the return of the Mechatro Wego kit inspired by the anime \"Hello WeGo! The kit comes as a set of two figures, one in the blue Akira color and the other in the mint green Satoru color, with multiple arms that can be connected and extended! #Hasegawa #HelloWeGo",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2924965/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/64783_1re_L4JIrsMpi-GoQurJteigOukQGDsgk3BE_4ttDMqDj48iFQ211jBiNxiInbcu1JkJq-440x314.jpg",
+      "_source_id": "dengeki-hobby"
     },
     {
       "id": "figure-20260320-rss-9e9dba",
@@ -4139,6 +4338,27 @@
       "_source_id": "hobby-watch"
     },
     {
+      "id": "figure-20260320-rss-180bdf",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "The prototype of the \"Enka Higuchi Oshigoto Effortless Ver.\" figure, a dress-up costume collaboration between THE iDOLM@STER SHINY COLORS and Jakumon, is revealed.",
+      "title_ja": "アイドルマスター シャイニーカラーズ×雀魂のコラボ着せ替え衣装「樋口円香 おしごとエフォートレス Ver.」フィギュアの原型が公開",
+      "dates": {},
+      "description": "Infinity Studio has released a prototype of \"Enka Higuchi Oshigoto Effortless Ver.\" from the figure brand \"SSR FIGURE.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095101.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/101/main_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
       "id": "figure-20260320-rss-132e1b",
       "categories": [
         "figure"
@@ -4289,6 +4509,27 @@
       "thumbnail": "https://tamashiiweb.com/images/item/item_0000015814_iTELyClH_400.jpg"
     },
     {
+      "id": "figure-20260320-pplx-8dad3d",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Hobby Search This Week in PVC Figure Reserve Good Smile Kotobukiya",
+      "title_ja": "ホビーサーチ 今週のフィギュア予約 グッドスマイル・コトブキヤ",
+      "description": "Preliminary Japanese figure pre-orders for this week (March 20, 2026), with many new pre-orders from Good Smile, Kotobukiya, FREEing, and Alter.",
+      "source": {
+        "url": "https://hobbysearch.jp/shop/r/rnewpre/"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-20"
+      },
+      "location": "日本"
+    },
+    {
       "id": "figure-20260320-pplx-874599",
       "categories": [
         "figure"
@@ -4328,6 +4569,48 @@
       "_source": "perplexity",
       "dates": {
         "display": "2026-03-20"
+      },
+      "location": "日本"
+    },
+    {
+      "id": "figure-20260320-pplx-7bebcd",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "FREEing Week of March 2026 Bikini Figure open for reservation now!",
+      "title_ja": "FREEing 2026年3月週 ビキニフィギュア 予約受付中",
+      "description": "FREEing's Bunny Series and Bikini Figures Pre-Order from March 20, 2026. New lineup of anime characters.",
+      "source": {
+        "url": "https://hobbysearch.jp"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-20"
+      },
+      "location": "日本"
+    },
+    {
+      "id": "figure-20260320-pplx-7b1b7c",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Kotobukiya Alter New Figure March 2026 Pre-Order",
+      "title_ja": "コトブキヤ アルター 新作フィギュア 2026年3月プレオーダー",
+      "description": "Kotobukiya and Alter's collaborative anime figure is open for reservation today, scheduled for release in March 2026. New scale model of the popular series.",
+      "source": {
+        "url": "https://www.kotobukiya.co.jp"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03"
       },
       "location": "日本"
     },
@@ -4611,6 +4894,27 @@
       "location": "東京・晴海"
     },
     {
+      "id": "cafe-20260320-pplx-3fac18",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "Gotanda Cherry Blossom Festival",
+      "title_ja": "五反田桜まつり",
+      "description": "Cherry blossom festival in Gotanda, Tokyo. spring event to be held on March 17. [5]",
+      "source": {
+        "url": "https://en.japantravel.com/events/tokio?type=event&from=2026-03-20&to=2026-03-27&p=4"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-17"
+      },
+      "location": "東京・五反田"
+    },
+    {
       "id": "cafe-20260320-pplx-3c1659",
       "categories": [
         "cafe"
@@ -4716,6 +5020,48 @@
       ],
       "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/parieto_202603.jpg?imwidth=1280&imdensity=1",
       "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-fb8a38",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Anime \"Maids Only Eat\" PV full of delicious-looking rice & advance cut of episode 1",
+      "title_ja": "アニメ「メイドさんは食べるだけ」美味しそうなご飯いっぱいのPV＆1話先行カット",
+      "dates": {},
+      "description": "The second PV of the TV anime \"Maids Only Eat\" written by Susumu Maeya has been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/664884"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0320/maitabe_anime_pv2.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-20260320-rss-f83b73",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Sequel to \"Pupel in Dendo-cho,\" cuts of the animals living in the millennium fortress revealed, as well as postrecording footage.",
+      "title_ja": "「えんとつ町のプペル」続編、千年砦に住む動物たちのカット公開　アフレコ映像も",
+      "dates": {},
+      "description": "New scene cuts from \"Entsuki-cho no Pupel: Yakusoku no Clock Tower\" have been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/664870"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0320/poupelle_movie2_omimi.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
     },
     {
       "id": "anime-20260320-rss-f823c3",
@@ -4862,6 +5208,27 @@
         "pop-culture"
       ],
       "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0319/RED_2026_5.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-20260320-rss-d41d72",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Manga magazine list for tomorrow, March 21 (Saturday)",
+      "title_ja": "明日3月21日（土）発売分のマンガ雑誌リスト",
+      "dates": {},
+      "description": "Comic Natalie is pleased to announce the manga magazine to be released tomorrow, Saturday, March 21.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/664488"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/asset/natalie/common/polar/common/image/follow_tag.png?impolicy=thumb_fit&width=180&height=180",
       "_source_id": "natalie-anime"
     },
     {
@@ -5052,6 +5419,27 @@
       ],
       "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0320/hamnet_202603_01.jpg?imwidth=1280&imdensity=1",
       "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-9fab9e",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Drama \"No Woman Shouldn't Give Birth?\" Husband uses a needle as birth control... trailer of the madness.",
+      "title_ja": "ドラマ「産まない女はダメですか？」夫が避妊具に針を…狂気を収めた予告映像",
+      "dates": {},
+      "description": "Drama \"No Woman Should Give Birth?\" based on the original story by Akki Kitazanechi. DINKs no Totsukitooka\" trailer has been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/664892"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0320/umadame_ep0_00001.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
     },
     {
       "id": "anime-20260320-rss-9fa99d",
@@ -5493,6 +5881,27 @@
       ],
       "thumbnail": "https://ogre.natalie.mu/media/news/eiga/2026/0319/netflix_20260319.jpg?imwidth=1280&imdensity=1",
       "_source_id": "natalie-news"
+    },
+    {
+      "id": "anime-20260320-rss-5871e5",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Actual teacher of \"Assassination Classroom\" asks how Jun Fukuyama has interacted with the cast of \"Class 3E.",
+      "title_ja": "「暗殺教室」実際の教師から質問、福山潤は3年E組のキャストとどう接してきたのか",
+      "dates": {},
+      "description": "The new anime \"Assassination Classroom the Movie: Time for Everyone,\" based on the original story by Yuuki Matsui, opened in theaters today, March 20. The first day of the opening ceremony was held at Shinjuku Wald 9 in Tokyo, with Jun Fukuyama playing the role of Sensei, Mai Fuchigami playing Nagisa Ushioda and Hotaru, Nobuhiko Okamoto playing Gyo Akabane, Aya Suzaki playing Kaede Chino, and Ryota Osaka playing Yuma Isogai. During the photo session, a stuffed animal of Kakushi Sensei also made an appearance.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/664864"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0320/annsatsu_event_06.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
     },
     {
       "id": "anime-20260320-rss-567f5c",
@@ -6065,6 +6474,48 @@
       "thumbnail": "https://comicbook.com/wp-content/uploads/sites/4/2026/03/Rooster-Fighter-Adult-Swim-Viz-Media.jpg?w=1024"
     },
     {
+      "id": "anime-20260320-pplx-78d0e1",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Puella Magi Madoka Magica: Walpurgis no Kaiten New Anime Film Announced",
+      "title_ja": "魔法少女まどか☆マギカ：Walpurgis no Kaiten 新作アニメ映画発表",
+      "description": "Madoka Magica 10th Anniversary Online Event Announces Legitimate Sequel Film to Rebellion Story. The tagline is \"Now let the story continue.",
+      "source": {
+        "url": "https://animeschedule.net/seasons/2026"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026"
+      },
+      "location": "日本"
+    },
+    {
+      "id": "anime-20260320-pplx-61c524",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Panini Manga March 2026 New Releases",
+      "title_ja": "Panini Manga 3月2026年新作リリース",
+      "description": "Part of Your World: A Twisted Tale Vol. 1, How I Attended An All-Guys Mixer Vol. 4, Star Wars Jedi Fallen Order Manga Vol. 1, and Teogonia Vol. 3 will be released in the UK on March 3. Includes two new series of titles.",
+      "source": {
+        "url": "https://animeblurayuk.wordpress.com/2026/03/17/march-2026-release-round-up-for-panini-manga-titles-in-the-uk/"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-03"
+      },
+      "location": "UK"
+    },
+    {
       "id": "anime-20260320-pplx-5143e7",
       "categories": [
         "anime"
@@ -6085,6 +6536,27 @@
       },
       "location": "日本",
       "thumbnail": "https://cdn.essential-japan.com/wp-content/uploads/2026/03/from-far-away-anime-announcement-illustration-header.png"
+    },
+    {
+      "id": "anime-20260320-pplx-4f23dc",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Manga Mavericks Books Announces Seven Titles for Spring 2026",
+      "title_ja": "Manga Mavericks Books 2026年春7タイトル発表",
+      "description": "Independent Publishers of North America unveils its Spring 2026 lineup. Five new series and two continuing titles, including The Pipe Machine Vols. 1-2, Zigoku's Foreman, and Path From Tanuki Temple Vol. 2.",
+      "source": {
+        "url": "https://animecorner.me/manga-mavericks-books-announces-seven-manga-releases-for-spring-2026/"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026春"
+      },
+      "location": "北米"
     },
     {
       "id": "anime-20260320-pplx-2f2416",
@@ -9895,6 +10367,27 @@
       "_source_id": "0115765-com"
     },
     {
+      "id": "otaku-news-20260320-rss-e48522",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Total number of views of illegally uploaded programs: 11.1 billion views - The Federation of Commercial Broadcasters asks the Ministry of Internal Affairs and Communications, etc., to take measures against the possible inflow of 3.2 billion yen in advertising expenses.",
+      "title_ja": "違法アップ番組の総再生数は111億回――民放連が総務省などに対策求める　広告費32億円流入の可能性",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "The National Association of Commercial Broadcasters in Japan (NABJ) released a statement on the illegal uploading of broadcast programs and the actual distribution of advertisements on January 19. The statement was issued in response to the possibility that programs, including animations, are being posted on video-sharing services without permission, and that advertising money may be flowing into the...",
+      "source": {
+        "url": "https://0115765.com/archives/176600"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/assets/img/sharex.svg",
+      "_source_id": "0115765-com"
+    },
+    {
       "id": "otaku-news-20260320-rss-df918b",
       "categories": [
         "otaku-news"
@@ -10462,6 +10955,27 @@
       "_source_id": "nijimen-kusuguru-co-jp"
     },
     {
+      "id": "otaku-news-20260320-rss-a15eea",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Bromide of \"Twiste\" Bloom Birthday is now available at Seven Print! A total of 51 original designs are now on sale!",
+      "title_ja": "『ツイステ』ブルームバースデーのブロマイドがセブンプリントに登場！全51種のオリジナルデザインが販売中",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "Twiste\" Bloom Birthday x Seven Print Contents Print Original bromides of characters wearing Bloom Birthday costumes from \"Twiste\" can be purchased at multi-copy machines in Seven-Eleven stores. 160; Lineup&#8230;.",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/607523"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/03/tw_main-1.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
       "id": "otaku-news-20260320-rss-9b014d",
       "categories": [
         "otaku-news"
@@ -10649,6 +11163,27 @@
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2025/02/EoaVs6lVgAEreRA.jpeg",
       "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-20260320-rss-8f216f",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Mayano Top Gun from \"Uma Musume\" is wearing a \"Halloween Costume\" as a new figure! The figure has a winking expression and is very adorable!",
+      "title_ja": "『ウマ娘』マヤノトップガンが“ハロウィン衣装”を着て新作フィギュアに！ウインク決め愛らしさ抜群の一体に",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "Hobby manufacturer Craner is showing a new figure product, \"Uma Musume Pretty Derby Mayano Top Gun [Rokkin☆MewMeow] Ver. 1/7 scale finished figure\". The reference price is 27,500...",
+      "source": {
+        "url": "https://0115765.com/archives/176640"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/assets/img/sharex.svg",
+      "_source_id": "0115765-com"
     },
     {
       "id": "otaku-news-20260320-rss-8a373b",
@@ -11383,6 +11918,27 @@
         "nijimen-kusuguru-co-jp"
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/03/hipmic_main.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-20260320-rss-065db4",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Newly illustrated by Ms. Arina Tanemura! Morinaga Biscuit x Aeon Limited Clear File Present Campaign starts on March 24",
+      "title_ja": "種村有菜先生描き下ろし！森永ビスケット×イオン限定クリアファイルプレゼントキャンペーンが3月24日スタート",
+      "dates": {
+        "display": "Mar 20, 2026"
+      },
+      "description": "Arina Tanemura x Morinaga Biscuit Clear File Campaign Details A campaign will be held at AEON stores nationwide, where you can get one original clear file newly drawn by Arina Tanemura when you purchase three Morinaga Biscuits of each kind. The campaign will be held at AEON stores nationwide.",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/607528"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/03/morinaga-biscuit-tanemura-clearfile-campaign.jpg",
       "_source_id": "nijimen-kusuguru-co-jp"
     },
     {
