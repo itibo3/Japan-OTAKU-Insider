@@ -60,6 +60,10 @@ def call_perplexity(api_key: str, messages: list, model: str = "sonar-pro") -> s
         "max_tokens": 4096,
         "temperature": 0.2,
         "search_recency_filter": "week",
+        "search_language_filter": ["ja"],
+        "web_search_options": {
+            "user_location": {"country": "JP"},
+        },
     }
 
     resp = requests.post(url, json=payload, headers=headers, timeout=60)
