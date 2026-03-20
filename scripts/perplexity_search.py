@@ -28,6 +28,25 @@ STAGING_DIR = Path(__file__).resolve().parent.parent / "data" / "staging"
 
 CATEGORIES = ("cafe", "vtuber", "figure", "game", "anime", "other")
 
+# 検索結果から除外するドメイン（英語圏の旅行・アグリゲーター等）
+# API 用: - プレフィックスで search_domain_filter に渡す
+# パイプライン用: URL が含まれる場合は staging に追加しない
+_EXCLUDED_RAW = (
+    "japantravel.com",
+    "tripadvisor.com",
+    "magical-trip.com",
+    "gotokyo.org",
+    "trustpilot.com",
+    "alibaba.com",
+    "essential-japan.com",
+    "lonelyplanet.com",
+    "timeout.com",
+    "viator.com",
+    "expedia.com",
+    "booking.com",
+)
+EXCLUDED_DOMAINS = tuple(f"-{d}" for d in _EXCLUDED_RAW)
+
 JSON_BLOCK_RE = re.compile(r"```(?:json)?\s*([\s\S]*?)\s*```", re.IGNORECASE)
 ARRAY_RE = re.compile(r"\[\s*\{[\s\S]*\}\s*\]")
 
@@ -61,6 +80,7 @@ def call_perplexity(api_key: str, messages: list, model: str = "sonar-pro") -> s
         "temperature": 0.2,
         "search_recency_filter": "week",
         "search_language_filter": ["ja"],
+        "search_domain_filter": list(EXCLUDED_DOMAINS),
         "web_search_options": {
             "user_location": {"country": "JP"},
         },
@@ -251,6 +271,9 @@ def main() -> None:
         url = (entry.get("source") or {}).get("url", "").strip()
         if url and url in seen_urls:
             print(f"  SKIP (同一URL): {entry.get('title_ja', entry.get('title', ''))[:40]}...")
+            continue
+        if url and any(d in url.lower() for d in _EXCLUDED_RAW):
+            print(f"  SKIP (除外ドメイン): {entry.get('title_ja', entry.get('title', ''))[:40]}... -> {url[:50]}")
             continue
         if url:
             seen_urls.add(url)

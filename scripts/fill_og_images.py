@@ -45,6 +45,7 @@ GENERIC_THUMB_PATTERNS = (
     "noimage",
     "no_image",
     "dummy",
+    "trustpilot",
 )
 
 META_OG_IMAGE_RE = re.compile(

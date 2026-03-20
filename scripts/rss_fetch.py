@@ -64,6 +64,7 @@ GENERIC_THUMB_PATTERNS = (
     "noimage",
     "no_image",
     "dummy",
+    "trustpilot",
 )
 
 
