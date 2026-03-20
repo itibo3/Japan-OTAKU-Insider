@@ -19,16 +19,19 @@ from pathlib import Path
 JST = timezone(timedelta(hours=9))
 ENTRIES_FILE = Path(__file__).resolve().parent.parent / "data" / "entries.json"
 
-# id から日付部分を抽出: cafe-20260316-rss-abc123 → 20260316
-ID_DATE_RE = re.compile(r"^\w+-(\d{8})-")
+# id から日付部分を抽出: cafe-20260316-rss-abc123 → 20260316 / cafe-202603161900-rss-abc123 → 202603161900
+ID_DATE_RE = re.compile(r"^\w+-(\d{8,12})-")
 
 
 def extract_sort_key(entry):
-    """ソート用キー。id の日付部分を使用。suffix で同日内の順序を維持"""
+    """ソート用キー。id の日付部分を使用。8桁は0000でパディングし12桁で比較"""
     eid = entry.get("id", "")
     m = ID_DATE_RE.match(eid)
-    date_part = m.group(1) if m else "00000000"
-    return (date_part, eid)
+    if m:
+        part = m.group(1).ljust(12, "0")
+    else:
+        part = "000000000000"
+    return (part, eid)
 
 
 def main():

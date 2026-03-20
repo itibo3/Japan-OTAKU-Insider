@@ -143,7 +143,7 @@ def to_entry(raw: dict, category: str, index: int) -> dict:
         return None
 
     h = hashlib.md5((source_url or title_ja + str(index)).encode()).hexdigest()[:6]
-    date_str = datetime.now(JST).strftime("%Y%m%d")
+    date_str = datetime.now(JST).strftime("%Y%m%d%H%M")
     entry_id = f"{category}-{date_str}-pplx-{h}"
 
     entry = {

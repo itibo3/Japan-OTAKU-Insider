@@ -22,10 +22,10 @@ function renderCategoryPills(entry) {
 }
 
 function sortByNewestFirst(entries) {
-    const idDateRe = /^\w+-(\d{8})-/;
+    const idDateRe = /^\w+-(\d{8,12})-/;
     return [...entries].sort((a, b) => {
-        const da = (idDateRe.exec(a.id) || [null, '00000000'])[1];
-        const db = (idDateRe.exec(b.id) || [null, '00000000'])[1];
+        const da = ((idDateRe.exec(a.id) || [null, '00000000'])[1] || '00000000').padEnd(12, '0');
+        const db = ((idDateRe.exec(b.id) || [null, '00000000'])[1] || '00000000').padEnd(12, '0');
         if (da !== db) return db.localeCompare(da);
         return (b.id || '').localeCompare(a.id || '');
     });

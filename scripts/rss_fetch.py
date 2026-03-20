@@ -218,7 +218,7 @@ def is_duplicate(url, title, existing_entries):
 def entry_id_from_url(url, category):
     """URLのハッシュからユニークなIDを生成（英語化後に proper IDに置き換える）"""
     h = hashlib.md5(url.encode()).hexdigest()[:6]
-    date_str = datetime.now(JST).strftime("%Y%m%d")
+    date_str = datetime.now(JST).strftime("%Y%m%d%H%M")
     return f"{category}-{date_str}-rss-{h}"
 
 def extract_category(source):
