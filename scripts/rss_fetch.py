@@ -298,6 +298,16 @@ def fetch_source(
             except Exception:
                 thumbnail = None
 
+        # ソース別キーワードフィルター
+        ok_keywords = source.get("ok_keywords", [])
+        ng_keywords = source.get("ng_keywords", [])
+        if ng_keywords and any(ng in title_ja for ng in ng_keywords):
+            print(f"  SKIP (NG keyword): {title_ja[:50]}")
+            continue
+        if ok_keywords and not any(ok in title_ja for ok in ok_keywords):
+            print(f"  SKIP (no OK keyword): {title_ja[:50]}")
+            continue
+
         # 重複チェック
         if is_duplicate(url, title_ja, existing_entries):
             print(f"  SKIP (重複): {title_ja[:50]}")
