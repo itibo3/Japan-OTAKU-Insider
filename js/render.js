@@ -83,7 +83,7 @@ function renderCardHtml(item) {
         ? (datesRaw.display || null)
         : (datesRaw || null);
     const thumbHtml = item.thumbnail
-        ? `<img class="card-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">`
+        ? `<img class="card-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy" referrerpolicy="no-referrer">`
         : '<div class="card-thumb-placeholder"><span>📰</span></div>';
 
     return `
@@ -220,7 +220,7 @@ function openModal(id) {
     <button class="modal-close" onclick="closeModal()">&times;</button>
     ${modalCategoriesHtml}
     <div class="modal-title">${item.title}</div>
-    ${item.thumbnail ? `<img class="modal-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">` : ''}
+    ${item.thumbnail ? `<img class="modal-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy" referrerpolicy="no-referrer">` : ''}
     ${sections}
     ${journeyHtml}
     ${sourceUrl ? `<a href="${sourceUrl}" target="_blank" class="modal-link">View Source &rarr;</a>` : ''}
