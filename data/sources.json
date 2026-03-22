@@ -406,7 +406,8 @@
                 "pop-culture"
             ],
             "language": "ja",
-            "update_frequency": "daily"
+            "update_frequency": "daily",
+            "disabled": true
         },
         {
             "id": "newscast-jp",
