@@ -29,7 +29,20 @@
                 "anime"
             ],
             "language": "ja",
-            "update_frequency": "daily"
+            "update_frequency": "daily",
+            "ng_keywords": [
+                "ゲーミングノート",
+                "ゲーミングPC",
+                "ノートPC",
+                "ASUS",
+                "グラフィックボード",
+                "GPU",
+                "DLSS",
+                "Fortnite",
+                "フォートナイト",
+                "EWC",
+                "Esports World Cup"
+            ]
         },
         {
             "id": "akiba-blog",
@@ -42,12 +55,36 @@
             ],
             "content_tags": [
                 "akihabara",
+                "cafe",
                 "event",
                 "figure"
             ],
             "language": "ja",
             "update_frequency": "daily",
-            "ng_keywords": ["同人", "18禁", "R18", "成人向け", "エロ", "アダルト"]
+            "ng_keywords": [
+                "エロ",
+                "同人",
+                "NTR",
+                "義父",
+                "エクスタシー",
+                "ハーレム",
+                "確定エロ",
+                "肉感",
+                "電子エロ",
+                "本番行為",
+                "セックス",
+                "セ◯クス",
+                "淫",
+                "射精",
+                "オナニー",
+                "ちんぽ",
+                "おっぱい",
+                "エロコメディ",
+                "成人向け",
+                "18禁",
+                "R18",
+                "アダルト"
+            ]
         },
         {
             "id": "amiami-news",
@@ -185,7 +222,12 @@
                 "model-kit"
             ],
             "language": "ja",
-            "update_frequency": "daily"
+            "update_frequency": "daily",
+            "ng_keywords": [
+                "肉感少女",
+                "フォールアウト",
+                "Fallout"
+            ]
         },
         {
             "id": "dengeki-vtuber",
@@ -249,7 +291,8 @@
                 "gamemakers-jp-feed"
             ],
             "language": "ja",
-            "update_frequency": "daily"
+            "update_frequency": "daily",
+            "disabled": true
         },
         {
             "id": "goodsmile",
@@ -304,7 +347,7 @@
         },
         {
             "id": "moguravr-com",
-            "name": "moguravr-com",
+            "name": "MoguraVR（VTuberカテゴリ）",
             "url": "https://www.moguravr.com/category/virtual-youtuber/",
             "rss": "https://www.moguravr.com/category/virtual-youtuber/feed/",
             "type": "rss",
@@ -315,7 +358,21 @@
                 "moguravr-com"
             ],
             "language": "ja",
-            "update_frequency": "daily"
+            "update_frequency": "daily",
+            "ng_keywords": [
+                "買収",
+                "M&A",
+                "資金調達",
+                "求人",
+                "採用",
+                "業務提携",
+                "B2B",
+                "法人向け",
+                "XREAL",
+                "スマートグラス",
+                "ARグラス",
+                "ヘッドセット"
+            ]
         },
         {
             "id": "natalie-anime",
@@ -397,7 +454,8 @@
                 "nitroplus"
             ],
             "language": "ja",
-            "update_frequency": "weekly"
+            "update_frequency": "weekly",
+            "disabled": true
         },
         {
             "id": "nitroplus-goods",
