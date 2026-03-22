@@ -28,10 +28,11 @@ STAGING_DIR = Path(__file__).resolve().parent.parent / "data" / "staging"
 
 CATEGORIES = ("cafe", "vtuber", "figure", "game", "anime", "other")
 
-# 検索結果から除外するドメイン（英語圏の旅行・アグリゲーター等）
+# 検索結果から除外するドメイン（英語圏の旅行・アグリゲーター・ゲームメディア等）
 # API 用: - プレフィックスで search_domain_filter に渡す
 # パイプライン用: URL が含まれる場合は staging に追加しない
 _EXCLUDED_RAW = (
+    # 旅行・観光系（英語圏）
     "japantravel.com",
     "tripadvisor.com",
     "magical-trip.com",
@@ -44,11 +45,118 @@ _EXCLUDED_RAW = (
     "viator.com",
     "expedia.com",
     "booking.com",
+    "tokyocheapo.com",
+    "japantravel.navitime.com",
+    "livejapan.com",
+    "gaijinpot.com",
+    "japantimes.co.jp",
+    "soranews24.com",
+    "tokyoweekender.com",
+    "savvytokyo.com",
+    "japan-guide.com",
+    "tsunagujapan.com",
+    "matcha-jp.com",
+    "jrailpass.com",
+    "japan.travel",
+    "en.wikipedia.org",
+    "fandom.com",
+    # 英語ゲーム・アニメメディア
+    "cbr.com",
+    "screenrant.com",
+    "polygon.com",
+    "kotaku.com",
+    "ign.com",
+    "gamerant.com",
+    "thegamer.com",
+    "siliconera.com",
+    "dualshockers.com",
+    "pushsquare.com",
+    "nintendolife.com",
+    "eurogamer.net",
+    "destructoid.com",
+    "gematsu.com",
 )
 EXCLUDED_DOMAINS = tuple(f"-{d}" for d in _EXCLUDED_RAW)
 
+# 英語サイトでも許可する既知の日本サイト（ホワイトリスト）
+_ALLOWED_DOMAINS = (
+    "collabo-cafe.com",
+    "animate.co.jp",
+    "amiami.jp",
+    "amiami.com",
+    "goodsmile.info",
+    "goodsmile.com",
+    "kotobukiya.co.jp",
+    "4gamer.net",
+    "famitsu.com",
+    "dengeki.com",
+    "natalie.mu",
+    "nijisanji.jp",
+    "hololive.tv",
+    "bushiroad.com",
+    "capcom.co.jp",
+    "bandainamco.co.jp",
+    "square-enix.com",
+    "sega.co.jp",
+    "konami.com",
+    "akihabara-bc.jp",
+    "otamonth.com",
+    "hobby.watch.impress.co.jp",
+    "hobby.dengeki.com",
+    "hjweb.jp",
+    "hobbystock.jp",
+    "toranoana.jp",
+    "melonbooks.co.jp",
+    "animate.co.jp",
+    "gamecity.ne.jp",
+    "walkerplus.com",
+    "enjoytokyo.jp",
+    "akibablog.blog.jp",
+)
+
 JSON_BLOCK_RE = re.compile(r"```(?:json)?\s*([\s\S]*?)\s*```", re.IGNORECASE)
 ARRAY_RE = re.compile(r"\[\s*\{[\s\S]*\}\s*\]")
+
+
+def _is_excluded_url(url: str) -> bool:
+    """
+    URLが除外対象かどうかを判定する。
+    除外条件（いずれかに該当すれば除外）:
+      1. _EXCLUDED_RAW に含まれるドメイン
+      2. URL に /en/ が含まれる（英語版ページ）
+      3. .com ドメインで、かつ _ALLOWED_DOMAINS に含まれない
+         （.jp / .co.jp / .ne.jp 等の日本語ドメインは常に許可）
+    """
+    url_lower = url.lower()
+
+    # 1. 明示的除外ドメイン
+    if any(d in url_lower for d in _EXCLUDED_RAW):
+        return True
+
+    # 2. /en/ パス（英語版ページ）
+    if "/en/" in url_lower:
+        return True
+
+    # 3. ホワイトリストにない .com ドメイン
+    #    日本系 TLD (.jp, .co.jp, .ne.jp, .or.jp, .ac.jp) は常に許可
+    try:
+        from urllib.parse import urlparse
+        host = urlparse(url_lower).hostname or ""
+        # 日本系TLDは許可
+        jp_tlds = (".jp",)
+        if any(host.endswith(t) for t in jp_tlds):
+            return False
+        # ホワイトリストに含まれていれば許可
+        if any(wl in host for wl in _ALLOWED_DOMAINS):
+            return False
+        # .com / .net / .org 等で非日本ドメインは除外
+        non_jp_tlds = (".com", ".net", ".org", ".io", ".co")
+        if any(host.endswith(t) for t in non_jp_tlds):
+            return True
+    except Exception:
+        pass
+
+    return False
 
 
 SYSTEM_PROMPT = (
@@ -269,11 +377,12 @@ def main() -> None:
     unique_entries = []
     for entry in entries:
         url = (entry.get("source") or {}).get("url", "").strip()
+        title_disp = entry.get("title_ja", entry.get("title", ""))[:40]
         if url and url in seen_urls:
-            print(f"  SKIP (同一URL): {entry.get('title_ja', entry.get('title', ''))[:40]}...")
+            print(f"  SKIP (同一URL): {title_disp}...")
             continue
-        if url and any(d in url.lower() for d in _EXCLUDED_RAW):
-            print(f"  SKIP (除外ドメイン): {entry.get('title_ja', entry.get('title', ''))[:40]}... -> {url[:50]}")
+        if url and _is_excluded_url(url):
+            print(f"  SKIP (除外ドメイン/英語URL): {title_disp}... -> {url[:60]}")
             continue
         if url:
             seen_urls.add(url)

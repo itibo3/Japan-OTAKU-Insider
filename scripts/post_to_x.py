@@ -35,18 +35,20 @@ CATEGORY_EMOJI = {
     "vtuber": "\U0001F3A4",
     "game": "\U0001F3AE",
     "otaku-news": "\U0001F4E2",
+    "other": "\U0001F1EF\U0001F1F5",
 }
 
-# カテゴリ毎のハッシュタグ（最大2個）。未定義は #CategoryName #JapanOtaku
+# カテゴリ毎の固定ハッシュタグ（最大2個）+ 全投稿共通タグ
+COMMON_HASHTAG = "#JapanOTAKUInsider"
 CATEGORY_HASHTAGS = {
-    "cafe": ["#CollabCafe", "#JapanOtaku"],
-    "figure": ["#Figure", "#JapanOtaku"],
-    "event": ["#Event", "#JapanOtaku"],
-    "anime": ["#AnimeNews", "#JapanOtaku"],
-    "vtuber": ["#VTuber", "#JapanOtaku"],
-    "game": ["#GameNews", "#JapanOtaku"],
-    "otaku-news": ["#OtakuNews", "#JapanOtaku"],
-    "other": ["#JapanOtaku", "#Otaku"],
+    "cafe":       ["#CollabCafe",   "#JapanAnime"],
+    "figure":     ["#AnimeFigure",  "#JapanFigure"],
+    "event":      ["#AnimeEvent",   "#JapanEvent"],
+    "anime":      ["#Anime",        "#AnimeSeason"],
+    "vtuber":     ["#VTuber",       "#Hololive"],
+    "game":       ["#JapanGames",   "#GameNews"],
+    "otaku-news": ["#Otaku",        "#JapanCulture"],
+    "other":      ["#JapanOtaku",   "#Otaku"],
 }
 
 
@@ -72,30 +74,26 @@ def save_posted_ids(ids):
 
 def format_tweet(entry):
     cats = entry.get("categories", [])
-    emoji = " ".join(CATEGORY_EMOJI.get(c, "") for c in cats[:2]).strip()
+    if not cats and entry.get("category"):
+        cats = [entry["category"]]
+    primary = cats[0] if cats else "other"
+    emoji = CATEGORY_EMOJI.get(primary, "")
     title = entry.get("title", "")
-    if len(title) > 120:
-        title = title[:117] + "..."
+    if len(title) > 110:
+        title = title[:107] + "..."
 
     source = entry.get("source", {})
     source_url = source.get("url", "") if isinstance(source, dict) else source
+
+    tags = CATEGORY_HASHTAGS.get(primary, ["#JapanOtaku", "#Otaku"])
+    hashtag_line = " ".join(tags) + " " + COMMON_HASHTAG
 
     parts = []
     if emoji:
         parts.append(emoji)
     parts.append(title)
-
-    primary = (cats[0] if cats else "other")
-    tags = CATEGORY_HASHTAGS.get(primary)
-    if not tags:
-        tags = [f"#{primary.replace('-', '').capitalize()}", "#JapanOtaku"]
-    tags = tags[:2]
-
-    parts.append(" ".join(tags))
-    if source_url:
-        parts.append(source_url)
-    else:
-        parts.append(SITE_URL)
+    parts.append(hashtag_line)
+    parts.append(source_url if source_url else SITE_URL)
 
     return "\n\n".join(parts)
 
@@ -183,12 +181,23 @@ def main():
         print("No new entries to post.")
         return
 
-    print(f"Found {len(new_entries)} new entries, posting up to {MAX_POSTS_PER_RUN}.")
+    # カテゴリ別にグループ化し、各カテゴリから最新1件を選択
+    cat_best: dict[str, dict] = {}
+    for entry in new_entries:
+        cats = entry.get("categories", [])
+        if not cats and entry.get("category"):
+            cats = [entry["category"]]
+        primary = cats[0] if cats else "other"
+        if primary not in cat_best:
+            cat_best[primary] = entry  # entries は新着順なので最初が最新
+
+    to_post = list(cat_best.values())
+    print(f"Found {len(new_entries)} new entries → {len(to_post)} categories → posting 1 per category.")
     posted_count = 0
 
-    for entry in new_entries[:MAX_POSTS_PER_RUN]:
+    for entry in to_post:
         text = format_tweet(entry)
-        print(f"Posting: {entry['id']}")
+        print(f"Posting [{entry.get('categories', ['?'])[0]}]: {entry['id']}")
         if post_tweet(text, creds):
             posted_ids.add(entry["id"])
             posted_count += 1
