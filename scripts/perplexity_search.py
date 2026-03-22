@@ -117,6 +117,7 @@ _ALLOWED_DOMAINS = (
     # 日本語アニメ感想・オタクカルチャー系
     "kansou.me",
     "moguravr.com",
+    "0115765.com",
 )
 
 JSON_BLOCK_RE = re.compile(r"```(?:json)?\s*([\s\S]*?)\s*```", re.IGNORECASE)

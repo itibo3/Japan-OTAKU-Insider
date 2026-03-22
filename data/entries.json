@@ -1,95 +1,7 @@
 {
-  "last_updated": "2026-03-21T19:37:57.496619+09:00",
-  "total_entries": 762,
+  "last_updated": "2026-03-22T17:54:37.982350+09:00",
+  "total_entries": 660,
   "entries": [
-    {
-      "id": "other-202603210251-pplx-f94abb",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Comic Market (Summer Comiket)",
-      "title_ja": "コミックマーケット（Summer Comiket）",
-      "description": "Summer **Comiket** to be held in Tokyo on August 15-16, 2026. Representative of **Otaku** event with doujinshi sales. A large scale fair accompanied by voice actor events, live performances and exhibitions.",
-      "source": {
-        "url": "https://en.japantravel.com/events?from=2026-03-20&to=2026-03-27"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-08-15 to 2026-08-16"
-      },
-      "location": "東京",
-      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
-    },
-    {
-      "id": "other-202603210126-pplx-45e7e9",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Notice of Comic Market Summer",
-      "title_ja": "コミックマーケット夏開催予告",
-      "description": "Summer Comiket scheduled for August 15-16, 2026 in Tokyo; not in the week of March 21, but related information as the largest otaku doujinshi sale event. There have also been voice actor stages in the past.",
-      "source": {
-        "url": "https://en.japantravel.com/events?from=2026-03-17&to=2026-03-24"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-08-15 to 2026-08-16"
-      },
-      "location": "東京",
-      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
-    },
-    {
-      "id": "other-20260320-pplx-bbe3b4",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Comic Market (Summer Comiket) notice",
-      "title_ja": "コミックマーケット（サマーコミケ）予告",
-      "description": "Comiket in the summer of 2026 (August 15-16) is the talk of the town; as of March, together with Winter Comic, it is the most notable otaku event in Japan. One of Japan's largest events featuring voice actor stages, cosplay, and coterie magazine sales.",
-      "source": {
-        "url": "https://en.japantravel.com/events?from=2026-03-16&to=2026-03-23"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-08-15 - 2026-08-16"
-      },
-      "location": "東京",
-      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
-    },
-    {
-      "id": "other-20260320-pplx-244bbb",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Comiket summer event scheduled for August",
-      "title_ja": "コミケ夏イベント 8月予定",
-      "description": "Summer Comiket, the world's largest coterie magazine sale at Tokyo Big Sight, is a celebration of otaku, but not on March 20. [3]",
-      "source": {
-        "url": "https://en.japantravel.com/events?from=2026-03-19&to=2026-03-26"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-08-15 - 2026-08-16"
-      },
-      "location": "東京",
-      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
-    },
     {
       "id": "figure-20260319-rss-f460c4",
       "categories": [
@@ -137,50 +49,6 @@
       "_source_id": "nitroplus-goods"
     },
     {
-      "id": "other-20260320-pplx-f29e91",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "[未翻訳] AnimeJapan 2026",
-      "title_ja": "AnimeJapan 2026",
-      "description": "The premier trade show for anime. A festival for otaku, packed with voice-over events, live performances, exhibitions, and screenings. Scheduled to be held in Tokyo in May, announcements have been active since March.",
-      "source": {
-        "url": "https://www.gotokyo.org/en/story/guide/the-best-festivals-in-tokyo-and-japan/index.html"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-05-15 - 2026-05-17"
-      },
-      "location": "東京",
-      "thumbnail": "https://www.gotokyo.org/en/story/guide/the-best-festivals-in-tokyo-and-japan/images/matsuri_bon-odori_in_tokyo_pxfree_1_main.webp"
-    },
-    {
-      "id": "other-20260320-pplx-c60aab",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Hiroshima Comiket 263 May Otaku Event",
-      "title_ja": "広島コミケ263 5月オタクイベント開催",
-      "description": "Fan works of manga, games, and music gather at a coterie magazine exhibition and sale. There is also a cosplay zone full of otaku culture, but not in March. [2]",
-      "source": {
-        "url": "https://www.magical-trip.com/media/hiroshima-events-may-highlights-festivals/"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-05-10"
-      },
-      "location": "広島産業会館",
-      "thumbnail": "https://res-5.cloudinary.com/dbm1qiew0/image/upload/q_auto/v1/blog-images/ghost_import_kix.9btfat57dmu4.jpg"
-    },
-    {
       "id": "game-20260320-pplx-53eba7",
       "categories": [
         "game"
@@ -201,159 +69,6 @@
       },
       "location": "日本",
       "thumbnail": "https://i0.wp.com/www.igda.jp/wp-content/uploads/2026/03/short.png?resize=382%2C100&ssl=1"
-    },
-    {
-      "id": "other-202603210126-pplx-06cde9",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Spring Events in Fukui",
-      "title_ja": "福井の春イベント",
-      "description": "Free event in Fukui from March 21 to April 5, 2026. Related as a fair starting this week, although it is mainly a cultural exhibition and not for otaku.",
-      "source": {
-        "url": "https://en.japantravel.com/events?from=2026-03-15&to=2026-03-22"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-21 to 2026-04-05"
-      },
-      "location": "福井",
-      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
-    },
-    {
-      "id": "cafe-20260320-pplx-e991bf",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Touhou Project \"Maid Cafe\" Theme Pop-up Store Opens in Akihabara",
-      "title_ja": "東方Project「メイドカフェ」テーマポップアップストアが秋葉原にオープン",
-      "description": "A pop-up store for the popular game series Touhou Project will be held on the 5th floor of Kotobukiya's Akihabara store from March 28 to April 5. Many new goods featuring characters such as Reimu and Marisa in maid uniforms will be sold, and mini cards and illustration cards will be given as purchase privileges.",
-      "source": {
-        "url": "https://essential-japan.com/events/touhou-project-maid-cafe-themed-pop-up-store-in-akihabara-2026/"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-28 to 2026-04-05"
-      },
-      "location": "東京・秋葉原",
-      "thumbnail": "https://cdn.essential-japan.com/wp-content/uploads/2026/03/c4a3f37ed086b0e40bc61cdb04cbbf65.jpeg"
-    },
-    {
-      "id": "cafe-20260320-pplx-1e3544",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Cafe & Shimajiro opens in Harajuku for a limited time",
-      "title_ja": "Cafe & Shimajiroが原宿で期間限定オープン",
-      "description": "& Shimajiro collaboration cafe will be held at café STUDIO (Harajuku) from March 19 to April 5. Limited menu including cheese melt burgers, kids' plates, pancakes, etc., and original goods will be sold. Reservations flooded in from the first day of opening, and sticker specials are available for those who follow the cafe on Instagram. [2]",
-      "source": {
-        "url": "https://www.haveagood-holiday.com/en/articles/cafe-and-shimajiro-harajuku-2026"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19 to 2026-04-05"
-      },
-      "location": "東京・原宿（渋谷区）",
-      "thumbnail": "https://assets.hldycdn.com/cdn-cgi/image/format=webp,width=1024,quality=75/aa91c8da-61f1-4345-a809-ae16b9fd18d9.jpeg"
-    },
-    {
-      "id": "vtuber-202603210126-pplx-286f4f",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Kanome Naota joins STARAZO PRODUCTION",
-      "title_ja": "Kanome Naota、STARAZO PRODUCTIONに加入",
-      "description": "Independent VTuber Kanome Naota joins STARAZO PRODUCTION as its first \"generation 0\" member. Her debut delivery is scheduled for April 4.",
-      "source": {
-        "url": "https://onlyhit.us/en/news/vtuber-kanome-naota-joins-starazo-production-as-0th-generation-member"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-04"
-      },
-      "location": "STARAZO PRODUCTION",
-      "thumbnail": "https://onlyhit.us/cdn//uploads/prtimes/2026/03/69b792f738376.png?width=800&height=450&webp=1&.webp"
-    },
-    {
-      "id": "vtuber-202603210126-pplx-c9899a",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "FUWAMOCO 3D Birthday Party held",
-      "title_ja": "FUWAMOCO 3Dバースデーパーティー開催",
-      "description": "FUWAMOCO's 3D birthday party was held. New outfit 2026 is also on sale.",
-      "source": {
-        "url": "https://www.youtube.com/watch?v=ouQF2A1l_cI"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "YouTube"
-    },
-    {
-      "id": "vtuber-20260320-pplx-f3d7f5",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "IDOL:UnderCode Project Launches with Concept Movie and Global Auditions",
-      "title_ja": "IDOL:UnderCodeプロジェクトがコンセプトムービーとグローバルオーディションで始動",
-      "description": "IDOL:UnderCode releases a concept movie inviting the world to join the 'XTubers' who are both VTubers and real talents. The launch of the new project attracts attention.",
-      "source": {
-        "url": "https://onlyhit.us/en/news/idolundercode-launches-with-concept-movie-and-global-talent-search"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "グローバル",
-      "thumbnail": "https://onlyhit.us/cdn//uploads/prtimes/2026/03/69ba01cfee722.png?width=800&height=450&webp=1&.webp"
-    },
-    {
-      "id": "vtuber-20260320-pplx-487889",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "3D Beast-Eared Maid Cafe Simulator Released on Steam in 2026",
-      "title_ja": "3Dケモノ耳メイドカフェシミュレーターが2026年Steamでリリース",
-      "description": "3D maid cafe simulator being developed by Korean studio Accelix and Scon coming to Steam in Q3 2026. Enjoy cooking, managing, and dressing up as you bond with the animal-eared maids. Also face off against rival cafes.",
-      "source": {
-        "url": "https://automaton-media.com/en/indie-games/3d-kemonomimi-girl-maid-cafe-simulator-coming-to-steam-in-2026-with-cooking-management-and-bond-building/"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "Steam",
-      "thumbnail": "https://automaton-media.com/en/wp-content/uploads/2024/04/display-pic-65x65.jpg"
     },
     {
       "id": "other-202603210251-pplx-83fbc5",
@@ -378,137 +93,6 @@
       "thumbnail": "https://image.pia.jp/images/202603/202603150003_ex.png"
     },
     {
-      "id": "other-202603210126-pplx-26b340",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Tokyo Cheap Event List",
-      "title_ja": "東京チープイベント一覧",
-      "description": "Comprehensive list of Tokyo events with festivals, markets, exhibitions, and concerts; no otaku events confirmed for the week of March 21 except indie games, and no doujinshi or seiyu live performances.",
-      "source": {
-        "url": "https://tokyocheapo.com/it/events"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "東京",
-      "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2014/11/ueno-cherry-blossom-GettyImages-1996449432-362x193.jpeg"
-    },
-    {
-      "id": "other-202603210126-pplx-26b340",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Tokyo Cheap Event List",
-      "title_ja": "東京チープイベント一覧",
-      "description": "Comprehensive list of Tokyo events with festivals, markets, exhibitions, and concerts; no otaku events confirmed for the week of March 21 except indie games, and no doujinshi or seiyu live performances.",
-      "source": {
-        "url": "https://tokyocheapo.com/it/events"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "東京",
-      "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2014/11/ueno-cherry-blossom-GettyImages-1996449432-362x193.jpeg"
-    },
-    {
-      "id": "other-20260320-pplx-4574cb",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Comic Market (Winter Comiket) 2026",
-      "title_ja": "コミックマーケット（冬コミケ）2026",
-      "description": "A coterie magazine exhibition and sale event to be held in the winter of 2026. It is a festival of otaku culture, where manga, anime, and doujinshi are exhibited and sold. This popular event is held on a large scale at Tokyo Big Sight and attracts tens of thousands of participants.",
-      "source": {
-        "url": "https://en.japantravel.com/events/n?type=event&p=136"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "東京",
-      "thumbnail": "https://a0.cdn.japantravel.com/photo/68266-243566/460x460!/osaka-osaka-light-festival-243566.jpg"
-    },
-    {
-      "id": "game-20260320-pplx-f3f927",
-      "categories": [
-        "game"
-      ],
-      "status": "active",
-      "title": "New Novel Game \"Wan-tama☆Life\" Starring VTuber \"Tamaki Inuyama\" to be Distributed in March",
-      "title_ja": "VTuber「犬山たまき」主演の新作ノベルゲーム『わんたま☆らいふ』3月配信予定",
-      "description": "A new novel game \"Wan-tama☆Laifu: Inuyama Tamaki's School Trip Survival\" starring VTuber \"Inuyama Tamaki\" and featuring \"Kagura Mea\" and manga artist \"Tsukudani Norio\" is scheduled for distribution in March 2026.",
-      "source": {
-        "url": "https://cshd.cyberstep.com"
-      },
-      "tags": [
-        "game"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "日本"
-    },
-    {
-      "id": "figure-202603211936-pplx-7b25ed",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "Newtype Magazine March 2026 issue on sale Anime and Figure Special",
-      "title_ja": "ニュータイプ誌 2026年3月号 発売中 アニメ・フィギュア特集",
-      "description": "The March 2026 issue of Newtype is now available. This popular magazine covers the latest in anime, manga, games, and figures. [3]",
-      "source": {
-        "url": "https://jbox.com/shop/product/newtype-march-2026"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "日本",
-      "thumbnail": "https://jbox.com/build/shop/images/megumi-positive.png"
-    },
-    {
-      "id": "figure-202603211936-pplx-2e3c4c",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "S.H.Figuarts Ranma (Female) Premium Bandai Limited Edition March Release Now accepting reservation!",
-      "title_ja": "S.H.Figuarts らんま（女） プレミアムバンダイ限定 3月発売 予約受付中",
-      "description": "S.H.Figuarts Ranma (Female), a visual recreation of the new anime \"Ranma 1/2\", is now available. Approximately 120mm in height, comes with 3 interchangeable hand parts, 3 facial expression parts, and an oke. Pre-orders begin October 1, with a scheduled release date of March 2026. [1]",
-      "source": {
-        "url": "https://animezonejapan.com/products/s-h-figuarts-ranma-female-pre-order-release-in-march-2026"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "日本",
-      "thumbnail": "https://animezonejapan.com/cdn/shop/files/rn-image_picker_lib_temp_0102139c-1328-452b-a262-778aa104fbf7.jpg?v=1760075492&width=1946"
-    },
-    {
       "id": "figure-20260320-pplx-ea6be3",
       "categories": [
         "figure"
@@ -528,28 +112,6 @@
         "display": "2026-03"
       },
       "location": "日本"
-    },
-    {
-      "id": "figure-20260320-pplx-e9205f",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "S.H.Figuarts Ranma (Female) March 2026 release Pre-orders start",
-      "title_ja": "S.H.Figuarts らんま（女） 2026年3月発売 プレオーダー開始",
-      "description": "S.H.Figuarts Ranma (Female) from the anime \"Ranma 1/2\" with new anime visuals, scheduled for release in March 2026, with interchangeable wrist parts, available for pre-order at Anime Zone Japan.",
-      "source": {
-        "url": "https://animezonejapan.com/es-mx/products/s-h-figuarts-ranma-female-pre-order-release-in-march-2026"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "日本",
-      "thumbnail": "https://animezonejapan.com/cdn/shop/files/rn-image_picker_lib_temp_0102139c-1328-452b-a262-778aa104fbf7.jpg?v=1760075492&width=1946"
     },
     {
       "id": "figure-20260320-pplx-e5f7e4",
@@ -615,313 +177,6 @@
         "display": "2026-03"
       },
       "location": "日本"
-    },
-    {
-      "id": "figure-20260320-pplx-48cb78",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "Ships Mar 2026 Bandai Soul Web S.H.Figuarts Ultraman Figure Likeness Premium Bandai Limited",
-      "title_ja": "3月2026年発送 バンダイ 魂ウェブ S.H.Figuarts ウルトラマンフィギュア リキネス プレミアムバンダイ限定",
-      "description": "Bandai Tamashii Nations' S.H. Figuarts Likiness is now available for preorder with a shipping date of March 2026. The Ultraman series action figure is priced at $121.50 and is available for pre-order at Galactic Toys.",
-      "source": {
-        "url": "https://galactictoys.com/products/pre-order-march-2026-bandai-tamashii-nations-ultraman-s-h-figuarts-rekiness-action-figure"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "日本",
-      "thumbnail": "https://galactictoys.com/cdn/shop/files/4573102688033_1.jpg?v=1752112100"
-    },
-    {
-      "id": "figure-20260320-pplx-356d04",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "Ultraman Series New Products Ordering Period March 17-31",
-      "title_ja": "ウルトラマンシリーズ新商品 受注期間3月17日～31日",
-      "description": "Orders for new Ultraman items will be taken from March 17, 18:00 until March 31, 23:59. Shipping is scheduled for late May to mid-June for this popular item.",
-      "source": {
-        "url": "https://www.haveagood-holiday.com/en/articles/ultraman-series-new-merchandise-2026-winter"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-17 - 2026-03-31"
-      },
-      "location": "日本",
-      "thumbnail": "https://assets.hldycdn.com/cdn-cgi/image/format=webp,width=1024,quality=75/14c32d8f-cd1d-4a3f-8db0-2cf378b5e33c.jpeg"
-    },
-    {
-      "id": "cafe-20260320-pplx-fb3600",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Japan March Event Guide: Tokyo-centric",
-      "title_ja": "日本3月イベントガイド：東京中心",
-      "description": "Many March Tokyo festivals, markets, pop-ups; Bad Bunny live, Ume Festival, and other related events this week. [5]",
-      "source": {
-        "url": "https://japancheapo.com/events/march/?sales_kw=japan"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "東京",
-      "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/3/2023/03/P1036225-362x193.jpeg"
-    },
-    {
-      "id": "cafe-20260320-pplx-7772c7",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "March 2026 Tokyo Event: Bad Bunny Tokyo Live",
-      "title_ja": "3月2026年東京イベント：バッドバニー東京ライブ",
-      "description": "Puerto Rican artist Bad Bunny performs in Tokyo on his world tour. This music event is expected to be a hot performance.",
-      "source": {
-        "url": "https://tokyocheapo.com/events/march/"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "東京",
-      "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2014/11/ueno-cherry-blossom-GettyImages-1996449432-362x193.jpeg"
-    },
-    {
-      "id": "anime-202603210251-pplx-4149a2",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "JoJo's Bizarre Adventure Steel Ball Run Mid-2026 release",
-      "title_ja": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2026年中盤リリース",
-      "description": "A new JoJo's Bizarre Adventure Steel Ball Run series has been announced as one of the top anime releases for mid-March 2026. A theatrical and Blu-ray expansion is expected.",
-      "source": {
-        "url": "https://fullondrama.com/top-anime-releasing-mid-march-2026/"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "日本",
-      "thumbnail": "https://fullondrama.com/wp-content/uploads/2026/03/6_11zon-1-768x432.jpg"
-    },
-    {
-      "id": "anime-202603210126-pplx-946653",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Kanatakara\" manga to be animated in 2026",
-      "title_ja": "『カナタカラ』マンガが2026年アニメ化",
-      "description": "TV anime adaptation of \"Kanatakara (From Far Away)\" manga announced, slated to premiere in 2026; anime adaptation of 1990s shoujo manga classic. [2][3]",
-      "source": {
-        "url": "https://anitrendz.net/news/2026/03/18/from-far-away-manga-gets-2026-anime/"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "日本",
-      "thumbnail": "https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2026/03/From-Far-Away-anime-announcement-screenshot.png?resize=696%2C392&ssl=1"
-    },
-    {
-      "id": "anime-20260320-pplx-d4a155",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "JoJo's Bizarre Adventure Steel Ball Run March Anime Adaptation",
-      "title_ja": "JoJoの奇妙な冒険 Steel Ball Run 3月アニメ化",
-      "description": "Part 7 of JoJo's Bizarre Adventure, \"Steel Ball Run,\" is scheduled to air in March 2026, with Beastars final season part 2, Rooster Fighter, and the third season of Jutsu Kaisen also in the works.",
-      "source": {
-        "url": "https://gaming.lenovo.com/emea/threads/52992-%F0%9F%8C%B8-Anime-Watchlist-March-2026-%F0%9F%8C%B8"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "日本"
-    },
-    {
-      "id": "anime-20260320-pplx-bd4d73",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Spring 2026 Anime Original Manga Info: Beastars, JoJo, etc.",
-      "title_ja": "春2026アニメ原作マンガ情報：Beastars, JoJoなど",
-      "description": "All Beastars, JoJo Steel Ball Run, and Rooster Fighter are recommended as original works for the Spring 2026 anime; Snowball Earth and Daemons of the Shadow Realm are also new series of note.",
-      "source": {
-        "url": "https://www.animenewsnetwork.com/feature/2026-03-18/read-it-first-manga-light-novel-sources-for-spring-2026-anime/.234350"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "日本",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/crop600x315gE0/cms/feature/234350/mar-2026-read-it-first-fixed.jpg"
-    },
-    {
-      "id": "anime-20260320-pplx-2f2416",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Five Star Stories English Edition March 2026 Titan Manga Release Announced",
-      "title_ja": "ファイブスター物語 英語版3月2026年Titan Manga発売発表",
-      "description": "Announced at Anime Expo; Mamoru Nagano's classic revived in English; Spring 2026 manga release. [7]",
-      "source": {
-        "url": "https://www.comicsbeat.com/breaking-ax-2025-titan-manga-release-the-five-star-stories-english-march-2026/"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03"
-      },
-      "location": "Titan Manga",
-      "thumbnail": "https://www.comicsbeat.com/wp-content/uploads/2025/07/the-five-star-stories.jpg"
-    },
-    {
-      "id": "cafe-20260320-pplx-c717b9",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Tokyo Outside Festival 2026",
-      "title_ja": "東京アウトサイドフェスティバル2026",
-      "description": "Outdoor event to be held March 23-29. Enjoy spring activities.",
-      "source": {
-        "url": "https://savvytokyo.com/tokyo-events-for-march-2026/"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-23 to 2026-03-29"
-      },
-      "location": "東京",
-      "thumbnail": "https://cdn.savvytokyo.com/app/uploads/2015/07/SavvyTeam1-150x150.png"
-    },
-    {
-      "id": "figure-20260320-pplx-874599",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "Good Smile Company Pre-Order Deadline Announced March 22",
-      "title_ja": "Good Smile Company プリオーダー締切発表 3月22日",
-      "description": "Good Smile Company's 31-product pre-order closes at 23:59 (CET) on Sunday, March 22, including Hyper Body Alice: Wonderland Bunny.",
-      "source": {
-        "url": "https://goodsmileeurope.com/blogs/news/preorder-closing-announcement-22nd-march-2026"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-22"
-      },
-      "location": "ヨーロッパ",
-      "thumbnail": "https://goodsmileeurope.com/cdn/shop/articles/Good_Smile_Europe_Ending_Preorders_520x500_f99c10cb-a9df-43de-8d75-1e2070bfbe7a.webp?v=1773644178&width=1600"
-    },
-    {
-      "id": "cafe-20260320-pplx-3c1659",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Yosuga no Sora \"Beach Wedding\" themed pop-up store in Akiba",
-      "title_ja": "ヨスガノソラ「ビーチウェディング」テーマポップアップストアがアキバで開催",
-      "description": "Amiami Akihabara Figure Tower Store's Beach Wedding theme pop-up store for Yosuga no Sora is currently being held on the 8th floor of the Akihabara Figure Tower Store from March 6 to March 22. There are limited-edition illustrated goods and a campaign to receive a random postcard for every 2,000 yen. A must-see event for anime fans in Akihabara.",
-      "source": {
-        "url": "https://essential-japan.com/events/yosuga-no-sora-beach-wedding-themed-pop-up-store-in-tokyo-2026/"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-06 - 2026-03-22"
-      },
-      "location": "東京・秋葉原",
-      "thumbnail": "https://cdn.essential-japan.com/wp-content/uploads/2026/03/7fcb6f090175a3eebd03e94f7ae044d8.jpeg"
-    },
-    {
-      "id": "other-202603211936-pplx-dc1fe4",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Comic Market Winter Comic 2026",
-      "title_ja": "コミックマーケット冬コミ2026",
-      "description": "Based on the buzz among last year's Winter Comic Market participants, the 2026 Winter Comiket is also highly anticipated. The sacred ground for otaku is full of doujinshi, cosplay, and voice-over events. Details are still undecided, but it is a popular event.",
-      "source": {
-        "url": "https://boards.4chan.org/jp/thread/50745675/why-havent-you-been-to-japan-jaypee"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026冬"
-      },
-      "location": "東京ビッグサイト",
-      "thumbnail": "https://i.4cdn.org/jp/1773076567900025s.jpg"
-    },
-    {
-      "id": "anime-202603211936-pplx-adc47b",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Sekiro: No Defeat Animation Theatrical Release",
-      "title_ja": "Sekiro: No Defeat アニメ劇場公開",
-      "description": "Theatrical release in Japan in 2026. New trailer released on Crunchyroll for Sekiro animation project. [7]",
-      "source": {
-        "url": "https://www.crunchyroll.com/news/latest/2026/3/17/sekiro-no-defeat-anime-new-trailer-2"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026"
-      },
-      "location": "日本",
-      "thumbnail": "https://www.crunchyroll.com/news/img/favicons/favicon-v2-96x96.png"
     },
     {
       "id": "anime-202603211935-rss-f6a96f",
@@ -1695,50 +950,6 @@
       "_source_id": "4gamer"
     },
     {
-      "id": "anime-202603210015-pplx-e9ae98",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "For the Dark Prince, animated in Winter 2026.",
-      "title_ja": "暗黒王子の為に 冬2026年アニメ化",
-      "description": "The 1990s shoujo manga classic \"For the Dark Prince (From Far Away)\" will be animated in 2026. Noted as a revival of other 90s works. The fantasy adventure story will be revived in the modern age.",
-      "source": {
-        "url": "https://comicbook.com/anime/list/3-1990s-classic-series-returning-with-anime-adaptations-in-2026/"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026"
-      },
-      "location": "日本",
-      "thumbnail": "https://comicbook.com/wp-content/uploads/sites/4/2026/03/Hana-Kimi.jpg?w=1024"
-    },
-    {
-      "id": "anime-202603210015-pplx-e48b27",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "AnimeJapan 2026 Event Information",
-      "title_ja": "AnimeJapan 2026 開催情報",
-      "description": "AnimeJapan 2026 is under active discussion. The event is attracting attention as a place for the announcement of new anime, and many series continuations and new information are expected.",
-      "source": {
-        "url": "https://boards.4chan.org/a/thread/286825877/animejapan-2026"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026"
-      },
-      "location": "日本",
-      "thumbnail": "https://i.4cdn.org/a/1773862449993637s.jpg"
-    },
-    {
       "id": "anime-202603210012-rss-f9f28d",
       "categories": [
         "anime"
@@ -2283,27 +1494,6 @@
       ],
       "thumbnail": "https://newscast.jp/attachments/wk2Ih6K45qWt6F2A480c.png?w=940&h=940&a=1",
       "_source_id": "newscast-jp"
-    },
-    {
-      "id": "vtuber-202603210126-pplx-449f1a",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "FUWAMOCO MORNING episode 181 to be distributed",
-      "title_ja": "FUWAMOCO MORNING episode 181 配信予定",
-      "description": "FUWAMOCO will deliver FUWAMOCO MORNING episode 181 on March 21 at midnight (GMT+9). This will be the last FUWAMOCO MORNING until the return from the FUWAMOCO Hospital.",
-      "source": {
-        "url": "https://www.youtube.com/watch?v=2Q_Z4PVnMdk"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-21"
-      },
-      "location": "YouTube Live"
     },
     {
       "id": "otaku-news-202603211935-rss-d53d58",
@@ -3913,197 +3103,6 @@
       "thumbnail": "https://www.alter.co.jp/img/common/menu_bt.png"
     },
     {
-      "id": "figure-20260320-pplx-49e12e",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "Ichiban Kuji Lottery Uma Musume Pretty Derby Vol. 13 will go on sale sequentially on March 21.",
-      "title_ja": "一番くじ ウマ娘プリティーダービー 第13弾 3月21日順次発売",
-      "description": "The thirteenth Ichiban Kuji Lottery of the Uma Musume 5th Anniversary collaboration will go on sale sequentially at about 5,000 stores nationwide from March 21 at 10:00 a.m. The lottery, priced at 890 yen, will include high-end items such as figures of the three Gran Alegria sisters.",
-      "source": {
-        "url": "https://saiganak.com/news/familymart-umamusume-campaign-mar2026/"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-21"
-      },
-      "location": "日本",
-      "thumbnail": "https://i0.wp.com/uploads.saigacdn.com/2026/03/family-2603umamusume-cp-announcement-00.jpg"
-    },
-    {
-      "id": "cafe-202603211936-pplx-fed0bc",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "New collaboration cafe opened in Akihabara! The first collaboration with popular anime \"XYZ",
-      "title_ja": "秋葉原でコラボカフェ新オープン！人気アニメ『XYZ』コラボ第1弾",
-      "description": "The \"XYZ\" collaboration café opens at a new location in Akihabara on March 21, 2026. Limited menu and goods are now available, and the event is a must-see for fans. Special drinks offered this Saturday week only.",
-      "source": {
-        "url": "https://example.com/akiba-collab-cafe"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-21"
-      },
-      "location": "東京 秋葉原"
-    },
-    {
-      "id": "cafe-202603211936-pplx-869640",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "K-Pop idol collaboration cafe starts today in Shibuya",
-      "title_ja": "渋谷でK-Popアイドルコラボカフェ本日スタート",
-      "description": "K-Pop Group's Latest Collaboration Cafe Opens March 21 at Shibuya PARCO. Enjoy a special photo booth and limited sweets this week. Open until 7 pm.",
-      "source": {
-        "url": "https://example.com/shibuya-kpop-cafe"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-21"
-      },
-      "location": "東京 渋谷"
-    },
-    {
-      "id": "cafe-202603211936-pplx-84b831",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Second Ikebukuro Collaboration Cafe Opens This Week",
-      "title_ja": "池袋コラボカフェ第2弾今週オープン",
-      "description": "Otome Game Collaboration Cafe in the Ikebukuro Otome Road area will open for business on March 21. Limited drinks and goods will be sold, with special offers available this week only.",
-      "source": {
-        "url": "https://example.com/ikebukuro-otome-cafe"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-21"
-      },
-      "location": "東京 池袋"
-    },
-    {
-      "id": "cafe-202603211936-pplx-60a7a7",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Ikebukuro Pop-up Store: New game goods now on sale",
-      "title_ja": "池袋ポップアップストア：ゲーム新作グッズ販売開始",
-      "description": "New pop-up store for popular games opens at Ikebukuro Sunshine City on March 21. Limited-edition figures and collaboration goods are lined up, and the event runs through this weekend. A raffle is also being held.",
-      "source": {
-        "url": "https://example.com/ikebukuro-popup"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-21"
-      },
-      "location": "東京 池袋"
-    },
-    {
-      "id": "cafe-202603211936-pplx-509bbc",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "New anime pop-up event in Shinjuku",
-      "title_ja": "新宿にアニメポップアップイベント新設",
-      "description": "A pop-up store of the popular anime opens today, March 21, in front of Shinjuku Alta. There will be a drawing for autographed goods, and a collaboration menu available only this week.",
-      "source": {
-        "url": "https://example.com/shinjuku-anime-popup"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-21"
-      },
-      "location": "東京 新宿"
-    },
-    {
-      "id": "cafe-202603211936-pplx-1ba0c2",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Akihabara Additional Pop-up: New Manga Book Event",
-      "title_ja": "秋葉原追加ポップアップ：マンガ新刊イベント",
-      "description": "Manga's latest volume pop-up store opens today at Akihabara Radio Kaikan. With author signing, this is the new opening event of the week.",
-      "source": {
-        "url": "https://example.com/akiba-manga-popup"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-21"
-      },
-      "location": "東京 秋葉原"
-    },
-    {
-      "id": "cafe-202603211936-pplx-0be71e",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Traditional x Modern Collaboration Cafe Opens in Asakusa",
-      "title_ja": "浅草で伝統×現代コラボカフェオープン",
-      "description": "New Japanese-style collaboration cafe near Asakusa Kaminarimon opens March 21. Offering a collaborative menu of anime and Asakusa specialties, special events will be held this weekend.",
-      "source": {
-        "url": "https://example.com/asakusa-collab"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-21"
-      },
-      "location": "東京 浅草"
-    },
-    {
-      "id": "cafe-202603210014-pplx-e23fad",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "CHARLES & KEITH Pop-up Event in Nishi-Azabu, Tokyo",
-      "title_ja": "CHARLES & KEITH ポップアップイベント、西麻布で開催",
-      "description": "Global fashion brand CHARLES & KEITH will hold a limited pop-up at MARKET LAGOICE on March 18, 19 and 21. The new capsule collection with fruit motifs will be exhibited in advance.",
-      "source": {
-        "url": "https://www.haveagood-holiday.com/en/articles/charles-keith-popup-nishi-azabu"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-18、2026-03-19、2026-03-21"
-      },
-      "location": "西麻布（港区）",
-      "thumbnail": "https://assets.hldycdn.com/cdn-cgi/image/format=webp,width=1024,quality=75/34b33c4f-c30d-4410-86de-78d67c9e7d79.jpeg"
-    },
-    {
       "id": "vtuber-20260320-rss-f02e6f",
       "categories": [
         "vtuber"
@@ -4186,48 +3185,6 @@
       ],
       "thumbnail": "https://newscast.jp/attachments/V1whheptSmZzTCHwmO46.png?w=940&h=940&a=1",
       "_source_id": "newscast-jp"
-    },
-    {
-      "id": "vtuber-20260320-rss-c8fda8",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Kizuna Eye to hold free concert inside Fortnite, March 27",
-      "title_ja": "キズナアイ、フォートナイト内で無料コンサート、3月27日に開催",
-      "dates": {
-        "display": "Mar 20, 2026"
-      },
-      "description": "Kizuna AI Corporation and Alche Corporation will host a free in-game concert by Kizuna AI on the \"Hello, Fortnite\" map within Fortnite. The date and time is March 27, 2026 at 20:00 (Japan time). Lee [&#8230;].\nThe post Kizuna Eye to hold free in-game concert in Fortnite on March 27 appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/kizunaai-hello-fortnite-2026/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/a3a57cfd5ab1b85a685640f1a8ca2fe0-kix.wpg7fddooz4v-1024x576.webp",
-      "_source_id": "moguravr-com"
-    },
-    {
-      "id": "vtuber-20260320-rss-bfc997",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Cover Inc. settles defamation claim against Hololive talent, announces more than 30 more legal actions in the future.",
-      "title_ja": "カバー株式会社、ホロライブタレントへの誹謗中傷で示談成立 今後も30件以上の法的対応を予告",
-      "dates": {
-        "display": "Mar 20, 2026"
-      },
-      "description": "On March 19, 2026, Cover Inc. announced that it has identified and reached a settlement with a person who committed infringement on the rights to the talent belonging to its VTuber agency, Hololive Productions. The subject person had made false and factual [&#8230;] statements about the talent belonging to the company on social networking sites.\nThe post Cover Inc. Reaches Settlement for Defamation of Hololive Talent, Announces More Than 30 More Legal Actions to Come appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/hololive-settlement-2026/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/fdf73e4ffd5191ca4dbc9d63564b87da-kix.xvlu0drteumm.webp",
-      "_source_id": "moguravr-com"
     },
     {
       "id": "vtuber-20260320-rss-b5722f",
@@ -4564,90 +3521,6 @@
         "display": "2026-03-20"
       },
       "location": "YouTube"
-    },
-    {
-      "id": "vtuber-20260320-pplx-27caff",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Indie VTuber's first 3D delivery and costume change event",
-      "title_ja": "インディーVTuberの3D初配信と衣装チェンジイベント",
-      "description": "VTubers will make their 3D debut live broadcast this week on 3/20. New outfits and exclusive collaborations will be announced, as well as an audience-participation event.",
-      "source": {
-        "url": "https://indie-vtuber.com/debut"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-20"
-      },
-      "location": "Twitch"
-    },
-    {
-      "id": "other-20260320-pplx-d1a07f",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Comiket Participation Guide Safety Tips for International Fans",
-      "title_ja": "コミケ参加ガイド 国際ファン向け安全Tips",
-      "description": "Tickets required at Comiket at Tokyo Big Sight, cash ready. A classic otaku event, but next time undecided. [4]",
-      "source": {
-        "url": "https://www.alibaba.com/product-insights/how-to-attend-comiket-safely-as-a-solo-international-visitor-with-zero-japanese.html"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "location": "東京ビッグサイト",
-      "thumbnail": "https://img.alicdn.com/imgextra/i1/O1CN01hx5aSV209f5DVAo9a_!!6000000006807-0-tps-1024-1024.jpg"
-    },
-    {
-      "id": "other-20260320-pplx-701f70",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Tokyo Indie Game Summit",
-      "title_ja": "東京インディーゲームサミット",
-      "description": "An indie game event to be held in Tokyo on March 20, 2026. Related to otaku culture, the summit will bring together game developers and fans, and will include exhibits and talk sessions. You can attend this afternoon.",
-      "source": {
-        "url": "https://en.japantravel.com/events?from=2026-03-14&to=2026-03-21"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-20"
-      },
-      "location": "東京",
-      "thumbnail": "https://a2.cdn.japantravel.com/images/trustpilot.webp"
-    },
-    {
-      "id": "other-20260320-pplx-2b8773",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Spring Vacation Special Program: BanG Dream! Film Festival!",
-      "title_ja": "春休み特別企画！BanG Dream!映画祭！開催決定",
-      "description": "On Friday, March 20, 2026, at the Airship Theater in Ueno, Tokyo, five theatrical versions of BanG Dream! Roseria and MyGO!!!!! and other films for 1,500 yen, and reserved seating is required. Tickets are available on a first-come, first-served basis on the official website. [1]",
-      "source": {
-        "url": "https://saiganak.com/news/bang-dream-movie-festival-spring-break/"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-20"
-      },
-      "location": "東京・上野 飛行船シアター",
-      "thumbnail": "https://i0.wp.com/uploads.saigacdn.com/2026/03/bang-dream-movie-festival-spring-break-00.jpg"
     },
     {
       "id": "otaku-news-20260320-rss-ff9ab8",
@@ -5550,7 +4423,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/49339/161/49339-161-209d69e4f460877157f3fbddc2f96c69-1999x1125.jpg?width=1950&height=1350&quality=85%2C65&format=jpeg&auto=webp&fit=bounds&bg-color=fff"
     },
     {
       "id": "game-202603210126-pplx-6a501b",
@@ -7139,28 +6013,6 @@
       "thumbnail": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/02/ce1c550a8bb99e9b36b3edf15b4b866d.webp"
     },
     {
-      "id": "game-20260320-pplx-2c624c",
-      "categories": [
-        "game"
-      ],
-      "status": "active",
-      "title": "Pokemon Card Game \"TOKYO LUMINOUS NIGHT\" to be held from March 20",
-      "title_ja": "ポケモンカードゲーム「TOKYO LUMINOUS NIGHT」3月20日から開催",
-      "description": "TOKYO LUMINOUS NIGHT, a major Pokémon card game event, will be held at the Tomin Plaza in front of the Tokyo Metropolitan Government Building starting March 20; multiple events will be held starting at 6:30 p.m.",
-      "source": {
-        "url": "https://report.iko-yo.net/articles/30714"
-      },
-      "tags": [
-        "game"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-20"
-      },
-      "location": "東京都新宿区",
-      "thumbnail": "https://d28w2qw7dtr435.cloudfront.net/uploaded/cover_images/images/29591/normal.jpg?1773831674"
-    },
-    {
       "id": "game-20260320-pplx-1e9f06",
       "categories": [
         "game"
@@ -7559,7 +6411,8 @@
         "merchandise",
         "amiami"
       ],
-      "_source_id": "amiami-news"
+      "_source_id": "amiami-news",
+      "thumbnail": "https://news.amiami.jp/wp-content/uploads/2026/03/elfvillage26-IC.jpg"
     },
     {
       "id": "figure-20260320-rss-7f50e0",
@@ -7906,28 +6759,6 @@
       "_source_id": "hobby-watch"
     },
     {
-      "id": "figure-20260320-pplx-c40a5c",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "General OTC March 20, 2012] A total of 6 new items including Ranma Saotome, Leolio, etc. are now on sale! One re-release item is also available!",
-      "title_ja": "【一般店頭3月20日発売】早乙女乱馬、レオリオなどの計6商品が新発売！再販1点も！",
-      "description": "A total of six new products, including Ranma Saotome and Leolio, will go on sale in general stores on Friday, March 20. One re-release item will also be released at the same time, making this a must-see lineup for figure fans.",
-      "source": {
-        "url": "https://tamashiiweb.com/special/shf/?wovn=en"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-20"
-      },
-      "location": "日本",
-      "thumbnail": "https://tamashiiweb.com/images/item/item_0000015814_iTELyClH_400.jpg"
-    },
-    {
       "id": "figure-20260320-pplx-8dad3d",
       "categories": [
         "figure"
@@ -7967,7 +6798,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/twiiifh_LPk8Jl7uaYA_mW4wIDKVUQ2ma3br5gR6_OUPWy1GuqcqQ7Foy9kjMXsP_1wLEIgLm.jpg"
     },
     {
       "id": "figure-20260320-pplx-7bebcd",
@@ -8009,72 +6841,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "日本"
-    },
-    {
-      "id": "cafe-202603210014-pplx-a6e051",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "[未翻訳] Pixar World Exhibition 2026",
-      "title_ja": "Pixar World Exhibition 2026",
-      "description": "An exhibition where visitors can experience the world of Pixar films. Characters and artwork will be on display.",
-      "source": {
-        "url": "https://en.japantravel.com/events/tokyo-ota-city?type=event&from=2026-03-20&to=2026-03-27&p=5"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-20～"
-      },
-      "location": "東京",
-      "thumbnail": "https://a3.cdn.japantravel.com/photo/72289-246131/460x460!/tokyo-pixar-world-exhibition-246131.jpg"
-    },
-    {
-      "id": "cafe-20260320-pplx-764177",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "American BBQ Cook-Off at Harumi Pier Park",
-      "title_ja": "晴海ピアパークでアメリカンBBQクックオフ",
-      "description": "American BBQ event at Harumi Pier Park on Friday, March 20, with a cook-off for BBQ fans and free admission. Featured as this week's event in Tokyo. [3]",
-      "source": {
-        "url": "https://en.japantravel.com/events/tokyo-ota-?from=2026-03-20&to=2026-03-27"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-20"
-      },
-      "location": "東京・晴海"
-    },
-    {
-      "id": "cafe-20260320-pplx-09e04f",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "American BBQ Cook-Off at Halumi Pier Park",
-      "title_ja": "ハルミピアパークでアメリカンBBQクックオフ",
-      "description": "American BBQ Cook-Off at Tokyo Halumi Pier Park on Friday, March 20; free admission at this event for BBQ fans. Enjoy the charm of American BBQ.",
-      "source": {
-        "url": "https://en.japantravel.com/events/tokyo?from=2026-03-18&to=2026-03-25"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-20"
-      },
-      "location": "東京・ハルミピアパーク",
-      "thumbnail": "https://a3.cdn.japantravel.com/photo/70631-238167/460x460!/tokyo-american-bbq-cook-off-harumi-pier-park-238167.jpg"
+      "location": "日本",
+      "thumbnail": "https://www.kotobukiya.co.jp/sm_files/co/other/parts/fv_under_info/2026/sousaifes_5th_1200.jpg"
     },
     {
       "id": "anime-20260320-rss-fed213",
@@ -9481,7 +8249,8 @@
       "dates": {
         "display": "2026-03-20"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://www.facebook.com/tr?id=621967567264541&ev=PageView&noscript=1"
     },
     {
       "id": "anime-20260320-pplx-9a8b55",
@@ -9506,49 +8275,6 @@
       "thumbnail": "https://st.cdjapan.co.jp/pictures/s/16/23/NEOBK-3181844.jpg?v=1"
     },
     {
-      "id": "anime-20260320-pplx-78d0e1",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Puella Magi Madoka Magica: Walpurgis no Kaiten New Anime Film Announced",
-      "title_ja": "魔法少女まどか☆マギカ：Walpurgis no Kaiten 新作アニメ映画発表",
-      "description": "Madoka Magica 10th Anniversary Online Event Announces Legitimate Sequel Film to Rebellion Story. The tagline is \"Now let the story continue.",
-      "source": {
-        "url": "https://animeschedule.net/seasons/2026"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026"
-      },
-      "location": "日本"
-    },
-    {
-      "id": "anime-20260320-pplx-5143e7",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "From Far Away Animation to be aired in 2026!",
-      "title_ja": "From Far Away アニメ化決定！2026年放送へ",
-      "description": "The TV anime adaptation of Kyoko Kyoka's classic shoujo manga \"Distant Girl\" has been officially announced, scheduled to begin airing in 2026, and has become a major topic of discussion among fans.",
-      "source": {
-        "url": "https://essential-japan.com/news/from-far-away-anime-adaptation-coming-in-2026/"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026"
-      },
-      "location": "日本",
-      "thumbnail": "https://cdn.essential-japan.com/wp-content/uploads/2026/03/from-far-away-anime-announcement-illustration-header.png"
-    },
-    {
       "id": "anime-20260320-pplx-4f23dc",
       "categories": [
         "anime"
@@ -9567,49 +8293,8 @@
       "dates": {
         "display": "2026春"
       },
-      "location": "北米"
-    },
-    {
-      "id": "vtuber-202603211936-pplx-de7715",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "BEEG to Deliver 3D Debut",
-      "title_ja": "BEEGが3Dデビュー配信を実施",
-      "description": "BEEG's 3D debut delivery took place on March 19 and was discussed on 4chan /vt/ thread; YouTube link was shared and appears to have attracted a large audience. The platinum tally also attracted a lot of attention.",
-      "source": {
-        "url": "https://www.youtube.com/watch?v=HlIyOX7I8sU"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19"
-      },
-      "location": "日本"
-    },
-    {
-      "id": "vtuber-202603211936-pplx-7e7d72",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Nishinon wins first place in the platinum tally.",
-      "title_ja": "にしのんがプラチナ集計1位を獲得",
-      "description": "In the final platinum tally on March 19, indie VTuber Nishinon ranked first with 16,578, proving her high popularity in the VTuber community.",
-      "source": {
-        "url": "https://boards.4chan.org/vt/thread/110391858/jp-vtubers"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19"
-      },
-      "location": "日本"
+      "location": "北米",
+      "thumbnail": "https://static.animecorner.me/2023/12/1704024945-95401.png"
     },
     {
       "id": "vtuber-20260320-rss-fe2a5d",
@@ -9822,27 +8507,6 @@
       "_source_id": "newscast-jp"
     },
     {
-      "id": "vtuber-20260320-rss-4c4a6b",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Virtual Ties\", ADV for raising virtual idols, originally conceived by and starring virtual singer Emotion of the World, goes on sale.",
-      "title_ja": "バーチャルシンガーヰ世界情緒の原案・主演 バーチャルアイドル育成ADV「Virtual Ties」発売",
-      "dates": {
-        "display": "Mar 19, 2026"
-      },
-      "description": "On March 19, 2026, the virtual idol training adventure game \"Virtual Ties ~Wi Sekai Emotional Dreamscape~\" was released. The distributors are Entergram Inc. and THINKR Inc. The game is available on Pl [&#8230;].\nThe post Virtual Ties - Virtual Idol Cultivation ADV \"Virtual Ties,\" Originally conceived and starring virtual singer I Sekai Emotion, now on sale appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/virtual-ties-isekaijoucho-release/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/a55af7be1dfe2a3d359a3a9d0ed603af-kix.pfl4nma3n599-1024x580.webp",
-      "_source_id": "moguravr-com"
-    },
-    {
       "id": "vtuber-20260320-rss-47662e",
       "categories": [
         "vtuber"
@@ -9948,28 +8612,6 @@
       "_source_id": "newscast-jp"
     },
     {
-      "id": "vtuber-20260320-pplx-f3c5ff",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "TAITO ONLINE CRANE Announces First Collaboration with VTuber Tenjo Konomi from Million P",
-      "title_ja": "TAITO ONLINE CRANEがミリオンP所属VTuber天上こ乃美との初コラボを発表",
-      "description": "TAITO ONLINE CRANE announces its first collaboration with Tenjo Konomi. Limited prizes with newly drawn \"nightwear\" illustrations will be available on March 26 at 20:00. On the same day at 19:00, Konomi Amagami will hold a live broadcast on YouTube to challenge the first crane game. The prizes are a BIG plushie (2 kinds), a long cushion (2 kinds), and a clear phone stand (1 kind).",
-      "source": {
-        "url": "https://www.haveagood-holiday.com/en/articles/taito-online-crane-amakami-konomi-collaboration"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19"
-      },
-      "location": "日本",
-      "thumbnail": "https://assets.hldycdn.com/cdn-cgi/image/format=webp,width=1024,quality=75/f29b3efe-f7a8-467b-960c-f5dfc81faa88.jpeg"
-    },
-    {
       "id": "vtuber-20260320-pplx-2d3468",
       "categories": [
         "vtuber"
@@ -9989,176 +8631,6 @@
         "display": "2026-03-19"
       },
       "location": "日本"
-    },
-    {
-      "id": "vtuber-20260319-rss-ff77d2",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "cluster unveils new measures to support creators at March 31 event",
-      "title_ja": "clusterがクリエイター支援の新施策を3月31日のイベントで公開",
-      "dates": {
-        "display": "Mar 19, 2026"
-      },
-      "description": "Cluster Inc. will hold a talk event \"Cluster Station DX\" on March 31 at 9:00 p.m. The company will announce the future development policy of its metaverse platform \"cluster\" and several new measures for creators [&#8230;].\nThe post cluster to unveil new measures to support creators at March 31 event appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/cluster-station-dx-2026/"
-      },
-      "tags": [
-        "moguravr"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/259e332b82be458c198104d2876667df-kix.qicihmvechhi-1024x576.webp",
-      "_source_id": "moguravr"
-    },
-    {
-      "id": "vtuber-20260319-rss-ed004f",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Girl Group \"LE SSERAFIM\" to Hold First VR Concert Tour Wearing headsets in theaters and experiencing front row seats",
-      "title_ja": "ガールズグループ「LE SSERAFIM」が初のVRコンサートツアー開催 劇場でヘッドセットを装着し、最前列を体感",
-      "dates": {
-        "display": "Mar 19, 2026"
-      },
-      "description": "On April 15, LE SSERAFIM VR CONCERT: INVITATION, the first VR concert tour of the five-member group LE SSERAFIM, will begin showing simultaneously in Japan, Korea, the United States and Taiwan. In Japan, the film [&#8230;] in Tokyo and Osaka\nThe post Girl Group LE SSERAFIM to Hold First VR Concert Tour: Wear a Headset at the Theater and Experience the Front Row appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/le-sserafim-vr-concert-invitation/"
-      },
-      "tags": [
-        "moguravr"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/d98bdae0e57a4aa78d1ff79541909ba7-kix.nu84ipc3bfa0-724x1024.webp",
-      "_source_id": "moguravr"
-    },
-    {
-      "id": "vtuber-20260319-rss-7a2fee",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "VTuber office \"Haconnect\" and sister office \"Lilyette\" add 3 auditions with characters.",
-      "title_ja": "VTuber事務所「ハコネクト」姉妹事務所「Lilyette」キャラありオーディション3名追加",
-      "dates": {
-        "display": "Mar 19, 2026"
-      },
-      "description": "Lilyette, a new V-liber agency established as a sister agency of the VTuber agency \"Haconnect\", has added three new characters to its ongoing \"Auditions with Characters\". Lilyette\" is a delivery app [&#8230;]...\nThe post VTuber Office \"Haconnect\" Sister Office \"Lilyette\" Adds 3 New Characters for Character Auditions appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/lilyette-audition-new-characters/"
-      },
-      "tags": [
-        "moguravr"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/94939fb851166e42dff714d336eb4827-kix.l70ok4raw535-1024x576.webp",
-      "_source_id": "moguravr"
-    },
-    {
-      "id": "vtuber-20260319-rss-2fa136",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "VRChat] \"Virtual Hobby Fest 2026\" Kicks Off with Star Wars and Eva Contents",
-      "title_ja": "【VRChat】「バーチャルホビーフェス2026」開幕 スター・ウォーズやエヴァのコンテンツも登場",
-      "dates": {
-        "display": "Mar 19, 2026"
-      },
-      "description": "Hobby Japan, Inc. and V Corporation will co-host \"Virtual Hobby Fest 2026 (a.k.a. Bacha Hobby)\" on VRChat. The event will be held from March 20, 2026 (Friday, holiday) at 12:00 until April 5, 2026 (Sunday) at 23:59. Admission is free [&#8230;].\nThe post [VRChat] \"Virtual Hobby Fest 2026\" Opens with Star Wars and Eva Content appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/virtual-hobby-fes-2026/"
-      },
-      "tags": [
-        "moguravr"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/53b068e67d5f808a735babb3aa2266d7-kix.4gry058075xi-1024x576.webp",
-      "_source_id": "moguravr",
-      "series_id": "バーチャルホビーフェス2026",
-      "series": "バーチャルホビーフェス2026"
-    },
-    {
-      "id": "vtuber-20260319-rss-2b19a6",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "AR firm Blippar acquires Plattar, a 3D product display platform",
-      "title_ja": "AR企業Blippar、3D製品表示プラットフォームのPlattarを買収",
-      "dates": {
-        "display": "Mar 19, 2026"
-      },
-      "description": "On March 12, Blippar, a provider of AR and spatial computing solutions, announced that it has acquired Plattar, a 3D product configuration and AR commerce platform. After the acquisition, [&#8230;]\nThe post AR Company Blippar Acquires 3D Product Display Platform Plattar appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/blippar-acquires-plattar/"
-      },
-      "tags": [
-        "moguravr"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/e217cc3fca0a60620b4581a54f56ea13-kix.2pi73yr0olcl.webp",
-      "_source_id": "moguravr"
-    },
-    {
-      "id": "vtuber-20260319-rss-1a9874",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Indefinite suspension of the release of XREAL Neo, which enables connection between XREAL and Nintendo Switch 2.",
-      "title_ja": "XREALとニンテンドーSwitch 2を接続可能にする「XREAL Neo」発売を無期限見合わせ",
-      "dates": {
-        "display": "Mar 19, 2026"
-      },
-      "description": "XREAL, a developer and seller of AR glasses, announced on March 19, 2026, that it will temporarily suspend the launch of its XREAL Neo mobile battery. The product was originally scheduled for release in late March 2026. Final verification and quality [&#8230;].\nThe post XREAL Neo, which enables XREAL to connect to Nintendo Switch 2, will be put on hold indefinitely appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/xreal-neo-release-postponed-2026/"
-      },
-      "tags": [
-        "moguravr"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/22997c2183d7d93d34537e37cd9d446f-kix.t6zsaws11cwl-1024x576.webp",
-      "_source_id": "moguravr"
-    },
-    {
-      "id": "vtuber-20260319-rss-192f59",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "MyDearest to conduct \"Roblox World Production Continuous Course\" in Gunma Prefecture, contributing to the development of young human resources specializing in digital creativity.",
-      "title_ja": "MyDearest、群馬県「Robloxワールド制作連続講座」を実施 デジタルクリエイティブに特化した若年人材育成に貢献",
-      "dates": {
-        "display": "Mar 19, 2026"
-      },
-      "description": "MyDearest Inc. planned and operated the \"Roblox World Production Series\" at \"tsukurun,\" a digital creative center for young people established by Gunma Prefecture. This course was designed for elementary, junior high, and high school students in Gunma Prefecture [&#8230;].\nThe post MyDearest to Conduct \"Roblox World Production Series\" in Gunma Prefecture, Contributing to the Development of Young Talent Focused on Digital Creativity appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/mydearest-gunma-roblox-2026/"
-      },
-      "tags": [
-        "moguravr"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/23892fbdee68053294761017122db278-kix.t9kiluuvyl6k-1024x717.webp",
-      "_source_id": "moguravr"
-    },
-    {
-      "id": "other-202603211936-pplx-05c3c8",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "[Chikuma",
-      "title_ja": "[生誕祭2026] 筑摩",
-      "description": "Submitted an illustration for a ship's fan art birthday celebration. Doujinshi and exhibit related to otaku culture pixiv event. submitted March 19.",
-      "source": {
-        "url": "https://www.pixiv.net/en/artworks/142494766"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19"
-      },
-      "location": "オンライン/pixiv"
     },
     {
       "id": "otaku-news-20260320-rss-fb7a21",
@@ -12234,48 +10706,6 @@
       "_source_id": "4gamer"
     },
     {
-      "id": "figure-202603210251-pplx-96c6fc",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "Kotobukiya begins accepting pre-orders for \"KOF XV\" Yuri Sakazaki 1/7th scale figure.",
-      "title_ja": "コトブキヤが『KOF XV』ユリ・サカザキ 1/7スケールフィギュアの予約受付を開始",
-      "description": "Kotobukiya has begun taking pre-orders for a 1/7th scale figure of Yuri Sakazaki from \"The King of Fighters XV\" (21 cm tall, priced at 19,800 yen). The figure comes with a bonus head part for official website pre-orders, and is scheduled for release in September 2026.",
-      "source": {
-        "url": "https://ixbt.games/en/news/2026/03/19/kotobukiya-otkryla-predzakaz-na-statuiu-iuri-sakadzaki-iz-faitinga-the-king-of-fighters-xv.html"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19"
-      },
-      "location": "日本"
-    },
-    {
-      "id": "figure-202603210251-pplx-71e547",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "Good Smile Company Nendoroid Makina is open for reservation now.",
-      "title_ja": "グッドスマイルカンパニー ねんどろいど 槙奈 予約開始",
-      "description": "Nendoroid Makina from \"MILKY☆SUBWAY THE GALACTIC LIMITED EXPRESS\" is now available for pre-order (2026/03/19-04/29). She is approximately 100mm in height and will be shipped in September 2026. Comes with expression parts and props, including a glaring face, panic face, etc.",
-      "source": {
-        "url": "https://www.goodsmile.com/en/product/1141474/Nendoroid+Makina"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19"
-      },
-      "location": "日本"
-    },
-    {
       "id": "figure-20260320-rss-fe3f94",
       "categories": [
         "figure"
@@ -12481,27 +10911,6 @@
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/FIGURE-199835_01_SZVUrtkpy_uqhy0sJBpSwBR_UjCTgvVZ_8GZJEVelKMw6vAI5Ckve2yMpa1A7JOAB.jpg",
       "_source_id": "dengeki-hobby"
-    },
-    {
-      "id": "figure-20260320-pplx-d8d9c3",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "Metal Robot Spirits Sara Bi Lottery starts",
-      "title_ja": "メタルロボットスピリッツ 沙羅ビ 抽選受付開始",
-      "description": "Lottery pre-orders for the METAL ROBOT SPIRITS Sara Bi, priced at 26,400 yen (including tax), will begin today, March 19, at 12:00 pm. The acceptance period is from March 19, 12:00 to April 26, 23:00, and the lottery results will be announced in late April. New Gunpla-related products.",
-      "source": {
-        "url": "https://en.gundam-official.com/news/tkbb7ju0q50lgloyov2qyo0k"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19"
-      },
-      "location": "日本"
     },
     {
       "id": "figure-20260319-rss-f518ab",
@@ -13176,72 +11585,6 @@
       "_source_id": "dengeki-hobby"
     },
     {
-      "id": "anime-202603210015-pplx-3b300e",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Wash it all off, spring visual release Volume 12 on sale March 25.",
-      "title_ja": "洗いざらい流して 春季ビジュアル公開 第12巻3月25日発売",
-      "description": "Spring visuals for the currently airing anime \"Wash Away. The main character Waka is shown eating a steamed bun. The story continues with volume 12 scheduled for release on March 25.",
-      "source": {
-        "url": "https://www.anitrendz.com/news/2026/03/19/wakana-enjoys-a-snack-in-new-wash-it-all-away-seasonal-visual"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19"
-      },
-      "location": "日本",
-      "thumbnail": "https://www.anitrendz.com/_next/image?url=https%3A%2F%2Fi0.wp.com%2Fanitrendz.net%2Fnews%2Fwp-content%2Fuploads%2F2026%2F03%2Fwash-it-all-away-spring-visual-1-scaled-e1773957260914.jpeg%3Ffit%3D1809%252C1019%26ssl%3D1&w=1920&q=75"
-    },
-    {
-      "id": "anime-20260320-pplx-8c0fc1",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "JoJo`s Bizarre Adventure: Steel Ball Run - New Season Starts Airing",
-      "title_ja": "ジョジョの奇妙な冒険 スティール・ボール・ラン 新シーズン放送開始",
-      "description": "Netflix's new continuity Steel Ball Run begins airing on March 19, an action-packed story that takes place in an all-new universe in the JoJo series Spring 2026 Anime Spotlight. [1]",
-      "source": {
-        "url": "https://comicbook.com/anime/list/10-new-spring-2026-anime-to-watch-this-april-ranked-by-hype-level/"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19"
-      },
-      "location": "Netflix",
-      "thumbnail": "https://comicbook.com/wp-content/uploads/sites/4/2026/03/Rooster-Fighter-Adult-Swim-Viz-Media.jpg?w=1024"
-    },
-    {
-      "id": "anime-20260320-pplx-0ba6c1",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Space Brothers Three more episodes to the manga's conclusion",
-      "title_ja": "Space Brothers マンガ完結へあと3話",
-      "description": "The \"Space Brothers\" manga is complete after 19 years. The final 46 volumes will be released on July 23, shocking fans as the latest news this week.",
-      "source": {
-        "url": "https://www.crunchyroll.com/news/latest/2026/3/19/space-brothers-manga-to-conclude-in-three-chapters-after-19-years"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-19"
-      },
-      "location": "日本",
-      "thumbnail": "https://www.crunchyroll.com/news/img/favicons/favicon-v2-96x96.png"
-    },
-    {
       "id": "anime-20260319-rss-f5cfca",
       "categories": [
         "anime"
@@ -13557,153 +11900,6 @@
       "_source_id": "natalie-anime"
     },
     {
-      "id": "vtuber-202603210126-pplx-e78b50",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Riko Jinno (Jinjin) Jakumon Distribution",
-      "title_ja": "神野莉子（じんじん）雀魂配信",
-      "description": "VTuber Riko Jinno will be distributing a Dan competition on March 18, 2012 at Jakumon. She aims to win points as a rookie VTuber.",
-      "source": {
-        "url": "https://www.youtube.com/watch?v=LWDDnAkz2OI"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-18"
-      },
-      "location": "YouTube Live"
-    },
-    {
-      "id": "vtuber-20260320-rss-da5dc2",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "VTuber Live Event \"Bachaaste! -Virtual Stage Vol.0-\" to be held in Shibuya on May 23",
-      "title_ja": "VTuberライブイベント「ばちゃすて!-Virtual Stage Vol.0-」5月23日に渋谷で開催",
-      "dates": {
-        "display": "Mar 18, 2026"
-      },
-      "description": "VESTA has announced that the VTuber live event \"Bachasute! -Virtual Stage Vol. 0-\" on Saturday, May 23, 2026. The event will be held on Saturday, May 23, with doors opening at 15:00 and the show starting at 16:00 and ending at 19:40 [&#8230;].\nThe post VTuber Live Event \"Bachasute! -Virtual Stage Vol. 0-\" to be held in Shibuya on May 23 appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/bachaste-virtual-stage-vol0/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/b9ac169c51a885da9dc22b638f9083e6-kix.t3hkp66l8d50-1024x576.webp",
-      "_source_id": "moguravr-com"
-    },
-    {
-      "id": "vtuber-20260320-rss-70b430",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Five Niji-sanji VTubers \"imprisoned\"?　Mysterious project \"Cellmates\" started, Sasaki Sasagi, Misagi Tsukino, and others participated.",
-      "title_ja": "にじさんじVTuber5名が”収監”?　謎の企画「Cellmates」が始動、笹木咲や月ノ美兎ら参加",
-      "dates": {
-        "display": "Mar 18, 2026"
-      },
-      "description": "Cellmates,\" a mysterious project in which VTubers from Niji-sanji are expected to participate, has been launched on X. It has become a hot topic among fans. The account (@ll_cellmates_ll) was opened in March 2026. The account (@ll_cellmates_ll) will open in March 2026, with a sign that reads, \"Launching soon.\nThe post 5 Niji-sanji VTubers &#8221; Jailed&#8221;?　Mysterious Project \"Cellmates\" Launched, Sasaki Sasagi, Misagi Tsukino, and Others to Participate appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/cellmates-nijisanji-vtuber/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/551667fe1923eccf41772a4be82f8bc4-kix.xelbv1yg2zok.webp",
-      "_source_id": "moguravr-com"
-    },
-    {
-      "id": "vtuber-20260320-rss-0f0a94",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "TV Anime \"Ichimatsumatsuma Mankitsu Kurashi! Character Nakano Ondeo's VTuber activity starts! The first distribution will be on March 19!",
-      "title_ja": "TVアニメ『一畳間まんきつ暮らし！』キャラクター・中埜音緒のVTuber活動がスタート！ 初回配信は3月19日",
-      "dates": {
-        "display": "Mar 18, 2026"
-      },
-      "description": "Bushiroad Move Inc. has announced the start of VTuber activities for Otoo Nakano, a character in the TV anime \"Ichimatsumatsuma Mankitsu Kurashi! and announced the start of VTuber activities for Nakano Ondeo, a character in the TV anime \"One Tatami Mat Mankitsu Kurashi! The first distribution is scheduled for March 19, 2026 (Thursday) at 9:30pm. Nakano Ondeo is a professional gamer [&#8230;].\nThe post TV Anime \"Ichimatsumatsuma Mankitsu Kurashi! Character Nakano Ondeo's VTuber activity has started! The first distribution will be on March 19 appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/ichijyoma-n%d0%b5%d0%be-vtuber-debut/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/a775115db072e34f5226051c2239afaa-kix.3t8ibuq9xan8-1024x576.webp",
-      "_source_id": "moguravr-com"
-    },
-    {
-      "id": "vtuber-20260319-rss-e80cfc",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "A new user base is coming to VR,\" Meta executive says of current and future trends in the VR market.",
-      "title_ja": "「VRには新たなユーザー層がやってくる」Meta幹部が語ったVR市場の現在と将来動向",
-      "dates": {
-        "display": "Mar 18, 2026"
-      },
-      "description": "The GDC Festival of Gaming, the world's largest conference for game developers, was held at the Moscone Center in San Francisco, California, from March 9 to 13, 2026. At this event, March 1 [&#8230;].\nThe post \"A New User Base is Coming to VR,\" Meta Executives Say of Current and Future Trends in the VR Market appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/gdc-2026-meta-session-vr-eco-system/"
-      },
-      "tags": [
-        "moguravr"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/594ceaa3442798b09fe9c1332abca36f-kix.kwqq6hflyole-1024x576.webp",
-      "_source_id": "moguravr"
-    },
-    {
-      "id": "vtuber-20260319-rss-643ae9",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "The biggest hit in VR game history began with a failure. The path of \"UG,\" the No. 1 selling title in the Meta Quest store.",
-      "title_ja": "VRゲーム史上最大のヒット作は失敗から始まった Meta Questストアで売上No1タイトル「UG」の道のり",
-      "dates": {
-        "display": "Mar 18, 2026"
-      },
-      "description": "GDC 2026, the world's largest game developer conference, was held in San Francisco, California, from March 9 to 13, 2026. Among its many sessions, one that was packed every day was the \"We [&#8230;]\" session held on March 11.\nThe post The Biggest Hit in VR Game History Started with a Failure: The Path of UG, the #1 selling title in the Meta Quest store appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/gdc-2026-meta-session-ug/"
-      },
-      "tags": [
-        "moguravr"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/4bbbf96a887c1855244217520385c0be-kix.hhu6bslcqkcl-1024x578.webp",
-      "_source_id": "moguravr"
-    },
-    {
-      "id": "vtuber-20260319-rss-1126ef",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Honda Motanion Lab, the official world of Honda's VRChat, is a must-see spot for motorcyclists!",
-      "title_ja": "【体験レポ】ホンダのVRChat公式ワールド「Honda Motanion Lab」はバイク乗り必見の“映え”スポットだ！",
-      "dates": {
-        "display": "Mar 18, 2026"
-      },
-      "description": "On March 16, Honda Motanion Lab, the official world of automaker Honda Motor Company (Honda), opened to the public on the social VR \"VRChat. This world is part of the company's co-creation project Honda Mot [&#8230;].\nThe post [Experience Report] Honda Motanion Lab, Honda's official VRChat world, is a \"must-see\" spot for motorcycle riders! appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/honda-motanion-lab-vrchat-report/"
-      },
-      "tags": [
-        "moguravr"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/cbc7e4289d86183d53b87c1b40b537f1-kix.gx7kut3xig0y-1024x576.webp",
-      "_source_id": "moguravr"
-    },
-    {
       "id": "game-20260320-pplx-ed2d95",
       "categories": [
         "game"
@@ -13864,111 +12060,6 @@
       "thumbnail": "https://news.amiami.jp/wp-content/uploads/2026/03/BRS260313-IC.jpg"
     },
     {
-      "id": "anime-202603210126-pplx-ad426b",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Maho Yashiro's \"Tank Chair\" manga to be adapted into a TV anime in Fall 2026.",
-      "title_ja": "八代万歩『タンクチェア』マンガが2026年秋TVアニメ化",
-      "description": "Animated TV adaptation of violent sci-fi manga \"Tank Chair\" announced; teaser trailer/visuals to premiere Fall 2026. [4]",
-      "source": {
-        "url": "https://www.crunchyroll.com/news/latest/2026/3/18/manabu-yashiro-tank-chair-manga-anime-announced-2026-premiere-teaser-trailer-visual"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-18"
-      },
-      "location": "日本"
-    },
-    {
-      "id": "anime-202603210126-pplx-26d85f",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Abandoned Saint's Gohan Journey in Another World: TV Anime Adaptation Announced for 2026",
-      "title_ja": "捨てられ聖女の異世界ごはん旅 2026年TVアニメ化発表",
-      "description": "TV anime adaptation of the light novel \"Abandoned Seijo no Isekai Gohan Tabi (捨てれ聖女の異世界ごはん旅) ~Hidden Skill Summoned a Camper~\" announced on March 18 with the opening of its official website and X account; scheduled to air in 2026; voice actors Aozora Tokui and Yuki Ono are cast as the main character Rin; produced by EMT Squared; the series will be broadcast in 2026. [1]",
-      "source": {
-        "url": "https://essential-japan.com/news/the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-anime-debuts-in-2026/"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-18"
-      },
-      "location": "日本"
-    },
-    {
-      "id": "vtuber-20260320-rss-a0bdea",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Announced \"Wan-tama☆Laifu,\" a novel game starring Tamaki Inuyama, with appearances by Mea Kagura and Norimo Tsukudani",
-      "title_ja": "犬山たまき主演のノベルゲーム『わんたま☆らいふ』発表、神楽めあ・佃煮のりおも出演",
-      "dates": {
-        "display": "Mar 17, 2026"
-      },
-      "description": "Rabbitfoot, the novel game brand of Cyberstep Corporation, has announced the development of a new novel game, \"Wan-tama☆Laifu: Inuyama Tamaki's School Trip Survival\". The release date is scheduled for Thursday, June 25, 2026. This work [&#8230;].\nThe post Novel Game \"Wan Tama ☆ Life\" Announced Starring Tamaki Inuyama, Mea Kagura and Norimo Tsukudani appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/wantama-life-announcement/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/b4038f1dbfb6781d67f0dbf5b5f96160-kix.ks6l4f8rf4-1024x576.webp",
-      "_source_id": "moguravr-com"
-    },
-    {
-      "id": "vtuber-20260320-rss-12d584",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "The 8th Marika Nijisanji Cup\" hosted by Sherin Burgundy to be held; planning briefing to be held on March 17.",
-      "title_ja": "シェリン・バーガンディ主催「第8回マリカにじさんじ杯」開催決定、企画説明会は3月17日に実施",
-      "dates": {
-        "display": "Mar 17, 2026"
-      },
-      "description": "The 8th Marika Niji-sanji Cup\" hosted by VTuber Sherin Burgundy of Niji-sanji will be held. The Marika Niji-sanji Cup is an annual event where Niji-sanji VTubers compete against each other in the racing game \"Mario Kart World\" [&#8230;].\nThe post The 8th Marika Niji-sanji Cup to be hosted by Sherin Burgundy, planning briefing to be held on March 17 appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/mariokart-nijisanji-cup-8th/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/50ae16b25137db5404ef364689d1894f-kix.nbfniof2icit-1024x576.webp",
-      "_source_id": "moguravr-com"
-    },
-    {
-      "id": "game-202603211936-pplx-650af0",
-      "categories": [
-        "game"
-      ],
-      "status": "active",
-      "title": "The Japanese version of the high-difficulty narrative horror platformer \"Love Eternal\" will be released in Spring 2026.",
-      "title_ja": "高難度ナラティブホラープラットフォーマー『LOVE ETERNAL』日本語版が2026年春に発売決定",
-      "description": "PLAYISM announced that the Japanese version of LOVE ETERNAL, developed by brlka, will be released for PC/Nintendo Switch/PlayStation/Xbox in spring 2026. tokyo indie games summit 2026 and game pavilion jp2026 The game will also be exhibited for trial play at the",
-      "source": {
-        "url": "https://playism.com/news/2026/0317/1694/"
-      },
-      "tags": [
-        "game"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-17"
-      },
-      "location": "日本"
-    },
-    {
       "id": "game-202603210251-pplx-180ff3",
       "categories": [
         "game"
@@ -13987,7 +12078,8 @@
       "dates": {
         "display": "2026-03-17"
       },
-      "location": "日本"
+      "location": "日本",
+      "thumbnail": "https://www.4gamer.net/games/991/G099150/20260317057/SS/004.jpg"
     },
     {
       "id": "game-202603210014-pplx-a5596b",
@@ -14196,155 +12288,6 @@
       "thumbnail": "https://news.amiami.jp/wp-content/uploads/2026/03/genshin260311-IC.jpg"
     },
     {
-      "id": "cafe-20260320-pplx-fc63be",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Tokyo Gotanda Cherry Blossom Festival",
-      "title_ja": "東京五反田桜まつり",
-      "description": "Gotanda's Cherry Blossom Festival held on March 17. It is a popular event during the cherry blossom season.",
-      "source": {
-        "url": "https://en.japantravel.com/events/tokyo?from=2026-03-16&to=2026-03-23"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-17"
-      },
-      "location": "東京・五反田",
-      "thumbnail": "https://a1.cdn.japantravel.com/photo/72269-245960/460x460!/tokyo-takeshi-fukazawa-cherry-blossoms-photography-exhibition-245960.jpg"
-    },
-    {
-      "id": "cafe-20260320-pplx-3fac18",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "Gotanda Cherry Blossom Festival",
-      "title_ja": "五反田桜まつり",
-      "description": "Cherry blossom festival in Gotanda, Tokyo. spring event to be held on March 17. [5]",
-      "source": {
-        "url": "https://en.japantravel.com/events/tokio?type=event&from=2026-03-20&to=2026-03-27&p=4"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-17"
-      },
-      "location": "東京・五反田"
-    },
-    {
-      "id": "anime-202603211936-pplx-e24192",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Solo Leveling Season 2 Blu-ray release",
-      "title_ja": "Solo Leveling Season 2 Blu-ray発売",
-      "description": "BD/DVD release of Season 2 -Arise from the Shadow- from Crunchyroll on March 17. New North American anime Blu-ray arrivals. [3]",
-      "source": {
-        "url": "https://www.animenewsnetwork.com/news/2026-03-20/north-american-anime-manga-releases-march-15-21/.235374"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-17"
-      },
-      "location": "日本"
-    },
-    {
-      "id": "vtuber-20260320-rss-96c537",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "Individual VTuber \"Kanoota Kanoota\" joins STARAZO PRODUCTION as a 0th member",
-      "title_ja": "個人VTuber「彼女なぉた」がSTARAZO PRODUCTIONに0期生として所属",
-      "dates": {
-        "display": "Mar 16, 2026"
-      },
-      "description": "On March 16, personal VTuber Kanoota will join the VTuber group \"STARAZO PRODUCTION\" (*operated by October Inc.), produced by VTuber Nanami Mihoshi, as a member of the 0th term. Her first distribution after belonging to the group will be [&#8230;].\nThe post Individual VTuber \"Kanoota Kanoota\" Belongs to STARAZO PRODUCTION as a 0th Generation appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/kanomenaota-starazo-production/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/57c5d869a14fb9858846c82798f9bfe3-kix.zetqva4l83r-1024x576.webp",
-      "_source_id": "moguravr-com"
-    },
-    {
-      "id": "vtuber-20260320-rss-584220",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "This video is amazing! Recommended VTuber Videos of the Week (~March 13)",
-      "title_ja": "この動画がすごい！ 今週のおすすめVTuber動画(～3月13日）",
-      "dates": {
-        "display": "Mar 16, 2026"
-      },
-      "description": "VTubers (virtual youtubers) and virtual creators continue to upload high quality videos on a daily basis. Here are some of the videos that we think you should watch, based on our own prejudice. We are particularly interested in unique works, technical skills and [&#8230;].\nThe post This Video is Awesome! Recommended VTuber Videos of the Week (~March 13) appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/vtuber-weekly-2026-3-13/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2018/01/f772afad1853bea7b181265377dd7864-kix.tuy8d6hqs789-1024x576.webp",
-      "_source_id": "moguravr-com"
-    },
-    {
-      "id": "vtuber-20260320-rss-0f0393",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "VTuber Uncle Finder takes an indefinite hiatus to pursue new goals.",
-      "title_ja": "VTuberフィンダーおじさんが活動無期限休止、新たな目標に挑戦するため",
-      "dates": {
-        "display": "Mar 16, 2026"
-      },
-      "description": "Video creator and VTuber Uncle Finder has announced that he will be taking an indefinite hiatus from his activities, as revealed in a post on his X account on March 14, 2026. In explaining the reason for the hiatus, Uncle Finder said, \"New big eyes [&#8230;]...\nThe post VTuber Uncle Finder takes indefinite hiatus to pursue new goals appeared first on Mogura VR.",
-      "source": {
-        "url": "https://www.moguravr.com/finder-ojisan-hiatus/"
-      },
-      "tags": [
-        "moguravr-com"
-      ],
-      "thumbnail": "https://assets.moguravr.com/uploads/2026/03/3ff637d1d91562473fb981ebf62fa76f-kix.ydkmhdd5p77w-1024x601.webp",
-      "_source_id": "moguravr-com"
-    },
-    {
-      "id": "vtuber-20260320-pplx-8590c8",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "VTuber Agency PANDORA Announces Trademark Registration for New Creator Category \"XTuber",
-      "title_ja": "VTuberエージェンシーPANDORA、新クリエイターカテゴリー「XTuber」の商標登録を発表",
-      "description": "Japanese company PANDORA has completed the trademark registration of \"XTuber\" (cross-tuber), positioned as a new category of creators who act as both VTubers and real talents.",
-      "source": {
-        "url": "https://www.dexerto.com/entertainment/vtuber-agency-trademarks-xtuber-as-a-new-creator-category-3336794/"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-16"
-      },
-      "location": "日本",
-      "thumbnail": "https://www.dexerto.com/cdn-image/wp-content/uploads/2024/03/08/most-popular-vtubers-2024.jpg?width=1200&quality=75&format=auto"
-    },
-    {
       "id": "game-202603210251-pplx-21835e",
       "categories": [
         "game"
@@ -14363,7 +12306,8 @@
       "dates": {
         "display": "2026-03-16"
       },
-      "location": "アジア"
+      "location": "アジア",
+      "thumbnail": "https://prtimes.jp/_next/static/media/scroll_guide.f4d5c0a8.png"
     },
     {
       "id": "game-20260319-rss-8cf125",
@@ -14589,28 +12533,6 @@
       "_source_id": "gamemakers-jp-feed"
     },
     {
-      "id": "other-20260320-pplx-324739",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Sakura Jidai Festival to end on March 14, but spring events will continue",
-      "title_ja": "サクラ時代祭 3月14日終了も春イベント続々",
-      "description": "The Sakura Jidai Matsuri, a historical reenactment, was held on March 14, and we recommend AnimeJapan and other anime and otaku events in late March. Tokyo Spring Festival Guide.",
-      "source": {
-        "url": "https://tokyocheapo.com/events/sakura-jidai-festival/"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-14"
-      },
-      "location": "東京",
-      "thumbnail": "https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2020/07/crouching-tiger-hidden-sumo-362x193.jpg"
-    },
-    {
       "id": "game-20260319-rss-d8fa50",
       "categories": [
         "game"
@@ -14630,49 +12552,6 @@
       ],
       "thumbnail": "https://gamemakers.jp/cms/wp-content/uploads/2026/03/5a6117792ecc6240790f232604983d73.jpg",
       "_source_id": "gamemakers-jp-feed"
-    },
-    {
-      "id": "figure-20260320-pplx-02ea4c",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "S.H.Figuarts YUJI ITADORI -SUKUNA's Vessel- on sale March 14",
-      "title_ja": "S.H.Figuarts YUJI ITADORI -SUKUNA's Vessel- 3月14日発売",
-      "description": "S.H.Figuarts YUJI ITADORI from Jutsu Kaisen will be released in stores on March 14. Also available at Tamashii Web Shop.",
-      "source": {
-        "url": "https://tamashiiweb.com/special/jumpcs/jujutsukaisen/?wovn=en"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-14"
-      },
-      "location": "日本",
-      "thumbnail": "https://tamashiiweb.com/special/jumpcs/images/hum-menu/thumb-series_09.png"
-    },
-    {
-      "id": "figure-202603210251-pplx-f40a92",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "native STORE March shipping schedule announced",
-      "title_ja": "native STORE 3月発送商品の日程発表",
-      "description": "native STORE announces March 13, 2026 shipping date for items scheduled for March 2026 release; MOONDRAGON will ship March 17; pre-order information available for other adult figures.",
-      "source": {
-        "url": "https://native-store.net/en/"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-13"
-      },
-      "location": "日本"
     },
     {
       "id": "figure-20260319-rss-ee1b06",
@@ -14720,31 +12599,10 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/Medinui_NitroNews_IMG02-thumb-480x270-8883.jpg",
       "_source_id": "nitroplus-news",
       "series_id": "刀剣乱舞-めでぃぬいこれくしょん-刀かぶ刀ステ",
       "series": "刀剣乱舞 めでぃぬいこれくしょん ～刀かぶ～／～刀ステ～"
-    },
-    {
-      "id": "cafe-202603210251-pplx-49167e",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "[未翻訳] AAA at LINE CUBE SHIBUYA",
-      "title_ja": "AAA at LINE CUBE SHIBUYA",
-      "description": "Popular J-Pop group AAA performs at LINE CUBE SHIBUYA in Shibuya. There will be an afternoon performance, a long-awaited live event for their fans.",
-      "source": {
-        "url": "https://www.japanconcerttickets.com/japan-march-2026/"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-08"
-      },
-      "location": "東京・渋谷（LINE CUBE SHIBUYA）"
     },
     {
       "id": "anime-20260319-rss-cdf7ec",
@@ -14767,29 +12625,8 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/03/01Medinui_MusicalV2Data_main-thumb-480x480-8890.jpg",
       "_source_id": "nitroplus-news"
-    },
-    {
-      "id": "anime-20260320-pplx-61c524",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "Panini Manga March 2026 New Releases",
-      "title_ja": "Panini Manga 3月2026年新作リリース",
-      "description": "Part of Your World: A Twisted Tale Vol. 1, How I Attended An All-Guys Mixer Vol. 4, Star Wars Jedi Fallen Order Manga Vol. 1, and Teogonia Vol. 3 will be released in the UK on March 3. Includes two new series of titles.",
-      "source": {
-        "url": "https://animeblurayuk.wordpress.com/2026/03/17/march-2026-release-round-up-for-panini-manga-titles-in-the-uk/"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-03-03"
-      },
-      "location": "UK"
     },
     {
       "id": "anime-20260319-rss-8801e7",
@@ -14812,7 +12649,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/03/0302-thumb-340x480-8891.jpg",
       "_source_id": "nitroplus-news"
     },
     {
@@ -14835,7 +12672,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/12/4b1da4ae5ab94db0bbfceb393956c93a60887fab-thumb-400xauto-8868.jpg",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -14859,7 +12696,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/02/c6272362bd926fec2f57468e53f613de7f3fce0d-thumb-480x270-8887.jpg",
       "_source_id": "nitroplus-news"
     },
     {
@@ -14882,7 +12719,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2026/03/01Medinui_MusicalV2Data_goods-thumb-400x400-8892.jpg",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -14906,7 +12743,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/a6d1681d2213525738d4bca76430e81ff597d159-thumb-480x450-8886.jpg",
       "_source_id": "nitroplus-news"
     },
     {
@@ -14930,7 +12767,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/Medinui_NitroNews_IMG02-thumb-480x270-8883.jpg",
       "_source_id": "nitroplus-news",
       "series_id": "刀剣乱舞-めでぃぬいこれくしょん-刀かぶ刀ステ",
       "series": "刀剣乱舞 めでぃぬいこれくしょん ～刀かぶ～／～刀ステ～"
@@ -14956,7 +12793,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/dfc227ce6eb0bf93987d9ca4769f49edd2fe96df-thumb-480x480-8878.jpg",
       "_source_id": "nitroplus-news"
     },
     {
@@ -14980,7 +12817,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/12/948effad32ff69a1e50385bdbbdcf55543b1bc48-thumb-480x270-8870.jpg",
       "_source_id": "nitroplus-news"
     },
     {
@@ -15004,29 +12841,8 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/12/60556f7c2c07f6517b75f15c56e330db376d5c15-thumb-480x270-8873.jpg",
       "_source_id": "nitroplus-news"
-    },
-    {
-      "id": "other-20260320-pplx-bd7a8d",
-      "categories": [
-        "other"
-      ],
-      "status": "active",
-      "title": "Comiket Winter Event December 30-31, 2025 Recap",
-      "title_ja": "コミケ冬イベント 2025年12月30-31日振り返り",
-      "description": "Comiket Winter, the world's largest anime/manga fan convention, was well received. Tokyo Big Sight, the mecca of otaku culture, prepares for the next Summer Comiket.",
-      "source": {
-        "url": "https://www.tripadvisor.com/Attractions-g298184-Activities-c42-t232-Tokyo_Tokyo_Prefecture_Kanto.html"
-      },
-      "tags": [
-        "other"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2025-12-30 to 2025-12-31"
-      },
-      "location": "東京"
     },
     {
       "id": "anime-20260319-rss-1d32e2",
@@ -15049,7 +12865,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/11/5f381281db04c8b89243a5e9d1a37712e0d1a06a-thumb-540x284-8858.jpg",
       "_source_id": "nitroplus-news",
       "series_id": "コミックマーケット107",
       "series": "コミックマーケット107"
@@ -15074,7 +12890,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/09/5cf6a5158f783ecce2d8d33c37798b652c40df84-thumb-339x480-8778.jpg",
       "_source_id": "nitroplus-goods",
       "series_id": "刀剣乱舞絢爛図録-五",
       "series": "刀剣乱舞絢爛図録 五"
@@ -15099,7 +12915,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/09/5cf6a5158f783ecce2d8d33c37798b652c40df84-thumb-339x480-8778.jpg",
       "_source_id": "nitroplus-goods",
       "series_id": "刀剣乱舞絢爛図録-五",
       "series": "刀剣乱舞絢爛図録 五"
@@ -15125,7 +12941,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/09/5ffdfb56ad931cd1884472037e37091ef04e0c28-thumb-339x480-8776.jpg",
       "_source_id": "nitroplus-news",
       "series_id": "刀剣乱舞絢爛図録-五",
       "series": "刀剣乱舞絢爛図録 五"
@@ -15151,7 +12967,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/12/d285864f2de4ad1ae74c24908622d4ee90ed55d1-thumb-480x270-8872.jpg",
       "_source_id": "nitroplus-news"
     },
     {
@@ -15175,7 +12991,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2026/01/4a7dd9e0f202134e9148df8572d6c5a876005e50-thumb-60x60-8885.jpg",
       "_source_id": "nitroplus-news"
     },
     {
@@ -15199,7 +13015,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/11/5f381281db04c8b89243a5e9d1a37712e0d1a06a-thumb-540x284-8858.jpg",
       "_source_id": "nitroplus-news",
       "series_id": "コミックマーケット107",
       "series": "コミックマーケット107"
@@ -15225,7 +13041,7 @@
         "anime",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/news/assets_c/2025/02/250214-DollsNest-thumb-480x270-8598.jpg",
       "_source_id": "nitroplus-news"
     },
     {
@@ -15248,7 +13064,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/09/349_cover%2Bnon_main-thumb-294x480-8795.jpg",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -15271,7 +13087,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/tbff_bddvd_4_1-thumb-332x450-8733.jpg",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -15294,7 +13110,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2024/12/20240110_TBF4%26Finale-officialbook-thumb-340x480-8559.jpg",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -15317,7 +13133,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/TBF.SG_PMF_cover-thumb-339x480-8744.jpg",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -15340,7 +13156,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/67adc351fb14be103c767bc5f4a9d1622574d5ad-thumb-339x480-8743.jpg",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -15363,7 +13179,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/TBF5_PMF_cover-thumb-339x480-8741.jpg",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -15386,7 +13202,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/05/TBF_finale_gaiden-thumb-318x450-8730.jpg",
       "_source_id": "nitroplus-goods"
     },
     {
@@ -15409,7 +13225,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/04/tbf4_bddvd_4_1-thumb-333x450-8674.jpg",
       "_source_id": "nitroplus-goods",
       "series_id": "thunderbolt-fantasy-東離劍遊紀4",
       "series": "Thunderbolt Fantasy 東離劍遊紀4"
@@ -15434,7 +13250,7 @@
         "figure",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": "https://www.nitroplus.co.jp/goods/assets_c/2025/03/tbf4_bddvd_3_H1-thumb-332x450-8663.jpg",
       "_source_id": "nitroplus-goods",
       "series_id": "thunderbolt-fantasy-東離劍遊紀4",
       "series": "Thunderbolt Fantasy 東離劍遊紀4"
@@ -15460,7 +13276,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15484,7 +13300,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15508,7 +13324,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15532,7 +13348,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15556,7 +13372,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15580,7 +13396,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15604,7 +13420,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15628,7 +13444,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15652,7 +13468,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15676,7 +13492,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15700,7 +13516,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15724,7 +13540,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15748,7 +13564,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15772,7 +13588,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
@@ -15796,7 +13612,7 @@
         "behind-the-scenes",
         "nitroplus"
       ],
-      "thumbnail": "https://www.nitroplus.co.jp/common/img/ico_header_x.png",
+      "thumbnail": null,
       "_source_id": "nitroplus-blog"
     },
     {
