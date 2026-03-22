@@ -65,6 +65,19 @@ GENERIC_THUMB_PATTERNS = (
     "no_image",
     "dummy",
     "trustpilot",
+    # 著者・プロフィール系
+    "display-pic",
+    "favicon",
+    "author",
+    "profile",
+    "avatar",
+    # アイコンサイズパターン
+    "x32.", "x48.", "x64.", "x65.", "x96.",
+    "32x32", "48x48", "64x64", "96x96",
+    # 採用・スタッフバナー
+    "staff/img",
+    "ghost_import",
+    "bnr_staff",
 )
 
 
@@ -150,6 +163,8 @@ def extract_lead_image(html: str, base_url: str) -> Optional[str]:
         "no_image",
         "dummy",
         "sns_icon",
+        "display-pic",
+        "profile",
     ]
 
     for img_match in IMG_TAG_RE.finditer(segment):
