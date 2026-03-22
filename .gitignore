@@ -1,15 +1,3 @@
-# 非公開：運用スクリプト（Actions用は例外）
-scripts/
-!scripts/translate_with_deepl.py
-!scripts/add_entry.py
-!scripts/update_status.py
-!scripts/perplexity_search.py
-!scripts/rss_fetch.py
-!scripts/sort_entries.py
-!scripts/fill_og_images.py
-!scripts/reset_entries_from_rss.py
-!scripts/post_to_x.py
-
 # 非公開：プロンプトテンプレート（Perplexity用・ワークフロー指示書は例外）
 prompts/
 !prompts/perplexity_cafe.md
