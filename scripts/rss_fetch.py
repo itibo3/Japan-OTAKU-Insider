@@ -80,6 +80,11 @@ GENERIC_THUMB_PATTERNS = (
     "bnr_staff",
     # animeanime.jp RSS のサムネは全記事共通画像（thumb_l）
     "animeanime.jp/imgs/thumb_l/",
+    # ボタン・ナビゲーション系
+    "btn_",
+    "/follow_tag",
+    # SVG はサムネイルに不適（ロゴ・アイコン類が大半）
+    ".svg",
 )
 
 
@@ -95,10 +100,14 @@ def choose_thumbnail(lead: Optional[str], og: Optional[str], source_url: str) ->
     """
     ドメインに応じて lead / og の優先順位を決める。
     OG_FIRST_DOMAINS の場合は og:image を優先（シェア時と同じ画像）。
+    lead がジェネリック（ロゴ等）の場合は og:image にフォールバック。
     """
     domain = urlparse(source_url).netloc
     if domain in OG_FIRST_DOMAINS and og and not is_generic_thumbnail(og):
         return og
+    # lead がジェネリック画像なら og を優先
+    if lead and is_generic_thumbnail(lead):
+        return og or lead  # og もなければ lead のまま
     return lead or og
 
 
