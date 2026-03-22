@@ -59,6 +59,8 @@ GENERIC_THUMB_PATTERNS = (
     "staff/img",
     "ghost_import",
     "bnr_staff",
+    # animeanime.jp RSS のサムネは全記事共通画像（thumb_l）
+    "animeanime.jp/imgs/thumb_l/",
 )
 
 META_OG_IMAGE_RE = re.compile(
