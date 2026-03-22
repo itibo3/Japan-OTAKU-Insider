@@ -107,8 +107,15 @@ def choose_thumbnail(lead: Optional[str], og: Optional[str], source_url: str) ->
         return og
     # lead がジェネリック画像なら og を優先
     if lead and is_generic_thumbnail(lead):
-        return og or lead  # og もなければ lead のまま
-    return lead or og
+        if og and not is_generic_thumbnail(og):
+            return og
+        return None  # 両方ジェネリックなら画像なし扱い
+    # lead を優先、なければ og（ただし og がジェネリックなら None）
+    if lead:
+        return lead
+    if og and not is_generic_thumbnail(og):
+        return og
+    return None
 
 
 def fetch_html(url: str, timeout_sec: int, max_bytes: int) -> str:

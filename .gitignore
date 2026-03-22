@@ -48,7 +48,9 @@ __pycache__/
 .DS_Store
 *.swp
 *.swo
+.vscode/
 
 # クリーニング用バックアップ（一時ファイル）
 data/entries_backup_before_cleanup.json
 data/staging_backup/
+data/*.backup_*

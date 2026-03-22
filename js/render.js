@@ -78,10 +78,13 @@ function renderCardHtml(item) {
     const statusClass = `status-${item.status}`;
     const statusLabel = { active: 'Active', upcoming: 'Upcoming', ended: 'Ended' }[item.status] || item.status;
 
-    const datesDisplay = item.dates && item.dates.display ? item.dates.display : item.dates;
+    const datesRaw = item.dates;
+    const datesDisplay = datesRaw && typeof datesRaw === 'object'
+        ? (datesRaw.display || null)
+        : (datesRaw || null);
     const thumbHtml = item.thumbnail
         ? `<img class="card-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy">`
-        : '';
+        : '<div class="card-thumb-placeholder"><span>📰</span></div>';
 
     return `
       <div class="card" onclick="openModal('${item.id}')">
@@ -176,7 +179,10 @@ function openModal(id) {
     })();
 
     let sections = '';
-    const datesDisplay = item.dates && item.dates.display ? item.dates.display : item.dates;
+    const datesRaw2 = item.dates;
+    const datesDisplay = datesRaw2 && typeof datesRaw2 === 'object'
+        ? (datesRaw2.display || null)
+        : (datesRaw2 || null);
     const locationDisplay = item.location && typeof item.location === 'object' ? (item.location.name || item.location.area) : item.location;
     const accessDisplay = item.location && typeof item.location === 'object' ? item.location.access : item.access;
     const sourceUrl = item.source && typeof item.source === 'object' ? item.source.url : item.source;
