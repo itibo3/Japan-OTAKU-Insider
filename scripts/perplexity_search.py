@@ -75,6 +75,8 @@ _EXCLUDED_RAW = (
     "eurogamer.net",
     "destructoid.com",
     "gematsu.com",
+    # RSS で賄えるドメイン（重複防止）
+    "moguravr.com",
 )
 EXCLUDED_DOMAINS = tuple(f"-{d}" for d in _EXCLUDED_RAW)
 
@@ -112,6 +114,9 @@ _ALLOWED_DOMAINS = (
     "walkerplus.com",
     "enjoytokyo.jp",
     "akibablog.blog.jp",
+    # 日本語アニメ感想・オタクカルチャー系
+    "kansou.me",
+    "moguravr.com",
 )
 
 JSON_BLOCK_RE = re.compile(r"```(?:json)?\s*([\s\S]*?)\s*```", re.IGNORECASE)

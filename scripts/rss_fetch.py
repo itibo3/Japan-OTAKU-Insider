@@ -396,6 +396,9 @@ def main():
 
     all_new_items = []
     for source in rss_sources:
+        if source.get("disabled"):
+            print(f"  [{source['id']}] disabled=true のためスキップ")
+            continue
         items = fetch_source(
             source,
             existing_entries,
