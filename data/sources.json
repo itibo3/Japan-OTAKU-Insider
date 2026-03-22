@@ -309,7 +309,8 @@
                 "good-smile"
             ],
             "language": "ja",
-            "update_frequency": "daily"
+            "update_frequency": "daily",
+            "disabled": true
         },
         {
             "id": "hobby-watch",
@@ -422,7 +423,8 @@
                 "newscast-jp"
             ],
             "language": "ja",
-            "update_frequency": "daily"
+            "update_frequency": "daily",
+            "disabled": true
         },
         {
             "id": "nijimen-kusuguru-co-jp",
