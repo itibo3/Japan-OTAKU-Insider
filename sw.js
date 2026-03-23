@@ -1,12 +1,15 @@
-const CACHE_NAME = 'otaku-insider-v3';
+const CACHE_NAME = 'otaku-insider-v4';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './about.html',
+  './privacy.html',
+  './contact.html',
   './css/style.css',
   './js/app.js',
   './js/render.js',
   './js/search.js',
+  './js/menu.js',
   './data/entries.json',
   './manifest.json'
 ];
@@ -60,7 +63,7 @@ self.addEventListener('activate', event => {
     caches.keys().then(keys => {
       return Promise.all(
         keys.filter(key => key !== CACHE_NAME)
-            .map(key => caches.delete(key))
+          .map(key => caches.delete(key))
       );
     })
   );

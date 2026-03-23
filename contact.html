@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Japan OTAKU Insider</title>
+    <meta name="description" content="Contact Japan OTAKU Insider — send us a message or reach out via email.">
+    <meta property="og:title" content="Contact - Japan OTAKU Insider">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itibo3.github.io/Japan-OTAKU-Insider/contact.html">
+    <meta name="robots" content="noindex, follow">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Japan-OTAKU-Insider/css/style.css">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BP25JGCEGY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-BP25JGCEGY');
+    </script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="/Japan-OTAKU-Insider/index.html" class="logo">
+            <img src="/Japan-OTAKU-Insider/icons/icon-192.png" alt="Japan OTAKU Insider" class="logo-icon">
+            <div class="logo-text">Japan <span>OTAKU</span> Insider <small
+                    style="font-size:11px;font-weight:400;color:var(--text-dim);vertical-align:super">&beta;</small>
+            </div>
+        </a>
+        <nav class="nav">
+            <a href="/Japan-OTAKU-Insider/index.html" class="nav-btn">Database</a>
+            <a href="/Japan-OTAKU-Insider/about.html" class="nav-btn">About</a>
+        </nav>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- モバイルメニューオーバーレイ -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- スライドインメニュー -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+        <div class="mobile-menu-header">
+            <span class="mobile-menu-logo">Japan <span>OTAKU</span> Insider</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="/Japan-OTAKU-Insider/index.html" class="mobile-menu-item">
+                <span class="menu-icon">🏠</span> Home
+            </a>
+            <a href="/Japan-OTAKU-Insider/about.html" class="mobile-menu-item">
+                <span class="menu-icon">ℹ️</span> About
+            </a>
+            <a href="https://x.com/JPOTAKU_Insider" target="_blank" rel="noopener noreferrer" class="mobile-menu-item">
+                <span class="menu-icon">𝕏</span> Follow on X
+            </a>
+            <a href="/Japan-OTAKU-Insider/privacy.html" class="mobile-menu-item">
+                <span class="menu-icon">🔒</span> Privacy Policy
+            </a>
+            <a href="/Japan-OTAKU-Insider/contact.html" class="mobile-menu-item active">
+                <span class="menu-icon">✉️</span> Contact
+            </a>
+        </nav>
+        <div class="mobile-menu-footer">
+            Japan OTAKU Insider &copy; 2026
+        </div>
+    </div>
+
+    <main class="page-content">
+        <h1>Contact</h1>
+        <p class="page-subtitle">Have a question, suggestion, or feedback? We'd love to hear from you.</p>
+
+        <!-- Google Form iframe -->
+        <div class="contact-form-card">
+            <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 14px;">
+                Please fill in the form below. All fields are optional except the message.
+            </p>
+            <!-- TODO: Google フォームURLをここに設定してください -->
+            <!-- 現在はプレースホルダーです。以下の src を実際のGoogleフォームURLに置き換えてください -->
+            <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID_HERE/viewform?embedded=true"
+                title="Contact Form" frameborder="0" marginheight="0" marginwidth="0" loading="lazy">
+                Loading contact form...
+            </iframe>
+        </div>
+
+        <!-- メール代替 -->
+        <div class="contact-alt">
+            <p>Prefer to reach out directly? You can also send us an email.</p>
+            <a href="mailto:contact@example.com" class="mailto-btn">
+                ✉️ Send Email
+            </a>
+        </div>
+
+        <h2>Follow Us on X</h2>
+        <p>
+            For the latest news and updates, follow us on X:<br>
+            <a href="https://x.com/JPOTAKU_Insider" target="_blank" rel="noopener noreferrer"
+                style="font-size:16px;font-weight:700;">𝕏 @JPOTAKU_Insider</a>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="/Japan-OTAKU-Insider/privacy.html">Privacy Policy</a>
+            <a href="/Japan-OTAKU-Insider/contact.html">Contact</a>
+            <a href="https://x.com/JPOTAKU_Insider" target="_blank" rel="noopener noreferrer" class="footer-x-link">𝕏
+                @JPOTAKU_Insider</a>
+        </div>
+        Japan OTAKU Insider &copy; 2026 — Built by <a href="#">ichibo</a> | Your insider source for Japanese otaku
+        culture
+    </footer>
+
+    <script src="/Japan-OTAKU-Insider/js/menu.js"></script>
+
+</body>
+
+</html>

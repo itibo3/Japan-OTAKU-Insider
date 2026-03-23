@@ -1,3 +1,8 @@
+function sanitizeMd(str) {
+    if (!str) return str;
+    return str.replace(/\*\*/g, '');
+}
+
 function getCategories(entry) {
     if (Array.isArray(entry && entry.categories)) return entry.categories.filter(Boolean);
     if (entry && entry.category) return [entry.category];
@@ -93,7 +98,7 @@ function renderCardHtml(item) {
           <span class="card-status ${statusClass}">${statusLabel}</span>
           ${categoryPills}
         </div>
-        <div class="card-title">${item.title}</div>
+        <div class="card-title">${sanitizeMd(item.title)}</div>
         <div class="card-meta">
           ${datesDisplay ? `<div class="meta-row"><span class="meta-label">Dates</span><span class="meta-value">${datesDisplay}</span></div>` : ''}
           ${item.price ? `<div class="meta-row"><span class="meta-label">Price</span><span class="meta-value">${item.price}</span></div>` : ''}
@@ -187,7 +192,7 @@ function openModal(id) {
     const accessDisplay = item.location && typeof item.location === 'object' ? item.location.access : item.access;
     const sourceUrl = item.source && typeof item.source === 'object' ? item.source.url : item.source;
 
-    if (item.description) sections += `<div class="modal-section"><div class="modal-section-title">Overview</div><div class="modal-section-content">${item.description}</div></div>`;
+    if (item.description) sections += `<div class="modal-section"><div class="modal-section-title">Overview</div><div class="modal-section-content">${sanitizeMd(item.description)}</div></div>`;
     if (datesDisplay) sections += `<div class="modal-section"><div class="modal-section-title">Dates</div><div class="modal-section-content">${datesDisplay}</div></div>`;
     if (locationDisplay) sections += `<div class="modal-section"><div class="modal-section-title">Location</div><div class="modal-section-content">${locationDisplay}</div></div>`;
     if (accessDisplay) sections += `<div class="modal-section"><div class="modal-section-title">Access</div><div class="modal-section-content">${accessDisplay}</div></div>`;
@@ -219,7 +224,7 @@ function openModal(id) {
     document.getElementById('modal').innerHTML = `
     <button class="modal-close" onclick="closeModal()">&times;</button>
     ${modalCategoriesHtml}
-    <div class="modal-title">${item.title}</div>
+    <div class="modal-title">${sanitizeMd(item.title)}</div>
     ${item.thumbnail ? `<img class="modal-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy" referrerpolicy="no-referrer">` : ''}
     ${sections}
     ${journeyHtml}

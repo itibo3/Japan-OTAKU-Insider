@@ -65,7 +65,43 @@
             <a href="/Japan-OTAKU-Insider/index.html" class="nav-btn active">Database</a>
             <a href="/Japan-OTAKU-Insider/about.html" class="nav-btn">About</a>
         </nav>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
+
+    <!-- モバイルメニューオーバーレイ -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- スライドインメニュー -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+        <div class="mobile-menu-header">
+            <span class="mobile-menu-logo">Japan <span>OTAKU</span> Insider</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="/Japan-OTAKU-Insider/index.html" class="mobile-menu-item active">
+                <span class="menu-icon">🏠</span> Home
+            </a>
+            <a href="/Japan-OTAKU-Insider/about.html" class="mobile-menu-item">
+                <span class="menu-icon">ℹ️</span> About
+            </a>
+            <a href="https://x.com/JPOTAKU_Insider" target="_blank" rel="noopener noreferrer" class="mobile-menu-item">
+                <span class="menu-icon">𝕏</span> Follow on X
+            </a>
+            <a href="/Japan-OTAKU-Insider/privacy.html" class="mobile-menu-item">
+                <span class="menu-icon">🔒</span> Privacy Policy
+            </a>
+            <a href="/Japan-OTAKU-Insider/contact.html" class="mobile-menu-item">
+                <span class="menu-icon">✉️</span> Contact
+            </a>
+        </nav>
+        <div class="mobile-menu-footer">
+            Japan OTAKU Insider &copy; 2026
+        </div>
+    </div>
 
     <div class="search-bar">
         <input type="text" class="search-input" placeholder="Search events, figures, cafes..." id="searchInput">
@@ -101,13 +137,18 @@
     </div>
 
     <footer class="footer">
-        Japan OTAKU Insider &copy; 2026 — Built by <a href="#">ichibo</a> | Your insider source for Japanese otaku
-        culture
+        <div class="footer-links">
+            <a href="/Japan-OTAKU-Insider/privacy.html">Privacy Policy</a>
+            <a href="/Japan-OTAKU-Insider/contact.html">Contact</a>
+            <a href="https://x.com/JPOTAKU_Insider" target="_blank" rel="noopener noreferrer" class="footer-x-link">𝕏 @JPOTAKU_Insider</a>
+        </div>
+        Japan OTAKU Insider &copy; 2026 — Built by <a href="#">ichibo</a> | Your insider source for Japanese otaku culture
     </footer>
 
     <script src="/Japan-OTAKU-Insider/js/render.js"></script>
     <script src="/Japan-OTAKU-Insider/js/search.js"></script>
     <script src="/Japan-OTAKU-Insider/js/app.js"></script>
+    <script src="/Japan-OTAKU-Insider/js/menu.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./sw.js')

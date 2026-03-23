@@ -8,7 +8,8 @@
 
     <!-- OpenGraph / Twitter Card -->
     <meta property="og:title" content="About - Japan OTAKU Insider">
-    <meta property="og:description" content="Your insider database of Japanese otaku culture. Collab cafes, figures, anime events, and more — updated daily from Japan.">
+    <meta property="og:description"
+        content="Your insider database of Japanese otaku culture. Collab cafes, figures, anime events, and more — updated daily from Japan.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://itibo3.github.io/Japan-OTAKU-Insider/about.html">
     <meta property="og:image" content="https://itibo3.github.io/Japan-OTAKU-Insider/icons/og-image.png">
@@ -16,7 +17,8 @@
     <meta name="twitter:title" content="About - Japan OTAKU Insider">
     <meta name="twitter:description" content="Your insider database of Japanese otaku culture.">
     <meta name="twitter:image" content="https://itibo3.github.io/Japan-OTAKU-Insider/icons/og-image.png">
-    <meta name="description" content="About Japan OTAKU Insider — your English-language database for Japanese otaku culture including collab cafes, figures, anime, VTuber, and game news.">
+    <meta name="description"
+        content="About Japan OTAKU Insider — your English-language database for Japanese otaku culture including collab cafes, figures, anime, VTuber, and game news.">
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;700&display=swap"
         rel="stylesheet">
@@ -41,6 +43,72 @@
         .about-content li {
             margin-bottom: 8px;
         }
+
+        /* About 強化セクション用カード */
+        .about-stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .about-stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-stat-card .stat-num {
+            font-size: 32px;
+            font-weight: 900;
+            color: var(--accent-cyan);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .about-stat-card .stat-label {
+            font-size: 12px;
+            color: var(--text-dim);
+        }
+
+        .about-follow-block {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--bg-card);
+            border: 1px solid rgba(0, 204, 255, 0.2);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+
+        .about-follow-block .x-handle {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .about-follow-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 20px;
+            background: var(--accent-cyan);
+            color: #000;
+            font-weight: 700;
+            font-size: 13px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+            margin-left: auto;
+        }
+
+        .about-follow-btn:hover {
+            opacity: 0.85;
+        }
     </style>
 
     <!-- Google Analytics 4 -->
@@ -59,24 +127,87 @@
     <header class="header">
         <a href="/Japan-OTAKU-Insider/index.html" class="logo">
             <img src="/Japan-OTAKU-Insider/icons/icon-192.png" alt="Japan OTAKU Insider" class="logo-icon">
-            <div class="logo-text">Japan <span>OTAKU</span> Insider <small style="font-size:11px;font-weight:400;color:var(--text-dim);vertical-align:super">&beta;</small></div>
+            <div class="logo-text">Japan <span>OTAKU</span> Insider <small
+                    style="font-size:11px;font-weight:400;color:var(--text-dim);vertical-align:super">&beta;</small>
+            </div>
         </a>
         <nav class="nav">
             <a href="/Japan-OTAKU-Insider/index.html" class="nav-btn">Database</a>
             <a href="/Japan-OTAKU-Insider/about.html" class="nav-btn active">About</a>
         </nav>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
+
+    <!-- モバイルメニューオーバーレイ -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- スライドインメニュー -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+        <div class="mobile-menu-header">
+            <span class="mobile-menu-logo">Japan <span>OTAKU</span> Insider</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="/Japan-OTAKU-Insider/index.html" class="mobile-menu-item">
+                <span class="menu-icon">🏠</span> Home
+            </a>
+            <a href="/Japan-OTAKU-Insider/about.html" class="mobile-menu-item active">
+                <span class="menu-icon">ℹ️</span> About
+            </a>
+            <a href="https://x.com/JPOTAKU_Insider" target="_blank" rel="noopener noreferrer" class="mobile-menu-item">
+                <span class="menu-icon">𝕏</span> Follow on X
+            </a>
+            <a href="/Japan-OTAKU-Insider/privacy.html" class="mobile-menu-item">
+                <span class="menu-icon">🔒</span> Privacy Policy
+            </a>
+            <a href="/Japan-OTAKU-Insider/contact.html" class="mobile-menu-item">
+                <span class="menu-icon">✉️</span> Contact
+            </a>
+        </nav>
+        <div class="mobile-menu-footer">
+            Japan OTAKU Insider &copy; 2026
+        </div>
+    </div>
 
     <main class="about-content">
         <h1>About Japan OTAKU Insider</h1>
-        <p>Japan OTAKU Insider is a free, English-language database that tracks Japanese otaku culture in near real-time.
+        <p>Japan OTAKU Insider is a free, English-language database that tracks Japanese otaku culture in near
+            real-time.
             Built for overseas fans who want to stay up to date without reading Japanese.</p>
+
+        <h2>About This Project</h2>
+        <p>Japan OTAKU Insider is an AI-powered personal media project dedicated to bringing the latest Japanese otaku
+            culture to a global audience — automatically, every single day.</p>
+
+        <div class="about-stat-grid">
+            <div class="about-stat-card">
+                <span class="stat-num">652+</span>
+                <span class="stat-label">Entries &amp; counting</span>
+            </div>
+            <div class="about-stat-card">
+                <span class="stat-num">21</span>
+                <span class="stat-label">RSS sources monitored</span>
+            </div>
+            <div class="about-stat-card">
+                <span class="stat-num">2×</span>
+                <span class="stat-label">Daily updates</span>
+            </div>
+            <div class="about-stat-card">
+                <span class="stat-num">7</span>
+                <span class="stat-label">Categories covered</span>
+            </div>
+        </div>
 
         <h2>What We Cover</h2>
         <p>Articles are sorted into 7 categories:</p>
         <ul>
             <li><strong>Collab Cafes:</strong> Anime/game-themed pop-up cafes and restaurants across Japan.</li>
-            <li><strong>Figures:</strong> Nendoroids, scale figures, prize figures, model kits, and merchandise announcements.</li>
+            <li><strong>Figures:</strong> Nendoroids, scale figures, prize figures, model kits, and merchandise
+                announcements.</li>
             <li><strong>Events:</strong> AnimeJapan, Comiket, exhibitions, and other otaku events.</li>
             <li><strong>Anime News:</strong> New series, adaptations, broadcast schedules, and industry updates.</li>
             <li><strong>VTuber:</strong> Virtual YouTuber news, live events, and collaborations.</li>
@@ -84,34 +215,71 @@
             <li><strong>OTAKU NEWS:</strong> Akihabara reports, cross-category otaku culture news, and more.</li>
         </ul>
 
+        <h2>Data Sources</h2>
+        <p>All content is collected automatically from 21 Japanese RSS feeds — entirely sourced from Japanese-language
+            primary sources, including Natalie, 4Gamer, Amiami, Collabo Cafe, Dengeki Hobby, MoguLive VR, and more.
+            Additional stories are surfaced by an AI-powered search layer covering topics that RSS feeds may miss.</p>
+        <ul>
+            <li>27 sources registered in total</li>
+            <li>21 sources via RSS (fully automated)</li>
+            <li>6 sources via AI-powered search (Perplexity AI)</li>
+            <li>All original articles are in Japanese — content is machine-translated via DeepL API</li>
+        </ul>
+
+        <h2>Update Frequency</h2>
+        <p>The database is updated <strong>twice a day</strong> — once in the morning and once in the evening (Japan
+            Standard Time). Each update cycle fetches new articles, translates them, extracts thumbnails, and publishes
+            them automatically via GitHub Actions.</p>
+
         <h2>How It Works</h2>
         <p>Every day, a fully automated pipeline collects, translates, and publishes articles:</p>
         <ul>
-            <li><strong>RSS collection:</strong> 21 Japanese RSS feeds are fetched automatically (Natalie, 4Gamer, Amiami, Collabo Cafe, Dengeki Hobby, MoguLive VR, and more).</li>
-            <li><strong>AI-powered search:</strong> Perplexity AI searches 6 topic areas to catch stories that RSS misses.</li>
+            <li><strong>RSS collection:</strong> 21 Japanese RSS feeds are fetched automatically (Natalie, 4Gamer,
+                Amiami, Collabo Cafe, Dengeki Hobby, MoguLive VR, and more).</li>
+            <li><strong>AI-powered search:</strong> Perplexity AI searches 6 topic areas to catch stories that RSS
+                misses.</li>
             <li><strong>Translation:</strong> DeepL API translates titles and descriptions into English.</li>
             <li><strong>Thumbnails:</strong> Article images are extracted from each source page automatically.</li>
-            <li><strong>Publishing:</strong> Everything is committed to GitHub and deployed to this site via GitHub Pages &mdash; zero server cost.</li>
+            <li><strong>Publishing:</strong> Everything is committed to GitHub and deployed to this site via GitHub
+                Pages &mdash; zero server cost.</li>
         </ul>
-        <p>27 sources are registered in total. 6 sources without RSS feeds are covered by the AI search layer.</p>
 
         <h2>Tech Stack</h2>
         <ul>
             <li>Static site on GitHub Pages (HTML / CSS / Vanilla JS)</li>
             <li>Data stored in a single JSON file (<code>entries.json</code>)</li>
             <li>Daily updates via GitHub Actions (RSS + Perplexity + DeepL + auto-commit)</li>
-            <li>New articles posted to <a href="https://x.com/" style="color:var(--accent-cyan)">X (Twitter)</a> automatically</li>
+            <li>New articles posted to <a href="https://x.com/JPOTAKU_Insider" style="color:var(--accent-cyan)">X
+                    (Twitter)</a> automatically</li>
         </ul>
+
+        <h2>Follow Us</h2>
+        <p>Stay up to date with the latest Japanese otaku news delivered straight to your feed.</p>
+        <div class="about-follow-block">
+            <span class="x-handle">𝕏 @JPOTAKU_Insider</span>
+            <a href="https://x.com/JPOTAKU_Insider" target="_blank" rel="noopener noreferrer" class="about-follow-btn">
+                Follow on X &rarr;
+            </a>
+        </div>
 
         <h2>Disclaimer</h2>
         <p>All information is aggregated from publicly available sources and translated/summarized with the help of AI.
-            Please verify details via the source links on each entry. We are not affiliated with any of the listed sources or publishers.</p>
+            Please verify details via the source links on each entry. We are not affiliated with any of the listed
+            sources or publishers.</p>
     </main>
 
     <footer class="footer">
+        <div class="footer-links">
+            <a href="/Japan-OTAKU-Insider/privacy.html">Privacy Policy</a>
+            <a href="/Japan-OTAKU-Insider/contact.html">Contact</a>
+            <a href="https://x.com/JPOTAKU_Insider" target="_blank" rel="noopener noreferrer" class="footer-x-link">𝕏
+                @JPOTAKU_Insider</a>
+        </div>
         Japan OTAKU Insider &copy; 2026 — Built by <a href="#">ichibo</a> | Your insider source for Japanese otaku
         culture
     </footer>
+
+    <script src="/Japan-OTAKU-Insider/js/menu.js"></script>
 
 </body>
 
