@@ -9,7 +9,7 @@ function getCategories(entry) {
 
 async function loadDatabase() {
   try {
-    const response = await fetch('/Japan-OTAKU-Insider/data/entries.json');
+    const response = await fetch('/data/entries.json');
     const db = await response.json();
     dbMeta = {
       last_updated: db.last_updated,
