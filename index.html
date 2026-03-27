@@ -58,12 +58,21 @@
 <body>
 
     <header class="header">
-        <a href="/index.html" class="logo">
-            <img src="/icons/icon-192.png" alt="Japan OTAKU Insider" class="logo-icon">
-            <div class="logo-text">Japan <span>OTAKU</span> Insider <small
-                    style="font-size:11px;font-weight:400;color:var(--text-dim);vertical-align:super">&beta;</small>
+        <div class="header-start">
+            <a href="/index.html" class="logo">
+                <img src="/icons/icon-192.png" alt="Japan OTAKU Insider" class="logo-icon">
+                <div class="logo-text">Japan <span>OTAKU</span> Insider <small
+                        style="font-size:11px;font-weight:400;color:var(--text-dim);vertical-align:super">&beta;</small><span
+                        id="langBadge" class="lang-badge"></span>
+                </div>
+            </a>
+            <!-- EN/JP 言語トグル：タイトルの隣 -->
+            <div class="lang-toggle" id="langToggle" title="Switch language">
+                <span class="lang-opt" id="langEN">EN</span>
+                <span class="lang-opt" id="langJP">JP</span>
+                <div class="lang-slider" id="langSlider"></div>
             </div>
-        </a>
+        </div>
         <nav class="nav">
             <a href="/index.html" class="nav-btn active">Database</a>
             <a href="/about.html" class="nav-btn">About</a>
@@ -74,6 +83,7 @@
             <span></span>
         </button>
     </header>
+
 
     <!-- モバイルメニューオーバーレイ -->
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>

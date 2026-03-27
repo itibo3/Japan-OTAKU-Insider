@@ -34,11 +34,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   position: sticky;
   top: 0;
   background: rgba(10, 10, 15, 0.95);
   backdrop-filter: blur(10px);
   z-index: 100;
+}
+
+/* ロゴ + トグルをまとめる左グループ */
+.header-start {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* (JP) バッジ */
+.lang-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  margin-left: 4px;
+  vertical-align: super;
+  letter-spacing: 0.3px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.lang-badge.visible {
+  opacity: 1;
 }
 
 .logo {
@@ -579,7 +604,9 @@ body {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .empty-state {
@@ -643,7 +670,23 @@ body {
   }
 
   .header {
-    padding: 12px 16px;
+    padding: 12px 14px;
+    gap: 8px;
+  }
+
+  /* モバイルでロゴテキスト非表示（アイコンだけ残す） */
+  .logo-text {
+    display: none;
+  }
+
+  /* モバイルでのトグルサイズを少し小さく */
+  .lang-toggle {
+    padding: 2px;
+  }
+
+  .lang-opt {
+    padding: 4px 8px;
+    font-size: 10px;
   }
 
   /* 検索バーのパディング調整 */
@@ -872,6 +915,7 @@ body {
     display: flex;
   }
 }
+
 /* =========================================================== */
 
 /* ===================== Footer Links ===================== */
@@ -1025,4 +1069,59 @@ body {
     min-height: 600px;
   }
 }
+
 /* =========================================================== */
+
+/* ===================== Lang Toggle ===================== */
+.lang-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px;
+  cursor: pointer;
+  user-select: none;
+  flex-shrink: 0;
+  transition: border-color 0.2s;
+}
+
+.lang-toggle:hover {
+  border-color: var(--accent-cyan);
+}
+
+.lang-opt {
+  position: relative;
+  z-index: 1;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-dim);
+  transition: color 0.2s;
+  border-radius: 16px;
+  line-height: 1;
+}
+
+.lang-opt.active {
+  color: var(--bg-primary);
+}
+
+.lang-slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: calc(50% - 3px);
+  height: calc(100% - 6px);
+  background: var(--accent-cyan);
+  border-radius: 16px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+
+.lang-toggle.jp .lang-slider {
+  transform: translateX(100%);
+}
+
+/* ======================================================= */

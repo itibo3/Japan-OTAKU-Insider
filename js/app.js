@@ -1,5 +1,6 @@
 let dbEntries = [];
 let dbMeta = {};
+let currentLang = localStorage.getItem('otaku_lang') || 'en'; // 'en' or 'ja'
 
 function getCategories(entry) {
   if (Array.isArray(entry && entry.categories)) return entry.categories.filter(Boolean);
@@ -7,9 +8,10 @@ function getCategories(entry) {
   return [];
 }
 
-async function loadDatabase() {
+async function loadDatabase(lang) {
+  const url = (lang === 'ja') ? '/data/entries_ja.json' : '/data/entries.json';
   try {
-    const response = await fetch('/data/entries.json');
+    const response = await fetch(url);
     const db = await response.json();
     dbMeta = {
       last_updated: db.last_updated,
@@ -44,13 +46,67 @@ function updateStats() {
     `;
 }
 
+// --- 言語トグルUI ---
+function applyLangToggleUI(lang) {
+  const toggle = document.getElementById('langToggle');
+  const enOpt = document.getElementById('langEN');
+  const jpOpt = document.getElementById('langJP');
+  const badge = document.getElementById('langBadge');
+  if (!toggle) return;
+  if (lang === 'ja') {
+    toggle.classList.add('jp');
+    enOpt.classList.remove('active');
+    jpOpt.classList.add('active');
+    if (badge) { badge.textContent = '(JP)'; badge.classList.add('visible'); }
+  } else {
+    toggle.classList.remove('jp');
+    enOpt.classList.add('active');
+    jpOpt.classList.remove('active');
+    if (badge) { badge.textContent = ''; badge.classList.remove('visible'); }
+  }
+}
+
+async function switchLang(lang) {
+  if (lang === currentLang) return;
+  currentLang = lang;
+  localStorage.setItem('otaku_lang', lang);
+  applyLangToggleUI(lang);
+
+  const grid = document.getElementById('cardsGrid');
+  if (grid) {
+    grid.innerHTML = '<div class="loading-spinner"><div class="spinner"></div><p>Loading...</p></div>';
+  }
+  dbEntries = await loadDatabase(lang);
+  if (grid) {
+    if (dbEntries.length === 0) {
+      grid.innerHTML = '<div class="empty-state">Failed to load entries.</div>';
+    } else {
+      updateStats();
+      renderCards('all', '');
+      setupFilters();
+      setupSearch();
+    }
+  }
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   const grid = document.getElementById('cardsGrid');
   if (grid) {
     grid.innerHTML = '<div class="loading-spinner"><div class="spinner"></div><p>Loading entries...</p></div>';
   }
 
-  dbEntries = await loadDatabase();
+  // トグル初期状態を適用
+  applyLangToggleUI(currentLang);
+
+  // トグルクリックイベント
+  const toggle = document.getElementById('langToggle');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      switchLang(currentLang === 'en' ? 'ja' : 'en');
+    });
+  }
+
+  dbEntries = await loadDatabase(currentLang);
 
   if (grid) {
     if (dbEntries.length === 0) {

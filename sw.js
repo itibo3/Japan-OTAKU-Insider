@@ -1,4 +1,4 @@
-const CACHE_NAME = 'otaku-insider-v4';
+const CACHE_NAME = 'otaku-insider-v5';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -11,11 +11,13 @@ const ASSETS_TO_CACHE = [
   './js/search.js',
   './js/menu.js',
   './data/entries.json',
+  './data/entries_ja.json',
   './manifest.json'
 ];
 
 // インストール時にキャッシュ
 self.addEventListener('install', event => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => cache.addAll(ASSETS_TO_CACHE))
@@ -65,6 +67,6 @@ self.addEventListener('activate', event => {
         keys.filter(key => key !== CACHE_NAME)
           .map(key => caches.delete(key))
       );
-    })
+    }).then(() => self.clients.claim())
   );
 });
