@@ -30,7 +30,7 @@ CATEGORIES = ("cafe", "vtuber", "figure", "game", "anime", "other")
 
 # 検索結果から除外するドメイン（英語圏の旅行・アグリゲーター・ゲームメディア等）
 # _EXCLUDED_RAW: 全件。_is_excluded_url() の後処理フィルタで使用（件数制限なし）
-# EXCLUDED_DOMAINS: API の search_domain_filter 用。上限 30 件のため頻出ドメインを優先
+# EXCLUDED_DOMAINS: API の search_domain_filter 用。上限 20 件のため頻出ドメインを優先
 _EXCLUDED_RAW = (
     # 旅行・観光系（英語圏）
     "japantravel.com",
@@ -78,9 +78,9 @@ _EXCLUDED_RAW = (
     # RSS で賄えるドメイン（重複防止）
     "moguravr.com",
 )
-# Perplexity API の search_domain_filter は最大 30 件。
+# Perplexity API の search_domain_filter は最大 20 件。
 # 頻出ドメイン（旅行系＋主要英語ゲームメディア）を優先し、残りは _is_excluded_url() で後処理除外。
-_API_EXCLUDED_MAX = 30
+_API_EXCLUDED_MAX = 20
 EXCLUDED_DOMAINS = tuple(f"-{d}" for d in _EXCLUDED_RAW[:_API_EXCLUDED_MAX])
 
 # 英語サイトでも許可する既知の日本サイト（ホワイトリスト）
