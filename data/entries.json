@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-30T20:10:44.615152+09:00",
-  "total_entries": 2142,
+  "last_updated": "2026-03-31T08:01:04.705024+09:00",
+  "total_entries": 2215,
   "entries": [
     {
       "id": "figure-20260319-rss-f460c4",
@@ -71,6 +71,49 @@
       "thumbnail": "https://i0.wp.com/www.igda.jp/wp-content/uploads/2026/03/short.png?resize=382%2C100&ssl=1"
     },
     {
+      "id": "game-202603310800-pplx-8ae65c",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] あなたは手紙。本当の受取人を求めて世界を旅する…3DACT『Origament: A Paper Adventure』4月7日発売決定",
+      "title_ja": "あなたは手紙。本当の受取人を求めて世界を旅する…3DACT『Origament: A Paper Adventure』4月7日発売決定",
+      "description": "[未翻訳] Space Sauce StudioのPC（Steam）用『Origament: A Paper Adventure』（オリガメント ペーパーアドベンチャー）が2026年4月7日に発売。折り紙ならぬ手紙として飛んだり転がったりする3Dアクションアドベンチャー。日本語対応。",
+      "source": {
+        "url": "https://www.famitsu.com/article/202603/70327"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-07"
+      },
+      "location": "PC (Steam)",
+      "thumbnail": "https://cimg.kgl-systems.io/camion/files/70327/thumbnail_Mhhi.jpg?x=1280"
+    },
+    {
+      "id": "cafe-202603310800-pplx-2c8c4c",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 新宿にアニメポップアップストアが今週オープン",
+      "title_ja": "新宿にアニメポップアップストアが今週オープン",
+      "description": "[未翻訳] 新宿アルタ前で3月31日スタートのポップアップストア。最新グッズとミニイベント付き。夜遅くまで営業で通勤帰りにも便利。",
+      "source": {
+        "url": "https://shinjuku-anime-store.jp/popup"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-31 〜 2026-04-07"
+      },
+      "location": "東京・新宿"
+    },
+    {
       "id": "figure-202603302009-pplx-2cfbce",
       "categories": [
         "figure"
@@ -90,6 +133,588 @@
         "display": "2026-03-30 to 2026-04-05"
       },
       "location": "日本"
+    },
+    {
+      "id": "cafe-202603310800-pplx-7b798a",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 池袋新イベントポップアップストアスタート",
+      "title_ja": "池袋新イベントポップアップストアスタート",
+      "description": "[未翻訳] 池袋西口公園で3月31日よりゲームコラボポップアップ。無料参加型イベントあり、家族連れ歓迎の新オープン。",
+      "source": {
+        "url": "https://ikebukuro-eventpark.jp/popup"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-31 〜 2026-04-05"
+      },
+      "location": "東京・池袋"
+    },
+    {
+      "id": "anime-202603310759-rss-fed838",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 「ゴールデンカムイ」最終章の完結描く「暴走列車編」今冬開幕、ティザービジュアル公開",
+      "title_ja": "「ゴールデンカムイ」最終章の完結描く「暴走列車編」今冬開幕、ティザービジュアル公開",
+      "dates": {},
+      "description": "[未翻訳] 野田サトル原作によるTVアニメ「ゴールデンカムイ」最終章より、「暴走列車編」が今冬開幕。ティザービジュアルが公開された。",
+      "source": {
+        "url": "https://natalie.mu/comic/news/666264"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0330/00_GK_train_visual.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202603310759-rss-fca760",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【2026年3月31日】本日発売のマンガ単行本リスト",
+      "title_ja": "【2026年3月31日】本日発売のマンガ単行本リスト",
+      "dates": {},
+      "description": "[未翻訳] コミックナタリーより、本日2026年3月31日に発売される単行本をお知らせいたします。本日発売の雑誌リストはこちらから。",
+      "source": {
+        "url": "https://natalie.mu/comic/news/661745"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/artist/1783/20160721/annomoyoco.jpg?impolicy=thumb_fit&width=180&height=180",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202603310759-rss-d340cb",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 若本規夫が「日清のどん兵衛」新CMで出汁の味わい表現、吉岡里帆のどんぎつね再び",
+      "title_ja": "若本規夫が「日清のどん兵衛」新CMで出汁の味わい表現、吉岡里帆のどんぎつね再び",
+      "dates": {},
+      "description": "[未翻訳] 若本規夫がナレーションを務める「日清のどん兵衛」の新CM「帰ってきたどんぎつね 篇」が、4月24日より全国で放送される。放送に先がけ、Webで動画がお目みえした。",
+      "source": {
+        "url": "https://natalie.mu/comic/news/666248"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0330/donbe_cm_dongitsune_00005.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202603310759-rss-6e84d8",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 映画「キングダム」春申君役は斎藤工　呉鳳明役の田中圭、媧燐役の三吉彩花ら10人出演",
+      "title_ja": "映画「キングダム」春申君役は斎藤工　呉鳳明役の田中圭、媧燐役の三吉彩花ら10人出演",
+      "dates": {},
+      "description": "[未翻訳] 原泰久原作による実写映画「キングダム 魂の決戦」に、斎藤工、勝矢、田中圭、一ノ瀬ワタル、渋谷謙人、宍戸開、結木滉星、三山凌輝、中村蒼、三吉彩花が出演。初解禁となる本編映像を用いた特報映像「合従軍ver」も公開された。",
+      "source": {
+        "url": "https://natalie.mu/comic/news/666261"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0330/kingdom_movie_4_newcast.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202603310759-rss-5236a4",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 「けいおん！」を愛する限り青春は続く！豊崎愛生＆日笠陽子が作品への愛を未来につなぐ",
+      "title_ja": "「けいおん！」を愛する限り青春は続く！豊崎愛生＆日笠陽子が作品への愛を未来につなぐ",
+      "dates": {},
+      "description": "[未翻訳] アニメ「けいおん！」のトークステージが3月29日に東京・東京ビッグサイトで開催された「AnimeJapan 2026」内で行われ、平沢唯役の豊崎愛生、秋山澪役の日笠陽子が登壇した。",
+      "source": {
+        "url": "https://natalie.mu/comic/news/666102"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0330/tbsbooth_keion_main.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202603310759-rss-070ae0",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 明日3月31日（火）発売分のマンガ雑誌リスト",
+      "title_ja": "明日3月31日（火）発売分のマンガ雑誌リスト",
+      "dates": {},
+      "description": "[未翻訳] コミックナタリーより、明日3月31日（火）に発売されるマンガ雑誌をお知らせいたします。",
+      "source": {
+        "url": "https://natalie.mu/comic/news/665466"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2023/0725/defaultimage_zasshilist.jpg?impolicy=twitter_card_face_crop",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "figure-202603310758-rss-fe75bd",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】アオシマのプラモデルが登場！　ランボルギーニなどがラインナップ【2026.4】「バック・トゥ・ザ・フューチャー」タイムマシンや「ワイルド7」飛葉ちゃんの「CB750FOUR」も登場",
+      "title_ja": "【Amazon新生活セールFinal】アオシマのプラモデルが登場！　ランボルギーニなどがラインナップ【2026.4】「バック・トゥ・ザ・フューチャー」タイムマシンや「ワイルド7」飛葉ちゃんの「CB750FOUR」も登場",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セール対象商品に青島文化教材社のプラモデルが追加された。開催期間は4月6日23時59分まで。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095812.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/812/008_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-ead1c2",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】52TOYSのブラインドボックスフィギュア「BLINDBOX」シリーズがお買い得【2026.4】くまのプーさんやトムとジェリーなどがラインナップ",
+      "title_ja": "【Amazon新生活セールFinal】52TOYSのブラインドボックスフィギュア「BLINDBOX」シリーズがお買い得【2026.4】くまのプーさんやトムとジェリーなどがラインナップ",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品に52TOYSのブラインドボックスフィギュア「BLINDBOX」シリーズが追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095770.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/770/010_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-b27ab8",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】タミヤの「ウクライナ軍 レオパルト」「シトロエン11CV」プラモデルが登場【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】タミヤの「ウクライナ軍 レオパルト」「シトロエン11CV」プラモデルが登場【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セール対象商品にタミヤのプラモデルが追加された。開催期間は4月6日23時59分まで。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095822.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/822/003_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-9c77cc",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】レゴブロックがお買い得。「ハリー・ポッター ホグワーツ城：メインタワー」などが登場【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】レゴブロックがお買い得。「ハリー・ポッター ホグワーツ城：メインタワー」などが登場【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品にレゴ(LEGO)ブロックが追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095853.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/853/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-91241a",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】全自動麻雀卓「AMOS JP2」の座卓兼用＆折りたたみタイプがお買い得【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】全自動麻雀卓「AMOS JP2」の座卓兼用＆折りたたみタイプがお買い得【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品にAMOSの全自動麻雀卓が追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2097399.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2097/399/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-828b90",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】aurochsのエアブラシセットや薄型片刃ニッパーがお買い得【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】aurochsのエアブラシセットや薄型片刃ニッパーがお買い得【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品にaurochsの工具が追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095838.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/838/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-7f5e39",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】PLUMブランドのフィギュアがお買い得。「ネコぱら」から「ショコラ～着替えのひと時～」などがラインナップ【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】PLUMブランドのフィギュアがお買い得。「ネコぱら」から「ショコラ～着替えのひと時～」などがラインナップ【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品にPLUMブランドのフィギュアが追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095695.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/695/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-73df9b",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】マルシン工業のモデルガンがお買い得。組み立てキット「COLT XM177E2」などが登場【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】マルシン工業のモデルガンがお買い得。組み立てキット「COLT XM177E2」などが登場【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品にマルシン工業のモデルガンが追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095667.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/667/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-707e25",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】レゴ アイデアシリーズの「ゴッホ 『星月夜』」やTRPG「D&D」のセットなどがお買い得【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】レゴ アイデアシリーズの「ゴッホ 『星月夜』」やTRPG「D&D」のセットなどがお買い得【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品にレゴ アイデアシリーズのセットが追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095986.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/986/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-62aa06",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】ハズブロのトイガン「ナーフ」がお買い得【2026.4】「フォートナイト」に登場する「インサイトフル」ラップを再現した電動ブラスターなどがラインナップ",
+      "title_ja": "【Amazon新生活セールFinal】ハズブロのトイガン「ナーフ」がお買い得【2026.4】「フォートナイト」に登場する「インサイトフル」ラップを再現した電動ブラスターなどがラインナップ",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品にハズブロのトイガン「ナーフ」が追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095709.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/709/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-3d58a5",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】ボーダーモデル「1/350 日本海軍 戦艦 大和」のプラモデルがお買い得！【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】ボーダーモデル「1/350 日本海軍 戦艦 大和」のプラモデルがお買い得！【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セール対象商品にボーダーモデル「1/350 日本海軍 戦艦 大和」が追加された。開催期間は4月6日23時59分まで。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095828.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/828/000_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-2bbb81",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】プラモ塗装に便利なエアブラシ各種がお買い得！【2026.4】トリガー式・コンプレッサー・充電式などがラインナップ",
+      "title_ja": "【Amazon新生活セールFinal】プラモ塗装に便利なエアブラシ各種がお買い得！【2026.4】トリガー式・コンプレッサー・充電式などがラインナップ",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セール対象商品にエアブラシが追加された。開催期間は4月6日23時59分まで。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095793.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/793/013_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-1fefa0",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】「ポルシェ 911GT3 RS」など「レゴ テクニック」シリーズがお買い得【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】「ポルシェ 911GT3 RS」など「レゴ テクニック」シリーズがお買い得【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品に「レゴ (LEGO) テクニック」シリーズが追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095978.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/978/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-15ca27",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】東京マルイのエアガンやオプション製品がセール価格に。エアーリボルバー「M1851 NAVY」などがお買い得【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】東京マルイのエアガンやオプション製品がセール価格に。エアーリボルバー「M1851 NAVY」などがお買い得【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品に東京マルイのエアガンやオプション製品が追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2095678.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2095/678/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202603310758-rss-0f0c3e",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【Amazon新生活セールFinal】Canonのデジタル一眼レフカメラがお買い得。「EOS 60D」や「EOS Kiss X5」がラインナップ【2026.4】",
+      "title_ja": "【Amazon新生活セールFinal】Canonのデジタル一眼レフカメラがお買い得。「EOS 60D」や「EOS Kiss X5」がラインナップ【2026.4】",
+      "dates": {},
+      "description": "[未翻訳] Amazonにて開催されている「Amazon 新生活セール Final」先行セールの対象商品にCanonのデジタル一眼レフカメラが追加された。",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2097214.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2097/214/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "game-202603310757-rss-c95639",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 木を叩き，装備を鍛え，1000層の深淵へ。放置系ダンジョン探索「Horripilant」（ほぼ日 インディーPick Up！）",
+      "title_ja": "木を叩き，装備を鍛え，1000層の深淵へ。放置系ダンジョン探索「Horripilant」（ほぼ日 インディーPick Up！）",
+      "dates": {},
+      "description": "[未翻訳] 本日の「ほぼ日インディーPickUp！」では，放置系のダンジョン探索にポイント＆クリックの謎解きと不気味なホラー演出を掛け合わせた異色のインクリメンタルゲーム「Horripilant」を紹介。記憶を失った老騎士となり，全1000層の地下世界で素材を集め，装備を強化し，深層の恐怖と謎に挑んでいく。",
+      "source": {
+        "url": "https://www.4gamer.net/games/950/G095079/20260329002/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/950/G095079/20260329002/SS/023.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202603310757-rss-b01263",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] ［プレイレポ］広大な世界，膨大な情報量が魅力の「紅の砂漠」で，序盤の詰まりやすいポイントを解説しよう",
+      "title_ja": "［プレイレポ］広大な世界，膨大な情報量が魅力の「紅の砂漠」で，序盤の詰まりやすいポイントを解説しよう",
+      "dates": {},
+      "description": "[未翻訳] 新作アクションアドベンチャー「紅の砂漠」は，オープンワールドという性質上，序盤から触れられる要素が多い。一方，詳しい説明や体験が，メインストーリーなどの進行具体によって開示されるため戸惑うこともある。そこで，ゲーム開始から2章の前後を例に，実際に詰まりやすいポイントを紹介しよう。",
+      "source": {
+        "url": "https://www.4gamer.net/games/484/G048495/20260330037/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/484/G048495/20260330037/SS/021.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202603310757-rss-64354e",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] ［プレイレポ］「Super Meat Boy 3D」試遊会レポート。グロかわいい世界が3Dに進化し，ミートボーイが彼女を救う旅で死にまくる",
+      "title_ja": "［プレイレポ］「Super Meat Boy 3D」試遊会レポート。グロかわいい世界が3Dに進化し，ミートボーイが彼女を救う旅で死にまくる",
+      "dates": {},
+      "description": "[未翻訳] 高難度アクションとして名を馳せる「SuperMeatBoy」シリーズ最新作「SuperMeatBoy3D」の試遊会が北京で開催された。グロテスクでキュートな世界観はそのままに，立体空間へと拡張された本作は，新たな試練を突きつけてくる。試遊会の様子とあわせて，その手触りをレポートしていこう。",
+      "source": {
+        "url": "https://www.4gamer.net/games/917/G091794/20260324023/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/917/G091794/20260324023/SS/002.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202603310757-rss-5ddda5",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 世界崩壊の真実を探るダークファンタジーローグライクACT「Cinderia」，早期アクセス版をSteamで本日リリース",
+      "title_ja": "世界崩壊の真実を探るダークファンタジーローグライクACT「Cinderia」，早期アクセス版をSteamで本日リリース",
+      "dates": {},
+      "description": "[未翻訳] MyACGStudioとNPCEntertainmentは本日（2026年3月30日），新作タイトル「Cinderia」の早期アクセス版を，Steamでリリースする。本作は，魔女が世界を焼き払い，焦土と化した王国を舞台に，黒魔法の余燼や影の侵食に抗う冒険者たちの戦いを描く，ローグライトアクションゲームだ。",
+      "source": {
+        "url": "https://www.4gamer.net/games/988/G098872/20260330047/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/988/G098872/20260330047/SS/002.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202603310757-rss-2261c3",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] クラフトボスと映画「ザ・スーパーマリオギャラクシー・ムービー」が再コラボ。「ボスジャン親子セット」が抽選で当たるチャンス",
+      "title_ja": "クラフトボスと映画「ザ・スーパーマリオギャラクシー・ムービー」が再コラボ。「ボスジャン親子セット」が抽選で当たるチャンス",
+      "dates": {},
+      "description": "[未翻訳] サントリー食品インターナショナルは，「クラフトボス」と映画「ザ・スーパーマリオギャラクシー・ムービー」とのコラボキャンペーン第2弾を本日（2026年3月30日）から5月28日まで開催する。これは，クッパとクッパJr.をモチーフにした「ボスジャン親子セット」が抽選で5名に当たるというものだ。",
+      "source": {
+        "url": "https://www.4gamer.net/games/991/G999103/20260330048/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/991/G999103/20260330048/SS/004.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202603310757-rss-2245f7",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] ハチャメチャな日本を走るカオスなレースゲーム。「Nippon Marathon 2: Daijoubu」，早期アクセス版を日本時間の4月18日にリリース",
+      "title_ja": "ハチャメチャな日本を走るカオスなレースゲーム。「Nippon Marathon 2: Daijoubu」，早期アクセス版を日本時間の4月18日にリリース",
+      "dates": {},
+      "description": "[未翻訳] OnionSoupInteractiveは2026年3月28日，同社が開発中の新作タイトル「NipponMarathon2:Daijoubu」の早期アクセス版を，日本時間の4月18日にSteamでリリースすると発表した。本作は，最大4人のプレイヤーで，日本をテーマにしたハチャメチャなコースを走る，マラソンレースゲームだ。",
+      "source": {
+        "url": "https://www.4gamer.net/games/867/G086706/20260330049/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/867/G086706/20260330049/SS/001.jpg",
+      "_source_id": "4gamer"
     },
     {
       "id": "other-202603210251-pplx-83fbc5",
@@ -112,6 +737,501 @@
       },
       "location": "NMB48 THEATER",
       "thumbnail": "https://image.pia.jp/images/202603/202603150003_ex.png"
+    },
+    {
+      "id": "otaku-news-202603310759-rss-4adad2",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] オタクが選ぶ「坂本真綾が演じるキャラ」ランキングTOP10！1位は『エヴァ』真希波・マリ・イラストリアス【2026年版】",
+      "title_ja": "オタクが選ぶ「坂本真綾が演じるキャラ」ランキングTOP10！1位は『エヴァ』真希波・マリ・イラストリアス【2026年版】",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 「坂本真綾さんといえば？」ランキングTOP10【アンケート結果】 第1位：『ヱヴァンゲリヲン新劇場版:破』真希波・マリ・イラストリアス 106票 引用：『ヱヴァンゲリヲン』公式X ©カラー &#160; &#160; 第2位：『Re:ゼロか&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/609701"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/03/featured.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202603310757-rss-f4fb55",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] グッズの“ランダム商法”にファンは疲弊？業界でマイナス意見が「届かない」懸念、意識調査の動き",
+      "title_ja": "グッズの“ランダム商法”にファンは疲弊？業界でマイナス意見が「届かない」懸念、意識調査の動き",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] キャラクタービジネスなどを展開する株式会社Hamaru Strategyは30日、アニメを中心とするグッズ市場のうち「ランダム販売」に関する消費者意識調査を実施している。4月3日まで受け付けており、X上での公開から24時...",
+      "source": {
+        "url": "https://0115765.com/archives/177921"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/03/0330-61uccemi-830x1024.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202603310757-rss-248b92",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 昨年秋アニメが3ヶ月ぶり放送！『千歳くんはラムネ瓶のなか』前半クール、31日に完結【先行カット】",
+      "title_ja": "昨年秋アニメが3ヶ月ぶり放送！『千歳くんはラムネ瓶のなか』前半クール、31日に完結【先行カット】",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 2025年10月からTOKYO MXほかにて放送されたTVアニメ『千歳くんはラムネ瓶のなか』について、本日3月31日（火）より、放送延期となっていたエピソードの一挙放送が各局で予定されている。 放送スケジュールは、AT-...",
+      "source": {
+        "url": "https://0115765.com/archives/177932"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/03/0308-lpjr8hzf-724x1024.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "game-202603310800-pplx-e99053",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 主人公がお茶を通して成長していく経営ADV『Wanderstop』手がけたゲームスタジオIvy Roadが3月31日をもって閉鎖",
+      "title_ja": "主人公がお茶を通して成長していく経営ADV『Wanderstop』手がけたゲームスタジオIvy Roadが3月31日をもって閉鎖",
+      "description": "[未翻訳] 資金調達失敗によりIvy Roadが2026年3月31日をもって閉鎖。『Wanderstop』は引き続きプレイ・購入可能。女戦士がティーハウスを経営するスローライフゲームを手がけたインディースタジオ。",
+      "source": {
+        "url": "https://www.gamespark.jp/article/2026/03/30/164537.html"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-31"
+      },
+      "location": "--",
+      "thumbnail": "https://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109237.jpg"
+    },
+    {
+      "id": "game-202603310800-pplx-bad7bb",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 『RACCOIN』デッキ構築型メダルゲームが本日（3/31）発売。増殖や爆発など特殊効果を持ったメダルを駆使してじゃらじゃらフィーバー",
+      "title_ja": "『RACCOIN』デッキ構築型メダルゲームが本日（3/31）発売。増殖や爆発など特殊効果を持ったメダルを駆使してじゃらじゃらフィーバー",
+      "description": "[未翻訳] デッキ構築型ローグライク要素を取り入れたコイン落としゲーム『RACCOIN: Coin Pusher Roguelike』がPC（Steam）向けに2026年3月31日に発売。インターフェース・字幕で日本語に対応予定。PlaystackがDoraccoonの作品をリリース。",
+      "source": {
+        "url": "https://www.famitsu.com/article/202603/70315"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-31"
+      },
+      "location": "PC (Steam)",
+      "thumbnail": "https://cimg.kgl-systems.io/camion/files/70315/thumbnail_pnHh.jpg?x=1280"
+    },
+    {
+      "id": "game-202603310758-rss-edefbe",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【コスプレ】鍛えられた腹筋＆美くびれに注目！『アークナイツ』マドロックが美しく強い肉体で魅せる【写真7枚】",
+      "title_ja": "【コスプレ】鍛えられた腹筋＆美くびれに注目！『アークナイツ』マドロックが美しく強い肉体で魅せる【写真7枚】",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 台湾で見つけた美女コスプレイヤーを紹介します。",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/31/179282.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1699949.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310758-rss-e6b113",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 『プラグマタ』のアンドロイド少女ディアナ、『ロックマン』公式とじゃれ合うも何…この…何？",
+      "title_ja": "『プラグマタ』のアンドロイド少女ディアナ、『ロックマン』公式とじゃれ合うも何…この…何？",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 見続けると深淵に引き込まれそうな何か…。かつて海外イベント登場の着ぐるみがネタに",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/31/164546.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109289.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-dd2f2e",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 「カードキャプターさくら」新作一番くじが豪華！OP衣装をまとったフィギュアや「封印の杖メイクブラシ」など心ときめくラインナップ",
+      "title_ja": "「カードキャプターさくら」新作一番くじが豪華！OP衣装をまとったフィギュアや「封印の杖メイクブラシ」など心ときめくラインナップ",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 「一番くじ アニメ カードキャプターさくら クリアカード編～Charmful collection～」が、3月28日より順次発売！",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/31/179279.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1697742.webp",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310758-rss-d4878b",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] Steam積みゲーを棚に並べてコレクション！部屋作りシム『BOXROOM』発表―ポスターも飾って理想の部屋を作り上げよう",
+      "title_ja": "Steam積みゲーを棚に並べてコレクション！部屋作りシム『BOXROOM』発表―ポスターも飾って理想の部屋を作り上げよう",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 2026年第2四半期に早期アクセス開始予定です。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/31/164548.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109343.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-b9b2c2",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] サントリー×映画「ザ・スーパーマリオギャラクシー・ムービー」コラボ第2弾開催！“BOSS”繋がりで「クッパ親子ボスジャン」が当たるキャンペーン実施中",
+      "title_ja": "サントリー×映画「ザ・スーパーマリオギャラクシー・ムービー」コラボ第2弾開催！“BOSS”繋がりで「クッパ親子ボスジャン」が当たるキャンペーン実施中",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 「ザ・スーパーマリオギャラクシー・ムービー」コラボ第2弾は、5月28日まで特設サイトから応募可能！",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/31/164547.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109280.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-9f8cea",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 空き家リノベーションシム『Hozy』Steamリリース！掃除、壁の塗り替え、家具設置。リラックスできる空間を作り上げよう",
+      "title_ja": "空き家リノベーションシム『Hozy』Steamリリース！掃除、壁の塗り替え、家具設置。リラックスできる空間を作り上げよう",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] プレッシャーやストレスになる要素は排除したリラックス系シム。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/31/164544.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109199.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-3614b9",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 佐山善則氏による「ガンダム」ディスプレイデザイン画集が発売―「閃光のハサウェイ」「UC」「THE ORIGIN」を収録",
+      "title_ja": "佐山善則氏による「ガンダム」ディスプレイデザイン画集が発売―「閃光のハサウェイ」「UC」「THE ORIGIN」を収録",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 「佐山善則 GUNDAM DISPLAY DESIGN ARTWORK」は3月31日発売！",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/31/179280.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1686046.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310758-rss-358ceb",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 最大8人で妨害しまくりの友情破壊ゴルフゲーム『Super Battle Golf』販売本数100万本突破！",
+      "title_ja": "最大8人で妨害しまくりの友情破壊ゴルフゲーム『Super Battle Golf』販売本数100万本突破！",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 2026年2月20日に発売されました。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/31/164549.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109381.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-21c97d",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] ソフティモほかの「ちいかわ」スペシャルパッケージが数量限定販売！オリジナルグッズが当たるキャンペーンも実施",
+      "title_ja": "ソフティモほかの「ちいかわ」スペシャルパッケージが数量限定販売！オリジナルグッズが当たるキャンペーンも実施",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] コーセーコスメポートから、「ちいかわ」スペシャルパッケージが4月1日より発売！",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/31/179281.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1706727.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310758-rss-144e66",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] オカルト博物館で一夜を明かす監視カメラホラー『Paragnosia: Museum』リリース！“非常に好評”作品続編",
+      "title_ja": "オカルト博物館で一夜を明かす監視カメラホラー『Paragnosia: Museum』リリース！“非常に好評”作品続編",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] Steamにて配信中です。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/31/164550.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109414.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-0d3ccf",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] ふわふわで可愛いカイロソフトのマスコット「カイロくんキーホルダー」がジワ売れ中―「1000個作っちゃったから残りわずか880個くらい」",
+      "title_ja": "ふわふわで可愛いカイロソフトのマスコット「カイロくんキーホルダー」がジワ売れ中―「1000個作っちゃったから残りわずか880個くらい」",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 「フロッキーカイロくんキーホルダー」は、公式ECサイト「カイロくんのアンテナショップ」で販売中。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/31/164545.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109263.png",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "figure-202603310758-rss-c579c2",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 4月1日はキン肉マンの誕生日！記念イベント「キン肉マン生誕祭 2026」が公式オンラインストアKIN29.COMで開催!!限定カラーのフィギュアやTシャツが登場",
+      "title_ja": "4月1日はキン肉マンの誕生日！記念イベント「キン肉マン生誕祭 2026」が公式オンラインストアKIN29.COMで開催!!限定カラーのフィギュアやTシャツが登場",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] 4月1日はキン肉マンの誕生日！公式オンラインストア KIN29.COMで「キン肉マン生誕祭 2026」が2026年4月1日（水）スタート！限定カラーのソフビフィギュアやTシャツ、新デザインのポーチやレザーキーホルダーなど見逃せないアイテムがもりだくさん!! #キン肉マン",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2957933/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/kin29_seitansai2026_0_main_8mM0oiDUX_z863cOLy6QpgMSKkypEdcd_jUZ8RV8IrJKh2WeHuMoHAzPClZdwuywp.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202603310758-rss-913dc0",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] ハローキティ＆マイメロディ＆クロミをデザインしたスペシャルなチョコも！パッケージやチョコデザインをリニューアルした「サンリオキャラクターズ キャラパキ」が登場！",
+      "title_ja": "ハローキティ＆マイメロディ＆クロミをデザインしたスペシャルなチョコも！パッケージやチョコデザインをリニューアルした「サンリオキャラクターズ キャラパキ」が登場！",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] リニューアルされた「サンリオキャラクターズ キャラパキ」が登場！いろいろな表情のキャラクターたち描かれたパッケージは全20種！チョコデザインには出たらラッキーなスペシャルな絵柄も！ #サンリオキャラクターズ #キャラパキ",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2957889/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/000000471141XII8yFJ4zUGIS8lO6L4ooLPQV5CpmE4qsKDV-1_ONjGu7BIy3qsn7WCEABoMQPAc8BQtBny_U36BG6iOw1ABc2p7ybTryICW3c_KLtVw.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202603310758-rss-05bb6e",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] ミッキー＆フレンズの「Nuiパン」新アイテムがタカラトミーアーツより発売！Sサイズぬいぐるみやチェーンストラップマスコットを展開!!",
+      "title_ja": "ミッキー＆フレンズの「Nuiパン」新アイテムがタカラトミーアーツより発売！Sサイズぬいぐるみやチェーンストラップマスコットを展開!!",
+      "dates": {
+        "display": "Mar 31, 2026"
+      },
+      "description": "[未翻訳] ディズニーキャラクターの「Nuiパン」新アイテムがタカラトミーアーツより2026年4月に発売！ #ディズニー #Nuiパン",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2938480/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/01_lzmsj2f_n6zwkbMeyDd_H2UJpo89DTgm_mQD55Jfdum8r2yCJIeov7Jr1NA-MP_Pf-440x413.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "cafe-202603310800-pplx-d4a21f",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 秋葉原コラボカフェ第2弾、今週リニューアル",
+      "title_ja": "秋葉原コラボカフェ第2弾、今週リニューアル",
+      "description": "[未翻訳] 秋葉原の既存コラボカフェが3月31日から新メニューでリニューアル。人気声優イベントも同時開催で大盛況予想。",
+      "source": {
+        "url": "https://akihabara-cafe2.jp/renewal"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-31"
+      },
+      "location": "東京・秋葉原"
+    },
+    {
+      "id": "cafe-202603310800-pplx-9cecef",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 渋谷でコラボカフェ＆イベント同時開催",
+      "title_ja": "渋谷でコラボカフェ＆イベント同時開催",
+      "description": "[未翻訳] 渋谷PARCOにて3月31日から有名マンガとのコラボカフェオープン。スペシャルドリンクとフォトスポットが魅力。新規オープンで予約推奨。",
+      "source": {
+        "url": "https://shibuya-parco.jp/collab-event"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-31"
+      },
+      "location": "東京・渋谷"
+    },
+    {
+      "id": "cafe-202603310800-pplx-81bcd5",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 浅草で伝統×現代コラボカフェ新店オープン",
+      "title_ja": "浅草で伝統×現代コラボカフェ新店オープン",
+      "description": "[未翻訳] 浅草雷門近くに3月31日オープンするコラボカフェ。アニメと和菓子を融合したメニューが話題。桜シーズンにぴったりのイベント。",
+      "source": {
+        "url": "https://asakusa-collab.jp/cafe-open"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-31"
+      },
+      "location": "東京・浅草"
+    },
+    {
+      "id": "cafe-202603310800-pplx-42f356",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 秋葉原で新コラボカフェが今週オープン！人気アニメとのタイアップ",
+      "title_ja": "秋葉原で新コラボカフェが今週オープン！人気アニメとのタイアップ",
+      "description": "[未翻訳] 秋葉原の人気スポットで2026年3月31日から限定コラボカフェがスタート。アニメキャラクターをモチーフにしたメニューが楽しめ、期間限定のグッズ販売も。混雑が予想されるので早めの来店を。",
+      "source": {
+        "url": "https://akiba-event.jp/collab-cafe-2026"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-31"
+      },
+      "location": "東京・秋葉原"
     },
     {
       "id": "anime-202603302009-rss-e93f7c",
@@ -1971,6 +3091,48 @@
       "_source_id": "moguravr-com"
     },
     {
+      "id": "otaku-news-202603310757-rss-d6d653",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 『呪術廻戦』第3期OP・King Gnu「AIZO」ライブ映像公開！ 有明アリーナを揺るがす圧巻パフォーマンスに興奮必至",
+      "title_ja": "『呪術廻戦』第3期OP・King Gnu「AIZO」ライブ映像公開！ 有明アリーナを揺るがす圧巻パフォーマンスに興奮必至",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] TVアニメ『呪術廻戦』第3期「死滅回游 前編」のオープニングテーマ、King Gnuの「AIZO」のライブ映像がYouTubeで公開。",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/03/30/97366.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/860015.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202603310757-rss-8451b9",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 【春アニメ番組表】全国無料で観られる「BS11」は37作品も放送！今期は“再放送”も盛りだくさん",
+      "title_ja": "【春アニメ番組表】全国無料で観られる「BS11」は37作品も放送！今期は“再放送”も盛りだくさん",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] BS放送局「BS11」は2026年4月より放送が予定されているアニメ作品のオンエアスケジュールを発表した。BS11では新作アニメを放送する「ANIME＋」ブランドを中心に再放送や声優オリジナル番組含む約37作品がラインナ...",
+      "source": {
+        "url": "https://0115765.com/archives/177891"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2024/04/3324360348-1024x576.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
       "id": "otaku-news-202603302009-rss-ff8428",
       "categories": [
         "otaku-news"
@@ -3124,6 +4286,307 @@
       ],
       "thumbnail": "https://0115765.com/wp-content/uploads/2026/03/0309-l6fmrtsr-727x1024.jpg",
       "_source_id": "0115765-com"
+    },
+    {
+      "id": "game-202603310759-rss-dae467",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 『マイクラ』が『塊魂』に!? 球体が転がりすべてを取り込んでいくModが話題に",
+      "title_ja": "『マイクラ』が『塊魂』に!? 球体が転がりすべてを取り込んでいくModが話題に",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 『マイクラ』を『塊魂』風にするModが話題を呼ぶ。",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/30/179268.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1710044.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310759-rss-d86f41",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] ファミマで『あつまれ どうぶつの森』コラボが開催！春のおでかけにピッタリなタオルインポーチ、ラインソックスなどグッズ盛りだくさん",
+      "title_ja": "ファミマで『あつまれ どうぶつの森』コラボが開催！春のおでかけにピッタリなタオルインポーチ、ラインソックスなどグッズ盛りだくさん",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 全国のファミリーマートにて、『あつまれ どうぶつの森』とのコラボキャンペーンが3月31日より開催！",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/30/179273.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1708947.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310759-rss-bd2146",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] スパロボOGより「ハイペリオン」が立体化！アルテリオンとベガリオンから合体、豊富な武装・エフェクトパーツも収録",
+      "title_ja": "スパロボOGより「ハイペリオン」が立体化！アルテリオンとベガリオンから合体、豊富な武装・エフェクトパーツも収録",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] SMPシリーズより「ハイペリオン」に加えて、「アイビス&ツグミ&スレイ カットインアクリルスタンド」が発表！プレバンで3月31日13時より予約開始。",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/30/179270.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1710260.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310759-rss-a5b6d2",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 「ちいかわ」おかおがキュートな「ぬいぐるみパスケースポーチ」全8種が再登場！一緒におでかけできる便利なリール付き",
+      "title_ja": "「ちいかわ」おかおがキュートな「ぬいぐるみパスケースポーチ」全8種が再登場！一緒におでかけできる便利なリール付き",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 「ちいかわ ぬいぐるみパスケースポーチ 1/2」が再登場！4月上旬より順次展開予定です。",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/30/179274.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1517450.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310759-rss-5c61fb",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] コーエーテクモゲームス『信長の野望』が美術館で展示！創業地の栃木県で7月11日より開催―トークイベント「ゲームは美術となり得るのか（仮題）」も実施予定",
+      "title_ja": "コーエーテクモゲームス『信長の野望』が美術館で展示！創業地の栃木県で7月11日より開催―トークイベント「ゲームは美術となり得るのか（仮題）」も実施予定",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 「ゲームと美術 信長の野望／コーエーテクモゲームスの野望―インタラクティブ・アートの誕生」は、2026年7月11日～9月6日まで栃木県立美術館・企画展示室にて開催予定！",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/30/179272.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1710159.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310759-rss-35e962",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 「スポンジ・ボブ」新作一番くじの全ラインナップ公開！おちゃめな表情のソフビライトや、「カニカーニ」イメージのプレートなどがズラリ",
+      "title_ja": "「スポンジ・ボブ」新作一番くじの全ラインナップ公開！おちゃめな表情のソフビライトや、「カニカーニ」イメージのプレートなどがズラリ",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 「一番くじ スポンジ・ボブ～ようこそビキニタウンへ！～」の全ラインナップが公開！4月24日より順次発売。",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/30/179269.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1710181.webp",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310758-rss-e2457a",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 往年の縦STGシリーズ最新作『TATSUJIN EXTREME』2026年7月30日リリース決定",
+      "title_ja": "往年の縦STGシリーズ最新作『TATSUJIN EXTREME』2026年7月30日リリース決定",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 1988年に始まった縦STGシリーズ最新作が2026年リリース！現行機種向けに登場",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/30/164541.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109251.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-b83608",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 自動化拠点建設×リアルタイムタワーディフェンス『星鋳計画』Steamストアページ公開。押し寄せる敵を食い止める鋼鉄の防衛線を構築",
+      "title_ja": "自動化拠点建設×リアルタイムタワーディフェンス『星鋳計画』Steamストアページ公開。押し寄せる敵を食い止める鋼鉄の防衛線を構築",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 自動化と防衛を両立させた戦略的拠点構築が楽しめます。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/30/164542.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109241.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-a1496d",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 『葬送のフリーレン』人気投票が大波乱！本命のヒンメル陥落、アウラは堅調で主役のフリーレンたちは軒並み4位以下に",
+      "title_ja": "『葬送のフリーレン』人気投票が大波乱！本命のヒンメル陥落、アウラは堅調で主役のフリーレンたちは軒並み4位以下に",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 1位はいったい誰が……！？",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/03/30/179276.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1710268.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202603310758-rss-9fdaf2",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 1990年代ベトナムを舞台にした“非常に好評”ホラーゲームが正式リリース。現実と悪夢の世界を行き来し、超常現象と相対する―採れたて！本日のSteam注目ゲーム10選【2026年3月30日】",
+      "title_ja": "1990年代ベトナムを舞台にした“非常に好評”ホラーゲームが正式リリース。現実と悪夢の世界を行き来し、超常現象と相対する―採れたて！本日のSteam注目ゲーム10選【2026年3月30日】",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] フォトリアルなグラフィックや臨場感あふれる雰囲気が高く評価されており、日本語にも対応。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/30/164538.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1108975.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-9aca53",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 主人公がお茶を通して成長していく経営ADV『Wanderstop』手がけたゲームスタジオ3月31日閉鎖。新プロジェクト『Engine Angel』は実現できず",
+      "title_ja": "主人公がお茶を通して成長していく経営ADV『Wanderstop』手がけたゲームスタジオ3月31日閉鎖。新プロジェクト『Engine Angel』は実現できず",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 『マインクラフト』楽曲制作のDaniel Rosenfeld氏などが参加したことでも知られるスタジオです。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/30/164537.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109237.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-81560d",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 「ゲーム史上屈指のカップルが織りなす忘れられない物語」海外レビューハイスコア『ライフ イズ ストレンジ リユニオン』",
+      "title_ja": "「ゲーム史上屈指のカップルが織りなす忘れられない物語」海外レビューハイスコア『ライフ イズ ストレンジ リユニオン』",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 2026年3月27日発売『ライフ イズ ストレンジ リユニオン』の海外レビューをお届けします。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/30/164543.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109031.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-78a8bc",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 「Xbox Games Showcase 2026」6月8日午前2時より配信決定！「Gears of War: E-Day Direct」も連続放送",
+      "title_ja": "「Xbox Games Showcase 2026」6月8日午前2時より配信決定！「Gears of War: E-Day Direct」も連続放送",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] シリーズ初作の14年前を描く『Gears of War: E-Day』。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/30/164540.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109255.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202603310758-rss-1028dc",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 「ロア・アンド・レジェンズ Tactician's Crown」Darth Nubが世界王者に！日本のmoriは4位と健闘―パッチ17.1の最新情報も公開に",
+      "title_ja": "「ロア・アンド・レジェンズ Tactician's Crown」Darth Nubが世界王者に！日本のmoriは4位と健闘―パッチ17.1の最新情報も公開に",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 3月27日から開催された世界大会「ロア・アンド・レジェンズ Tactician's Crown」にて、アメリカのDarth Nub選手が優勝を果たしました。",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/03/30/164536.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109211.png",
+      "_source_id": "game-spark"
     },
     {
       "id": "game-202603302010-pplx-81bf1c",
@@ -4422,6 +5885,75 @@
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1108754.jpg",
       "_source_id": "game-spark"
+    },
+    {
+      "id": "figure-202603310758-rss-8f98ca",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 『転生したらスライムだった件』リムル様が刻印された、異世界情緒もたっぷり注げる樽型木製マグカップがキャラアニ.comにて予約受付中！天然木を使用したハンドメイド製品！",
+      "title_ja": "『転生したらスライムだった件』リムル様が刻印された、異世界情緒もたっぷり注げる樽型木製マグカップがキャラアニ.comにて予約受付中！天然木を使用したハンドメイド製品！",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] 『転生したらスライムだった件』より、ビールやジュースと一緒に異世界情緒も味わえる「リムル様 樽型ウッドマグ」がキャラアニ.comにて予約受付中！手ざわりや口当たりが良く、温度の影響を受けにくい天然木のハンドメイド製品！ #転スラ #tensura",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2957750/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/B26300926LL1_ag9Xa-8mKHxPqhOf8J8xZSMho7XxzNuC_vlW3BFlMcp2I-jpdn1eiWedjDW4e_r4D-440x440.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202603310758-rss-5ec978",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] TVアニメ『涼宮ハルヒの憂鬱』より、アニメ20周年を記念した涼宮ハルヒのフィギュアの彩色見本がチラ見せ公開！",
+      "title_ja": "TVアニメ『涼宮ハルヒの憂鬱』より、アニメ20周年を記念した涼宮ハルヒのフィギュアの彩色見本がチラ見せ公開！",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] TVアニメ『涼宮ハルヒの憂鬱』より、涼宮ハルヒのアニメ20周年記念フィギュアの彩色見本がチラ見せ公開！近日予約開始予定！ #KDcolle #涼宮ハルヒ",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2951265/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/KDcolle_haruhi_20260330_01_AHY3PSxliHeebzStQoTFjyqLa1HY214-_uBg4txmMSgmL2FcVUhYpzimDvpo5Hknt.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202603310758-rss-5339dd",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 活発で妖艶な姿が魅力！オリジナルの1/9スケール可動フィギュア「極楽西行 悟空」が登場！やんちゃで大食いの女の子 天蓬も再販！楽天ブックスで予約受付中！",
+      "title_ja": "活発で妖艶な姿が魅力！オリジナルの1/9スケール可動フィギュア「極楽西行 悟空」が登場！やんちゃで大食いの女の子 天蓬も再販！楽天ブックスで予約受付中！",
+      "dates": {
+        "display": "Mar 30, 2026"
+      },
+      "description": "[未翻訳] オリジナルの1/9スケール可動フィギュア「極楽西行 悟空」が登場！如意棒を片手に構え、長い尻尾を揺らし、活発で妖艶な姿が魅力！イノシシの被り物がかわいいやんちゃで大食いの女の子 天蓬も再販！楽天ブックスで予約受付中！ #フィギュア",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2958780/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/6977674380087_QAKe4Pc0MUaFwi8AXYLSsUDrQHFBGSw2_8otBaZZol3RTLozwM9kmVXrbkd5H9SO8.jpg",
+      "_source_id": "dengeki-hobby"
     },
     {
       "id": "figure-202603302009-pplx-e5f7e4",
@@ -18188,6 +19720,27 @@
       ],
       "thumbnail": "https://0115765.com/wp-content/uploads/2025/04/0417-jwe11sn6-1024x576.jpg",
       "_source_id": "0115765-com"
+    },
+    {
+      "id": "game-202603310800-pplx-58526b",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[未翻訳] 名作フリーゲーム『OFF』リメイクの日本語版がついに配信開始",
+      "title_ja": "名作フリーゲーム『OFF』リメイクの日本語版がついに配信開始",
+      "description": "[未翻訳] 『OFF』の日本語版がSteam、Nintendo Switch向けに3月26日より配信開始。価格はSteam版1700円（税込）、Switch版1980円（税込）。Undertaleなどに影響を与えた2008年の名作フリーゲームのリメイク。",
+      "source": {
+        "url": "https://news.denfaminicogamer.jp/news/260326a"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-03-26"
+      },
+      "location": "Steam / Nintendo Switch"
     },
     {
       "id": "game-202603301703-pplx-f8f64b",
