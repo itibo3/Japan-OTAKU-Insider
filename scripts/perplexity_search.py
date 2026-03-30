@@ -29,8 +29,8 @@ STAGING_DIR = Path(__file__).resolve().parent.parent / "data" / "staging"
 CATEGORIES = ("cafe", "vtuber", "figure", "game", "anime", "other")
 
 # 検索結果から除外するドメイン（英語圏の旅行・アグリゲーター・ゲームメディア等）
-# API 用: - プレフィックスで search_domain_filter に渡す
-# パイプライン用: URL が含まれる場合は staging に追加しない
+# _EXCLUDED_RAW: 全件。_is_excluded_url() の後処理フィルタで使用（件数制限なし）
+# EXCLUDED_DOMAINS: API の search_domain_filter 用。上限 30 件のため頻出ドメインを優先
 _EXCLUDED_RAW = (
     # 旅行・観光系（英語圏）
     "japantravel.com",
@@ -78,7 +78,10 @@ _EXCLUDED_RAW = (
     # RSS で賄えるドメイン（重複防止）
     "moguravr.com",
 )
-EXCLUDED_DOMAINS = tuple(f"-{d}" for d in _EXCLUDED_RAW)
+# Perplexity API の search_domain_filter は最大 30 件。
+# 頻出ドメイン（旅行系＋主要英語ゲームメディア）を優先し、残りは _is_excluded_url() で後処理除外。
+_API_EXCLUDED_MAX = 30
+EXCLUDED_DOMAINS = tuple(f"-{d}" for d in _EXCLUDED_RAW[:_API_EXCLUDED_MAX])
 
 # 英語サイトでも許可する既知の日本サイト（ホワイトリスト）
 _ALLOWED_DOMAINS = (
