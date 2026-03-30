@@ -72,13 +72,20 @@ def save_posted_ids(ids):
     POSTED_FILE.write_text("\n".join(sorted(ids)) + "\n")
 
 
-def format_tweet(entry):
+def format_tweet(entry, lang="en"):
     cats = entry.get("categories", [])
     if not cats and entry.get("category"):
         cats = [entry["category"]]
     primary = cats[0] if cats else "other"
     emoji = CATEGORY_EMOJI.get(primary, "")
-    title = entry.get("title", "")
+    
+    if lang == "ja":
+        title = entry.get("title_ja", "") or entry.get("title", "")
+    else:
+        title = entry.get("title", "")
+        if title.startswith("[未翻訳] "):
+            title = title.replace("[未翻訳] ", "")
+
     if len(title) > 110:
         title = title[:107] + "..."
 
@@ -196,12 +203,29 @@ def main():
     posted_count = 0
 
     for entry in to_post:
-        text = format_tweet(entry)
-        print(f"Posting [{entry.get('categories', ['?'])[0]}]: {entry['id']}")
-        if post_tweet(text, creds):
-            posted_ids.add(entry["id"])
+        primary_cat = entry.get('categories', ['?'])[0]
+        
+        # 英語ポスト
+        text_en = format_tweet(entry, lang="en")
+        print(f"Posting [{primary_cat}] (EN): {entry['id']}")
+        success_en = post_tweet(text_en, creds)
+        if success_en:
             posted_count += 1
-            time.sleep(2)
+        
+        time.sleep(3)
+        
+        # 日本語ポスト
+        text_ja = format_tweet(entry, lang="ja")
+        print(f"Posting [{primary_cat}] (JA): {entry['id']}")
+        success_ja = post_tweet(text_ja, creds)
+        if success_ja:
+            posted_count += 1
+            
+        # 少なくともどちらかが成功したら記録する
+        if success_en or success_ja:
+            posted_ids.add(entry["id"])
+            
+        time.sleep(10)
 
     save_posted_ids(posted_ids)
     print(f"Done. Posted {posted_count} tweet(s).")
