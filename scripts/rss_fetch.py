@@ -47,6 +47,11 @@ META_OG_IMAGE_SECURE_RE = re.compile(
 
 IMG_TAG_RE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
 
+VTUBER_KEYWORDS = re.compile(
+    r"(VTuber|Vチューバー|バーチャルYouTuber|ホロライブ|hololive|にじさんじ|nijisanji|ぶいすぽ|あおぎり|ななしいんく|のりプロ|ReGLOSS|Neo-Porte|ネオポルテ|兎田ぺこら|宝鐘マリン|さくらみこ|星街すいせい|白上フブキ|湊あくあ|戌神ころね|猫又おかゆ|大空スバル|白銀ノエル|紫咲シオン|百鬼あやめ|癒月ちょこ|大神ミオ|天音かなた|角巻わため|常闇トワ|姫森ルーナ|雪花ラミィ|桃鈴ねね|獅白ぼたん|尾丸ポルカ|ラプラス・ダークネス|鷹嶺ルイ|博衣こより|沙花叉クロヱ|風真いろは|月ノ美兎|剣持刀也|葛葉|叶|壱百満天原サロメ|星川サラ|ピーナッツくん|ぽんぽこ|名取さな|しぐれうい)",
+    re.IGNORECASE
+)
+
 # og:image を優先するドメイン（記事シェア時と同じ画像を安定して取得）
 OG_FIRST_DOMAINS = ("news.amiami.jp", "www.4gamer.net")
 
@@ -347,16 +352,26 @@ def fetch_source(
             print(f"  SKIP (重複): {title_ja[:50]}")
             continue
 
+        # 自動タグ付け（VTuber）
+        cats = source.get("categories", [category]).copy()
+        item_tags = content_tags.copy()
+        
+        if "vtuber" not in cats and VTUBER_KEYWORDS.search(title_ja + " " + summary):
+            cats.append("vtuber")
+            
+        if "vtuber" in cats and "vtuber" not in item_tags:
+            item_tags.append("vtuber")
+
         item = {
             "id": entry_id_from_url(url, category),
-            "categories": source.get("categories", [category]),
+            "categories": cats,
             "status": "active",
             "title": f"[未翻訳] {title_ja}",
             "title_ja": title_ja,
             "dates": {"display": published} if published else {},
             "description": f"[未翻訳] {summary}",
             "source": {"url": url},
-            "tags": content_tags,
+            "tags": item_tags,
             **({"thumbnail": thumbnail} if thumbnail else {}),
             "_source_id": source["id"]
         }
