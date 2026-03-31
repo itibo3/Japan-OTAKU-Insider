@@ -68,6 +68,12 @@ jobs:
         env:
           DEEPL_AUTH_KEY: ${{ secrets.DEEPL_AUTH_KEY }}
         run: |
+          echo "==> Check DeepL Quota"
+          if ! python3 scripts/check_deepl_quota.py --require 20000; then
+            echo "DeepL remaining quota is low. Skipping translation."
+            exit 0
+          fi
+
           echo "==> Translate staging"
           mkdir -p data/staging
           count=0
@@ -78,7 +84,8 @@ jobs:
             if python3 scripts/translate_with_deepl.py "$f"; then
               count=$((count+1))
             else
-              echo "WARNING: $f の翻訳に失敗（スキップして続行）"
+              echo "WARNING: $f の翻訳に失敗（破棄して続行）"
+              rm -f "$f"
               fail=$((fail+1))
             fi
           done
