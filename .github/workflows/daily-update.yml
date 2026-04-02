@@ -1,8 +1,7 @@
 # Japan OTAKU Insider — 日次更新ワークフロー（手動トリガ版）
 #
-# 目的: RSS取得 → DeepL翻訳 → entries.json 反映 → ステータス更新 → デプロイ
-# 前提: DEEPL_AUTH_KEY が Secrets に設定されている場合のみ実行
-#       未設定の場合は安全終了（何も変更せず exit 0）
+# 目的: RSS取得 → Google翻訳（deep_translator）→ 不備時は DeepL で再翻訳 → entries.json 反映 → ステータス更新 → デプロイ
+# 前提: 基本は Google のみ。secrets.DEEPL_AUTH_KEY があれば Google 失敗・不備分を DeepL でフォールバック
 #
 # 実行: Actions タブ → "Daily Update" → "Run workflow"
 
@@ -14,25 +13,7 @@ on:
     - cron: '0 10 * * *'  # 毎日 19:00 JST (UTC 10:00) / 米東部 5-6時
 
 jobs:
-  check:
-    runs-on: ubuntu-latest
-    outputs:
-      has_key: ${{ steps.check.outputs.has_key }}
-    steps:
-      - name: Check DEEPL_AUTH_KEY
-        id: check
-        run: |
-          if [ -n "${{ secrets.DEEPL_AUTH_KEY }}" ]; then
-            echo "DEEPL_AUTH_KEY が設定されています。更新処理を実行します。"
-            echo "has_key=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "DEEPL_AUTH_KEY が未設定です。更新処理をスキップして正常終了します。"
-            echo "has_key=false" >> "$GITHUB_OUTPUT"
-          fi
-
   update:
-    needs: check
-    if: needs.check.outputs.has_key == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -68,23 +49,14 @@ jobs:
         env:
           DEEPL_AUTH_KEY: ${{ secrets.DEEPL_AUTH_KEY }}
         run: |
-          echo "==> Check DeepL Quota"
-          if ! python3 scripts/check_deepl_quota.py --require 20000; then
-            echo "DeepL remaining quota is low. Skipping translation."
-            python3 scripts/send_x_dm.py --message "🚨【Japan OTAKU Insider】DeepL翻訳APIの無料枠（残機）が残り2万文字を切りました！
-          今月の自動翻訳を安全のため停止しました。これ以上の記事は未翻訳のまま保留され、来月に再実行されます。" || true
-            rm -f data/staging/*.json
-            exit 0
-          fi
-
-          echo "==> Translate staging"
+          echo "==> Translate staging (Google primary, DeepL fallback if key set)"
           mkdir -p data/staging
           count=0
           fail=0
           for f in data/staging/*.json; do
             [ -f "$f" ] || continue
             echo "Translating $f ..."
-            if python3 scripts/translate_with_deepl.py "$f"; then
+            if python3 scripts/translate_staging.py "$f" --delay 0.1; then
               count=$((count+1))
             else
               echo "WARNING: $f の翻訳に失敗（破棄して続行）"

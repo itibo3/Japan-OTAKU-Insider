@@ -460,7 +460,7 @@ def main():
     print(f"\n🛑 次のステップ:")
     if reset_mode:
         print(f"   1. entries.json をバックアップ済みなら空にする")
-        print(f"   2. translate_with_deepl.py で {staging_file} を英訳")
+        print(f"   2. translate_staging.py で {staging_file} を英訳")
         print(f"   3. add_entry.py --reset {staging_file} で entries.json を再構築")
     else:
         print(f"   1. Antigravity の Gemini に切り替えてください")

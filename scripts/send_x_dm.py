@@ -3,7 +3,7 @@
 X (Twitter) DM 自動送信スクリプト
 
 目的: Japan OTAKU Insider の公式アカウントから、指定した管理者アカウントへDMを送信する。
-用途: DeepL APIの残枠警告や、週間レポートの通知用。
+用途: 週間レポートの通知など（旧 DeepL 枠警告は廃止）。
 
 必要な環境変数:
 - X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET

@@ -8,7 +8,7 @@ entries.json をリセットし、RSS から全件取得して再構築するス
 3. 出力: data/staging/reset_YYYYMMDD_HHMM.json
 
 次のステップ:
-  python3 scripts/translate_with_deepl.py data/staging/reset_*.json
+  python3 scripts/translate_staging.py data/staging/reset_*.json
   python3 scripts/add_entry.py --reset data/staging/reset_*.json
 
 使い方:
