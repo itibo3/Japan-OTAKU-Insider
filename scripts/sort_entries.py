@@ -74,14 +74,8 @@ def id_date_from_id(eid):
 
 
 def extract_sort_key(entry):
-    """ソート用キー。1次: dates.display パース結果、2次: id 日付、3次: eid"""
     eid = entry.get("id", "")
-    parsed = parse_date_for_sort(entry)
-    if parsed:
-        part = parsed.ljust(12, "0")
-    else:
-        part = id_date_from_id(eid)
-    return (part, eid)
+    return (id_date_from_id(eid), eid)
 
 
 def main():
