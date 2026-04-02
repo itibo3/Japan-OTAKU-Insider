@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """重複サムネを持つ既存記事を og:image で差し替えるワンショットスクリプト"""
-import json, re, time
+import json, re, sys, time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 from html import unescape
 from collections import Counter
+
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+from http_fetch_config import article_fetch_headers
 
 JST = timezone(timedelta(hours=9))
 ENTRIES_FILE = Path(__file__).resolve().parent.parent / "data" / "entries.json"
@@ -34,7 +39,7 @@ def is_generic(url):
     return any(p in url.lower() for p in GENERIC_THUMB_PATTERNS)
 
 def fetch_og_image(url, timeout=15):
-    req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; OtakuBot/1.0)"})
+    req = Request(url, headers=article_fetch_headers())
     with urlopen(req, timeout=timeout) as resp:
         html = resp.read(500_000).decode("utf-8", errors="replace")
     m = META_OG_IMAGE_RE.search(html)

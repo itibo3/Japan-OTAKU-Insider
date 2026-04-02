@@ -24,6 +24,11 @@ from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 from typing import Optional
 
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+from http_fetch_config import FETCH_USER_AGENT, article_fetch_headers
+
 try:
     import feedparser
 except ImportError:
@@ -125,12 +130,7 @@ def choose_thumbnail(lead: Optional[str], og: Optional[str], source_url: str) ->
 
 def fetch_html(url: str, timeout_sec: int, max_bytes: int) -> str:
     """指定URLのHTMLを取得（失敗は例外で呼び元へ）"""
-    req = Request(
-        url,
-        headers={
-            "User-Agent": "Mozilla/5.0 (compatible; JapanOTAKUInsiderBot/1.0; +https://itibo3.github.io/Japan-OTAKU-Insider/)"
-        },
-    )
+    req = Request(url, headers=article_fetch_headers())
     with urlopen(req, timeout=timeout_sec) as resp:
         raw = resp.read(max_bytes)
         return raw.decode("utf-8", errors="replace")
@@ -289,7 +289,7 @@ def fetch_source(
 
     print(f"\n📡 [{source['id']}] {source['name']} をフェッチ中...")
     try:
-        feed = feedparser.parse(rss_url)
+        feed = feedparser.parse(rss_url, agent=FETCH_USER_AGENT)
     except Exception as e:
         print(f"  ERROR: フェッチ失敗 — {e}")
         return []

@@ -4,11 +4,17 @@ RSS自動取得 → JSON変換スクリプト
 1日1回cronまたは手動で実行
 """
 
+import sys
 import feedparser
 import json
 import hashlib
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+from http_fetch_config import FETCH_USER_AGENT
 
 JST = timezone(timedelta(hours=9))
 DATA_DIR = Path("data")
@@ -46,7 +52,7 @@ def fetch_rss_entries(source):
     if not source.get("rss"):
         return []
 
-    feed = feedparser.parse(source["rss"])
+    feed = feedparser.parse(source["rss"], agent=FETCH_USER_AGENT)
     raw_entries = []
 
     for item in feed.entries[:10]:  # 最新10件

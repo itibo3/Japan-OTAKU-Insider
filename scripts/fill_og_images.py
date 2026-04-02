@@ -17,6 +17,7 @@ fill_og_images.py — entries.json の missing thumbnail を埋める
 import argparse
 import json
 import re
+import sys
 import time
 from datetime import datetime, timezone, timedelta
 from html import unescape
@@ -24,6 +25,11 @@ from pathlib import Path
 from typing import Optional
 from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
+
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+from http_fetch_config import article_fetch_headers
 
 JST = timezone(timedelta(hours=9))
 ENTRIES_FILE = Path("data/entries.json")
@@ -91,13 +97,7 @@ def save_db(db: dict) -> None:
 
 
 def fetch_html(url: str, timeout_sec: int, max_bytes: int) -> str:
-    req = Request(
-        url,
-        headers={
-            # ブラウザっぽくして取得失敗を減らす
-            "User-Agent": "Mozilla/5.0 (compatible; JapanOTAKUInsiderBot/1.0; +https://itibo3.github.io/Japan-OTAKU-Insider/)"
-        },
-    )
+    req = Request(url, headers=article_fetch_headers())
     with urlopen(req, timeout=timeout_sec) as resp:
         # 取りすぎない（軽量化）
         raw = resp.read(max_bytes)
