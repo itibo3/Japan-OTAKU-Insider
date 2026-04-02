@@ -71,6 +71,9 @@ jobs:
           echo "==> Check DeepL Quota"
           if ! python3 scripts/check_deepl_quota.py --require 20000; then
             echo "DeepL remaining quota is low. Skipping translation."
+            python3 scripts/send_x_dm.py --message "🚨【Japan OTAKU Insider】DeepL翻訳APIの無料枠（残機）が残り2万文字を切りました！
+          今月の自動翻訳を安全のため停止しました。これ以上の記事は未翻訳のまま保留され、来月に再実行されます。" || true
+            rm -f data/staging/*.json
             exit 0
           fi
 
