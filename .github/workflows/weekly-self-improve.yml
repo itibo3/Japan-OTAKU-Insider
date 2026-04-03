@@ -1,0 +1,44 @@
+# 週次: Gemini でサイト統計レポート（日本語）→ Claude で Perplexity 用 prompts 改善案（JSON + proposed_prompts/*）
+# 成果物はリポジトリに自動コミットしない。Actions の Artifact からダウンロードして人間が差分確認後、prompts/ を手動または別PRで反映する。
+#
+# 必要な Secrets（未設定なら該当ステップはスキップまたは簡易出力）:
+#   GEMINI_API_KEY      … Google AI Studio
+#   ANTHROPIC_API_KEY   … Anthropic Console
+
+name: Weekly Self-Improve Loop
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 11 * * 1" # 月曜 20:00 JST（UTC 11:00）
+
+jobs:
+  self-improve:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements-ci.txt
+
+      - name: Run weekly self-improve loop
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 scripts/weekly_self_improve_loop.py --out-dir artifact-out
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-self-improve-${{ github.run_id }}
+          path: artifact-out/
+          retention-days: 30

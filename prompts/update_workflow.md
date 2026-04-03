@@ -43,3 +43,12 @@
 ## 【手動で追加したいニュース情報】（※ある場合のみ）
 （※ 以下にテキストがある場合は、上記のRSSフェッチとは別枠で、記載された情報に基づく英語JSONを手動作成し、`add_entry.py` を用いて entries.json へ追加登録してください）
 
+---
+
+## 週次・自動改善ループ（Gemini + Claude）
+
+- **GitHub Actions:** `Weekly Self-Improve Loop`（`weekly-self-improve.yml`）が週1（月曜 JST 夜）＋手動実行可能。
+- **成果物:** 実行完了後、Actions の **Artifact** に `weekly_report_ja.md`（Gemini）、`claude_prompt_proposals.json`、`proposed_prompts/perplexity_*.md`（Claude 案）が入る。**リポジトリの `prompts/` は自動では書き換わらない**（人間が diff 確認してから手動コピー or PR）。
+- **Secrets:** `GEMINI_API_KEY`（Google AI Studio）、`ANTHROPIC_API_KEY`（Anthropic）。どちらか欠けると該当部分だけスキップまたは簡易出力。
+- **日次での Perplexity 検閲:** `scripts/gemini_flash_review.py`。`daily-update.yml` 内のコメントに、`perplexity_*.json` を検閲してから翻訳する例を記載済み。
+

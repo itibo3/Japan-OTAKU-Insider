@@ -46,6 +46,14 @@ jobs:
       #     for cat in cafe vtuber figure game anime other; do
       #       python3 scripts/perplexity_search.py --category "$cat" || true
       #     done
+      #
+      # Perplexity を再有効化する場合の例: 各 staging を Gemini 検閲で通過分だけ残す
+      # for f in data/staging/perplexity_*.json; do
+      #   [ -f "$f" ] || continue
+      #   out="${f%.json}.reviewed.json"
+      #   python3 scripts/gemini_flash_review.py --input "$f" --output "$out" --log "${f%.json}.review_log.json" || true
+      #   mv "$out" "$f"
+      # done
 
       - name: Translate staging
         env:
