@@ -294,6 +294,9 @@ def to_entry(raw: dict, category: str, index: int) -> dict:
 
     if not title_ja:
         return None
+    # トップページだけ貼って中身をでっち上げるケースが多いため、URL 無しは staging に出さない
+    if not source_url:
+        return None
 
     h = hashlib.md5((source_url or title_ja + str(index)).encode()).hexdigest()[:6]
     date_str = datetime.now(JST).strftime("%Y%m%d%H%M")
@@ -399,14 +402,16 @@ def main() -> None:
     for entry in entries:
         url = (entry.get("source") or {}).get("url", "").strip()
         title_disp = entry.get("title_ja", entry.get("title", ""))[:40]
-        if url and url in seen_urls:
+        if not url:
+            print(f"  SKIP (URL なし): {title_disp}...")
+            continue
+        if url in seen_urls:
             print(f"  SKIP (同一URL): {title_disp}...")
             continue
-        if url and _is_excluded_url(url):
+        if _is_excluded_url(url):
             print(f"  SKIP (除外ドメイン/英語URL): {title_disp}... -> {url[:60]}")
             continue
-        if url:
-            seen_urls.add(url)
+        seen_urls.add(url)
         unique_entries.append(entry)
     entries = unique_entries
 

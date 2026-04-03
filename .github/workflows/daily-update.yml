@@ -35,15 +35,17 @@ jobs:
           python3 -c "import json; d=json.load(open('data/sources.json')); print('Using', len(d.get('sources',[])), 'sources from data/sources.json')"
           python3 scripts/rss_fetch.py --limit 15 --fetch-thumbnails
 
-      - name: Perplexity Search (6 categories)
-        env:
-          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
-        run: |
-          echo "==> Perplexity Search"
-          mkdir -p data/staging
-          for cat in cafe vtuber figure game anime other; do
-            python3 scripts/perplexity_search.py --category "$cat" || true
-          done
+      # Perplexity は実在URLでも本文が幻覚になりやすいため、日次パイプラインから一時停止（2026-04-04）。
+      # 手動検証は verify-perplexity.yml またはローカルで perplexity_search.py を実行。
+      # - name: Perplexity Search (6 categories)
+      #   env:
+      #     PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+      #   run: |
+      #     echo "==> Perplexity Search"
+      #     mkdir -p data/staging
+      #     for cat in cafe vtuber figure game anime other; do
+      #       python3 scripts/perplexity_search.py --category "$cat" || true
+      #     done
 
       - name: Translate staging
         env:

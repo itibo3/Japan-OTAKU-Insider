@@ -1,4 +1,4 @@
-const CACHE_NAME = 'otaku-insider-v5';
+const CACHE_NAME = 'otaku-insider-v6';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

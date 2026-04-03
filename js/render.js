@@ -10,7 +10,7 @@ function getCategories(entry) {
 }
 
 function categoryLabel(cat) {
-    return { cafe: 'Collab Cafe', figure: 'Figure', event: 'Event', anime: 'Anime News', vtuber: 'VTuber', game: 'Game News', 'otaku-news': 'OTAKU NEWS' }[cat] || cat;
+    return { cafe: 'Collab Cafe', figure: 'Figure', event: 'Event', anime: 'Anime News', vtuber: 'VTuber', game: 'Game News', 'otaku-news': 'OTAKU NEWS', other: 'Other topics' }[cat] || cat;
 }
 
 function renderCategoryPills(entry) {
