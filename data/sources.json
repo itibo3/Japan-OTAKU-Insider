@@ -94,7 +94,6 @@
       "type": "rss",
       "categories": [
         "figure",
-        "cafe",
         "event"
       ],
       "content_tags": [
@@ -113,7 +112,6 @@
       "type": "scrape",
       "categories": [
         "anime",
-        "cafe",
         "event"
       ],
       "content_tags": [
@@ -251,9 +249,7 @@
       "rss": null,
       "type": "scrape",
       "categories": [
-        "cafe",
-        "event",
-        "figure"
+        "otaku-news"
       ],
       "content_tags": [
         "cafe",

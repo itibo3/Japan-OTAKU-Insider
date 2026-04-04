@@ -261,9 +261,14 @@ def entry_id_from_url(url, category):
     return f"{category}-{date_str}-rss-{h}"
 
 def extract_category(source):
-    """ソースのcategoriesから最初のカテゴリを返す"""
+    """ソースの categories の先頭を返す（エントリ id のプレフィックスに使用）。"""
     cats = source.get("categories", ["event"])
     return cats[0] if cats else "event"
+
+
+# categories に複数要素があるとき、下の fetch_source は「そのソースの全記事」に categories 配列をそのまま付ける。
+# フィードが混在（例: フィギュア専門RSSに無理に cafe を足す）だと、コラボカフェタブが汚れるので、
+# sources.json では「そのソースのほぼすべての記事に付けていいタグ」だけを並べること。
 
 def clean_html(text):
     """HTMLタグを除去して平文にする"""
