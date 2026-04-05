@@ -1,7 +1,323 @@
 {
-  "last_updated": "2026-04-05T19:45:07.777168+09:00",
-  "total_entries": 2554,
+  "last_updated": "2026-04-06T07:13:17.690117+09:00",
+  "total_entries": 2575,
   "entries": [
+    {
+      "id": "anime-202604060712-rss-fb3a6b",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "[April 6, 2026] List of manga books released today",
+      "title_ja": "【2026年4月6日】本日発売のマンガ単行本リスト",
+      "dates": {},
+      "description": "Comic Natalie would like to inform you of the book that will be released today on April 6, 2026. Click here for a list of magazines released today.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/665839"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2023/0725/defaultimage_comicslist.jpg?impolicy=twitter_card_face_crop",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604060712-rss-b3f3a2",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "To commemorate the completion of the anime “Rascal” series, the second installment is Nodoka Toyohama’s memorial visual",
+      "title_ja": "アニメ「青春ブタ野郎」シリーズ完結記念、第2弾は豊浜のどかのメモリアルビジュアル",
+      "dates": {},
+      "description": "A memorial visual for Nodoka Toyohama from the theatrical anime ``Rascal Does Not Dream of Dear Friend'' has been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/667071"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0405/nodoka_MV.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604060712-rss-80d6ab",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "``Assassination Classroom'' is a ``learning school'' for Jun Fukuyama, a movie version born from the ``complicity relationship'' between adults.",
+      "title_ja": "「暗殺教室」は福山潤にとって「学び舎」、大人たちの“共犯関係”から生まれた劇場版",
+      "dates": {},
+      "description": "A stage greeting commemorating the release of ``Assassination Classroom the Movie: Minna no Jikan'', based on the original work by Yusei Matsui, was held today, April 5th, at Shinjuku Wald 9 in Tokyo, with Jun Fukuyama, who played the role of Korosensei, Makoto Uezu, the scriptwriter, and Naoto Shoji, the producer, on stage.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/667107"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0405/ansatsu20260405_01.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604060712-rss-79b6b9",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "“Zombieland Saga” Franchouchou’s journey continues! Two days when Yokohama became a “saga”",
+      "title_ja": "「ゾンビランドサガ」フランシュシュの旅は続く！横浜が“サガ”になった2日間",
+      "dates": {},
+      "description": "The live event \"Zombie Land Saga LIVE ~ Franchouchou Yume Ginga Festival ~\" of the anime \"Zombie Land Saga\" series was held at Pia Arena MM in Kanagawa on April 4th and 5th. The live performance will feature Kaede Hondo as Sakura Minamoto, who plays members of the idol group Franchouchou in the story, Asami Tano as Saki Nikaido, Risa Taneda as Ai Mizuno, Maki Kawase as Junko Konno, Rika Kinugawa as Yugiri, and Mika Tanaka as Lily Hoshikawa. In this article, we will report on the April 5th performance.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/667068"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0405/zombielandsaga_live2026_00009.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604060712-rss-564b7d",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "List of manga magazines released tomorrow, April 6th (Monday)",
+      "title_ja": "明日4月6日（月）発売分のマンガ雑誌リスト",
+      "dates": {},
+      "description": "Comic Natalie would like to inform you of the manga magazine that will be released tomorrow, April 6th (Monday).",
+      "source": {
+        "url": "https://natalie.mu/comic/news/666498"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2023/0725/defaultimage_zasshilist.jpg?impolicy=twitter_card_face_crop",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604060712-rss-332d85",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Spring 2026 anime starting today, April 6th (Monday)",
+      "title_ja": "本日4月6日（月）放送開始の2026年春アニメ",
+      "dates": {},
+      "description": "We have compiled information on the new anime that will start broadcasting today, April 6th (Monday). Comic Natalie is currently publishing a summary of spring 2026 anime works.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/667023"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0404/jisyouakuyakureijyou_kv.jpg?imwidth=400&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604060712-rss-28b4ce",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "\"The detective is already dead.\" The first PV and KV of the second season are released, and the 5th anniversary project of the anime broadcast is also announced",
+      "title_ja": "「探偵はもう、死んでいる。」第2期の第1弾PV、KV公開　アニメ放送5周年企画も発表に",
+      "dates": {},
+      "description": "The first PV and first key visual of the TV anime \"The Detective is Dead. Season 2\" have been released. Plans for the 5th anniversary of the anime broadcast were also announced.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/667101"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0405/tanteiwamou_anime2_KV.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "game-202604060711-rss-75577f",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[Cosplay] I am fascinated by the beautiful legs that are slender and stretched out from the jet black robe! Taiwanese beauty “Dungeon Meal” Marcille had an amazing aura [8 photos]",
+      "title_ja": "【コスプレ】漆黒のローブから覗けるスラリと伸びた美脚に釘付け！台湾美女の「ダンジョン飯」マルシルはオーラが凄かった【写真8枚】",
+      "dates": {
+        "display": "Apr 5, 2026"
+      },
+      "description": "I would like to introduce some beautiful cosplayers I found in Taiwan.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/05/179541.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1699921.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604060711-rss-02aa0a",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "An introduction to Akira Yamaoka, a rare game musician who is not only involved in \"Silent Hill.\" Introducing recommended songs from \"BEMANI\" to the latest projects! [Special feature]",
+      "title_ja": "『サイレントヒル』だけじゃない、稀代のゲーム音楽家・山岡晃入門編。『BEMANI』から最新プロジェクトまでオススメ曲を一挙紹介！【特集】",
+      "dates": {
+        "display": "Apr 5, 2026"
+      },
+      "description": "Let's take a closer look at its appeal, which is supported not only in Japan but all over the world.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/05/164807.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1109236.png",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "figure-202604060711-rss-c33078",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Gacha “Disney Character/MeltyMelt” is now available. Lineup includes 4 types including Stitch who stuffs his face with chocolate",
+      "title_ja": "ガチャ「ディズニーキャラクター/ MeltyMelt」登場。チョコを頬張るスティッチら4種がラインナップ",
+      "dates": {},
+      "description": "Takara Tomy Arts will release the gacha product \"Disney Character/MeltyMelt\" in mid-April. The price is 400 yen per time.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2093583.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2093/583/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604060711-rss-b40807",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Hasegawa's 1/32 scale plastic model \"P-40E Warhawk\" starts shipping today!",
+      "title_ja": "ハセガワ、1/32スケールプラモデル「P-40E ウォーホーク」本日出荷開始！",
+      "dates": {},
+      "description": "Hasegawa will begin shipping resale 1/32 scale plastic model \"P-40E Warhawk\" on April 6th. The price is 5,060 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2098393.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2098/393/002_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604060711-rss-aadc4f",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Hasegawa's 1/48 scale plastic model \"F/A-18F Super Hornet\" starts shipping today!",
+      "title_ja": "ハセガワ、1/48スケールプラモデル「F/A-18F スーパーホーネット」本日出荷開始！",
+      "dates": {},
+      "description": "Hasegawa will begin shipping resale 1/48 scale plastic model \"F/A-18F Super Hornet\" on April 6th. The price is 6,380 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2098392.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2098/392/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604060711-rss-6c144c",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "25th anniversary of “Monsters, Inc.” release! Sally, Mike and others get along well with each other as the gacha figure “Shodazun Fig.”♪!!",
+      "title_ja": "『モンスターズ・インク』公開25周年！ガチャフィギュア「肩ズンFig.」になってサリーやマイクたちが仲良く肩ズン♪!!",
+      "dates": {
+        "display": "Apr 6, 2026"
+      },
+      "description": "The movie “Monsters, Inc.” is now available in the gacha mascot figure series “Shodazun Fig.” #pixar",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2936948/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/01_zy6H9v4qrVMYoxOF4cKQEWGg8I-A7L-S_BXz6dyqMpp5Reyk9AMpHhLuMlFV1PGuG-440x330.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "game-202604060710-rss-8f107a",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“Bombun” is a 3D action game in which a rabbit runs through a fortress in the sky armed with a bomb (Hobonichi Indie Pick Up!)",
+      "title_ja": "爆弾を武器にウサギが空の要塞を駆ける3Dアクション「Bombun」（ほぼ日 インディーPick Up！）",
+      "dates": {},
+      "description": "Today's \"Hobonichi Indie PickUp!\" introduces \"Bombun,\" a 3D platformer in which players fly around floating islands in the sky using bombs as weapons. Players take on the role of Bombun, a rabbit who fights against an army of robots led by his former friend. This work is characterized by exhilarating action that combines bomb jumps and dives.",
+      "source": {
+        "url": "https://www.4gamer.net/games/950/G095079/20260405002/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/950/G095079/20260405002/SS/010.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604060710-rss-15309f",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "\"Weekly 4Gamer\" looking back at 4Gamer's week, March 30th - April 5th, 2026",
+      "title_ja": "4Gamerの1週間を振り返る「Weekly 4Gamer」，2026年3月30日〜4月5日",
+      "dates": {},
+      "description": "From March 30th to April 5th, 2026, when April began nationwide, 319 articles were published on 4Gamer. Here's a quick look back at 4Gamer's week in the global game industry, including the holding of Microsoft's fan event \"XboxFanFest\" and the latest information on various titles.",
+      "source": {
+        "url": "https://www.4gamer.net/games/040/G004099/20260405006/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/040/G004099/20260405006/SS/029.jpg",
+      "_source_id": "4gamer"
+    },
     {
       "id": "anime-202604051942-rss-f7f0e0",
       "categories": [
@@ -39207,6 +39523,131 @@
       ],
       "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0319/konosuba_eventvisual.jpg?imwidth=1280&imdensity=1",
       "_source_id": "natalie-anime"
+    },
+    {
+      "id": "otaku-news-202604060712-rss-ee7590",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Who is your favorite supporting character in anime? 【questionnaire】",
+      "title_ja": "アニメの“好きな脇役キャラ”といえば？【アンケート】",
+      "dates": {
+        "display": "Apr 5, 2026"
+      },
+      "description": "Tell us about your favorite supporting character in anime! When you hear about your favorite supporting character in anime, please let us know which character comes to mind in the comments section of this article. &#160; Also, share the reasons and anecdotes about why you chose it, such as ``I was drawn to it right away in the first scene'' and ``I empathized with it more than the main character.''&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/610541"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/db1f957e8f8d423395dad8a7b25cde8e.jpeg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202604060712-rss-ea840c",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "10 masterpiece anime of the Heisei era that young children should definitely watch! “BANANA FISH” “Gintama” etc. [Survey results]",
+      "title_ja": "若い子にも絶対観てほしい「平成の名作アニメ」10選！『BANANA FISH』『銀魂』など【アンケート結果】",
+      "dates": {
+        "display": "Apr 5, 2026"
+      },
+      "description": "&#160; &#160; 10 masterpiece anime of the Heisei era that today's young people should definitely watch! \"Digimon Adventure\" Source: \"Digimon Anime Portal\" official website © Akiyoshi Hongo, Fuji Television, Toei Animation &#160; Broadcast in 1999&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/610467"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/banana-fish-keyvisual.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202604060710-rss-7e8962",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[Commentary] Finally the 1st anniversary! 4 points to thoroughly enjoy the Gundam smartphone game \"G Gene ET\"",
+      "title_ja": "【解説】遂に1周年！ガンダムスマホゲーム「ジージェネET」をしゃぶりつくす4つのポイント",
+      "dates": {
+        "display": "Apr 6, 2026"
+      },
+      "description": "The smartphone game app ``SD Gundam G Generation Eternal'', which started distribution on April 16, 2025, received a major update on April 1, 2026 to commemorate the 1st anniversary of its release. Expansion of traditional play parts...",
+      "source": {
+        "url": "https://0115765.com/archives/178796"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2025/04/0417-jwe11sn6-1024x576.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604060710-rss-6c4482",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Spring anime, “Saturday 23:30” is quite a battleground! Screams of joy as many notable works are broadcast simultaneously",
+      "title_ja": "春アニメ、“土曜23時30分”がかなりの激戦区！注目作が多数同時放送で嬉しい悲鳴",
+      "dates": {
+        "display": "Apr 5, 2026"
+      },
+      "description": "The spring anime series for the April 2026 season has officially started on April 4th, and every Saturday from 11:30 p.m., it's a fierce battleground where multiple popular works overlap, and anime viewers can be heard screaming with joy. The main works that will be broadcast during this time period are...",
+      "source": {
+        "url": "https://0115765.com/archives/178750"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/04/0403-geuugvec-1024x576.jpeg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604060710-rss-320ee1",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Price: 130,000 yen & weighs over 8kg! Full-size real \"Kinnikuman\" unicorn head Robin mask is born",
+      "title_ja": "価格13万円＆重さ8kg超え！原寸大のリアル『キン肉マン』ユニコーンヘッド ロビンマスクが誕生",
+      "dates": {
+        "display": "Apr 5, 2026"
+      },
+      "description": "Castem, a precision casting manufacturer, has announced a product that completely reproduces the ``Unicorn Head Ver.'' of the popular superhuman Robin mask that appears in the manga ``Kinnikuman'' in size, shape, and materials that are extremely close to the original. From 10am on Thursday, April 2, 2026...",
+      "source": {
+        "url": "https://0115765.com/archives/178774"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604060710-rss-2e735c",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“Detective Precure! 'Theatrical version to be released in September, with box office revenue of over 1 billion yen maintained every year, screened again this year",
+      "title_ja": "『名探偵プリキュア！』劇場版が9月公開決定　毎年10億円超え興収維持で今年も上映",
+      "dates": {
+        "display": "Apr 6, 2026"
+      },
+      "description": "Detective PreCure! is the latest work in the PreCure series, the 23rd since its broadcast began in 2004. ' has been decided to be made into a movie and will be released nationwide on September 18th (Friday). Currently, every Sunday morning at 8:30 a.m. on ABC TV and TV Asahi...",
+      "source": {
+        "url": "https://0115765.com/archives/178812"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/04/0405-yiojdl0e-726x1024.jpg",
+      "_source_id": "0115765-com"
     },
     {
       "id": "otaku-news-202604051942-rss-f1688d",
