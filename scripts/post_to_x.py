@@ -20,6 +20,12 @@ import urllib.parse
 import base64
 import uuid
 from pathlib import Path
+import re
+
+JA_CHAR_RE = re.compile(r"[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]")
+
+def looks_japanese(text: str) -> bool:
+    return bool(JA_CHAR_RE.search(text or ""))
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ENTRIES_FILE = PROJECT_ROOT / "data" / "entries.json"
@@ -85,6 +91,10 @@ def format_tweet(entry, lang="en"):
         title = entry.get("title", "")
         if title.startswith("[未翻訳] "):
             title = title.replace("[未翻訳] ", "")
+        
+        # 英語投稿時にタイトルが日本語の場合はスキップフラグを返す
+        if looks_japanese(title):
+            return "[SKIP_EN_TWEET]"
 
     if len(title) > 110:
         title = title[:107] + "..."
@@ -207,10 +217,14 @@ def main():
         
         # 英語ポスト
         text_en = format_tweet(entry, lang="en")
-        print(f"Posting [{primary_cat}] (EN): {entry['id']}")
-        success_en = post_tweet(text_en, creds)
-        if success_en:
-            posted_count += 1
+        if text_en == "[SKIP_EN_TWEET]":
+            print(f"  WARNING: 英語タイトルが日本語のため投稿スキップ: {entry.get('title', '')[:50]}...")
+            success_en = False
+        else:
+            print(f"Posting [{primary_cat}] (EN): {entry['id']}")
+            success_en = post_tweet(text_en, creds)
+            if success_en:
+                posted_count += 1
         
         time.sleep(3)
         
