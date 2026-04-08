@@ -81,6 +81,16 @@ def check_duplicate(new_entry, existing_entries):
 
     return False, "", False
 
+UNTRANSLATED_PREFIX = "[未翻訳]"
+
+
+def has_untranslated_marker(entry):
+    """title または description に [未翻訳] プレースホルダが残っているか確認する"""
+    title = entry.get("title", "") or ""
+    description = entry.get("description", "") or ""
+    return title.strip().startswith(UNTRANSLATED_PREFIX) or description.strip().startswith(UNTRANSLATED_PREFIX)
+
+
 def add_entries_from_file(filepath, reset=False):
     """Geminiの出力JSONファイルからエントリーを追加。reset=True のときは既存を空にしてから追加"""
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -99,6 +109,11 @@ def add_entries_from_file(filepath, reset=False):
     added = 0
     for entry in new_entries:
         normalize_categories(entry)
+        # 翻訳未完了チェック: [未翻訳] プレースホルダが残っている記事は登録しない
+        if has_untranslated_marker(entry):
+            title_disp = entry.get('title_ja', entry.get('title', 'Unknown'))
+            print(f"  SKIP (未翻訳): {title_disp[:60]} — title/description に [未翻訳] が残っています")
+            continue
         is_dup, reason, is_warn = check_duplicate(entry, existing_entries)
         
         if is_dup:
