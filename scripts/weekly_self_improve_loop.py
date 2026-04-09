@@ -36,6 +36,8 @@ PERPLEXITY_FILES = (
 )
 
 JST = timezone(timedelta(hours=9))
+DEFAULT_GEMINI_MODEL = "gemini-1.5-flash"
+DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
 
 REPORT_SYSTEM = """あなたは Japan OTAKU Insider の運用アナリストです。
 与えられたサイト統計（JSON）を読み、週次の振り返りレポートを日本語の Markdown で書いてください。
@@ -181,10 +183,10 @@ def main() -> None:
     parser.add_argument("--out-dir", type=Path, required=True, help="成果物ディレクトリ")
     parser.add_argument("--days", type=int, default=7, help="集計に使う直近日数（id 内日付ベース・近似）")
     parser.add_argument("--dry-run", action="store_true", help="API を呼ばず統計と現行プロンプトだけ出力")
-    parser.add_argument("--gemini-model", default=os.getenv("GEMINI_MODEL", "gemini-2.0-flash"))
+    parser.add_argument("--gemini-model", default=(os.getenv("GEMINI_MODEL", "").strip() or DEFAULT_GEMINI_MODEL))
     parser.add_argument(
         "--claude-model",
-        default=os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001"),
+        default=(os.getenv("ANTHROPIC_MODEL", "").strip() or DEFAULT_ANTHROPIC_MODEL),
     )
     args = parser.parse_args()
 

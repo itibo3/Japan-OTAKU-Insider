@@ -25,6 +25,14 @@ import requests
 from google.auth.transport.requests import Request
 from google.oauth2 import service_account
 
+DEFAULT_GEMINI_MODEL = "gemini-1.5-flash"
+DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
+
+
+def _env_or_default(name: str, default: str) -> str:
+    val = os.getenv(name, "").strip()
+    return val if val else default
+
 
 def _ok(name: str, msg: str) -> Tuple[bool, str]:
     return True, f"✅ {name}: {msg}"
@@ -39,7 +47,8 @@ def check_gemini() -> Tuple[bool, str]:
     if not key:
         return _ng("Gemini", "GEMINI_API_KEY が未設定")
 
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+    model = _env_or_default("GEMINI_MODEL", DEFAULT_GEMINI_MODEL)
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     resp = requests.post(
         url,
         params={"key": key},
@@ -51,7 +60,7 @@ def check_gemini() -> Tuple[bool, str]:
     )
     if resp.status_code >= 400:
         return _ng("Gemini", f"HTTP {resp.status_code} {resp.text[:160]}")
-    return _ok("Gemini", "APIキーで generateContent 成功")
+    return _ok("Gemini", f"APIキーで generateContent 成功 ({model})")
 
 
 def check_anthropic() -> Tuple[bool, str]:
@@ -59,6 +68,7 @@ def check_anthropic() -> Tuple[bool, str]:
     if not key:
         return _ng("Anthropic", "ANTHROPIC_API_KEY が未設定")
 
+    model = _env_or_default("ANTHROPIC_MODEL", DEFAULT_ANTHROPIC_MODEL)
     resp = requests.post(
         "https://api.anthropic.com/v1/messages",
         headers={
@@ -67,7 +77,7 @@ def check_anthropic() -> Tuple[bool, str]:
             "content-type": "application/json",
         },
         json={
-            "model": os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001"),
+            "model": model,
             "max_tokens": 8,
             "messages": [{"role": "user", "content": "ping"}],
         },
@@ -75,7 +85,7 @@ def check_anthropic() -> Tuple[bool, str]:
     )
     if resp.status_code >= 400:
         return _ng("Anthropic", f"HTTP {resp.status_code} {resp.text[:160]}")
-    return _ok("Anthropic", "APIキーで messages 成功")
+    return _ok("Anthropic", f"APIキーで messages 成功 ({model})")
 
 
 def _ga4_access_token(creds_json: str) -> str:
