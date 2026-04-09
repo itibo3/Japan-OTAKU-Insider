@@ -42,6 +42,26 @@ def _build_summary(proposals: dict) -> str:
     return "\n".join(lines[:8])
 
 
+def _extract_report_points(report_text: str, limit: int = 3) -> str:
+    lines = []
+    for raw in report_text.splitlines():
+        s = raw.strip()
+        if not s:
+            continue
+        if s.startswith("- ") or s.startswith("* "):
+            lines.append(s)
+        elif s.startswith("## "):
+            lines.append(f"- {s[3:]}")
+        if len(lines) >= limit:
+            break
+    if not lines:
+        preview = " ".join(report_text.split())
+        if len(preview) > 150:
+            preview = preview[:147] + "..."
+        return f"- {preview}" if preview else "- (要約抽出なし)"
+    return "\n".join(lines)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Discordへ週次改善案を通知")
     parser.add_argument("--webhook-url", default=os.getenv("DISCORD_WEBHOOK_URL", "").strip())
@@ -58,11 +78,7 @@ def main() -> None:
 
     proposals = _load_json(args.proposals)
     report_text = args.report.read_text(encoding="utf-8") if args.report.exists() else ""
-    report_preview = " ".join(report_text.split())
-    if len(report_preview) > 220:
-        report_preview = report_preview[:217] + "..."
-    if not report_preview:
-        report_preview = "(週次レポート本文なし)"
+    report_points = _extract_report_points(report_text, limit=3)
 
     run_url = ""
     if args.repo and args.run_id:
@@ -72,11 +88,11 @@ def main() -> None:
         f"""
         📊 JOI 週次改善レポートが更新されました
 
+        **週報要約**
+        {report_points}
+
         **改善案サマリ**
         {_build_summary(proposals)}
-
-        **レポート冒頭**
-        {report_preview}
         """
     ).strip()
     if run_url:

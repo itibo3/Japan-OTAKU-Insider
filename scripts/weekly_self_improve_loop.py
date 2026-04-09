@@ -39,6 +39,7 @@ JST = timezone(timedelta(hours=9))
 DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
 DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
 DEFAULT_OPUS_MODEL = "claude-opus-4-6"
+DEFAULT_SONNET_MODEL = "claude-sonnet-4-5-20250929"
 
 REPORT_SYSTEM = """あなたは Japan OTAKU Insider の運用アナリストです。
 与えられた統計（GA4 + 内部運用データ）を読み、週次の振り返りレポートを日本語Markdownで書いてください。
@@ -311,6 +312,11 @@ def main() -> None:
         default=(os.getenv("ANTHROPIC_OPUS_MODEL", "").strip() or DEFAULT_OPUS_MODEL),
         help="週次分析/JOI通信に使う Opus モデル",
     )
+    parser.add_argument(
+        "--sonnet-model",
+        default=(os.getenv("ANTHROPIC_SONNET_MODEL", "").strip() or DEFAULT_SONNET_MODEL),
+        help="週次分析/改善案に優先利用する Sonnet モデル",
+    )
     parser.add_argument("--emit-joi-json", type=Path, help="JOI記事素材JSONの出力先")
     args = parser.parse_args()
 
@@ -403,21 +409,21 @@ def main() -> None:
         print(f"部分完了 → {out_dir}")
         return
 
-    # Opus 4.6 で週次分析レポートを生成
+    # Sonnet 優先で週次分析レポートを生成（失敗時 Opus）
     report_user = "統計JSON:\n" + json.dumps(stats, ensure_ascii=False, indent=2)
     try:
         report = call_anthropic_text(
             api_key=anthropic_key,
-            model=args.opus_model,
+            model=args.sonnet_model,
             system=REPORT_SYSTEM,
             user_text=report_user,
             max_tokens=4096,
         )
     except Exception as e:
-        print(f"Opus 週次レポート失敗 ({e}); --claude-model へフォールバック", file=sys.stderr)
+        print(f"Sonnet 週次レポート失敗 ({e}); Opus へフォールバック", file=sys.stderr)
         report = call_anthropic_text(
             api_key=anthropic_key,
-            model=args.claude_model,
+            model=args.opus_model,
             system=REPORT_SYSTEM,
             user_text=report_user,
             max_tokens=4096,
@@ -428,10 +434,10 @@ def main() -> None:
 
     # 検索ワード改善案（Artifactのみ）
     try:
-        proposals = call_claude_json(anthropic_key, args.opus_model, report_text, prompts)
+        proposals = call_claude_json(anthropic_key, args.sonnet_model, report_text, prompts)
     except Exception as e:
-        print(f"Opus 改善案失敗 ({e}); --claude-model へフォールバック", file=sys.stderr)
-        proposals = call_claude_json(anthropic_key, args.claude_model, report_text, prompts)
+        print(f"Sonnet 改善案失敗 ({e}); Opus へフォールバック", file=sys.stderr)
+        proposals = call_claude_json(anthropic_key, args.opus_model, report_text, prompts)
 
     (out_dir / "claude_prompt_proposals.json").write_text(
         json.dumps(proposals, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -451,16 +457,16 @@ def main() -> None:
     try:
         joi_raw = call_anthropic_text(
             api_key=anthropic_key,
-            model=args.opus_model,
+            model=args.sonnet_model,
             system=JOI_SYSTEM,
             user_text=joi_user,
             max_tokens=4096,
         )
     except Exception as e:
-        print(f"Opus JOI通信失敗 ({e}); --claude-model へフォールバック", file=sys.stderr)
+        print(f"Sonnet JOI通信失敗 ({e}); Opus へフォールバック", file=sys.stderr)
         joi_raw = call_anthropic_text(
             api_key=anthropic_key,
-            model=args.claude_model,
+            model=args.opus_model,
             system=JOI_SYSTEM,
             user_text=joi_user,
             max_tokens=4096,

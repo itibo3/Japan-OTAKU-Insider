@@ -124,6 +124,19 @@ jobs:
           echo "==> Post to X (Twitter)"
           python3 scripts/post_to_x.py || true
 
+      - name: Notify daily analytics to Discord
+        if: always()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          GA4_CREDENTIALS_JSON: ${{ secrets.GA4_CREDENTIALS_JSON }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          echo "==> Notify daily analytics to Discord"
+          python3 scripts/daily_analytics_to_discord.py || true
+
       - name: Commit and push
         run: |
           echo "==> Commit and push"
