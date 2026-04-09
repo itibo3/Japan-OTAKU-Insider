@@ -25,7 +25,7 @@ import requests
 from google.auth.transport.requests import Request
 from google.oauth2 import service_account
 
-DEFAULT_GEMINI_MODEL = "gemini-1.5-flash"
+DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
 DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
 
 
@@ -47,20 +47,29 @@ def check_gemini() -> Tuple[bool, str]:
     if not key:
         return _ng("Gemini", "GEMINI_API_KEY が未設定")
 
-    model = _env_or_default("GEMINI_MODEL", DEFAULT_GEMINI_MODEL)
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-    resp = requests.post(
-        url,
-        params={"key": key},
-        json={
-            "contents": [{"role": "user", "parts": [{"text": "ping"}]}],
-            "generationConfig": {"maxOutputTokens": 8},
-        },
-        timeout=45,
-    )
-    if resp.status_code >= 400:
-        return _ng("Gemini", f"HTTP {resp.status_code} {resp.text[:160]}")
-    return _ok("Gemini", f"APIキーで generateContent 成功 ({model})")
+    preferred = _env_or_default("GEMINI_MODEL", DEFAULT_GEMINI_MODEL)
+    # モデル名変更が頻繁なため、候補を順に試す
+    candidates = []
+    for m in (preferred, "gemini-2.5-flash-lite", "gemini-1.5-flash"):
+        if m and m not in candidates:
+            candidates.append(m)
+
+    last_err = ""
+    for model in candidates:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        resp = requests.post(
+            url,
+            params={"key": key},
+            json={
+                "contents": [{"role": "user", "parts": [{"text": "ping"}]}],
+                "generationConfig": {"maxOutputTokens": 8},
+            },
+            timeout=45,
+        )
+        if resp.status_code < 400:
+            return _ok("Gemini", f"APIキーで generateContent 成功 ({model})")
+        last_err = f"{model}: HTTP {resp.status_code} {resp.text[:120]}"
+    return _ng("Gemini", last_err or "モデル候補がすべて失敗")
 
 
 def check_anthropic() -> Tuple[bool, str]:

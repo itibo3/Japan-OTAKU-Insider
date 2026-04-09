@@ -36,7 +36,7 @@ PERPLEXITY_FILES = (
 )
 
 JST = timezone(timedelta(hours=9))
-DEFAULT_GEMINI_MODEL = "gemini-1.5-flash"
+DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
 DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
 
 REPORT_SYSTEM = """あなたは Japan OTAKU Insider の運用アナリストです。
@@ -233,8 +233,17 @@ def main() -> None:
         try:
             report = call_gemini_markdown(gemini_key, args.gemini_model, stats)
         except Exception as e:
-            print(f"Gemini 失敗 ({e}); gemini-1.5-flash に切替えます。", file=sys.stderr)
-            report = call_gemini_markdown(gemini_key, "gemini-1.5-flash", stats)
+            print(f"Gemini 失敗 ({e}); 代替モデルを順に試します。", file=sys.stderr)
+            report = None
+            for m in ("gemini-2.5-flash-lite", "gemini-1.5-flash"):
+                try:
+                    report = call_gemini_markdown(gemini_key, m, stats)
+                    print(f"Gemini 代替モデルで成功: {m}", file=sys.stderr)
+                    break
+                except Exception as e2:
+                    print(f"  失敗: {m} ({e2})", file=sys.stderr)
+            if report is None:
+                raise
         (out_dir / "weekly_report_ja.md").write_text(report + "\n", encoding="utf-8")
 
     report_text = (out_dir / "weekly_report_ja.md").read_text(encoding="utf-8")
