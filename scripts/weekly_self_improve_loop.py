@@ -184,7 +184,7 @@ def main() -> None:
     parser.add_argument("--gemini-model", default=os.getenv("GEMINI_MODEL", "gemini-2.0-flash"))
     parser.add_argument(
         "--claude-model",
-        default=os.getenv("ANTHROPIC_MODEL", "claude-3-5-haiku-20241022"),
+        default=os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001"),
     )
     args = parser.parse_args()
 

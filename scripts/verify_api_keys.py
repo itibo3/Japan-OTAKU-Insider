@@ -67,7 +67,7 @@ def check_anthropic() -> Tuple[bool, str]:
             "content-type": "application/json",
         },
         json={
-            "model": os.getenv("ANTHROPIC_MODEL", "claude-3-5-haiku-20241022"),
+            "model": os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001"),
             "max_tokens": 8,
             "messages": [{"role": "user", "content": "ping"}],
         },
