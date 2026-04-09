@@ -8,6 +8,7 @@
 #   GA4_CREDENTIALS_JSON   … GA4サービスアカウントJSON（任意）
 #   GA4_PROPERTY_ID        … GA4プロパティID（任意）
 #   GEMINI_API_KEY         … 日次検閲など他処理との共通管理用（この週次本体では必須ではない）
+#   DISCORD_WEBHOOK_URL    … 改善案通知先（任意）
 
 name: Weekly Self-Improve Loop
 
@@ -76,3 +77,15 @@ jobs:
           name: weekly-self-improve-${{ github.run_id }}
           path: artifact-out/
           retention-days: 30
+
+      - name: Notify weekly proposals to Discord
+        if: always()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+        run: |
+          python3 scripts/notify_discord_weekly.py \
+            --proposals artifact-out/claude_prompt_proposals.json \
+            --report artifact-out/weekly_report_ja.md || true
