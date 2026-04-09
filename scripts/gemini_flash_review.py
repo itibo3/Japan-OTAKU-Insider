@@ -20,6 +20,7 @@ from pathlib import Path
 from typing import Any
 
 import requests
+DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
 
 REVIEW_SYSTEM = """あなたは「Japan OTAKU Insider」という英語向け日本オタクニュースサイトの厳格な検閲担当です。
 与えられた候補記事それぞれについて、サイトに載せるべきか boolean で判定します。
@@ -132,7 +133,7 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True, help="通過分だけを書き出す JSON 配列")
     parser.add_argument("--log", type=Path, help="判断ログ JSON の保存先（任意）")
     parser.add_argument("--dry-run", action="store_true", help="API を呼ばず全件通過（接続テスト用）")
-    parser.add_argument("--model", default=os.getenv("GEMINI_MODEL", "gemini-2.0-flash"), help="Gemini モデル名")
+    parser.add_argument("--model", default=(os.getenv("GEMINI_MODEL", "").strip() or DEFAULT_GEMINI_MODEL), help="Gemini モデル名")
     args = parser.parse_args()
 
     api_key = os.getenv("GEMINI_API_KEY", "").strip()
@@ -153,14 +154,21 @@ def main() -> None:
     if args.dry_run:
         decisions = [{"index": i, "ok": True, "reason_ja": "dry-run"} for i in range(len(entries))]
     else:
-        try:
-            decisions = call_gemini_decisions(api_key, args.model, entries)
-        except Exception as e:
-            print(f"Gemini 呼び出し失敗 ({e}); gemini-1.5-flash にフォールバックします。", file=sys.stderr)
-            if args.model != "gemini-1.5-flash":
-                decisions = call_gemini_decisions(api_key, "gemini-1.5-flash", entries)
-            else:
-                raise
+        tried: list[str] = []
+        decisions = None
+        for model in [args.model, "gemini-2.5-flash-lite", "gemini-1.5-flash"]:
+            if model in tried:
+                continue
+            tried.append(model)
+            try:
+                decisions = call_gemini_decisions(api_key, model, entries)
+                if model != args.model:
+                    print(f"Gemini 代替モデルで成功: {model}", file=sys.stderr)
+                break
+            except Exception as e:
+                print(f"Gemini 呼び出し失敗 ({model}): {e}", file=sys.stderr)
+        if decisions is None:
+            raise RuntimeError("Gemini 検閲: すべてのモデル候補で失敗")
 
     approved, log_rows = apply_decisions(entries, decisions)
     args.output.parent.mkdir(parents=True, exist_ok=True)

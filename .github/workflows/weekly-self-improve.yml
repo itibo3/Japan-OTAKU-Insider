@@ -1,9 +1,13 @@
 # 週次: Gemini でサイト統計レポート（日本語）→ Claude で Perplexity 用 prompts 改善案（JSON + proposed_prompts/*）
 # 成果物はリポジトリに自動コミットしない。Actions の Artifact からダウンロードして人間が差分確認後、prompts/ を手動または別PRで反映する。
 #
-# 必要な Secrets（未設定なら該当ステップはスキップまたは簡易出力）:
-#   GEMINI_API_KEY      … Google AI Studio
-#   ANTHROPIC_API_KEY   … Anthropic Console
+# 必要な Secrets:
+#   ANTHROPIC_API_KEY      … Anthropic Console（必須）
+#   ANTHROPIC_OPUS_MODEL   … 省略時は scripts 側の既定（claude-opus-4-6）
+#   ANTHROPIC_MODEL        … フォールバック用
+#   GA4_CREDENTIALS_JSON   … GA4サービスアカウントJSON（任意）
+#   GA4_PROPERTY_ID        … GA4プロパティID（任意）
+#   GEMINI_API_KEY         … 日次検閲など他処理との共通管理用（この週次本体では必須ではない）
 
 name: Weekly Self-Improve Loop
 
@@ -16,7 +20,7 @@ jobs:
   self-improve:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,8 +38,37 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL }}
+          ANTHROPIC_OPUS_MODEL: ${{ secrets.ANTHROPIC_OPUS_MODEL }}
+          GA4_CREDENTIALS_JSON: ${{ secrets.GA4_CREDENTIALS_JSON }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: |
-          python3 scripts/weekly_self_improve_loop.py --out-dir artifact-out
+          python3 scripts/weekly_self_improve_loop.py --out-dir artifact-out --emit-joi-json artifact-out/joi_entry_source.json
+
+      - name: Build weekly JOI entry JSON
+        run: |
+          python3 scripts/build_weekly_joi_entry.py --input artifact-out/joi_entry_source.json --output artifact-out/joi_entry.json
+
+      - name: Add JOI entry and rebuild JP file
+        run: |
+          python3 scripts/add_entry.py artifact-out/joi_entry.json
+          python3 scripts/sort_entries.py
+          python3 scripts/build_ja_entries.py
+
+      - name: Commit and push JOI entry
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/entries.json data/entries_ja.json
+          if git diff --staged --quiet; then
+            echo "No JOI entry changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: add weekly JOI bulletin ($(date -u +%Y-%m-%d))"
+          if ! git pull --rebase origin main; then
+            git rebase --abort || true
+            exit 0
+          fi
+          git push origin main
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

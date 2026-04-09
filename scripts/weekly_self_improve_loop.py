@@ -18,7 +18,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -38,17 +38,16 @@ PERPLEXITY_FILES = (
 JST = timezone(timedelta(hours=9))
 DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
 DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
+DEFAULT_OPUS_MODEL = "claude-opus-4-6"
 
 REPORT_SYSTEM = """あなたは Japan OTAKU Insider の運用アナリストです。
-与えられたサイト統計（JSON）を読み、週次の振り返りレポートを日本語の Markdown で書いてください。
-
-含めること:
-- 総記事数とカテゴリ別の雰囲気（多い/少ない）
-- 直近追加の活発さ（件数の目安）
-- Perplexity 補完を再開する場合のリスク（幻覚・スポーツ混入・偽イベント）への短い注意
-- 次の1週間の運用上の提案（箇条書き3つまで）
-
-含めないこと: 憶測で具体的なイベント名や日付を新たにでっち上げないこと。
+与えられた統計（GA4 + 内部運用データ）を読み、週次の振り返りレポートを日本語Markdownで書いてください。
+必ず次を含めてください:
+- 先週の要点（3点以内）
+- 良かった点 / 悪化点
+- Perplexity運用リスク（幻覚・誤カテゴリ）の短い評価
+- 次週アクション（最大3つ、具体）
+憶測で存在しない数字・イベントを作らないこと。
 """
 
 CLAUDE_SYSTEM = """You are a prompt engineer for a Perplexity search pipeline.
@@ -62,6 +61,23 @@ Your job: propose improved single-line keyword strings that:
 Output ONLY valid JSON (no markdown fences) with exactly these keys:
 "perplexity_cafe.md", "perplexity_vtuber.md", "perplexity_figure.md", "perplexity_game.md", "perplexity_anime.md", "perplexity_other.md"
 Each value is a single string (the new one-line prompt).
+"""
+
+JOI_SYSTEM = """あなたは Japan OTAKU Insider の編集長です。
+受け取った週次分析をもとに、サイト掲載用の「週間JOI通信」を作成してください。
+出力は必ず JSON のみ:
+{
+  "title_ja": "...",
+  "title_en": "...",
+  "summary_ja": "...",
+  "summary_en": "...",
+  "body_ja_markdown": "...",
+  "tags": ["weekly-joi","otaku-news","analytics"]
+}
+要件:
+- 読者向けでわかりやすく、断定しすぎない
+- 数字は入力データに基づく
+- body は見出しつきMarkdown
 """
 
 
@@ -110,23 +126,132 @@ def load_perplexity_prompts() -> dict[str, str]:
     return out
 
 
-def call_gemini_markdown(api_key: str, model: str, stats: dict[str, Any]) -> str:
-    user = "統計JSON:\n" + json.dumps(stats, ensure_ascii=False, indent=2)
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-    params = {"key": api_key}
-    body: dict[str, Any] = {
-        "systemInstruction": {"parts": [{"text": REPORT_SYSTEM}]},
-        "contents": [{"role": "user", "parts": [{"text": user}]}],
-        "generationConfig": {"temperature": 0.25, "maxOutputTokens": 4096},
+def _ga4_access_token(creds_json: str) -> str:
+    from google.auth.transport.requests import Request
+    from google.oauth2 import service_account
+
+    info = json.loads(creds_json)
+    creds = service_account.Credentials.from_service_account_info(
+        info, scopes=["https://www.googleapis.com/auth/analytics.readonly"]
+    )
+    creds.refresh(Request())
+    if not creds.token:
+        raise RuntimeError("GA4 token 取得失敗")
+    return creds.token
+
+
+def fetch_ga4_summary(*, creds_json: str, property_id: str, days: int = 7) -> dict[str, Any]:
+    if not (creds_json and property_id):
+        return {"status": "skipped", "reason": "missing credentials or property id"}
+    token = _ga4_access_token(creds_json)
+    today = date.today()
+    start = (today - timedelta(days=days)).isoformat()
+    end = (today - timedelta(days=1)).isoformat()
+    prev_start = (today - timedelta(days=days * 2)).isoformat()
+    prev_end = (today - timedelta(days=days + 1)).isoformat()
+
+    def run(start_date: str, end_date: str) -> dict[str, float]:
+        resp = requests.post(
+            f"https://analyticsdata.googleapis.com/v1beta/properties/{property_id}:runReport",
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+            json={
+                "dateRanges": [{"startDate": start_date, "endDate": end_date}],
+                "metrics": [
+                    {"name": "activeUsers"},
+                    {"name": "sessions"},
+                    {"name": "screenPageViews"},
+                    {"name": "engagementRate"},
+                ],
+            },
+            timeout=60,
+        )
+        if resp.status_code >= 400:
+            raise RuntimeError(f"GA4 runReport HTTP {resp.status_code}: {resp.text[:240]}")
+        rows = (resp.json() or {}).get("rows") or []
+        if not rows:
+            return {"activeUsers": 0.0, "sessions": 0.0, "screenPageViews": 0.0, "engagementRate": 0.0}
+        vals = rows[0].get("metricValues") or []
+        names = ["activeUsers", "sessions", "screenPageViews", "engagementRate"]
+        out: dict[str, float] = {}
+        for i, n in enumerate(names):
+            try:
+                out[n] = float((vals[i] or {}).get("value") or 0)
+            except Exception:
+                out[n] = 0.0
+        return out
+
+    current = run(start, end)
+    prev = run(prev_start, prev_end)
+    delta = {k: current.get(k, 0.0) - prev.get(k, 0.0) for k in current.keys()}
+    return {
+        "status": "ok",
+        "window": {"start": start, "end": end},
+        "current": current,
+        "previous": prev,
+        "delta": delta,
     }
-    resp = requests.post(url, params=params, json=body, timeout=120)
+
+
+def collect_internal_pipeline_stats(entries: list[dict[str, Any]], days: int = 7) -> dict[str, Any]:
+    cutoff = datetime.now(JST).date() - timedelta(days=days)
+    recent = []
+    untranslated = 0
+    by_source: dict[str, int] = {}
+    pplx_recent = 0
+    for e in entries:
+        src = e.get("_source_id", "(unknown)")
+        by_source[src] = by_source.get(src, 0) + 1
+        title = (e.get("title") or "").strip()
+        desc = (e.get("description") or "").strip()
+        if title.startswith("[未翻訳]") or desc.startswith("[未翻訳]"):
+            untranslated += 1
+        ds = _id_date(e)
+        if not ds:
+            continue
+        try:
+            d = datetime(int(ds[:4]), int(ds[4:6]), int(ds[6:8])).date()
+        except Exception:
+            continue
+        if d >= cutoff:
+            recent.append(e)
+            if "-pplx-" in (e.get("id") or "") or e.get("_source") == "perplexity":
+                pplx_recent += 1
+    top_sources = sorted(by_source.items(), key=lambda x: x[1], reverse=True)[:10]
+    return {
+        "recent_entries": len(recent),
+        "recent_perplexity_entries": pplx_recent,
+        "untranslated_marker_entries": untranslated,
+        "top_sources": top_sources,
+    }
+
+
+def call_anthropic_text(*, api_key: str, model: str, system: str, user_text: str, max_tokens: int = 8192) -> str:
+    resp = requests.post(
+        "https://api.anthropic.com/v1/messages",
+        headers={
+            "x-api-key": api_key,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        },
+        json={
+            "model": model,
+            "max_tokens": max_tokens,
+            "system": system,
+            "messages": [{"role": "user", "content": user_text}],
+        },
+        timeout=180,
+    )
     if resp.status_code >= 400:
-        raise RuntimeError(f"Gemini API HTTP {resp.status_code}: {resp.text[:400]}")
+        raise RuntimeError(f"Anthropic API HTTP {resp.status_code}: {resp.text[:400]}")
     data = resp.json()
-    parts = data.get("candidates", [{}])[0].get("content", {}).get("parts", [])
-    if not parts:
-        raise RuntimeError("Gemini が空応答")
-    return parts[0].get("text", "").strip()
+    texts = []
+    for block in data.get("content", []):
+        if block.get("type") == "text":
+            texts.append(block.get("text", ""))
+    out = "\n".join(texts).strip()
+    if not out:
+        raise RuntimeError("Anthropic 応答が空")
+    return out
 
 
 def call_claude_json(api_key: str, model: str, weekly_report: str, prompts: dict[str, str]) -> dict[str, str]:
@@ -138,28 +263,21 @@ def call_claude_json(api_key: str, model: str, weekly_report: str, prompts: dict
         "以下の JSON を読み、Perplexity 用の1行プロンプトを改善してください。\n"
         + json.dumps(payload, ensure_ascii=False, indent=2)
     )
-    url = "https://api.anthropic.com/v1/messages"
-    headers = {
-        "x-api-key": api_key,
-        "anthropic-version": "2023-06-01",
-        "content-type": "application/json",
-    }
-    body = {
-        "model": model,
-        "max_tokens": 8192,
-        "system": CLAUDE_SYSTEM,
-        "messages": [{"role": "user", "content": user}],
-    }
-    resp = requests.post(url, headers=headers, json=body, timeout=180)
-    if resp.status_code >= 400:
-        raise RuntimeError(f"Claude API HTTP {resp.status_code}: {resp.text[:400]}")
-    data = resp.json()
-    texts: list[str] = []
-    for block in data.get("content", []):
-        if block.get("type") == "text":
-            texts.append(block.get("text", ""))
-    raw = "\n".join(texts).strip()
+    raw = call_anthropic_text(api_key=api_key, model=model, system=CLAUDE_SYSTEM, user_text=user, max_tokens=8192)
     return _parse_claude_json(raw)
+
+
+def _parse_json_object(raw: str) -> dict[str, Any]:
+    try:
+        obj = json.loads(raw.strip())
+        if isinstance(obj, dict):
+            return obj
+    except json.JSONDecodeError:
+        pass
+    m = re.search(r"\{[\s\S]*\}", raw)
+    if m:
+        return json.loads(m.group(0))
+    raise ValueError("JSON オブジェクトを抽出できませんでした")
 
 
 def _parse_claude_json(raw: str) -> dict[str, str]:
@@ -188,6 +306,12 @@ def main() -> None:
         "--claude-model",
         default=(os.getenv("ANTHROPIC_MODEL", "").strip() or DEFAULT_ANTHROPIC_MODEL),
     )
+    parser.add_argument(
+        "--opus-model",
+        default=(os.getenv("ANTHROPIC_OPUS_MODEL", "").strip() or DEFAULT_OPUS_MODEL),
+        help="週次分析/JOI通信に使う Opus モデル",
+    )
+    parser.add_argument("--emit-joi-json", type=Path, help="JOI記事素材JSONの出力先")
     args = parser.parse_args()
 
     out_dir = args.out_dir.resolve()
@@ -199,66 +323,115 @@ def main() -> None:
         sys.exit(1)
     db = json.loads(entries_path.read_text(encoding="utf-8"))
     entries = db.get("entries") or []
-    stats = collect_stats(entries, days=args.days)
+    base_stats = collect_stats(entries, days=args.days)
+    internal_stats = collect_internal_pipeline_stats(entries, days=args.days)
+    ga4_stats = fetch_ga4_summary(
+        creds_json=os.getenv("GA4_CREDENTIALS_JSON", "").strip(),
+        property_id=os.getenv("GA4_PROPERTY_ID", "").strip(),
+        days=args.days,
+    )
+    stats = {
+        "base": base_stats,
+        "internal": internal_stats,
+        "ga4": ga4_stats,
+    }
     (out_dir / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     prompts = load_perplexity_prompts()
     (out_dir / "current_perplexity_prompts.json").write_text(
         json.dumps(prompts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-
-    gemini_key = os.getenv("GEMINI_API_KEY", "").strip()
     anthropic_key = os.getenv("ANTHROPIC_API_KEY", "").strip()
 
     if args.dry_run:
         stub = (
             "# 週次レポート（dry-run）\n\n"
-            f"- 総記事数: {stats['total_entries']}\n"
-            f"- カテゴリ別件数: {stats['by_category']}\n"
+            f"- 総記事数: {base_stats['total_entries']}\n"
+            f"- カテゴリ別件数: {base_stats['by_category']}\n"
+            f"- 直近{args.days}日投稿: {internal_stats['recent_entries']}\n"
             "- API は呼んでいません。\n"
         )
         (out_dir / "weekly_report_ja.md").write_text(stub, encoding="utf-8")
+        if args.emit_joi_json:
+            args.emit_joi_json.parent.mkdir(parents=True, exist_ok=True)
+            args.emit_joi_json.write_text(
+                json.dumps(
+                    {
+                        "title_ja": f"週間JOI通信（{datetime.now(JST).strftime('%Y-%m-%d')}）",
+                        "title_en": f"Weekly JOI Bulletin ({datetime.now(JST).strftime('%Y-%m-%d')})",
+                        "summary_ja": "dry-run のためダミー本文です。",
+                        "summary_en": "Dry-run generated placeholder.",
+                        "body_ja_markdown": "# 週間JOI通信\n\ndry-run のため本文は未生成です。",
+                        "tags": ["weekly-joi", "otaku-news", "analytics"],
+                    },
+                    ensure_ascii=False,
+                    indent=2,
+                )
+                + "\n",
+                encoding="utf-8",
+            )
         print(f"dry-run 完了 → {out_dir}")
         return
 
-    if not gemini_key:
-        print("GEMINI_API_KEY 未設定: weekly_report_ja.md は stats から簡易生成のみ", file=sys.stderr)
+    if not anthropic_key:
+        print("ANTHROPIC_API_KEY 未設定: レポート/改善案/JOI通信は簡易出力", file=sys.stderr)
         (out_dir / "weekly_report_ja.md").write_text(
             "# 週次レポート（API なし）\n\n```json\n"
             + json.dumps(stats, ensure_ascii=False, indent=2)
             + "\n```\n",
             encoding="utf-8",
         )
-    else:
-        try:
-            report = call_gemini_markdown(gemini_key, args.gemini_model, stats)
-        except Exception as e:
-            print(f"Gemini 失敗 ({e}); 代替モデルを順に試します。", file=sys.stderr)
-            report = None
-            for m in ("gemini-2.5-flash-lite", "gemini-1.5-flash"):
-                try:
-                    report = call_gemini_markdown(gemini_key, m, stats)
-                    print(f"Gemini 代替モデルで成功: {m}", file=sys.stderr)
-                    break
-                except Exception as e2:
-                    print(f"  失敗: {m} ({e2})", file=sys.stderr)
-            if report is None:
-                raise
-        (out_dir / "weekly_report_ja.md").write_text(report + "\n", encoding="utf-8")
-
-    report_text = (out_dir / "weekly_report_ja.md").read_text(encoding="utf-8")
-
-    if not anthropic_key:
-        print("ANTHROPIC_API_KEY 未設定: プロンプト改善案はスキップ", file=sys.stderr)
         (out_dir / "claude_prompt_proposals.json").write_text("{}\n", encoding="utf-8")
+        if args.emit_joi_json:
+            args.emit_joi_json.parent.mkdir(parents=True, exist_ok=True)
+            args.emit_joi_json.write_text(
+                json.dumps(
+                    {
+                        "title_ja": f"週間JOI通信（{datetime.now(JST).strftime('%Y-%m-%d')}）",
+                        "title_en": f"Weekly JOI Bulletin ({datetime.now(JST).strftime('%Y-%m-%d')})",
+                        "summary_ja": "API未設定のため簡易生成。",
+                        "summary_en": "Fallback report without API.",
+                        "body_ja_markdown": "# 週間JOI通信\n\nAPI未設定のため簡易生成です。",
+                        "tags": ["weekly-joi", "otaku-news", "analytics"],
+                    },
+                    ensure_ascii=False,
+                    indent=2,
+                )
+                + "\n",
+                encoding="utf-8",
+            )
         print(f"部分完了 → {out_dir}")
         return
 
+    # Opus 4.6 で週次分析レポートを生成
+    report_user = "統計JSON:\n" + json.dumps(stats, ensure_ascii=False, indent=2)
     try:
-        proposals = call_claude_json(anthropic_key, args.claude_model, report_text, prompts)
+        report = call_anthropic_text(
+            api_key=anthropic_key,
+            model=args.opus_model,
+            system=REPORT_SYSTEM,
+            user_text=report_user,
+            max_tokens=4096,
+        )
     except Exception as e:
-        print(f"Claude 失敗: {e}", file=sys.stderr)
-        sys.exit(1)
+        print(f"Opus 週次レポート失敗 ({e}); --claude-model へフォールバック", file=sys.stderr)
+        report = call_anthropic_text(
+            api_key=anthropic_key,
+            model=args.claude_model,
+            system=REPORT_SYSTEM,
+            user_text=report_user,
+            max_tokens=4096,
+        )
+    (out_dir / "weekly_report_ja.md").write_text(report + "\n", encoding="utf-8")
+
+    report_text = (out_dir / "weekly_report_ja.md").read_text(encoding="utf-8")
+
+    # 検索ワード改善案（Artifactのみ）
+    try:
+        proposals = call_claude_json(anthropic_key, args.opus_model, report_text, prompts)
+    except Exception as e:
+        print(f"Opus 改善案失敗 ({e}); --claude-model へフォールバック", file=sys.stderr)
+        proposals = call_claude_json(anthropic_key, args.claude_model, report_text, prompts)
 
     (out_dir / "claude_prompt_proposals.json").write_text(
         json.dumps(proposals, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -268,7 +441,37 @@ def main() -> None:
     for name, text in proposals.items():
         (proposed_dir / name).write_text(text + "\n", encoding="utf-8")
 
-    print(f"完了: レポート + 提案 {len(proposals)} ファイル → {out_dir}")
+    # JOI通信の素材JSONを生成（後続スクリプトで entries 形式へ変換）
+    joi_user = (
+        "週次分析レポート:\n"
+        + report_text
+        + "\n\n補助データ:\n"
+        + json.dumps(stats, ensure_ascii=False, indent=2)
+    )
+    try:
+        joi_raw = call_anthropic_text(
+            api_key=anthropic_key,
+            model=args.opus_model,
+            system=JOI_SYSTEM,
+            user_text=joi_user,
+            max_tokens=4096,
+        )
+    except Exception as e:
+        print(f"Opus JOI通信失敗 ({e}); --claude-model へフォールバック", file=sys.stderr)
+        joi_raw = call_anthropic_text(
+            api_key=anthropic_key,
+            model=args.claude_model,
+            system=JOI_SYSTEM,
+            user_text=joi_user,
+            max_tokens=4096,
+        )
+    joi_obj = _parse_json_object(joi_raw)
+    joi_path = args.emit_joi_json or (out_dir / "joi_entry_source.json")
+    joi_path.parent.mkdir(parents=True, exist_ok=True)
+    joi_path.write_text(json.dumps(joi_obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    print(f"完了: レポート + 提案 {len(proposals)} + JOI素材 -> {out_dir}")
+    return
 
 
 if __name__ == "__main__":

@@ -75,7 +75,8 @@ def id_date_from_id(eid):
 
 def extract_sort_key(entry):
     eid = entry.get("id", "")
-    return (id_date_from_id(eid), eid)
+    pinned = 1 if entry.get("pinned_top") else 0
+    return (pinned, id_date_from_id(eid), eid)
 
 
 def main():

@@ -67,6 +67,9 @@ function parseDateForSort(entry) {
 
 function sortByNewestFirst(entries) {
     return [...entries].sort((a, b) => {
+        const pa = a && a.pinned_top ? 1 : 0;
+        const pb = b && b.pinned_top ? 1 : 0;
+        if (pa !== pb) return pb - pa;
         const da = idDateFromId(a.id);
         const db = idDateFromId(b.id);
         if (da !== db) return db.localeCompare(da);

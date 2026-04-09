@@ -27,6 +27,7 @@ PROMPTS_DIR = Path(__file__).resolve().parent.parent / "prompts"
 STAGING_DIR = Path(__file__).resolve().parent.parent / "data" / "staging"
 
 CATEGORIES = ("cafe", "vtuber", "figure", "game", "anime", "other")
+DEFAULT_PERPLEXITY_MODEL = "sonar-pro"
 
 # 検索結果から除外するドメイン（英語圏の旅行・アグリゲーター・ゲームメディア等）
 # _EXCLUDED_RAW: 全件。_is_excluded_url() の後処理フィルタで使用（件数制限なし）
@@ -168,23 +169,16 @@ def _is_excluded_url(url: str) -> bool:
     return False
 
 
-SYSTEM_PROMPT = (
-    "You are a strict JSON data extractor for a Japan event/news aggregator. The user provides context keywords.\
-"
-    "CRITICAL RULES:\
-"
-    "1. You MUST respond with ONLY a single JSON object, no markdown, no explanation, no codeblocks.\
-"
-    "2. NO FAKE URLs. Every URL must be real, accessible, and point exactly to the specific article.\
-"
-    "3. NO SUMMARY ARTICLES. Do NOT return aggregate summaries like "This week in figures" or "October booking rush". Returns MUST be specific, individual real-world news events or product pages.\
-"
-    "4. Search Japanese sources only.\
-"
-    "Format: {\"cat\":1,\"news\":[{\"title\":\"日本語タイトル\",\"desc\":\"日本語2文の説明\",\"date\":\"YYYY-MM-DD\",\"place\":\"場所\",\"url\":\"https://...\"}]}. \
-"
-    "Return 3-5 high-quality news items."
-)
+SYSTEM_PROMPT = """
+You are a strict JSON data extractor for a Japan event/news aggregator. The user provides context keywords.
+CRITICAL RULES:
+1. You MUST respond with ONLY a single JSON object, no markdown, no explanation, no codeblocks.
+2. NO FAKE URLs. Every URL must be real, accessible, and point exactly to the specific article.
+3. NO SUMMARY ARTICLES. Do NOT return aggregate summaries like "This week in figures" or "October booking rush". Returns MUST be specific, individual real-world news events or product pages.
+4. Search Japanese sources only.
+Format: {"cat":1,"news":[{"title":"日本語タイトル","desc":"日本語2文の説明","date":"YYYY-MM-DD","place":"場所","url":"https://..."}]}.
+Return 3-5 high-quality news items.
+""".strip()
 
 
 def load_user_prompt(category: str) -> str:
@@ -194,7 +188,7 @@ def load_user_prompt(category: str) -> str:
     return path.read_text(encoding="utf-8").strip()
 
 
-def call_perplexity(api_key: str, messages: list, model: str = "sonar-pro") -> str:
+def call_perplexity(api_key: str, messages: list, model: str = DEFAULT_PERPLEXITY_MODEL) -> str:
     import requests
 
     url = "https://api.perplexity.ai/v1/sonar"
@@ -363,9 +357,10 @@ def main() -> None:
         print(f"  system_prompt: {SYSTEM_PROMPT[:80]}...")
         return
 
-    print(f"Perplexity 検索中: {args.category} (sonar-pro) ...")
+    pplx_model = (os.getenv("PERPLEXITY_MODEL", "") or "").strip() or DEFAULT_PERPLEXITY_MODEL
+    print(f"Perplexity 検索中: {args.category} ({pplx_model}) ...")
     try:
-        content = call_perplexity(api_key, messages, model="sonar-pro")
+        content = call_perplexity(api_key, messages, model=pplx_model)
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
         sys.exit(1)
