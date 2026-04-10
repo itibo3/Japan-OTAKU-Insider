@@ -192,7 +192,10 @@ def fetch_youtube_shorts_views_daily(
     except Exception as e:
         return {"available": False, "reason": str(e)}
 
+    # videoType をディメンションに含めると環境によっては弾かれる。day + フィルタのみを先に試す。
     tries = [
+        {"dimensions": "day", "filters": "videoType==SHORTS"},
+        {"dimensions": "day", "filters": "creatorContentType==SHORTS"},
         {"dimensions": "day,videoType", "filters": "videoType==SHORTS"},
         {"dimensions": "day,creatorContentType", "filters": "creatorContentType==SHORTS"},
     ]

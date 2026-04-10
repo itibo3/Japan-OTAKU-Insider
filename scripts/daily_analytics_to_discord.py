@@ -59,7 +59,15 @@ def main() -> None:
             target_date=day2,
         )
     except Exception as e:
-        notes.append(f"GA4 取得不可: {e}")
+        err = str(e)
+        if "credentials/property_id が不足" in err:
+            notes.append(
+                "GA4 取得不可: GitHub の Repository secrets に "
+                "`GA4_CREDENTIALS_JSON`（サービスアカウントJSON全文）と "
+                "`GA4_PROPERTY_ID`（数値のプロパティID）が未設定です。"
+            )
+        else:
+            notes.append(f"GA4 取得不可: {e}")
 
     try:
         c_id = os.getenv("YOUTUBE_CLIENT_ID", "").strip()
