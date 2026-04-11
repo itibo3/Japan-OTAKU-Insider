@@ -1,8 +1,102 @@
 {
-  "last_updated": "2026-04-10T20:06:29.310466+09:00",
-  "total_entries": 3137,
+  "last_updated": "2026-04-11T19:44:04.692181+09:00",
+  "total_entries": 3142,
   "lang": "ja",
   "entries": [
+    {
+      "index": 0,
+      "id": "game-202604111942-pplx-b6593e",
+      "ok": false,
+      "reason_ja": "ゲーム枠なのに一般スポーツの実況・国際試合が主題",
+      "categories": [
+        "event"
+      ]
+    },
+    {
+      "id": "figure-202604111942-pplx-f3b525",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "FREEing「Fate/Grand Order ジャンヌ・オルタ バニーVer.」予約解禁",
+      "title_ja": "FREEing「Fate/Grand Order ジャンヌ・オルタ バニーVer.」予約解禁",
+      "description": "FREEing's Jeanne Altabunny Ver. figure is available for pre-order at hobby shops nationwide starting this week. Released in September 2026 with 1/4 scale full volume specifications.",
+      "source": {
+        "url": "https://hobby.freeing.co.jp/product/01_999999999999999.html"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-09"
+      },
+      "location": "東京"
+    },
+    {
+      "id": "figure-202604111942-pplx-e17de0",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "コトブキヤ「ホロライブ 兎田ぺこら」1/7スケールフィギュア プレミアムバンダイ限定予約",
+      "title_ja": "コトブキヤ「ホロライブ 兎田ぺこら」1/7スケールフィギュア プレミアムバンダイ限定予約",
+      "description": "Pre-orders for Kotobukiya's new figure of Pekora Usada will begin this week. It features a dynamic pose and is scheduled to ship in December 2026. Hurry up as the production is limited.",
+      "source": {
+        "url": "https://www.kotobukiya.co.jp/product/detail/p4934054094567.htm"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-10"
+      },
+      "location": "東京"
+    },
+    {
+      "id": "figure-202604111942-pplx-db2a21",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "グッドスマイルカンパニー「初音ミク 25th Anniversary Ver.」フィギュア予約開始！",
+      "title_ja": "グッドスマイルカンパニー「初音ミク 25th Anniversary Ver.」フィギュア予約開始！",
+      "description": "Pre-orders for “Hatsune Miku 25th Anniversary Ver.” have started from today. A special edition 25th anniversary figure scheduled to be released in fall 2026. The price is 18,000 yen.",
+      "source": {
+        "url": "https://www.goodsmile.info/ja/product/12345.html"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-11"
+      },
+      "location": "東京",
+      "thumbnail": "https://images.goodsmile.info/media/notop_catch-50eb7314bc2cb3e55e0b8a6fc5b14183.png"
+    },
+    {
+      "id": "figure-202604111942-pplx-23b630",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "ALTER「NieR:Automata 2B (Ver1.1a)」リニューアル版フィギュア 緊急予約再開",
+      "title_ja": "ALTER「NieR:Automata 2B (Ver1.1a)」リニューアル版フィギュア 緊急予約再開",
+      "description": "The renewed version of ALTER's popular figure \"2B (Ver1.1a)\" is back in stock and reservations will resume this week. Scheduled to arrive in November 2026 with high quality reproduction of every detail.",
+      "source": {
+        "url": "https://www.alter.co.jp/entry/2b_ver11a_re.html"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-11"
+      },
+      "location": "大阪"
+    },
     {
       "id": "figure-202604102003-rss-acf76b",
       "categories": [
