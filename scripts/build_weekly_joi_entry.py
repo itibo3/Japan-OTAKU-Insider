@@ -27,6 +27,33 @@ def _contains_japanese(text: str) -> bool:
     return bool(re.search(r"[\u3040-\u30ff\u4e00-\u9fff]", text or ""))
 
 
+def _is_mostly_japanese(text: str) -> bool:
+    s = text or ""
+    if not s.strip():
+        return False
+    jp_chars = re.findall(r"[\u3040-\u30ff\u4e00-\u9fff]", s)
+    significant = re.sub(r"\s+", "", s)
+    if not significant:
+        return False
+    return (len(jp_chars) / len(significant)) >= 0.2
+
+
+def _weekly_en_body_looks_too_short(body_en: str, summary_en: str) -> bool:
+    """週刊本文として短すぎる英語本文（実質サマリ）を検出する。"""
+    body = (body_en or "").strip()
+    summary = (summary_en or "").strip()
+    if not body:
+        return True
+    if len(body) < 700:
+        return True
+    if summary and body == summary:
+        return True
+    heading_count = len(re.findall(r"(?m)^#{1,3}\s+", body))
+    if heading_count < 3:
+        return True
+    return False
+
+
 def _translate_markdown_ja_to_en(md: str) -> str:
     """日本語Markdownを英語Markdownへ簡易変換する（行単位）。"""
     text = (md or "").strip()
@@ -55,8 +82,8 @@ def _translate_markdown_ja_to_en(md: str) -> str:
             translated = body.strip()
         out_lines.append(f"{prefix}{translated}".rstrip())
     out = "\n".join(out_lines).strip()
-    # 英訳失敗で日本語のまま返るケースを防ぐ
-    if _contains_japanese(out):
+    # 固有名詞として日本語が少量残ることは許容し、本文の大半が日本語のときだけ失敗扱い
+    if _is_mostly_japanese(out):
         return ""
     return out
 
@@ -83,7 +110,7 @@ def main() -> None:
             "Anime and otaku weekly news collage, neon Tokyo night, manga style headline banner, "
             "featuring anime broadcast, figure release, cosplay event atmosphere, vivid cyan and magenta, 16:9"
         )
-    if not body_en_md:
+    if (not body_en_md) or _weekly_en_body_looks_too_short(body_en_md, summary_en):
         body_en_md = _translate_markdown_ja_to_en(body_md)
     if not body_en_md:
         body_en_md = summary_en or "Weekly otaku highlights article."

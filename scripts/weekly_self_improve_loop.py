@@ -99,6 +99,23 @@ def _contains_japanese(text: str) -> bool:
     return bool(re.search(r"[\u3040-\u30ff\u4e00-\u9fff]", text or ""))
 
 
+def _weekly_en_body_looks_too_short(body_en: str, summary_en: str) -> bool:
+    """週刊本文として短すぎる英語本文（実質サマリ）を検出する。"""
+    body = (body_en or "").strip()
+    summary = (summary_en or "").strip()
+    if not body:
+        return True
+    # 週刊本文は見出し付きの中長文を想定。短文は補完対象にする。
+    if len(body) < 700:
+        return True
+    if summary and body == summary:
+        return True
+    heading_count = len(re.findall(r"(?m)^#{1,3}\s+", body))
+    if heading_count < 3:
+        return True
+    return False
+
+
 def _id_date(entry: dict[str, Any]) -> str | None:
     """id 内の日付を YYYYMMDD で返す（例: anime-202603302009-rss-xxx / figure-20260319-rss-xxx）。"""
     m = re.search(r"-(\d{8})(?:\d{4})?-", entry.get("id") or "")
@@ -382,8 +399,8 @@ def ensure_joi_english_fields(*, api_key: str, model: str, joi_obj: dict[str, An
         ).strip()
         joi_obj["summary_en"] = summary_en
 
-    # body_en が空または日本語なら補完
-    if (not body_en) or _contains_japanese(body_en):
+    # body_en が空/日本語混入/短すぎる場合は補完
+    if (not body_en) or _contains_japanese(body_en) or _weekly_en_body_looks_too_short(body_en, summary_en):
         src = body_ja or summary_ja
         user = (
             "次の日本語Markdownを英語Markdownへ翻訳してください。"
