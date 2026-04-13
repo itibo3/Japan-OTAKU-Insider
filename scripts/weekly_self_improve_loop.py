@@ -466,7 +466,7 @@ def _parse_claude_json(raw: str) -> dict[str, str]:
 
 
 def _weekly_llm_pair(*, opus_first: bool, opus_model: str, sonnet_model: str) -> tuple[str, str]:
-    """週次の第一モデルとフォールバックモデル（コスト失敗時の入替）を返す。"""
+    """週次の第一モデルとフォールバックモデル（API 失敗時の入替）を返す。"""
     if opus_first:
         return opus_model, sonnet_model
     return sonnet_model, opus_model
@@ -513,7 +513,7 @@ def main() -> None:
         "--weekly-llm-order",
         choices=("opus_first", "sonnet_first"),
         default=_order_env,
-        help="週次レポート・Perplexity改善案・JOI素材の第一モデル。opus_first=Opusでバラデータ統合を優先（失敗時Sonnet）。sonnet_first=従来のコスト優先。環境変数 ANTHROPIC_WEEKLY_LLM_ORDER でも指定可。",
+        help="週次レポート・Perplexity改善案・JOI素材の第一モデル。opus_first=本番想定（Opus 4.6 系で統合解釈、失敗時 Sonnet）。sonnet_first=Secrets 動作確認や試行中に Opus を温存したいとき。環境変数 ANTHROPIC_WEEKLY_LLM_ORDER でも指定可。",
     )
     parser.add_argument(
         "--opus-model",
@@ -739,7 +739,7 @@ def main() -> None:
         )
         llm_trace["joi_attempts"][-1]["status"] = "ok"
     joi_obj = _parse_json_object(joi_raw)
-    # 英語補完は軽量モデルで十分なため Sonnet 固定（Opus 連打を避ける）
+    # 英語補完のみ Sonnet 固定（週次本体の Opus を本文生成に集中。補完は軽量モデルで十分）
     try:
         joi_obj = ensure_joi_english_fields(api_key=anthropic_key, model=args.sonnet_model, joi_obj=joi_obj)
     except Exception as e:

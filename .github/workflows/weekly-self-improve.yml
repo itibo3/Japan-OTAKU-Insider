@@ -1,5 +1,5 @@
 # 週次: 統計JSON → Claude でサイト統計レポート（日本語）→ Claude で Perplexity 用 prompts 改善案（JSON + proposed_prompts/*）
-# 既定は Opus 優先（チャネル横断の統合解釈・Perplexity案・JOI素材）。コスト優先で Sonnet 先にしたい場合は Repo Variables 等で
+# 既定は Opus 優先（本番は Opus 4.6 系で週報・Perplexity案・JOI素材を統合解釈）。Secrets の疎通テストで Opus を使いたくないときだけ Repo Variables 等で
 #   ANTHROPIC_WEEKLY_LLM_ORDER=sonnet_first
 # 成果物はリポジトリに自動コミットしない。Actions の Artifact からダウンロードして人間が差分確認後、prompts/ を手動または別PRで反映する。
 #
