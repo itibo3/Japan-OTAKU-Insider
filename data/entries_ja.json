@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-13T21:37:38.037290+09:00",
+  "last_updated": "2026-04-13T22:10:49.405921+09:00",
   "total_entries": 3406,
   "lang": "ja",
   "entries": [
@@ -30,7 +30,13 @@
       ],
       "_source": "joi-weekly",
       "_source_id": "joi-weekly",
-      "pinned_top": true
+      "pinned_top": true,
+      "thumbnail": "/assets/weekly-headers/otaku_header_cool_editorial_1776085572240.png",
+      "weekly_header_candidates": [
+        "/assets/weekly-headers/otaku_header_cool_editorial_1776085572240.png",
+        "/assets/weekly-headers/otaku_header_emotional_energy_1776085587532.png",
+        "/assets/weekly-headers/otaku_header_simple_elegant_1776085601859.png"
+      ]
     },
     {
       "id": "figure-202604132023-pplx-719b93",
