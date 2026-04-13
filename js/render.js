@@ -4,16 +4,46 @@ function sanitizeMd(str) {
 }
 
 const AMAZON_ASSOCIATE_TAG = 'eidosfrontier-22';
-const AMAZON_ASSOCIATE_FIXED_URL = 'https://www.amazon.co.jp?adgrpid=157529192841&hvpone=&hvptwo=&hvadid=675114138690&hvpos=&hvnetw=g&hvrand=13678999285353946230&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9168399&hvtargid=kwd-10573980&hydadcr=27922_14701883&linkCode=ll2&tag=eidosfrontier-22&linkId=11561b6d411d8ea71c61ec1642390397&ref_=as_li_ss_tl';
+function categorySearchHint(cat, lang) {
+    const hintsJa = {
+        figure: 'フィギュア グッズ',
+        game: 'ゲーム ソフト',
+        anime: 'Blu-ray グッズ',
+        vtuber: 'VTuber グッズ',
+        cafe: 'コラボ グッズ',
+        event: 'イベント グッズ',
+        'otaku-news': 'アニメ グッズ',
+    };
+    const hintsEn = {
+        figure: 'figure merch',
+        game: 'game software',
+        anime: 'anime blu-ray merch',
+        vtuber: 'vtuber merch',
+        cafe: 'collab merch',
+        event: 'event merch',
+        'otaku-news': 'anime merch',
+    };
+    const src = lang === 'ja' ? hintsJa : hintsEn;
+    return src[cat] || (lang === 'ja' ? 'アニメ グッズ' : 'anime merch');
+}
 
-function buildAmazonSearchUrl(title, lang) {
-    if (AMAZON_ASSOCIATE_FIXED_URL) {
-        return AMAZON_ASSOCIATE_FIXED_URL;
-    }
-    const raw = String(title || '').replace(/\[[^\]]*\]/g, ' ').replace(/[【】]/g, ' ').trim();
-    if (!raw) return '';
+function normalizeAmazonQuery(raw) {
+    return String(raw || '')
+        .replace(/\[[^\]]*\]/g, ' ')
+        .replace(/[【】]/g, ' ')
+        .replace(/\([^)]*\)/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function buildAmazonSearchUrl(item, lang) {
+    const title = normalizeAmazonQuery(item && (item.title || item.title_ja || ''));
+    if (!title) return '';
+    const cats = getCategories(item);
+    const hint = categorySearchHint(cats[0], lang);
+    const keyword = `${title} ${hint}`.trim();
     const params = new URLSearchParams();
-    params.set('k', raw);
+    params.set('k', keyword);
     params.set('language', lang === 'ja' ? 'ja_JP' : 'en_US');
     const tag = (window.AMAZON_ASSOCIATE_TAG || AMAZON_ASSOCIATE_TAG || '').trim();
     if (tag) params.set('tag', tag);
@@ -217,7 +247,7 @@ function openModal(id) {
     const isWeekly = item && (item._source === 'joi-weekly' || item._source_id === 'joi-weekly');
     const weeklyArticleUrl = `/weekly.html?id=${encodeURIComponent(item.id)}`;
     const uiLang = (localStorage.getItem('otaku_lang') || 'en');
-    const amazonUrl = !isWeekly ? buildAmazonSearchUrl(item.title || item.title_ja || '', uiLang) : '';
+    const amazonUrl = !isWeekly ? buildAmazonSearchUrl(item, uiLang) : '';
     const affiliateText = uiLang === 'ja' ? 'Amazonで関連商品を見る' : 'Find related items on Amazon';
 
     if (isWeekly) {
