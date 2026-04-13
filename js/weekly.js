@@ -87,6 +87,7 @@ async function main() {
   const contentEl = document.getElementById("weeklyContent");
   const heroEl = document.getElementById("weeklyHero");
   const imageNoteEl = document.getElementById("weeklyImageNote");
+  const backToSiteLinkEl = document.getElementById("backToSiteLink");
   try {
     const id = getQueryId();
     if (!id) throw new Error("Article ID is missing.");
@@ -110,6 +111,9 @@ async function main() {
     document.title = `${title} | Japan OTAKU Insider`;
     titleEl.textContent = title;
     metaEl.textContent = dateText ? `Published: ${dateText}` : "";
+    if (backToSiteLinkEl) {
+      backToSiteLinkEl.innerHTML = lang === "ja" ? "サイトに戻る &rarr;" : "Back to Site &rarr;";
+    }
     if (heroEl && hero) {
       heroEl.src = hero;
       heroEl.style.display = "block";
