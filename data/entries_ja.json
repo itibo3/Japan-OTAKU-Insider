@@ -1,8 +1,30 @@
 {
-  "last_updated": "2026-04-13T20:29:56.205663+09:00",
-  "total_entries": 3418,
+  "last_updated": "2026-04-13T21:00:58.578817+09:00",
+  "total_entries": 3419,
   "lang": "ja",
   "entries": [
+    {
+      "id": "otaku-news-202604132100-joi-3c34e8",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "週間JOI通信 #2026-15: トラフィック急減とコンテンツ基盤の現在地",
+      "title_ja": "週間JOI通信 #2026-15: トラフィック急減とコンテンツ基盤の現在地",
+      "dates": {
+        "display": "2026-04-13"
+      },
+      "description": "Weekly analysis for April 6-12, 2026. Active users decreased by 62.5% week-over-week, while content generation remained stable at 864 entries per week. Engagement rate showed slight improvement.\n\n## 📊 今週のハイライト\n\n2026年4月6日から12日にかけての Japan OTAKU Insider の動向をお届けします。今週は**トラフィック指標の大幅な減少**が観測された一方で、コンテンツ基盤は引き続き安定した運用を維持しています。\n\n### トラフィック動向\n\n今週は全体的にアクセス数が減少する結果となりました:\n\n- **アクティブユーザー**: 16名 → 6名(前週比 -62.5%)\n- **セッション数**: 33 → 10(前週比 -69.7%)\n- **ページビュー**: 103 → 27(前週比 -73.8%)\n\n一方で、**エンゲージメント率は0.64から0.70へと微増**しており、訪問してくださるユーザーの質的な側面では改善の兆しが見られます。\n\n### コンテンツ生成状況\n\n**週864エントリ**を新規生成し、サイト全体では**3,418記事**を維持しています。カテゴリ別の内訳は:\n\n- **otaku-news**: 1,380記事\n- **game**: 1,201記事  \n- **figure**: 711記事\n- **anime**: 450記事\n- **event**: 112記事\n- **vtuber**: 97記事\n\n主要ソースからの収集も継続的に行われており、natalie-anime(432件)、game-spark(431件)、inside-games-jp(389件)などが上位を占めています。\n\n### Perplexity AI運用\n\n今週は**22件のPerplexity生成エントリ**(全体の約0.6%)を作成しました。現時点では限定的な運用となっていますが、段階的な拡大を検討中です。なお、未翻訳マーカーが11件残っている状況も確認されています。\n\n## 🔍 今後の取り組み\n\n編集部では以下の点に注力していきます:\n\n1. **トラフィック減少要因の詳細分析** - 流入元やデバイス別データの精査\n2. **翻訳プロセスの最適化** - 未処理タスクの解消と処理速度の向上\n3. **Perplexity生成の段階的拡大** - 品質を維持しながら生成数を増やす試み\n\nコンテンツの量と多様性は確保できているため、今後はより多くの読者の皆様にリーチできるよう、流入経路の改善に取り組んでまいります。\n\n---\n\n*次回の週間JOI通信は2026年4月20日頃を予定しています。*",
+      "source": {},
+      "tags": [
+        "weekly-joi",
+        "otaku-news",
+        "analytics"
+      ],
+      "_source": "joi-weekly",
+      "_source_id": "joi-weekly",
+      "pinned_top": true
+    },
     {
       "id": "otaku-news-202604132029-joi-718202",
       "categories": [
