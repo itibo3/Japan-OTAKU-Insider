@@ -3,6 +3,17 @@ function sanitizeMd(str) {
     return str.replace(/\*\*/g, '');
 }
 
+function buildAmazonSearchUrl(title, lang) {
+    const raw = String(title || '').replace(/\[[^\]]*\]/g, ' ').replace(/[【】]/g, ' ').trim();
+    if (!raw) return '';
+    const params = new URLSearchParams();
+    params.set('k', raw);
+    params.set('language', lang === 'ja' ? 'ja_JP' : 'en_US');
+    const tag = (window.AMAZON_ASSOCIATE_TAG || '').trim();
+    if (tag) params.set('tag', tag);
+    return `https://www.amazon.co.jp/s?${params.toString()}`;
+}
+
 function getCategories(entry) {
     if (Array.isArray(entry && entry.categories)) return entry.categories.filter(Boolean);
     if (entry && entry.category) return [entry.category];
@@ -200,6 +211,8 @@ function openModal(id) {
     const isWeekly = item && (item._source === 'joi-weekly' || item._source_id === 'joi-weekly');
     const weeklyArticleUrl = `/weekly.html?id=${encodeURIComponent(item.id)}`;
     const uiLang = (localStorage.getItem('otaku_lang') || 'en');
+    const amazonUrl = !isWeekly ? buildAmazonSearchUrl(item.title || item.title_ja || '', uiLang) : '';
+    const affiliateText = uiLang === 'ja' ? 'Amazonで関連商品を見る' : 'Find related items on Amazon';
 
     if (isWeekly) {
         const weeklySummary = uiLang === 'ja'
@@ -248,6 +261,7 @@ function openModal(id) {
     ${sections}
     ${journeyHtml}
     ${isWeekly ? `<a href="${weeklyArticleUrl}" class="modal-link">Read Weekly Article &rarr;</a>` : (sourceUrl ? `<a href="${sourceUrl}" target="_blank" class="modal-link">View Source &rarr;</a>` : '')}
+    ${amazonUrl ? `<a href="${amazonUrl}" target="_blank" rel="noopener noreferrer sponsored nofollow" class="modal-affiliate-link">${affiliateText}</a>` : ''}
   `;
 
     document.getElementById('modalOverlay').classList.add('show');
