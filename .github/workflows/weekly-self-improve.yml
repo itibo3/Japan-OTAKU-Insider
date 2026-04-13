@@ -1,6 +1,7 @@
 # 週次: 統計JSON → Claude でサイト統計レポート（日本語）→ Claude で Perplexity 用 prompts 改善案（JSON + proposed_prompts/*）
-# 既定は Opus 優先（本番は Opus 4.6 系で週報・Perplexity案・JOI素材を統合解釈）。Secrets の疎通テストで Opus を使いたくないときだけ Repo Variables 等で
-#   ANTHROPIC_WEEKLY_LLM_ORDER=sonnet_first
+# 週次の第一モデル（Opus/Sonnet 先）は scripts/weekly_self_improve_loop.py がカレンダーで決定:
+#   〜2026-05-31（JST）: Opus 先（基準期間） / 2026-06-01〜: 偶数月 Sonnet 先・奇数月 Opus 先（品質比較）
+# 上書き: Repo Variables（または Secrets 経由の同名）で ANTHROPIC_WEEKLY_LLM_ORDER=opus_first|sonnet_first
 # 成果物はリポジトリに自動コミットしない。Actions の Artifact からダウンロードして人間が差分確認後、prompts/ を手動または別PRで反映する。
 #
 # 必要な Secrets:
@@ -48,14 +49,13 @@ jobs:
           ANTHROPIC_SONNET_MODEL: ${{ secrets.ANTHROPIC_SONNET_MODEL }}
           GA4_CREDENTIALS_JSON: ${{ secrets.GA4_CREDENTIALS_JSON }}
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
-          # 未設定なら bash の ${VAR:-opus_first} で Opus 優先。Repo Variables で sonnet_first も可
+          # 空のままならスクリプト内カレンダー判定。強制したいときだけ Variable に opus_first / sonnet_first
           ANTHROPIC_WEEKLY_LLM_ORDER: ${{ vars.ANTHROPIC_WEEKLY_LLM_ORDER }}
         run: |
           python3 scripts/weekly_self_improve_loop.py \
             --out-dir artifact-out \
             --emit-joi-json artifact-out/joi_entry_source.json \
-            --require-anthropic \
-            --weekly-llm-order "${ANTHROPIC_WEEKLY_LLM_ORDER:-opus_first}"
+            --require-anthropic
 
       - name: Build weekly JOI entry JSON
         run: |

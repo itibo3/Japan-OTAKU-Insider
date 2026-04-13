@@ -3,8 +3,8 @@
 週次の「自己改善ループ」オーケストレーター。
 
 1) entries.json から直近の件数・カテゴリ内訳などを集計（将来は X 投稿メトリクス等も同じ stats に載せる想定）
-2) Claude（既定: **Opus 優先**）で週次レポート（日本語 Markdown）を生成 — チャネル横断の統合解釈向け
-3) 同じく Claude で Perplexity 1行プロンプトの改善案を JSON で受け取る（既定: Opus 優先）
+2) Claude で週次レポート（日本語 Markdown）を生成 — 第一モデルは **カレンダーまたは環境変数**（2026-05-31 までは Opus 基準、その後は偶数月 Sonnet / 奇数月 Opus で比較）
+3) 同じく Claude で Perplexity 1行プロンプトの改善案を JSON で受け取る（上と同じ順序）
 4) 出力は指定ディレクトリに保存（GitHub Actions では Artifact 化想定）。prompts/ 本体は自動では書き換えない。
 
 触っていい所: 集計日数、Claude/Gemini の指示文（定数）。
@@ -465,6 +465,27 @@ def _parse_claude_json(raw: str) -> dict[str, str]:
     return out
 
 
+def resolve_weekly_llm_order(cli: str | None) -> tuple[str, str]:
+    """
+    週次の第一モデル（opus_first / sonnet_first）と理由タグを返す。
+
+    優先順位: CLI --weekly-llm-order → 環境変数 ANTHROPIC_WEEKLY_LLM_ORDER → カレンダー。
+    カレンダー: 2026-05-31 まで（JST）は Opus 基準。2026-06-01 以降は偶数月 Sonnet 先・奇数月 Opus 先（品質比較用）。
+    """
+    if cli in ("opus_first", "sonnet_first"):
+        return cli, "cli_flag"
+    env = os.getenv("ANTHROPIC_WEEKLY_LLM_ORDER", "").strip().lower()
+    if env in ("opus_first", "sonnet_first"):
+        return env, "env_ANTHROPIC_WEEKLY_LLM_ORDER"
+    today = datetime.now(JST).date()
+    baseline_end = date(2026, 5, 31)
+    if today <= baseline_end:
+        return "opus_first", "calendar_baseline_opus_until_2026-05-31"
+    if today.month % 2 == 0:
+        return "sonnet_first", "calendar_alternate_even_month_sonnet"
+    return "opus_first", "calendar_alternate_odd_month_opus"
+
+
 def _weekly_llm_pair(*, opus_first: bool, opus_model: str, sonnet_model: str) -> tuple[str, str]:
     """週次の第一モデルとフォールバックモデル（API 失敗時の入替）を返す。"""
     if opus_first:
@@ -506,14 +527,11 @@ def main() -> None:
         "--claude-model",
         default=(os.getenv("ANTHROPIC_MODEL", "").strip() or DEFAULT_ANTHROPIC_MODEL),
     )
-    _order_env = os.getenv("ANTHROPIC_WEEKLY_LLM_ORDER", "opus_first").strip().lower()
-    if _order_env not in ("opus_first", "sonnet_first"):
-        _order_env = "opus_first"
     parser.add_argument(
         "--weekly-llm-order",
         choices=("opus_first", "sonnet_first"),
-        default=_order_env,
-        help="週次レポート・Perplexity改善案・JOI素材の第一モデル。opus_first=本番想定（Opus 4.6 系で統合解釈、失敗時 Sonnet）。sonnet_first=Secrets 動作確認や試行中に Opus を温存したいとき。環境変数 ANTHROPIC_WEEKLY_LLM_ORDER でも指定可。",
+        default=None,
+        help="省略時: 環境変数 ANTHROPIC_WEEKLY_LLM_ORDER があればそれ、なければカレンダー（〜2026-05-31 は Opus 基準、その後は偶数月 Sonnet / 奇数月 Opus）。",
     )
     parser.add_argument(
         "--opus-model",
@@ -532,15 +550,19 @@ def main() -> None:
         help="ANTHROPIC_API_KEY 未設定を許容せず、エラーで終了する",
     )
     args = parser.parse_args()
-    opus_first = args.weekly_llm_order == "opus_first"
+    weekly_order, weekly_order_reason = resolve_weekly_llm_order(args.weekly_llm_order)
+    opus_first = weekly_order == "opus_first"
     report_primary, report_fallback = _weekly_llm_pair(
         opus_first=opus_first, opus_model=args.opus_model, sonnet_model=args.sonnet_model
     )
+    print(f"Weekly LLM order: {weekly_order} ({weekly_order_reason})", flush=True)
 
     out_dir = args.out_dir.resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
     llm_trace: dict[str, Any] = {
         "anthropic_key_present": bool(os.getenv("ANTHROPIC_API_KEY", "").strip()),
+        "weekly_llm_order": weekly_order,
+        "weekly_llm_order_reason": weekly_order_reason,
         "report_attempts": [],
         "proposal_attempts": [],
         "joi_attempts": [],
