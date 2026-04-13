@@ -19,7 +19,41 @@
       <a href="/weekly-archive.html" class="nav-btn">Weekly Archive</a>
       <a href="/about.html" class="nav-btn">About</a>
     </nav>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-logo">Japan <span>OTAKU</span> Insider</span>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mobile-menu-nav">
+      <a href="/index.html" class="mobile-menu-item">
+        <span class="menu-icon">🏠</span> Home
+      </a>
+      <a href="/weekly-archive.html" class="mobile-menu-item">
+        <span class="menu-icon">📰</span> Weekly Archive
+      </a>
+      <a href="/about.html" class="mobile-menu-item">
+        <span class="menu-icon">ℹ️</span> About
+      </a>
+      <a href="/privacy.html" class="mobile-menu-item">
+        <span class="menu-icon">🔒</span> Privacy Policy
+      </a>
+      <a href="/contact.html" class="mobile-menu-item">
+        <span class="menu-icon">✉️</span> Contact
+      </a>
+    </nav>
+    <div class="mobile-menu-footer">
+      Japan OTAKU Insider &copy; 2026
+    </div>
+  </div>
 
   <main class="weekly-main">
     <article class="weekly-article" id="weeklyArticle">
@@ -33,5 +67,6 @@
   </main>
 
   <script src="/js/weekly.js"></script>
+  <script src="/js/menu.js"></script>
 </body>
 </html>

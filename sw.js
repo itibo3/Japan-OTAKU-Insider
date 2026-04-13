@@ -1,4 +1,4 @@
-const CACHE_NAME = 'otaku-insider-v15';
+const CACHE_NAME = 'otaku-insider-v16';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -12,6 +12,7 @@ const ASSETS_TO_CACHE = [
   './js/render.js',
   './js/weekly.js',
   './js/weekly-archive.js',
+  './js/about.js',
   './js/search.js',
   './js/menu.js',
   './assets/weekly-headers/otaku_header_cool_editorial_1776085572240.png',

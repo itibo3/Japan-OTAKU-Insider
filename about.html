@@ -110,6 +110,29 @@
         .about-follow-btn:hover {
             opacity: 0.85;
         }
+
+        .about-pipeline-box {
+            background: rgba(0, 204, 255, 0.06);
+            border: 1px solid rgba(0, 204, 255, 0.2);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin-top: 10px;
+        }
+
+        .about-pipeline-note {
+            font-size: 13px;
+            color: var(--text-dim);
+            margin-bottom: 10px;
+        }
+
+        .about-pipeline-list {
+            margin: 0 0 0 18px;
+        }
+
+        .about-pipeline-list li {
+            margin-bottom: 6px;
+            color: var(--text-secondary);
+        }
     </style>
 
     <!-- Google Analytics 4 -->
@@ -190,19 +213,19 @@
 
         <div class="about-stat-grid">
             <div class="about-stat-card">
-                <span class="stat-num">652+</span>
+                <span class="stat-num" id="aboutStatEntries">-</span>
                 <span class="stat-label">Entries &amp; counting</span>
             </div>
             <div class="about-stat-card">
-                <span class="stat-num">21</span>
+                <span class="stat-num" id="aboutStatRssSources">-</span>
                 <span class="stat-label">RSS sources monitored</span>
             </div>
             <div class="about-stat-card">
-                <span class="stat-num">2×</span>
+                <span class="stat-num" id="aboutStatUpdateFrequency">1×</span>
                 <span class="stat-label">Daily updates</span>
             </div>
             <div class="about-stat-card">
-                <span class="stat-num">7</span>
+                <span class="stat-num" id="aboutStatCategories">-</span>
                 <span class="stat-label">Categories covered</span>
             </div>
         </div>
@@ -225,9 +248,9 @@
             primary sources, including Natalie, 4Gamer, Amiami, Collabo Cafe, Dengeki Hobby, MoguLive VR, and more.
             Additional stories are surfaced by an AI-powered search layer covering topics that RSS feeds may miss.</p>
         <ul>
-            <li>27 sources registered in total</li>
-            <li>21 sources via RSS (fully automated)</li>
-            <li>6 sources via AI-powered search (Perplexity AI)</li>
+            <li><span id="aboutSourceTotal">-</span> sources registered in total</li>
+            <li><span id="aboutSourceRss">-</span> sources via RSS (fully automated)</li>
+            <li><span id="aboutSourceAiSearch">6</span> sources via AI-powered search (Perplexity AI)</li>
             <li>All original articles are in Japanese — content is machine-translated via DeepL API</li>
         </ul>
 
@@ -267,6 +290,14 @@
             </a>
         </div>
 
+        <h2>Automation Snapshot</h2>
+        <div class="about-pipeline-box">
+            <p class="about-pipeline-note" id="aboutPipelineNote">Loading automation status...</p>
+            <ul class="about-pipeline-list" id="aboutPipelineList">
+                <li>Checking current pipeline status...</li>
+            </ul>
+        </div>
+
         <h2>Disclaimer</h2>
         <p>All information is aggregated from publicly available sources and translated/summarized with the help of AI.
             Please verify details via the source links on each entry. We are not affiliated with any of the listed
@@ -285,6 +316,7 @@
     </footer>
 
     <script src="/js/menu.js"></script>
+    <script src="/js/about.js"></script>
 
 </body>
 
