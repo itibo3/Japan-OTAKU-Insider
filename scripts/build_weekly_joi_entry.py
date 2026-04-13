@@ -11,10 +11,54 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+try:
+    from deep_translator import GoogleTranslator
+except Exception:  # pragma: no cover - optional runtime dependency fallback
+    GoogleTranslator = None
+
 JST = timezone(timedelta(hours=9))
+
+
+def _contains_japanese(text: str) -> bool:
+    return bool(re.search(r"[\u3040-\u30ff\u4e00-\u9fff]", text or ""))
+
+
+def _translate_markdown_ja_to_en(md: str) -> str:
+    """日本語Markdownを英語Markdownへ簡易変換する（行単位）。"""
+    text = (md or "").strip()
+    if not text:
+        return ""
+    if GoogleTranslator is None:
+        return ""
+    tr = GoogleTranslator(source="ja", target="en")
+    out_lines: list[str] = []
+    for line in text.splitlines():
+        s = line.strip()
+        if not s:
+            out_lines.append("")
+            continue
+        # markdown記号は保持したいので、先頭プレフィックスを分離
+        prefix = ""
+        body = line
+        for token in ("### ", "## ", "# ", "- "):
+            if line.startswith(token):
+                prefix = token
+                body = line[len(token):]
+                break
+        try:
+            translated = tr.translate(body.strip()) if body.strip() else ""
+        except Exception:
+            translated = body.strip()
+        out_lines.append(f"{prefix}{translated}".rstrip())
+    out = "\n".join(out_lines).strip()
+    # 英訳失敗で日本語のまま返るケースを防ぐ
+    if _contains_japanese(out):
+        return ""
+    return out
 
 
 def main() -> None:
@@ -39,6 +83,10 @@ def main() -> None:
             "Anime and otaku weekly news collage, neon Tokyo night, manga style headline banner, "
             "featuring anime broadcast, figure release, cosplay event atmosphere, vivid cyan and magenta, 16:9"
         )
+    if not body_en_md:
+        body_en_md = _translate_markdown_ja_to_en(body_md)
+    if not body_en_md:
+        body_en_md = summary_en or "Weekly otaku highlights article."
     tags = src.get("tags") or ["weekly-joi", "otaku-news", "analytics"]
     if not isinstance(tags, list):
         tags = ["weekly-joi", "otaku-news", "analytics"]

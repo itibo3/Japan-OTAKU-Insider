@@ -77,6 +77,10 @@ function isWeeklyEntry(e) {
   return e && (e._source === "joi-weekly" || e._source_id === "joi-weekly");
 }
 
+function containsJapanese(text) {
+  return /[\u3040-\u30ff\u4e00-\u9fff]/.test(String(text || ""));
+}
+
 async function main() {
   const titleEl = document.getElementById("weeklyTitle");
   const metaEl = document.getElementById("weeklyMeta");
@@ -94,9 +98,12 @@ async function main() {
 
     const title = lang === "ja" ? (entry.title_ja || entry.title) : (entry.title || entry.title_ja) || "Weekly JOI Article";
     const dateText = (entry.dates && entry.dates.display) ? entry.dates.display : "";
-    const body = lang === "ja"
+    let body = lang === "ja"
       ? (entry.article_markdown_ja || entry.description || "")
       : (entry.article_markdown_en || entry.summary_en || entry.description || entry.article_markdown_ja || "");
+    if (lang !== "ja" && containsJapanese(body)) {
+      body = entry.summary_en || "Weekly otaku highlights are being prepared in English.";
+    }
     const hero = entry.thumbnail || "";
     const imagePrompt = entry.header_image_prompt_en || "";
 
