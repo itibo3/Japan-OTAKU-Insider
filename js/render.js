@@ -4,8 +4,12 @@ function sanitizeMd(str) {
 }
 
 const AMAZON_ASSOCIATE_TAG = 'eidosfrontier-22';
+const AMAZON_ASSOCIATE_FIXED_URL = 'https://www.amazon.co.jp?adgrpid=157529192841&hvpone=&hvptwo=&hvadid=675114138690&hvpos=&hvnetw=g&hvrand=13678999285353946230&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9168399&hvtargid=kwd-10573980&hydadcr=27922_14701883&linkCode=ll2&tag=eidosfrontier-22&linkId=11561b6d411d8ea71c61ec1642390397&ref_=as_li_ss_tl';
 
 function buildAmazonSearchUrl(title, lang) {
+    if (AMAZON_ASSOCIATE_FIXED_URL) {
+        return AMAZON_ASSOCIATE_FIXED_URL;
+    }
     const raw = String(title || '').replace(/\[[^\]]*\]/g, ' ').replace(/[【】]/g, ' ').trim();
     if (!raw) return '';
     const params = new URLSearchParams();
