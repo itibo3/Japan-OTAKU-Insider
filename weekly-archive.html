@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weekly JOI Article</title>
+  <title>Weekly Archive | Japan OTAKU Insider</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -16,21 +16,19 @@
     </div>
     <nav class="nav">
       <a href="/index.html" class="nav-btn">Database</a>
-      <a href="/weekly-archive.html" class="nav-btn">Weekly Archive</a>
+      <a href="/weekly-archive.html" class="nav-btn active">Weekly Archive</a>
       <a href="/about.html" class="nav-btn">About</a>
     </nav>
   </header>
 
   <main class="weekly-main">
-    <article class="weekly-article" id="weeklyArticle">
-      <img id="weeklyHero" class="weekly-hero" alt="Weekly cover" style="display:none;">
-      <h1 id="weeklyTitle">Loading weekly article...</h1>
-      <div class="weekly-meta" id="weeklyMeta"></div>
-      <div class="weekly-image-note" id="weeklyImageNote"></div>
-      <div class="weekly-content" id="weeklyContent"></div>
-    </article>
+    <section class="weekly-article">
+      <h1>過去の週間記事まとめ</h1>
+      <p class="weekly-meta">毎週の JOI 通信を一覧で読めます。</p>
+      <div id="weeklyArchiveList"></div>
+    </section>
   </main>
 
-  <script src="/js/weekly.js"></script>
+  <script src="/js/weekly-archive.js"></script>
 </body>
 </html>

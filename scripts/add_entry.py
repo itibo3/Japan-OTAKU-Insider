@@ -130,23 +130,19 @@ def add_entries_from_file(filepath, reset=False):
         db["entries"] = []
         print("  (reset: entries を空にしました)")
     existing_entries = db["entries"]
-    weekly_replaced = False
 
     added = 0
     for entry in new_entries:
         normalize_categories(entry)
-        # 週刊JOIは常に最新1件を残す（過去の運用レポート調記事を残さない）
-        if entry.get("_source_id") == "joi-weekly" and not weekly_replaced:
-            before = len(db["entries"])
-            db["entries"] = [
-                e for e in db["entries"]
-                if e.get("_source_id") != "joi-weekly" and e.get("_source") != "joi-weekly"
-            ]
-            existing_entries = db["entries"]
-            removed = before - len(db["entries"])
-            if removed:
-                print(f"  Removed old weekly JOI entries: {removed}")
-            weekly_replaced = True
+        # 週刊JOIを追加する場合、既存JOIは archive 扱いにして pinned_top を外す
+        if entry.get("_source_id") == "joi-weekly":
+            for e in db["entries"]:
+                if e.get("_source_id") == "joi-weekly" or e.get("_source") == "joi-weekly":
+                    if e.get("pinned_top"):
+                        e["pinned_top"] = False
+                    e["_weekly_archived"] = True
+            entry["pinned_top"] = True
+            entry["_weekly_archived"] = False
         title = (entry.get("title") or "").strip()
         desc = (entry.get("description") or "").strip()
         if not title or not desc:

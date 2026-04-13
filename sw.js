@@ -1,8 +1,9 @@
-const CACHE_NAME = 'otaku-insider-v9';
+const CACHE_NAME = 'otaku-insider-v10';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './weekly.html',
+  './weekly-archive.html',
   './about.html',
   './privacy.html',
   './contact.html',
@@ -10,6 +11,7 @@ const ASSETS_TO_CACHE = [
   './js/app.js',
   './js/render.js',
   './js/weekly.js',
+  './js/weekly-archive.js',
   './js/search.js',
   './js/menu.js',
   './data/entries.json',
