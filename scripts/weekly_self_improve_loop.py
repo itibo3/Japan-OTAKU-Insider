@@ -40,6 +40,7 @@ DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
 DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
 DEFAULT_OPUS_MODEL = "claude-opus-4-6"
 DEFAULT_SONNET_MODEL = "claude-sonnet-4-5-20250929"
+DEFAULT_PERPLEXITY_MODEL = "sonar-pro"
 
 REPORT_SYSTEM = """あなたは Japan OTAKU Insider の運用アナリストです。
 与えられた統計（GA4 + 内部運用データ）を読み、週次の振り返りレポートを日本語Markdownで書いてください。
@@ -78,11 +79,16 @@ JOI_SYSTEM = """あなたは Japan OTAKU Insider の編集長です。
 要件:
 - これは「運用KPIレポート」ではなく、ヲタ向けの週刊かわら版（ホットニュースまとめ）
 - 「今週アツかった話題」「注目ニュース振り返り」を中心に、読んで楽しい文体で書く
-- body は見出し付き Markdown で、最低 3 セクション構成にする
+- body は見出し付き Markdown で、最低 4 セクション構成にする
 - 直近記事サンプルから最低 5 件以上、具体的な話題・作品名・イベント名を拾って紹介する
+- 最低でも次の3系統を含める:
+  1) アニメ/ゲームの今週ホット話題（例: 話題回・PV・配信開始）
+  2) フィギュア/グッズの発売・予約・再販の注目
+  3) イベント/コスプレ/コラボカフェなど現地系トピック
 - 単なる数値列挙は避け、必要な数字は文脈の補足として短く使う
 - 最後に「来週の注目ポイント」を 2〜3 個入れる
 - 断定しすぎず、誤情報を作らない（入力にない固有名詞や日付をでっち上げない）
+- 禁止: 「アクティブユーザー◯%減」「PV◯%減」などKPI中心の見出しを本文主役にすること
 """
 
 
@@ -268,6 +274,55 @@ def collect_recent_hot_topics(entries: list[dict[str, Any]], days: int = 7, limi
     return [row for _, row in picked[:limit]]
 
 
+def fetch_perplexity_weekly_highlights(*, api_key: str, model: str = DEFAULT_PERPLEXITY_MODEL) -> dict[str, Any]:
+    """Perplexityで今週のヲタニュース要点を補助取得する（失敗時は skipped を返す）。"""
+    if not api_key:
+        return {"status": "skipped", "reason": "missing PERPLEXITY_API_KEY"}
+    payload = {
+        "model": model,
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "You are a Japanese otaku weekly editor. "
+                    "Return concise highlights from this week in Japan only. "
+                    "Output must be JSON object only with keys: anime_game, figure_goods, events_cosplay, note."
+                ),
+            },
+            {
+                "role": "user",
+                "content": (
+                    "今週の日本オタクニュースの注目トピックを要約して。"
+                    "アニメ/ゲーム、フィギュア/グッズ、イベント/コスプレの3軸で各3件程度。"
+                    "推測は禁止、実在記事ベースで。JSONのみ返して。"
+                ),
+            },
+        ],
+        "temperature": 0.2,
+        "max_tokens": 1200,
+        "search_recency_filter": "week",
+        "search_language_filter": ["ja"],
+        "web_search_options": {"user_location": {"country": "JP"}},
+    }
+    resp = requests.post(
+        "https://api.perplexity.ai/v1/sonar",
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        json=payload,
+        timeout=90,
+    )
+    if resp.status_code >= 400:
+        return {"status": "error", "reason": f"HTTP {resp.status_code}", "body": resp.text[:300]}
+    data = resp.json() or {}
+    text = (((data.get("choices") or [{}])[0].get("message") or {}).get("content") or "").strip()
+    if not text:
+        return {"status": "error", "reason": "empty response"}
+    try:
+        obj = _parse_json_object(text)
+    except Exception as e:
+        return {"status": "error", "reason": f"json parse failed: {e}", "raw": text[:400]}
+    return {"status": "ok", "highlights": obj}
+
+
 def call_anthropic_text(*, api_key: str, model: str, system: str, user_text: str, max_tokens: int = 8192) -> str:
     resp = requests.post(
         "https://api.anthropic.com/v1/messages",
@@ -414,6 +469,10 @@ def main() -> None:
         days=args.days,
     )
     hot_topics = collect_recent_hot_topics(entries, days=args.days, limit=40)
+    perplexity_weekly = fetch_perplexity_weekly_highlights(
+        api_key=os.getenv("PERPLEXITY_API_KEY", "").strip(),
+        model=(os.getenv("PERPLEXITY_MODEL", "").strip() or DEFAULT_PERPLEXITY_MODEL),
+    )
     stats = {
         "base": base_stats,
         "internal": internal_stats,
@@ -554,12 +613,16 @@ def main() -> None:
 
     # JOI通信の素材JSONを生成（後続スクリプトで entries 形式へ変換）
     joi_user = (
-        "週次分析レポート:\n"
-        + report_text
-        + "\n\n補助データ:\n"
-        + json.dumps(stats, ensure_ascii=False, indent=2)
-        + "\n\n直近記事サンプル（この中から今週アツかった話題を拾う）:\n"
+        "編集ガイド:\n"
+        "これはヲタ向けの今週ニュースかわら版。KPI解説ではなく、今週の具体話題を中心に書くこと。\n"
+        "\n\n直近記事サンプル（最優先で参照）:\n"
         + json.dumps(hot_topics, ensure_ascii=False, indent=2)
+        + "\n\nPerplexity 週次ハイライト（補助。status=ok の場合のみ参照）:\n"
+        + json.dumps(perplexity_weekly, ensure_ascii=False, indent=2)
+        + "\n\n週次分析レポート（参考。本文主役にしない）:\n"
+        + report_text
+        + "\n\n補助統計:\n"
+        + json.dumps(stats, ensure_ascii=False, indent=2)
     )
     try:
         llm_trace["joi_attempts"].append({"model": args.sonnet_model, "status": "try"})
