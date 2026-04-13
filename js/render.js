@@ -199,9 +199,12 @@ function openModal(id) {
     const sourceUrl = item.source && typeof item.source === 'object' ? item.source.url : item.source;
     const isWeekly = item && (item._source === 'joi-weekly' || item._source_id === 'joi-weekly');
     const weeklyArticleUrl = `/weekly.html?id=${encodeURIComponent(item.id)}`;
+    const uiLang = (localStorage.getItem('otaku_lang') || 'en');
 
     if (isWeekly) {
-        const weeklySummary = item.summary_ja || item.summary_en || sanitizeMd((item.description || '').split('\n\n')[0] || '');
+        const weeklySummary = uiLang === 'ja'
+            ? (item.summary_ja || item.summary_en || sanitizeMd((item.description || '').split('\n\n')[0] || ''))
+            : (item.summary_en || item.summary_ja || sanitizeMd((item.description || '').split('\n\n')[0] || ''));
         if (weeklySummary) {
             sections += `<div class="modal-section"><div class="modal-section-title">Overview</div><div class="modal-section-content">${sanitizeMd(weeklySummary)}</div></div>`;
         }

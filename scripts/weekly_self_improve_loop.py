@@ -95,6 +95,10 @@ JOI_SYSTEM = """あなたは Japan OTAKU Insider の編集長です。
 """
 
 
+def _contains_japanese(text: str) -> bool:
+    return bool(re.search(r"[\u3040-\u30ff\u4e00-\u9fff]", text or ""))
+
+
 def _id_date(entry: dict[str, Any]) -> str | None:
     """id 内の日付を YYYYMMDD で返す（例: anime-202603302009-rss-xxx / figure-20260319-rss-xxx）。"""
     m = re.search(r"-(\d{8})(?:\d{4})?-", entry.get("id") or "")
@@ -353,6 +357,49 @@ def call_anthropic_text(*, api_key: str, model: str, system: str, user_text: str
     if not out:
         raise RuntimeError("Anthropic 応答が空")
     return out
+
+
+def ensure_joi_english_fields(*, api_key: str, model: str, joi_obj: dict[str, Any]) -> dict[str, Any]:
+    """JOI出力に英語本文が不足/日本語混入している場合に補完する。"""
+    body_ja = str(joi_obj.get("body_ja_markdown") or "").strip()
+    summary_ja = str(joi_obj.get("summary_ja") or "").strip()
+    summary_en = str(joi_obj.get("summary_en") or "").strip()
+    body_en = str(joi_obj.get("body_en_markdown") or "").strip()
+
+    # summary_en が空または日本語なら補完
+    if (not summary_en) or _contains_japanese(summary_en):
+        user = (
+            "次の日本語要約を、ニュース記事向けの自然な英語1-2文に翻訳してください。"
+            "出力は本文のみ。\n\n"
+            f"{summary_ja}"
+        )
+        summary_en = call_anthropic_text(
+            api_key=api_key,
+            model=model,
+            system="You are a professional Japanese-to-English editor for otaku news.",
+            user_text=user,
+            max_tokens=300,
+        ).strip()
+        joi_obj["summary_en"] = summary_en
+
+    # body_en が空または日本語なら補完
+    if (not body_en) or _contains_japanese(body_en):
+        src = body_ja or summary_ja
+        user = (
+            "次の日本語Markdownを英語Markdownへ翻訳してください。"
+            "見出し構造（#, ##, ###, 箇条書き）を保ち、自然な英語にすること。"
+            "出力はMarkdown本文のみ。\n\n"
+            f"{src}"
+        )
+        body_en = call_anthropic_text(
+            api_key=api_key,
+            model=model,
+            system="You are a professional Japanese-to-English editor for otaku weekly newsletters.",
+            user_text=user,
+            max_tokens=3500,
+        ).strip()
+        joi_obj["body_en_markdown"] = body_en
+    return joi_obj
 
 
 def call_claude_json(api_key: str, model: str, weekly_report: str, prompts: dict[str, str]) -> dict[str, str]:
@@ -651,6 +698,10 @@ def main() -> None:
         )
         llm_trace["joi_attempts"][-1]["status"] = "ok"
     joi_obj = _parse_json_object(joi_raw)
+    try:
+        joi_obj = ensure_joi_english_fields(api_key=anthropic_key, model=args.sonnet_model, joi_obj=joi_obj)
+    except Exception as e:
+        print(f"JOI英語補完失敗 ({e}); 既存値で継続", file=sys.stderr)
     joi_path = args.emit_joi_json or (out_dir / "joi_entry_source.json")
     joi_path.parent.mkdir(parents=True, exist_ok=True)
     joi_path.write_text(json.dumps(joi_obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
