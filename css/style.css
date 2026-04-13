@@ -599,9 +599,23 @@ body {
   padding: 24px;
 }
 
+.weekly-hero {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
 .weekly-meta {
   color: var(--text-dim);
   font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.weekly-image-note {
+  color: var(--text-dim);
+  font-size: 12px;
   margin-bottom: 12px;
 }
 

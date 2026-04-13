@@ -65,7 +65,7 @@ async function loadEntriesByLang() {
   const url = lang === "ja" ? "/data/entries_ja.json" : "/data/entries.json";
   const resp = await fetch(url);
   const db = await resp.json();
-  return db.entries || [];
+  return { lang, entries: db.entries || [] };
 }
 
 function getQueryId() {
@@ -81,20 +81,37 @@ async function main() {
   const titleEl = document.getElementById("weeklyTitle");
   const metaEl = document.getElementById("weeklyMeta");
   const contentEl = document.getElementById("weeklyContent");
+  const heroEl = document.getElementById("weeklyHero");
+  const imageNoteEl = document.getElementById("weeklyImageNote");
   try {
     const id = getQueryId();
     if (!id) throw new Error("Article ID is missing.");
-    const entries = await loadEntriesByLang();
+    const loaded = await loadEntriesByLang();
+    const lang = loaded.lang || "en";
+    const entries = loaded.entries || [];
     const entry = entries.find((e) => String(e.id) === String(id));
     if (!entry || !isWeeklyEntry(entry)) throw new Error("Weekly article not found.");
 
-    const title = entry.title_ja || entry.title || "Weekly JOI Article";
+    const title = lang === "ja" ? (entry.title_ja || entry.title) : (entry.title || entry.title_ja) || "Weekly JOI Article";
     const dateText = (entry.dates && entry.dates.display) ? entry.dates.display : "";
-    const body = entry.article_markdown_ja || entry.description || "";
+    const body = lang === "ja"
+      ? (entry.article_markdown_ja || entry.description || "")
+      : (entry.article_markdown_en || entry.summary_en || entry.description || entry.article_markdown_ja || "");
+    const hero = entry.thumbnail || "";
+    const imagePrompt = entry.header_image_prompt_en || "";
 
     document.title = `${title} | Japan OTAKU Insider`;
     titleEl.textContent = title;
     metaEl.textContent = dateText ? `Published: ${dateText}` : "";
+    if (heroEl && hero) {
+      heroEl.src = hero;
+      heroEl.style.display = "block";
+    }
+    if (imageNoteEl && !hero && imagePrompt) {
+      imageNoteEl.textContent = `Header image draft prompt: ${imagePrompt}`;
+    } else if (imageNoteEl) {
+      imageNoteEl.textContent = "";
+    }
     contentEl.innerHTML = renderSimpleMarkdown(body);
   } catch (e) {
     titleEl.textContent = "Weekly article unavailable";

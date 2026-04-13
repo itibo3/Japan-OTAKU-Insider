@@ -74,6 +74,8 @@ JOI_SYSTEM = """あなたは Japan OTAKU Insider の編集長です。
   "summary_ja": "...",
   "summary_en": "...",
   "body_ja_markdown": "...",
+  "body_en_markdown": "...",
+  "header_image_prompt_en": "...",
   "tags": ["weekly-joi","otaku-news","analytics"]
 }
 要件:
@@ -89,6 +91,7 @@ JOI_SYSTEM = """あなたは Japan OTAKU Insider の編集長です。
 - 最後に「来週の注目ポイント」を 2〜3 個入れる
 - 断定しすぎず、誤情報を作らない（入力にない固有名詞や日付をでっち上げない）
 - 禁止: 「アクティブユーザー◯%減」「PV◯%減」などKPI中心の見出しを本文主役にすること
+- header_image_prompt_en には、記事見出し画像を生成するための英語プロンプトを1文で入れる
 """
 
 

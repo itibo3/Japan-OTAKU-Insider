@@ -32,6 +32,13 @@ def main() -> None:
     summary_ja = (src.get("summary_ja") or "").strip()
     summary_en = (src.get("summary_en") or "").strip()
     body_md = (src.get("body_ja_markdown") or "").strip()
+    body_en_md = (src.get("body_en_markdown") or "").strip()
+    header_image_prompt_en = (src.get("header_image_prompt_en") or "").strip()
+    if not header_image_prompt_en:
+        header_image_prompt_en = (
+            "Anime and otaku weekly news collage, neon Tokyo night, manga style headline banner, "
+            "featuring anime broadcast, figure release, cosplay event atmosphere, vivid cyan and magenta, 16:9"
+        )
     tags = src.get("tags") or ["weekly-joi", "otaku-news", "analytics"]
     if not isinstance(tags, list):
         tags = ["weekly-joi", "otaku-news", "analytics"]
@@ -56,6 +63,8 @@ def main() -> None:
         "summary_ja": summary_ja,
         "summary_en": summary_en,
         "article_markdown_ja": body_md,
+        "article_markdown_en": body_en_md,
+        "header_image_prompt_en": header_image_prompt_en,
         "source": {"url": article_url},
         "tags": tags,
         "_source": "joi-weekly",

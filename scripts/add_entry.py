@@ -97,6 +97,8 @@ def has_low_quality_source_url(entry):
     source_url = ((entry.get("source") or {}).get("url") or "").strip()
     if not source_url:
         return False
+    if entry.get("_source_id") == "joi-weekly" and source_url.startswith("/weekly.html"):
+        return False
     try:
         parsed = urlparse(source_url)
     except Exception:
@@ -128,10 +130,23 @@ def add_entries_from_file(filepath, reset=False):
         db["entries"] = []
         print("  (reset: entries を空にしました)")
     existing_entries = db["entries"]
+    weekly_replaced = False
 
     added = 0
     for entry in new_entries:
         normalize_categories(entry)
+        # 週刊JOIは常に最新1件を残す（過去の運用レポート調記事を残さない）
+        if entry.get("_source_id") == "joi-weekly" and not weekly_replaced:
+            before = len(db["entries"])
+            db["entries"] = [
+                e for e in db["entries"]
+                if e.get("_source_id") != "joi-weekly" and e.get("_source") != "joi-weekly"
+            ]
+            existing_entries = db["entries"]
+            removed = before - len(db["entries"])
+            if removed:
+                print(f"  Removed old weekly JOI entries: {removed}")
+            weekly_replaced = True
         title = (entry.get("title") or "").strip()
         desc = (entry.get("description") or "").strip()
         if not title or not desc:
