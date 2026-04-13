@@ -3,13 +3,15 @@ function sanitizeMd(str) {
     return str.replace(/\*\*/g, '');
 }
 
+const AMAZON_ASSOCIATE_TAG = 'eidosfrontier-22';
+
 function buildAmazonSearchUrl(title, lang) {
     const raw = String(title || '').replace(/\[[^\]]*\]/g, ' ').replace(/[【】]/g, ' ').trim();
     if (!raw) return '';
     const params = new URLSearchParams();
     params.set('k', raw);
     params.set('language', lang === 'ja' ? 'ja_JP' : 'en_US');
-    const tag = (window.AMAZON_ASSOCIATE_TAG || '').trim();
+    const tag = (window.AMAZON_ASSOCIATE_TAG || AMAZON_ASSOCIATE_TAG || '').trim();
     if (tag) params.set('tag', tag);
     return `https://www.amazon.co.jp/s?${params.toString()}`;
 }
