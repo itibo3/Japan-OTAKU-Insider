@@ -30,7 +30,7 @@ def looks_japanese(text: str) -> bool:
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ENTRIES_FILE = PROJECT_ROOT / "data" / "entries.json"
 POSTED_FILE = PROJECT_ROOT / "data" / ".x_posted_ids"
-SITE_URL = "https://itibo3.github.io/Japan-OTAKU-Insider/"
+SITE_URL = "https://otaku.eidosfrontier.com/"
 MAX_POSTS_PER_RUN = 3
 
 CATEGORY_EMOJI = {
@@ -45,13 +45,14 @@ CATEGORY_EMOJI = {
 }
 
 # カテゴリ毎の固定ハッシュタグ（最大2個）+ 全投稿共通タグ
+# 集客見直し時: 検索ボリュームの大きい汎用タグとニッチタグのバランスを取る（例: VTuber枠で #Hololive だけだにじさんじ層に届きにくい）
 COMMON_HASHTAG = "#JapanOTAKUInsider"
 CATEGORY_HASHTAGS = {
     "cafe":       ["#CollabCafe",   "#JapanAnime"],
     "figure":     ["#AnimeFigure",  "#JapanFigure"],
     "event":      ["#AnimeEvent",   "#JapanEvent"],
     "anime":      ["#Anime",        "#AnimeSeason"],
-    "vtuber":     ["#VTuber",       "#Hololive"],
+    "vtuber":     ["#VTuber",       "#VTuberEN"],
     "game":       ["#JapanGames",   "#GameNews"],
     "otaku-news": ["#Otaku",        "#JapanCulture"],
     "other":      ["#JapanOtaku",   "#Otaku"],

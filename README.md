@@ -17,7 +17,7 @@ A free, open database of Japanese otaku events, collab cafes, figure releases, a
 
 ## Visit
 
-👉 [https://itibo3.github.io/Japan-OTAKU-Insider/](https://itibo3.github.io/Japan-OTAKU-Insider/)
+👉 [https://otaku.eidosfrontier.com/](https://otaku.eidosfrontier.com/)
 
 ## Built by
 
