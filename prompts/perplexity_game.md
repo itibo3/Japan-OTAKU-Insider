@@ -1,1 +1,1 @@
-Japan game news 4gamer dengeki famitsu new release domestic indie esports this week
+site:4gamer.net OR site:famitsu.com OR site:dengekionline.com ゲーム 発売日 アップデート DLC 体験版

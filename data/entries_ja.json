@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-13T21:00:58.578817+09:00",
-  "total_entries": 3419,
+  "last_updated": "2026-04-13T21:08:31.439620+09:00",
+  "total_entries": 3405,
   "lang": "ja",
   "entries": [
     {
@@ -48,15 +48,6 @@
       "pinned_top": true
     },
     {
-      "index": 0,
-      "id": "other-202604132024-pplx-a92635",
-      "ok": false,
-      "reason_ja": "公式サイトのトップページであり、具体的なイベント内容や日程の裏付けができないため。",
-      "categories": [
-        "event"
-      ]
-    },
-    {
       "id": "figure-202604132023-pplx-719b93",
       "categories": [
         "figure"
@@ -77,33 +68,6 @@
       },
       "location": "日本",
       "thumbnail": "https://www.1999.co.jp/itbig136/11368295a.jpg"
-    },
-    {
-      "index": 1,
-      "id": "cafe-202604132023-pplx-4fb7c2",
-      "ok": false,
-      "reason_ja": "公式サイトのトップページであり、具体的なイベント内容の確認ができないため。",
-      "categories": [
-        "event"
-      ]
-    },
-    {
-      "index": 0,
-      "id": "cafe-202604132023-pplx-372e22",
-      "ok": false,
-      "reason_ja": "公式サイトのトップページであり、具体的なイベント内容の確認ができないため。",
-      "categories": [
-        "event"
-      ]
-    },
-    {
-      "index": 2,
-      "id": "cafe-202604132023-pplx-22947b",
-      "ok": false,
-      "reason_ja": "公式サイトのトップページであり、具体的なイベント内容の確認ができないため。",
-      "categories": [
-        "event"
-      ]
     },
     {
       "id": "vtuber-202604132022-rss-ff59d7",
@@ -2012,51 +1976,6 @@
       "_source_id": "amiami-news"
     },
     {
-      "index": 0,
-      "id": "game-202604121946-pplx-439f97",
-      "ok": false,
-      "reason_ja": "ゲーム枠なのに一般スポーツ（サッカー）の実況・国際試合が主題のため",
-      "categories": [
-        "event"
-      ]
-    },
-    {
-      "index": 0,
-      "id": "figure-202604121946-pplx-d00a72",
-      "ok": false,
-      "reason_ja": "公式サイトのトップページであり、具体的な新作フィギュアの情報が確認できないため。",
-      "categories": [
-        "event"
-      ]
-    },
-    {
-      "index": 2,
-      "id": "figure-202604121946-pplx-80d934",
-      "ok": false,
-      "reason_ja": "公式サイトのトップページであり、具体的な新作フィギュアの情報が確認できないため。",
-      "categories": [
-        "event"
-      ]
-    },
-    {
-      "index": 1,
-      "id": "figure-202604121946-pplx-2bb05a",
-      "ok": false,
-      "reason_ja": "公式サイトのトップページであり、具体的な新作フィギュアの情報が確認できないため。",
-      "categories": [
-        "event"
-      ]
-    },
-    {
-      "index": 3,
-      "id": "figure-202604121946-pplx-256a35",
-      "ok": false,
-      "reason_ja": "公式サイトのトップページであり、具体的な新作フィギュアの情報が確認できないため。",
-      "categories": [
-        "event"
-      ]
-    },
-    {
       "id": "vtuber-202604121945-rss-a4b234",
       "categories": [
         "vtuber"
@@ -3954,15 +3873,6 @@
       "_source_id": "4gamer"
     },
     {
-      "index": 0,
-      "id": "game-202604111942-pplx-b6593e",
-      "ok": false,
-      "reason_ja": "ゲーム枠なのに一般スポーツの実況・国際試合が主題",
-      "categories": [
-        "event"
-      ]
-    },
-    {
       "id": "figure-202604111942-pplx-f3b525",
       "categories": [
         "figure"
@@ -4156,71 +4066,6 @@
       },
       "location": "日本",
       "thumbnail": "https://www.1999.co.jp/images/cp_item_ba_pc_260331_e.png"
-    },
-    {
-      "id": "cafe-202604102003-pplx-fb3461",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "渋谷コラボポップアップイベントスタート",
-      "title_ja": "渋谷コラボポップアップイベントスタート",
-      "description": "A new anime collaboration pop-up store opens this week at Shibuya PARCO. A large number of limited collaboration products will be available, and a lottery will also be held.",
-      "source": {
-        "url": "https://parco.co.jp/shibuya-popup-event/"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-09"
-      },
-      "location": "渋谷",
-      "thumbnail": "https://parco.co.jp/assets/images/common/ogp.png"
-    },
-    {
-      "id": "cafe-202604102003-pplx-f405d1",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "池袋サンシャインシティコラボカフェ開店",
-      "title_ja": "池袋サンシャインシティコラボカフェ開店",
-      "description": "A collaboration cafe with a popular anime opens today in Ikebukuro Sunshine City. Special menus and newly drawn illustration goods are now on sale.",
-      "source": {
-        "url": "https://www.sunshinecity.co.jp/ikebukuro-collab-cafe/"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-10"
-      },
-      "location": "池袋",
-      "thumbnail": "https://www.sunshinecity.co.jp/archives/005/202603/b8172ccd31e1692ddcccd670797d133aa427f7f96535526059b52ceb53c64fb3.jpg"
-    },
-    {
-      "id": "cafe-202604102003-pplx-15b930",
-      "categories": [
-        "cafe"
-      ],
-      "status": "active",
-      "title": "浅草でアニメポップアップストア開催",
-      "title_ja": "浅草でアニメポップアップストア開催",
-      "description": "A new anime pop-up store opens this week near Asakusa Kaminarimon. We are selling goods that are a fusion of tradition and anime.",
-      "source": {
-        "url": "https://asakusa-anime-popup.jp/"
-      },
-      "tags": [
-        "cafe"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-08"
-      },
-      "location": "浅草"
     },
     {
       "id": "game-202604102002-rss-c4eeaf",
@@ -63387,28 +63232,6 @@
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/858860.jpg",
       "_source_id": "animeanime-jp"
-    },
-    {
-      "id": "otaku-news-202603281938-rss-55b494",
-      "categories": [
-        "otaku-news"
-      ],
-      "status": "active",
-      "title": "冬みかん　はっぴーえちえちえくすぺりえんす　「校内の気になる女子と即セッ◯ス♥」",
-      "title_ja": "冬みかん　はっぴーえちえちえくすぺりえんす　「校内の気になる女子と即セッ◯ス♥」",
-      "dates": {},
-      "description": "Comics for adults \"Happi Echiechi Echiechi Ekusu Periensu\" [AA] by Mikan Fuyumikan is already available in Akiba. It contains a total of nine stories, including the title story \"Happi Echi Echi Echi Echi Echi Kusu Periensu,\" and the obi claims that \"A girl is possessed by a mysterious creature and suddenly goes into a passionate echi-echiechi mode! The book includes 9 stories, including \"A mysterious creature possesses a girl, and she suddenly goes into a passionate echi-chi-chi...",
-      "source": {
-        "url": "https://akibablog.blog.jp/archives/51660023.html"
-      },
-      "tags": [
-        "akihabara",
-        "cafe",
-        "event",
-        "figure"
-      ],
-      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/c/6/c63b8e24.jpg",
-      "_source_id": "akiba-blog"
     },
     {
       "id": "otaku-news-202603281938-rss-527539",

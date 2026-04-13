@@ -65,7 +65,7 @@ Each value is a single string (the new one-line prompt).
 """
 
 JOI_SYSTEM = """あなたは Japan OTAKU Insider の編集長です。
-受け取った週次分析をもとに、サイト掲載用の「週間JOI通信」を作成してください。
+受け取った週次分析と「直近記事サンプル」をもとに、サイト掲載用の「週間JOI通信」を作成してください。
 出力は必ず JSON のみ:
 {
   "title_ja": "...",
@@ -76,9 +76,13 @@ JOI_SYSTEM = """あなたは Japan OTAKU Insider の編集長です。
   "tags": ["weekly-joi","otaku-news","analytics"]
 }
 要件:
-- 読者向けでわかりやすく、断定しすぎない
-- 数字は入力データに基づく
-- body は見出しつきMarkdown
+- これは「運用KPIレポート」ではなく、ヲタ向けの週刊かわら版（ホットニュースまとめ）
+- 「今週アツかった話題」「注目ニュース振り返り」を中心に、読んで楽しい文体で書く
+- body は見出し付き Markdown で、最低 3 セクション構成にする
+- 直近記事サンプルから最低 5 件以上、具体的な話題・作品名・イベント名を拾って紹介する
+- 単なる数値列挙は避け、必要な数字は文脈の補足として短く使う
+- 最後に「来週の注目ポイント」を 2〜3 個入れる
+- 断定しすぎず、誤情報を作らない（入力にない固有名詞や日付をでっち上げない）
 """
 
 
@@ -226,6 +230,44 @@ def collect_internal_pipeline_stats(entries: list[dict[str, Any]], days: int = 7
     }
 
 
+def collect_recent_hot_topics(entries: list[dict[str, Any]], days: int = 7, limit: int = 40) -> list[dict[str, Any]]:
+    """JOI通信用に、直近記事の見出しサンプルを抽出する。"""
+    cutoff = datetime.now(JST).date() - timedelta(days=days)
+    picked: list[tuple[str, dict[str, Any]]] = []
+    seen_title: set[str] = set()
+    for e in entries:
+        if e.get("_source") == "joi-weekly" or e.get("_source_id") == "joi-weekly":
+            continue
+        ds = _id_date(e)
+        if not ds:
+            continue
+        try:
+            d = datetime(int(ds[:4]), int(ds[4:6]), int(ds[6:8])).date()
+        except Exception:
+            continue
+        if d < cutoff:
+            continue
+        title = (e.get("title_ja") or e.get("title") or "").strip()
+        if not title or title in seen_title:
+            continue
+        seen_title.add(title)
+        picked.append(
+            (
+                ds,
+                {
+                    "id": e.get("id"),
+                    "date": ds,
+                    "title_ja": title,
+                    "categories": e.get("categories") or [],
+                    "source_url": ((e.get("source") or {}).get("url") or ""),
+                    "source_id": e.get("_source_id", ""),
+                },
+            )
+        )
+    picked.sort(key=lambda x: x[0], reverse=True)
+    return [row for _, row in picked[:limit]]
+
+
 def call_anthropic_text(*, api_key: str, model: str, system: str, user_text: str, max_tokens: int = 8192) -> str:
     resp = requests.post(
         "https://api.anthropic.com/v1/messages",
@@ -297,6 +339,30 @@ def _parse_claude_json(raw: str) -> dict[str, str]:
     return out
 
 
+def _fallback_prompt_proposals() -> dict[str, str]:
+    """API 未接続時でも空JSONにせず、保守的な検索ワード案を返す。"""
+    return {
+        "perplexity_cafe.md": (
+            "site:collabo-cafe.com OR site:prtimes.jp anime collaboration cafe 開催 予約 メニュー 特典 期間"
+        ),
+        "perplexity_vtuber.md": (
+            "site:nijisanji.jp OR site:hololive.hololivepro.com OR site:prtimes.jp VTuber 新衣装 3D 配信 告知"
+        ),
+        "perplexity_figure.md": (
+            "site:goodsmile.info OR site:kotobukiya.co.jp OR site:amiami.jp フィギュア 予約開始 発売日 再販"
+        ),
+        "perplexity_game.md": (
+            "site:4gamer.net OR site:famitsu.com OR site:dengekionline.com ゲーム 発売日 アップデート DLC 体験版"
+        ),
+        "perplexity_anime.md": (
+            "site:natalie.mu/comic OR site:animeanime.jp アニメ 新作 放送日 PV キービジュアル キャスト"
+        ),
+        "perplexity_other.md": (
+            "site:prtimes.jp OR site:akihabara-bc.jp otaku event exhibition pop-up 開催 日程 会場"
+        ),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="週次レポート + Claude による Perplexity プロンプト改善案")
     parser.add_argument("--out-dir", type=Path, required=True, help="成果物ディレクトリ")
@@ -318,10 +384,21 @@ def main() -> None:
         help="週次分析/改善案に優先利用する Sonnet モデル",
     )
     parser.add_argument("--emit-joi-json", type=Path, help="JOI記事素材JSONの出力先")
+    parser.add_argument(
+        "--require-anthropic",
+        action="store_true",
+        help="ANTHROPIC_API_KEY 未設定を許容せず、エラーで終了する",
+    )
     args = parser.parse_args()
 
     out_dir = args.out_dir.resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
+    llm_trace: dict[str, Any] = {
+        "anthropic_key_present": bool(os.getenv("ANTHROPIC_API_KEY", "").strip()),
+        "report_attempts": [],
+        "proposal_attempts": [],
+        "joi_attempts": [],
+    }
 
     entries_path = ROOT / "data" / "entries.json"
     if not entries_path.exists():
@@ -336,6 +413,7 @@ def main() -> None:
         property_id=os.getenv("GA4_PROPERTY_ID", "").strip(),
         days=args.days,
     )
+    hot_topics = collect_recent_hot_topics(entries, days=args.days, limit=40)
     stats = {
         "base": base_stats,
         "internal": internal_stats,
@@ -381,13 +459,24 @@ def main() -> None:
 
     if not anthropic_key:
         print("ANTHROPIC_API_KEY 未設定: レポート/改善案/JOI通信は簡易出力", file=sys.stderr)
+        if args.require_anthropic:
+            print("--require-anthropic が有効のため終了します", file=sys.stderr)
+            (out_dir / "llm_trace.json").write_text(
+                json.dumps({**llm_trace, "error": "missing ANTHROPIC_API_KEY"}, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            sys.exit(2)
         (out_dir / "weekly_report_ja.md").write_text(
             "# 週次レポート（API なし）\n\n```json\n"
             + json.dumps(stats, ensure_ascii=False, indent=2)
             + "\n```\n",
             encoding="utf-8",
         )
-        (out_dir / "claude_prompt_proposals.json").write_text("{}\n", encoding="utf-8")
+        fallback = _fallback_prompt_proposals()
+        (out_dir / "claude_prompt_proposals.json").write_text(
+            json.dumps(fallback, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
         if args.emit_joi_json:
             args.emit_joi_json.parent.mkdir(parents=True, exist_ok=True)
             args.emit_joi_json.write_text(
@@ -406,12 +495,17 @@ def main() -> None:
                 + "\n",
                 encoding="utf-8",
             )
+        (out_dir / "llm_trace.json").write_text(
+            json.dumps({**llm_trace, "mode": "fallback_without_anthropic"}, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
         print(f"部分完了 → {out_dir}")
         return
 
     # Sonnet 優先で週次分析レポートを生成（失敗時 Opus）
     report_user = "統計JSON:\n" + json.dumps(stats, ensure_ascii=False, indent=2)
     try:
+        llm_trace["report_attempts"].append({"model": args.sonnet_model, "status": "try"})
         report = call_anthropic_text(
             api_key=anthropic_key,
             model=args.sonnet_model,
@@ -419,8 +513,12 @@ def main() -> None:
             user_text=report_user,
             max_tokens=4096,
         )
+        llm_trace["report_attempts"][-1]["status"] = "ok"
     except Exception as e:
+        llm_trace["report_attempts"][-1]["status"] = "error"
+        llm_trace["report_attempts"][-1]["error"] = str(e)
         print(f"Sonnet 週次レポート失敗 ({e}); Opus へフォールバック", file=sys.stderr)
+        llm_trace["report_attempts"].append({"model": args.opus_model, "status": "try"})
         report = call_anthropic_text(
             api_key=anthropic_key,
             model=args.opus_model,
@@ -428,16 +526,23 @@ def main() -> None:
             user_text=report_user,
             max_tokens=4096,
         )
+        llm_trace["report_attempts"][-1]["status"] = "ok"
     (out_dir / "weekly_report_ja.md").write_text(report + "\n", encoding="utf-8")
 
     report_text = (out_dir / "weekly_report_ja.md").read_text(encoding="utf-8")
 
     # 検索ワード改善案（Artifactのみ）
     try:
+        llm_trace["proposal_attempts"].append({"model": args.sonnet_model, "status": "try"})
         proposals = call_claude_json(anthropic_key, args.sonnet_model, report_text, prompts)
+        llm_trace["proposal_attempts"][-1]["status"] = "ok"
     except Exception as e:
+        llm_trace["proposal_attempts"][-1]["status"] = "error"
+        llm_trace["proposal_attempts"][-1]["error"] = str(e)
         print(f"Sonnet 改善案失敗 ({e}); Opus へフォールバック", file=sys.stderr)
+        llm_trace["proposal_attempts"].append({"model": args.opus_model, "status": "try"})
         proposals = call_claude_json(anthropic_key, args.opus_model, report_text, prompts)
+        llm_trace["proposal_attempts"][-1]["status"] = "ok"
 
     (out_dir / "claude_prompt_proposals.json").write_text(
         json.dumps(proposals, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -453,8 +558,11 @@ def main() -> None:
         + report_text
         + "\n\n補助データ:\n"
         + json.dumps(stats, ensure_ascii=False, indent=2)
+        + "\n\n直近記事サンプル（この中から今週アツかった話題を拾う）:\n"
+        + json.dumps(hot_topics, ensure_ascii=False, indent=2)
     )
     try:
+        llm_trace["joi_attempts"].append({"model": args.sonnet_model, "status": "try"})
         joi_raw = call_anthropic_text(
             api_key=anthropic_key,
             model=args.sonnet_model,
@@ -462,8 +570,12 @@ def main() -> None:
             user_text=joi_user,
             max_tokens=4096,
         )
+        llm_trace["joi_attempts"][-1]["status"] = "ok"
     except Exception as e:
+        llm_trace["joi_attempts"][-1]["status"] = "error"
+        llm_trace["joi_attempts"][-1]["error"] = str(e)
         print(f"Sonnet JOI通信失敗 ({e}); Opus へフォールバック", file=sys.stderr)
+        llm_trace["joi_attempts"].append({"model": args.opus_model, "status": "try"})
         joi_raw = call_anthropic_text(
             api_key=anthropic_key,
             model=args.opus_model,
@@ -471,10 +583,15 @@ def main() -> None:
             user_text=joi_user,
             max_tokens=4096,
         )
+        llm_trace["joi_attempts"][-1]["status"] = "ok"
     joi_obj = _parse_json_object(joi_raw)
     joi_path = args.emit_joi_json or (out_dir / "joi_entry_source.json")
     joi_path.parent.mkdir(parents=True, exist_ok=True)
     joi_path.write_text(json.dumps(joi_obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (out_dir / "llm_trace.json").write_text(
+        json.dumps(llm_trace, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
     print(f"完了: レポート + 提案 {len(proposals)} + JOI素材 -> {out_dir}")
     return

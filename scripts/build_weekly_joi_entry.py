@@ -42,15 +42,21 @@ def main() -> None:
     if not body_as_desc:
         body_as_desc = summary_ja or "Weekly JOI report."
 
+    entry_id = f"otaku-news-{stamp}-joi-{digest}"
+    article_url = args.url.strip() if isinstance(args.url, str) and args.url.strip() else f"/weekly.html?id={entry_id}"
+
     entry = {
-        "id": f"otaku-news-{stamp}-joi-{digest}",
+        "id": entry_id,
         "categories": ["otaku-news"],
         "status": "active",
         "title": title_en,
         "title_ja": title_ja,
         "dates": {"display": now.strftime("%Y-%m-%d")},
         "description": body_as_desc,
-        "source": {"url": args.url} if args.url else {},
+        "summary_ja": summary_ja,
+        "summary_en": summary_en,
+        "article_markdown_ja": body_md,
+        "source": {"url": article_url},
         "tags": tags,
         "_source": "joi-weekly",
         "_source_id": "joi-weekly",

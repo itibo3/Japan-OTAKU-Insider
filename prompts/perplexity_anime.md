@@ -1,1 +1,1 @@
-Japan anime manga new series broadcast theatrical Blu-ray sequel announcement this week
+site:natalie.mu/comic OR site:animeanime.jp アニメ 新作 放送日 PV キービジュアル キャスト

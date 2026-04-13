@@ -291,6 +291,18 @@ def to_entry(raw: dict, category: str, index: int) -> dict:
     # トップページだけ貼って中身をでっち上げるケースが多いため、URL 無しは staging に出さない
     if not source_url:
         return None
+    # トップ/一覧だけのURLは記事として弱いので弾く
+    try:
+        from urllib.parse import urlparse
+        p = urlparse(source_url)
+        path = (p.path or "").strip().lower()
+        depth = len([x for x in path.split("/") if x])
+        if path in ("", "/", "/index.html", "/index.php", "/home", "/top"):
+            return None
+        if depth <= 1 and not p.query:
+            return None
+    except Exception:
+        return None
 
     h = hashlib.md5((source_url or title_ja + str(index)).encode()).hexdigest()[:6]
     date_str = datetime.now(JST).strftime("%Y%m%d%H%M")

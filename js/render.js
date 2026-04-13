@@ -93,6 +93,8 @@ function renderCardHtml(item) {
     const thumbHtml = item.thumbnail
         ? `<img class="card-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy" referrerpolicy="no-referrer">`
         : '<div class="card-thumb-placeholder"><span>📰</span></div>';
+    const isWeekly = item && (item._source === 'joi-weekly' || item._source_id === 'joi-weekly');
+    const weeklyHint = isWeekly ? '<div class="card-weekly-hint">Weekly Feature</div>' : '';
 
     return `
       <div class="card" onclick="openModal('${item.id}')">
@@ -101,6 +103,7 @@ function renderCardHtml(item) {
           <span class="card-status ${statusClass}">${statusLabel}</span>
           ${categoryPills}
         </div>
+        ${weeklyHint}
         <div class="card-title">${sanitizeMd(item.title)}</div>
         <div class="card-meta">
           ${datesDisplay ? `<div class="meta-row"><span class="meta-label">Dates</span><span class="meta-value">${datesDisplay}</span></div>` : ''}
@@ -194,8 +197,18 @@ function openModal(id) {
     const locationDisplay = item.location && typeof item.location === 'object' ? (item.location.name || item.location.area) : item.location;
     const accessDisplay = item.location && typeof item.location === 'object' ? item.location.access : item.access;
     const sourceUrl = item.source && typeof item.source === 'object' ? item.source.url : item.source;
+    const isWeekly = item && (item._source === 'joi-weekly' || item._source_id === 'joi-weekly');
+    const weeklyArticleUrl = `/weekly.html?id=${encodeURIComponent(item.id)}`;
 
-    if (item.description) sections += `<div class="modal-section"><div class="modal-section-title">Overview</div><div class="modal-section-content">${sanitizeMd(item.description)}</div></div>`;
+    if (isWeekly) {
+        const weeklySummary = item.summary_ja || item.summary_en || sanitizeMd((item.description || '').split('\n\n')[0] || '');
+        if (weeklySummary) {
+            sections += `<div class="modal-section"><div class="modal-section-title">Overview</div><div class="modal-section-content">${sanitizeMd(weeklySummary)}</div></div>`;
+        }
+        sections += '<div class="modal-section"><div class="modal-section-title">Read</div><div class="modal-section-content">This weekly issue is published as a full article page.</div></div>';
+    } else if (item.description) {
+        sections += `<div class="modal-section"><div class="modal-section-title">Overview</div><div class="modal-section-content">${sanitizeMd(item.description)}</div></div>`;
+    }
     if (datesDisplay) sections += `<div class="modal-section"><div class="modal-section-title">Dates</div><div class="modal-section-content">${datesDisplay}</div></div>`;
     if (locationDisplay) sections += `<div class="modal-section"><div class="modal-section-title">Location</div><div class="modal-section-content">${locationDisplay}</div></div>`;
     if (accessDisplay) sections += `<div class="modal-section"><div class="modal-section-title">Access</div><div class="modal-section-content">${accessDisplay}</div></div>`;
@@ -231,7 +244,7 @@ function openModal(id) {
     ${item.thumbnail ? `<img class="modal-thumb" src="${item.thumbnail}" alt="${item.title}" loading="lazy" referrerpolicy="no-referrer">` : ''}
     ${sections}
     ${journeyHtml}
-    ${sourceUrl ? `<a href="${sourceUrl}" target="_blank" class="modal-link">View Source &rarr;</a>` : ''}
+    ${isWeekly ? `<a href="${weeklyArticleUrl}" class="modal-link">Read Weekly Article &rarr;</a>` : (sourceUrl ? `<a href="${sourceUrl}" target="_blank" class="modal-link">View Source &rarr;</a>` : '')}
   `;
 
     document.getElementById('modalOverlay').classList.add('show');

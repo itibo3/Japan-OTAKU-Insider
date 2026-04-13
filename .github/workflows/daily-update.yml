@@ -56,7 +56,7 @@ jobs:
             [ -f "$f" ] || continue
             out="${f%.json}.reviewed.json"
             log="${f%.json}.review_log.json"
-            python3 scripts/gemini_flash_review.py --input "$f" --output "$out" --log "$log" || true
+            python3 scripts/gemini_flash_review.py --input "$f" --output "$out" --log "$log" --missing-key-policy reject || true
             mv "$out" "$f"
           done
 

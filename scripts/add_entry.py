@@ -7,6 +7,7 @@ import json
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from urllib.parse import urlparse
 
 JST = timezone(timedelta(hours=9))
 ENTRIES_FILE = Path("data/entries.json")
@@ -91,6 +92,28 @@ def has_untranslated_marker(entry):
     return title.strip().startswith(UNTRANSLATED_PREFIX) or description.strip().startswith(UNTRANSLATED_PREFIX)
 
 
+def has_low_quality_source_url(entry):
+    """トップページ等の中身が薄いURLを簡易判定で弾く（主に Perplexity 由来）。"""
+    source_url = ((entry.get("source") or {}).get("url") or "").strip()
+    if not source_url:
+        return False
+    try:
+        parsed = urlparse(source_url)
+    except Exception:
+        return True
+    if parsed.scheme not in ("http", "https") or not parsed.netloc:
+        return True
+    # Perplexity はトップURLをでっち上げる傾向があるため、root / index は登録しない
+    if entry.get("_source") == "perplexity":
+        path = (parsed.path or "").strip().lower()
+        if path in ("", "/", "/index.html", "/index.php", "/home", "/top"):
+            return True
+        depth = len([x for x in path.split("/") if x])
+        if depth <= 1 and not parsed.query:
+            return True
+    return False
+
+
 def add_entries_from_file(filepath, reset=False):
     """Geminiの出力JSONファイルからエントリーを追加。reset=True のときは既存を空にしてから追加"""
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -109,10 +132,21 @@ def add_entries_from_file(filepath, reset=False):
     added = 0
     for entry in new_entries:
         normalize_categories(entry)
+        title = (entry.get("title") or "").strip()
+        desc = (entry.get("description") or "").strip()
+        if not title or not desc:
+            title_disp = entry.get('title_ja', title or 'Unknown')
+            print(f"  SKIP (empty field): {title_disp[:60]} — title/description が空")
+            continue
         # 翻訳未完了チェック: [未翻訳] プレースホルダが残っている記事は登録しない
         if has_untranslated_marker(entry):
             title_disp = entry.get('title_ja', entry.get('title', 'Unknown'))
             print(f"  SKIP (未翻訳): {title_disp[:60]} — title/description に [未翻訳] が残っています")
+            continue
+        # 品質チェック: トップページ等の薄いURLは除外
+        if has_low_quality_source_url(entry):
+            title_disp = entry.get('title_ja', entry.get('title', 'Unknown'))
+            print(f"  SKIP (source quality): {title_disp[:60]} — URL がトップ/不正形式の可能性")
             continue
         is_dup, reason, is_warn = check_duplicate(entry, existing_entries)
         
