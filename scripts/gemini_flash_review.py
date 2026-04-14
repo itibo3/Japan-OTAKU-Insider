@@ -22,6 +22,12 @@ from urllib.parse import urlparse
 
 import requests
 DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
+URL_CHECK_TIMEOUT = 12
+URL_CHECK_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; JOI-PerplexityVerifier/1.0)",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
+}
 
 REVIEW_SYSTEM = """あなたは「Japan OTAKU Insider」という英語向け日本オタクニュースサイトの厳格な検閲担当です。
 与えられた候補記事それぞれについて、サイトに載せるべきか boolean で判定します。
@@ -34,6 +40,7 @@ REVIEW_SYSTEM = """あなたは「Japan OTAKU Insider」という英語向け日
 - オタク文化（アニメ・ゲーム・フィギュア・コラボカフェ・VTuber 等）と無関係
 
 RSS 由来の具体的な製品発表・予約開始など、一次ソースらしいURLで裏付けできるものは ok=true でよい。
+ただし url_status が 200 でない候補は必ず ok=false にしてください。
 
 必ず次の JSON だけを返す（前後に説明文を付けない）:
 {"decisions":[{"index":0,"ok":true,"reason_ja":""}, ...]}
@@ -67,14 +74,23 @@ def call_gemini_decisions(api_key: str, model: str, entries: list[dict[str, Any]
     compact = []
     for i, e in enumerate(entries):
         src = e.get("source") or {}
+        url = (src.get("url") or "")[:500]
+        host = ""
+        try:
+            host = urlparse(url).netloc.lower()
+        except Exception:
+            host = ""
         compact.append(
             {
                 "index": i,
                 "id": e.get("id"),
+                "source_id": e.get("_source_id"),
+                "source_type": e.get("_source"),
+                "source_domain": host,
                 "categories": e.get("categories"),
                 "title_ja": e.get("title_ja") or e.get("title"),
                 "description": (e.get("description") or "")[:500],
-                "url": (src.get("url") or "")[:500],
+                "url": url,
             }
         )
     user = "候補記事:\n" + json.dumps(compact, ensure_ascii=False, indent=2)
@@ -128,7 +144,25 @@ def apply_decisions(entries: list[dict[str, Any]], decisions: list[dict[str, Any
     return approved, log_rows
 
 
-def _prefilter_reason(entry: dict[str, Any]) -> str | None:
+def _url_http_status(url: str, cache: dict[str, tuple[int | None, str, str]]) -> tuple[int | None, str, str]:
+    """URL の HTTP status / final_url / error を返す（同一URLはキャッシュ）。"""
+    if url in cache:
+        return cache[url]
+    try:
+        resp = requests.get(
+            url,
+            headers=URL_CHECK_HEADERS,
+            timeout=URL_CHECK_TIMEOUT,
+            allow_redirects=True,
+        )
+        item = (resp.status_code, resp.url, "")
+    except Exception as e:
+        item = (None, url, f"{type(e).__name__}: {e}")
+    cache[url] = item
+    return item
+
+
+def _prefilter_reason(entry: dict[str, Any], url_status_cache: dict[str, tuple[int | None, str, str]]) -> str | None:
     """Gemini 前に機械的に弾ける品質NGを返す。None の場合は判定対象。"""
     title = (entry.get("title_ja") or entry.get("title") or "").strip()
     desc = (entry.get("description") or "").strip()
@@ -157,6 +191,12 @@ def _prefilter_reason(entry: dict[str, Any]) -> str | None:
         depth = len([x for x in path.split("/") if x])
         if depth <= 1 and not parsed.query:
             return "Perplexity由来URLが一覧/ランディング疑い"
+        # 重要: 404/403 等の実在しない or 到達不能URLを機械的に遮断する
+        status, final_url, err = _url_http_status(url, url_status_cache)
+        if status != 200:
+            if status is None:
+                return f"Perplexity由来URLの疎通失敗: {err[:120]}"
+            return f"Perplexity由来URLがHTTP {status}: {final_url[:120]}"
     return None
 
 
@@ -210,9 +250,10 @@ def main() -> None:
         return
 
     pre_reject_indices: dict[int, str] = {}
+    url_status_cache: dict[str, tuple[int | None, str, str]] = {}
     review_candidates: list[tuple[int, dict[str, Any]]] = []
     for i, e in enumerate(entries):
-        reason = _prefilter_reason(e)
+        reason = _prefilter_reason(e, url_status_cache)
         if reason:
             pre_reject_indices[i] = reason
         else:

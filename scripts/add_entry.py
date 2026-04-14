@@ -8,9 +8,16 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
+import requests
 
 JST = timezone(timedelta(hours=9))
 ENTRIES_FILE = Path("data/entries.json")
+URL_CHECK_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; JOI-AddEntryVerifier/1.0)",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
+}
+_PPLX_URL_CHECK_CACHE = {}
 
 def load_entries():
     if ENTRIES_FILE.exists():
@@ -116,6 +123,27 @@ def has_low_quality_source_url(entry):
     return False
 
 
+def get_unreachable_perplexity_reason(entry):
+    """Perplexity 由来URLの実在チェック。問題なければ空文字。"""
+    if entry.get("_source") != "perplexity":
+        return ""
+    source_url = ((entry.get("source") or {}).get("url") or "").strip()
+    if not source_url:
+        return "URLが空"
+    if source_url in _PPLX_URL_CHECK_CACHE:
+        return _PPLX_URL_CHECK_CACHE[source_url]
+    try:
+        r = requests.get(source_url, headers=URL_CHECK_HEADERS, timeout=12, allow_redirects=True)
+        if r.status_code != 200:
+            reason = f"HTTP {r.status_code}"
+        else:
+            reason = ""
+    except Exception as e:
+        reason = f"疎通失敗: {type(e).__name__}"
+    _PPLX_URL_CHECK_CACHE[source_url] = reason
+    return reason
+
+
 def add_entries_from_file(filepath, reset=False):
     """Geminiの出力JSONファイルからエントリーを追加。reset=True のときは既存を空にしてから追加"""
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -158,6 +186,12 @@ def add_entries_from_file(filepath, reset=False):
         if has_low_quality_source_url(entry):
             title_disp = entry.get('title_ja', entry.get('title', 'Unknown'))
             print(f"  SKIP (source quality): {title_disp[:60]} — URL がトップ/不正形式の可能性")
+            continue
+        # 品質チェック: Perplexity由来は URL 実在性を最終ゲートで担保
+        pplx_bad_reason = get_unreachable_perplexity_reason(entry)
+        if pplx_bad_reason:
+            title_disp = entry.get('title_ja', entry.get('title', 'Unknown'))
+            print(f"  SKIP (source unreachable): {title_disp[:60]} — {pplx_bad_reason}")
             continue
         is_dup, reason, is_warn = check_duplicate(entry, existing_entries)
         
