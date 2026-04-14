@@ -79,6 +79,23 @@ def save_posted_ids(ids):
     POSTED_FILE.write_text("\n".join(sorted(ids)) + "\n")
 
 
+def normalize_public_url(raw_url: str) -> str:
+    """
+    source.url を公開用URLへ正規化する。
+    - /weekly.html?... のような相対URLは SITE_URL 基準で絶対化
+    - http/https 以外（空・不正）は SITE_URL にフォールバック
+    """
+    u = (raw_url or "").strip()
+    if not u:
+        return SITE_URL
+    if u.startswith("/"):
+        return urllib.parse.urljoin(SITE_URL, u)
+    p = urllib.parse.urlparse(u)
+    if p.scheme in ("http", "https") and p.netloc:
+        return u
+    return SITE_URL
+
+
 def format_tweet(entry, lang="en"):
     cats = entry.get("categories", [])
     if not cats and entry.get("category"):
@@ -101,7 +118,8 @@ def format_tweet(entry, lang="en"):
         title = title[:107] + "..."
 
     source = entry.get("source", {})
-    source_url = source.get("url", "") if isinstance(source, dict) else source
+    source_url_raw = source.get("url", "") if isinstance(source, dict) else source
+    source_url = normalize_public_url(source_url_raw)
 
     tags = CATEGORY_HASHTAGS.get(primary, ["#JapanOtaku", "#Otaku"])
     hashtag_line = " ".join(tags) + " " + COMMON_HASHTAG
@@ -111,7 +129,7 @@ def format_tweet(entry, lang="en"):
         parts.append(emoji)
     parts.append(title)
     parts.append(hashtag_line)
-    parts.append(source_url if source_url else SITE_URL)
+    parts.append(source_url)
 
     return "\n\n".join(parts)
 
