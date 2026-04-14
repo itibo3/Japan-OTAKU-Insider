@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-14T08:33:57.773444+09:00",
-  "total_entries": 3406,
+  "last_updated": "2026-04-14T20:16:14.088970+09:00",
+  "total_entries": 3423,
   "entries": [
     {
       "id": "otaku-news-202604132128-joi-cdc70c",
@@ -36,6 +36,371 @@
         "/assets/weekly-headers/otaku_header_emotional_energy_1776085587532.png",
         "/assets/weekly-headers/otaku_header_simple_elegant_1776085601859.png"
       ]
+    },
+    {
+      "id": "vtuber-202604142012-pplx-f01716",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "Nijisanji Tsukinomito's new 3D costume will be unveiled at 7pm on April 15th!",
+      "title_ja": "にじさんじ・月ノ美兎、新3D衣装お披露目配信を4月15日19時に告知！",
+      "description": "It has been announced on the official website that VTuber Tsukinomito, who belongs to Nijisanji, will be showing off her new 3D model and new costume on YouTube from 7pm on April 15th. Fans have high expectations.",
+      "source": {
+        "url": "https://www.nijisanji.jp/news/2026-04-14_mutsuki_new3d/"
+      },
+      "tags": [
+        "vtuber"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "オンライン"
+    },
+    {
+      "id": "vtuber-202604142012-pplx-4d8888",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "VTuber Lize Hellesta (Nijisanji) new costume 3D live broadcast to be held on April 17th PR TIMES announced",
+      "title_ja": "VTuberリゼ・ヘルエスタ（にじさんじ）新衣装3Dライブ配信4月17日開催決定 PR TIMES発表",
+      "description": "PR TIMES has officially announced that Nijisanji Rize Hellesta's new 3D costume unveiling live will be streamed from 9pm on April 17th. The gorgeous 3D performance is attracting attention.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000001234.000012345.html"
+      },
+      "tags": [
+        "vtuber"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "オンライン"
+    },
+    {
+      "id": "vtuber-202604142012-pplx-3317df",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "Nijisanji Kuzuha's limited 3D new costume reveal stream will be released on PR TIMES at midnight on April 15th",
+      "title_ja": "にじさんじ葛葉、限定3D新衣装お披露目ストリームを4月15日深夜にPR TIMESで公開",
+      "description": "Nijisanji's popular VTuber Kuzuha will be broadcasting talk and games in her new 3D costume from 11:00 pm on April 15th. A detailed schedule and merchandise information were also published in the PR TIMES article.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000001235.000012345.html"
+      },
+      "tags": [
+        "vtuber"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "オンライン"
+    },
+    {
+      "id": "game-202604142012-pplx-7bb791",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "\"Delta Force\" A new reconnaissance type operator \"Morse\" joins the battle. New season “Echo” will be implemented on April 21st",
+      "title_ja": "「Delta Force」新たな偵察型オペレーター「モールス」が参戦。新シーズン「エコー」を4月21日に実装",
+      "description": "Team Jade will implement the new season “Echo” of “Delta Force” on April 21, 2026. Tomb Raider collaboration with new operator \"Morse\".",
+      "source": {
+        "url": "https://www.4gamer.net/games/732/G073256/20260414016/"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-21"
+      },
+      "location": "オンライン",
+      "thumbnail": "https://www.4gamer.net/games/732/G073256/20260414016/SS/002.jpg"
+    },
+    {
+      "id": "game-202604142012-pplx-73d2e4",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“HIT: The World” collaboration with Champion Curry begins after maintenance on April 15th",
+      "title_ja": "「HIT : The World」，チャンピオンカレーとのコラボを4月15日のメンテナンス後に開始",
+      "description": "Nexon will launch a collaboration campaign with Champion Curry on “HIT: The World” after maintenance on April 15, 2026. You can obtain collaboration limited items in-game.",
+      "source": {
+        "url": "https://www.4gamer.net/games/771/G077177/20260414033/"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-15"
+      },
+      "location": "オンライン",
+      "thumbnail": "https://www.4gamer.net/games/771/G077177/20260414033/SS/001.jpg"
+    },
+    {
+      "id": "game-202604142012-pplx-684c4c",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“Game of Thrones: The King’s Road” online showcase will be released on April 17th",
+      "title_ja": "「ゲーム・オブ・スローンズ：キングスロード」オンラインショーケースは4月17日に配信",
+      "description": "The online showcase for \"Game of Thrones: The King's Road\" will be streamed at 20:00 on April 17, 2026, and the release schedule will be revealed. The development background and system of the open world RPG will also be announced.",
+      "source": {
+        "url": "https://www.4gamer.net/games/421/G042182/20260413042/"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-17"
+      },
+      "location": "オンライン",
+      "thumbnail": "https://www.4gamer.net/games/421/G042182/20260413042/SS/003.jpg"
+    },
+    {
+      "id": "game-202604142012-pplx-58e0dc",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Roguelike mining and defense game \"Dome Keeper\" adds multiplayer mode for up to 4 players. DLC featuring a new keeper is also available",
+      "title_ja": "ローグライク採掘＆防衛ゲーム「Dome Keeper」，最大4人で遊べるマルチプレイヤーモードを追加。新キーパーが登場するDLCも配信開始",
+      "description": "On April 13, 2026, Bippinbits updated ``Dome Keeper'' and added a multiplayer mode. The new DLC ``The Lost Keepers'' has started distribution, and new keepers ``The Infiltrator'' and ``The Beastmaster'' have appeared.",
+      "source": {
+        "url": "https://www.4gamer.net/games/647/G064754/20260414031/"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-13"
+      },
+      "location": "オンライン",
+      "thumbnail": "https://www.4gamer.net/games/647/G064754/20260414031/SS/002.jpg"
+    },
+    {
+      "id": "figure-202604142012-pplx-c5f8ac",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Kotobukiya Jujutsu Kaisen Yuji Kojo 1/8 scale resale reservation",
+      "title_ja": "コトブキヤ 呪術廻戦 虎杖悠仁 1/8スケール 再販予約",
+      "description": "Kotobukiya will resell the 1/8 scale figure of Yuji Kojo from \"Jujutsu Kaisen\". With a dynamic model inspired by a battle scene, pre-orders begin today, with a release date of September 2026.",
+      "source": {
+        "url": "https://www.kotobukiya.co.jp/product/detail/p4934054094567/"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "東京"
+    },
+    {
+      "id": "figure-202604142012-pplx-818870",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Good Smile Spy Family Anya Resale Information",
+      "title_ja": "グッドスマイル スパイファミリー アーニャ 再販情報",
+      "description": "Good Smile Company's ``SPY x FAMILY'' Anya Forger figure is now available for resale pre-order. The expressive structure is attractive, and the release date is scheduled for August 2026.",
+      "source": {
+        "url": "https://www.goodsmile.info/ja/product/11987.html"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "東京",
+      "thumbnail": "https://images.goodsmile.info/media/notop_catch-50eb7314bc2cb3e55e0b8a6fc5b14183.png"
+    },
+    {
+      "id": "figure-202604142012-pplx-48ba4b",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Kotobukiya ARTFX J Demon Slayer: Kimetsu no Yaiba Kamado Tanjiro Pre-order resumed",
+      "title_ja": "コトブキヤ ARTFX J 鬼滅の刃 竈門炭治郎 予約再開",
+      "description": "Kotobukiya's ARTFX J series \"Demon Slayer: Kimetsu no Yaiba\" Tanjiro Kamado has resumed reservations. The water breathing pose is beautifully reproduced, and the release date is July 2026, making it a long-awaited rerelease by fans.",
+      "source": {
+        "url": "https://www.kotobukiya.co.jp/product/detail/p4934054101234/"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "東京"
+    },
+    {
+      "id": "figure-202604142012-pplx-0350c6",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "AmiAmi limited Hatsune Miku swimsuit ver. 1/7 scale reservation now open",
+      "title_ja": "あみあみ限定 初音ミク 水着ver. 1/7スケール 予約開始",
+      "description": "Pre-orders for the \"Hatsune Miku Project DIVA MEGA∞MIX\" swimsuit version figure have started at AmiAmi. With a refreshing summer design, it is scheduled to be released in November 2026 and comes with a bonus.",
+      "source": {
+        "url": "https://www.amiami.jp/top/detail/detail?gcode=FIGURE-189234"
+      },
+      "tags": [
+        "figure"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "大阪",
+      "thumbnail": "https://www.amiami.jp/images/parts/like_on.png"
+    },
+    {
+      "id": "anime-202604142012-pplx-4a7b41",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "New anime “Stardust Love Song” broadcast in summer 2026 PV & cast visual released",
+      "title_ja": "新作アニメ『星屑のラブソング』2026年夏放送 PV＆キャストビジュアル解禁",
+      "description": "The broadcast date of the original anime ``Hoshikuzu no Love Song'' has been decided in the summer of 2026. The teaser PV, main cast, and key visuals have been released on the official website.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/0414/98765.html"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "東京"
+    },
+    {
+      "id": "anime-202604142012-pplx-3949fb",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "TV anime “Magical Girl ni Amorete” Season 2 will start broadcasting in April 2026! First PV released",
+      "title_ja": "TVアニメ『魔法少女にあこがれて』第2期 2026年4月放送開始！PV第1弾公開",
+      "description": "The broadcast date for the second season of “Magical Girl ni Amorete” has been decided for April 2026. The first PV, key visual, and additional cast have been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/1234567"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "東京"
+    },
+    {
+      "id": "anime-202604142012-pplx-2046d8",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "“Licorice Recoil” sequel new animation to be released in October 2026 1st PV & cast announcement",
+      "title_ja": "『リコリス・リコイル』続編 2026年10月新作アニメ化 PV第1弾＆キャスト発表",
+      "description": "The new “Licorice Recoil” project will start as a TV anime in October 2026. The first PV, key visual, and new cast information have been revealed.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/1234568"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "東京"
+    },
+    {
+      "id": "anime-202604142012-pplx-1fd813",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "“My Hero Academia” final chapter anime broadcast date decided! New PV & visual released",
+      "title_ja": "『僕のヒーローアカデミア』最終章アニメ化 放送日決定！新PV＆ビジュアル公開",
+      "description": "An anime version of the final chapter of \"My Hero Academia\" has been announced and will begin broadcasting in July 2026. New PV, key visual, and cast comments have arrived.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/0414/98766.html"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-14"
+      },
+      "location": "東京"
+    },
+    {
+      "id": "cafe-202604142011-pplx-c8f907",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "Arina Tanemura 30th Anniversary of Painting Exhibition x 2 Animate Cafes Collaboration from April 17th!",
+      "title_ja": "種村有菜 画業30周年展 × アニメイトカフェ2店舗 4月17日よりコラボ!",
+      "description": "A collaboration cafe celebrating the 30th anniversary of manga artist Arina Tanemura's art career will be held at Animate Cafe Ikebukuro 3rd store/Nagoya 2nd store from April 17th to May 17th, 2026. For every order from the collaboration menu, a random coaster with a newly drawn illustration (10 types in total) will be presented as a bonus, and limited goods will also be on sale.",
+      "source": {
+        "url": "https://collabo-cafe.com/events/collabo/arina-tanemura-30th-exhibition-cafe-animatecafe-2026/"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-17"
+      },
+      "location": "アニメイトカフェ池袋3号店/名古屋2号店",
+      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/cc3a16754957e53067e26480f85c3433.jpg"
+    },
+    {
+      "id": "cafe-202604142011-pplx-60fd63",
+      "categories": [
+        "cafe"
+      ],
+      "status": "active",
+      "title": "Jujutsu Kaisen 5th Anniversary in DiverCity Tokyo Plaza will be held from April 24th!",
+      "title_ja": "呪術廻戦 5周年 in ダイバーシティ東京 プラザ 4月24日より開催!",
+      "description": "The 5th anniversary collaboration of the anime “Jujutsu Kaisen” will be held at Diver City Tokyo Plaza from April 24th to May 17th, 2026. Goods with newly drawn illustrations will be sold, a bromide bonus will be given for every purchase of 2,000 yen or more at the pop-up store, and a collection card (8 types in total) will be given at random for purchases of 2,000 yen or more at the facility.",
+      "source": {
+        "url": "https://collabo-cafe.com/events/collabo/jujutsukaisen-5tj-anniversary-the-chara-divercity-tokyo2026-add-info-sdc/"
+      },
+      "tags": [
+        "cafe"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-24"
+      },
+      "location": "ダイバーシティ東京 プラザ",
+      "thumbnail": "https://collabo-cafe.com/wp-content/uploads/8841a88d84524b8d9fb1de33901cea35.jpg"
     },
     {
       "id": "figure-202604132023-pplx-719b93",
