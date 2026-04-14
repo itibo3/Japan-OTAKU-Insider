@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-15T01:37:06.592908+09:00",
-  "total_entries": 3419,
+  "last_updated": "2026-04-15T01:43:27.262828+09:00",
+  "total_entries": 3410,
   "lang": "ja",
   "entries": [
     {
@@ -37,69 +37,6 @@
         "/assets/weekly-headers/otaku_header_emotional_energy_1776085587532.png",
         "/assets/weekly-headers/otaku_header_simple_elegant_1776085601859.png"
       ]
-    },
-    {
-      "id": "vtuber-202604142012-pplx-f01716",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "にじさんじ・月ノ美兎、新3D衣装お披露目配信を4月15日19時に告知！",
-      "title_ja": "にじさんじ・月ノ美兎、新3D衣装お披露目配信を4月15日19時に告知！",
-      "description": "It has been announced on the official website that VTuber Tsukinomito, who belongs to Nijisanji, will be showing off her new 3D model and new costume on YouTube from 7pm on April 15th. Fans have high expectations.",
-      "source": {
-        "url": "https://www.nijisanji.jp/news/2026-04-14_mutsuki_new3d/"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-14"
-      },
-      "location": "オンライン"
-    },
-    {
-      "id": "vtuber-202604142012-pplx-4d8888",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "VTuberリゼ・ヘルエスタ（にじさんじ）新衣装3Dライブ配信4月17日開催決定 PR TIMES発表",
-      "title_ja": "VTuberリゼ・ヘルエスタ（にじさんじ）新衣装3Dライブ配信4月17日開催決定 PR TIMES発表",
-      "description": "PR TIMES has officially announced that Nijisanji Rize Hellesta's new 3D costume unveiling live will be streamed from 9pm on April 17th. The gorgeous 3D performance is attracting attention.",
-      "source": {
-        "url": "https://prtimes.jp/main/html/rd/p/000001234.000012345.html"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-14"
-      },
-      "location": "オンライン"
-    },
-    {
-      "id": "vtuber-202604142012-pplx-3317df",
-      "categories": [
-        "vtuber"
-      ],
-      "status": "active",
-      "title": "にじさんじ葛葉、限定3D新衣装お披露目ストリームを4月15日深夜にPR TIMESで公開",
-      "title_ja": "にじさんじ葛葉、限定3D新衣装お披露目ストリームを4月15日深夜にPR TIMESで公開",
-      "description": "Nijisanji's popular VTuber Kuzuha will be broadcasting talk and games in her new 3D costume from 11:00 pm on April 15th. A detailed schedule and merchandise information were also published in the PR TIMES article.",
-      "source": {
-        "url": "https://prtimes.jp/main/html/rd/p/000001235.000012345.html"
-      },
-      "tags": [
-        "vtuber"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-14"
-      },
-      "location": "オンライン"
     },
     {
       "id": "game-202604142012-pplx-7bb791",
@@ -190,27 +127,6 @@
       "thumbnail": "https://www.4gamer.net/games/647/G064754/20260414031/SS/002.jpg"
     },
     {
-      "id": "figure-202604142012-pplx-c5f8ac",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "コトブキヤ 呪術廻戦 虎杖悠仁 1/8スケール 再販予約",
-      "title_ja": "コトブキヤ 呪術廻戦 虎杖悠仁 1/8スケール 再販予約",
-      "description": "Kotobukiya will resell the 1/8 scale figure of Yuji Kojo from \"Jujutsu Kaisen\". With a dynamic model inspired by a battle scene, pre-orders begin today, with a release date of September 2026.",
-      "source": {
-        "url": "https://www.kotobukiya.co.jp/product/detail/p4934054094567/"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-14"
-      },
-      "location": "東京"
-    },
-    {
       "id": "figure-202604142012-pplx-818870",
       "categories": [
         "figure"
@@ -230,28 +146,7 @@
         "display": "2026-04-14"
       },
       "location": "東京",
-      "thumbnail": "https://images.goodsmile.info/media/notop_catch-50eb7314bc2cb3e55e0b8a6fc5b14183.png"
-    },
-    {
-      "id": "figure-202604142012-pplx-48ba4b",
-      "categories": [
-        "figure"
-      ],
-      "status": "active",
-      "title": "コトブキヤ ARTFX J 鬼滅の刃 竈門炭治郎 予約再開",
-      "title_ja": "コトブキヤ ARTFX J 鬼滅の刃 竈門炭治郎 予約再開",
-      "description": "Kotobukiya's ARTFX J series \"Demon Slayer: Kimetsu no Yaiba\" Tanjiro Kamado has resumed reservations. The water breathing pose is beautifully reproduced, and the release date is July 2026, making it a long-awaited rerelease by fans.",
-      "source": {
-        "url": "https://www.kotobukiya.co.jp/product/detail/p4934054101234/"
-      },
-      "tags": [
-        "figure"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-14"
-      },
-      "location": "東京"
+      "thumbnail": "http://images.goodsmile.info/cgm/images/product/20211110/11987/92002/medium/68bae6f2ccd6394124cc5a29d58780af.jpg"
     },
     {
       "id": "figure-202604142012-pplx-0350c6",
@@ -273,91 +168,7 @@
         "display": "2026-04-14"
       },
       "location": "大阪",
-      "thumbnail": "https://www.amiami.jp/images/parts/like_on.png"
-    },
-    {
-      "id": "anime-202604142012-pplx-4a7b41",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "新作アニメ『星屑のラブソング』2026年夏放送 PV＆キャストビジュアル解禁",
-      "title_ja": "新作アニメ『星屑のラブソング』2026年夏放送 PV＆キャストビジュアル解禁",
-      "description": "The broadcast date of the original anime ``Hoshikuzu no Love Song'' has been decided in the summer of 2026. The teaser PV, main cast, and key visuals have been released on the official website.",
-      "source": {
-        "url": "https://animeanime.jp/article/2026/0414/98765.html"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-14"
-      },
-      "location": "東京"
-    },
-    {
-      "id": "anime-202604142012-pplx-3949fb",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "TVアニメ『魔法少女にあこがれて』第2期 2026年4月放送開始！PV第1弾公開",
-      "title_ja": "TVアニメ『魔法少女にあこがれて』第2期 2026年4月放送開始！PV第1弾公開",
-      "description": "The broadcast date for the second season of “Magical Girl ni Amorete” has been decided for April 2026. The first PV, key visual, and additional cast have been released.",
-      "source": {
-        "url": "https://natalie.mu/comic/news/1234567"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-14"
-      },
-      "location": "東京"
-    },
-    {
-      "id": "anime-202604142012-pplx-2046d8",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "『リコリス・リコイル』続編 2026年10月新作アニメ化 PV第1弾＆キャスト発表",
-      "title_ja": "『リコリス・リコイル』続編 2026年10月新作アニメ化 PV第1弾＆キャスト発表",
-      "description": "The new “Licorice Recoil” project will start as a TV anime in October 2026. The first PV, key visual, and new cast information have been revealed.",
-      "source": {
-        "url": "https://natalie.mu/comic/news/1234568"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-14"
-      },
-      "location": "東京"
-    },
-    {
-      "id": "anime-202604142012-pplx-1fd813",
-      "categories": [
-        "anime"
-      ],
-      "status": "active",
-      "title": "『僕のヒーローアカデミア』最終章アニメ化 放送日決定！新PV＆ビジュアル公開",
-      "title_ja": "『僕のヒーローアカデミア』最終章アニメ化 放送日決定！新PV＆ビジュアル公開",
-      "description": "An anime version of the final chapter of \"My Hero Academia\" has been announced and will begin broadcasting in July 2026. New PV, key visual, and cast comments have arrived.",
-      "source": {
-        "url": "https://animeanime.jp/article/2026/0414/98766.html"
-      },
-      "tags": [
-        "anime"
-      ],
-      "_source": "perplexity",
-      "dates": {
-        "display": "2026-04-14"
-      },
-      "location": "東京"
+      "thumbnail": "https://img.amiami.jp/images/product/main/253/FIGURE-189234.jpg"
     },
     {
       "id": "cafe-202604142011-pplx-c8f907",
