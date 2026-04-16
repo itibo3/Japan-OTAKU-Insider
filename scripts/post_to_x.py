@@ -96,6 +96,31 @@ def normalize_public_url(raw_url: str) -> str:
     return SITE_URL
 
 
+def is_weekly_like_entry(entry: dict) -> bool:
+    """
+    週刊レポート（週刊JOI通信 / weekly.html）っぽい投稿を X 自動投稿から除外する。
+    理由: 通常ニュースと混ざるとタイムラインが「週報」だらけに見えやすい。
+    """
+    try:
+        src = entry.get("_source")
+        if src in ("joi-weekly", "weekly"):
+            return True
+        tags = entry.get("tags") or []
+        if isinstance(tags, list) and any(t in ("weekly-joi", "weekly", "weekly-report") for t in tags):
+            return True
+        source = entry.get("source", {})
+        raw = source.get("url", "") if isinstance(source, dict) else str(source or "")
+        u = (raw or "").strip()
+        if u.startswith("/weekly.html") or "/weekly.html" in u:
+            return True
+        eid = str(entry.get("id") or "")
+        if "-joi-" in eid or eid.startswith("otaku-news-") and "joi" in eid:
+            return True
+    except Exception:
+        return False
+    return False
+
+
 def format_tweet(entry, lang="en"):
     cats = entry.get("categories", [])
     if not cats and entry.get("category"):
@@ -211,10 +236,26 @@ def main():
     entries = data.get("entries", []) if isinstance(data, dict) else data
 
     posted_ids = load_posted_ids()
-    new_entries = [e for e in entries if isinstance(e, dict) and e.get("id") and e["id"] not in posted_ids]
+    new_entries = []
+    skipped_weekly = 0
+    for e in entries:
+        if not (isinstance(e, dict) and e.get("id")):
+            continue
+        if e["id"] in posted_ids:
+            continue
+        if is_weekly_like_entry(e):
+            # スキップしたものは「未投稿のまま残る」と毎回引っかかるので、投稿済み扱いにして追跡から外す
+            posted_ids.add(e["id"])
+            skipped_weekly += 1
+            continue
+        new_entries.append(e)
 
     if not new_entries:
-        print("No new entries to post.")
+        if skipped_weekly:
+            save_posted_ids(posted_ids)
+            print(f"No new entries to post. (skipped weekly-like: {skipped_weekly})")
+        else:
+            print("No new entries to post.")
         return
 
     # カテゴリ別にグループ化し、各カテゴリから最新1件を選択
