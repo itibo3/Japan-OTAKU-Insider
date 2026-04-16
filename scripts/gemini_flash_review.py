@@ -29,6 +29,36 @@ URL_CHECK_HEADERS = {
     "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
 }
 
+MAX_PPLX_ARTICLE_AGE_DAYS = int(os.getenv("JOI_PPLX_MAX_ARTICLE_AGE_DAYS", "14") or "14")
+
+_GENERIC_THUMB_PATTERNS = (
+    "like_on.png",
+    "notop_catch",
+    "apple-touch-icon",
+    "favicon",
+    "/logo",
+    "og-image",
+    "default",
+    "noimage",
+    "no_image",
+    "dummy",
+    "banner",
+    ".svg",
+)
+_TITLE_STOPWORDS = (
+    "開催",
+    "開始",
+    "決定",
+    "発売",
+    "予約",
+    "再販",
+    "公開",
+    "発表",
+    "決まる",
+    "告知",
+    "コラボ",
+)
+
 REVIEW_SYSTEM = """あなたは「Japan OTAKU Insider」という英語向け日本オタクニュースサイトの厳格な検閲担当です。
 与えられた候補記事それぞれについて、サイトに載せるべきか boolean で判定します。
 
@@ -41,6 +71,9 @@ REVIEW_SYSTEM = """あなたは「Japan OTAKU Insider」という英語向け日
 
 RSS 由来の具体的な製品発表・予約開始など、一次ソースらしいURLで裏付けできるものは ok=true でよい。
 ただし url_status が 200 でない候補は必ず ok=false にしてください。
+page_title が title_ja と噛み合わない（別記事に飛んでいる疑い）場合も ok=false にしてください。
+published_date が取得できていて、直近のニュースとして古すぎる場合（例: 何年も前）も ok=false にしてください。
+og_image が取れない/明らかに汎用画像しかない場合は、内容が検証不能として ok=false でよい。
 
 必ず次の JSON だけを返す（前後に説明文を付けない）:
 {"decisions":[{"index":0,"ok":true,"reason_ja":""}, ...]}
@@ -80,6 +113,7 @@ def call_gemini_decisions(api_key: str, model: str, entries: list[dict[str, Any]
             host = urlparse(url).netloc.lower()
         except Exception:
             host = ""
+        verified = e.get("_url_verified") or {}
         compact.append(
             {
                 "index": i,
@@ -91,6 +125,11 @@ def call_gemini_decisions(api_key: str, model: str, entries: list[dict[str, Any]
                 "title_ja": e.get("title_ja") or e.get("title"),
                 "description": (e.get("description") or "")[:500],
                 "url": url,
+                "url_status": verified.get("status"),
+                "final_url": (verified.get("final_url") or "")[:500],
+                "page_title": (verified.get("page_title") or "")[:200],
+                "published_date": verified.get("published_date"),
+                "og_image": (verified.get("og_image") or "")[:500],
             }
         )
     user = "候補記事:\n" + json.dumps(compact, ensure_ascii=False, indent=2)
@@ -137,7 +176,22 @@ def apply_decisions(entries: list[dict[str, Any]], decisions: list[dict[str, Any
     log_rows: list[dict[str, Any]] = []
     for i, e in enumerate(entries):
         ok = ok_by_index.get(i, False)
-        row = {"index": i, "id": e.get("id"), "ok": ok, "reason_ja": reasons.get(i, "(判定なし)")}
+        src = e.get("source") or {}
+        verified = e.get("_url_verified") or {}
+        row = {
+            "index": i,
+            "id": e.get("id"),
+            "ok": ok,
+            "reason_ja": reasons.get(i, "(判定なし)"),
+            "source_url": (src.get("url") or "") if isinstance(src, dict) else str(src),
+            "source_type": e.get("_source"),
+            "source_id": e.get("_source_id"),
+            "url_status": verified.get("status"),
+            "final_url": verified.get("final_url"),
+            "page_title": verified.get("page_title"),
+            "published_date": verified.get("published_date"),
+            "og_image": verified.get("og_image"),
+        }
         log_rows.append(row)
         if ok:
             approved.append(e)
@@ -162,7 +216,128 @@ def _url_http_status(url: str, cache: dict[str, tuple[int | None, str, str]]) ->
     return item
 
 
-def _prefilter_reason(entry: dict[str, Any], url_status_cache: dict[str, tuple[int | None, str, str]]) -> str | None:
+def _looks_generic_image(url: str) -> bool:
+    u = (url or "").lower()
+    if not u:
+        return True
+    return any(p in u for p in _GENERIC_THUMB_PATTERNS)
+
+
+def _extract_page_title(html: str) -> str:
+    m = re.search(r'<meta[^>]+property=[\'"]og:title[\'"][^>]+content=[\'"]([^\'"]+)[\'"]', html, re.I)
+    if m:
+        return (m.group(1) or "").strip()
+    m = re.search(r"<title[^>]*>([^<]+)</title>", html, re.I)
+    return (m.group(1) or "").strip() if m else ""
+
+
+def _extract_og_image(html: str) -> str:
+    m = re.search(
+        r'<meta[^>]+property=[\'"]og:image(?::secure_url)?[\'"][^>]+content=[\'"]([^\'"]+)[\'"]',
+        html,
+        re.I,
+    )
+    if m:
+        return (m.group(1) or "").strip()
+    m = re.search(r'<meta[^>]+name=[\'"]twitter:image[\'"][^>]+content=[\'"]([^\'"]+)[\'"]', html, re.I)
+    return (m.group(1) or "").strip() if m else ""
+
+
+def _parse_published_date(html: str) -> str:
+    m = re.search(
+        r'<meta[^>]+property=[\'"]article:published_time[\'"][^>]+content=[\'"]([^\'"]+)[\'"]',
+        html,
+        re.I,
+    )
+    if m:
+        return (m.group(1) or "").strip()
+    m = re.search(r'"datePublished"\s*:\s*"([^"]+)"', html, re.I)
+    if m:
+        return (m.group(1) or "").strip()
+    m = re.search(r"<time[^>]+datetime=[\"']([^\"']+)[\"']", html, re.I)
+    if m:
+        return (m.group(1) or "").strip()
+    return ""
+
+
+def _date_too_old(iso_like: str, max_age_days: int) -> bool:
+    if not iso_like:
+        return False
+    try:
+        s = iso_like.strip().replace("/", "-")
+        # ISO8601 full
+        if "T" in s:
+            dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+            d = dt.date()
+        else:
+            d = datetime.fromisoformat(s[:10]).date()
+        today = datetime.now().astimezone().date()
+        return (today - d).days > max_age_days
+    except Exception:
+        return False
+
+
+def _extract_title_tokens(text: str) -> set[str]:
+    t = (text or "").strip()
+    if not t:
+        return set()
+    tokens: set[str] = set()
+    for m in re.finditer(r"[A-Za-z0-9]+|[\u3040-\u30ff\u4e00-\u9fff]{2,}", t):
+        tok = m.group(0)
+        if not tok or tok in _TITLE_STOPWORDS:
+            continue
+        if len(tok) >= 2:
+            tokens.add(tok)
+    return tokens
+
+
+def _title_mismatch(title_ja: str, page_title: str) -> bool:
+    tj = (title_ja or "").strip()
+    pt = (page_title or "").strip()
+    if not (tj and pt):
+        return False
+    a = _extract_title_tokens(tj)
+    b = _extract_title_tokens(pt)
+    if not a or not b:
+        return False
+    return len(a & b) == 0
+
+
+def _fetch_page_meta(
+    url: str,
+    *,
+    url_status_cache: dict[str, tuple[int | None, str, str]],
+    page_meta_cache: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    if url in page_meta_cache:
+        return page_meta_cache[url]
+    status, final_url, err = _url_http_status(url, url_status_cache)
+    meta: dict[str, Any] = {"status": status, "final_url": final_url, "error": err}
+    if status != 200:
+        page_meta_cache[url] = meta
+        return meta
+    try:
+        resp = requests.get(final_url, headers=URL_CHECK_HEADERS, timeout=URL_CHECK_TIMEOUT, allow_redirects=True)
+        html = resp.text or ""
+    except Exception as e:
+        meta["status"] = None
+        meta["error"] = f"{type(e).__name__}: {e}"
+        page_meta_cache[url] = meta
+        return meta
+    meta["page_title"] = _extract_page_title(html)
+    meta["published_date"] = _parse_published_date(html)
+    meta["og_image"] = _extract_og_image(html)
+    page_meta_cache[url] = meta
+    return meta
+
+
+def _prefilter_reason(
+    entry: dict[str, Any],
+    *,
+    url_status_cache: dict[str, tuple[int | None, str, str]],
+    page_meta_cache: dict[str, dict[str, Any]],
+    max_age_days: int,
+) -> str | None:
     """Gemini 前に機械的に弾ける品質NGを返す。None の場合は判定対象。"""
     title = (entry.get("title_ja") or entry.get("title") or "").strip()
     desc = (entry.get("description") or "").strip()
@@ -191,12 +366,29 @@ def _prefilter_reason(entry: dict[str, Any], url_status_cache: dict[str, tuple[i
         depth = len([x for x in path.split("/") if x])
         if depth <= 1 and not parsed.query:
             return "Perplexity由来URLが一覧/ランディング疑い"
-        # 重要: 404/403 等の実在しない or 到達不能URLを機械的に遮断する
-        status, final_url, err = _url_http_status(url, url_status_cache)
+        meta = _fetch_page_meta(url, url_status_cache=url_status_cache, page_meta_cache=page_meta_cache)
+        entry["_url_verified"] = meta
+        status = meta.get("status")
+        final_url = meta.get("final_url") or url
         if status != 200:
+            err = meta.get("error") or ""
             if status is None:
-                return f"Perplexity由来URLの疎通失敗: {err[:120]}"
-            return f"Perplexity由来URLがHTTP {status}: {final_url[:120]}"
+                return f"Perplexity由来URLの疎通失敗: {str(err)[:120]}"
+            return f"Perplexity由来URLがHTTP {status}: {str(final_url)[:120]}"
+        page_title = meta.get("page_title") or ""
+        if _title_mismatch(title, page_title):
+            return f"Perplexity由来URLの内容不一致疑い: page_title={page_title[:60]}"
+        pub = meta.get("published_date") or ""
+        if pub and _date_too_old(pub, max_age_days=max_age_days):
+            return f"Perplexity由来URLが古い: published_date={str(pub)[:20]}"
+        og = meta.get("og_image") or ""
+        thumb = (entry.get("thumbnail") or "").strip()
+        if og and not _looks_generic_image(og):
+            if (not thumb) or _looks_generic_image(thumb):
+                entry["thumbnail"] = og
+        else:
+            if (not thumb) or _looks_generic_image(thumb):
+                return "Perplexity由来URLでOG画像取得不可"
     return None
 
 
@@ -251,16 +443,28 @@ def main() -> None:
 
     pre_reject_indices: dict[int, str] = {}
     url_status_cache: dict[str, tuple[int | None, str, str]] = {}
+    page_meta_cache: dict[str, dict[str, Any]] = {}
     review_candidates: list[tuple[int, dict[str, Any]]] = []
     for i, e in enumerate(entries):
-        reason = _prefilter_reason(e, url_status_cache)
+        reason = _prefilter_reason(
+            e,
+            url_status_cache=url_status_cache,
+            page_meta_cache=page_meta_cache,
+            max_age_days=MAX_PPLX_ARTICLE_AGE_DAYS,
+        )
         if reason:
             pre_reject_indices[i] = reason
         else:
             review_candidates.append((i, e))
 
     if args.dry_run:
-        decisions = [{"index": i, "ok": True, "reason_ja": "dry-run"} for i in range(len(entries))]
+        # dry-run でも prefilter は有効にして「落ちるべきものが落ちるか」を確認できるようにする
+        decisions = []
+        for i in range(len(entries)):
+            if i in pre_reject_indices:
+                decisions.append({"index": i, "ok": False, "reason_ja": f"dry-run: {pre_reject_indices[i]}"})
+            else:
+                decisions.append({"index": i, "ok": True, "reason_ja": "dry-run"})
     else:
         tried: list[str] = []
         decisions = None

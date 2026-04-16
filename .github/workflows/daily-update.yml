@@ -52,12 +52,18 @@ jobs:
         run: |
           echo "==> Gemini review (Perplexity staging)"
           mkdir -p data/staging
+          mkdir -p data/review_logs
           for f in data/staging/perplexity_*.json; do
             [ -f "$f" ] || continue
             out="${f%.json}.reviewed.json"
             log="${f%.json}.review_log.json"
             python3 scripts/gemini_flash_review.py --input "$f" --output "$out" --log "$log" --missing-key-policy reject || true
             mv "$out" "$f"
+            # 検閲ログを日次で保存（週次レポートで集計するため）
+            day="$(TZ=Asia/Tokyo date +%Y%m%d)"
+            catname="$(basename "$f" .json)"  # perplexity_{cat}_YYYYMMDD_HHMM
+            mkdir -p "data/review_logs/${day}"
+            mv "$log" "data/review_logs/${day}/${catname}.review_log.json" 2>/dev/null || true
           done
 
       - name: Translate staging
@@ -143,6 +149,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/entries.json data/entries_ja.json
+          git add data/review_logs 2>/dev/null || true
           git add data/.x_posted_ids 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No changes to commit."

@@ -26,6 +26,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parent.parent
 PROMPTS_DIR = ROOT / "prompts"
+REVIEW_LOGS_DIR = ROOT / "data" / "review_logs"
 PERPLEXITY_FILES = (
     "perplexity_cafe.md",
     "perplexity_vtuber.md",
@@ -380,6 +381,86 @@ def call_anthropic_text(*, api_key: str, model: str, system: str, user_text: str
     return out
 
 
+def collect_review_log_stats(*, days: int = 7) -> dict[str, Any]:
+    """
+    data/review_logs/YYYYMMDD/*.review_log.json を集計して、却下理由の傾向を返す。
+    日次検閲の改善・プロンプト改善に使うための「運用ログ」。
+    """
+    today = datetime.now(JST).date()
+    cutoff = today - timedelta(days=days)
+    if not REVIEW_LOGS_DIR.exists():
+        return {"status": "skipped", "reason": "review_logs_dir_missing"}
+
+    total = 0
+    approved = 0
+    rejected = 0
+    by_reason: dict[str, int] = {}
+    by_domain: dict[str, int] = {}
+
+    def norm_reason(s: str) -> str:
+        s = " ".join((s or "").split())
+        if not s:
+            return "(no reason)"
+        # 日付やURLを削って「原因カテゴリ」に寄せる
+        s = re.sub(r"https?://\\S+", "", s)
+        s = re.sub(r"\\b\\d{3}\\b", "", s)  # 404等は残すときもあるが、長文化防止
+        s = " ".join(s.split())
+        return s[:120]
+
+    def domain_from_row(row: dict[str, Any]) -> str:
+        url = (row.get("final_url") or row.get("source_url") or "").strip()
+        if not url:
+            return "(unknown)"
+        try:
+            from urllib.parse import urlparse
+
+            return (urlparse(url).netloc or "").lower() or "(unknown)"
+        except Exception:
+            return "(unknown)"
+
+    for day_dir in sorted(REVIEW_LOGS_DIR.glob("[0-9]" * 8)):
+        if not day_dir.is_dir():
+            continue
+        try:
+            d = datetime.strptime(day_dir.name, "%Y%m%d").date()
+        except Exception:
+            continue
+        if d < cutoff:
+            continue
+        for f in sorted(day_dir.glob("*.review_log.json")):
+            try:
+                rows = json.loads(f.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            if not isinstance(rows, list):
+                continue
+            for row in rows:
+                if not isinstance(row, dict):
+                    continue
+                total += 1
+                ok = bool(row.get("ok"))
+                if ok:
+                    approved += 1
+                else:
+                    rejected += 1
+                    r = norm_reason(str(row.get("reason_ja") or ""))
+                    by_reason[r] = by_reason.get(r, 0) + 1
+                    dom = domain_from_row(row)
+                    by_domain[dom] = by_domain.get(dom, 0) + 1
+
+    top_reasons = sorted(by_reason.items(), key=lambda x: x[1], reverse=True)[:12]
+    top_domains = sorted(by_domain.items(), key=lambda x: x[1], reverse=True)[:12]
+    return {
+        "status": "ok",
+        "window": {"days": days, "cutoff": cutoff.isoformat(), "today": today.isoformat()},
+        "total_rows": total,
+        "approved": approved,
+        "rejected": rejected,
+        "top_reject_reasons": top_reasons,
+        "top_reject_domains": top_domains,
+    }
+
+
 def ensure_joi_english_fields(*, api_key: str, model: str, joi_obj: dict[str, Any]) -> dict[str, Any]:
     """JOI出力に英語本文が不足/日本語混入している場合に補完する。"""
     body_ja = str(joi_obj.get("body_ja_markdown") or "").strip()
@@ -581,6 +662,7 @@ def main() -> None:
         property_id=os.getenv("GA4_PROPERTY_ID", "").strip(),
         days=args.days,
     )
+    review_log_stats = collect_review_log_stats(days=args.days)
     hot_topics = collect_recent_hot_topics(entries, days=args.days, limit=40)
     perplexity_weekly = fetch_perplexity_weekly_highlights(
         api_key=os.getenv("PERPLEXITY_API_KEY", "").strip(),
@@ -590,6 +672,7 @@ def main() -> None:
         "base": base_stats,
         "internal": internal_stats,
         "ga4": ga4_stats,
+        "review_logs": review_log_stats,
     }
     (out_dir / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
@@ -605,6 +688,7 @@ def main() -> None:
             f"- 総記事数: {base_stats['total_entries']}\n"
             f"- カテゴリ別件数: {base_stats['by_category']}\n"
             f"- 直近{args.days}日投稿: {internal_stats['recent_entries']}\n"
+            f"- 検閲ログ: {review_log_stats.get('status')} / rejected={review_log_stats.get('rejected')}\n"
             "- API は呼んでいません。\n"
         )
         (out_dir / "weekly_report_ja.md").write_text(stub, encoding="utf-8")
