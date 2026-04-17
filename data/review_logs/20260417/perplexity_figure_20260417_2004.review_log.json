@@ -1,0 +1,72 @@
+[
+  {
+    "index": 0,
+    "id": "figure-202604172004-pplx-8e8f75",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLの内容不一致疑い: page_title=ねんどろいどもあ きぐるみフェイスパーツケース シャチ",
+    "source_url": "https://www.goodsmile.info/ja/product/12845.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.goodsmile.info/ja/product/12845/%E3%81%AD%E3%82%93%E3%81%A9%E3%82%8D%E3%81%84%E3%81%A9%E3%82%82%E3%81%82+%E3%81%8D%E3%81%90%E3%82%8B%E3%81%BF%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%E3%83%91%E3%83%BC%E3%83%84%E3%82%B1%E3%83%BC%E3%82%B9+%E3%82%B7%E3%83%A3%E3%83%81.html",
+    "page_title": "ねんどろいどもあ きぐるみフェイスパーツケース シャチ",
+    "published_date": "",
+    "og_image": "http://images.goodsmile.info/cgm/images/product/20220621/12845/100186/medium/5a85b13b48d6d916e3ae9fc4d32eb9cd.jpg"
+  },
+  {
+    "index": 1,
+    "id": "figure-202604172004-pplx-e17de0",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://www.kotobukiya.co.jp/product/detail/p4934054094567.htm",
+    "source_url": "https://www.kotobukiya.co.jp/product/detail/p4934054094567.htm",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.kotobukiya.co.jp/product/detail/p4934054094567.htm",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 2,
+    "id": "figure-202604172004-pplx-f6365e",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLの内容不一致疑い: page_title=[エラーが発生しました]-amiami.jp-あみあみオンライン本店-",
+    "source_url": "https://www.amiami.jp/top/detail/detail?gcode=FIGURE-XXXXX",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.amiami.jp/top/detail/detail?gcode=FIGURE-XXXXX",
+    "page_title": "[エラーが発生しました]-amiami.jp-あみあみオンライン本店-",
+    "published_date": "",
+    "og_image": ""
+  },
+  {
+    "index": 3,
+    "id": "figure-202604172004-pplx-08b9b6",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLの内容不一致疑い: page_title=ねんどろいど ウタ",
+    "source_url": "https://www.goodsmile.info/ja/product/12789.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.goodsmile.info/ja/product/12789/%E3%81%AD%E3%82%93%E3%81%A9%E3%82%8D%E3%81%84%E3%81%A9+%E3%82%A6%E3%82%BF.html",
+    "page_title": "ねんどろいど ウタ",
+    "published_date": "",
+    "og_image": "http://images.goodsmile.info/cgm/images/product/20220607/12789/99731/medium/9f75d983afec9fdbe17736a223e49748.jpg"
+  },
+  {
+    "index": 4,
+    "id": "figure-202604172004-pplx-fc4165",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://www.kotobukiya.co.jp/product/detail/p4934054094574.htm",
+    "source_url": "https://www.kotobukiya.co.jp/product/detail/p4934054094574.htm",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.kotobukiya.co.jp/product/detail/p4934054094574.htm",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]

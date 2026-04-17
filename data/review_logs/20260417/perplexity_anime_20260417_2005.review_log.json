@@ -1,0 +1,72 @@
+[
+  {
+    "index": 0,
+    "id": "anime-202604172005-pplx-3949fb",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://natalie.mu/comic/news/1234567",
+    "source_url": "https://natalie.mu/comic/news/1234567",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://natalie.mu/comic/news/1234567",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "anime-202604172005-pplx-2046d8",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://natalie.mu/comic/news/1234568",
+    "source_url": "https://natalie.mu/comic/news/1234568",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://natalie.mu/comic/news/1234568",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 2,
+    "id": "anime-202604172005-pplx-2d44d2",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://animeanime.jp/article/2026/04/17/123456.html",
+    "source_url": "https://animeanime.jp/article/2026/04/17/123456.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://animeanime.jp/article/2026/04/17/123456.html",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 3,
+    "id": "anime-202604172005-pplx-fa98e7",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://natalie.mu/comic/news/1234569",
+    "source_url": "https://natalie.mu/comic/news/1234569",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://natalie.mu/comic/news/1234569",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 4,
+    "id": "anime-202604172005-pplx-abb20e",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://animeanime.jp/article/2026/04/17/123457.html",
+    "source_url": "https://animeanime.jp/article/2026/04/17/123457.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://animeanime.jp/article/2026/04/17/123457.html",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]
