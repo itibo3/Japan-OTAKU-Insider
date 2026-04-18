@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-18T19:53:34.691761+09:00",
+  "last_updated": "2026-04-18T20:46:57.873241+09:00",
   "total_entries": 3840,
   "lang": "ja",
   "entries": [
@@ -41,7 +41,7 @@
     {
       "id": "other-202604181951-pplx-2652f4",
       "categories": [
-        "other"
+        "anime"
       ],
       "status": "active",
       "title": "TVアニメーション『ガンバレ！中村くん！！』期間限定POP UP STORE inロフト",
@@ -51,7 +51,7 @@
         "url": "https://www.excite.co.jp/news/article/Animeanime_98117/"
       },
       "tags": [
-        "other"
+        "anime"
       ],
       "_source": "perplexity",
       "dates": {
@@ -66,7 +66,9 @@
         "published_date": "2026-04-18JST16:30+09:00",
         "og_image": "https://s.eximg.jp/exnews/feed/Animeanime/10/Animeanime_98117/Animeanime_98117_1.jpg"
       },
-      "thumbnail": "https://s.eximg.jp/exnews/feed/Animeanime/10/Animeanime_98117/Animeanime_98117_1.jpg"
+      "thumbnail": "https://s.eximg.jp/exnews/feed/Animeanime/10/Animeanime_98117/Animeanime_98117_1.jpg",
+      "_category_from_search": "other",
+      "_category_assigned_by": "gemini-reclassify"
     },
     {
       "id": "game-202604181950-pplx-8fab8f",
@@ -191,7 +193,7 @@
     {
       "id": "anime-202604181950-pplx-b894d1",
       "categories": [
-        "anime"
+        "other"
       ],
       "status": "active",
       "title": "LiSA 国内ツアー「LiVE is Smile Always～15～（iCHiNiTSUiTE GO）」2026年4月17日・18日日本武道館公演",
@@ -201,7 +203,7 @@
         "url": "https://natalie.mu/music/pp/lisa25/page/3"
       },
       "tags": [
-        "anime"
+        "other"
       ],
       "_source": "perplexity",
       "dates": {
@@ -216,7 +218,9 @@
         "published_date": "2026-04-15T12:00:00+09:00",
         "og_image": "https://ogre.natalie.mu/media/pp/lisa25/lisa25_ogp.jpg?imwidth=1280&amp;imdensity=1"
       },
-      "thumbnail": "https://ogre.natalie.mu/media/pp/lisa25/lisa25_ogp.jpg?imwidth=1280&amp;imdensity=1"
+      "thumbnail": "https://ogre.natalie.mu/media/pp/lisa25/lisa25_ogp.jpg?imwidth=1280&amp;imdensity=1",
+      "_category_from_search": "anime",
+      "_category_assigned_by": "gemini-reclassify"
     },
     {
       "id": "vtuber-202604181949-rss-c71d37",
