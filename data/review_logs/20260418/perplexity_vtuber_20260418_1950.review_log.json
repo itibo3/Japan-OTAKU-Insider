@@ -1,0 +1,44 @@
+[
+  {
+    "index": 0,
+    "id": "vtuber-202604181950-pplx-6bcb03",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://www.nijisanji.jp/news/xyz-rize-new3d-outfit-announce",
+    "source_url": "https://www.nijisanji.jp/news/xyz-rize-new3d-outfit-announce",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.nijisanji.jp/news/xyz-rize-new3d-outfit-announce",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "vtuber-202604181950-pplx-4d8888",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://prtimes.jp/main/html/rd/p/000001234.000012345.html",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000001234.000012345.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000001234.000012345.html",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 2,
+    "id": "vtuber-202604181950-pplx-3317df",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://prtimes.jp/main/html/rd/p/000001235.000012345.html",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000001235.000012345.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000001235.000012345.html",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]

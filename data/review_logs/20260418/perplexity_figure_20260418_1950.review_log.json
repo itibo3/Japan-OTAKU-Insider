@@ -1,0 +1,30 @@
+[
+  {
+    "index": 0,
+    "id": "figure-202604181950-pplx-b6134d",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://www.goodsmile.info/ja/product/",
+    "source_url": "https://www.goodsmile.info/ja/product/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.goodsmile.info/ja/product/",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "figure-202604181950-pplx-a58a90",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 403: https://www.amiami.jp/top/page/",
+    "source_url": "https://www.amiami.jp/top/page/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 403,
+    "final_url": "https://www.amiami.jp/top/page/",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]

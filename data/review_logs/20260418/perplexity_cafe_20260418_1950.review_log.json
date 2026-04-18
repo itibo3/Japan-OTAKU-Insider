@@ -1,0 +1,44 @@
+[
+  {
+    "index": 0,
+    "id": "cafe-202604181950-pplx-4a9d5c",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://collabo-cafe.com/event/xxx-anime-20260418",
+    "source_url": "https://collabo-cafe.com/event/xxx-anime-20260418",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://collabo-cafe.com/event/xxx-anime-20260418",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "cafe-202604181950-pplx-2c47d4",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://prtimes.jp/main/html/rd/p/000001234.000012345",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000001234.000012345",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000001234.000012345",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 2,
+    "id": "cafe-202604181950-pplx-e8937f",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://prtimes.jp/main/html/rd/p/000001235.000012345",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000001235.000012345",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000001235.000012345",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]

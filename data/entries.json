@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-17T20:08:55.030481+09:00",
-  "total_entries": 3719,
+  "last_updated": "2026-04-18T19:53:34.691761+09:00",
+  "total_entries": 3840,
   "entries": [
     {
       "id": "otaku-news-202604132128-joi-cdc70c",
@@ -36,6 +36,1891 @@
         "/assets/weekly-headers/otaku_header_emotional_energy_1776085587532.png",
         "/assets/weekly-headers/otaku_header_simple_elegant_1776085601859.png"
       ]
+    },
+    {
+      "id": "other-202604181951-pplx-2652f4",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "TV animation “Gambare! Nakamura-kun! ! ”Limited time POP UP STORE in Loft",
+      "title_ja": "TVアニメーション『ガンバレ！中村くん！！』期間限定POP UP STORE inロフト",
+      "description": "Kichijoji Loft will be held from April 23, 2026 (Thursday) to May 11, 2026 (Monday), and Sakae Loft will be held from May 1, 2026 (Friday) to May 18, 2026 (Monday). Newly drawn goods and limited items will be available, and admission may be restricted during busy times.",
+      "source": {
+        "url": "https://www.excite.co.jp/news/article/Animeanime_98117/"
+      },
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-23"
+      },
+      "location": "吉祥寺ロフト・栄ロフト",
+      "_url_verified": {
+        "status": 200,
+        "final_url": "https://www.excite.co.jp/news/article/Animeanime_98117/",
+        "error": "",
+        "page_title": "「ガンバレ！中村くん！！」中村、広瀬、乙切らの描き下ろしグッズや“広瀬のハンカチ”も♪ 期間限定POP UP STORE開催 - エキサイトニュース",
+        "published_date": "2026-04-18JST16:30+09:00",
+        "og_image": "https://s.eximg.jp/exnews/feed/Animeanime/10/Animeanime_98117/Animeanime_98117_1.jpg"
+      },
+      "thumbnail": "https://s.eximg.jp/exnews/feed/Animeanime/10/Animeanime_98117/Animeanime_98117_1.jpg"
+    },
+    {
+      "id": "game-202604181950-pplx-8fab8f",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“Find the hidden cat! ～Cat Me If You Can～'' trial version released. Scheduled for release in summer 2026",
+      "title_ja": "『かくれにゃんこを探せ！～ Cat Me If You Can ～』体験版公開。2026年夏リリース予定",
+      "description": "“Find the Hidden Cat!” on Steam! The trial version of ``Cat Me If You Can'' has been released. Scheduled to be released for PC in the summer of 2026, this is an exploration-type adventure where you search for and photograph cats.",
+      "source": {
+        "url": "https://www.famitsu.com/article/202604/71550"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-09"
+      },
+      "location": "Steam",
+      "_url_verified": {
+        "status": 200,
+        "final_url": "https://www.famitsu.com/article/202604/71550",
+        "error": "",
+        "page_title": "『かくれにゃんこを探せ！』ネコを探し出して撮影する探索型アドベンチャーの体験版が公開。写真を通じて世界に色を取り戻す癒し系ゲーム | ゲーム・エンタメ最新情報のファミ通.com",
+        "published_date": "",
+        "og_image": "https://cimg.kgl-systems.io/camion/files/71550/thumbnail_tBwM.jpg?x=1280"
+      },
+      "thumbnail": "https://cimg.kgl-systems.io/camion/files/71550/thumbnail_tBwM.jpg?x=1280"
+    },
+    {
+      "id": "game-202604181950-pplx-466ff2",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“METRO 2039” scheduled to be released this winter",
+      "title_ja": "『METRO 2039』今冬発売予定",
+      "description": "Survival horror FPS \"METRO 2039\" will be released this winter for PS5, Xbox Series X|S, and PC. A shocking experience set in post-apocalyptic Moscow.",
+      "source": {
+        "url": "https://www.famitsu.com/article/202604/72145"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-冬"
+      },
+      "location": "PS5 / Xbox Series X|S / PC",
+      "_url_verified": {
+        "status": 200,
+        "final_url": "https://www.famitsu.com/article/202604/72145",
+        "error": "",
+        "page_title": "『METRO 2039』今冬発売！ シリーズ史上もっとも衝撃的な体験が待ち受ける。ポスト・アポカリプスのモスクワ、その闇の深淵への旅を描くサバイバルホラーFPS | ゲーム・エンタメ最新情報のファミ通.com",
+        "published_date": "",
+        "og_image": "https://cimg.kgl-systems.io/camion/files/72145/thumbnail_TygI.jpg?x=1280"
+      },
+      "thumbnail": "https://cimg.kgl-systems.io/camion/files/72145/thumbnail_TygI.jpg?x=1280"
+    },
+    {
+      "id": "game-202604181950-pplx-409939",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“Goddess of Victory: NIKKE” Latest update announced on 3.5th anniversary live broadcast",
+      "title_ja": "『勝利の女神：NIKKE』3.5周年生放送で最新アップデート発表",
+      "description": "“NIKKE” 3.5th anniversary live broadcast will be broadcast on April 18, 2026. The latest update information and future developments will be announced in the second part.",
+      "source": {
+        "url": "https://www.famitsu.com/article/202604/72351"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-18"
+      },
+      "location": "YouTube Live／公式X",
+      "_url_verified": {
+        "status": 200,
+        "final_url": "https://www.famitsu.com/article/202604/72351",
+        "error": "",
+        "page_title": "『NIKKE』3.5周年生放送まとめ。最新アップデートや今後の展開、コード（CDK）情報を随時更新でお届け | ゲーム・エンタメ最新情報のファミ通.com",
+        "published_date": "",
+        "og_image": "https://cimg.kgl-systems.io/camion/files/72351/thumbnail_Nzrt.jpg?x=1280"
+      },
+      "thumbnail": "https://cimg.kgl-systems.io/camion/files/72351/thumbnail_Nzrt.jpg?x=1280"
+    },
+    {
+      "id": "game-202604181950-pplx-35acbf",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“One King is Enough” Steam version released on April 21, 2026",
+      "title_ja": "『One King is Enough（ワンキングイズイナフ）』Steam版 2026年4月21日発売",
+      "description": "The strategy game “One King is Enough” will be released on Steam on April 21, 2026. A trial version is also available, and features high-speed matches lasting 5 to 6 minutes per game. Scheduled for Switch version in 2026.",
+      "source": {
+        "url": "https://www.famitsu.com/article/202604/71829"
+      },
+      "tags": [
+        "game"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-21"
+      },
+      "location": "Steam",
+      "_url_verified": {
+        "status": 200,
+        "final_url": "https://www.famitsu.com/article/202604/71829",
+        "error": "",
+        "page_title": "『One King is Enough』1試合5～6分で決着するハイスピード陣取り合戦。建物カードで戦うデッキ構築ストラテジーが4月21日発売 | ゲーム・エンタメ最新情報のファミ通.com",
+        "published_date": "",
+        "og_image": "https://cimg.kgl-systems.io/camion/files/71829/thumbnail_pfzX.jpg?x=1280"
+      },
+      "thumbnail": "https://cimg.kgl-systems.io/camion/files/71829/thumbnail_pfzX.jpg?x=1280"
+    },
+    {
+      "id": "anime-202604181950-pplx-b894d1",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "LiSA domestic tour “LiVE is Smile Always ~15~ (iCHiNiTSUiTE GO)” April 17th and 18th, 2026 Nippon Budokan performance",
+      "title_ja": "LiSA 国内ツアー「LiVE is Smile Always～15～（iCHiNiTSUiTE GO）」2026年4月17日・18日日本武道館公演",
+      "description": "LiSA held a domestic tour \"LiVE is Smile Always ~15~ (iCHiNiTSUiTE GO)\" to commemorate their 15th anniversary. Performances will be held at Nippon Budokan in Tokyo on Friday, April 17th and Saturday, April 18th, 2026.",
+      "source": {
+        "url": "https://natalie.mu/music/pp/lisa25/page/3"
+      },
+      "tags": [
+        "anime"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-04-17"
+      },
+      "location": "東京都 日本武道館",
+      "_url_verified": {
+        "status": 200,
+        "final_url": "https://natalie.mu/music/pp/lisa25/page/3",
+        "error": "",
+        "page_title": "LiSA「LACE UP」インタビュー｜15年分の思いをまとめて編み上げた7thアルバム (3/3) - 音楽ナタリー 特集・インタビュー",
+        "published_date": "2026-04-15T12:00:00+09:00",
+        "og_image": "https://ogre.natalie.mu/media/pp/lisa25/lisa25_ogp.jpg?imwidth=1280&amp;imdensity=1"
+      },
+      "thumbnail": "https://ogre.natalie.mu/media/pp/lisa25/lisa25_ogp.jpg?imwidth=1280&amp;imdensity=1"
+    },
+    {
+      "id": "vtuber-202604181949-rss-c71d37",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "Travel agency HIS announces the results of the VTuber travel video contest! Taiwan travel video by “Uchauston” wins grand prize",
+      "title_ja": "旅行会社HIS、VTuber旅動画コンテストの結果を発表！ 「兎沌とん」による台湾旅行動画がグランプリ獲得",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "The winning works of the travel video contest \"#TravelMita Project\", a collaboration between travel agency HIS and VTuber, have been announced. Out of over 110 entries, the grand prize winner was Uchauston's \"[Travel Vlog] I went on my first trip to Taiwan!\" [&#8230;]\nThe post Travel agency HIS announces the results of the VTuber travel video contest! Taiwan travel video by “Uchaoton” won grand prize first appeared on Mogura VR.",
+      "source": {
+        "url": "https://www.moguravr.com/his-vtuber-travel-contest-result/"
+      },
+      "tags": [
+        "moguravr-com",
+        "vtuber"
+      ],
+      "thumbnail": "https://assets.moguravr.com/uploads/2026/04/83dc3cd4bb5509d07f9976cea37ffd07-kix.956l6un5a0z7-1024x371.webp",
+      "_source_id": "moguravr-com"
+    },
+    {
+      "id": "game-202604181949-rss-e222c4",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“Puppet Soonsun” lights up on the road at night! Nonnon and Zonzon also join the reflector key ring.",
+      "title_ja": "夜道で光る「パペットスンスン」！リフレクターキーリングにノンノン、ゾンゾンも仲間入り",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Capsule toy \"Puppet Soonsun Reflector Keyring\" will be released sequentially from mid-April 2026!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180148.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1713716.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-d8ced1",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Wonderful Japanese taste! Pre-orders are now being accepted for the ``Manhattan Cafe ~Yanagi Midori Sayo~'' figure from ``Uma Musume'', with attention to detail such as cat motifs scattered throughout.",
+      "title_ja": "和の趣が素敵！『ウマ娘』より「マンハッタンカフェ～柳緑小夜～」フィギュアが予約受付中、随所に散りばめられた猫モチーフなどにこだわり",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "\"Manhattan Cafe ~Yanagi Midori Sayo~\" 1/7 scale figure is now available for pre-order! The period is until April 22nd.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180149.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1693851.webp",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-c714ca",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "My life would be over if my family saw the sexy screen of \"Bunny Garden 2\", so I desperately thought of a way to keep them from finding out [Switch/PC compatible]",
+      "title_ja": "『バニーガーデン2』のセクシー画面を家族に見られたら人生終わるので、バレない方法を死ぬ気で考えた【スイッチ/PC対応】",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "I want to play “Bunny Garden 2”! But I don't want anyone to notice I'm playing! Only you can protect yourself. Be prepared for emergencies by keeping in mind how to deal with them.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180154.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1717559.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-ae6487",
+      "categories": [
+        "game",
+        "otaku-news",
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "Hololive, Gakumasu, and even Bluaka! Introducing all the Itasha and Ita Bikes gathered under the clear sky [Moe-ta Cycle Show!? Ita Bike Collection]",
+      "title_ja": "ホロライブ、学マス、ブルアカまで！快晴の空に集結した痛車＆痛バイクを一挙紹介【萌ーターサイクルショー!?痛バイクコレクション】",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "All the vehicles are full of charm, including the Ita bike designed by Temari Tsukimura and Misuzu Hataya from Gakumas!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180150.html"
+      },
+      "tags": [
+        "inside-games-jp",
+        "vtuber"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1715755.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-a88fb6",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Healthy proportions and smile! \"KOFXV\" Yuri Sakazaki's figure is dazzling",
+      "title_ja": "健康的なプロポーションと笑顔！『KOFXV』ユリ・サカザキのフィギュアが眩しい",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "From \"KOFXV\" comes a 1/7 scale figure of Yuri Sakazaki, a user of extreme karate! You can't help but be transfixed by the attractive body lines.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180147.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1705885.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-a54333",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "I'm looking forward to the future, and I'd rather be \"motivated to the max!!\" - Moka Amamu talks about \"VSPO! SHOWDOWN 2026\", episodes with her master Bonsaan, and her thoughts on the \"serious battle\" she fought against Takagi.",
+      "title_ja": "今後が楽しみで、むしろ「やる気MAX！！」―甘結もかが語る「VSPO! SHOWDOWN 2026」と師匠・ボンサーンとのエピソード、高木選手と戦った“ガチバトル”の感想を訊いた",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "We conducted an interview with Moka Amaya, who participated in \"VSPO! SHOWDOWN 2026 powered by RAGE\". We asked them about their impressions of this second event and their future goals.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180152.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1716906.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-978c3d",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Kuromi, My Melody and the others get caught on the edge of the cup! Happy resale of capsule toy “PUTITTO Sanrio Characters”",
+      "title_ja": "クロミ、マイメロディたちがコップのフチに引っ掛かる！カプセルトイ「PUTITTO サンリオキャラクターズ」が嬉しい再販",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "\"PUTITTO Sanrio Characters\" will be released in the capsule toy department from April 24th!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180145.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1715877.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-8de1cd",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "The deadline is approaching! “Panchu Rabbit” 3D stickers and sticker books are now available for order at Shimamura Online Store",
+      "title_ja": "締切迫る！「おぱんちゅうさぎ」立体シール、シール帳がしまむらオンラインストアにて受注販売中",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Reservations for “Opanchu Usagi” stickers and sticker books will be accepted at Shimamura Park (online store) from 13:00 on April 9th ​​to 23:00 on April 20th!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180146.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1713460.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-8732d3",
+      "categories": [
+        "game",
+        "otaku-news",
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "Buspo! ``Heated battle'' by the members - ``VSPO! SHOWDOWN 2026'' DAY2 report where they faced strong opponents from ``STR6'', ``Varo'', and ``LoL'' such as k4sen and Shoma Uno",
+      "title_ja": "ぶいすぽっ！メンバーが魅せた“熱戦”ーk4senや宇野昌磨など『スト6』『ヴァロ』『LoL』の強敵に立ち向かった「VSPO! SHOWDOWN 2026」DAY2レポート",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "We bring you a local report of \"VSPO! SHOWDOWN 2026 powered by RAGE\" held on March 21st and 22nd.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180151.html"
+      },
+      "tags": [
+        "inside-games-jp",
+        "vtuber"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1713565.png",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-7983d2",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[Special feature] Do you know the happiness of working in games on holidays? 5 Recommended Management Simulations with Individuality From Maid Cafes to Farm Management",
+      "title_ja": "【特集】休日にゲームで働く幸せ、知ってますか？メイド喫茶から農場経営まで個性が光る経営シミュレーションおすすめ5選",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Introducing a management sim that you can relax and play!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180156.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1714836.png",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-7365d8",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Parts 1 to 7 of the anime “JoJo” will gather at GU! The strongest lineup of 11 types including Jotaro, DIO, Giorno, etc.",
+      "title_ja": "アニメ「ジョジョ」1部～7部がGUに集う！承太郎やDIO、ジョルノなど最強ラインナップ全11種",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "A collaboration between GU and “JoJo’s Bizarre Adventure” has been decided! Designed iconic graphics from ``Phantom Blood'' to ``Steel Ball Run.''",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180158.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1697432.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-21e3e7",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "\"Bonbon Drop Sticker\" New \"letter design\" for Sanrio Characters will be released in early May! 8 types including Hello Kitty and Hapidanbui",
+      "title_ja": "「ボンボンドロップシール」サンリオキャラクターズに新作「文字デザイン」が5月上旬登場！ハローキティ、はぴだんぶいなど全8種類",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "``Character Design'' is a new item of ``Bonbon Drop Seal Sanrio Characters'' that will be in stock from early May!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180155.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1717615.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-1b9594",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Will the long-awaited \"Bunny Garden 2\" tickle the hearts of \"gentlemen\" this time as well? From fascinating conversations with new characters to powerful new elements [Play Report]",
+      "title_ja": "待望の『バニーガーデン2』は、今回も“お紳士”の心をくすぐってくれるの？ 新キャラとの魅惑的な会話からパワーアップした新要素まで【プレイレポ】",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "The long-awaited sequel to ``Bunny Garden,'' which was a huge shock to some Switch users, has finally arrived. What kind of charm does \"Bunny Garden 2\", the latest work in the series, have? We will bring you the playing experience.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180157.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1717051.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181949-rss-00a626",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "[Cosplay] The absolute realm of mini-length cafe-style costumes and knee-highs is dazzling! \"Gakumasu\" Yume Hanami's expression with puffed cheeks was cute [8 photos]",
+      "title_ja": "【コスプレ】ミニ丈のカフェ風衣装×ニーハイの絶対領域が眩しい！『学マス』花海佑芽のほっぺを膨らませた表情が可愛かった【写真8枚】",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "We have selected beautiful layers that participated in \"acosta!@Ikebukuro Sunshine City\" held from February 14th to 15th.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180153.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1704250.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "anime-202604181949-rss-f3ab65",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "332 episodes of “Black Clover” will be free in order",
+      "title_ja": "「ブラッククローバー」が332話分順次無料に",
+      "dates": {},
+      "description": "Yuki Tabata's ``Black Clover'' is being released for free on Shonen Jump+ starting today, April 17th.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668805"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0417/blackclover1.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-c6627c",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Via a super-black company, I ended up in a labor hell, and when I died I arrived at a labor paradise run by the devil.",
+      "title_ja": "超ブラック企業経由、労働地獄行き　死んで辿り着いたのは悪魔が仕切る労働の楽園",
+      "dates": {},
+      "description": "Yonaga's new series ``Does a fixed time come when you die?'' started today, April 18th, in Houbunsha's COMIC FUZ.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668769"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0417/shindeteijiga_4_5.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-abb62f",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "[This week's featured article] 1st place looks back on the 2nd season of \"Yakuya\" and reports on events with spoilers",
+      "title_ja": "【今週の注目記事】1位は「薬屋」2期を振り返り、ネタバレありのイベントをレポート",
+      "dates": {},
+      "description": "From April 9th ​​to April 15th, 2026, the article that attracted the most attention on Comic Natalie was a report on the event of the TV anime ``Horigoto of the Pharmacist''.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668759"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0412/kusyriya_season2event0412_00008.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-a1d8c1",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "``Noa-senpai wa Tomodachi'', a comedy about cohabitation with childhood friends who are older than each other, also recommended by Enma Akiyama",
+      "title_ja": "年の離れた幼なじみとの同棲コメディ、「のあ先輩はともだち。」あきやまえんまも推薦",
+      "dates": {},
+      "description": "The first volume of Oda Neguse's ``Subuntu Eibutsu wo Hiroshi Kimi wa'' was released today, April 17th.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668649"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0417/yagate1obi.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-99e550",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "A school drama about a lethargic 2nd year middle school boy will be aired on UJ, and the next issue will feature ``Demon High School Beatty''",
+      "title_ja": "無気力な中2男子のスクールドラマがUJで、次号には「魔高校生ビーティー」掲載",
+      "dates": {},
+      "description": "In the May issue of Ultra Jump (Shueisha), which was released today on April 17th, Kokoro Onodera's new series ``Motivation Na Wai'', based on the original work by Tomi Okuno, has started.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668647"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0417/23.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-8a3ca8",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "A refreshing senior feels like a different person...A love story that begins in a late-night coin laundry.",
+      "title_ja": "さわやかな先輩が別人のような雰囲気で…深夜のコインランドリーで始まるラブストーリー",
+      "dates": {},
+      "description": "Aoi Maeda's new series ``Love wa Late at Night at the Laundromat'' started today, April 17th, in Bungeishunju's Seasons.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668239"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0414/laundromat_tobira_B4_o.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-826e1c",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Mamoru Miyano plays Mamma Mia at the first pitch! Great pitching, Mario expresses his joy by jumping",
+      "title_ja": "宮野真守が始球式でマンマ・ミーア！な好投球、マリオジャンプで喜びを表現",
+      "dates": {},
+      "description": "Mamoru Miyano pitched at the ceremonial first pitch of the night game between the Tokyo Yakult Swallows and the Yomiuri Giants held at Meiji Jingu Baseball Stadium in Tokyo on April 18th.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668862"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0418/mamorumiyano_baseball_00001.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-77e5ac",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Collaboration cafe between “Super Kaguyahime!” and DiCE sells reenactment menus and goods from the movie",
+      "title_ja": "「超かぐや姫！」とDiCEのコラボカフェ　劇中再現メニューやグッズを販売",
+      "dates": {},
+      "description": "A collaboration cafe between the movie ``Super Kaguyahime!'' and DiCE will be held from May 1st to June 14th.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668831"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0418/CosmicPrincessKaguya_DiCE_1.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-697a25",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "\"Children's Toys\" pop-up shop, selling goods with original illustrations by Miho Obana",
+      "title_ja": "「こどものおもちゃ」ポップアップショップ、小花美穂描き下ろしイラストのグッズ販売",
+      "dates": {},
+      "description": "Miho Obana's \"Children's Toys\" pop-up shop \"Children's Toys POP UP SHOP in Marui\" will be held at Shinjuku Marui Annex in Tokyo from April 24th and at Namba Marui in Osaka from June 12th.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668843"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0418/kodomono_PUS_1.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-410cfa",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "“Milmo de Pon!” and Hanshin Tigers collaboration goods on sale, Milmo and others supporting the team",
+      "title_ja": "「ミルモでポン！」と阪神タイガースのコラボグッズ発売、ミルモたちがチームを応援",
+      "dates": {},
+      "description": "Collaboration goods between Hiromu Shinozuka's ``Milmo de Pon!'' and the Hanshin Tigers will be sold at YTV Shop, T-SHOP, and other stores from May 1st.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668840"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0418/mirumo_hanshintigers_1.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-33c7dd",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "Send manga and flowers to your loved ones with a campaign where you can receive a manga booklet when you purchase a rose.",
+      "title_ja": "大切な人にマンガと花を贈ろう、バラを購入するとマンガ冊子がもらえるキャンペーン",
+      "dates": {},
+      "description": "The ``San Jordi Day Campaign 2026'', a cross-sectional project of Kodansha's comic editorial department, will be held from April 18th at participating bookstores, e-book stores, and flower shops nationwide.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668731"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0417/koudansya_CP_0417_sub4.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-20d1c8",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "\"Doraemon\" special episode set in Vietnam, real konjac banh mi flavor also available",
+      "title_ja": "「ドラえもん」ベトナム舞台の特別エピソード、ほんやくコンニャクバインミー味も登場",
+      "dates": {},
+      "description": "The May 23rd episode of the anime \"Doraemon\" based on the original work by Fujiko F. Fujio will feature a special episode commemorating Shizuka-chan's birth month and the Vietnam release of \"Doraemon the Movie: New Nobita's Undersea Demon Rock Castle.\"",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668792"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0417/doraemon_0417_01.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-1cf981",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "“The Rose of Versailles” All episodes will be released for free on Piccoma today only",
+      "title_ja": "「ベルサイユのばら」ピッコマにて本日限定で全話無料公開",
+      "dates": {},
+      "description": "All episodes of Riyoko Ikeda's ``The Rose of Versailles'' are available for free today, April 18th only.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668820"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/artist/2239/20120810/berubaraN.jpg?impolicy=thumb_fit&width=180&height=180",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-1b059b",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "\"Detective Conan\" special feature will be broadcast tonight on \"Sakusaku Him Him\", Chanmina talks about her favorite character",
+      "title_ja": "「名探偵コナン」特集を「サクサクヒムヒム」で今夜放送、ちゃんみなが推しキャラ語る",
+      "dates": {},
+      "description": "The anime \"Detective Conan\" based on the original work by Gosho Aoyama will be featured on \"Sakusaku Him Him ☆Oshi no Furu Yoru☆\" which will be broadcast on Nippon Television from 11:30 pm on April 18th. For the first time in the show's history, the same theme will be covered two weeks in a row.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668778"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0417/MO_1508-2.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202604181949-rss-19b100",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "The first official recipe book for “Horigoto of the Pharmacist” includes instructions on how to make 23 items, including “aphrodisiac” chocolate.",
+      "title_ja": "「薬屋のひとりごと」初の公式レシピ本、“媚薬”チョコレートなど23品の作り方を掲載",
+      "dates": {},
+      "description": "The first official recipe book for ``Hitorigoto the Apothecary'', ``Cat and Cat Formula'', will be released on May 13th. The cover was drawn by Touko Shino, who is in charge of illustrations for the original novel.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/668848"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0418/kusuriya_recipebook.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "game-202604181948-rss-ea2783",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "The next update for the open world \"Crimson Desert\", which has sold over 5 million copies, will include difficulty settings and bag category tabs - to be released within next week",
+      "title_ja": "500万本突破のオープンワールド『紅の砂漠』次回アプデは難易度設定やバッグカテゴリタブなど実装予定―配信は来週中",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "It is also noted that the capacity will be slightly larger as it includes improvements to the quality of distant views.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165354.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1117639.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-df6a06",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "\"Monster Hunter: Eko\", a volunteer movie filmed in \"Monster Hunter Wilds\", now available with subtitles in Japanese - available for free on YouTube",
+      "title_ja": "『モンハンワイルズ』で撮影の有志映画「Monster Hunter: Eko」日本語に字幕対応―YouTubeにて無料公開中",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Of course, the film will be screened with the permission of Capcom in the US.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165363.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1117696.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-a0c342",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "``Funnel Runners,'' a cooperative survival game where you escape from a city threatened by a gigantic tornado, is attracting a lot of attention. The number of wishlists exceeded 100,000 people and the development was astounding [This is the HOT \"survival game\" in the second half of March 2026! ]",
+      "title_ja": "超巨大竜巻迫る街から脱出する協力サバイバルゲーム『Funnel Runners』が大注目。ウィッシュリスト数100,000人突破し開発も驚愕【26年3月後半にHOTな「サバイバルゲー」はこれだ！】",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Up to eight people share roles such as repairing cars and collecting supplies, and aim to escape before the city collapses.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165356.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1115456.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-7b5256",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "\"The fun of solving problems using programming methods was inspired by Zachtronics' games\" SF survival strategy \"Desynced\" [Developer interview]",
+      "title_ja": "「プログラミング的な手法で問題を解決する楽しさは、Zachtronicsのゲームから着想を得た」SFサバイバルストラテジー『Desynced』【開発者インタビュー】",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "This project interviews developers of new indie games of interest. This time, we bring you a mini-interview with the developer of the sci-fi survival strategy \"Desynced\" developed by Stage Games and released for PC on March 5th.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165358.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1115782.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-7aeb86",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "``ARC Raiders'', whose number of Steam players has decreased by about 80%, announces changes to ``expedition'' - ``Lapures that earn monetary value are not the most attractive experience''",
+      "title_ja": "Steamプレイヤー数が約80％減の『ARC Raiders』、「遠征」内容変更を発表―「金銭的価値を稼ぐ周回が、最も魅力的な体験ではない」",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Some people say that even though the number of users is decreasing, the number of Steam users approaching 100,000 is still a great number.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165355.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1117653.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-652917",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Layoff of 66 people as a \"last resort\" is not enough...Iron Galaxy carries out further layoffs - It is no longer possible to maintain team size",
+      "title_ja": "「最終手段」の66名レイオフでもまったく足りず…Iron Galaxyさらなるレイオフを実施―チーム規模維持はもはや不可能",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "David Dague, also known as Deej, has also announced that he has left the company.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165360.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1117683.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-53f461",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "``Road to Vostok'', a hardcore PvE and escape survival FPS aimed at dangerous areas in Russia, has sold over 200,000 copies! Full development funds secured until completion",
+      "title_ja": "ロシアの危険地帯目指すハードコアPvE、脱出系サバイバルFPS『Road to Vostok』販売本数20万本突破！完成までの開発資金は全額確保",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "We plan to release the patch next week.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165357.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1117647.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-52bf24",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“Goddess of Victory: NIKKE” “SSR Anis: Star” implementation decided! Pickup summons start from April 23rd",
+      "title_ja": "『勝利の女神：NIKKE』「SSR アニス：スター」実装決定！ピックアップ召喚は4月23日から",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "The opening date of the pickup summon for \"Anis: Star\" has also been revealed.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/04/18/180159.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1717649.png",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202604181948-rss-4dee87",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "The store page for the Steam version of \"Starsand Island\", which was temporarily suspended, has been successfully restored - the feared \"Tetris\"-like mini-game has been removed.",
+      "title_ja": "一時公開停止となっていたSteam版『スターサンド・アイランド』のストアページが無事復活―懸念された『テトリス』風ミニゲーム削除に",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "On April 10th, an announcement was made stating that the company was \"inappropriately using expressions from external works without the permission of the rights holder.\"",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165362.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1117691.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-448482",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Announcing \"Kitaria Monogatari 2\", a co-op compatible ARPG with cute animals that allows you to enjoy farming and crafting! Sequel to “The Adventures of Nyanza”",
+      "title_ja": "農業、クラフトも楽しめるCo-op対応ケモノかわいいARPG『キタリア物語2』発表！ 『ニャンザの冒険』続編",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "It takes place after the events of the previous film and introduces two new heroes: Alice Schuyler and Dusty Tuftkin.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165359.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1117656.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-36ae1d",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Tight deadlines result in sloppy and uninteresting work - there are no plans to complete Slay the Spire 2 early. Future plans and statistical data will also be released.",
+      "title_ja": "厳しい締め切りは、雑で面白みのない作品を生み出す―『Slay the Spire 2』早期完成を目指す予定はない。今後の予定や統計データも公開に",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "It is also mentioned that feedback is encouraged to be reported from within the game.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165352.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1117613.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-2819b2",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "The entire Ichiban Kuji lineup for the movie “The Super Mario Galaxy Movie” has been released! In addition to the room light, the Last One Prize is Yoshi's Big Cushion.",
+      "title_ja": "映画 「ザ・スーパーマリオギャラクシー・ムービー」一番くじ全ラインナップ公開！ルームライトほか、ラストワン賞はヨッシーのビッグクッション",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "\"Ichiban Kuji 'The Super Mario Galaxy Movie'\" will be released from April 24th!",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165350.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1114985.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-26187a",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "New PvP shooter \"Last Flag\" is now available for free play on weekends only! A bold arrangement of the familiar “capture the flag” rule",
+      "title_ja": "新作PvPシューター『Last Flag』週末限定無料プレイ開催中！お馴染みの“旗取り”ルールを大胆アレンジ",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "You can experience the latest work just released on April 14, 2026.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165361.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1117690.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-209183",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“Clair Obscur: Expedition 33” has been selected as the best game! BAFTA Games Awards 2026 winners announced",
+      "title_ja": "『Clair Obscur: Expedition 33』がベストゲームに選出！ 英国アカデミー賞ゲーム部門「BAFTA Games Awards 2026」受賞作発表",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Other winning titles include ``Dispatch'', ``DEATH STRANDING 2: ON THE BEACH'', ``Ghost of Yōtei'', and ``Kingdom Come Deliverance II''.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165353.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1117640.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-1929c2",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[Notice] Talk show for gamers “Game*Spark’s Radio Goodwill X” will be broadcast from 23:00 on April 18th!",
+      "title_ja": "【お知らせ】ゲーマーのためのトーク番組「Game*Sparkのラジオ善意X」4月18日23時より放送！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Game*Spark writer Hiko, keyboardist Kai from the editorial department, and Tank Top will be delivering a talk on YouTube/X.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165351.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/856141.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202604181948-rss-10c344",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“Hyperion” from “Super Robot OG” is now three-dimensional! Contains a wide variety of weapons and effect parts, including ``Ibis'' and other Acstars.",
+      "title_ja": "『スパロボOG』より「ハイペリオン」が立体化！豊富な武装・エフェクトパーツを収録、「アイビス」たちのアクスタも",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "In addition to “Hyperion” from the SMP series, we are now accepting reservations for “Ibis & Tsugumi & Slay cut-in acrylic stand”!",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/04/18/165349.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1116308.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "figure-202604181948-rss-f9bf90",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Enchanted by her plump brown body! \"Priest Shimana\", originally illustrated by DISH, has been made into a 1/12 scale movable figure! There is also a deluxe version that comes with replacement chest parts! Now accepting reservations at Rakuten Books!",
+      "title_ja": "豊満な褐色ボディにうっとり！DISH氏原画による「紫舞那 司祭」が1/12スケールで可動フィギュア化！差し替え用胸部パーツが付属する豪華版も！楽天ブックスで予約受付中！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Nailed to the plump body! The bewitching temple priest \"Priest Shimana\", originally illustrated by DISH, has been made into a 1/12 scale movable figure! The deluxe version comes with replacement chest parts! Now accepting reservations at Rakuten Books! #Movable figure",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2978896/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/1-3_mnbZNXbF29hskDPUbDzDSQGgyBQmMLwC_rAB53WfE7veNMk-yYHEU9ClB3gRwvjC8.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202604181948-rss-f62699",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Tamiya's plastic model \"1/12 Honda CB1000F\" released today!",
+      "title_ja": "タミヤ、プラモデル「1/12 Honda CB1000F」本日発売！",
+      "dates": {},
+      "description": "Tamiya will release the plastic model \"1/12 Honda CB1000F\" around April 18th. The price is 4,620 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2102387.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2102/387/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604181948-rss-dd46d7",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "A reverse bunny with a provocative pose sticking out its legs! Figures from “Bunny Garden,” “Azure Lane,” “Uma Musume,” and more will be on display in Akihabara!",
+      "title_ja": "脚を突き出す挑発的なポージングの逆バニー！『バニーガーデン』『アズレン』『ウマ娘』などのフィギュアが秋葉原で展示！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Figures such as Rin from \"Bunny Garden\", Sachusetts from \"Azur Lane\", Berserker/Morgan from \"Fate/Grand Order\", and Mayano Top Gun from \"Uma Musume Pretty Derby\" will be on display in Akihabara! #Bunny Garden #Azulene",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2980686/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/j4eswrt9jt-12_4qVgtJp97kKfuR7_bzZAj5Z4nKKYbylV_SvoRKYR83_RO1YloiiKEEHu6kQPfDDPj.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202604181948-rss-cd14aa",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "The 6th edition of Gashapon “Pokémon Gashatto Collect” is now available! Including Mewtwo and Metamon, the three families of the Kanto region are also included!",
+      "title_ja": "ガシャポン「ポケットモンスター ガシャっとコレクト」の第6弾が登場！ミュウツーやメタモンをはじめ、カントー地方の御三家も収録！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "The 6th edition of Gashapon “Pokemon Gashatto Collect”! You can wear it as a swing, or use the monster ball-shaped capsule as a pedestal to display it as a figure! Contains all 5 types including Mewtwo and Metamon! #Pokemon #Capsule Toy",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2976646/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/1000248557_1_QIpRT7z9HpNecFu8UqWR0e2GwCEp8h6j_T8mHdUrtXNN_C94b05_Y_xBSqX_UmYVt.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202604181948-rss-c87248",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "A commemorative aircraft for the 10th anniversary of \"Macross Delta\" is now available. “DX Chogokin VF-31A Kairos Macross Δ10th Anniv.” released today!",
+      "title_ja": "「マクロスΔ」10周年の記念機体が登場。「DX超合金 VF-31Ａ カイロス マクロスΔ10th Anniv.」本日発売！",
+      "dates": {},
+      "description": "BANDAI SPIRITS will release the figure \"DX Chogokin VF-31A Kairos Macross Δ10th Anniv.\" on April 18th. The price is 29,700 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2102043.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2102/043/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604181948-rss-9b34f4",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "The third vaguely glowing light mascot of “Crayon Shin-chan” is now available in Gashapon! Lineup featuring Shin-chan and Nene-chan in pajamas!",
+      "title_ja": "『クレヨンしんちゃん』のぼんやり光るライトマスコット第3弾がガシャポンに登場！パジャマ姿のしんちゃんやネネちゃんがラインナップ！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Gashapon “Crayon Shin-chan Light Mascot 3” is now available! When you turn on the switch, the mascot lights up dimly! This time, we have included 4 types that are perfect for the bedroom, such as Shin-chan and Nene-chan in pajamas! #Crayon Shin-chan #Capsule Toy",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2976136/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/1000248613_1_YbvKR97VgVdeqeTHt9QNxXZf9w3Oq6mk_wPJP9leFaejCJ_hHjnMt1QjMOUZ3ZWXn.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202604181948-rss-9587bb",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "\"RG 1/144 Gundam Base Limited Unicorn Gundam Perfectibility\" is on sale again. Blue unicorn with full armor [Gundam Base photo]",
+      "title_ja": "「RG 1/144 ガンダムベース限定 ユニコーンガンダム ペルフェクティビリティ」が再販。フルアーマー装備の青いユニコーン【ガンダムベース撮り下ろし】",
+      "dates": {},
+      "description": "\"RG 1/144 Gundam Base Limited Unicorn Gundam Perfectibility\", which was released in 2020 as a Gundam Base limited item, will be resold on March 27, 2026, and is now on sale at all Gundam Base stores.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2102664.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2102/664/01_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604181948-rss-94739b",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "A sea bream making a splash can be used as a kitchen timer! “Kitchen Taima” is now available from the prize “Funny Goods” series!",
+      "title_ja": "水しぶきを上げる鯛がキッチンタイマーに！プライズ「おもしろ雑貨」シリーズから「キッチン鯛マー」が登場！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "From the funny miscellaneous goods series, “Kitchen Taima” is now available as a prize! A fully pun-filled item with a bouncing sea bream turned into a kitchen timer! #Interesting goods",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2973416/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/1_PiEq3MdD5qVqIK4f4aUTDxuPWFbeVsKT_kdntML1oJUBAqkfLBBMipJbqiNW6IK74.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202604181948-rss-8176f7",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Tomica new cars “Mitsuoka M55” and “Ferrari 512 TR” will be released in April! The 55th anniversary car of Japan's 10th automaker and Italy's evolved Prancing Horse are now available as Tomica!",
+      "title_ja": "トミカ新車 4月は「光岡 M55」「フェラーリ 512 TR」が登場！日本の10番目の自動車メーカーの55周年記念車とイタリアの進化した跳ね馬がトミカに！",
+      "dates": {},
+      "description": "No.94 Mitsuoka M55",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2102027.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2102/027/tc001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604181948-rss-7c9f01",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "\"Ichiban Kuji JoJo's Bizarre Adventure The Gathering of STARS\" will be released sequentially from today!",
+      "title_ja": "「一番くじ ジョジョの奇妙な冒険 The Gathering of STARS」本日より順次発売！",
+      "dates": {},
+      "description": "BANDAI SPIRITS will release the no-lose character lottery \"Ichiban Kuji JoJo's Bizarre Adventure The Gathering of STARS\" from April 18th. The price is 850 yen per time.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2102395.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2102/395/002_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604181948-rss-676e87",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "\"HG 1/144 Allyzeus\" will be released soon! A three-dimensional version of the super-large MS containing the mass-produced ν Gundam [Newly shot Gundam Base]",
+      "title_ja": "「HG 1/144 アリュゼウス」間もなく発売！　量産型νガンダムを内包する超大型MSを立体化【ガンダムベース撮り下ろし】",
+      "dates": {},
+      "description": "The large MS \"Aryzeus\" that appears in the theatrical movie \"Mobile Suit Gundam: Flash of Hathaway: The Witch of Circe\" has already been made into a three-dimensional model and will be released in general stores on April 25th as \"HG 1/144 Allyzeus\".",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/special/2102621.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2102/621/01_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604181948-rss-65d672",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "From “Yamato Forever REBEL3199” figure “Kaikan Taizen 1/2000 Space Battleship Yamato 3199 (Third Remodeled Type)” is on sale today!",
+      "title_ja": "「ヤマトよ永遠に REBEL3199」よりフィギュア「輝艦大全 1/2000 宇宙戦艦ヤマト3199（第3次改装型）」本日発売！",
+      "dates": {},
+      "description": "BANDAI SPIRITS will release the figure \"Kaikan Taizen 1/2000 Space Battleship Yamato 3199 (Third Renovation Type)\" on April 18th. The price is 9,900 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2102394.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2102/394/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604181948-rss-5c71d7",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "[Amazon Sale] Great deal on acrylic figure cases with a choice of sizes. Made of 2.8mm thick UV-cut, highly transparent acrylic material that protects against UV rays.",
+      "title_ja": "【Amazonセール】サイズが選べるアクリルフィギュアケースがお買い得厚さ2.8mmのUVカット高透明アクリル素材で紫外線予防も",
+      "dates": {},
+      "description": "KUKER's acrylic case is on sale at a sale price on Amazon. The period ends at 23:59 on April 26th.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2102620.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2102/620/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604181948-rss-5a10a7",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "God Hand “Ultimate Nipper & Sticker Set” etc.: Amazon Hobby “Tools & Parts Items” New Ranking (April 17, 2026 Edition)",
+      "title_ja": "ゴッドハンド「アルティメットニッパー＆ステッカーセット」など：Amazonホビー「ツール＆パーツ系アイテム」新着ランキング（2026年4月17日版）",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Introducing new tools and parts items on Amazon.jp as of 20:00 on April 17, 2026, such as God Hand's \"Ultimate Nipper & Sticker Set\"! #Plastic model #Tool",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2980576/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://images-fe.ssl-images-amazon.com/images/I/61ekDc-Dg6L._AC_SL1000_.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202604181948-rss-430271",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "\"1/32 Focke-Wulf Fw 190 A-3\" review Precise internal representation, luxurious assembly using all aftermarket parts!",
+      "title_ja": "「1/32 フォッケウルフ Fw 190 A-3」レビュー精密な内部の表現、アフターパーツ全部を使って豪華に組み立て！",
+      "dates": {},
+      "description": "The Zoukei-Mura SWS (Super Wing Series) developed by Volks is a series of airplane model plastic kits produced by the Zoukei-Mura brand, Japan's only modeling department that produces and sells three-dimensional objects. Among them, there is a particularly large lineup of German military aircraft developed during World War II, and various aircraft such as \"1/32 Messerschmitt Bf 109 G-14/U4 \"Erich Hartmann\"\" and \"1/32 Horten Ho 229 B (two-seat type)\" have been made into three-dimensional models.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/review/2097612.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2097/612/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202604181948-rss-3ce792",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "“Thomas the Tank Engine” “Sutenkororin Figure” is now available in Gacha! In addition to “Thomas”, “James” and “Percy”, there is even “Sir Topham Hatt”♪",
+      "title_ja": "『きかんしゃトーマス』の「すってんころりんフィギュア」がガチャに登場！「トーマス」「ジェームス」「パーシー」に加え「トップハム・ハット卿」までコロリン♪",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "From ``Thomas the Tank Engine'' comes a deformed figure with a comical pose of rolling over! #Thomas the Tank Engine",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2937135/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/01_A3bxASKu8QIMJVoDY9p30NUG_p7ydHix_xELKeDcGWpXTBHKlG-QxS7_AyNicPem--440x220.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202604181948-rss-2ff94a",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Character development RPG smartphone game \"NU: Carnival\" The main character \"Eight\" wearing a bunny costume is now a figure from BINDing!",
+      "title_ja": "キャラクター育成RPGスマホゲーム『NU: カーニバル』バニー衣装を着た主人公「エイト」がBINDingからフィギュア化！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Eight, the main character of the smartphone game \"NU: Carnival\", is now a figure in a bunny costume! You can also recreate the provocative facial expressions such as the tilted face and the exposed lower body! Scheduled to be released from BINDing in January 2027! #New Crab #BINDing",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2970971/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/b4ej98e489e-3_EdXTxZGZz_-4y6R0vaKJWwmVS8jC9b1L_YNknhJuOcRtFPYtt5zlFQnEg6q9Ck_VY.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202604181948-rss-1f6ffc",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "“That Time I Got Reincarnated as a Slime” Rimuru Tempest prize figure is now available from Banpresto! Dynamically three-dimensional with effects using a luxurious pedestal and clear parts!",
+      "title_ja": "『転生したらスライムだった件』リムル＝テンペストのプライズフィギュアがバンプレストから登場！豪華仕様の台座とクリアパーツを使用したエフェクトでダイナミックに立体化！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Banpresto has released a prize figure of Rimuru Tempest from \"That Time I Got Reincarnated as a Slime\" using a luxurious pedestal and clear parts! Scheduled to be released sequentially from April 23rd (Thursday)! #Tensura #Prize",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2959184/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/668w_668h-7_TxRXgbjIOnHUs8ReIqp_2QDxDVtVm3J-_Cm6rF1B287B_hFwgfnsjjPkwHMVMiDwr.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202604181948-rss-0a4ba7",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "Completely reproduces the demonic appearance, including horns and antennae! From ``Welcome to Hazbin Hotel'', the strongest demon ``Alastair'' is made into a prize figure by Banpresto!",
+      "title_ja": "角や触覚など、悪魔化した姿を完全再現！『ハズビン・ホテルへようこそ』より、最強のデーモン「アラスター」がバンプレストからプライズフィギュア化！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "From ``Welcome to Hazbin Hotel'' comes a prize figure that depicts the strongest demon ``Alastair'' in an impressive three-dimensional form! Scheduled to be released sequentially from April 21st (Tuesday)! #HazbinHotel #HazbinHotel",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/2958812/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/03/668w_668h-1_jeiYeycbCinlYj0XQr44_v2iPNRG1-3Q_Ovr6GHO06DfmZq2mJFuJIbkKxO8ti29G.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "game-202604181947-rss-e19359",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Official version of Airborne Empire, an RPG where you can explore an open world while managing a city floating in the sky, released",
+      "title_ja": "空に浮かぶ都市を運営しながらオープンワールドを冒険できるRPG「Airborne Empire」，正式版をリリース",
+      "dates": {},
+      "description": "On April 18, 2026, TheWanderingBand and StrayFawnPublishing ended early access for \"Airborne Empire\" and released the official version \"1.0\". The price is 3400 yen (tax included). This work is an RPG that lets you explore a vast open world while managing a city floating in the sky. The official version adds new elements such as a snow-covered biome and a jet engine that enables high-speed flight.",
+      "source": {
+        "url": "https://www.4gamer.net/games/720/G072038/20260417021/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/720/G072038/20260417021/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181947-rss-d80af5",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "The 1st fan meeting of \"Supplementary School Boys\" was held. Live performances, readings, talks, lots of laughter and tears, and the world of ``Supplementary School Boys'' is on full display.",
+      "title_ja": "「補講男子」第1回ファンミーティング開催。ライブ，朗読劇，トークあり，笑い過多涙ありで「補講男子」ワールド全開",
+      "dates": {},
+      "description": "\"Supplementary School Boys' 1st Fan Meeting - Hanamaru Total Test!\" was held at Iino Hall on April 5, 2026. Six cast members took to the stage and interacted with the students through a variety of content including live performances, readings, and retrospective talks. Crowdfunding for the creation of a smartphone app was also announced.",
+      "source": {
+        "url": "https://www.4gamer.net/games/991/G999108/20260410068/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/991/G999108/20260410068/SS/010.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181947-rss-ab04fd",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Can it become a new standard for open worlds? Why did ``Crimson Desert'' go from mixed reviews to positive reviews? Now, one month after its release, let's review it again.",
+      "title_ja": "オープンワールドの新しい基準となりえるか？ 「紅の砂漠」はなぜ賛否両論から好評へと覆ったのか。発売後1か月のいま，改めてレビューしてみよう",
+      "dates": {},
+      "description": "PearlAbyss' new game ``Crimson Desert'' received mixed reviews and harsh criticism from around the world immediately after its release on March 20th. However, that rating has changed over the past month to ``very positive''. Why did such a dramatic change occur? What kind of response did PearlAbyss take?",
+      "source": {
+        "url": "https://www.4gamer.net/games/484/G048495/20260417032/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/484/G048495/20260417032/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181947-rss-504d5f",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Yui's Hoe Hoe Game Speech: No. 263 \"The story of an ancient otaku who played 'Yunyun Radio Syndrome' and it hit his soul\"",
+      "title_ja": "結のほえほえゲーム演説：第263回「いにしえのヲタクが『ゆんゆん電波シンドローム』をプレイしたら魂にブッ刺さった話」",
+      "dates": {},
+      "description": "``Yunyun Denpa Syndrome'' is a rhythm game that attracts attention because all the songs are ``Denpa songs.'' Yui, who was surprised and delighted when she saw the list of songs scheduled to be included in this work, said, ``Oi oi oi oi!!!'', and talks about her love for denpa songs through the songs included.",
+      "source": {
+        "url": "https://www.4gamer.net/games/326/G032635/20260417007/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/326/G032635/20260417007/SS/004.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181947-rss-4fdb4b",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "\"Bubble Bobble Sugar Dungeon Boost\" will be released for PS5/Switch on August 20th. Challenge the dungeon repeatedly and aim deeper while strengthening Bubbles",
+      "title_ja": "「バブルボブル シュガーダンジョン ブースト」，PS5/Switch向けに8月20日発売。ダンジョンに繰り返し挑戦し，バブルンを強化しながら奥深くを目指す",
+      "dates": {},
+      "description": "Taito today announced that \"Bubble Bobble Sugar Dungeon Boost\" will be released for PS5/Switch on August 20, 2026. This work is an ACT game where you challenge the dungeons that change every time you step into them, aiming to go deeper into the dungeons while strengthening Bubbles. The PC version will be a \"boosted version\" with a free update scheduled to be released on the same day.",
+      "source": {
+        "url": "https://www.4gamer.net/games/924/G092462/20260417065/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/924/G092462/20260417065/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181947-rss-4f1a08",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "It's like a movie. \"007 First Light\" title sequence video released with theme song sung by Lana Del Rey",
+      "title_ja": "まるで映画。「007 ファースト・ライト」，ラナ・デル・レイさんが歌うテーマソングに乗せたタイトルシーケンス映像公開",
+      "dates": {},
+      "description": "IOInteractive has released the title sequence video for ``007 First Light,'' which will be released on May 27, 2026. The video is composed by David Arnold, known for the 007 series, and sung by popular singer-songwriter Lana Del Rey, raising expectations for an immersive experience that transcends the boundaries between games and movies.",
+      "source": {
+        "url": "https://www.4gamer.net/games/916/G091663/20260418001/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/916/G091663/20260418001/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181947-rss-2cac45",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“Fatal Fury CotW” will release the resurrected Dark Emperor “Wolfgang Krauser” as a DLC character on April 24th. A major update was also carried out at the same time.",
+      "title_ja": "「餓狼伝説 CotW」，復活せし闇の帝王「ヴォルフガング・クラウザー」をDLCキャラクターとして4月24日に配信。同時に大型アップデートも実施",
+      "dates": {},
+      "description": "SNK today (April 17, 2026) announced that the latest DLC character ``Wolfgang Krauser'' for the fighting game ``Fatal Fury City of the Wolves'' will be released on April 24th. An introduction video has been published on the official YouTube account.",
+      "source": {
+        "url": "https://www.4gamer.net/games/649/G064915/20260417070/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/649/G064915/20260417070/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181947-rss-0f4416",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "\"Oni Sazae Tori\" by Kodama Kawajiri is now available on Steam. A 2D action game in which a small goblin spins around and catches prey in the sea.",
+      "title_ja": "川尻こだま氏が手掛ける「鬼サザエトリ」がSteamで発売。小さなゴブリンが体をブン回し，海で獲物を獲る“素潜り貝採り2Dアクション”",
+      "dates": {},
+      "description": "Manga artist Kodama Kawajiri today (April 17, 2026) released his new PC software ``Oni Sazaetri'' on Steam. This game is a ``2D action game'' in which players take on the role of the small goblin ``Neckbi'' and go skin-diving, collecting shellfish and fish to earn points. Spin your body around and make the prey your own.",
+      "source": {
+        "url": "https://www.4gamer.net/games/000/G100026/20260417069/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/000/G100026/20260417069/SS/002.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181947-rss-0d09ec",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“FFXIV”, the latest trailer for patch 7.5 “The Road to the Beyond” has been released. Check out videos that give you a glimpse of new stories and content",
+      "title_ja": "「FFXIV」，パッチ7.5“彼方に至る路”の最新トレイラーを公開。新たなストーリーやコンテンツの一端が垣間見える映像をチェック",
+      "dates": {},
+      "description": "Square Enix today (April 17, 2026) released the latest trailer introducing new elements for patch 7.5 ``The Road to the Other Side'', the latest major update for the online RPG ``Final Fantasy XIV''.",
+      "source": {
+        "url": "https://www.4gamer.net/games/199/G019924/20260417068/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/199/G019924/20260417068/SS/003.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181946-rss-d3b1bd",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "\"Construction Simulator: Evolution,\" the series' biggest evolution, announced. More than 180 types of construction machines, including demolition elements that fans have been waiting for!",
+      "title_ja": "シリーズ最大の進化を遂げる「Construction Simulator: Evolution」発表。建機180種類以上，ファン待望の解体要素も導入",
+      "dates": {},
+      "description": "Astragon Entertainment's latest construction simulation series ``ConstructionSimulator:Evolution'' has been announced and a trailer has been released. Scheduled to be released in the fourth quarter of 2026, 180 types of construction machinery from 35 manufacturers will be available, and it will also be possible to ``dismantle'' the machines, which has been requested by many fans.",
+      "source": {
+        "url": "https://www.4gamer.net/games/000/G100027/20260418002/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/000/G100027/20260418002/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181946-rss-b49284",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Combos and cooperation based on attributes are important for monster users. Report on the 92nd PLL, where details of FFXIV patch 7.5 “Road to the Other Side” were introduced along with the actual machine",
+      "title_ja": "魔獣使いは属性によるコンボと連携が重要に。「FFXIV」のパッチ7.5“彼方に至る路”の詳細が実機を交えて紹介された第92回PLLをレポート",
+      "dates": {},
+      "description": "On April 17th, Square Enix distributed the information program \"92nd FFXIV Producer Letter LIVE\" for the MMORPG \"Final Fantasy Let us show you the pattern.",
+      "source": {
+        "url": "https://www.4gamer.net/games/199/G019924/20260418007/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/199/G019924/20260418007/SS/028.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181946-rss-9e5491",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "[Interview] Aim and outlook of the \"Ver.2.00\" update implemented in \"GUILTY GEAR -STRIVE-\". We talked about the work, which will soon be celebrating its 5th anniversary.",
+      "title_ja": "［インタビュー］「GUILTY GEAR -STRIVE-」で実装された「Ver.2.00」アップデートの狙いと展望。まもなく5年目を迎える同作について話を聞いた",
+      "dates": {},
+      "description": "We bring you an interview with Ken Miyauchi, the producer of Arc System Works' fighting game ``GUILTYGEAR-STRIVE-''. We asked about the \"Ver.2.00\" update that was implemented on April 9th, its aims and future prospects.",
+      "source": {
+        "url": "https://www.4gamer.net/games/527/G052700/20260417012/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/527/G052700/20260417012/TN/003.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181946-rss-2106a1",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Introducing the new game ``Corsair Cove,'' where you can enjoy pirates, city building, automation, and exploration. Bring back the golden age of pirates by any means necessary.",
+      "title_ja": "海賊と都市建設，自動化，そして探索が楽しめる新作「コルセア・コーヴ」発表。あの手この手で海賊の黄金時代を取り戻せ",
+      "dates": {},
+      "description": "HoodedHorse has announced the production of the PC title ``CorsairCove'' developed by Limbic Entertainment and released a trailer. A player who becomes a pirate builds a base on a lonely island and strives to restore the golden age of piracy while satisfying the various desires of the roughnecks.",
+      "source": {
+        "url": "https://www.4gamer.net/games/000/G100030/20260418004/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/000/G100030/20260418004/SS/005.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181946-rss-0a0d4d",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Weekly Steam Plaza No. 149: Pirate survival “Windorose” and rubber horse anime FPS “MOUSE: P.I. For Hire” on sale",
+      "title_ja": "週刊Steam広場 第149号：海賊サバイバル「Windorose」や，ラバーホースアニメFPS「MOUSE: P.I. For Hire」が発売に",
+      "dates": {},
+      "description": "\"Weekly Steam Square\" delivers information on Steam titles and sales that were released this week. This week, the open world survival game ``Windrose'' set in the Age of Exploration, and the FPS ``MOUSE:P.I.ForHire'' featuring a hand-drawn rubber horse animation were released.",
+      "source": {
+        "url": "https://www.4gamer.net/games/038/G003821/20260418003/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/038/G003821/20260418003/SS/017.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202604181946-rss-0538ee",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "\"Shadowverse: Worlds Beyond\" official program to announce new card packs and update information will be held on April 24th",
+      "title_ja": "「Shadowverse: Worlds Beyond」，新たなカードパックやアップデート情報を発表する公式番組を4月24日に実施",
+      "dates": {},
+      "description": "Cygames announced today (April 18, 2026) that the official program for the digital card game \"Shadowverse: Worlds Beyond\" operated by the company, \"Shadobus Channel Beyond 7th Card Pack Information Release!\", will be distributed on YouTube and X at 19:30 on April 24th. This time, new card pack information and update information scheduled for distribution on April 28th will be released.",
+      "source": {
+        "url": "https://www.4gamer.net/games/760/G076035/20260417042/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/760/G076035/20260417042/SS/001.jpg",
+      "_source_id": "4gamer"
     },
     {
       "id": "other-202604172005-pplx-e14814",
@@ -56515,6 +58400,745 @@
       ],
       "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0319/konosuba_eventvisual.jpg?imwidth=1280&imdensity=1",
       "_source_id": "natalie-anime"
+    },
+    {
+      "id": "otaku-news-202604181949-rss-ad8f38",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Food from around the world becomes plump stickers! All 6 types of “Meshi-Ring Stamp Stickers” will be on sale",
+      "title_ja": "世界のごはんがぷっくりシールに！「めし〜リングスタンプシール」全6種が販売決定",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "\"Meshi Ring Stamp Sticker\" Product Details &#160; This product is a plump and glossy sticker designed like a sealing stamp of cuisines from around the world, and there are 6 types in total: \"European\", \"Department Store\", \"Japanese Food\", \"Chinese\", \"Ethnic Food\", and \"School Lunch\".",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/612028"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/meshi-ring-stamp-sticker-main.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202604181949-rss-8fe8ea",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Vote for your favorite character played by Hikaru Midorikawa! Is it Morofushi Keimitsu after all? Or Kaede Rukawa? 【questionnaire】",
+      "title_ja": "緑川光が演じる好きなキャラ投票！やっぱり諸伏景光？それとも流川楓？【アンケート】",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Profile of voice actor Hikaru Midorikawa (Midorikawa Hikaru) Source: \"Aoni Production\" official website &#160; Hikaru Midorikawa is from Tochigi Prefecture, currently belongs to Aoni Production, and will be 58 years old this year. &#160; I watched \"Mobile Suit Gundam\" when I was in elementary school.",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/611513"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/FgMfR3MVsAAZsQQ.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202604181949-rss-8e6c95",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "How many volumes of the original \"SPY×FAMILY\" anime were aired? Explaining the story that will unfold in the future",
+      "title_ja": "『SPY×FAMILY』アニメは原作何巻まで放送された？今後展開されるストーリーを解説",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "How many volumes of the original \"SPY×FAMILY\" anime were aired? &#160; ``SPY×FAMILY'' is a popular work that depicts a man who is a spy, a woman who is a killer, and a girl who has psychic powers as they live out their daily lives as a \"temporary family.\" &#160; The original manga was created by Tatsuya Endo&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/611615"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/84125dba62e7669f-150x150.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202604181949-rss-6b9d5b",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Drama/movie “Kishibe Rohan wa Doesn’t Move” Live-action cast list! Explanation of the cast of the main characters and details of the work",
+      "title_ja": "ドラマ・映画『岸辺露伴は動かない』実写キャスト一覧！主要キャラクターの配役・作品詳細を解説",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "What is the live-action “Rohan Kishibe does not move”? &#160; ``Kishibe Rohan Doesn't Move'' is a live-action work based on the manga of the same name by Hirohiko Araki, and has been broadcast irregularly on NHK since 2020. &#160; The original work is \"JoJo's Bizarre Adventure Diamond is Shattered\"",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/611237"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/84125dba62e7669f-150x150.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202604181949-rss-2c3794",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "New products from the fancy brand “SWIMMER” are now available at Thank You Mart! All 20 items are all 390 yen",
+      "title_ja": "ファンシーブランド「SWIMMER」新作がサンキューマートに登場！全20アイテムがオール390円",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "SWIMMER x Thank You Mart New Product Lineup &#160; New products from the fancy brand \"SWIMMER\", which was born in 1987 and has been loved for about 30 years, will be available at Thank You Mart in a total of 20 items. &#160; All O&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/611686"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/easy-peasy_e5qfHiDACy-150x150.jpeg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-d14d7a",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Speaking of “romantic comedy” anime? Survey deadline is April 21st",
+      "title_ja": "“ラブコメ”アニメといえば？ アンケート〆切は4月21日",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "anime! anime! We will be conducting a reader survey entitled, \"What do you think of 'romance comedy' anime?\" The deadline is April 21st.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98114.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/869649.png",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-ca890e",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Stop falling in love with me, Volume 3: “A love comedy that will stir your brain! The distance between the two of you is so close ♥”",
+      "title_ja": "やめろ好きになってしまう３巻　「脳内騒然ラブコメディ！二人の距離超接近♥」",
+      "dates": {},
+      "description": "Akira Moriguchi's comic ``Yamero Suki ni ni Shiru'' Volume 3 [AA] was released on the 17th. The comic information is ``Matsuura is having a study session at the house of Sayo Itsuki, a beautiful twin girl,'' and Obi's slogan is ``A love comedy that will stir your brain! '', the back cover says ``The distance between the two is super close ♥''...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51660623.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/b/c/bca95f69.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-c6abc0",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "\"Gundam\" Mufty and the principality of Zeon's embroidery are fashionable ☆ Get ready for summer with this army T-shirt and short-sleeved shirt, Mufty!",
+      "title_ja": "「ガンダム」マフティーやジオン公国の刺繍がオシャレ☆アーミーなTシャツ＆半袖シャツで夏準備をやってみせろよ、マフティー！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Army motif apparel items from \"Mobile Suit Gundam\" are now available. Pre-orders will begin on \"Premium Bandai\" from 13:00 on Friday, April 17, 2026, and will be sold at STRICT-G stores from Saturday, April 18.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98112.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/869412.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-b1f783",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "\"Natsume's Book of Friends\" Nyanko-sensei collaborates with Aomori's traditional lacquerware, Tsugaru-nuri!? You can drink lots of Nyanko-sensei's favorite alcohol♪",
+      "title_ja": "「夏目友人帳」ニャンコ先生、青森の伝統漆器・津軽塗とコラボ!? ニャンコ先生が大好きなお酒もたくさん飲めちゃう♪",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "A collaboration between the TV anime “Natsume Yujincho” and “Tsugaru lacquerware” from Aomori Prefecture, Nyanko-sensei has become Ochoco!",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98121.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/868727.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-a704d6",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“Heroaka” graniph collaboration is here! Deku, All Might, Katsuki Bakugou, Himiko Toga and others appear in 19 items including T-shirts☆",
+      "title_ja": "「ヒロアカ」グラニフコラボが来た！ デク、オールマイト、爆豪勝己、トガヒミコたちがTシャツなど全19アイテムで登場☆",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Deku, All Might, Katsuki Bakugou, Shoto Todoroki, and Tokoin Tokoyami from the TV anime “My Hero Academia” are now available as apparel♪",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98124.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/868532.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-99cdcc",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "You guys are still teachers! Volume 5 “Overflowing with love, an unexpected confession!?”",
+      "title_ja": "あなた達それでも先生ですかっ！５巻　「好きが溢れて、まさかの告白！？」",
+      "dates": {},
+      "description": "Ryudai Ishizaka's comic ``You guys are still teachers!'' Volume 5 [AA] was released on the 17th. The back cover says, ``Teachers compete for shocking confession! ? ”, “Each person has their own feelings, and the relationship with the teachers has reached a new stage! ? '', Obi's slogan is ``Overflowing with love, an unexpected confession!'' ? ...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51660626.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/a/0/a0860f56.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-980d46",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Comicalization: What if the final boss, the strongest in the original work, becomes the main character's companion? Volume 1: “A different world fantasy with the ultimate cheat-class final boss and a neat and pretty (?) main character”",
+      "title_ja": "コミカライズ　原作最強のラスボスが主人公の仲間になったら？１巻　「チート級最強ラスボスと清楚可憐（？）な主人公の異世界ファンタジー」",
+      "dates": {},
+      "description": "Volume 1 [AA] of ``What if the final boss, the strongest in the original, becomes the main character's companion?'', which is a comic adaptation of Mr. Kamen Teacher's light novel written by Hiroyoshi Jimmu, was released on the 17th. Comics information is “Reincarnated as the final boss of a fantasy novel! ? '', Obi is ``the strongest cheat-class final boss and the neat and lovely (?) master...''",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51660624.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/5/3/53845abe.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-832846",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“Ganbare! Nakamura-kun!!” Goods drawn by Nakamura, Hirose, and Otokiri and “Hirose’s handkerchief” are also available ♪ Limited time POP UP STORE will be held",
+      "title_ja": "「ガンバレ！中村くん！！」中村、広瀬、乙切らの描き下ろしグッズや“広瀬のハンカチ”も♪ 期間限定POP UP STORE開催",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "\"TV Animation 'Ganbare! Nakamura-kun!!' Limited Time POP UP STORE in Loft\" will be held. The exhibition period is from April 23, 2026 (Thursday) to May 11, 2026 (Monday) at Kichijoji Loft, and from May 1, 2026 (Friday) to May 18, 2026 (Monday) at Sakae Loft.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98117.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/869431.webp",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-795086",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“You have to drink alcohol in moderation!” “Bozaro” We have a variety of new goods, including beer mugs with a tongue-in-cheek design and T-shirts featuring members of the “Kizai Band”!",
+      "title_ja": "“お酒はほどほどにしないとね！”「ぼざろ」ベロベロのきくりがデザインされたビールジョッキ、「結束バンド」メンバーのTシャツなど新グッズが勢揃い！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Anime “Bocchi the Rock! New goods are now available. Pre-orders are now being accepted at Cospa official shops, including mail order, and it is scheduled to be released in early June 2026. Reservations are available until tomorrow, April 19, 2026.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98122.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/860705.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-7647c6",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Sexy and cute in a swimsuit and maid outfit \"Kanaan-sama is just a chore\" The noble Kanan is now three-dimensional in a swimsuit maid outfit! The voluptuous bust and casually peeking garter belt are bold",
+      "title_ja": "水着×メイド姿がセクシー＆キュート 「カナン様はあくまでチョロい」高潔カナンが水着メイド姿で立体化！豊満なバストやさりげなく覗くガーターベルトが大胆",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "From the manga ``Kanaan-sama is Chorooi'', which has been aired on TV since April 2026, Kanan the Noble is now three-dimensionalized in a swimsuit maid outfit. Pre-orders are currently being accepted on Hobby Search, and the price is 22,000 yen (tax included), with release scheduled for November 2026.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98125.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/868945.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-71f4e3",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Spring anime \"Akane Banashi\" Akane ends up training in an unexpected place...Episode 3 advance cut",
+      "title_ja": "春アニメ「あかね噺」朱音は思いもよらない場所で修業をすることになり…第3話先行カット",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "The synopsis and preliminary scene cuts of the third seat (3rd episode) \"Teenko\" from the spring anime \"Akane Banashi\", which will start broadcasting from Saturday, April 18, 2026, have been released.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98118.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/869442.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-55b353",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Spring anime “Yowayawa Sensei” Standing long jump measurement with “Tsuyotsuyo Gal” Mizuki Mukubayashi!? Preliminary cut of episode 2",
+      "title_ja": "春アニメ「よわよわ先生」“つよつよギャル”椋林瑞希と立ち幅跳び測定!? 第2話先行カット",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "The synopsis and advance scene cut of Lesson 2 (Episode 2) \"Yawayowa no Houkago\" from the spring anime \"Yowayowa Sensei\", which will begin broadcasting on Saturday, April 18, 2026, have been released.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98119.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/869453.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-4832ec",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Comicalization: The plain old man is actually a hero Volume 3: “An unrivaled anger in a stressful society!”",
+      "title_ja": "コミカライズ　地味なおじさん、実は英雄でした３巻　「ストレス社会に怒りの無双ッッ！」",
+      "dates": {},
+      "description": "Volume 3 [AA] of the comic version ``My Plain Old Man Was Actually a Hero'' was released on the 17th. Comic information: ``Stressed out, Sato dives into the dungeon as usual, but...! ? '', Obi's slogan is ``A dark part-time job for an unscrupulous industry worker...Angrily unrivaled in a stressful society!'' ” and so on...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51660629.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/9/6/96f8ba86.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-3fe759",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "\"Horigoto of the Pharmacist\" Jinji, Neko Neko and others' summery costumes and flowing hair are refreshing ☆ Event \"Summer Garden Party\" goods information released",
+      "title_ja": "「薬屋のひとりごと」壬氏、猫猫らの夏っぽ衣装＆なびく髪が爽やか☆ イベント「夏の園遊会」グッズ情報が公開",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Goods information for \"TV Anime 'Hitorigoto the Pharmacist' Special Event ~Summer Garden Party 2026~\" to be held on Saturday, August 15, 2026 has been released. We are accepting reservations from 12:00 on Friday, April 17, 2026 to 23:59 on Sunday, May 10, 2026.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98116.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/866409.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-297096",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "\"Detective Conan\" Amuro, Chihaya, Jugo and others! Two types of “Detective Conan Gum” with cool packages with a wide variety of variations are now available",
+      "title_ja": "「名探偵コナン」安室、千速、重悟らも！ バリエーション豊富なパッケージがかっこいい2種類の「名探偵コナンガム」登場",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Introducing \"Detective Conan Gum (Mystery Grape)\" and \"Detective Conan Gum (Hirameki Lemon),\" which have packaging designs based on the anime \"Detective Conan.\" It will be released on Tuesday, April 21, 2026.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98123.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/868394.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-23d3fb",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "\"Nintama Purchasing Club\" arrives in Kyushu for the first time♪ Original goods for 5th and 6th graders, as well as Fukuoka limited stickers!",
+      "title_ja": "「忍たま購買部」九州初上陸♪ 五・六年生のオリジナルグッズに、福岡限定ステッカーも！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "The goods shop for the anime “Nintama Rantaro” “Ninjutsu Gakuen Nintama Purchasing Department” has landed in Kyushu for the first time. It will be held for a limited time from Saturday, May 16, 2026 to Sunday, May 31, 2026 at Fukuoka PARCO Main Building 5F PARCO FACTORY.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98111.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/868841.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-1f5645",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Oblivion of Nia ~Even though I am the god who created the world, I am the only one who has not become a myth~ Volume 1 \"The Primordial God whose followers have decreased due to continuous slacking off\"",
+      "title_ja": "忘却のニア ～世界を創った神なのに私だけ神話になっていない～１巻　「サボり続けて信徒の減り切った始原神」",
+      "dates": {},
+      "description": "Original work: Mato Kosaka & Manga: Yuichi Aihara's ``Nia of Oblivion ~Even though I'm the god who created the world, I'm the only one who hasn't become a myth~'' Volume 1 [AA] was released on the 17th. The comic information is ``An adventure fantasy of the strongest god who disappears from people's memories'', and Obi is ``The Primordial God, whose followers have decreased due to continuous slacking, is aiming for a one-shot reversal...''",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51660627.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/0/e/0e69c4ad.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-1cc9e4",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "A glimpse of Miffy from Aomori Prefecture ♪ Don't miss the facial tiramisu ☆ Limited goods and collaboration menu now available [AOMORI×Dick Bruna TABLE]",
+      "title_ja": "ミッフィーが青森県からチラっと♪ お顔ティラミスも見逃せない☆ 限定グッズ＆コラボメニュー登場【AOMORI×Dick Bruna TABLE】",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "``AOMORI x Dick Bruna TABLE'', an event where you can enjoy the worldview of Dick Bruna, the creator of ``Miffy'', will be held at various locations in Aomori City from Saturday, April 18th, 2026 to Sunday, June 21st, 2026. Limited goods and collaboration menus will be sold.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98115.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/866047.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-123156",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "\"Steel Ball Run JoJo's Bizarre Adventure\" Johnny's horseshoes and Gyro's iron ball are now in the leather collection!? Pay attention to the cases and wallets that are easy to use on a daily basis!",
+      "title_ja": "「スティール・ボール・ラン ジョジョの奇妙な冒険」ジョニィの蹄鉄、ジャイロの鉄球がレザーコレクションに!? 日常使いしやすいケース類、財布に注目！",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "From the anime \"Steel Ball Run JoJo's Bizarre Adventure\" comes a Johnny and Gyro leather collection☆",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98120.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/868657.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181947-rss-05d394",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“Pom Pom Purin” goes well with both neat and casual outfits ◎ Introducing a 30th anniversary cute watch for adults",
+      "title_ja": "「ポムポムプリン」きれいめコーデにもカジュアルにも相性◎ 30周年記念の大人かわいい腕時計が登場",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Sanrio character \"Pom Pom Purin\". April 16, 2026 will be Pompompurin's 30th birthday, and to commemorate this, a collaboration watch between Pompompurin and Seiko has been released.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/04/18/98113.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/869121.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202604181946-rss-d2c59e",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "The burden of 3,000 hours a year spent editing manga can be made more efficient with AI without the need to learn patterns etc. = Square Enix HD",
+      "title_ja": "マンガ編集で費やす年3,000時間の重荷、AIで効率化　絵柄などの学習不要で実現＝スクエニHD",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Square Enix is ​​gradually introducing the ``phototype specification AI'' tool to the comic editorial department of its publishing business headquarters, with the aim of streamlining ``phototype specification'' in the manga editing process. ``Phototypesetting'' refers to lines and narration written in speech bubbles on manga manuscripts.",
+      "source": {
+        "url": "https://0115765.com/archives/180879"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604181946-rss-acc7e9",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "The devil's cute love comedy \"Kanaan-sama\" episode 3, Kanan's first date? [Advanced cut]",
+      "title_ja": "悪魔のちょろカワラブコメ『カナン様』第3話、カナンの初デート？【先行カット】",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "The subtitle, synopsis, and advance cut of the third episode of the TV anime ``Kanaan-sama wa Choroi'', which is currently being broadcast on TOKYO MX, BS11, and others, will begin broadcasting and distribution from April 18th today. In the previous episode 2, he was in charge of taking care of Kanan...",
+      "source": {
+        "url": "https://0115765.com/archives/180783"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/04/0417-t3znuvfj-1024x576.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604181946-rss-8449f7",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Bandori voice actress Ayasa Ito attempts a bold cut to express her \"adult sweetness\" in her photo book \"at the end of her 20s\"",
+      "title_ja": "バンドリ出演声優・伊藤彩沙、“20代最後”に写真集「大人な甘さ」表す大胆カットも挑戦",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "It has been decided that voice actress Ayasa Ito's latest photobook will be released on KADOKAWA on Wednesday, June 24th, 2020. Ito made her debut as a voice actor in 2013, and has since played the role of Arisaki Ichigaya in the ``BanG Dream!'' series, Suzu Kamoto in ``Medalist'', and ``Mou...",
+      "source": {
+        "url": "https://0115765.com/archives/180920"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/04/0418-jiyg4mlg.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604181946-rss-7e355b",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "X, to keep spammers and bots in check - Posts with URLs via API revised to ``20x amount'' of $0.2",
+      "title_ja": "X、スパム業者やBotを牽制―API経由のURL付き投稿を「20倍増額」0.2ドルに改定",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "X (formerly Twitter) announced on the 17th that it will revise its API fee structure for developers on April 20th. Reduce programmatic read access fees and increase write access fees to the X API. Specifically, developers...",
+      "source": {
+        "url": "https://0115765.com/archives/180903"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2024/08/0817-prwob3za.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604181946-rss-681613",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "The first and second Eva units become fishing gear. Special edition “Final Egi 3 Type Set” will be released in May",
+      "title_ja": "「エヴァ」初号機、2号機が“釣具”になる。特別仕様の「最終弾エギ3種セット」が5月発売",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "To commemorate the 30th anniversary of the broadcast of \"Neon Genesis Evangelion\", the final product was announced in a special collaboration with the fishing gear brand \"DRESS\", which is also celebrating its 30th anniversary. \"EVANGELION × DRESS\" is the first since 2017...",
+      "source": {
+        "url": "https://0115765.com/archives/180431"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/04/0418-f3bdm0yg.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604181946-rss-665a63",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Cool Japan Fund invests up to 10 billion yen in SBI-affiliated funds, aiming to recover investment despite cumulative losses of nearly 40 billion yen",
+      "title_ja": "クールジャパン機構、SBI系ファンドに最大100億円出資　400億円近い累積損失も投資回収目指す",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "On the 17th, Japan's Overseas Demand Development Support Corporation, commonly known as the Cool Japan Fund, announced on the 17th that it will invest up to 10 billion yen in the Cool Japan-SBI Contents Investment Limited Partnership, in order to promote investment in startups in the Japanese entertainment and content industry.",
+      "source": {
+        "url": "https://0115765.com/archives/180716"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/04/0417-xe30j2bq.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604181946-rss-51b8c8",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Chunichi's popular character \"Doara\" will be made into a plastic model for the first time. Comes with the example “board” so you can enjoy free poses.",
+      "title_ja": "中日の人気キャラ「ドアラ」が初めてプラモになる。例の“ボード”付きで自在なポーズ楽しめる",
+      "dates": {
+        "display": "Apr 17, 2026"
+      },
+      "description": "PM Office A Co., Ltd. announced that it will commercialize the Chunichi Dragons' popular mascot character \"Doara\" as a plastic model kit \"Plafia Doara\" and release it in June 2026. The price is 3,960 yen including tax. 1994...",
+      "source": {
+        "url": "https://0115765.com/archives/180667"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/04/0417-gixgfmpk-1024x683.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604181946-rss-398937",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Tokyo MX dismisses representative director and chairman after being found to have harassed subordinates",
+      "title_ja": "東京MX、代表取締役会長を解職　部下へのハラスメント行為認定で",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "Tokyo Metropolitan Television, which operates the metropolitan area terrestrial television station TOKYO MX, announced on the 17th that Hiroshi Date, representative director and chairman, has been dismissed from his positions as representative director and chairman, effective the 15th of the same month. He requested his resignation as director, and was terminated in March of the same month...",
+      "source": {
+        "url": "https://0115765.com/archives/180855"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2024/06/0627-4at6gm8q.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604181946-rss-0f6717",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“Demon Slayer: Kimetsu no Yaiba” Mugen Castle Chapter 1 will be made into a disc after the screening ends! Released immediately this summer, limited production of complete preservation version also available",
+      "title_ja": "『鬼滅の刃』無限城編第一章、終映につき円盤化決定！さっそく今夏発売、完全保存版の限定生産も",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "It has been decided that the Blu-ray and DVD of the blockbuster hit ``Demon Slayer: Kimetsu no Yaiba the Movie: Mugenjou Chapter 1: Return of the Aquarium'' will be released on Wednesday, July 29th. In conjunction with this, illustrations by Akira Matsushima, who serves as character designer and chief animation director...",
+      "source": {
+        "url": "https://0115765.com/archives/180779"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/04/0417-5aszifer-1024x576.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202604181946-rss-09a39f",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "It looks like an iPhone, but costs 15,000 yen. Cheap Android smartphone released in Japan, quickest check of the actual device [Blackview WAVE 7C]",
+      "title_ja": "見た目はiPhone丸パクリ、でも価格1.5万円。激安Androidスマホが日本発売、実機を最速チェック【Blackview WAVE 7C】",
+      "dates": {
+        "display": "Apr 18, 2026"
+      },
+      "description": "The low-cost smartphone brand \"Blackview\" has released a new model \"WAVE 7C\" for the Japanese market. The price is set at 14,900 yen including tax in an early campaign, and here is the Moba held in Barcelona, ​​Spain in March of this year...",
+      "source": {
+        "url": "https://0115765.com/archives/180773"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/04/0417-holyqsxj-1024x683.jpg",
+      "_source_id": "0115765-com"
     },
     {
       "id": "otaku-news-202604172004-rss-c006c0",
