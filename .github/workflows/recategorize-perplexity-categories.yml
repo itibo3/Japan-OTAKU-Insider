@@ -1,0 +1,42 @@
+# Perplexity 由来（公開中）記事のカテゴリを Gemini で振り直し、DB にコミットする。
+# 手動のみ。Secrets: GEMINI_API_KEY（必須）、GEMINI_MODEL（任意）
+
+name: Recategorize Perplexity categories
+
+on:
+  workflow_dispatch:
+
+jobs:
+  recategorize:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements-ci.txt
+
+      - name: Run recategorize script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+        run: python3 scripts/recategorize_perplexity_entries.py --apply
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/entries.json data/entries_ja.json data/recategorize_pplx_changes.json data/recategorize_pplx_preview.md 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(data): Perplexity由来カテゴリをGeminiで再分類"
+          git push
