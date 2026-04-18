@@ -103,6 +103,15 @@ def call_gemini_reclassify(api_key: str, model: str, batch: list[dict[str, Any]]
     return results
 
 
+def _model_fallback_chain(preferred: str) -> list[str]:
+    """Gemini のモデル名が環境で 404 になる場合に次を試す（daily 検閲と同趣旨）。"""
+    chain: list[str] = []
+    for m in ((preferred or "").strip(), DEFAULT_GEMINI_MODEL, "gemini-2.5-flash-lite", "gemini-1.5-flash"):
+        if m and m not in chain:
+            chain.append(m)
+    return chain
+
+
 def collect_perplexity_active(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
     out = []
     for e in entries:
@@ -125,9 +134,27 @@ def run_classification(
 ) -> list[tuple[str, str, str]]:
     """[(id, old_cat, new_cat), ...]"""
     changes: list[tuple[str, str, str]] = []
+    models = _model_fallback_chain(model)
     for start in range(0, len(targets), batch_size):
         batch = targets[start : start + batch_size]
-        raw = call_gemini_reclassify(api_key, model, batch)
+        raw = None
+        last_err: RuntimeError | None = None
+        used_model: str | None = None
+        for m in models:
+            try:
+                raw = call_gemini_reclassify(api_key, m, batch)
+                used_model = m
+                break
+            except RuntimeError as e:
+                last_err = e
+                err_s = str(e)
+                if "404" in err_s or "NOT_FOUND" in err_s or "not found" in err_s.lower():
+                    continue
+                raise
+        if raw is None:
+            raise last_err if last_err else RuntimeError("Gemini 分類に失敗しました")
+        if start == 0 and used_model:
+            print(f"使用モデル: {used_model}", file=sys.stderr)
         by_idx: dict[int, str] = {}
         for row in raw:
             if not isinstance(row, dict):
