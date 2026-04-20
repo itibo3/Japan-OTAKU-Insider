@@ -97,6 +97,7 @@ JOI_SYSTEM = """あなたは Japan OTAKU Insider の編集長です。
 - 断定しすぎず、誤情報を作らない（入力にない固有名詞や日付をでっち上げない）
 - 禁止: 「アクティブユーザー◯%減」「PV◯%減」などKPI中心の見出しを本文主役にすること
 - header_image_prompt_en には、記事見出し画像を生成するための英語プロンプトを1文で入れる
+- **重要**: JSON文字列値の中にダブルクォート(")を直接使わないこと。引用には「」や『』を使い、"..."が必要な場合は必ず \\" でエスケープする
 """
 
 
@@ -517,10 +518,32 @@ def call_claude_json(api_key: str, model: str, weekly_report: str, prompts: dict
     return _parse_claude_json(raw)
 
 
+def _repair_json_unescaped_quotes(text: str) -> str:
+    """LLM が文字列値の中に出すエスケープ漏れ " を反復的に修復する。"""
+    last_pos = -1
+    for _ in range(200):
+        try:
+            json.loads(text)
+            return text
+        except json.JSONDecodeError as e:
+            pos = e.pos
+            if pos is None or pos <= 0 or pos == last_pos:
+                break
+            last_pos = pos
+            fix_pos = None
+            for i in range(min(pos, len(text) - 1), max(0, pos - 10), -1):
+                if text[i] == '"' and (i == 0 or text[i - 1] != '\\'):
+                    fix_pos = i
+                    break
+            if fix_pos is None:
+                break
+            text = text[:fix_pos] + '\\' + text[fix_pos:]
+    return text
+
+
 def _parse_json_object(raw: str) -> dict[str, Any]:
-    """LLM 応答から JSON オブジェクトを抽出。markdown フェンス除去・切れた JSON の補完も試みる。"""
+    """LLM 応答から JSON オブジェクトを抽出。フェンス除去・エスケープ修復・切れ補完を試みる。"""
     cleaned = raw.strip()
-    # markdown コードフェンス除去（```json ... ``` 等）
     fence_m = re.search(r"```(?:json)?\s*\n?([\s\S]*?)```", cleaned)
     if fence_m:
         cleaned = fence_m.group(1).strip()
@@ -530,6 +553,14 @@ def _parse_json_object(raw: str) -> dict[str, Any]:
             return obj
     except json.JSONDecodeError:
         pass
+    # エスケープ漏れ " の修復を試みる
+    try:
+        repaired = _repair_json_unescaped_quotes(cleaned)
+        obj = json.loads(repaired)
+        if isinstance(obj, dict):
+            return obj
+    except (json.JSONDecodeError, ValueError):
+        pass
     # { ... } を正規表現で抽出
     m = re.search(r"\{[\s\S]*\}", cleaned)
     if m:
@@ -537,12 +568,18 @@ def _parse_json_object(raw: str) -> dict[str, Any]:
         try:
             return json.loads(candidate)
         except json.JSONDecodeError:
-            # 閉じ括弧不足（max_tokens で途中切れ）→ 末尾補完を試みる
-            for suffix in ['"}\n}', '"\n}', "}\n}", "\n}", "}"]:
-                try:
-                    return json.loads(candidate + suffix)
-                except json.JSONDecodeError:
-                    continue
+            pass
+        try:
+            repaired = _repair_json_unescaped_quotes(candidate)
+            return json.loads(repaired)
+        except (json.JSONDecodeError, ValueError):
+            pass
+        # 閉じ括弧不足（max_tokens で途中切れ）→ 末尾補完
+        for suffix in ['"}\n}', '"\n}', "}\n}", "\n}", "}"]:
+            try:
+                return json.loads(candidate + suffix)
+            except json.JSONDecodeError:
+                continue
     raise ValueError("JSON オブジェクトを抽出できませんでした")
 
 
