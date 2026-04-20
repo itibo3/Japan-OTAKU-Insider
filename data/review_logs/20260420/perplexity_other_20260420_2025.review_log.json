@@ -1,0 +1,50 @@
+[
+  {
+    "index": 0,
+    "id": "other-202604202025-pplx-5af222",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLの内容不一致疑い: page_title=Sonny Brisko (サニー・ブリスコー) - にじさんじ Wiki*",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://wikiwiki.jp/nijisanji/Sonny%20Brisko",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://wikiwiki.jp/nijisanji/Sonny%20Brisko",
+    "page_title": "Sonny Brisko (サニー・ブリスコー) - にじさんじ Wiki*",
+    "published_date": "",
+    "og_image": "https://icon.wikiwiki.jp/symbolicon/nijisanji/ogCustomImage/376a39b1867e.png"
+  },
+  {
+    "index": 1,
+    "id": "other-202604202025-pplx-917502",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLの内容不一致疑い: page_title=「恋愛をしているときはみんな正しい判断ができなくなる」恋リア出演・乙葉＆トモアキが考える、失恋をポジティブに捉える方法",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://realsound.jp/tech/2026/04/post-2371318.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://realsound.jp/tech/2026/04/post-2371318.html",
+    "page_title": "「恋愛をしているときはみんな正しい判断ができなくなる」恋リア出演・乙葉＆トモアキが考える、失恋をポジティブに捉える方法",
+    "published_date": "2026-04-20T15:00:47+09:00",
+    "og_image": "https://realsound.jp/wp-content/uploads/2026/04/20260420-otohatomoaki-99.jpg"
+  },
+  {
+    "index": 2,
+    "id": "other-202604202025-pplx-2a0151",
+    "ok": true,
+    "reason_ja": "",
+    "primary_category": "vtuber",
+    "category_before": "other",
+    "source_url": "https://wikiwiki.jp/nijisanji/%E7%9F%B3%E7%A5%9E%E3%81%AE%E3%81%9E%E3%81%BF",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://wikiwiki.jp/nijisanji/%E7%9F%B3%E7%A5%9E%E3%81%AE%E3%81%9E%E3%81%BF",
+    "page_title": "石神のぞみ (いしがみのぞみ) - にじさんじ Wiki*",
+    "published_date": "",
+    "og_image": "https://icon.wikiwiki.jp/symbolicon/nijisanji/ogCustomImage/376a39b1867e.png"
+  }
+]
