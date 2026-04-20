@@ -1,1 +1,1 @@
-site:prtimes.jp OR site:akihabara-bc.jp otaku event exhibition pop-up 開催 日程 会場
+site:akihabara-bc.jp OR site:moca-news.net OR site:animate.co.jp オタク イベント 展示会 ポップアップストア 開催 2026年 日程 会場
