@@ -58,16 +58,19 @@ jobs:
             --require-anthropic
 
       - name: Build weekly JOI entry JSON
+        if: hashFiles('artifact-out/joi_entry_source.json') != ''
         run: |
           python3 scripts/build_weekly_joi_entry.py --input artifact-out/joi_entry_source.json --output artifact-out/joi_entry.json
 
       - name: Add JOI entry and rebuild JP file
+        if: hashFiles('artifact-out/joi_entry.json') != ''
         run: |
           python3 scripts/add_entry.py artifact-out/joi_entry.json
           python3 scripts/sort_entries.py
           python3 scripts/build_ja_entries.py
 
       - name: Commit and push JOI entry
+        if: hashFiles('artifact-out/joi_entry.json') != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -84,6 +87,7 @@ jobs:
           git push origin main
 
       - name: Upload artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: weekly-self-improve-${{ github.run_id }}

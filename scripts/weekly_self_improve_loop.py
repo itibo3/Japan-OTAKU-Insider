@@ -518,15 +518,31 @@ def call_claude_json(api_key: str, model: str, weekly_report: str, prompts: dict
 
 
 def _parse_json_object(raw: str) -> dict[str, Any]:
+    """LLM 応答から JSON オブジェクトを抽出。markdown フェンス除去・切れた JSON の補完も試みる。"""
+    cleaned = raw.strip()
+    # markdown コードフェンス除去（```json ... ``` 等）
+    fence_m = re.search(r"```(?:json)?\s*\n?([\s\S]*?)```", cleaned)
+    if fence_m:
+        cleaned = fence_m.group(1).strip()
     try:
-        obj = json.loads(raw.strip())
+        obj = json.loads(cleaned)
         if isinstance(obj, dict):
             return obj
     except json.JSONDecodeError:
         pass
-    m = re.search(r"\{[\s\S]*\}", raw)
+    # { ... } を正規表現で抽出
+    m = re.search(r"\{[\s\S]*\}", cleaned)
     if m:
-        return json.loads(m.group(0))
+        candidate = m.group(0)
+        try:
+            return json.loads(candidate)
+        except json.JSONDecodeError:
+            # 閉じ括弧不足（max_tokens で途中切れ）→ 末尾補完を試みる
+            for suffix in ['"}\n}', '"\n}', "}\n}", "\n}", "}"]:
+                try:
+                    return json.loads(candidate + suffix)
+                except json.JSONDecodeError:
+                    continue
     raise ValueError("JSON オブジェクトを抽出できませんでした")
 
 
@@ -821,6 +837,7 @@ def main() -> None:
         + "\n\n補助統計:\n"
         + json.dumps(stats, ensure_ascii=False, indent=2)
     )
+    joi_raw = None
     try:
         llm_trace["joi_attempts"].append({"model": report_primary, "status": "try"})
         joi_raw = call_anthropic_text(
@@ -828,37 +845,54 @@ def main() -> None:
             model=report_primary,
             system=JOI_SYSTEM,
             user_text=joi_user,
-            max_tokens=4096,
+            max_tokens=8192,
         )
         llm_trace["joi_attempts"][-1]["status"] = "ok"
     except Exception as e:
         llm_trace["joi_attempts"][-1]["status"] = "error"
         llm_trace["joi_attempts"][-1]["error"] = str(e)
         print(f"JOI通信 第一モデル失敗 ({e}); {report_fallback} へフォールバック", file=sys.stderr)
-        llm_trace["joi_attempts"].append({"model": report_fallback, "status": "try"})
-        joi_raw = call_anthropic_text(
-            api_key=anthropic_key,
-            model=report_fallback,
-            system=JOI_SYSTEM,
-            user_text=joi_user,
-            max_tokens=4096,
-        )
-        llm_trace["joi_attempts"][-1]["status"] = "ok"
-    joi_obj = _parse_json_object(joi_raw)
-    # 英語補完のみ Sonnet 固定（週次本体の Opus を本文生成に集中。補完は軽量モデルで十分）
-    try:
-        joi_obj = ensure_joi_english_fields(api_key=anthropic_key, model=args.sonnet_model, joi_obj=joi_obj)
-    except Exception as e:
-        print(f"JOI英語補完失敗 ({e}); 既存値で継続", file=sys.stderr)
-    joi_path = args.emit_joi_json or (out_dir / "joi_entry_source.json")
-    joi_path.parent.mkdir(parents=True, exist_ok=True)
-    joi_path.write_text(json.dumps(joi_obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        try:
+            llm_trace["joi_attempts"].append({"model": report_fallback, "status": "try"})
+            joi_raw = call_anthropic_text(
+                api_key=anthropic_key,
+                model=report_fallback,
+                system=JOI_SYSTEM,
+                user_text=joi_user,
+                max_tokens=8192,
+            )
+            llm_trace["joi_attempts"][-1]["status"] = "ok"
+        except Exception as e2:
+            llm_trace["joi_attempts"][-1]["status"] = "error"
+            llm_trace["joi_attempts"][-1]["error"] = str(e2)
+            print(f"JOI通信 フォールバックも失敗 ({e2})", file=sys.stderr)
+
+    joi_obj = None
+    if joi_raw is not None:
+        try:
+            joi_obj = _parse_json_object(joi_raw)
+        except ValueError as e:
+            llm_trace["joi_parse_error"] = str(e)
+            # 生のレスポンスをデバッグ用に保存
+            (out_dir / "joi_raw_debug.txt").write_text(joi_raw, encoding="utf-8")
+            print(f"JOI JSON パース失敗 ({e}); 生テキストを joi_raw_debug.txt に保存", file=sys.stderr)
+
+    if joi_obj is not None:
+        try:
+            joi_obj = ensure_joi_english_fields(api_key=anthropic_key, model=args.sonnet_model, joi_obj=joi_obj)
+        except Exception as e:
+            print(f"JOI英語補完失敗 ({e}); 既存値で継続", file=sys.stderr)
+        joi_path = args.emit_joi_json or (out_dir / "joi_entry_source.json")
+        joi_path.parent.mkdir(parents=True, exist_ok=True)
+        joi_path.write_text(json.dumps(joi_obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"完了: レポート + 提案 {len(proposals)} + JOI素材 -> {out_dir}")
+    else:
+        print(f"部分完了: レポート + 提案 {len(proposals)} (JOI素材なし) -> {out_dir}")
+
     (out_dir / "llm_trace.json").write_text(
         json.dumps(llm_trace, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-
-    print(f"完了: レポート + 提案 {len(proposals)} + JOI素材 -> {out_dir}")
     return
 
 
