@@ -15,6 +15,8 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parent.parent
+
 # /v2/usage はFree/Pro共通で使えるエンドポイントのドメインが異なる
 def detect_endpoint(auth_key: str) -> str:
     if auth_key.strip().endswith(":fx"):
@@ -51,7 +53,7 @@ def main():
     print(f"DeepL Usage: {count} / {limit} (Remaining: {remaining})")
 
     # CSVへの記録
-    csv_file = Path("data/deepl_usage_log.csv")
+    csv_file = ROOT / "data" / "deepl_usage_log.csv"
     csv_file.parent.mkdir(parents=True, exist_ok=True)
     
     file_exists = csv_file.exists()

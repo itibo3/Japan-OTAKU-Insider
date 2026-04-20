@@ -5,11 +5,15 @@ on:
   schedule:
     - cron: '0 10 * * 0'  # 毎週日曜日 19:00 JST (UTC 10:00) / 米東部 5-6時
 
+concurrency:
+  group: joi-weekly-report
+  cancel-in-progress: false
+
 jobs:
   report:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4

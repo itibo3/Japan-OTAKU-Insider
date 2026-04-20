@@ -32,7 +32,7 @@ if str(_REPO_ROOT) not in sys.path:
 from http_fetch_config import article_fetch_headers
 
 JST = timezone(timedelta(hours=9))
-ENTRIES_FILE = Path("data/entries.json")
+ENTRIES_FILE = _REPO_ROOT / "data" / "entries.json"
 
 IMG_TAG_RE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
 

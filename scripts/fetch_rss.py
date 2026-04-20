@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-RSS自動取得 → JSON変換スクリプト
-1日1回cronまたは手動で実行
+[非推奨] RSS自動取得 → JSON変換スクリプト（旧系統）
+
+現行のメインは rss_fetch.py を使用。このスクリプトは互換性のために残されているが、
+daily-update.yml では使われていない。
 """
 
 import sys

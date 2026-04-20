@@ -252,13 +252,13 @@
             <li><span id="aboutSourceTotal">-</span> sources registered in total</li>
             <li><span id="aboutSourceRss">-</span> sources via RSS (fully automated)</li>
             <li><span id="aboutSourceAiSearch">6</span> sources via AI-powered search (Perplexity AI)</li>
-            <li>All original articles are in Japanese — content is machine-translated via DeepL API</li>
+            <li>All original articles are in Japanese — content is machine-translated (Google Translate primary, DeepL fallback)</li>
         </ul>
 
         <h2>Update Frequency</h2>
-        <p>The database is updated <strong>twice a day</strong> — once in the morning and once in the evening (Japan
-            Standard Time). Each update cycle fetches new articles, translates them, extracts thumbnails, and publishes
-            them automatically via GitHub Actions.</p>
+        <p>The database is updated <strong>once a day</strong> around 19:00 JST (Japan Standard Time).
+            Each update cycle fetches new articles, reviews them with AI, translates them, extracts thumbnails,
+            and publishes them automatically via GitHub Actions.</p>
 
         <h2>How It Works</h2>
         <p>Every day, a fully automated pipeline collects, translates, and publishes articles:</p>
@@ -267,7 +267,8 @@
                 Amiami, Collabo Cafe, Dengeki Hobby, MoguLive VR, and more).</li>
             <li><strong>AI-powered search:</strong> Perplexity AI searches 6 topic areas to catch stories that RSS
                 misses.</li>
-            <li><strong>Translation:</strong> DeepL API translates titles and descriptions into English.</li>
+            <li><strong>AI Review:</strong> Gemini Flash reviews Perplexity-sourced articles for URL validity and content accuracy.</li>
+            <li><strong>Translation:</strong> Google Translate (with DeepL fallback) converts titles and descriptions into English.</li>
             <li><strong>Thumbnails:</strong> Article images are extracted from each source page automatically.</li>
             <li><strong>Publishing:</strong> Everything is committed to GitHub and deployed to this site via GitHub
                 Pages &mdash; zero server cost.</li>
@@ -277,7 +278,7 @@
         <ul>
             <li>Static site on GitHub Pages (HTML / CSS / Vanilla JS)</li>
             <li>Data stored in a single JSON file (<code>entries.json</code>)</li>
-            <li>Daily updates via GitHub Actions (RSS + Perplexity + DeepL + auto-commit)</li>
+            <li>Daily updates via GitHub Actions (RSS + Perplexity + Gemini review + translation + auto-commit)</li>
             <li>New articles posted to <a href="https://x.com/JPOTAKU_Insider" style="color:var(--accent-cyan)">X
                     (Twitter)</a> automatically</li>
         </ul>

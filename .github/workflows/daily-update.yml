@@ -12,6 +12,10 @@ on:
   schedule:
     - cron: '0 10 * * *'  # 毎日 19:00 JST (UTC 10:00) / 米東部 5-6時
 
+concurrency:
+  group: joi-daily
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -139,11 +143,18 @@ jobs:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          PUSH_FAILED: ${{ steps.push_step.outputs.push_failed }}
         run: |
           echo "==> Notify daily analytics to Discord"
           python3 scripts/daily_analytics_to_discord.py || true
+          if [ "$PUSH_FAILED" = "true" ] && [ -n "$DISCORD_WEBHOOK_URL" ]; then
+            curl -s -H "Content-Type: application/json" \
+              -d "{\"content\":\"⚠️ **Daily Update: git push 失敗** — rebase コンフリクトまたは push エラーが発生。手動確認が必要です。\"}" \
+              "$DISCORD_WEBHOOK_URL" || true
+          fi
 
       - name: Commit and push
+        id: push_step
         run: |
           echo "==> Commit and push"
           git config user.name "github-actions[bot]"
@@ -159,9 +170,12 @@ jobs:
           if ! git pull --rebase origin main; then
             echo "WARNING: rebase にコンフリクトが発生。abort して push をスキップします。"
             git rebase --abort || true
+            echo "push_failed=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git push origin main
+          if ! git push origin main; then
+            echo "push_failed=true" >> "$GITHUB_OUTPUT"
+          fi
 
 
 

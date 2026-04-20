@@ -12,6 +12,7 @@ import time
 from pathlib import Path
 from typing import Iterable, List, Tuple
 
+ROOT = Path(__file__).resolve().parent.parent
 UNTRANSLATED_PREFIX_RE = re.compile(r"^\s*\[未翻訳\]\s*")
 JA_CHAR_RE = re.compile(r"[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]")
 
@@ -199,7 +200,7 @@ def main() -> None:
     path = Path(args.path) if args.path else None
     if not path or not path.exists():
         if args.dry_run:
-            staging_dir = Path("data/staging")
+            staging_dir = ROOT / "data" / "staging"
             if staging_dir.exists():
                 files = sorted(staging_dir.glob("*.json"), reverse=True)
                 path = files[0] if files else None

@@ -31,8 +31,6 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ENTRIES_FILE = PROJECT_ROOT / "data" / "entries.json"
 POSTED_FILE = PROJECT_ROOT / "data" / ".x_posted_ids"
 SITE_URL = "https://otaku.eidosfrontier.com/"
-MAX_POSTS_PER_RUN = 3
-
 CATEGORY_EMOJI = {
     "cafe": "\u2615",
     "figure": "\U0001F9F8",

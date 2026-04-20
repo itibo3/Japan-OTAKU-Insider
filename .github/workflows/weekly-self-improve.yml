@@ -21,6 +21,10 @@ on:
   schedule:
     - cron: "0 11 * * 1" # 月曜 20:00 JST（UTC 11:00）
 
+concurrency:
+  group: joi-weekly-improve
+  cancel-in-progress: false
+
 jobs:
   self-improve:
     runs-on: ubuntu-latest
@@ -70,6 +74,7 @@ jobs:
           python3 scripts/build_ja_entries.py
 
       - name: Commit and push JOI entry
+        id: push_step
         if: hashFiles('artifact-out/joi_entry.json') != ''
         run: |
           git config user.name "github-actions[bot]"
@@ -81,10 +86,14 @@ jobs:
           fi
           git commit -m "chore: add weekly JOI bulletin ($(date -u +%Y-%m-%d))"
           if ! git pull --rebase origin main; then
+            echo "WARNING: rebase にコンフリクトが発生。abort して push をスキップします。"
             git rebase --abort || true
+            echo "push_failed=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git push origin main
+          if ! git push origin main; then
+            echo "push_failed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Upload artifact
         if: always()
@@ -101,7 +110,13 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_RUN_ID: ${{ github.run_id }}
           GITHUB_SERVER_URL: ${{ github.server_url }}
+          PUSH_FAILED: ${{ steps.push_step.outputs.push_failed }}
         run: |
           python3 scripts/notify_discord_weekly.py \
             --proposals artifact-out/claude_prompt_proposals.json \
             --report artifact-out/weekly_report_ja.md || true
+          if [ "$PUSH_FAILED" = "true" ] && [ -n "$DISCORD_WEBHOOK_URL" ]; then
+            curl -s -H "Content-Type: application/json" \
+              -d "{\"content\":\"⚠️ **Weekly Self-Improve: git push 失敗** — rebase コンフリクトまたは push エラーが発生。手動確認が必要です。\"}" \
+              "$DISCORD_WEBHOOK_URL" || true
+          fi

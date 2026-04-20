@@ -37,9 +37,9 @@ except ImportError:
     sys.exit(1)
 
 JST = timezone(timedelta(hours=9))
-SOURCES_FILE = Path("data/sources.json")
-ENTRIES_FILE = Path("data/entries.json")
-STAGING_DIR = Path("data/staging")
+SOURCES_FILE = _REPO_ROOT / "data" / "sources.json"
+ENTRIES_FILE = _REPO_ROOT / "data" / "entries.json"
+STAGING_DIR = _REPO_ROOT / "data" / "staging"
 
 META_OG_IMAGE_RE = re.compile(
     r'<meta[^>]+property=[\'"]og:image[\'"][^>]+content=[\'"]([^\'"]+)[\'"]',

@@ -11,7 +11,6 @@ id 形式 {category}-{YYYYMMDD}-{suffix} から日付を抽出してソートす
 """
 
 import argparse
-import calendar
 import json
 import re
 from datetime import datetime, timezone, timedelta
@@ -22,47 +21,6 @@ ENTRIES_FILE = Path(__file__).resolve().parent.parent / "data" / "entries.json"
 
 # id から日付部分を抽出: cafe-20260316-rss-abc123 → 20260316 / cafe-202603161900-rss-abc123 → 202603161900
 ID_DATE_RE = re.compile(r"^\w+-(\d{8,12})-")
-# dates.display から YYYY-MM-DD を抽出（範囲の場合は最後の日付を採用）
-ISO_DATE_RE = re.compile(r"(\d{4})-(\d{2})-(\d{2})")
-ISO_MONTH_RE = re.compile(r"^(\d{4})-(\d{2})$")
-
-
-def parse_date_for_sort(entry):
-    """dates.display からソート用 YYYYMMDD を抽出。パース失敗時は None"""
-    dates_val = entry.get("dates")
-    display = ""
-    if isinstance(dates_val, dict):
-        display = dates_val.get("display", "") or ""
-    elif isinstance(dates_val, str):
-        display = dates_val
-    if not display or not isinstance(display, str):
-        return None
-
-    # 1. YYYY-MM-DD を正規表現で抽出（複数あれば最後を採用＝範囲の終了日）
-    iso_matches = list(ISO_DATE_RE.finditer(display))
-    if iso_matches:
-        m = iso_matches[-1]
-        return f"{m.group(1)}{m.group(2)}{m.group(3)}"
-
-    # 2. YYYY-MM のみの場合（月の末日で扱う）
-    mm = ISO_MONTH_RE.search(display.strip())
-    if mm:
-        y, mon = int(mm.group(1)), int(mm.group(2))
-        if 1 <= mon <= 12:
-            last_day = calendar.monthrange(y, mon)[1]
-            return f"{y:04d}{mon:02d}{last_day:02d}"
-
-    # 3. "Mar 19, 2026" 形式
-    try:
-        for fmt in ("%b %d, %Y", "%B %d, %Y", "%b %d %Y"):
-            try:
-                dt = datetime.strptime(display.strip(), fmt)
-                return dt.strftime("%Y%m%d")
-            except ValueError:
-                continue
-    except Exception:
-        pass
-    return None
 
 
 def id_date_from_id(eid):

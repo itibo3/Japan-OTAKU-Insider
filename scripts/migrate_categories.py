@@ -17,7 +17,8 @@ from pathlib import Path
 
 
 JST = timezone(timedelta(hours=9))
-ENTRIES_FILE = Path("data/entries.json")
+ROOT = Path(__file__).resolve().parent.parent
+ENTRIES_FILE = ROOT / "data" / "entries.json"
 
 
 def main() -> None:

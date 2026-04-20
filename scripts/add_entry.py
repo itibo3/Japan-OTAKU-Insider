@@ -11,7 +11,8 @@ from urllib.parse import urlparse
 import requests
 
 JST = timezone(timedelta(hours=9))
-ENTRIES_FILE = Path("data/entries.json")
+ROOT = Path(__file__).resolve().parent.parent
+ENTRIES_FILE = ROOT / "data" / "entries.json"
 URL_CHECK_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; JOI-AddEntryVerifier/1.0)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",

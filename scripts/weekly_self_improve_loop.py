@@ -8,7 +8,7 @@
 4) 出力は指定ディレクトリに保存（GitHub Actions では Artifact 化想定）。prompts/ 本体は自動では書き換えない。
 
 触っていい所: 集計日数、Claude/Gemini の指示文（定数）。
-危ない所: API キーは環境変数のみ（GEMINI_API_KEY, ANTHROPIC_API_KEY）。
+危ない所: API キーは環境変数のみ（ANTHROPIC_API_KEY）。
 """
 
 from __future__ import annotations
@@ -37,7 +37,6 @@ PERPLEXITY_FILES = (
 )
 
 JST = timezone(timedelta(hours=9))
-DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
 DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
 DEFAULT_OPUS_MODEL = "claude-opus-4-6"
 DEFAULT_SONNET_MODEL = "claude-sonnet-4-5-20250929"
@@ -656,7 +655,6 @@ def main() -> None:
     parser.add_argument("--out-dir", type=Path, required=True, help="成果物ディレクトリ")
     parser.add_argument("--days", type=int, default=7, help="集計に使う直近日数（id 内日付ベース・近似）")
     parser.add_argument("--dry-run", action="store_true", help="API を呼ばず統計と現行プロンプトだけ出力")
-    parser.add_argument("--gemini-model", default=(os.getenv("GEMINI_MODEL", "").strip() or DEFAULT_GEMINI_MODEL))
     parser.add_argument(
         "--claude-model",
         default=(os.getenv("ANTHROPIC_MODEL", "").strip() or DEFAULT_ANTHROPIC_MODEL),

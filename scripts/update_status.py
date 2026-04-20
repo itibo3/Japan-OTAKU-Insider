@@ -11,7 +11,8 @@ from datetime import datetime, timezone, timedelta, date
 from pathlib import Path
 
 JST = timezone(timedelta(hours=9))
-ENTRIES_FILE = Path("data/entries.json")
+ROOT = Path(__file__).resolve().parent.parent
+ENTRIES_FILE = ROOT / "data" / "entries.json"
 
 def update_statuses():
     with open(ENTRIES_FILE, 'r', encoding='utf-8') as f:
