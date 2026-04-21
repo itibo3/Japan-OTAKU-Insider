@@ -1,0 +1,34 @@
+[
+  {
+    "index": 0,
+    "id": "vtuber-202604212016-pplx-dd8665",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://www.nijisanji.jp/news/oihrz-ym6k",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://nijisanji.jp/news/oihrz-ym6k",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.nijisanji.jp/news/oihrz-ym6k",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "vtuber-202604212016-pplx-4f1b06",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 404: https://www.nijisanji.jp/news/kuzuha-new3d-20260421",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://nijisanji.jp/news/kuzuha-new3d-20260421",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.nijisanji.jp/news/kuzuha-new3d-20260421",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]
