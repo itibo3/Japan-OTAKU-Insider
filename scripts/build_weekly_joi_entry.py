@@ -93,6 +93,12 @@ def main() -> None:
     parser.add_argument("--input", type=Path, required=True, help="joi_entry_source.json")
     parser.add_argument("--output", type=Path, required=True, help="出力JSON（配列）")
     parser.add_argument("--url", default="", help="記事の参照URL（任意）")
+    parser.add_argument(
+        "--header-image",
+        default="cool",
+        choices=["cool", "emotional", "elegant"],
+        help="週間JOI通信のヘッダー画像スタイル（cool/emotional/elegant、デフォルト: cool）",
+    )
     args = parser.parse_args()
 
     src = json.loads(args.input.read_text(encoding="utf-8"))
@@ -119,6 +125,14 @@ def main() -> None:
         tags = ["weekly-joi", "otaku-news", "analytics"]
     digest = hashlib.md5((title_ja + stamp).encode()).hexdigest()[:6]
 
+    # ヘッダー画像（icons/ に置いた固定画像をスタイルで切り替え）
+    _header_image_map = {
+        "cool": "https://otaku.eidosfrontier.com/icons/weekly-header-cool.png",
+        "emotional": "https://otaku.eidosfrontier.com/icons/weekly-header-emotional.png",
+        "elegant": "https://otaku.eidosfrontier.com/icons/weekly-header-elegant.png",
+    }
+    thumbnail_url = _header_image_map.get(args.header_image, _header_image_map["cool"])
+
     # 本文を description にも入れて、カード/モーダルで読めるようにする
     body_as_desc = (summary_en + "\n\n" + body_md).strip() if summary_en else body_md
     if not body_as_desc:
@@ -140,6 +154,7 @@ def main() -> None:
         "article_markdown_ja": body_md,
         "article_markdown_en": body_en_md,
         "header_image_prompt_en": header_image_prompt_en,
+        "thumbnail": thumbnail_url,
         "source": {"url": article_url},
         "tags": tags,
         "_source": "joi-weekly",

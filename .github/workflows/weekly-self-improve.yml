@@ -64,7 +64,7 @@ jobs:
       - name: Build weekly JOI entry JSON
         if: hashFiles('artifact-out/joi_entry_source.json') != ''
         run: |
-          python3 scripts/build_weekly_joi_entry.py --input artifact-out/joi_entry_source.json --output artifact-out/joi_entry.json
+          python3 scripts/build_weekly_joi_entry.py --input artifact-out/joi_entry_source.json --output artifact-out/joi_entry.json --header-image cool
 
       - name: Add JOI entry and rebuild JP file
         if: hashFiles('artifact-out/joi_entry.json') != ''
