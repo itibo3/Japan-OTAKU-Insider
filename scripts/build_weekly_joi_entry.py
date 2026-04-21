@@ -127,9 +127,9 @@ def main() -> None:
 
     # ヘッダー画像（icons/ に置いた固定画像をスタイルで切り替え）
     _header_image_map = {
-        "cool": "https://otaku.eidosfrontier.com/icons/weekly-header-cool.png",
-        "emotional": "https://otaku.eidosfrontier.com/icons/weekly-header-emotional.png",
-        "elegant": "https://otaku.eidosfrontier.com/icons/weekly-header-elegant.png",
+        "cool": "/icons/weekly-header-cool.png",
+        "emotional": "/icons/weekly-header-emotional.png",
+        "elegant": "/icons/weekly-header-elegant.png",
     }
     thumbnail_url = _header_image_map.get(args.header_image, _header_image_map["cool"])
 
