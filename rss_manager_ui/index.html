@@ -196,14 +196,17 @@
           <section class="card">
             <h2>記事情報を確認・編集して追加</h2>
             <div class="manual-form">
-              <label>タイトル（英語）<span class="req">必須</span>
-                <input id="manual-title" type="text" placeholder="Article title in English" />
+              <label>タイトル（日本語）<span class="req">必須</span>
+                <input id="manual-title-ja" type="text" placeholder="日本語タイトル（主入力）" />
               </label>
-              <label>タイトル（日本語）
-                <input id="manual-title-ja" type="text" placeholder="日本語タイトル（省略可）" />
+              <label>概要（日本語）<span class="req">必須</span>
+                <textarea id="manual-description-ja" rows="4" placeholder="日本語の概要（主入力）"></textarea>
               </label>
-              <label>概要（英語）<span class="req">必須</span>
-                <textarea id="manual-description" rows="4" placeholder="Article description in English"></textarea>
+              <label>タイトル（英語）<span class="optional">任意（未入力なら自動生成）</span>
+                <input id="manual-title" type="text" placeholder="Article title in English (optional)" />
+              </label>
+              <label>概要（英語）<span class="optional">任意（未入力なら自動生成）</span>
+                <textarea id="manual-description" rows="4" placeholder="Article description in English (optional)"></textarea>
               </label>
               <div class="form-row-2col">
                 <label>カテゴリ<span class="req">必須</span>

@@ -730,9 +730,15 @@ async function fetchEntryMeta() {
       return;
     }
 
-    // フォームに自動入力（空欄のみ上書き）
-    if (meta.title && !$("#manual-title").value)       $("#manual-title").value = meta.title;
-    if (meta.description && !$("#manual-description").value) $("#manual-description").value = meta.description;
+    // フォームに自動入力（日本語欄を優先して埋める）
+    if (meta.title) {
+      if (!$("#manual-title-ja").value) $("#manual-title-ja").value = meta.title;
+      if (!$("#manual-title").value) $("#manual-title").value = meta.title;
+    }
+    if (meta.description) {
+      if (!$("#manual-description-ja").value) $("#manual-description-ja").value = meta.description;
+      if (!$("#manual-description").value) $("#manual-description").value = meta.description;
+    }
     if (meta.og_image && !$("#manual-thumbnail").value) {
       $("#manual-thumbnail").value = meta.og_image;
       $("#manual-thumbnail-img").src = meta.og_image;
@@ -751,13 +757,14 @@ async function submitManualEntry() {
   const url = $("#manual-url").value.trim();
   const title = $("#manual-title").value.trim();
   const title_ja = $("#manual-title-ja").value.trim();
+  const description_ja = $("#manual-description-ja").value.trim();
   const description = $("#manual-description").value.trim();
   const category = $("#manual-category").value;
   const display_date = $("#manual-date").value;
   const thumbnail = $("#manual-thumbnail").value.trim();
 
-  if (!url || !title || !description) {
-    alert("URL・タイトル（英語）・概要（英語）は必須です");
+  if (!url || !(title_ja || title) || !(description_ja || description)) {
+    alert("URL・タイトル（日本語または英語）・概要（日本語または英語）は必須です");
     return;
   }
 
@@ -771,11 +778,12 @@ async function submitManualEntry() {
     const res = await api("/api/entries/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ url, title, title_ja, description, category, display_date, thumbnail }),
+      body: JSON.stringify({ url, title, title_ja, description, description_ja, category, display_date, thumbnail }),
     });
 
     if (res.ok) {
-      resultBox.textContent = `✅ ${res.message}（ID: ${res.entry_id}）`;
+      const note = res.note ? ` / ${res.note}` : "";
+      resultBox.textContent = `✅ ${res.message}${note}（ID: ${res.entry_id}）`;
       resultBox.classList.remove("error");
       $("#manual-push-button").disabled = false;
     } else {
@@ -840,7 +848,7 @@ function handleShareTarget() {
     urlInput.value = url;
     // タイトルがあれば入れる
     if (sharedTitle) {
-      const titleInput = $("#manual-title");
+      const titleInput = $("#manual-title-ja");
       if (titleInput && !titleInput.value) titleInput.value = sharedTitle;
     }
   }

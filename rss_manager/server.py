@@ -111,6 +111,28 @@ def _generate_entry_id(category: str) -> str:
     return f"{category}-{stamp}-manual-{digest}"
 
 
+_JA_CHAR_RE = re.compile(r"[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]")
+
+
+def _looks_japanese(text: str) -> bool:
+    return bool(_JA_CHAR_RE.search(text or ""))
+
+
+def _translate_ja_to_en(text: str) -> str:
+    """日本語テキストを英語へ翻訳する。失敗時は空文字を返す。"""
+    raw = (text or "").strip()
+    if not raw:
+        return ""
+    try:
+        from deep_translator import GoogleTranslator  # type: ignore
+
+        tr = GoogleTranslator(source="ja", target="en")
+        return (tr.translate(raw) or "").strip()
+    except Exception as e:
+        print(f"[manual/add] translate failed: {e}")
+        return ""
+
+
 class RssManagerHandler(SimpleHTTPRequestHandler):
     server_version = "RSSManagerHTTP/0.1"
 
@@ -327,14 +349,37 @@ class RssManagerHandler(SimpleHTTPRequestHandler):
             url = (payload.get("url") or "").strip()
             title = (payload.get("title") or "").strip()
             title_ja = (payload.get("title_ja") or "").strip()
+            description_ja = (payload.get("description_ja") or "").strip()
             description = (payload.get("description") or "").strip()
             category = (payload.get("category") or "other").strip()
             display_date = (payload.get("display_date") or datetime.now(JST).strftime("%Y-%m-%d")).strip()
             thumbnail = (payload.get("thumbnail") or "").strip()
 
-            if not url or not title or not description:
-                self.json_response({"error": "url, title, description は必須です"}, status=400)
+            title_ja = title_ja or (title if _looks_japanese(title) else "")
+            description_ja = description_ja or (description if _looks_japanese(description) else "")
+
+            if not url or not (title or title_ja) or not (description or description_ja):
+                self.json_response({"error": "url とタイトル・概要（日本語または英語）は必須です"}, status=400)
                 return
+
+            note_parts = []
+            if not title:
+                translated_title = _translate_ja_to_en(title_ja)
+                if translated_title:
+                    title = translated_title
+                    note_parts.append("title を JA→EN 自動翻訳")
+                else:
+                    title = title_ja
+                    note_parts.append("title 翻訳失敗のため日本語を使用")
+
+            if not description:
+                translated_desc = _translate_ja_to_en(description_ja)
+                if translated_desc:
+                    description = translated_desc
+                    note_parts.append("description を JA→EN 自動翻訳")
+                else:
+                    description = description_ja
+                    note_parts.append("description 翻訳失敗のため日本語を使用")
 
             entry_id = _generate_entry_id(category)
             entry = {
@@ -367,6 +412,8 @@ class RssManagerHandler(SimpleHTTPRequestHandler):
                 self.json_response({"error": f"追加処理でエラー: {e}"}, status=500)
                 return
 
+            if result.get("ok") and note_parts:
+                result["note"] = " / ".join(note_parts)
             self.json_response(result)
             return
 
