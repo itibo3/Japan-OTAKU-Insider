@@ -145,6 +145,51 @@ def get_unreachable_perplexity_reason(entry):
     return reason
 
 
+def add_single_entry(entry: dict) -> dict:
+    """
+    dict 1件を entries.json に追加する。
+    既存の validate/重複チェックロジックをそのまま通す。
+    戻り値: {"ok": True/False, "message": str, "entry_id": str or None}
+    """
+    db = load_entries()
+    existing_entries = db["entries"]
+
+    normalize_categories(entry)
+
+    if entry.get("_source_id") == "joi-weekly":
+        for e in db["entries"]:
+            if e.get("_source_id") == "joi-weekly" or e.get("_source") == "joi-weekly":
+                if e.get("pinned_top"):
+                    e["pinned_top"] = False
+                e["_weekly_archived"] = True
+        entry["pinned_top"] = True
+        entry["_weekly_archived"] = False
+
+    title = (entry.get("title") or "").strip()
+    desc = (entry.get("description") or "").strip()
+    if not title or not desc:
+        return {"ok": False, "message": "title または description が空です", "entry_id": None}
+
+    if has_untranslated_marker(entry):
+        return {"ok": False, "message": "title/description に [未翻訳] マーカーが残っています", "entry_id": None}
+
+    if has_low_quality_source_url(entry):
+        return {"ok": False, "message": "URL がトップページ/不正形式の可能性があります", "entry_id": None}
+
+    pplx_bad = get_unreachable_perplexity_reason(entry)
+    if pplx_bad:
+        return {"ok": False, "message": f"URL の疎通チェック失敗: {pplx_bad}", "entry_id": None}
+
+    is_dup, reason, is_warn = check_duplicate(entry, existing_entries)
+    if is_dup:
+        return {"ok": False, "message": f"重複エントリーです（{reason}）", "entry_id": None}
+
+    db["entries"].insert(0, entry)
+    save_entries(db)
+    entry_id = entry.get("id", "")
+    return {"ok": True, "message": f"追加しました: {title}", "entry_id": entry_id}
+
+
 def add_entries_from_file(filepath, reset=False):
     """Geminiの出力JSONファイルからエントリーを追加。reset=True のときは既存を空にしてから追加"""
     with open(filepath, 'r', encoding='utf-8') as f:
