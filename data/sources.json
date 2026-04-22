@@ -1,572 +1,572 @@
 {
-    "sources": [
-        {
-            "id": "0115765-com",
-            "name": "0115765-com",
-            "url": "https://0115765.com/",
-            "rss": "https://0115765.com/feed",
-            "type": "rss",
-            "categories": [
-                "cosplay"
-            ],
-            "content_tags": [
-                "0115765-com"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "4gamer",
-            "name": "4Gamer.net",
-            "url": "https://www.4gamer.net/",
-            "rss": "https://www.4gamer.net/rss/index.xml",
-            "type": "rss",
-            "categories": [
-                "game"
-            ],
-            "content_tags": [
-                "game-news",
-                "anime"
-            ],
-            "language": "ja",
-            "update_frequency": "daily",
-            "ng_keywords": [
-                "ゲーミングノート",
-                "ゲーミングPC",
-                "ノートPC",
-                "ASUS",
-                "グラフィックボード",
-                "GPU",
-                "DLSS",
-                "Fortnite",
-                "フォートナイト",
-                "EWC",
-                "Esports World Cup"
-            ]
-        },
-        {
-            "id": "akiba-blog",
-            "name": "Akiba Blog",
-            "url": "http://blog.livedoor.jp/geek/",
-            "rss": "http://blog.livedoor.jp/geek/index.rdf",
-            "type": "rss",
-            "categories": [
-                "otaku-news"
-            ],
-            "content_tags": [
-                "akihabara",
-                "cafe",
-                "event",
-                "figure"
-            ],
-            "language": "ja",
-            "update_frequency": "daily",
-            "ng_keywords": [
-                "エロ",
-                "同人",
-                "NTR",
-                "義父",
-                "エクスタシー",
-                "ハーレム",
-                "確定エロ",
-                "肉感",
-                "電子エロ",
-                "本番行為",
-                "セックス",
-                "セ◯クス",
-                "淫",
-                "射精",
-                "オナニー",
-                "ちんぽ",
-                "おっぱい",
-                "エロコメディ",
-                "成人向け",
-                "18禁",
-                "R18",
-                "アダルト"
-            ]
-        },
-        {
-            "id": "amiami-news",
-            "name": "あみあみニュース",
-            "url": "https://news.amiami.jp",
-            "rss": "https://news.amiami.jp/feed",
-            "type": "rss",
-            "categories": [
-                "figure",
-                "event"
-            ],
-            "content_tags": [
-                "figure",
-                "merchandise",
-                "amiami"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "animatetimes",
-            "name": "アニメイトタイムズ",
-            "url": "https://www.animatetimes.com/",
-            "rss": null,
-            "type": "scrape",
-            "categories": [
-                "anime",
-                "event"
-            ],
-            "content_tags": [
-                "anime-news",
-                "merchandise",
-                "animate"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "anime-eiga",
-            "name": "アニメ映画.com",
-            "url": "https://anime.eiga.com/news/",
-            "rss": null,
-            "type": "scrape",
-            "categories": [
-                "anime",
-                "event"
-            ],
-            "content_tags": [
-                "anime-movie",
-                "film",
-                "anime-news"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "animeanime-jp",
-            "name": "アニメ！アニメ！",
-            "url": "https://animeanime.jp/",
-            "rss": "https://animeanime.jp/rss20/index.rdf",
-            "type": "rss",
-            "categories": [
-                "otaku-news"
-            ],
-            "content_tags": [
-                "animeanime-jp"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "animejapan",
-            "name": "AnimeJapan Official",
-            "url": "https://www.anime-japan.jp/",
-            "rss": null,
-            "type": "scrape",
-            "categories": [
-                "event"
-            ],
-            "content_tags": [
-                "anime-japan",
-                "event",
-                "exhibition"
-            ],
-            "language": "ja",
-            "update_frequency": "weekly"
-        },
-        {
-            "id": "collabo-cafe",
-            "name": "Collabo Cafe",
-            "url": "https://collabo-cafe.com",
-            "rss": "https://collabo-cafe.com/feed/",
-            "type": "scrape",
-            "categories": [
-                "cafe",
-                "event"
-            ],
-            "content_tags": [
-                "cafe",
-                "collaboration",
-                "event"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "collabo-cafe-com",
-            "name": "全国で開催しているアニメ・漫画の「コラボカフェ」カテゴリの記事一覧",
-            "url": "https://collabo-cafe.com/events/category/cafe/",
-            "rss": "https://collabo-cafe.com/feed/",
-            "type": "rss",
-            "categories": [
-                "cafe"
-            ],
-            "content_tags": [
-                "collabo-cafe-com"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "cos-p-com",
-            "name": "コスP! | コスプレ情報サイト！",
-            "url": "https://cos-p.com/",
-            "rss": "https://cos-p.com/feed/",
-            "type": "rss",
-            "categories": [
-                "cosplay"
-            ],
-            "content_tags": [
-                "cos-p-com"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "cosplaymode-net",
-            "name": "ニュース | COSPLAY MODE",
-            "url": "https://cosplaymode.net/category/news/",
-            "rss": "https://cosplaymode.net/feed/",
-            "type": "rss",
-            "categories": [
-                "cosplay"
-            ],
-            "content_tags": [
-                "cosplaymode-net"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "cosplaytimes-jp",
-            "name": "コスプレタイムズ｜コスプレ・カメラマンのためのコスプレ情報サイト",
-            "url": "https://cosplaytimes.jp/",
-            "rss": "https://cosplaytimes.jp/feed/",
-            "type": "rss",
-            "categories": [
-                "cosplay"
-            ],
-            "content_tags": [
-                "cosplaytimes-jp"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "cospot-media-com",
-            "name": "コスプレ情報メディアブログサイト -コスポットメディア-｜Cospot Media",
-            "url": "https://cospot-media.com/",
-            "rss": "https://cospot-media.com/feed/",
-            "type": "rss",
-            "categories": [
-                "cosplay"
-            ],
-            "content_tags": [
-                "cospot-media-com"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "dengeki-hobby",
-            "name": "電撃ホビーウェブ",
-            "url": "https://hobby.dengeki.com/",
-            "rss": "https://hobby.dengeki.com/feed/",
-            "type": "rss",
-            "categories": [
-                "figure"
-            ],
-            "content_tags": [
-                "hobby",
-                "figure",
-                "model-kit"
-            ],
-            "language": "ja",
-            "update_frequency": "daily",
-            "ng_keywords": [
-                "肉感少女",
-                "フォールアウト",
-                "Fallout"
-            ]
-        },
-        {
-            "id": "dengeki-vtuber",
-            "name": "Dengeki Online (VTuber special)",
-            "url": "https://dengekionline.com/special/vtuber",
-            "rss": null,
-            "type": "scrape",
-            "categories": [
-                "vtuber"
-            ],
-            "content_tags": [
-                "dengeki-vtuber"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "eeo-media",
-            "name": "eeo today メディア",
-            "url": "https://eeo.today/media/",
-            "rss": null,
-            "type": "scrape",
-            "categories": [
-                "otaku-news"
-            ],
-            "content_tags": [
-                "cafe",
-                "collaboration",
-                "merchandise"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "game-spark",
-            "name": "最新ニュース・まとめ | Game*Spark - 国内・海外ゲーム情報サイト",
-            "url": "https://www.gamespark.jp/article/",
-            "rss": "https://www.gamespark.jp/rss20/index.rdf",
-            "type": "rss",
-            "categories": [
-                "game"
-            ],
-            "content_tags": [
-                "game-spark"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "gamemakers-jp-feed",
-            "name": "gamemakers-jp-feed",
-            "url": "https://gamemakers.jp/",
-            "rss": "https://gamemakers.jp/feed/",
-            "type": "rss",
-            "categories": [
-                "game"
-            ],
-            "content_tags": [
-                "gamemakers-jp-feed"
-            ],
-            "language": "ja",
-            "update_frequency": "daily",
-            "disabled": true
-        },
-        {
-            "id": "goodsmile",
-            "name": "Good Smile Company Blog",
-            "url": "https://www.goodsmile.info/ja/posts/category/information/date/",
-            "rss": null,
-            "type": "scrape",
-            "categories": [
-                "figure"
-            ],
-            "content_tags": [
-                "figure",
-                "merchandise",
-                "good-smile"
-            ],
-            "language": "ja",
-            "update_frequency": "daily",
-            "disabled": true
-        },
-        {
-            "id": "hobby-watch",
-            "name": "HOBBY Watch",
-            "url": "https://hobby.watch.impress.co.jp/",
-            "rss": "https://hobby.watch.impress.co.jp/data/rss/1.0/hbw/feed.rdf",
-            "type": "rss",
-            "categories": [
-                "figure"
-            ],
-            "content_tags": [
-                "hobby",
-                "figure",
-                "model-kit"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "inside-games-jp",
-            "name": "VTuberのニュース記事一覧 | 配信者 | インサイド",
-            "url": "https://www.inside-games.jp/category/streamer/VTuber/latest/",
-            "rss": "https://www.inside-games.jp/rss20/index.rdf",
-            "type": "rss",
-            "categories": [
-                "game",
-                "otaku-news"
-            ],
-            "content_tags": [
-                "inside-games-jp"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "moguravr-com",
-            "name": "MoguraVR（VTuberカテゴリ）",
-            "url": "https://www.moguravr.com/category/virtual-youtuber/",
-            "rss": "https://www.moguravr.com/category/virtual-youtuber/feed/",
-            "type": "rss",
-            "categories": [
-                "vtuber"
-            ],
-            "content_tags": [
-                "moguravr-com"
-            ],
-            "language": "ja",
-            "update_frequency": "daily",
-            "ng_keywords": [
-                "買収",
-                "M&A",
-                "資金調達",
-                "求人",
-                "採用",
-                "業務提携",
-                "B2B",
-                "法人向け",
-                "XREAL",
-                "スマートグラス",
-                "ARグラス",
-                "ヘッドセット"
-            ]
-        },
-        {
-            "id": "natalie-anime",
-            "name": "Comic Natalie / Anime Natalie",
-            "url": "https://natalie.mu/comic",
-            "rss": "https://natalie.mu/comic/feed/news",
-            "type": "rss",
-            "categories": [
-                "anime"
-            ],
-            "content_tags": [
-                "anime-news",
-                "manga",
-                "pop-culture"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "natalie-news",
-            "name": "ナタリー（総合ニュース）",
-            "url": "https://natalie.mu/news",
-            "rss": "https://natalie.mu/eiga/feed/news",
-            "type": "rss",
-            "categories": [
-                "anime",
-                "event"
-            ],
-            "content_tags": [
-                "anime-news",
-                "pop-culture"
-            ],
-            "language": "ja",
-            "update_frequency": "daily",
-            "disabled": true
-        },
-        {
-            "id": "newscast-jp",
-            "name": "VTUBERの最新ニュース | NEWSCAST",
-            "url": "https://newscast.jp/tags/VTUBER",
-            "rss": "https://newscast.jp/rss",
-            "type": "rss",
-            "categories": [
-                "vtuber"
-            ],
-            "content_tags": [
-                "newscast-jp"
-            ],
-            "language": "ja",
-            "update_frequency": "daily",
-            "disabled": true
-        },
-        {
-            "id": "nijimen-kusuguru-co-jp",
-            "name": "にじめん - アニメや推し活など、オタク女子向けの最新ニュースを毎日お届け！",
-            "url": "https://nijimen.kusuguru.co.jp/",
-            "rss": "https://nijimen.kusuguru.co.jp/topics.rss",
-            "type": "rss",
-            "categories": [
-                "otaku-news"
-            ],
-            "content_tags": [
-                "nijimen-kusuguru-co-jp"
-            ],
-            "language": "ja",
-            "update_frequency": "daily"
-        },
-        {
-            "id": "nitroplus-blog",
-            "name": "モットニトロ（スタッフブログ）",
-            "url": "https://www.nitroplus.co.jp/staff/",
-            "rss": "https://www.nitroplus.co.jp/staff/index.xml",
-            "type": "rss",
-            "categories": [
-                "anime",
-                "event"
-            ],
-            "content_tags": [
-                "visual-novel",
-                "behind-the-scenes",
-                "nitroplus"
-            ],
-            "language": "ja",
-            "update_frequency": "weekly",
-            "disabled": true
-        },
-        {
-            "id": "nitroplus-goods",
-            "name": "ニトロプラス グッズ",
-            "url": "https://www.nitroplus.co.jp/goods/",
-            "rss": "https://www.nitroplus.co.jp/goods/index.xml",
-            "type": "rss",
-            "categories": [
-                "figure"
-            ],
-            "content_tags": [
-                "merchandise",
-                "figure",
-                "nitroplus"
-            ],
-            "language": "ja",
-            "update_frequency": "weekly"
-        },
-        {
-            "id": "nitroplus-news",
-            "name": "ニトロプラス 最新ニュース",
-            "url": "https://www.nitroplus.co.jp/news/",
-            "rss": "https://www.nitroplus.co.jp/news/index.xml",
-            "type": "rss",
-            "categories": [
-                "anime",
-                "event"
-            ],
-            "content_tags": [
-                "visual-novel",
-                "anime",
-                "nitroplus"
-            ],
-            "language": "ja",
-            "update_frequency": "weekly"
-        },
-        {
-            "id": "prtimes-kotobukiya",
-            "name": "PR TIMES（コトブキヤ）",
-            "url": "https://prtimes.jp/main/html/searchrlp/company_id/74603",
-            "rss": "https://prtimes.jp/companyrdf.php?company_id=74603",
-            "type": "rss",
-            "categories": [
-                "figure",
-                "event"
-            ],
-            "content_tags": [
-                "figure",
-                "kotobukiya",
-                "merchandise"
-            ],
-            "language": "ja",
-            "update_frequency": "weekly"
-        }
-    ]
+  "sources": [
+    {
+      "id": "0115765-com",
+      "name": "0115765-com",
+      "url": "https://0115765.com/",
+      "rss": "https://0115765.com/feed",
+      "type": "rss",
+      "categories": [
+        "other"
+      ],
+      "content_tags": [
+        "0115765-com"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "4gamer",
+      "name": "4Gamer.net",
+      "url": "https://www.4gamer.net/",
+      "rss": "https://www.4gamer.net/rss/index.xml",
+      "type": "rss",
+      "categories": [
+        "game"
+      ],
+      "content_tags": [
+        "game-news",
+        "anime"
+      ],
+      "language": "ja",
+      "update_frequency": "daily",
+      "ng_keywords": [
+        "ゲーミングノート",
+        "ゲーミングPC",
+        "ノートPC",
+        "ASUS",
+        "グラフィックボード",
+        "GPU",
+        "DLSS",
+        "Fortnite",
+        "フォートナイト",
+        "EWC",
+        "Esports World Cup"
+      ]
+    },
+    {
+      "id": "akiba-blog",
+      "name": "Akiba Blog",
+      "url": "http://blog.livedoor.jp/geek/",
+      "rss": "http://blog.livedoor.jp/geek/index.rdf",
+      "type": "rss",
+      "categories": [
+        "otaku-news"
+      ],
+      "content_tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "language": "ja",
+      "update_frequency": "daily",
+      "ng_keywords": [
+        "エロ",
+        "同人",
+        "NTR",
+        "義父",
+        "エクスタシー",
+        "ハーレム",
+        "確定エロ",
+        "肉感",
+        "電子エロ",
+        "本番行為",
+        "セックス",
+        "セ◯クス",
+        "淫",
+        "射精",
+        "オナニー",
+        "ちんぽ",
+        "おっぱい",
+        "エロコメディ",
+        "成人向け",
+        "18禁",
+        "R18",
+        "アダルト"
+      ]
+    },
+    {
+      "id": "amiami-news",
+      "name": "あみあみニュース",
+      "url": "https://news.amiami.jp",
+      "rss": "https://news.amiami.jp/feed",
+      "type": "rss",
+      "categories": [
+        "figure",
+        "event"
+      ],
+      "content_tags": [
+        "figure",
+        "merchandise",
+        "amiami"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "animatetimes",
+      "name": "アニメイトタイムズ",
+      "url": "https://www.animatetimes.com/",
+      "rss": null,
+      "type": "scrape",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "content_tags": [
+        "anime-news",
+        "merchandise",
+        "animate"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "anime-eiga",
+      "name": "アニメ映画.com",
+      "url": "https://anime.eiga.com/news/",
+      "rss": null,
+      "type": "scrape",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "content_tags": [
+        "anime-movie",
+        "film",
+        "anime-news"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "animeanime-jp",
+      "name": "アニメ！アニメ！",
+      "url": "https://animeanime.jp/",
+      "rss": "https://animeanime.jp/rss20/index.rdf",
+      "type": "rss",
+      "categories": [
+        "otaku-news"
+      ],
+      "content_tags": [
+        "animeanime-jp"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "animejapan",
+      "name": "AnimeJapan Official",
+      "url": "https://www.anime-japan.jp/",
+      "rss": null,
+      "type": "scrape",
+      "categories": [
+        "event"
+      ],
+      "content_tags": [
+        "anime-japan",
+        "event",
+        "exhibition"
+      ],
+      "language": "ja",
+      "update_frequency": "weekly"
+    },
+    {
+      "id": "collabo-cafe",
+      "name": "Collabo Cafe",
+      "url": "https://collabo-cafe.com",
+      "rss": "https://collabo-cafe.com/feed/",
+      "type": "scrape",
+      "categories": [
+        "cafe",
+        "event"
+      ],
+      "content_tags": [
+        "cafe",
+        "collaboration",
+        "event"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "collabo-cafe-com",
+      "name": "全国で開催しているアニメ・漫画の「コラボカフェ」カテゴリの記事一覧",
+      "url": "https://collabo-cafe.com/events/category/cafe/",
+      "rss": "https://collabo-cafe.com/feed/",
+      "type": "rss",
+      "categories": [
+        "cafe"
+      ],
+      "content_tags": [
+        "collabo-cafe-com"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "cos-p-com",
+      "name": "コスP! | コスプレ情報サイト！",
+      "url": "https://cos-p.com/",
+      "rss": "https://cos-p.com/feed/",
+      "type": "rss",
+      "categories": [
+        "cosplay"
+      ],
+      "content_tags": [
+        "cos-p-com"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "cosplaymode-net",
+      "name": "ニュース | COSPLAY MODE",
+      "url": "https://cosplaymode.net/category/news/",
+      "rss": "https://cosplaymode.net/feed/",
+      "type": "rss",
+      "categories": [
+        "cosplay"
+      ],
+      "content_tags": [
+        "cosplaymode-net"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "cosplaytimes-jp",
+      "name": "コスプレタイムズ｜コスプレ・カメラマンのためのコスプレ情報サイト",
+      "url": "https://cosplaytimes.jp/",
+      "rss": "https://cosplaytimes.jp/feed/",
+      "type": "rss",
+      "categories": [
+        "cosplay"
+      ],
+      "content_tags": [
+        "cosplaytimes-jp"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "cospot-media-com",
+      "name": "コスプレ情報メディアブログサイト -コスポットメディア-｜Cospot Media",
+      "url": "https://cospot-media.com/",
+      "rss": "https://cospot-media.com/feed/",
+      "type": "rss",
+      "categories": [
+        "cosplay"
+      ],
+      "content_tags": [
+        "cospot-media-com"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "dengeki-hobby",
+      "name": "電撃ホビーウェブ",
+      "url": "https://hobby.dengeki.com/",
+      "rss": "https://hobby.dengeki.com/feed/",
+      "type": "rss",
+      "categories": [
+        "figure"
+      ],
+      "content_tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "language": "ja",
+      "update_frequency": "daily",
+      "ng_keywords": [
+        "肉感少女",
+        "フォールアウト",
+        "Fallout"
+      ]
+    },
+    {
+      "id": "dengeki-vtuber",
+      "name": "Dengeki Online (VTuber special)",
+      "url": "https://dengekionline.com/special/vtuber",
+      "rss": null,
+      "type": "scrape",
+      "categories": [
+        "vtuber"
+      ],
+      "content_tags": [
+        "dengeki-vtuber"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "eeo-media",
+      "name": "eeo today メディア",
+      "url": "https://eeo.today/media/",
+      "rss": null,
+      "type": "scrape",
+      "categories": [
+        "otaku-news"
+      ],
+      "content_tags": [
+        "cafe",
+        "collaboration",
+        "merchandise"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "game-spark",
+      "name": "最新ニュース・まとめ | Game*Spark - 国内・海外ゲーム情報サイト",
+      "url": "https://www.gamespark.jp/article/",
+      "rss": "https://www.gamespark.jp/rss20/index.rdf",
+      "type": "rss",
+      "categories": [
+        "game"
+      ],
+      "content_tags": [
+        "game-spark"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "gamemakers-jp-feed",
+      "name": "gamemakers-jp-feed",
+      "url": "https://gamemakers.jp/",
+      "rss": "https://gamemakers.jp/feed/",
+      "type": "rss",
+      "categories": [
+        "game"
+      ],
+      "content_tags": [
+        "gamemakers-jp-feed"
+      ],
+      "language": "ja",
+      "update_frequency": "daily",
+      "disabled": true
+    },
+    {
+      "id": "goodsmile",
+      "name": "Good Smile Company Blog",
+      "url": "https://www.goodsmile.info/ja/posts/category/information/date/",
+      "rss": null,
+      "type": "scrape",
+      "categories": [
+        "figure"
+      ],
+      "content_tags": [
+        "figure",
+        "merchandise",
+        "good-smile"
+      ],
+      "language": "ja",
+      "update_frequency": "daily",
+      "disabled": true
+    },
+    {
+      "id": "hobby-watch",
+      "name": "HOBBY Watch",
+      "url": "https://hobby.watch.impress.co.jp/",
+      "rss": "https://hobby.watch.impress.co.jp/data/rss/1.0/hbw/feed.rdf",
+      "type": "rss",
+      "categories": [
+        "figure"
+      ],
+      "content_tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "inside-games-jp",
+      "name": "VTuberのニュース記事一覧 | 配信者 | インサイド",
+      "url": "https://www.inside-games.jp/category/streamer/VTuber/latest/",
+      "rss": "https://www.inside-games.jp/rss20/index.rdf",
+      "type": "rss",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "content_tags": [
+        "inside-games-jp"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "moguravr-com",
+      "name": "MoguraVR（VTuberカテゴリ）",
+      "url": "https://www.moguravr.com/category/virtual-youtuber/",
+      "rss": "https://www.moguravr.com/category/virtual-youtuber/feed/",
+      "type": "rss",
+      "categories": [
+        "vtuber"
+      ],
+      "content_tags": [
+        "moguravr-com"
+      ],
+      "language": "ja",
+      "update_frequency": "daily",
+      "ng_keywords": [
+        "買収",
+        "M&A",
+        "資金調達",
+        "求人",
+        "採用",
+        "業務提携",
+        "B2B",
+        "法人向け",
+        "XREAL",
+        "スマートグラス",
+        "ARグラス",
+        "ヘッドセット"
+      ]
+    },
+    {
+      "id": "natalie-anime",
+      "name": "Comic Natalie / Anime Natalie",
+      "url": "https://natalie.mu/comic",
+      "rss": "https://natalie.mu/comic/feed/news",
+      "type": "rss",
+      "categories": [
+        "anime"
+      ],
+      "content_tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "natalie-news",
+      "name": "ナタリー（総合ニュース）",
+      "url": "https://natalie.mu/news",
+      "rss": "https://natalie.mu/eiga/feed/news",
+      "type": "rss",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "content_tags": [
+        "anime-news",
+        "pop-culture"
+      ],
+      "language": "ja",
+      "update_frequency": "daily",
+      "disabled": true
+    },
+    {
+      "id": "newscast-jp",
+      "name": "VTUBERの最新ニュース | NEWSCAST",
+      "url": "https://newscast.jp/tags/VTUBER",
+      "rss": "https://newscast.jp/rss",
+      "type": "rss",
+      "categories": [
+        "vtuber"
+      ],
+      "content_tags": [
+        "newscast-jp"
+      ],
+      "language": "ja",
+      "update_frequency": "daily",
+      "disabled": true
+    },
+    {
+      "id": "nijimen-kusuguru-co-jp",
+      "name": "にじめん - アニメや推し活など、オタク女子向けの最新ニュースを毎日お届け！",
+      "url": "https://nijimen.kusuguru.co.jp/",
+      "rss": "https://nijimen.kusuguru.co.jp/topics.rss",
+      "type": "rss",
+      "categories": [
+        "otaku-news"
+      ],
+      "content_tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "language": "ja",
+      "update_frequency": "daily"
+    },
+    {
+      "id": "nitroplus-blog",
+      "name": "モットニトロ（スタッフブログ）",
+      "url": "https://www.nitroplus.co.jp/staff/",
+      "rss": "https://www.nitroplus.co.jp/staff/index.xml",
+      "type": "rss",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "content_tags": [
+        "visual-novel",
+        "behind-the-scenes",
+        "nitroplus"
+      ],
+      "language": "ja",
+      "update_frequency": "weekly",
+      "disabled": true
+    },
+    {
+      "id": "nitroplus-goods",
+      "name": "ニトロプラス グッズ",
+      "url": "https://www.nitroplus.co.jp/goods/",
+      "rss": "https://www.nitroplus.co.jp/goods/index.xml",
+      "type": "rss",
+      "categories": [
+        "figure"
+      ],
+      "content_tags": [
+        "merchandise",
+        "figure",
+        "nitroplus"
+      ],
+      "language": "ja",
+      "update_frequency": "weekly"
+    },
+    {
+      "id": "nitroplus-news",
+      "name": "ニトロプラス 最新ニュース",
+      "url": "https://www.nitroplus.co.jp/news/",
+      "rss": "https://www.nitroplus.co.jp/news/index.xml",
+      "type": "rss",
+      "categories": [
+        "anime",
+        "event"
+      ],
+      "content_tags": [
+        "visual-novel",
+        "anime",
+        "nitroplus"
+      ],
+      "language": "ja",
+      "update_frequency": "weekly"
+    },
+    {
+      "id": "prtimes-kotobukiya",
+      "name": "PR TIMES（コトブキヤ）",
+      "url": "https://prtimes.jp/main/html/searchrlp/company_id/74603",
+      "rss": "https://prtimes.jp/companyrdf.php?company_id=74603",
+      "type": "rss",
+      "categories": [
+        "figure",
+        "event"
+      ],
+      "content_tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "language": "ja",
+      "update_frequency": "weekly"
+    }
+  ]
 }
