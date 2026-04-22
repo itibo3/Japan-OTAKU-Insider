@@ -133,6 +133,34 @@ def _translate_ja_to_en(text: str) -> str:
         return ""
 
 
+def _entries_consistency_check(project_root: Path) -> tuple[bool, str]:
+    """entries.json / entries_ja.json の件数とID集合の整合を確認する。"""
+    en_path = project_root / "data" / "entries.json"
+    ja_path = project_root / "data" / "entries_ja.json"
+    try:
+        en_obj = json.loads(en_path.read_text(encoding="utf-8"))
+        ja_obj = json.loads(ja_path.read_text(encoding="utf-8"))
+        en_entries = en_obj.get("entries") or []
+        ja_entries = ja_obj.get("entries") or []
+        en_ids = {e.get("id") for e in en_entries if isinstance(e, dict) and e.get("id")}
+        ja_ids = {e.get("id") for e in ja_entries if isinstance(e, dict) and e.get("id")}
+    except Exception as e:
+        return False, f"整合チェック失敗: {type(e).__name__}: {e}"
+
+    if len(en_entries) != len(ja_entries):
+        return False, f"件数不一致 EN={len(en_entries)} / JA={len(ja_entries)}"
+    only_en = sorted(en_ids - ja_ids)
+    only_ja = sorted(ja_ids - en_ids)
+    if only_en or only_ja:
+        hint = []
+        if only_en:
+            hint.append(f"EN-only: {only_en[:3]}")
+        if only_ja:
+            hint.append(f"JA-only: {only_ja[:3]}")
+        return False, "ID不一致 " + " | ".join(hint)
+    return True, "OK"
+
+
 class RssManagerHandler(SimpleHTTPRequestHandler):
     server_version = "RSSManagerHTTP/0.1"
 
@@ -355,11 +383,8 @@ class RssManagerHandler(SimpleHTTPRequestHandler):
             display_date = (payload.get("display_date") or datetime.now(JST).strftime("%Y-%m-%d")).strip()
             thumbnail = (payload.get("thumbnail") or "").strip()
 
-            title_ja = title_ja or (title if _looks_japanese(title) else "")
-            description_ja = description_ja or (description if _looks_japanese(description) else "")
-
-            if not url or not (title or title_ja) or not (description or description_ja):
-                self.json_response({"error": "url とタイトル・概要（日本語または英語）は必須です"}, status=400)
+            if not url or not title_ja or not description_ja:
+                self.json_response({"error": "url, title_ja, description_ja は必須です"}, status=400)
                 return
 
             note_parts = []
@@ -389,6 +414,7 @@ class RssManagerHandler(SimpleHTTPRequestHandler):
                 "title": title,
                 "title_ja": title_ja or title,
                 "description": description,
+                "description_ja": description_ja,
                 "dates": {"display": display_date},
                 "source": {"url": url},
                 "tags": [category],
@@ -407,7 +433,11 @@ class RssManagerHandler(SimpleHTTPRequestHandler):
                 )
                 mod = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(mod)
-                result = mod.add_single_entry(entry)
+                result = mod.add_single_entry_dual(
+                    entry,
+                    title_ja=title_ja,
+                    description_ja=description_ja,
+                )
             except Exception as e:
                 self.json_response({"error": f"追加処理でエラー: {e}"}, status=500)
                 return
@@ -455,6 +485,11 @@ class RssManagerHandler(SimpleHTTPRequestHandler):
         """entries.json を git add → commit → push する。"""
         root = self.project_root
         cwd = str(root.resolve())
+
+        ok_consistency, detail = _entries_consistency_check(root)
+        if not ok_consistency:
+            self.json_response({"error": f"push中止: JP/EN整合エラー ({detail})"}, status=400)
+            return
 
         def run_git(*args: str, timeout: int = 15) -> subprocess.CompletedProcess:
             r = subprocess.run(

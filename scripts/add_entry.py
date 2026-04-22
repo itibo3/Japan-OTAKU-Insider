@@ -13,6 +13,7 @@ import requests
 JST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parent.parent
 ENTRIES_FILE = ROOT / "data" / "entries.json"
+ENTRIES_JA_FILE = ROOT / "data" / "entries_ja.json"
 URL_CHECK_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; JOI-AddEntryVerifier/1.0)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -20,17 +21,34 @@ URL_CHECK_HEADERS = {
 }
 _PPLX_URL_CHECK_CACHE = {}
 
-def load_entries():
-    if ENTRIES_FILE.exists():
-        with open(ENTRIES_FILE, 'r', encoding='utf-8') as f:
+def load_entries_file(path: Path):
+    if path.exists():
+        with open(path, 'r', encoding='utf-8') as f:
             return json.load(f)
     return {"last_updated": "", "total_entries": 0, "entries": []}
 
-def save_entries(db):
+
+def save_entries_file(db, path: Path):
     db["last_updated"] = datetime.now(JST).isoformat()
     db["total_entries"] = len(db["entries"])
-    with open(ENTRIES_FILE, 'w', encoding='utf-8') as f:
+    with open(path, 'w', encoding='utf-8') as f:
         json.dump(db, f, ensure_ascii=False, indent=2)
+
+
+def load_entries():
+    return load_entries_file(ENTRIES_FILE)
+
+
+def save_entries(db):
+    save_entries_file(db, ENTRIES_FILE)
+
+
+def load_entries_ja():
+    return load_entries_file(ENTRIES_JA_FILE)
+
+
+def save_entries_ja(db):
+    save_entries_file(db, ENTRIES_JA_FILE)
 
 def normalize_categories(entry):
     """
@@ -188,6 +206,75 @@ def add_single_entry(entry: dict) -> dict:
     save_entries(db)
     entry_id = entry.get("id", "")
     return {"ok": True, "message": f"追加しました: {title}", "entry_id": entry_id}
+
+
+def add_single_entry_dual(entry_en: dict, *, title_ja: str, description_ja: str) -> dict:
+    """
+    JP正本を基準に entries.json(EN) / entries_ja.json(JP) を同時追加する。
+    どちらかの検証で失敗した場合は何も保存しない。
+    """
+    db_en = load_entries()
+    db_ja = load_entries_ja()
+
+    # 失敗時ロールバック用スナップショット
+    snapshot_en = json.loads(json.dumps(db_en))
+    snapshot_ja = json.loads(json.dumps(db_ja))
+
+    normalize_categories(entry_en)
+
+    title_en = (entry_en.get("title") or "").strip()
+    desc_en = (entry_en.get("description") or "").strip()
+    title_ja = (title_ja or "").strip() or (entry_en.get("title_ja") or "").strip()
+    description_ja = (description_ja or "").strip() or (entry_en.get("description_ja") or "").strip()
+
+    if not title_ja or not description_ja:
+        return {"ok": False, "message": "日本語タイトル/日本語概要が空です", "entry_id": None}
+    if not title_en or not desc_en:
+        return {"ok": False, "message": "英語タイトル/英語概要が空です", "entry_id": None}
+
+    entry_en["title_ja"] = title_ja
+    entry_en["description_ja"] = description_ja
+
+    # JP表示用エントリを生成（IDはENと同一）
+    entry_ja = json.loads(json.dumps(entry_en))
+    entry_ja["title"] = title_ja
+    entry_ja["title_ja"] = title_ja
+    entry_ja["description"] = description_ja
+    entry_ja["description_ja"] = description_ja
+
+    # 品質チェック（EN側に適用）
+    if has_untranslated_marker(entry_en):
+        return {"ok": False, "message": "title/description に [未翻訳] マーカーが残っています", "entry_id": None}
+    if has_low_quality_source_url(entry_en):
+        return {"ok": False, "message": "URL がトップページ/不正形式の可能性があります", "entry_id": None}
+    pplx_bad = get_unreachable_perplexity_reason(entry_en)
+    if pplx_bad:
+        return {"ok": False, "message": f"URL の疎通チェック失敗: {pplx_bad}", "entry_id": None}
+
+    # 重複チェック（EN/JP両方）
+    is_dup_en, reason_en, _ = check_duplicate(entry_en, db_en["entries"])
+    if is_dup_en:
+        return {"ok": False, "message": f"重複エントリーです（EN: {reason_en}）", "entry_id": None}
+    is_dup_ja, reason_ja, _ = check_duplicate(entry_ja, db_ja["entries"])
+    if is_dup_ja:
+        return {"ok": False, "message": f"重複エントリーです（JP: {reason_ja}）", "entry_id": None}
+
+    db_en["entries"].insert(0, entry_en)
+    db_ja["entries"].insert(0, entry_ja)
+    try:
+        save_entries(db_en)
+        save_entries_ja(db_ja)
+    except Exception:
+        # 片側だけ保存された場合の保険
+        save_entries(snapshot_en)
+        save_entries_ja(snapshot_ja)
+        raise
+
+    return {
+        "ok": True,
+        "message": f"追加しました: {title_ja}",
+        "entry_id": entry_en.get("id", ""),
+    }
 
 
 def add_entries_from_file(filepath, reset=False):

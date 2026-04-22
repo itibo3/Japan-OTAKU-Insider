@@ -763,8 +763,8 @@ async function submitManualEntry() {
   const display_date = $("#manual-date").value;
   const thumbnail = $("#manual-thumbnail").value.trim();
 
-  if (!url || !(title_ja || title) || !(description_ja || description)) {
-    alert("URL・タイトル（日本語または英語）・概要（日本語または英語）は必須です");
+  if (!url || !title_ja || !description_ja) {
+    alert("URL・タイトル（日本語）・概要（日本語）は必須です");
     return;
   }
 
