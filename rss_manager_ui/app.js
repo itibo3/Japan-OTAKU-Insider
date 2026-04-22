@@ -1,3 +1,20 @@
+/* ─── サイト定義（将来の複数サイト対応用） ─── */
+const SITES = [
+  {
+    id: "joi",
+    name: "Japan OTAKU Insider",
+    shortName: "JOI",
+    url: "https://otaku.eidosfrontier.com",
+    accentHue: 174,        // teal — CSS var(--accent-hue) に対応
+    emoji: "🇯🇵",
+    active: true,
+  },
+  // 将来のサイト追加例:
+  // { id: "site-b", name: "Site B", shortName: "SB", url: "...", accentHue: 270, emoji: "🎮", active: false },
+];
+
+const CURRENT_SITE = SITES.find((s) => s.active) || SITES[0];
+
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => Array.from(document.querySelectorAll(sel));
 

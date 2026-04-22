@@ -3,36 +3,95 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Japan OTAKU Insider — RSS Manager V2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSS Manager V3 — Japan OTAKU Insider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Japan OTAKU Insider のコンテンツ管理ツール。RSSソースの管理、記事収集、手動追加をワンストップで。" />
   <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#020617" />
+  <meta name="theme-color" content="#050a14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- ═══════════════════════════════════════════════════════
+       Header
+       ═══════════════════════════════════════════════════════ -->
   <header class="app-header">
-    <div class="title-block">
-      <span class="logo">📡</span>
-      <div>
-        <h1>Japan OTAKU Insider — RSS Manager V2</h1>
-        <p class="subtitle">RSSソースをまとめて管理するためのローカル専用ツール</p>
+    <div class="header-top">
+      <!-- Site Selector (将来の複数サイト対応) -->
+      <div class="site-selector" id="site-selector">
+        <button class="site-selector-trigger" id="site-selector-trigger" type="button" aria-expanded="false" aria-haspopup="listbox">
+          <span class="site-emoji">🇯🇵</span>
+          <div class="site-info">
+            <div class="site-name">Japan OTAKU Insider</div>
+            <div class="site-url-label">otaku.eidosfrontier.com</div>
+          </div>
+          <span class="site-selector-chevron">▾</span>
+        </button>
+        <div class="site-selector-dropdown" id="site-selector-dropdown" role="listbox">
+          <button class="site-option active" role="option" aria-selected="true">
+            <span class="site-emoji">🇯🇵</span>
+            <div class="site-info">
+              <div class="site-name">Japan OTAKU Insider</div>
+              <div class="site-url-label">otaku.eidosfrontier.com</div>
+            </div>
+          </button>
+          <button class="site-option site-option-add" role="option">
+            <span>➕</span>
+            <span>サイトを追加…</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Header Meta -->
+      <div class="header-meta">
+        <span class="status-dot" title="ローカルサーバー接続中"></span>
+        <span class="version-badge">V3</span>
       </div>
     </div>
+
+    <!-- Tab Navigation -->
     <nav class="tabs">
-      <button class="tab active" data-tab="sources">📡 ソース管理</button>
-      <button class="tab" data-tab="articles">📥 収集記事</button>
-      <button class="tab" data-tab="manual-add">✏️ 手動追加</button>
-      <button class="tab disabled" data-tab="export" title="Phase C以降で有効になります">📤 エクスポート</button>
+      <button class="tab active" data-tab="sources">
+        <span class="tab-icon">📡</span>
+        <span class="tab-label">ソース管理</span>
+      </button>
+      <button class="tab" data-tab="articles">
+        <span class="tab-icon">📥</span>
+        <span class="tab-label">収集記事</span>
+      </button>
+      <button class="tab" data-tab="manual-add">
+        <span class="tab-icon">✏️</span>
+        <span class="tab-label">手動追加</span>
+      </button>
+      <button class="tab disabled" data-tab="export" title="Phase C以降で有効になります">
+        <span class="tab-icon">📤</span>
+        <span class="tab-label">エクスポート</span>
+      </button>
     </nav>
   </header>
 
+  <!-- ═══════════════════════════════════════════════════════
+       Main Content
+       ═══════════════════════════════════════════════════════ -->
   <main class="app-main">
+
+    <!-- ───────────────────────────────────────────────────
+         Tab 1: ソース管理
+         ─────────────────────────────────────────────────── -->
     <section id="tab-sources" class="tab-panel active">
+
+      <!-- Import Banner -->
       <div id="import-banner" class="import-banner" style="display:none;">
         <p>登録済みソースがありません。下のボタンで読み込んでください。</p>
         <button id="import-banner-button" class="primary">sources.json から読み込む（あみあみ・4gamer など 22 件）</button>
       </div>
+
+      <!-- RSS Search -->
       <section class="card">
         <h2>RSS検索と追加</h2>
         <div class="form-row">
@@ -42,15 +101,16 @@
         <div id="discover-result" class="result-box"></div>
       </section>
 
+      <!-- Registered Sources -->
       <section class="card">
         <div class="card-header">
           <h2>登録済みソース</h2>
-            <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-              <button id="import-sources-button" class="secondary" title="data/sources.json からソースを読み込み（DBが空の場合や不整合時に使用）">sources.jsonから読み込む</button>
-              <button id="export-sources-button" class="secondary" title="DBの内容をdata/sources.jsonに書き戻します（バックアップ作成あり）">sources.jsonへ書き戻す</button>
-              <button id="push-github-button" class="secondary" title="sources.jsonを書き戻してGitHubにコミット・プッシュ">GitHubにプッシュ</button>
-              <button id="check-all-button">全ソースの生存確認</button>
-            </div>
+          <div class="card-actions">
+            <button id="import-sources-button" class="secondary" title="data/sources.json からソースを読み込み（DBが空の場合や不整合時に使用）">sources.jsonから読み込む</button>
+            <button id="export-sources-button" class="secondary" title="DBの内容をdata/sources.jsonに書き戻します（バックアップ作成あり）">sources.jsonへ書き戻す</button>
+            <button id="push-github-button" class="secondary" title="sources.jsonを書き戻してGitHubにコミット・プッシュ">GitHubにプッシュ</button>
+            <button id="check-all-button">全ソースの生存確認</button>
+          </div>
         </div>
         <div class="table-wrap">
           <table class="sources-table">
@@ -71,19 +131,25 @@
       </section>
     </section>
 
+    <!-- ───────────────────────────────────────────────────
+         Tab 2: 収集記事
+         ─────────────────────────────────────────────────── -->
     <section id="tab-articles" class="tab-panel">
+
+      <!-- Fetch Controls -->
       <section class="card">
         <div class="card-header">
           <h2>記事収集</h2>
-          <div style="display:flex; gap:8px; align-items:center;">
-            <label class="muted" for="fetch-limit" style="margin:0;">1ソースあたり</label>
-            <input id="fetch-limit" type="number" min="1" max="50" value="5" style="width:90px;" />
+          <div class="card-actions">
+            <label class="muted" for="fetch-limit" style="margin:0; white-space:nowrap;">1ソースあたり</label>
+            <input id="fetch-limit" type="number" min="1" max="50" value="5" style="width:80px; flex:none;" />
             <button id="fetch-articles-button">収集</button>
           </div>
         </div>
         <div id="articles-fetch-summary" class="result-box" style="margin-top:10px;"></div>
       </section>
 
+      <!-- Articles List -->
       <section class="card">
         <div class="card-header">
           <h2>新着一覧（最新順）</h2>
@@ -93,85 +159,149 @@
       </section>
     </section>
 
+    <!-- ───────────────────────────────────────────────────
+         Tab 3: 手動追加
+         ─────────────────────────────────────────────────── -->
     <section id="tab-manual-add" class="tab-panel">
-      <section class="card">
-        <div class="card-header">
-          <h2>データ同期</h2>
-          <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-            <button id="manual-pull-latest-button" class="secondary">⬇️ 最新データを取得（git pull）</button>
-          </div>
-        </div>
-        <div id="manual-pull-result" class="result-box" style="display:none;"></div>
-      </section>
 
-      <section class="card">
-        <h2>URL から記事情報を取得</h2>
-        <div class="form-row">
-          <input id="manual-url" type="url" placeholder="追加したい記事の URL を貼り付け…" />
-          <button id="manual-fetch-meta-button">情報取得</button>
-        </div>
-        <div id="manual-fetch-result" class="result-box" style="display:none;"></div>
-      </section>
+      <div class="manual-add-grid">
+        <!-- Left Column: Data Sync + URL Fetch -->
+        <div>
+          <!-- Data Sync -->
+          <section class="card">
+            <div class="card-header">
+              <h2>データ同期</h2>
+              <div class="card-actions">
+                <button id="manual-pull-latest-button" class="secondary">⬇️ 最新データを取得（git pull）</button>
+              </div>
+            </div>
+            <div id="manual-pull-result" class="result-box" style="display:none;"></div>
+          </section>
 
-      <section class="card">
-        <h2>記事情報を確認・編集して追加</h2>
-        <div class="manual-form">
-          <label>タイトル（英語）<span class="req">必須</span>
-            <input id="manual-title" type="text" placeholder="Article title in English" />
-          </label>
-          <label>タイトル（日本語）
-            <input id="manual-title-ja" type="text" placeholder="日本語タイトル（省略可）" />
-          </label>
-          <label>概要（英語）<span class="req">必須</span>
-            <textarea id="manual-description" rows="4" placeholder="Article description in English"></textarea>
-          </label>
-          <div class="form-row-2col">
-            <label>カテゴリ<span class="req">必須</span>
-              <select id="manual-category">
-                <option value="anime">anime</option>
-                <option value="cafe">cafe</option>
-                <option value="cosplay">cosplay</option>
-                <option value="figure">figure</option>
-                <option value="game">game</option>
-                <option value="vtuber">vtuber</option>
-                <option value="other" selected>other</option>
-              </select>
-            </label>
-            <label>公開日
-              <input id="manual-date" type="date" />
-            </label>
-          </div>
-          <label>サムネイル URL（省略可）
-            <input id="manual-thumbnail" type="url" placeholder="https://..." />
-          </label>
-          <div id="manual-thumbnail-preview" style="display:none; margin-top:4px;">
-            <img id="manual-thumbnail-img" src="" alt="thumbnail preview" style="max-width:240px; border-radius:6px; border:1px solid #334;" />
-          </div>
+          <!-- URL Fetch -->
+          <section class="card">
+            <h2>URL から記事情報を取得</h2>
+            <div class="form-row">
+              <input id="manual-url" type="url" placeholder="追加したい記事の URL を貼り付け…" />
+              <button id="manual-fetch-meta-button">情報取得</button>
+            </div>
+            <div id="manual-fetch-result" class="result-box" style="display:none;"></div>
+          </section>
         </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;">
-          <button id="manual-add-button" class="primary">entries.json に追加</button>
-          <button id="manual-push-button" class="secondary" disabled>GitHub に公開</button>
+
+        <!-- Right Column (PC) / Below (Mobile): Edit & Submit Form -->
+        <div>
+          <section class="card">
+            <h2>記事情報を確認・編集して追加</h2>
+            <div class="manual-form">
+              <label>タイトル（英語）<span class="req">必須</span>
+                <input id="manual-title" type="text" placeholder="Article title in English" />
+              </label>
+              <label>タイトル（日本語）
+                <input id="manual-title-ja" type="text" placeholder="日本語タイトル（省略可）" />
+              </label>
+              <label>概要（英語）<span class="req">必須</span>
+                <textarea id="manual-description" rows="4" placeholder="Article description in English"></textarea>
+              </label>
+              <div class="form-row-2col">
+                <label>カテゴリ<span class="req">必須</span>
+                  <select id="manual-category">
+                    <option value="anime">anime</option>
+                    <option value="cafe">cafe</option>
+                    <option value="cosplay">cosplay</option>
+                    <option value="figure">figure</option>
+                    <option value="game">game</option>
+                    <option value="vtuber">vtuber</option>
+                    <option value="other" selected>other</option>
+                  </select>
+                </label>
+                <label>公開日
+                  <input id="manual-date" type="date" />
+                </label>
+              </div>
+              <label>サムネイル URL（省略可）
+                <input id="manual-thumbnail" type="url" placeholder="https://..." />
+              </label>
+              <div id="manual-thumbnail-preview" style="display:none; margin-top:4px;">
+                <img id="manual-thumbnail-img" src="" alt="thumbnail preview" style="max-width:240px; border-radius:8px; border:1px solid var(--border);" />
+              </div>
+            </div>
+            <div class="action-row">
+              <button id="manual-add-button" class="primary">entries.json に追加</button>
+              <button id="manual-push-button" class="secondary" disabled>GitHub に公開</button>
+            </div>
+            <div id="manual-add-result" class="result-box" style="display:none; margin-top:12px;"></div>
+          </section>
         </div>
-        <div id="manual-add-result" class="result-box" style="display:none; margin-top:10px;"></div>
-      </section>
+      </div>
     </section>
 
+    <!-- ───────────────────────────────────────────────────
+         Tab 4: エクスポート
+         ─────────────────────────────────────────────────── -->
     <section id="tab-export" class="tab-panel">
-      <p class="muted">エクスポートタブは Phase C で実装予定です。</p>
+      <section class="card">
+        <h2>エクスポート</h2>
+        <p class="muted">エクスポートタブは Phase C で実装予定です。</p>
+      </section>
     </section>
   </main>
 
+  <!-- ═══════════════════════════════════════════════════════
+       Footer
+       ═══════════════════════════════════════════════════════ -->
   <footer class="app-footer">
-    <span>RSS Manager V2 (Phase A) — ローカル専用</span>
+    <div class="footer-left">
+      <span>RSS Manager V3</span>
+      <span>—</span>
+      <span>ローカル専用</span>
+    </div>
+    <div class="footer-right">
+      <span>Japan OTAKU Insider</span>
+    </div>
   </footer>
 
+  <!-- ═══════════════════════════════════════════════════════
+       Scripts
+       ═══════════════════════════════════════════════════════ -->
   <script src="app.js"></script>
   <script>
+    // Service Worker registration
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
         .register("sw.js")
         .catch((err) => console.error("Service worker registration failed", err));
     }
+
+    // Site Selector dropdown toggle
+    (function () {
+      const trigger = document.getElementById("site-selector-trigger");
+      const dropdown = document.getElementById("site-selector-dropdown");
+      if (!trigger || !dropdown) return;
+
+      trigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isOpen = dropdown.classList.toggle("open");
+        trigger.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!dropdown.contains(e.target) && !trigger.contains(e.target)) {
+          dropdown.classList.remove("open");
+          trigger.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      // 「サイトを追加」はプレースホルダー
+      const addBtn = dropdown.querySelector(".site-option-add");
+      if (addBtn) {
+        addBtn.addEventListener("click", () => {
+          alert("複数サイト対応は将来のアップデートで実装予定です。");
+          dropdown.classList.remove("open");
+          trigger.setAttribute("aria-expanded", "false");
+        });
+      }
+    })();
   </script>
 </body>
 
