@@ -236,6 +236,21 @@
             "update_frequency": "daily"
         },
         {
+            "id": "cosplaytimes-jp",
+            "name": "コスプレタイムズ｜コスプレ・カメラマンのためのコスプレ情報サイト",
+            "url": "https://cosplaytimes.jp/",
+            "rss": "https://cosplaytimes.jp/feed/",
+            "type": "rss",
+            "categories": [
+                "cosplay"
+            ],
+            "content_tags": [
+                "cosplaytimes-jp"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
             "id": "cospot-media-com",
             "name": "コスプレ情報メディアブログサイト -コスポットメディア-｜Cospot Media",
             "url": "https://cospot-media.com/",
