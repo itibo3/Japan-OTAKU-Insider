@@ -439,7 +439,7 @@ class RssManagerHandler(SimpleHTTPRequestHandler):
 
         run_git("pull", "--rebase", "origin", "main", timeout=30)
 
-        r = run_git("push", "origin", "HEAD", timeout=90)
+        r = run_git("push", "origin", "HEAD:main", timeout=90)
         if r.returncode != 0:
             self.json_response({"error": f"git push 失敗: {(r.stderr or r.stdout or '認証エラーやネットワークを確認').strip()[:300]}"}, status=500)
             return
@@ -489,7 +489,7 @@ class RssManagerHandler(SimpleHTTPRequestHandler):
 
         run_git("pull", "--rebase", "origin", "main", timeout=30)
 
-        r = run_git("push", "origin", "HEAD", timeout=90)
+        r = run_git("push", "origin", "HEAD:main", timeout=90)
         if r.returncode != 0:
             self.json_response({
                 "error": f"git push 失敗: {(r.stderr or r.stdout or '認証エラーやネットワークを確認').strip()[:300]}"
