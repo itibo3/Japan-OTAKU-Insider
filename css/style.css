@@ -296,6 +296,11 @@ body {
   color: var(--accent-cyan);
 }
 
+.cat-cosplay {
+  background: rgba(255, 102, 204, 0.18);
+  color: #ff66cc;
+}
+
 .cat-event {
   background: rgba(0, 255, 136, 0.15);
   color: var(--accent-green);

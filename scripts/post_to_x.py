@@ -34,6 +34,7 @@ SITE_URL = "https://otaku.eidosfrontier.com/"
 CATEGORY_EMOJI = {
     "cafe": "\u2615",
     "figure": "\U0001F9F8",
+    "cosplay": "\U0001F457",
     "event": "\U0001F3AA",
     "anime": "\U0001F4FA",
     "vtuber": "\U0001F3A4",
@@ -48,6 +49,7 @@ COMMON_HASHTAG = "#JapanOTAKUInsider"
 CATEGORY_HASHTAGS = {
     "cafe":       ["#CollabCafe",   "#JapanAnime"],
     "figure":     ["#AnimeFigure",  "#JapanFigure"],
+    "cosplay":    ["#Cosplay",      "#Cosplayer"],
     "event":      ["#AnimeEvent",   "#JapanEvent"],
     "anime":      ["#Anime",        "#AnimeSeason"],
     "vtuber":     ["#VTuber",       "#VTuberEN"],

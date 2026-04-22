@@ -7,6 +7,7 @@ const AMAZON_ASSOCIATE_TAG = 'eidosfrontier-22';
 function categorySearchHint(cat, lang) {
     const hintsJa = {
         figure: 'フィギュア グッズ',
+        cosplay: 'コスプレ 衣装',
         game: 'ゲーム ソフト',
         anime: 'Blu-ray グッズ',
         vtuber: 'VTuber グッズ',
@@ -16,6 +17,7 @@ function categorySearchHint(cat, lang) {
     };
     const hintsEn = {
         figure: 'figure merch',
+        cosplay: 'cosplay costume',
         game: 'game software',
         anime: 'anime blu-ray merch',
         vtuber: 'vtuber merch',
@@ -57,7 +59,7 @@ function getCategories(entry) {
 }
 
 function categoryLabel(cat) {
-    return { cafe: 'Collab Cafe', figure: 'Figure', event: 'Event', anime: 'Anime News', vtuber: 'VTuber', game: 'Game News', 'otaku-news': 'OTAKU NEWS', other: 'Other topics' }[cat] || cat;
+    return { cafe: 'Collab Cafe', figure: 'Figure', cosplay: 'Cosplay', event: 'Event', anime: 'Anime News', vtuber: 'VTuber', game: 'Game News', 'otaku-news': 'OTAKU NEWS', other: 'Other topics' }[cat] || cat;
 }
 
 function renderCategoryPills(entry) {
