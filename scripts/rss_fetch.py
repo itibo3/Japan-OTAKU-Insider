@@ -52,6 +52,11 @@ META_OG_IMAGE_SECURE_RE = re.compile(
 
 IMG_TAG_RE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
 
+COSPLAY_KEYWORDS = re.compile(
+    r"(コスプレ|コスプレイヤー|コスプレイ|コスチューム|仮装|cosplay|cosplayer)",
+    re.IGNORECASE
+)
+
 VTUBER_KEYWORDS = re.compile(
     r"(VTuber|Vチューバー|バーチャルYouTuber|ホロライブ|hololive|にじさんじ|nijisanji|ぶいすぽ|あおぎり|ななしいんく|のりプロ|ReGLOSS|Neo-Porte|ネオポルテ|兎田ぺこら|宝鐘マリン|さくらみこ|星街すいせい|白上フブキ|湊あくあ|戌神ころね|猫又おかゆ|大空スバル|白銀ノエル|紫咲シオン|百鬼あやめ|癒月ちょこ|大神ミオ|天音かなた|角巻わため|常闇トワ|姫森ルーナ|雪花ラミィ|桃鈴ねね|獅白ぼたん|尾丸ポルカ|ラプラス・ダークネス|鷹嶺ルイ|博衣こより|沙花叉クロヱ|風真いろは|月ノ美兎|剣持刀也|葛葉|叶|壱百満天原サロメ|星川サラ|ピーナッツくん|ぽんぽこ|名取さな|しぐれうい)",
     re.IGNORECASE
@@ -357,9 +362,16 @@ def fetch_source(
             print(f"  SKIP (重複): {title_ja[:50]}")
             continue
 
-        # 自動タグ付け（VTuber）
+        # 自動タグ付け（コスプレ・VTuber）
         cats = source.get("categories", [category]).copy()
         item_tags = content_tags.copy()
+
+        # タイトルに「コスプレ」が含まれていれば cosplay を主カテゴリに設定
+        if COSPLAY_KEYWORDS.search(title_ja):
+            if "cosplay" not in cats:
+                cats = ["cosplay"] + [c for c in cats if c != "cosplay"]
+            if "cosplay" not in item_tags:
+                item_tags.append("cosplay")
         
         if "vtuber" not in cats and VTUBER_KEYWORDS.search(title_ja + " " + summary):
             cats.append("vtuber")
