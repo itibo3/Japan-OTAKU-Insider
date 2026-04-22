@@ -1,0 +1,34 @@
+{
+  "name": "JOI RSS Manager",
+  "short_name": "JOI Manager",
+  "description": "Japan OTAKU Insider の記事管理ツール",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "share_target": {
+    "action": "./",
+    "method": "GET",
+    "params": {
+      "url": "shared_url",
+      "text": "shared_text",
+      "title": "shared_title"
+    }
+  }
+}

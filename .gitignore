@@ -33,11 +33,11 @@ node_modules/
 package.json
 package-lock.json
 
-# 非公開：RSS Manager V2（ローカル専用ツール）
-rss_manager.py
-rss_manager/
-rss_manager_ui/
+# 非公開：RSS Manager V2 実行時データ（ローカル専用）
 rss_manager_data/
+
+# RSS Manager V2 の venv は除外
+rss_manager/.venv/
 
 # 非公開：仮想環境
 .venv/
