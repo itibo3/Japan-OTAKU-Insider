@@ -206,6 +206,21 @@
             "update_frequency": "daily"
         },
         {
+            "id": "cos-p-com",
+            "name": "コスP! | コスプレ情報サイト！",
+            "url": "https://cos-p.com/",
+            "rss": "https://cos-p.com/feed/",
+            "type": "rss",
+            "categories": [
+                "cosplay"
+            ],
+            "content_tags": [
+                "cos-p-com"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
             "id": "cosplaymode-net",
             "name": "ニュース | COSPLAY MODE",
             "url": "https://cosplaymode.net/category/news/",
