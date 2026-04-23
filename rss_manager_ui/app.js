@@ -733,11 +733,9 @@ async function fetchEntryMeta() {
     // フォームに自動入力（日本語欄を優先して埋める）
     if (meta.title) {
       if (!$("#manual-title-ja").value) $("#manual-title-ja").value = meta.title;
-      if (!$("#manual-title").value) $("#manual-title").value = meta.title;
     }
     if (meta.description) {
       if (!$("#manual-description-ja").value) $("#manual-description-ja").value = meta.description;
-      if (!$("#manual-description").value) $("#manual-description").value = meta.description;
     }
     if (meta.og_image && !$("#manual-thumbnail").value) {
       $("#manual-thumbnail").value = meta.og_image;

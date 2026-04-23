@@ -388,20 +388,26 @@ class RssManagerHandler(SimpleHTTPRequestHandler):
                 return
 
             note_parts = []
-            if not title:
+            if not title or _looks_japanese(title):
                 translated_title = _translate_ja_to_en(title_ja)
                 if translated_title:
                     title = translated_title
-                    note_parts.append("title を JA→EN 自動翻訳")
+                    if _looks_japanese((payload.get("title") or "").strip()):
+                        note_parts.append("title(EN欄の日本語) を JA→EN 自動翻訳")
+                    else:
+                        note_parts.append("title を JA→EN 自動翻訳")
                 else:
                     title = title_ja
                     note_parts.append("title 翻訳失敗のため日本語を使用")
 
-            if not description:
+            if not description or _looks_japanese(description):
                 translated_desc = _translate_ja_to_en(description_ja)
                 if translated_desc:
                     description = translated_desc
-                    note_parts.append("description を JA→EN 自動翻訳")
+                    if _looks_japanese((payload.get("description") or "").strip()):
+                        note_parts.append("description(EN欄の日本語) を JA→EN 自動翻訳")
+                    else:
+                        note_parts.append("description を JA→EN 自動翻訳")
                 else:
                     description = description_ja
                     note_parts.append("description 翻訳失敗のため日本語を使用")
