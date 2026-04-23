@@ -566,6 +566,21 @@
             "update_frequency": "weekly"
         },
         {
+            "id": "paselabo-pasela-co-jp",
+            "name": "paselabo-pasela-co-jp",
+            "url": "https://paselabo.pasela.co.jp/",
+            "rss": "https://paselabo.pasela.co.jp/feed/",
+            "type": "rss",
+            "categories": [
+                "cafe"
+            ],
+            "content_tags": [
+                "paselabo-pasela-co-jp"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
             "id": "prtimes-kotobukiya",
             "name": "PR TIMES（コトブキヤ）",
             "url": "https://prtimes.jp/main/html/searchrlp/company_id/74603",
