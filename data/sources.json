@@ -173,6 +173,21 @@
             "update_frequency": "weekly"
         },
         {
+            "id": "automaton-media-com",
+            "name": "AUTOMATON | オートマトンは日本・海外のゲーム情報サイト。ニュースやレビューを発信中 - AUTOMATON",
+            "url": "https://automaton-media.com/",
+            "rss": "https://automaton-media.com/feed/",
+            "type": "rss",
+            "categories": [
+                "game"
+            ],
+            "content_tags": [
+                "automaton-media-com"
+            ],
+            "language": "ja",
+            "update_frequency": "daily"
+        },
+        {
             "id": "collabo-cafe",
             "name": "Collabo Cafe",
             "url": "https://collabo-cafe.com",
