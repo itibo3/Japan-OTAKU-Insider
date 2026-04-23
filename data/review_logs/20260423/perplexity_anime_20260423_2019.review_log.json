@@ -1,0 +1,50 @@
+[
+  {
+    "index": 0,
+    "id": "anime-202604232019-pplx-078e53",
+    "ok": true,
+    "reason_ja": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://animeanime.jp/article/2026/04/22/98274.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://animeanime.jp/article/2026/04/22/98274.html",
+    "page_title": "TVアニメ「乙女ゲー世界はモブに厳しい世界です」第2期7月放送！ キービジュアルとPV第1弾が公開 | アニメ！アニメ！",
+    "published_date": "2026-04-22T17:45:04+09:00",
+    "og_image": "https://animeanime.jp/imgs/ogp_f/871714.jpg"
+  },
+  {
+    "index": 1,
+    "id": "anime-202604232019-pplx-b696ef",
+    "ok": true,
+    "reason_ja": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://natalie.mu/comic/news/669292",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://natalie.mu/comic/news/669292",
+    "page_title": "「モブせか2」放送時期が7月に決定、キービジュアルでリオンが“両手に花”状態（動画あり） - コミックナタリー",
+    "published_date": "2026-04-22T17:00:00+09:00",
+    "og_image": "https://ogre.natalie.mu/media/news/comic/2026/0422/mobseka2_kv_kokuchi_s.jpg?impolicy=twitter_card_face_crop"
+  },
+  {
+    "index": 2,
+    "id": "anime-202604232019-pplx-c409b9",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLの内容不一致疑い: page_title=【2026年春アニメ一覧】2026年4月期 放送予定・新作・続編アニメ最新情報まとめ【全68作品】",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://www.oricon.co.jp/anime/2026_spring/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.oricon.co.jp/anime/2026_spring/",
+    "page_title": "【2026年春アニメ一覧】2026年4月期 放送予定・新作・続編アニメ最新情報まとめ【全68作品】",
+    "published_date": "2026-02-27T12:00:00+09:00",
+    "og_image": "https://contents.oricon.co.jp/anime/img/season/2026_spring.jpg"
+  }
+]
