@@ -1,4 +1,4 @@
-const CACHE_NAME = "rss-manager-v7-pwa";
+const CACHE_NAME = "rss-manager-v8-pwa";
 const ASSETS = [
   "./",
   "./index.html",
