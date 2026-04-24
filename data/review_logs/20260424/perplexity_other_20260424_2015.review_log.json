@@ -1,0 +1,50 @@
+[
+  {
+    "index": 0,
+    "id": "other-202604242015-pplx-f7f553",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLの内容不一致疑い: page_title=Klara Charmwood (クララ チャームウッド) - にじさんじ Wiki*",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://wikiwiki.jp/nijisanji/Klara%20Charmwood",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://wikiwiki.jp/nijisanji/Klara%20Charmwood",
+    "page_title": "Klara Charmwood (クララ チャームウッド) - にじさんじ Wiki*",
+    "published_date": "",
+    "og_image": "https://icon.wikiwiki.jp/symbolicon/nijisanji/ogCustomImage/376a39b1867e.png"
+  },
+  {
+    "index": 1,
+    "id": "other-202604242015-pplx-c8ea5c",
+    "ok": true,
+    "reason_ja": "",
+    "primary_category": "anime",
+    "category_before": "other",
+    "source_url": "https://collabo-cafe.com/events/collabo/kimiuso-resale-armabianca-anime-store-goods2026/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://collabo-cafe.com/events/collabo/kimiuso-resale-armabianca-anime-store-goods2026/",
+    "page_title": "「四月は​君の​嘘」原作＆アニメ版人気グッズ、7月に一挙再販決定!",
+    "published_date": "2026-04-23T10:00:09+00:00",
+    "og_image": "https://collabo-cafe.com/wp-content/uploads/c478b1a6dedb96603a486610161ab963-228.jpg"
+  },
+  {
+    "index": 2,
+    "id": "other-202604242015-pplx-9325cd",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLの内容不一致疑い: page_title=ASCII.jp － 記事アーカイブ",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://ascii.jp/archive/26/202604/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://ascii.jp/archive/26/202604/",
+    "page_title": "ASCII.jp － 記事アーカイブ",
+    "published_date": "",
+    "og_image": ""
+  }
+]
