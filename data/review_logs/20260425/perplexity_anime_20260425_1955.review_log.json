@@ -1,0 +1,34 @@
+[
+  {
+    "index": 0,
+    "id": "anime-202604251955-pplx-c409b9",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLが古い: published_date=2026-02-27T12:00:00+",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://www.oricon.co.jp/anime/2026_spring/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.oricon.co.jp/anime/2026_spring/",
+    "page_title": "【2026年春アニメ一覧】2026年4月期 放送予定・新作・続編アニメ最新情報まとめ【全68作品】",
+    "published_date": "2026-02-27T12:00:00+09:00",
+    "og_image": "https://contents.oricon.co.jp/anime/img/season/2026_spring.jpg"
+  },
+  {
+    "index": 1,
+    "id": "anime-202604251955-pplx-877d67",
+    "ok": true,
+    "reason_ja": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://animeanime.jp/article/2026/04/25/98363.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://animeanime.jp/article/2026/04/25/98363.html",
+    "page_title": "「ヒロアカ」最終回から8年後のデクたちやトガヒミコの姿も！「More」PV公開 | アニメ！アニメ！",
+    "published_date": "2026-04-25T17:30:04+09:00",
+    "og_image": "https://animeanime.jp/imgs/ogp_f/873022.jpg"
+  }
+]
