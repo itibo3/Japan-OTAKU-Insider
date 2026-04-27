@@ -1,0 +1,50 @@
+[
+  {
+    "index": 0,
+    "id": "other-202604272053-pplx-ce844a",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLがHTTP 202: https://livepocket.jp/e/9k3nx",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://livepocket.jp/e/9k3nx",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 202,
+    "final_url": "https://livepocket.jp/e/9k3nx",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "other-202604272053-pplx-a23ab4",
+    "ok": true,
+    "reason_ja": "",
+    "primary_category": "cafe",
+    "category_before": "other",
+    "source_url": "https://collabo-cafe.com/events/collabo/a3-sanrio-characters-pop-up-store-tokyo-osaka-2026/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://collabo-cafe.com/events/collabo/a3-sanrio-characters-pop-up-store-tokyo-osaka-2026/",
+    "page_title": "A3!×サンリオ ポップアップストア in 東京/大阪 4月24日より開催！",
+    "published_date": "2026-04-23T07:30:31+00:00",
+    "og_image": "https://collabo-cafe.com/wp-content/uploads/0b8e82e83aa6c19bf42f30accc95d42f.jpg"
+  },
+  {
+    "index": 2,
+    "id": "other-202604272053-pplx-88dd90",
+    "ok": true,
+    "reason_ja": "",
+    "primary_category": "cafe",
+    "category_before": "other",
+    "source_url": "https://collabo-cafe.com/events/collabo/blue-lock-formal-pop-up-store-marui-tokyo2026/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://collabo-cafe.com/events/collabo/blue-lock-formal-pop-up-store-marui-tokyo2026/",
+    "page_title": "ブルーロック スーツ ポップアップストア in 新宿 5月1日より開催!",
+    "published_date": "2026-04-23T06:30:37+00:00",
+    "og_image": "https://collabo-cafe.com/wp-content/uploads/293f7beb7f2013ed035f0a00a1396b45.jpeg"
+  }
+]

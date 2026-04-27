@@ -1,0 +1,34 @@
+[
+  {
+    "index": 0,
+    "id": "anime-202604272053-pplx-c409b9",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLの内容不一致疑い: page_title=【2026年春アニメ一覧】2026年4月期 放送予定・新作・続編アニメ最新情報まとめ【全68作品】",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://www.oricon.co.jp/anime/2026_spring/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.oricon.co.jp/anime/2026_spring/",
+    "page_title": "【2026年春アニメ一覧】2026年4月期 放送予定・新作・続編アニメ最新情報まとめ【全68作品】",
+    "published_date": "2026-02-27T12:00:00+09:00",
+    "og_image": "https://contents.oricon.co.jp/anime/img/season/2026_spring.jpg"
+  },
+  {
+    "index": 1,
+    "id": "anime-202604272053-pplx-91c474",
+    "ok": true,
+    "reason_ja": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000002690.000048095.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000002690.000048095.html",
+    "page_title": "TVアニメ『乙女ゲー世界はモブに厳しい世界です２』2026年7月放送開始決定！",
+    "published_date": "2026-04-22 17:00:02",
+    "og_image": "https://prcdn.freetls.fastly.net/release_image/48095/2690/48095-2690-5e3bd2150d9a16ff416777067c5a913f-1200x1697.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  }
+]
