@@ -191,6 +191,69 @@ def call_gemini_decisions(api_key: str, model: str, entries: list[dict[str, Any]
     return decisions
 
 
+def _list_generatecontent_models(api_key: str) -> list[str]:
+    """このAPIキーで v1beta generateContent に使えるモデル名一覧を返す。"""
+    url = "https://generativelanguage.googleapis.com/v1beta/models"
+    try:
+        resp = requests.get(url, params={"key": api_key}, timeout=45)
+        if resp.status_code >= 400:
+            print(f"[Gemini] listModels 失敗: HTTP {resp.status_code}", file=sys.stderr)
+            return []
+        data = resp.json()
+    except Exception as e:
+        print(f"[Gemini] listModels 失敗: {e}", file=sys.stderr)
+        return []
+
+    out: list[str] = []
+    for m in data.get("models", []) or []:
+        if not isinstance(m, dict):
+            continue
+        methods = m.get("supportedGenerationMethods") or []
+        if "generateContent" not in methods:
+            continue
+        name = str(m.get("name") or "")
+        if name.startswith("models/"):
+            name = name.split("/", 1)[1]
+        if name and name not in out:
+            out.append(name)
+    return out
+
+
+def _build_model_candidates(preferred: str, available: list[str]) -> list[str]:
+    """
+    モデル候補を優先順で返す。
+    方針:
+    - Gemini 3.1 Flash-Lite 系を最優先
+    - 旧系列フォールバックは 2.5 系まで
+    """
+    cands: list[str] = []
+
+    def add(m: str) -> None:
+        if m and m not in cands:
+            cands.append(m)
+
+    # 明示指定（Secrets等）は最優先で尊重
+    add((preferred or "").strip())
+
+    available_set = set(available or [])
+    # 3.1 Flash-Lite 系（preview含む）
+    for m in sorted(available_set):
+        if m.startswith("gemini-3.1-flash-lite"):
+            add(m)
+    # 2.5 系（旧系列の上限）
+    for m in ("gemini-2.5-flash", "gemini-2.5-flash-lite"):
+        if m in available_set:
+            add(m)
+    for m in sorted(available_set):
+        if m.startswith("gemini-2.5-flash") and m not in cands:
+            add(m)
+
+    # listModels が取れない/不完全な時の保険（2.5まで）
+    add(DEFAULT_GEMINI_MODEL)
+    add("gemini-2.5-flash-lite")
+    return cands
+
+
 def apply_decisions(entries: list[dict[str, Any]], decisions: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     """通過したエントリと、ログ用の行を返す。Perplexity 由来かつ通過分は primary_category で categories を上書きする。"""
     ok_by_index: dict[int, bool] = {}
@@ -532,16 +595,13 @@ def main() -> None:
         decisions = None
         if review_candidates:
             candidate_entries = [e for _, e in review_candidates]
-            model_candidates: list[str] = []
-            for m in (
-                args.model,
-                DEFAULT_GEMINI_MODEL,
-                "gemini-2.5-flash-lite",
-                "gemini-2.0-flash",
-                "gemini-1.5-flash",
-            ):
-                if m and m not in model_candidates:
-                    model_candidates.append(m)
+            available_models = _list_generatecontent_models(api_key)
+            model_candidates = _build_model_candidates(args.model, available_models)
+            if available_models:
+                print(
+                    f"Gemini listModels 取得: {len(available_models)}件 / 候補: {model_candidates[:5]}",
+                    file=sys.stderr,
+                )
             for model in model_candidates:
                 if model in tried:
                     continue

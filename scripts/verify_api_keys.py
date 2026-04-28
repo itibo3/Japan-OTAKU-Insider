@@ -42,17 +42,61 @@ def _ng(name: str, msg: str) -> Tuple[bool, str]:
     return False, f"❌ {name}: {msg}"
 
 
+def _list_generatecontent_models(api_key: str) -> list[str]:
+    url = "https://generativelanguage.googleapis.com/v1beta/models"
+    try:
+        resp = requests.get(url, params={"key": api_key}, timeout=45)
+        if resp.status_code >= 400:
+            return []
+        data = resp.json()
+    except Exception:
+        return []
+    out: list[str] = []
+    for m in data.get("models", []) or []:
+        if not isinstance(m, dict):
+            continue
+        methods = m.get("supportedGenerationMethods") or []
+        if "generateContent" not in methods:
+            continue
+        name = str(m.get("name") or "")
+        if name.startswith("models/"):
+            name = name.split("/", 1)[1]
+        if name and name not in out:
+            out.append(name)
+    return out
+
+
+def _build_model_candidates(preferred: str, available: list[str]) -> list[str]:
+    cands: list[str] = []
+
+    def add(m: str) -> None:
+        if m and m not in cands:
+            cands.append(m)
+
+    add((preferred or "").strip())
+    available_set = set(available or [])
+    for m in sorted(available_set):
+        if m.startswith("gemini-3.1-flash-lite"):
+            add(m)
+    for m in ("gemini-2.5-flash", "gemini-2.5-flash-lite"):
+        if m in available_set:
+            add(m)
+    for m in sorted(available_set):
+        if m.startswith("gemini-2.5-flash") and m not in cands:
+            add(m)
+    add(DEFAULT_GEMINI_MODEL)
+    add("gemini-2.5-flash-lite")
+    return cands
+
+
 def check_gemini() -> Tuple[bool, str]:
     key = os.getenv("GEMINI_API_KEY", "").strip()
     if not key:
         return _ng("Gemini", "GEMINI_API_KEY が未設定")
 
     preferred = _env_or_default("GEMINI_MODEL", DEFAULT_GEMINI_MODEL)
-    # モデル名変更が頻繁なため、候補を順に試す
-    candidates = []
-    for m in (preferred, DEFAULT_GEMINI_MODEL, "gemini-2.5-flash-lite", "gemini-2.0-flash", "gemini-1.5-flash"):
-        if m and m not in candidates:
-            candidates.append(m)
+    available = _list_generatecontent_models(key)
+    candidates = _build_model_candidates(preferred, available)
 
     last_err = ""
     for model in candidates:
@@ -67,7 +111,8 @@ def check_gemini() -> Tuple[bool, str]:
             timeout=45,
         )
         if resp.status_code < 400:
-            return _ok("Gemini", f"APIキーで generateContent 成功 ({model})")
+            picked = f"{model} / listModels={len(available)}件" if available else model
+            return _ok("Gemini", f"APIキーで generateContent 成功 ({picked})")
         last_err = f"{model}: HTTP {resp.status_code} {resp.text[:120]}"
     return _ng("Gemini", last_err or "モデル候補がすべて失敗")
 

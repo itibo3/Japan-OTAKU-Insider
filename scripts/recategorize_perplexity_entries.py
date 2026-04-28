@@ -29,7 +29,9 @@ if str(_SCRIPTS) not in sys.path:
 from gemini_flash_review import (  # noqa: E402
     DEFAULT_GEMINI_MODEL,
     _entry_primary_fallback,
+    _list_generatecontent_models,
     _parse_json_object,
+    _build_model_candidates,
     normalize_primary_category,
 )
 
@@ -103,19 +105,10 @@ def call_gemini_reclassify(api_key: str, model: str, batch: list[dict[str, Any]]
     return results
 
 
-def _model_fallback_chain(preferred: str) -> list[str]:
-    """Gemini のモデル名が環境で 404 になる場合に次を試す（daily 検閲と同趣旨）。"""
-    chain: list[str] = []
-    for m in (
-        (preferred or "").strip(),
-        DEFAULT_GEMINI_MODEL,
-        "gemini-2.5-flash-lite",
-        "gemini-2.0-flash",
-        "gemini-1.5-flash",
-    ):
-        if m and m not in chain:
-            chain.append(m)
-    return chain
+def _model_fallback_chain(preferred: str, api_key: str) -> list[str]:
+    """listModels から候補を組み立てる（旧系列は 2.5 まで）。"""
+    available = _list_generatecontent_models(api_key)
+    return _build_model_candidates(preferred, available)
 
 
 def collect_perplexity_active(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -140,7 +133,7 @@ def run_classification(
 ) -> list[tuple[str, str, str]]:
     """[(id, old_cat, new_cat), ...]"""
     changes: list[tuple[str, str, str]] = []
-    models = _model_fallback_chain(model)
+    models = _model_fallback_chain(model, api_key)
     for start in range(0, len(targets), batch_size):
         batch = targets[start : start + batch_size]
         raw = None
