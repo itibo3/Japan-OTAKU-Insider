@@ -106,7 +106,13 @@ def call_gemini_reclassify(api_key: str, model: str, batch: list[dict[str, Any]]
 def _model_fallback_chain(preferred: str) -> list[str]:
     """Gemini のモデル名が環境で 404 になる場合に次を試す（daily 検閲と同趣旨）。"""
     chain: list[str] = []
-    for m in ((preferred or "").strip(), DEFAULT_GEMINI_MODEL, "gemini-2.5-flash-lite", "gemini-1.5-flash"):
+    for m in (
+        (preferred or "").strip(),
+        DEFAULT_GEMINI_MODEL,
+        "gemini-2.5-flash-lite",
+        "gemini-2.0-flash",
+        "gemini-1.5-flash",
+    ):
         if m and m not in chain:
             chain.append(m)
     return chain

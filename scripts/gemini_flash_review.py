@@ -22,7 +22,7 @@ from typing import Any
 from urllib.parse import urlparse
 
 import requests
-DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
+DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"
 URL_CHECK_TIMEOUT = 12
 URL_CHECK_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; JOI-PerplexityVerifier/1.0)",
@@ -532,7 +532,17 @@ def main() -> None:
         decisions = None
         if review_candidates:
             candidate_entries = [e for _, e in review_candidates]
-            for model in [args.model, "gemini-2.5-flash-lite", "gemini-1.5-flash"]:
+            model_candidates: list[str] = []
+            for m in (
+                args.model,
+                DEFAULT_GEMINI_MODEL,
+                "gemini-2.5-flash-lite",
+                "gemini-2.0-flash",
+                "gemini-1.5-flash",
+            ):
+                if m and m not in model_candidates:
+                    model_candidates.append(m)
+            for model in model_candidates:
                 if model in tried:
                     continue
                 tried.append(model)

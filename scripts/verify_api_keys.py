@@ -25,7 +25,7 @@ import requests
 from google.auth.transport.requests import Request
 from google.oauth2 import service_account
 
-DEFAULT_GEMINI_MODEL = "gemini-3.1-flash-lite"
+DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"
 DEFAULT_ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
 
 
@@ -50,7 +50,7 @@ def check_gemini() -> Tuple[bool, str]:
     preferred = _env_or_default("GEMINI_MODEL", DEFAULT_GEMINI_MODEL)
     # モデル名変更が頻繁なため、候補を順に試す
     candidates = []
-    for m in (preferred, "gemini-2.5-flash-lite", "gemini-1.5-flash"):
+    for m in (preferred, DEFAULT_GEMINI_MODEL, "gemini-2.5-flash-lite", "gemini-2.0-flash", "gemini-1.5-flash"):
         if m and m not in candidates:
             candidates.append(m)
 
