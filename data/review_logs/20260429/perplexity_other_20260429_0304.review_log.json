@@ -1,0 +1,34 @@
+[
+  {
+    "index": 0,
+    "id": "other-202604290304-pplx-1d9dfc",
+    "ok": false,
+    "reason_ja": "Perplexity由来URLでOG画像取得不可",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://collabo-cafe.com/events/collabo/hundred-note-3rd-anniversary-popup-store-shibuya109-2026/?amp=1",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://collabo-cafe.com/events/collabo/hundred-note-3rd-anniversary-popup-store-shibuya109-2026/?amp=1",
+    "page_title": "HUNDRED NOTE 3周年 ストア in SHIBUYA109 4月29日より開催!",
+    "published_date": "2026-04-28T10:00:28+09:00",
+    "og_image": ""
+  },
+  {
+    "index": 1,
+    "id": "other-202604290304-pplx-a4d9b6",
+    "ok": false,
+    "reason_ja": "オタク文化と無関係な一般のポップアップストアである可能性が高い。",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://livepocket.jp/e/195-c",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://livepocket.jp/e/195-c",
+    "page_title": "2026 SS POPUP STORE in Tokyoのチケット情報｜ライブポケット",
+    "published_date": "",
+    "og_image": "https://livepocket.jp/public/event_image/filename/295523/71b256767e5e02729fd4855ec683fdb3da7fc0fcd198070a809b821db234369e.webp"
+  }
+]
