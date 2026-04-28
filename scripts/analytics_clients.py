@@ -80,7 +80,15 @@ def youtube_access_token(client_id: str, client_secret: str, refresh_token: str)
         timeout=45,
     )
     if resp.status_code >= 400:
-        raise RuntimeError(f"YouTube token refresh HTTP {resp.status_code}: {resp.text[:200]}")
+        detail = resp.text[:300]
+        try:
+            err = (resp.json() or {}).get("error") or ""
+            desc = (resp.json() or {}).get("error_description") or ""
+            if err or desc:
+                detail = f"error={err} description={desc}".strip()
+        except Exception:
+            pass
+        raise RuntimeError(f"YouTube token refresh HTTP {resp.status_code}: {detail}")
     token = (resp.json() or {}).get("access_token") or ""
     if not token:
         raise RuntimeError("YouTube access_token が空")

@@ -103,7 +103,14 @@ def main() -> None:
         else:
             notes.append(f"YouTube Shorts 取得不可: {s1.get('reason') or s2.get('reason')}")
     except Exception as e:
-        notes.append(f"YouTube 取得不可: {e}")
+        err = str(e)
+        if "invalid_grant" in err or "token refresh HTTP 400" in err:
+            notes.append(
+                "YouTube 取得不可: Refresh Token が失効/無効化。"
+                "Google Cloud で再認可して `YOUTUBE_REFRESH_TOKEN` を更新してください。"
+            )
+        else:
+            notes.append(f"YouTube 取得不可: {e}")
 
     lines = [
         f"📈 日次アナリティクス（{day1.isoformat()} vs {day2.isoformat()}）",
