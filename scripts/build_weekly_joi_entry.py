@@ -21,6 +21,8 @@ except Exception:  # pragma: no cover - optional runtime dependency fallback
     GoogleTranslator = None
 
 JST = timezone(timedelta(hours=9))
+ROOT = Path(__file__).resolve().parent.parent
+ENTRIES_FILE = ROOT / "data" / "entries.json"
 
 
 def _contains_japanese(text: str) -> bool:
@@ -88,6 +90,59 @@ def _translate_markdown_ja_to_en(md: str) -> str:
     return out
 
 
+def _extract_weekly_vol_from_text(text: str) -> int | None:
+    s = (text or "").strip()
+    if not s:
+        return None
+    # 例: Vol.16 / Vol 16 / #16 / 第16号 / 第16回
+    patterns = (
+        r"(?i)\bvol(?:ume)?\.?\s*#?\s*(\d{1,4})\b",
+        r"#\s*(\d{1,4})\b",
+        r"第\s*(\d{1,4})\s*(?:号|回)",
+    )
+    for p in patterns:
+        m = re.search(p, s)
+        if m:
+            try:
+                return int(m.group(1))
+            except Exception:
+                pass
+    return None
+
+
+def _next_weekly_vol() -> int:
+    if not ENTRIES_FILE.exists():
+        return 1
+    try:
+        db = json.loads(ENTRIES_FILE.read_text(encoding="utf-8"))
+        entries = db.get("entries") if isinstance(db, dict) else []
+    except Exception:
+        return 1
+    max_vol = 0
+    for e in entries or []:
+        if not isinstance(e, dict):
+            continue
+        if e.get("_source_id") != "joi-weekly" and e.get("_source") != "joi-weekly":
+            continue
+        for field in ("title_ja", "title"):
+            v = _extract_weekly_vol_from_text(str(e.get(field) or ""))
+            if v and v > max_vol:
+                max_vol = v
+    return max_vol + 1 if max_vol > 0 else 1
+
+
+def _strip_weekly_prefix(title: str) -> str:
+    t = (title or "").strip()
+    if not t:
+        return ""
+    # 既存の週間見出しやVol表現を先頭から外し、サブタイトル部分を残す
+    t = re.sub(r"^\s*(?:週間JOI通信|週刊JOI通信)\s*", "", t, flags=re.I)
+    t = re.sub(r"^\s*(?:Weekly\s+JOI\s+(?:Bulletin|Dispatch))\s*", "", t, flags=re.I)
+    t = re.sub(r"^\s*(?:(?i)vol(?:ume)?\.?\s*#?\s*\d{1,4}|#\s*\d{1,4}|第\s*\d{1,4}\s*(?:号|回))\s*", "", t)
+    t = re.sub(r"^\s*[|｜:\-–—]+\s*", "", t)
+    return t.strip()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="JOI素材を entries 追加用JSONに変換")
     parser.add_argument("--input", type=Path, required=True, help="joi_entry_source.json")
@@ -104,8 +159,19 @@ def main() -> None:
     src = json.loads(args.input.read_text(encoding="utf-8"))
     now = datetime.now(JST)
     stamp = now.strftime("%Y%m%d%H%M")
-    title_ja = (src.get("title_ja") or f"週間JOI通信（{now.strftime('%Y-%m-%d')}）").strip()
-    title_en = (src.get("title_en") or f"Weekly JOI Bulletin ({now.strftime('%Y-%m-%d')})").strip()
+    base_title_ja = (src.get("title_ja") or "").strip()
+    base_title_en = (src.get("title_en") or "").strip()
+    vol = _next_weekly_vol()
+    suffix_ja = _strip_weekly_prefix(base_title_ja)
+    suffix_en = _strip_weekly_prefix(base_title_en)
+    if suffix_ja:
+        title_ja = f"週間JOI通信 Vol.{vol}｜{suffix_ja}"
+    else:
+        title_ja = f"週間JOI通信 Vol.{vol}（{now.strftime('%Y-%m-%d')}）"
+    if suffix_en:
+        title_en = f"Weekly JOI Bulletin Vol.{vol} | {suffix_en}"
+    else:
+        title_en = f"Weekly JOI Bulletin Vol.{vol} ({now.strftime('%Y-%m-%d')})"
     summary_ja = (src.get("summary_ja") or "").strip()
     summary_en = (src.get("summary_en") or "").strip()
     body_md = (src.get("body_ja_markdown") or "").strip()
