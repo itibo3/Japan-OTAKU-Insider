@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "vtuber-202604292047-pplx-5a323a",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.nijisanji.jp/news/xyz123-3d-live-may2026",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://www.nijisanji.jp/news/xyz123-3d-live-may2026",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.nijisanji.jp/news/xyz123-3d-live-may2026",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "vtuber-202604292047-pplx-0b6009",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.anycolor.co.jp/news/2026/04/28/nijisanji-en-3d-may",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://anycolor.co.jp/news/2026/04/28/nijisanji-en-3d-may",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.anycolor.co.jp/news/2026/04/28/nijisanji-en-3d-may",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]
