@@ -79,6 +79,13 @@ _TITLE_STOPWORDS = (
     "告知",
     "コラボ",
 )
+STRICT_PREFILTER_DOMAINS = (
+    "collabo-cafe.com",
+    "nijisanji.jp",
+    "animate.co.jp",
+    "akihabara-bc.jp",
+    "kotobukiya.co.jp",
+)
 
 REVIEW_SYSTEM = """あなたは「Japan OTAKU Insider」という英語向け日本オタクニュースサイトの厳格な検閲担当です。
 与えられた候補記事それぞれについて、サイトに載せるべきか boolean で判定します。
@@ -258,6 +265,7 @@ def apply_decisions(entries: list[dict[str, Any]], decisions: list[dict[str, Any
     """通過したエントリと、ログ用の行を返す。Perplexity 由来かつ通過分は primary_category で categories を上書きする。"""
     ok_by_index: dict[int, bool] = {}
     reasons: dict[int, str] = {}
+    reason_codes: dict[int, str] = {}
     primary_by_index: dict[int, Any] = {}
     for d in decisions:
         if not isinstance(d, dict):
@@ -266,6 +274,13 @@ def apply_decisions(entries: list[dict[str, Any]], decisions: list[dict[str, Any
         if isinstance(idx, int):
             ok_by_index[idx] = bool(d.get("ok"))
             reasons[idx] = str(d.get("reason_ja") or "")
+            code = str(d.get("reason_code") or "").strip()
+            if code:
+                reason_codes[idx] = code
+            else:
+                m = re.match(r"^\[([A-Z0-9_]+)\]", reasons[idx] or "")
+                if m:
+                    reason_codes[idx] = m.group(1)
             if "primary_category" in d:
                 primary_by_index[idx] = d.get("primary_category")
 
@@ -291,6 +306,7 @@ def apply_decisions(entries: list[dict[str, Any]], decisions: list[dict[str, Any
             "id": e.get("id"),
             "ok": ok,
             "reason_ja": reasons.get(i, "(判定なし)"),
+            "reason_code": reason_codes.get(i, ""),
             "primary_category": new_pc,
             "category_before": old_primary,
             "source_url": (src.get("url") or "") if isinstance(src, dict) else str(src),
@@ -425,6 +441,18 @@ def _title_mismatch(title_ja: str, page_title: str) -> bool:
     return len(a & b) == 0
 
 
+def _looks_domain_strict_target(url: str) -> bool:
+    host = ""
+    try:
+        host = (urlparse(url).netloc or "").lower()
+    except Exception:
+        return False
+    if not host:
+        return False
+    host = host[4:] if host.startswith("www.") else host
+    return any(host == d or host.endswith("." + d) for d in STRICT_PREFILTER_DOMAINS)
+
+
 def _fetch_page_meta(
     url: str,
     *,
@@ -466,28 +494,28 @@ def _prefilter_reason(
     src = entry.get("source") or {}
     url = (src.get("url") or "").strip()
     if not title:
-        return "タイトルが空"
+        return "[EMPTY_TITLE] タイトルが空"
     if not desc:
-        return "説明文が空"
+        return "[EMPTY_DESCRIPTION] 説明文が空"
     if not url:
-        return "URLが空"
+        return "[EMPTY_URL] URLが空"
 
     try:
         parsed = urlparse(url)
     except Exception:
-        return "URL形式が不正"
+        return "[BAD_URL] URL形式が不正"
     if parsed.scheme not in ("http", "https") or not parsed.netloc:
-        return "URL形式が不正"
+        return "[BAD_URL] URL形式が不正"
 
     # Perplexity 由来は「トップ/一覧ページ」混入が多いため厳しめに弾く
     if entry.get("_source") == "perplexity":
         path = (parsed.path or "").strip().lower()
         if path in ("", "/", "/index.html", "/index.php", "/home", "/top"):
-            return "Perplexity由来URLがトップページ"
+            return "[PPLX_TOP_PAGE] Perplexity由来URLがトップページ"
         # 具体記事URLとして弱い階層（例: /foo/）は除外
         depth = len([x for x in path.split("/") if x])
         if depth <= 1 and not parsed.query:
-            return "Perplexity由来URLが一覧/ランディング疑い"
+            return "[PPLX_LANDING] Perplexity由来URLが一覧/ランディング疑い"
         meta = _fetch_page_meta(url, url_status_cache=url_status_cache, page_meta_cache=page_meta_cache)
         entry["_url_verified"] = meta
         status = meta.get("status")
@@ -495,14 +523,20 @@ def _prefilter_reason(
         if status != 200:
             err = meta.get("error") or ""
             if status is None:
-                return f"Perplexity由来URLの疎通失敗: {str(err)[:120]}"
-            return f"Perplexity由来URLがHTTP {status}: {str(final_url)[:120]}"
+                return f"[PPLX_CONNECT_ERROR] Perplexity由来URLの疎通失敗: {str(err)[:120]}"
+            return f"[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP {status}: {str(final_url)[:120]}"
         page_title = meta.get("page_title") or ""
+        if _looks_domain_strict_target(url) and not page_title:
+            return "[PPLX_STRICT_NO_TITLE] 厳格ドメインでページタイトル取得不可"
         if _title_mismatch(title, page_title):
-            return f"Perplexity由来URLの内容不一致疑い: page_title={page_title[:60]}"
+            if _looks_domain_strict_target(url):
+                return f"[PPLX_STRICT_TITLE_MISMATCH] 厳格ドメインで内容不一致疑い: page_title={page_title[:60]}"
+            return f"[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title={page_title[:60]}"
         pub = meta.get("published_date") or ""
+        if _looks_domain_strict_target(url) and not pub:
+            return "[PPLX_STRICT_NO_PUBLISHED_DATE] 厳格ドメインで公開日を取得できない"
         if pub and _date_too_old(pub, max_age_days=max_age_days):
-            return f"Perplexity由来URLが古い: published_date={str(pub)[:20]}"
+            return f"[PPLX_OLD_ARTICLE] Perplexity由来URLが古い: published_date={str(pub)[:20]}"
         og = meta.get("og_image") or ""
         thumb = (entry.get("thumbnail") or "").strip()
         if og and not _looks_generic_image(og):
@@ -510,7 +544,9 @@ def _prefilter_reason(
                 entry["thumbnail"] = og
         else:
             if (not thumb) or _looks_generic_image(thumb):
-                return "Perplexity由来URLでOG画像取得不可"
+                if _looks_domain_strict_target(url):
+                    return "[PPLX_STRICT_OG_MISSING] 厳格ドメインでOG画像取得不可"
+                return "[PPLX_OG_MISSING] Perplexity由来URLでOG画像取得不可"
     return None
 
 

@@ -303,6 +303,105 @@ def collect_recent_hot_topics(entries: list[dict[str, Any]], days: int = 7, limi
     return [row for _, row in picked[:limit]]
 
 
+def _title_category_plausible(title: str, category: str) -> bool:
+    t = (title or "").lower()
+    c = (category or "").lower()
+    kw = {
+        "cafe": ("カフェ", "cafe", "コラボカフェ", "メニュー", "予約", "特典"),
+        "cosplay": ("コスプレ", "cosplay", "衣装", "レイヤー", "撮影"),
+        "event": ("イベント", "exhibition", "展示", "ポップアップ", "開催", "会場"),
+    }
+    words = kw.get(c, ())
+    if not words:
+        return True
+    return any(w.lower() in t for w in words)
+
+
+def _url_alive(url: str, cache: dict[str, bool]) -> bool:
+    u = (url or "").strip()
+    if not u:
+        return False
+    if u.startswith("/"):
+        return True
+    if u in cache:
+        return cache[u]
+    ok = False
+    try:
+        h = requests.head(u, timeout=8, allow_redirects=True)
+        if h.status_code < 400:
+            ok = True
+        else:
+            g = requests.get(u, timeout=8, allow_redirects=True)
+            ok = g.status_code < 400
+    except Exception:
+        ok = False
+    cache[u] = ok
+    return ok
+
+
+def collect_tri_category_audit(entries: list[dict[str, Any]], *, sample_size: int = 30) -> dict[str, Any]:
+    """
+    cafe / cosplay / event の軽量監査。
+    監査軸: URL実在, タイトル一致(カテゴリ妥当), カテゴリ妥当性
+    """
+    targets = {"cafe", "cosplay", "event"}
+    selected: list[dict[str, Any]] = []
+    for e in entries:
+        cats = e.get("categories") or []
+        primary = str(cats[0]).lower() if isinstance(cats, list) and cats else ""
+        if primary not in targets:
+            continue
+        selected.append(e)
+        if len(selected) >= sample_size:
+            break
+
+    url_cache: dict[str, bool] = {}
+    rows: list[dict[str, Any]] = []
+    score = {"total": 0, "url_ok": 0, "title_ok": 0, "category_ok": 0}
+    for e in selected:
+        cats = e.get("categories") or []
+        primary = str(cats[0]).lower() if isinstance(cats, list) and cats else "other"
+        title = str(e.get("title_ja") or e.get("title") or "")
+        src = e.get("source") or {}
+        url = str((src.get("url") if isinstance(src, dict) else "") or "")
+        url_ok = _url_alive(url, url_cache)
+        title_ok = bool(title.strip())
+        category_ok = _title_category_plausible(title, primary)
+        score["total"] += 1
+        if url_ok:
+            score["url_ok"] += 1
+        if title_ok:
+            score["title_ok"] += 1
+        if category_ok:
+            score["category_ok"] += 1
+        rows.append(
+            {
+                "id": e.get("id"),
+                "category": primary,
+                "title": title[:120],
+                "url": url,
+                "url_ok": url_ok,
+                "title_ok": title_ok,
+                "category_ok": category_ok,
+            }
+        )
+
+    def ratio(k: str) -> float:
+        t = score["total"] or 1
+        return round(score[k] / t, 4)
+
+    return {
+        "status": "ok",
+        "sample_size": len(selected),
+        "summary": {
+            "url_ok_rate": ratio("url_ok"),
+            "title_ok_rate": ratio("title_ok"),
+            "category_ok_rate": ratio("category_ok"),
+        },
+        "rows": rows,
+    }
+
+
 def fetch_perplexity_weekly_highlights(*, api_key: str, model: str = DEFAULT_PERPLEXITY_MODEL) -> dict[str, Any]:
     """Perplexityで今週のヲタニュース要点を補助取得する（失敗時は skipped を返す）。"""
     if not api_key:
@@ -715,6 +814,7 @@ def main() -> None:
     )
     review_log_stats = collect_review_log_stats(days=args.days)
     hot_topics = collect_recent_hot_topics(entries, days=args.days, limit=40)
+    tri_category_audit = collect_tri_category_audit(entries, sample_size=30)
     perplexity_weekly = fetch_perplexity_weekly_highlights(
         api_key=os.getenv("PERPLEXITY_API_KEY", "").strip(),
         model=(os.getenv("PERPLEXITY_MODEL", "").strip() or DEFAULT_PERPLEXITY_MODEL),
@@ -724,8 +824,13 @@ def main() -> None:
         "internal": internal_stats,
         "ga4": ga4_stats,
         "review_logs": review_log_stats,
+        "tri_category_audit": tri_category_audit,
     }
     (out_dir / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (out_dir / "tri_category_audit.json").write_text(
+        json.dumps(tri_category_audit, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
     prompts = load_perplexity_prompts()
     (out_dir / "current_perplexity_prompts.json").write_text(

@@ -5,6 +5,7 @@ JSONエントリーをメインDBに追加するスクリプト
 
 import json
 import sys
+import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
@@ -20,6 +21,34 @@ URL_CHECK_HEADERS = {
     "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
 }
 _PPLX_URL_CHECK_CACHE = {}
+_MOJIBAKE_HINT_RE = re.compile(
+    r"(?:Ã.|ã.|â.|ï½|ï¼|ã[ァ-ヶぁ-ん一-龯]|ï¿½|Â|¢|£|¥)"
+)
+
+
+def detect_mojibake(text: str) -> bool:
+    """UTF-8/Latin-1 取り違えで出やすい文字列断片を検出する。"""
+    t = (text or "").strip()
+    if not t:
+        return False
+    if _MOJIBAKE_HINT_RE.search(t):
+        return True
+    # ASCII 比率が低いのに拗音崩れ記号が多いケースを補足
+    weird = sum(1 for ch in t if ch in "ÃãâïÂ�")
+    return weird >= 3
+
+
+def has_mojibake(entry: dict) -> tuple[bool, str]:
+    fields = (
+        ("title", entry.get("title", "")),
+        ("description", entry.get("description", "")),
+        ("title_ja", entry.get("title_ja", "")),
+        ("description_ja", entry.get("description_ja", "")),
+    )
+    for name, val in fields:
+        if detect_mojibake(str(val or "")):
+            return True, name
+    return False, ""
 
 def load_entries_file(path: Path):
     if path.exists():
@@ -190,6 +219,9 @@ def add_single_entry(entry: dict) -> dict:
 
     if has_untranslated_marker(entry):
         return {"ok": False, "message": "title/description に [未翻訳] マーカーが残っています", "entry_id": None}
+    mojibake, field = has_mojibake(entry)
+    if mojibake:
+        return {"ok": False, "message": f"文字化け疑いを検出: {field}", "entry_id": None}
 
     if has_low_quality_source_url(entry):
         return {"ok": False, "message": "URL がトップページ/不正形式の可能性があります", "entry_id": None}
@@ -245,6 +277,9 @@ def add_single_entry_dual(entry_en: dict, *, title_ja: str, description_ja: str)
     # 品質チェック（EN側に適用）
     if has_untranslated_marker(entry_en):
         return {"ok": False, "message": "title/description に [未翻訳] マーカーが残っています", "entry_id": None}
+    mojibake, field = has_mojibake(entry_en)
+    if mojibake:
+        return {"ok": False, "message": f"文字化け疑いを検出: {field}", "entry_id": None}
     if has_low_quality_source_url(entry_en):
         return {"ok": False, "message": "URL がトップページ/不正形式の可能性があります", "entry_id": None}
     pplx_bad = get_unreachable_perplexity_reason(entry_en)
@@ -314,6 +349,12 @@ def add_entries_from_file(filepath, reset=False):
         if has_untranslated_marker(entry):
             title_disp = entry.get('title_ja', entry.get('title', 'Unknown'))
             print(f"  SKIP (未翻訳): {title_disp[:60]} — title/description に [未翻訳] が残っています")
+            continue
+        # 文字化けチェック: mojibakeらしきタイトル/本文は登録しない
+        mojibake, field = has_mojibake(entry)
+        if mojibake:
+            title_disp = entry.get('title_ja', entry.get('title', 'Unknown'))
+            print(f"  SKIP (mojibake): {title_disp[:60]} — 文字化け疑い({field})")
             continue
         # 品質チェック: トップページ等の薄いURLは除外
         if has_low_quality_source_url(entry):

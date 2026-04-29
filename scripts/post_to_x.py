@@ -12,6 +12,7 @@ X (Twitter) 自動投稿スクリプト
 import json
 import os
 import sys
+import argparse
 import hashlib
 import hmac
 import time
@@ -21,6 +22,7 @@ import base64
 import uuid
 from pathlib import Path
 import re
+from datetime import datetime, timedelta
 
 JA_CHAR_RE = re.compile(r"[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]")
 
@@ -159,6 +161,63 @@ def format_tweet(entry, lang="en"):
     return "\n\n".join(parts)
 
 
+def _id_date(entry: dict) -> datetime | None:
+    m = re.search(r"-(\d{8})(?:\d{4})?-", str(entry.get("id") or ""))
+    if not m:
+        return None
+    ds = m.group(1)
+    try:
+        return datetime(int(ds[:4]), int(ds[4:6]), int(ds[6:8]))
+    except Exception:
+        return None
+
+
+def build_weekly_top5(entries: list[dict], *, limit: int = 5, lang: str = "en") -> str:
+    """週次ハイライト投稿（Top5）本文を作る。"""
+    now = datetime.utcnow()
+    cutoff = now - timedelta(days=7)
+    picked: list[dict] = []
+    seen: set[str] = set()
+    for e in entries:
+        if not isinstance(e, dict):
+            continue
+        if is_weekly_like_entry(e):
+            continue
+        dt = _id_date(e)
+        if dt and dt < cutoff:
+            continue
+        title = (e.get("title_ja") if lang == "ja" else e.get("title")) or e.get("title") or ""
+        title = str(title).strip()
+        if not title or title in seen:
+            continue
+        seen.add(title)
+        picked.append(e)
+        if len(picked) >= limit:
+            break
+
+    if not picked:
+        return ""
+
+    if lang == "ja":
+        lines = ["【今週のJOI Top5】", "今週の注目記事まとめ！"]
+        for i, e in enumerate(picked, start=1):
+            t = (e.get("title_ja") or e.get("title") or "").strip()
+            if len(t) > 56:
+                t = t[:53] + "..."
+            lines.append(f"{i}. {t}")
+        lines.append("#オタクニュース #JapanOTAKUInsider")
+    else:
+        lines = ["JOI Weekly Top 5", "This week's must-read picks:"]
+        for i, e in enumerate(picked, start=1):
+            t = (e.get("title") or "").strip()
+            if len(t) > 56:
+                t = t[:53] + "..."
+            lines.append(f"{i}. {t}")
+        lines.append("#AnimeNews #JapanOTAKUInsider")
+    lines.append(SITE_URL)
+    return "\n".join(lines)
+
+
 def oauth_sign(method, url, params, creds):
     """OAuth 1.0a 署名を生成"""
     oauth_params = {
@@ -225,6 +284,11 @@ def post_tweet(text, creds):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="X自動投稿")
+    parser.add_argument("--weekly-top5", action="store_true", help="週1ハイライトTop5投稿を実行")
+    parser.add_argument("--limit", type=int, default=5, help="Top5投稿時の件数")
+    args = parser.parse_args()
+
     creds = get_credentials()
 
     if not ENTRIES_FILE.exists():
@@ -234,6 +298,25 @@ def main():
     with open(ENTRIES_FILE) as f:
         data = json.load(f)
     entries = data.get("entries", []) if isinstance(data, dict) else data
+
+    if args.weekly_top5:
+        text_en = build_weekly_top5(entries, limit=max(1, args.limit), lang="en")
+        text_ja = build_weekly_top5(entries, limit=max(1, args.limit), lang="ja")
+        if not text_en and not text_ja:
+            print("No entries for weekly top5 post.")
+            return
+        posted = 0
+        if text_en:
+            print("Posting weekly top5 (EN)")
+            if post_tweet(text_en, creds):
+                posted += 1
+            time.sleep(3)
+        if text_ja:
+            print("Posting weekly top5 (JA)")
+            if post_tweet(text_ja, creds):
+                posted += 1
+        print(f"Weekly top5 done. Posted {posted} tweet(s).")
+        return
 
     posted_ids = load_posted_ids()
     new_entries = []
