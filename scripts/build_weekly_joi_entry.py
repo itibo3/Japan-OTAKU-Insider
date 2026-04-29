@@ -135,11 +135,18 @@ def _strip_weekly_prefix(title: str) -> str:
     t = (title or "").strip()
     if not t:
         return ""
-    # 既存の週間見出しやVol表現を先頭から外し、サブタイトル部分を残す
-    t = re.sub(r"^\s*(?:週間JOI通信|週刊JOI通信)\s*", "", t, flags=re.I)
-    t = re.sub(r"^\s*(?:Weekly\s+JOI\s+(?:Bulletin|Dispatch))\s*", "", t, flags=re.I)
-    t = re.sub(r"^\s*(?:(?i)vol(?:ume)?\.?\s*#?\s*\d{1,4}|#\s*\d{1,4}|第\s*\d{1,4}\s*(?:号|回))\s*", "", t)
-    t = re.sub(r"^\s*[|｜:\-–—]+\s*", "", t)
+    # 既存の週間見出しやVol表現を先頭から外し、サブタイトル部分を残す。
+    # 二重プレフィックス（例: 「週間...Vol.18｜【週間...#5】...」）に対応するため反復除去する。
+    for _ in range(4):
+        before = t
+        t = re.sub(r"^\s*[【\[]?\s*(?:週間JOI通信|週刊JOI通信)\s*", "", t, flags=re.I)
+        t = re.sub(r"^\s*(?:Weekly\s+JOI\s+(?:Bulletin|Dispatch|Digest|Report))\s*", "", t, flags=re.I)
+        t = re.sub(r"^\s*(?:vol(?:ume)?\.?\s*#?\s*\d{1,4}|#\s*\d{1,4}(?:-\d{1,4})?|第\s*\d{1,4}\s*(?:号|回))\s*", "", t, flags=re.I)
+        t = re.sub(r"^\s*[】\]]\s*", "", t)
+        t = re.sub(r"^\s*[|｜:\-–—―]+\s*", "", t)
+        t = t.strip()
+        if t == before:
+            break
     return t.strip()
 
 
