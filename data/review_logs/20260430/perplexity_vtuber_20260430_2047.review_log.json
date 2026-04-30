@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "vtuber-202604302047-pplx-81995a",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.nijisanji.jp/news/kugeha_new_outfit_3d_live_20260510",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://www.nijisanji.jp/news/kugeha_new_outfit_3d_live_20260510",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.nijisanji.jp/news/kugeha_new_outfit_3d_live_20260510",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "vtuber-202604302047-pplx-129aca",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.anycolor.co.jp/news/nijisanji_costume_fest_may2026",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://anycolor.co.jp/news/nijisanji_costume_fest_may2026",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.anycolor.co.jp/news/nijisanji_costume_fest_may2026",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]

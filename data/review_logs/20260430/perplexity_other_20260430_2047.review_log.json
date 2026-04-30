@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "other-202604302047-pplx-2f011b",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=ジニョン×TWICEダヒョン主演、「あの夏、僕たちが好きだったソナへ」8月に公開（特報あり） - 映画ナタリー",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://natalie.mu/comic/news/623456",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://natalie.mu/eiga/news/623456",
+    "page_title": "ジニョン×TWICEダヒョン主演、「あの夏、僕たちが好きだったソナへ」8月に公開（特報あり） - 映画ナタリー",
+    "published_date": "2025-05-13T08:00:00+09:00",
+    "og_image": "https://ogre.natalie.mu/media/news/eiga/2025/0512/YouAreTheAppleOfMyEye_20250512_01.jpg?impolicy=twitter_card_face_crop"
+  },
+  {
+    "index": 1,
+    "id": "other-202604302047-pplx-888660",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://prtimes.jp/main/html/rd/p/000001234.000056789.html",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000001234.000056789.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000001234.000056789.html",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 2,
+    "id": "other-202604302047-pplx-fddc41",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=ド・パールシムの第2弾は“女性”と“妊娠”を巡る物語「ヴァージニティー」（コメントあり） - ステージナタリー",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://natalie.mu/music/news/623789",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://natalie.mu/stage/news/623789",
+    "page_title": "ド・パールシムの第2弾は“女性”と“妊娠”を巡る物語「ヴァージニティー」（コメントあり） - ステージナタリー",
+    "published_date": "2025-05-15T14:30:00+09:00",
+    "og_image": "https://ogre.natalie.mu/media/news/stage/2025/0514/1745987766.jpg?impolicy=twitter_card_face_crop"
+  }
+]
