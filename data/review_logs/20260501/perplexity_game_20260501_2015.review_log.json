@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "game-202605012015-pplx-a6bdc6",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.famitsu.com/news/202604/28345678.html",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.famitsu.com/news/202604/28345678.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.famitsu.com/news/202604/28345678.html",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "game-202605012015-pplx-3b6f9f",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.4gamer.net/games/999/G999901/20260430001/",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/999/G999901/20260430001/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.4gamer.net/games/999/G999901/20260430001/",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 2,
+    "id": "game-202605012015-pplx-d17388",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.famitsu.com/news/202604/28345012.html",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.famitsu.com/news/202604/28345012.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.famitsu.com/news/202604/28345012.html",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]
