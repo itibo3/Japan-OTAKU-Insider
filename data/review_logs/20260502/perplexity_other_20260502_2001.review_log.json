@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "other-202605022001-pplx-f01164",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "anime",
+    "category_before": "other",
+    "source_url": "https://natalie.mu/comic/news/670536",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://natalie.mu/comic/news/670536",
+    "page_title": "「ラーメン大好き小泉さん」ストア、スポーティな小泉さんのタペやアクリル箸置き - コミックナタリー",
+    "published_date": "2026-05-01T17:17:00+09:00",
+    "og_image": "https://ogre.natalie.mu/media/news/comic/2026/0501/ramendaisukikoizumisan_POP001.jpg?impolicy=twitter_card_face_crop"
+  },
+  {
+    "index": 1,
+    "id": "other-202605022001-pplx-e3b61f",
+    "ok": false,
+    "reason_ja": "オタク文化（アニメ・ゲーム・フィギュア・VTuber等）と無関係な音楽・映画関連イベントのため。",
+    "reason_code": "",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://natalie.mu/music/news/670520",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://natalie.mu/music/news/670520",
+    "page_title": "TaiTan「力こそすべて」奇奇怪怪とA24のコラボポップアップが本日オープン（イベントレポート / 写真18枚） - 音楽ナタリー",
+    "published_date": "2026-05-01T16:54:00+09:00",
+    "og_image": "https://ogre.natalie.mu/media/news/music/2026/0501/DSC_4983.jpg?impolicy=twitter_card_face_crop"
+  },
+  {
+    "index": 2,
+    "id": "other-202605022001-pplx-35edce",
+    "ok": false,
+    "reason_ja": "オタク文化（アニメ・ゲーム・フィギュア・VTuber等）と無関係な音楽バンドのグッズ販売のため。",
+    "reason_code": "",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://natalie.mu/music/news/670330",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://natalie.mu/music/news/670330",
+    "page_title": "クプアスって何？ヤバイTシャツ屋さんのクラフトビールが爆誕、志摩醸造とのコラボで - 音楽ナタリー",
+    "published_date": "2026-04-30T15:41:00+09:00",
+    "og_image": "https://ogre.natalie.mu/media/news/music/2026/0430/yabatbeer.jpg?impolicy=twitter_card_face_crop"
+  }
+]

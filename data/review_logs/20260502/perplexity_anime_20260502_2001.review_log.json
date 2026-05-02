@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "anime-202605022001-pplx-c409b9",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=【2026年春アニメ一覧】2026年4月期 放送予定・新作・続編アニメ最新情報まとめ【全68作品】",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://www.oricon.co.jp/anime/2026_spring/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.oricon.co.jp/anime/2026_spring/",
+    "page_title": "【2026年春アニメ一覧】2026年4月期 放送予定・新作・続編アニメ最新情報まとめ【全68作品】",
+    "published_date": "2026-02-27T12:00:00+09:00",
+    "og_image": "https://contents.oricon.co.jp/anime/img/season/2026_spring.jpg"
+  },
+  {
+    "index": 1,
+    "id": "anime-202605022001-pplx-acd1dc",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://eeo.today/media/2026/04/27/340915/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://eeo.today/media/2026/04/27/340915/",
+    "page_title": "TVアニメ『いびってこない義母と義姉』メインビジュアルが公開！　アニメ映像初解禁となるティザーPVも - eeo Media（イーオメディア）",
+    "published_date": "2026-04-27T09:02:33+00:00",
+    "og_image": "https://eeo.today/media/wp-content/uploads/2026/04/20260427_ibikoi.jpg"
+  },
+  {
+    "index": 2,
+    "id": "anime-202605022001-pplx-de5256",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000379.000015126.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000000379.000015126.html",
+    "page_title": "『うしろの正面カムイさん』2026年7月放送決定！ キービジュアル、豪華キャスト、 キャラクターデザイン、スタッフ情報一挙公開！",
+    "published_date": "2026-04-28 12:00:02",
+    "og_image": "https://prcdn.freetls.fastly.net/release_image/15126/379/15126-379-8d6d55d9982a443e1de86e8c8423f4ce-1915x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  }
+]
