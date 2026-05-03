@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "game-202605032002-pplx-fb76e1",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=4Gamerã®1é±éãæ¯ãè¿ããWeekly 4Gamerãï¼2026å¹´",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/040/G004099/20260426005/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/040/G004099/20260426005/",
+    "page_title": "4Gamerã®1é±éãæ¯ãè¿ããWeekly 4Gamerãï¼2026å¹´4æ20æ¥ã4æ26æ¥",
+    "published_date": "2026-04-27T07:00:00+09:00",
+    "og_image": "https://www.4gamer.net/games/040/G004099/20260426005/SS/037.jpg"
+  },
+  {
+    "index": 1,
+    "id": "game-202605032002-pplx-0b5768",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/891/G089129/20260427030/index_2.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/891/G089129/20260427030/index_2.html",
+    "page_title": "Page 2 / ãPowerWash Simulator 2ãï¼ã¹ã¿ã¼ã»ã¦ã©ã¼ãºã¨ã®ã³ã©ãDLCãä»å¤ã«ãªãªã¼ã¹ãXã¦ã¤ã³ã°ããã«ãã«ã«ã§ãã",
+    "published_date": "2026-04-27T23:00:00+09:00",
+    "og_image": "https://www.4gamer.net/games/891/G089129/20260427030/SS/004.jpg"
+  },
+  {
+    "index": 2,
+    "id": "game-202605032002-pplx-cee8ca",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/982/G098281/20260428046/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/982/G098281/20260428046/",
+    "page_title": "ãAlgorithm Prescriptionãã¯ãäºãã«ã¨ã£ã¦æé©ãªã100åã®1ã®å¥½æåº¦ããç®æããæ²¼ç³»ææãã¸ã¥ã¢ã«ããã«ããä½é¨çãéä¿¡ä¸­",
+    "published_date": "2026-04-28T19:42:24+09:00",
+    "og_image": "https://www.4gamer.net/games/982/G098281/20260428046/SS/002.jpg"
+  }
+]
