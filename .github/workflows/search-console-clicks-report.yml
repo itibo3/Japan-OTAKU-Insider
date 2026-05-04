@@ -46,6 +46,7 @@ jobs:
         run: |
           months="${{ github.event.inputs.months }}"
           if [ -z "$months" ]; then months=16; fi
+          mkdir -p artifact-out
           python3 scripts/search_console_clicks_report.py --months "$months" --out-dir artifact-out
 
       - name: Upload artifact

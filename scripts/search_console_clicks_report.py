@@ -32,7 +32,10 @@ from google.auth.transport.requests import Request
 from google.oauth2 import service_account
 
 GSC_SCOPE = "https://www.googleapis.com/auth/webmasters.readonly"
-GSC_QUERY_TMPL = "https://searchconsole.googleapis.com/v1/sites/{site_enc}/searchAnalytics/query"
+# 公式: https://developers.google.com/webmaster-tools/v1/searchanalytics/query
+GSC_QUERY_TMPL = (
+    "https://searchconsole.googleapis.com/webmasters/v3/sites/{site_enc}/searchAnalytics/query"
+)
 
 
 def _access_token(creds_json: str) -> str:
