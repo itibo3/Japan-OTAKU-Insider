@@ -1,0 +1,57 @@
+# Search Console の検索クリック推移（最大約16ヶ月）を取得し Artifact に保存する。
+#
+# 手動: Actions → "Search Console Clicks Report" → Run workflow
+#
+# 必要な Secrets:
+#   GA4_CREDENTIALS_JSON … サービスアカウント JSON（GA4 と同じで可）
+#
+# そのサービスアカウントの client_email を、Google Search Console の
+# 対象プロパティ（既定: https://otaku.eidosfrontier.com/）に「ユーザー」として追加すること。
+#
+# ドメインプロパティのみの場合は Repository variables などで上書き:
+#   GSC_SITE_URL … 例: sc-domain:eidosfrontier.com
+
+name: Search Console Clicks Report
+
+on:
+  workflow_dispatch:
+    inputs:
+      months:
+        description: "さかのぼる月数（おおよそ）"
+        required: false
+        default: "16"
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements-ci.txt
+
+      - name: Fetch Search Console clicks
+        env:
+          GA4_CREDENTIALS_JSON: ${{ secrets.GA4_CREDENTIALS_JSON }}
+          # 未設定ならスクリプト既定（https://otaku.eidosfrontier.com/）。ドメインプロパティなら Secrets に sc-domain:... を設定
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: |
+          months="${{ github.event.inputs.months }}"
+          if [ -z "$months" ]; then months=16; fi
+          python3 scripts/search_console_clicks_report.py --months "$months" --out-dir artifact-out
+
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: search-console-clicks-${{ github.run_id }}
+          path: artifact-out/
+          retention-days: 90
