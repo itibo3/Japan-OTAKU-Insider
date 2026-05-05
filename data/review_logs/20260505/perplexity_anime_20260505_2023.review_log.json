@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "anime-202605052023-pplx-6f0664",
+    "ok": false,
+    "reason_ja": "[PPLX_OLD_ARTICLE] Perplexity由来URLが古い: published_date=2026-02-12T08:00:08+",
+    "reason_code": "PPLX_OLD_ARTICLE",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://eeo.today/media/2026/02/12/314239/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://eeo.today/media/2026/02/12/314239/",
+    "page_title": "【2026春アニメ一覧】4月より放送開始の新作＆再放送アニメのあらすじ・キャスト・主題歌など情報まとめ - eeo Media（イーオメディア）",
+    "published_date": "2026-02-12T08:00:08+00:00",
+    "og_image": "https://eeo.today/media/wp-content/uploads/2026/02/2026spring-banner.jpg"
+  },
+  {
+    "index": 1,
+    "id": "anime-202605052023-pplx-e62c29",
+    "ok": false,
+    "reason_ja": "2026年の未来のイベントが既に発表されたかのように記述されており、でっち上げの可能性が高い。",
+    "reason_code": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://news.ponycanyon.co.jp/2026/05/120655",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://news.ponycanyon.co.jp/2026/05/120655",
+    "page_title": "『五等分の花嫁』新作アニメプロジェクト始動！",
+    "published_date": "",
+    "og_image": "https://news.ponycanyon.co.jp/wp/wp-content/uploads/2026/05/五等分の花嫁イベント版権_ver02_JP_web-435x580.jpg"
+  },
+  {
+    "index": 2,
+    "id": "anime-202605052023-pplx-8158c1",
+    "ok": false,
+    "reason_ja": "2026年の未来のイベントが既に発表されたかのように記述されており、でっち上げの可能性が高い。",
+    "reason_code": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://www.famitsu.com/article/202605/73856",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.famitsu.com/article/202605/73856",
+    "page_title": "『五等分の花嫁』新作アニメプロジェクト発表。小説『【春夏秋冬】』のテレビアニメ化。アニメになかった原作エピソードのOVAも制作決定 | ゲーム・エンタメ最新情報のファミ通.com",
+    "published_date": "",
+    "og_image": "https://cimg.kgl-systems.io/camion/files/73856/thumbnail_JnRW.jpg?x=1280"
+  }
+]
