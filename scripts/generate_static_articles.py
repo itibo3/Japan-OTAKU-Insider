@@ -8,6 +8,7 @@ entries.json から記事ごとの静的HTMLを生成し、sitemap.xml を更新
 
 使い方:
 - python3 scripts/generate_static_articles.py --days 30
+- python3 scripts/generate_static_articles.py --only-new --prev-entries /tmp/entries_before_daily.json
 """
 
 from __future__ import annotations
@@ -210,11 +211,28 @@ def update_sitemap(article_urls: dict[str, str]) -> None:
     tree.write(SITEMAP_XML, encoding="utf-8", xml_declaration=True)
 
 
+def load_ids(path: Path) -> set[str]:
+    if not path.exists():
+        return set()
+    with path.open(encoding="utf-8") as f:
+        data = json.load(f)
+    entries = data.get("entries", []) if isinstance(data, dict) else []
+    out: set[str] = set()
+    for e in entries:
+        if isinstance(e, dict):
+            eid = str(e.get("id") or "").strip()
+            if eid:
+                out.add(eid)
+    return out
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="entries.json から静的記事HTMLを生成")
     parser.add_argument("--days", type=int, default=30, help="生成対象の日数（既定: 30）")
     parser.add_argument("--skip-existing", action="store_true", default=True, help="既存記事HTMLを再生成しない")
     parser.add_argument("--force", action="store_true", help="既存記事HTMLも再生成する")
+    parser.add_argument("--only-new", action="store_true", help="前回との差分（新規ID）のみ生成する")
+    parser.add_argument("--prev-entries", type=Path, help="更新前 entries.json のパス（--only-new と併用）")
     args = parser.parse_args()
 
     with ENTRIES_JSON.open(encoding="utf-8") as f:
@@ -223,10 +241,14 @@ def main() -> int:
 
     cutoff = datetime.now(timezone.utc) - timedelta(days=max(1, args.days))
     ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
+    prev_ids: set[str] = set()
+    if args.only_new and args.prev_entries:
+        prev_ids = load_ids(args.prev_entries)
 
     generated = 0
     skipped_old = 0
     skipped_exists = 0
+    skipped_not_new = 0
     article_urls: dict[str, str] = {}
 
     for entry in entries:
@@ -234,6 +256,9 @@ def main() -> int:
             continue
         entry_id = str(entry.get("id") or "").strip()
         if not entry_id:
+            continue
+        if args.only_new and prev_ids and entry_id in prev_ids:
+            skipped_not_new += 1
             continue
         dt = parse_entry_date(entry)
         if dt is None or dt < cutoff:
@@ -255,6 +280,8 @@ def main() -> int:
     print(f"Target window: last {args.days} days")
     print(f"Generated: {generated}")
     print(f"Skipped (outside window): {skipped_old}")
+    if args.only_new:
+        print(f"Skipped (not new id): {skipped_not_new}")
     print(f"Skipped (already exists): {skipped_exists}")
     print(f"Sitemap article urls touched: {len(article_urls)}")
     return 0

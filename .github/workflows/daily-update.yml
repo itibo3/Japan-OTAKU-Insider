@@ -33,6 +33,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements-ci.txt
 
+      - name: Snapshot entries before update
+        run: |
+          cp data/entries.json /tmp/entries_before_daily.json
+
       - name: RSS Fetch
         run: |
           echo "==> RSS Fetch"
@@ -127,7 +131,7 @@ jobs:
       - name: Generate static article pages (last 30 days)
         run: |
           echo "==> Generate static article pages for crawler"
-          python3 scripts/generate_static_articles.py --days 30
+          python3 scripts/generate_static_articles.py --days 30 --only-new --prev-entries /tmp/entries_before_daily.json
 
       - name: Post new entries to X
         env:
