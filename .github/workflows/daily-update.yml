@@ -124,6 +124,11 @@ jobs:
           echo "==> Build entries_ja.json (JP版自動生成)"
           python3 scripts/build_ja_entries.py
 
+      - name: Generate static article pages (last 30 days)
+        run: |
+          echo "==> Generate static article pages for crawler"
+          python3 scripts/generate_static_articles.py --days 30
+
       - name: Post new entries to X
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
@@ -160,6 +165,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/entries.json data/entries_ja.json
+          git add articles 2>/dev/null || true
+          git add sitemap.xml 2>/dev/null || true
           git add data/review_logs 2>/dev/null || true
           git add data/.x_posted_ids 2>/dev/null || true
           if git diff --staged --quiet; then
