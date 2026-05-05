@@ -32,6 +32,8 @@ def looks_japanese(text: str) -> bool:
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ENTRIES_FILE = PROJECT_ROOT / "data" / "entries.json"
 POSTED_FILE = PROJECT_ROOT / "data" / ".x_posted_ids"
+RUN_STATE_FILE = PROJECT_ROOT / "data" / ".x_post_run_state.json"
+PAUSE_STATE_FILE = PROJECT_ROOT / "data" / ".x_api_pause.json"
 SITE_URL = "https://otaku.eidosfrontier.com/"
 CATEGORY_EMOJI = {
     "cafe": "\u2615",
@@ -79,6 +81,81 @@ def load_posted_ids():
 
 def save_posted_ids(ids):
     POSTED_FILE.write_text("\n".join(sorted(ids)) + "\n")
+
+
+def load_run_state() -> dict:
+    if not RUN_STATE_FILE.exists():
+        return {}
+    try:
+        obj = json.loads(RUN_STATE_FILE.read_text(encoding="utf-8"))
+        if isinstance(obj, dict):
+            return obj
+    except Exception:
+        pass
+    return {}
+
+
+def save_run_state(state: dict) -> None:
+    RUN_STATE_FILE.write_text(
+        json.dumps(state, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
+def has_run_today(mode: str) -> bool:
+    state = load_run_state()
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    return str(state.get(mode, "")) == today
+
+
+def mark_run_today(mode: str) -> None:
+    state = load_run_state()
+    state[mode] = datetime.utcnow().strftime("%Y-%m-%d")
+    save_run_state(state)
+
+
+def load_pause_state() -> dict:
+    if not PAUSE_STATE_FILE.exists():
+        return {}
+    try:
+        obj = json.loads(PAUSE_STATE_FILE.read_text(encoding="utf-8"))
+        if isinstance(obj, dict):
+            return obj
+    except Exception:
+        pass
+    return {}
+
+
+def save_pause_state(until_date: str, reason: str) -> None:
+    PAUSE_STATE_FILE.write_text(
+        json.dumps(
+            {
+                "until_date": until_date,
+                "reason": reason,
+                "updated_at_utc": datetime.utcnow().isoformat() + "Z",
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+
+def is_paused_today() -> tuple[bool, str]:
+    state = load_pause_state()
+    until_date = str(state.get("until_date") or "").strip()
+    if not until_date:
+        return False, ""
+    try:
+        today = datetime.utcnow().date()
+        until = datetime.strptime(until_date, "%Y-%m-%d").date()
+        if today < until:
+            reason = str(state.get("reason") or "Spend cap pause")
+            return True, f"{until_date} ({reason})"
+    except Exception:
+        return False, ""
+    return False, ""
 
 
 def normalize_public_url(raw_url: str) -> str:
@@ -259,6 +336,11 @@ def oauth_sign(method, url, params, creds):
     return auth_header
 
 
+def _extract_spend_cap_reset_date(body_text: str) -> str:
+    m = re.search(r'"reset_date"\s*:\s*"(\d{4}-\d{2}-\d{2})"', body_text or "")
+    return m.group(1) if m else ""
+
+
 def post_tweet(text, creds):
     url = "https://api.twitter.com/2/tweets"
     body = json.dumps({"text": text}).encode()
@@ -273,23 +355,53 @@ def post_tweet(text, creds):
             result = json.loads(resp.read().decode())
             tweet_id = result.get("data", {}).get("id", "?")
             print(f"  Posted tweet: {tweet_id}")
-            return True
+            return {
+                "ok": True,
+                "spend_cap": False,
+                "reset_date": "",
+            }
     except urllib.error.HTTPError as e:
-        body_text = e.read().decode()
+        body_text = e.read().decode(errors="ignore")
+        spend_cap = ("SpendCapReached" in body_text) or ("spend cap" in body_text.lower())
+        reset_date = _extract_spend_cap_reset_date(body_text) if spend_cap else ""
         print(f"  ERROR posting tweet: {e.code} {body_text[:200]}")
-        return False
+        return {
+            "ok": False,
+            "spend_cap": spend_cap,
+            "reset_date": reset_date,
+        }
     except Exception as e:
         print(f"  ERROR posting tweet: {e}")
-        return False
+        return {
+            "ok": False,
+            "spend_cap": False,
+            "reset_date": "",
+        }
 
 
 def main():
     parser = argparse.ArgumentParser(description="X自動投稿")
     parser.add_argument("--weekly-top5", action="store_true", help="週1ハイライトTop5投稿を実行")
     parser.add_argument("--limit", type=int, default=5, help="Top5投稿時の件数")
+    parser.add_argument(
+        "--max-posts",
+        type=int,
+        default=int(os.environ.get("X_MAX_POSTS_PER_RUN", "12")),
+        help="1実行あたりの最大投稿試行数（APIコール上限）",
+    )
+    parser.add_argument(
+        "--allow-multiple-runs-per-day",
+        action="store_true",
+        help="同日2回目以降も投稿を許可（通常は重複実行防止のため無効）",
+    )
     args = parser.parse_args()
 
     creds = get_credentials()
+    max_posts = max(1, int(args.max_posts))
+    paused, pause_detail = is_paused_today()
+    if paused:
+        print(f"X posting is paused until {pause_detail}. Skipping.")
+        return
 
     if not ENTRIES_FILE.exists():
         print("entries.json not found. Skipping.")
@@ -300,6 +412,7 @@ def main():
     entries = data.get("entries", []) if isinstance(data, dict) else data
 
     if args.weekly_top5:
+        attempts = 0
         text_en = build_weekly_top5(entries, limit=max(1, args.limit), lang="en")
         text_ja = build_weekly_top5(entries, limit=max(1, args.limit), lang="ja")
         if not text_en and not text_ja:
@@ -308,13 +421,33 @@ def main():
         posted = 0
         if text_en:
             print("Posting weekly top5 (EN)")
-            if post_tweet(text_en, creds):
+            if attempts < max_posts:
+                attempts += 1
+                res = post_tweet(text_en, creds)
+            else:
+                res = {"ok": False, "spend_cap": False, "reset_date": ""}
+            if res["ok"]:
                 posted += 1
+            if res["spend_cap"]:
+                reset_date = res["reset_date"] or datetime.utcnow().strftime("%Y-%m-%d")
+                save_pause_state(reset_date, "SpendCapReached from X API")
+                print(f"Spend cap reached. Pause posting until {reset_date}.")
+                print(f"Weekly top5 done. Posted {posted} tweet(s).")
+                return
             time.sleep(3)
         if text_ja:
             print("Posting weekly top5 (JA)")
-            if post_tweet(text_ja, creds):
+            if attempts < max_posts:
+                attempts += 1
+                res = post_tweet(text_ja, creds)
+            else:
+                res = {"ok": False, "spend_cap": False, "reset_date": ""}
+            if res["ok"]:
                 posted += 1
+            if res["spend_cap"]:
+                reset_date = res["reset_date"] or datetime.utcnow().strftime("%Y-%m-%d")
+                save_pause_state(reset_date, "SpendCapReached from X API")
+                print(f"Spend cap reached. Pause posting until {reset_date}.")
         print(f"Weekly top5 done. Posted {posted} tweet(s).")
         return
 
@@ -340,6 +473,10 @@ def main():
         else:
             print("No new entries to post.")
         return
+    if not args.allow_multiple_runs_per_day and has_run_today("daily"):
+        print("Skip posting: daily X post already attempted today. Use --allow-multiple-runs-per-day to override.")
+        return
+    mark_run_today("daily")
 
     # カテゴリ別にグループ化し、各カテゴリから最新1件を選択
     cat_best: dict[str, dict] = {}
@@ -353,9 +490,16 @@ def main():
 
     to_post = list(cat_best.values())
     print(f"Found {len(new_entries)} new entries → {len(to_post)} categories → posting 1 per category.")
+    print(f"Max API calls this run: {max_posts}")
     posted_count = 0
+    attempts = 0
+    spend_cap_reached = False
 
     for entry in to_post:
+        if attempts >= max_posts:
+            print(f"Reached max-posts ({max_posts}). Stopping further posts.")
+            break
+
         primary_cat = entry.get('categories', ['?'])[0]
         
         # 英語ポスト
@@ -365,27 +509,49 @@ def main():
             success_en = False
         else:
             print(f"Posting [{primary_cat}] (EN): {entry['id']}")
-            success_en = post_tweet(text_en, creds)
+            attempts += 1
+            res_en = post_tweet(text_en, creds)
+            success_en = res_en["ok"]
             if success_en:
                 posted_count += 1
+            if res_en["spend_cap"]:
+                reset_date = res_en["reset_date"] or datetime.utcnow().strftime("%Y-%m-%d")
+                save_pause_state(reset_date, "SpendCapReached from X API")
+                print(f"Spend cap reached. Pause posting until {reset_date}.")
+                spend_cap_reached = True
         
+        if spend_cap_reached:
+            break
         time.sleep(3)
         
         # 日本語ポスト
-        text_ja = format_tweet(entry, lang="ja")
-        print(f"Posting [{primary_cat}] (JA): {entry['id']}")
-        success_ja = post_tweet(text_ja, creds)
-        if success_ja:
-            posted_count += 1
+        if attempts >= max_posts:
+            print(f"Reached max-posts ({max_posts}) before JA post. Stopping.")
+            success_ja = False
+        else:
+            text_ja = format_tweet(entry, lang="ja")
+            print(f"Posting [{primary_cat}] (JA): {entry['id']}")
+            attempts += 1
+            res_ja = post_tweet(text_ja, creds)
+            success_ja = res_ja["ok"]
+            if success_ja:
+                posted_count += 1
+            if res_ja["spend_cap"]:
+                reset_date = res_ja["reset_date"] or datetime.utcnow().strftime("%Y-%m-%d")
+                save_pause_state(reset_date, "SpendCapReached from X API")
+                print(f"Spend cap reached. Pause posting until {reset_date}.")
+                spend_cap_reached = True
             
         # 少なくともどちらかが成功したら記録する
         if success_en or success_ja:
             posted_ids.add(entry["id"])
+        if spend_cap_reached:
+            break
             
         time.sleep(10)
 
     save_posted_ids(posted_ids)
-    print(f"Done. Posted {posted_count} tweet(s).")
+    print(f"Done. Posted {posted_count} tweet(s). API calls attempted: {attempts}.")
 
 
 if __name__ == "__main__":

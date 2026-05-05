@@ -135,6 +135,7 @@ jobs:
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          X_MAX_POSTS_PER_RUN: "12"
         run: |
           echo "==> Post to X (Twitter)"
           python3 scripts/post_to_x.py || true
@@ -169,6 +170,8 @@ jobs:
           git add sitemap.xml 2>/dev/null || true
           git add data/review_logs 2>/dev/null || true
           git add data/.x_posted_ids 2>/dev/null || true
+          git add data/.x_post_run_state.json 2>/dev/null || true
+          git add data/.x_api_pause.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No changes to commit."
             exit 0
