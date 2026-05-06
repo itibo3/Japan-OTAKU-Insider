@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "game-202605062056-pplx-584660",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=è¨äºã§çµãè¾¼ã¿ | Nintendo Switchç æã®ã«ã¼ãã",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/656/G065696/index_news.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/656/G065696/index_news.html",
+    "page_title": "è¨äºã§çµãè¾¼ã¿ | Nintendo Switchç æã®ã«ã¼ãã£ Wii ãã©ãã¯ã¹ ã¾ã¨ããã¼ã¸",
+    "published_date": "",
+    "og_image": ""
+  },
+  {
+    "index": 1,
+    "id": "game-202605062056-pplx-ccf27f",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=Saber Interactive(çºå£²å)",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/publisher/000/P00066/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/publisher/000/P00066/",
+    "page_title": "Saber Interactive(çºå£²å)",
+    "published_date": "",
+    "og_image": ""
+  }
+]

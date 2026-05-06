@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "anime-202605062057-pplx-e62c29",
+    "ok": false,
+    "reason_ja": "記事の日付（2026年5月）が未来であり、イベント開催日と矛盾するため、内容がでっち上げの疑いがある。",
+    "reason_code": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://news.ponycanyon.co.jp/2026/05/120655",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://news.ponycanyon.co.jp/2026/05/120655",
+    "page_title": "『五等分の花嫁』新作アニメプロジェクト始動！",
+    "published_date": "",
+    "og_image": "https://news.ponycanyon.co.jp/wp/wp-content/uploads/2026/05/五等分の花嫁イベント版権_ver02_JP_web-435x580.jpg"
+  },
+  {
+    "index": 1,
+    "id": "anime-202605062057-pplx-9ea27d",
+    "ok": false,
+    "reason_ja": "記事の公開日（2026年5月1日）が未来であり、直近のニュースとして不適切。",
+    "reason_code": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://animeanime.jp/article/2026/05/01/98542.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://animeanime.jp/article/2026/05/01/98542.html",
+    "page_title": "夏アニメ「片田舎のおっさん、剣聖になるII」7月8日スタート！OP入りのPV第3弾&amp;13キャラ集結したKV公開 | アニメ！アニメ！",
+    "published_date": "2026-05-01T18:00:13+09:00",
+    "og_image": "https://animeanime.jp/imgs/ogp_f/876296.jpg"
+  }
+]
