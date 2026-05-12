@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "anime-202605122110-pplx-c409b9",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=【2026年春アニメ一覧】2026年4月期 放送予定・新作・続編アニメ最新情報まとめ【全68作品】",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://www.oricon.co.jp/anime/2026_spring/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.oricon.co.jp/anime/2026_spring/",
+    "page_title": "【2026年春アニメ一覧】2026年4月期 放送予定・新作・続編アニメ最新情報まとめ【全68作品】",
+    "published_date": "2026-02-27T12:00:00+09:00",
+    "og_image": "https://contents.oricon.co.jp/anime/img/season/2026_spring.jpg"
+  },
+  {
+    "index": 1,
+    "id": "anime-202605122110-pplx-9b0771",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://eeo.today/media/2026/05/12/345136/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://eeo.today/media/2026/05/12/345136/",
+    "page_title": "TVアニメ『最強出涸らし皇子の暗躍帝位争い』新たなキャラクター＆キャスト情報が公開！　アルノルトがレオナルトを次期皇帝にするために暗躍する第1弾PVも解禁 - eeo Media（イーオメディア）",
+    "published_date": "2026-05-12T04:35:14+00:00",
+    "og_image": "https://eeo.today/media/wp-content/uploads/2026/05/03.jpg"
+  },
+  {
+    "index": 2,
+    "id": "anime-202605122110-pplx-4671cc",
+    "ok": false,
+    "reason_ja": "[PPLX_OG_MISSING] Perplexity由来URLでOG画像取得不可",
+    "reason_code": "PPLX_OG_MISSING",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://animedb.jp/2026/03/20628",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://animedb.jp/2026/03/20628",
+    "page_title": "日本のアニメ総合データベース「アニメ大全」 ｜ 100studioがアニメーション制作を担当するTVアニメ『朱色の仮面』、2026年10月から分割２クール放送開始！キービジュアル＆ティザームービー公開",
+    "published_date": "",
+    "og_image": ""
+  }
+]
