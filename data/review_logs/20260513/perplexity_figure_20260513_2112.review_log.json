@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "figure-202605132112-pplx-03bf44",
+    "ok": false,
+    "reason_ja": "published_dateが未来の日付であり、直近のニュースとして不適切です。",
+    "reason_code": "",
+    "primary_category": "figure",
+    "category_before": "figure",
+    "source_url": "https://hobby.watch.impress.co.jp/docs/news/2108138.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://hobby.watch.impress.co.jp/docs/news/2108138.html",
+    "page_title": "「ゾイド ジェネシス」コトナ・エレガンスの水着姿フィギュア展示！ 【#静岡ホビーショー】 タカラトミーモールにて予約中",
+    "published_date": "2026-05-13T11:17:55+09:00",
+    "og_image": "https://hobby.watch.impress.co.jp/img/hbw/list/2108/138/0.jpg"
+  },
+  {
+    "index": 1,
+    "id": "figure-202605132112-pplx-8d91a0",
+    "ok": false,
+    "reason_ja": "published_dateが未来の日付であり、直近のニュースとして不適切です。",
+    "reason_code": "",
+    "primary_category": "figure",
+    "category_before": "figure",
+    "source_url": "https://hobby.watch.impress.co.jp/docs/news/2106957.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://hobby.watch.impress.co.jp/docs/news/2106957.html",
+    "page_title": "「ずんだもん」のねんどろいどが本日出荷開始 イラストレーター・坂本アヒル氏の立ち絵がモチーフ",
+    "published_date": "2026-05-13T00:00:00+09:00",
+    "og_image": "https://hobby.watch.impress.co.jp/img/hbw/list/2106/957/001.jpg"
+  }
+]
