@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "vtuber-202605142059-pplx-52fa01",
+    "ok": false,
+    "reason_ja": "[PPLX_STRICT_NO_PUBLISHED_DATE] 厳格ドメインで公開日を取得できない",
+    "reason_code": "PPLX_STRICT_NO_PUBLISHED_DATE",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://www.nijisanji.jp/news/6n7gciggtmu",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.nijisanji.jp/news/6n7gciggtmu",
+    "page_title": "剣持刀也（VTuberグループ「にじさんじ」所属）リアルソロイベント第2弾【虚空大戦】がKT Zepp Yokohamaで6月11日(日)に開催決定！さらに、豪華ゲストも出演！ | にじさんじ",
+    "published_date": "",
+    "og_image": "https://images.microcms-assets.io/assets/5694fd90407444338a64d654e407cc0e/7877a470620947dbaebbff2c0df3d0b7/%E5%89%A3%E6%8C%81%E5%88%80%E4%B9%9F_%E8%99%9A%E7%A9%BA%E5%A4%A7%E6%88%A6_%E5%91%8A%E7%9F%A5%E7%94%BB%E5%83%8F-fix.jpg?width=1200&amp;fm=jpg"
+  },
+  {
+    "index": 1,
+    "id": "vtuber-202605142059-pplx-6852ff",
+    "ok": false,
+    "reason_ja": "[PPLX_STRICT_TITLE_MISMATCH] 厳格ドメインで内容不一致疑い: page_title=VTuber / バーチャルライバーグループ「にじさんじ」より、新たに4名がデビュー！本日2025年8月14日(木)より",
+    "reason_code": "PPLX_STRICT_TITLE_MISMATCH",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://www.nijisanji.jp/news/7bufu215pxcr",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.nijisanji.jp/news/7bufu215pxcr",
+    "page_title": "VTuber / バーチャルライバーグループ「にじさんじ」より、新たに4名がデビュー！本日2025年8月14日(木)より活動開始！ | にじさんじ",
+    "published_date": "",
+    "og_image": "https://images.microcms-assets.io/assets/5694fd90407444338a64d654e407cc0e/883fedd1759b433fac5bc4f55f508530/KV.png?width=1200&amp;fm=jpg"
+  }
+]
