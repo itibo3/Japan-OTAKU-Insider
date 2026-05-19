@@ -10,7 +10,7 @@ Google Search Console: 日次クリック数を取得し、期間サマリを標
 - 環境変数 GA4_CREDENTIALS_JSON にサービスアカウント JSON（全文）
 - そのサービスアカウントのメールアドレスを Search Console の対象プロパティに「ユーザー」として追加済み
   （権限: 閲覧で可）
-- GSC_SITE_URL … 例: https://otaku.eidosfrontier.com/ （末尾スラッシュ推奨）
+- GSC_SITE_URL … 例: https://eidosfrontier.com/ （末尾スラッシュ推奨）
   ドメインプロパティの場合は sc-domain:example.com 形式
 
 依存: requirements-ci.txt（google-auth, requests）と同じ
@@ -152,7 +152,7 @@ def main() -> int:
     # Actions で Secret 未設定だと空文字になるため or で既定に落とす
     site_url = (
         os.environ.get("GSC_SITE_URL", "").strip()
-        or "https://otaku.eidosfrontier.com/"
+        or "https://eidosfrontier.com/"
     )
     if not creds_json:
         print("GA4_CREDENTIALS_JSON が未設定です。", file=sys.stderr)

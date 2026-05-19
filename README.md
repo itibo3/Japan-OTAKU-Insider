@@ -17,7 +17,7 @@ A free, open database of Japanese otaku events, collab cafes, figure releases, a
 
 ## Visit
 
-👉 [https://otaku.eidosfrontier.com/](https://otaku.eidosfrontier.com/)
+👉 [https://eidosfrontier.com/](https://eidosfrontier.com/)
 
 ## Built by
 

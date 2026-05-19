@@ -1,9 +1,9 @@
 # Japan OTAKU Insider — 引継書
 
-**作成日:** 2026-03-16 (最終更新: 2026-05-05)  
-**ステータス:** β版完成 / 独自ドメイン（otaku.eidosfrontier.com）移行完了 / HTTPS有効 / AdSenseは審査却下（第三者コンテンツの集約に近いと判断）— オリジナル編集・週次まとめ等で付加価値を高めたうえで再申請・改善を予定 / RSS Manager V3 リデザイン完了  
+**作成日:** 2026-03-16 (最終更新: 2026-05-20)  
+**ステータス:** β版完成 / 独自ドメイン（eidosfrontier.com）移行完了 / HTTPS有効 / AdSenseは審査却下（第三者コンテンツの集約に近いと判断）— オリジナル編集・週次まとめ等で付加価値を高めたうえで再申請・改善を予定 / RSS Manager V3 リデザイン完了  
 **開発期間:** 初回αの骨格構築は約6時間（以降は日次・週次で継続拡張）  
-**URL:** [https://otaku.eidosfrontier.com](https://otaku.eidosfrontier.com)
+**URL:** [https://eidosfrontier.com](https://eidosfrontier.com)
 
 ---
 
@@ -210,7 +210,7 @@ Actions タブで失敗した Run を開き、どのステップで止まった�
 | ~~**Google AdSense**~~ | 審査用メタタグは全主要HTMLに実装済み。審査は却下（方針: 独自コンテンツ強化後に再申請を検討） |
 | ~~**X (Twitter) BOT**~~ | `post_to_x.py` とOAuthで新着の自動ポスト機能 実装済み |
 | **地図機能** | （※未導入）Google Maps埋め込みでイベント場所をビジュアル化 |
-| ~~**独自ドメイン**~~ | `otaku.eidosfrontier.com` に移行対応完了 |
+| ~~**独自ドメイン**~~ | `eidosfrontier.com` に移行対応完了 |
 | ~~**多言語対応**~~ | `entries_ja.json` 自動生成パイプラインとヘッダーの EN/JP 切替トグルを実装済み |
 
 ### 🔵 Phase 4 — スケールアップ（長期）
@@ -232,6 +232,11 @@ Actions タブで失敗した Run を開き、どのステップで止まった�
 ---
 
 ## 開発履歴・アップデートログ
+
+- **2026-05-20（canonical / OGP / sitemap をルートドメイン `eidosfrontier.com` に統一）:**
+  - **背景:** GitHub Pages のカスタムドメインを `otaku.eidosfrontier.com` から `eidosfrontier.com` に変更済みだが、HTML・sitemap・生成スクリプト内の URL が旧サブドメインのまま残存。Googlebot が canonical 先（旧サブドメイン）へアクセスすると 404 となり、インデックスに悪影響。
+  - **対応:** プロジェクト全体で `otaku.eidosfrontier.com` → `eidosfrontier.com` に一括置換（約 3,500 ファイル）。対象: 全静的記事 HTML、トップ/About/Contact/Privacy/Weekly、`robots.txt`、`sitemap.xml`、`scripts/generate_static_articles.py`・`post_to_x.py`・`search_console_clicks_report.py`、RSS Manager UI 等。
+  - **今後:** 新規記事は `generate_static_articles.py` の `SITE_URL`（`https://eidosfrontier.com`）から正しい URL が出力される。
 
 - **2026-05-05（検索流入改善のため静的記事ページを自動生成）:**
   - `scripts/generate_static_articles.py` を新規追加。
@@ -503,7 +508,7 @@ Actions タブで失敗した Run を開き、どのステップで止まった�
 
   **内容:**
   - `scripts/post_to_x.py` に `normalize_public_url()` を追加。
-  - `source.url` が `/weekly.html?...` の相対URLでも、`https://otaku.eidosfrontier.com/` 基準で **絶対URL化**して投稿するよう修正。
+  - `source.url` が `/weekly.html?...` の相対URLでも、`https://eidosfrontier.com/` 基準で **絶対URL化**して投稿するよう修正。
   - `http/https` 以外の不正URLは `SITE_URL` へフォールバック。
 
 - **2026-04-15（原因究明 + GeminiFLASH検閲強化 + 再発防止ガード）:**
@@ -582,7 +587,7 @@ Actions タブで失敗した Run を開き、どのステップで止まった�
 - **2026-04-14（集客・SEO: 正規URL統一 + サイトマップ + 構造化データ + Xリンク）:**
 
   **内容:**
-  - 本番ドメインは `otaku.eidosfrontier.com` だが、`index` / `about` / `contact` / `privacy` の **canonical・OG・Twitter 画像**が `eidosfrontier.com` ルートや旧 GitHub Pages を指していたため **サブドメインに統一**。
+  - 本番ドメインは `eidosfrontier.com` だが、`index` / `about` / `contact` / `privacy` の **canonical・OG・Twitter 画像**が `eidosfrontier.com` ルートや旧 GitHub Pages を指していたため **サブドメインに統一**。
   - `sitemap.xml` を同ドメインに統一し、`weekly.html` / `weekly-archive.html` / `contact` / `privacy` を追加。`robots.txt` の Sitemap 宣言を更新。
   - `index.html` に **WebSite 型 JSON-LD**（Schema.org）を追加。
   - `weekly.html` / `weekly-archive.html` に description・canonical・OG 最低限を追加。
@@ -967,21 +972,21 @@ Actions タブで失敗した Run を開き、どのステップで止まった�
   **パイプライン:** RSS取得→DeepL翻訳→entries.json更新→Update status→`build_ja_entries.py`実行→`entries_ja.json`自動生成→両JSONをまとめてgit push
   **切替の仕組み:** ヘッダー左側（タイトル隣）の `[ EN | JP ]` がクリックでカードを切替。`localStorage` で次回も言語を維持。JP時に `(JP)` バッジ表示。
 - **2026-03-23 (独自ドメイン移行・AdSense準備・HYPER CANDY FACTORY):**
-  **独自ドメイン（otaku.eidosfrontier.com）への移行完了**
+  **独自ドメイン（eidosfrontier.com）への移行完了**
 
   | 作業項目             | 詳細                                                                                                                                                |
   | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
   | Google Form 埋め込み | `contact.html` に Google Form iframeを実装                                                                                                            |
   | AdSense メタタグ追加   | 全HTMLファイル（index/about/privacy/contact）の `<head>` に `<meta name="google-adsense-account" content="ca-pub-7643085059724689">` を追加                   |
   | DNS設定（お名前.com）   | AレコードをGitHub Pages IPアドレス4件に設定。CNAMEで `otaku` → `itibo3.github.io` を設定（当初タイポあり → 修正済み）                                                            |
-  | GitHub Pages設定   | Custom domain を `eidosfrontier.com` → `otaku.eidosfrontier.com` に変更                                                                               |
+  | GitHub Pages設定   | Custom domain を `eidosfrontier.com` → `eidosfrontier.com` に変更                                                                               |
   | コード内URL一括置換      | HTMLファイル・sitemap.xml・robots.txを新ドメインに更新。`js/app.js` の `fetch('/Japan-OTAKU-Insider/data/entries.json')` を `/data/entries.json` に修正（記事が表示されなかった原因） |
   | HTTPS有効化         | GitHub Pages の「Enforce HTTPS」チェックを有効化 ✅                                                                                                           |
 
   ⚠️ **教訓 (トラブルシュート記録):**
   - ドメイン移行後に記事が全件消えた原因: `js/app.js` の `fetch()` パスが `/Japan-OTAKU-Insider/data/entries.json` のままでapiが 404 を返した。次回のドメイン変更時も必ず **JSファイル内のfetchパス** を確認すること。
   - お名前.comのCNAME VALUE欄で `itibo3.githab.io`（`github` を `githab` とタイポ）した結果、DNS check unsuccessful が1時間以上続いた。入力後は必ず綴りを確認すること。
-  **eidosfrontier.com は将来の企業ページ用として確保。サイトはサブドメイン `otaku.eidosfrontier.com` で運用。**
+  **eidosfrontier.com は将来の企業ページ用として確保。サイトはサブドメイン `eidosfrontier.com` で運用。**
   **HYPER CANDY FACTORY YouTubeチャンネル バナー制作**
   - チャンネルコンセプト: Breakcore / Speedcore / Gabber / Kawaii Hardcore / SUNO楽曲投稿
   - YouTubeバナー画像を生成。ネオンピンク × シアン × ブラックのカワイイカオス系デザイン。

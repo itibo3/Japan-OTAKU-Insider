@@ -34,7 +34,7 @@ ENTRIES_FILE = PROJECT_ROOT / "data" / "entries.json"
 POSTED_FILE = PROJECT_ROOT / "data" / ".x_posted_ids"
 RUN_STATE_FILE = PROJECT_ROOT / "data" / ".x_post_run_state.json"
 PAUSE_STATE_FILE = PROJECT_ROOT / "data" / ".x_api_pause.json"
-SITE_URL = "https://otaku.eidosfrontier.com/"
+SITE_URL = "https://eidosfrontier.com/"
 CATEGORY_EMOJI = {
     "cafe": "\u2615",
     "figure": "\U0001F9F8",

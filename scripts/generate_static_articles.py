@@ -25,7 +25,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ENTRIES_JSON = PROJECT_ROOT / "data" / "entries.json"
 ARTICLES_DIR = PROJECT_ROOT / "articles"
 SITEMAP_XML = PROJECT_ROOT / "sitemap.xml"
-SITE_URL = "https://otaku.eidosfrontier.com"
+SITE_URL = "https://eidosfrontier.com"
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 
 ID_DATE_RE = re.compile(r"-(\d{8})(?:\d{4})?-")

@@ -4,7 +4,7 @@ const SITES = [
     id: "joi",
     name: "Japan OTAKU Insider",
     shortName: "JOI",
-    url: "https://otaku.eidosfrontier.com",
+    url: "https://eidosfrontier.com",
     accentHue: 174,        // teal — CSS var(--accent-hue) に対応
     emoji: "🇯🇵",
     active: true,
