@@ -234,8 +234,8 @@ Actions タブで失敗した Run を開き、どのステップで止まった�
 ## 開発履歴・アップデートログ
 
 - **2026-05-20（canonical / OGP / sitemap をルートドメイン `eidosfrontier.com` に統一）:**
-  - **背景:** GitHub Pages のカスタムドメインを `otaku.eidosfrontier.com` から `eidosfrontier.com` に変更済みだが、HTML・sitemap・生成スクリプト内の URL が旧サブドメインのまま残存。Googlebot が canonical 先（旧サブドメイン）へアクセスすると 404 となり、インデックスに悪影響。
-  - **対応:** プロジェクト全体で `otaku.eidosfrontier.com` → `eidosfrontier.com` に一括置換（約 3,500 ファイル）。対象: 全静的記事 HTML、トップ/About/Contact/Privacy/Weekly、`robots.txt`、`sitemap.xml`、`scripts/generate_static_articles.py`・`post_to_x.py`・`search_console_clicks_report.py`、RSS Manager UI 等。
+  - **背景:** GitHub Pages のカスタムドメインを `eidosfrontier.com` から `eidosfrontier.com` に変更済みだが、HTML・sitemap・生成スクリプト内の URL が旧サブドメインのまま残存。Googlebot が canonical 先（旧サブドメイン）へアクセスすると 404 となり、インデックスに悪影響。
+  - **対応:** プロジェクト全体で `eidosfrontier.com` → `eidosfrontier.com` に一括置換（約 3,500 ファイル）。対象: 全静的記事 HTML、トップ/About/Contact/Privacy/Weekly、`robots.txt`、`sitemap.xml`、`scripts/generate_static_articles.py`・`post_to_x.py`・`search_console_clicks_report.py`、RSS Manager UI 等。
   - **今後:** 新規記事は `generate_static_articles.py` の `SITE_URL`（`https://eidosfrontier.com`）から正しい URL が出力される。
 
 - **2026-05-05（検索流入改善のため静的記事ページを自動生成）:**
