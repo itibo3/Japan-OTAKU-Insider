@@ -1,0 +1,70 @@
+[
+  {
+    "index": 0,
+    "id": "game-202605192149-pplx-104167",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=4Gamer.net ¡½ ¥ª¥ó¥é¥¤¥ó¥²¡¼¥à¡Ê¥È¥Ã¥×¥Ú¡¼¥¸¡Ë",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/indextop/all_onlinegame.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/indextop/all_onlinegame.html",
+    "page_title": "4Gamer.net ¡½ ¥ª¥ó¥é¥¤¥ó¥²¡¼¥à¡Ê¥È¥Ã¥×¥Ú¡¼¥¸¡Ë",
+    "published_date": "",
+    "og_image": ""
+  },
+  {
+    "index": 1,
+    "id": "game-202605192149-pplx-a37c24",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=ãã¨ãã·ã¼ã¨ãã«ã·ã®ã®å³éãå¨å½ã®ãã¡ã",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/945/G094530/20260515027/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/945/G094530/20260515027/",
+    "page_title": "ãã¨ãã·ã¼ã¨ãã«ã·ã®ã®å³éãå¨å½ã®ãã¡ããªã¼ãã¼ãã§5æ19æ¥ããã­ã£ã³ãã¼ã³ãå®æ½ãä¸çªããã®ã¬ãããã¿ããããã",
+    "published_date": "2026-05-15T15:28:36+09:00",
+    "og_image": "https://www.4gamer.net/games/945/G094530/20260515027/SS/002.jpg"
+  },
+  {
+    "index": 2,
+    "id": "game-202605192149-pplx-13c9f2",
+    "ok": false,
+    "reason_ja": "記事タイトルとページタイトルが一致せず、内容が異なる可能性が高い",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/138/G013826/20260512044/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/138/G013826/20260512044/",
+    "page_title": "ï¼»ã¤ã³ã¿ãã¥ã¼ï¼½æµ·å¤ã¤ãã³ããé£ã³åãã¢ã¼ã¯ã©ã¤ãã«ï¼ã²ã¼ã ãã¼ã±ããã®ãããããèã",
+    "published_date": "2026-05-19T07:00:00+09:00",
+    "og_image": "https://www.4gamer.net/games/138/G013826/20260512044/SS/020.jpg"
+  },
+  {
+    "index": 3,
+    "id": "game-202605192149-pplx-f396f1",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "vtuber",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/004/G100451/20260518034/index_2.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/004/G100451/20260518034/index_2.html",
+    "page_title": "Page 2 / ãã«ããããç²å­å2026ãã®éå¬æ±ºå®ãªã©ï¼ä»å¾å®æ½äºå®ã®ãã¾ãã¾ãªãã­ã¸ã§ã¯ããçºè¡¨ããâææ¥ããã®ã«ããããï¼2026âãå¬éã«",
+    "published_date": "2026-05-18T19:19:08+09:00",
+    "og_image": "https://www.4gamer.net/games/004/G100451/20260518034/SS/012.jpg"
+  }
+]
