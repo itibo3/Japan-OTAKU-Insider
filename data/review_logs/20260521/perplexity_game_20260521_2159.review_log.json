@@ -1,0 +1,87 @@
+[
+  {
+    "index": 0,
+    "id": "game-202605212159-pplx-6f8207",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.4gamer.net/games/783/G078392/20260520054/",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/783/G078392/20260520054/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.4gamer.net/games/783/G078392/20260520054/",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "game-202605212159-pplx-2592f3",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.4gamer.net/games/759/G075932/20260515036/",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/759/G075932/20260515036/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.4gamer.net/games/759/G075932/20260515036/",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 2,
+    "id": "game-202605212159-pplx-0001c9",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/004/G100451/20260518034/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/004/G100451/20260518034/",
+    "page_title": "ãã«ããããç²å­å2026ãã®éå¬æ±ºå®ãªã©ï¼ä»å¾å®æ½äºå®ã®ãã¾ãã¾ãªãã­ã¸ã§ã¯ããçºè¡¨ããâææ¥ããã®ã«ããããï¼2026âãå¬éã«",
+    "published_date": "2026-05-18T19:19:08+09:00",
+    "og_image": "https://www.4gamer.net/games/004/G100451/20260518034/SS/012.jpg"
+  },
+  {
+    "index": 3,
+    "id": "game-202605212159-pplx-cfc2a5",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/946/G094686/20260520054/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/946/G094686/20260520054/",
+    "page_title": "ãå¤§æ¦ç¥SSB2ãï¼æ°åµå¨ãããããåè­·è¡è¦ã¡ããããï¼å·¡èªããµã¤ã«è£åï¼ããè¿½å ãDLCç¬¬4å¼¾ããã©ã³ã¹ãã5æ28æ¥éä¿¡",
+    "published_date": "2026-05-21T08:00:00+09:00",
+    "og_image": "https://www.4gamer.net/games/946/G094686/20260520054/SS/004.jpg"
+  },
+  {
+    "index": 4,
+    "id": "game-202605212159-pplx-ddf59d",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.4gamer.net/games/123/G012345/20260519001/",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/123/G012345/20260519001/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.4gamer.net/games/123/G012345/20260519001/",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]
