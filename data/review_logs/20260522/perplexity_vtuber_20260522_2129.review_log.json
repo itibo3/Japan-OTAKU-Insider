@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "vtuber-202605222129-pplx-cf4b92",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.anycolor.co.jp/news/20260517-kuzuha-3d-new-outfit",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://www.anycolor.co.jp/news/20260517-kuzuha-3d-new-outfit",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.anycolor.co.jp/news/20260517-kuzuha-3d-new-outfit",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "vtuber-202605222129-pplx-6b9a9e",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.anycolor.co.jp/news/20260516-nijisanji-3d-fes-2026",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://www.anycolor.co.jp/news/20260516-nijisanji-3d-fes-2026",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.anycolor.co.jp/news/20260516-nijisanji-3d-fes-2026",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]
