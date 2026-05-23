@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "other-202605232021-pplx-508de9",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "cafe",
+    "category_before": "other",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000001514.000099047.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000001514.000099047.html",
+    "page_title": "5/22(金)～《グランエンタスちょっぴり早い夏祭り2026 with 東方Project×キュアメイドカフェ》開催！【タブリエ・マーケティング株式会社】",
+    "published_date": "2026-05-18 17:00:02",
+    "og_image": "https://prcdn.freetls.fastly.net/release_image/99047/1514/99047-1514-459cb2756adf18d74dda41c62e3317b5-1080x1440.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  },
+  {
+    "index": 1,
+    "id": "other-202605232021-pplx-5390f0",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=【GRAPHT】3周年を迎える「ストリートファイター 6」の新作コラボアイテムを発表 観虐さん描き下ろしの全30キャラク",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000097.000162957.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000000097.000162957.html",
+    "page_title": "【GRAPHT】3周年を迎える「ストリートファイター 6」の新作コラボアイテムを発表 観虐さん描き下ろしの全30キャラクターのアイテムを展開、5月20日よりEC予約開始",
+    "published_date": "2026-05-20 11:00:02",
+    "og_image": "https://prcdn.freetls.fastly.net/release_image/162957/97/162957-97-ca711708b3e987b02fb8feccef17968d-1920x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  },
+  {
+    "index": 2,
+    "id": "other-202605232021-pplx-bc5d0d",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "anime",
+    "category_before": "other",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000001518.000099047.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000001518.000099047.html",
+    "page_title": "巡回開始！《Re:ゼロから始める異世界生活×ジーストアPOP UP SHOP～祝アニメ10th Anniversary ＆ 4th season 放送記念～》【タブリエ・マーケティング株式会社】",
+    "published_date": "2026-05-18 16:00:01",
+    "og_image": "https://prcdn.freetls.fastly.net/release_image/99047/1518/99047-1518-abe0d26a94f26b37f490b23e3cf7604d-1280x720.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  }
+]

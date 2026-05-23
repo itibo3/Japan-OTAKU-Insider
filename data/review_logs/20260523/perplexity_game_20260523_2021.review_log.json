@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "game-202605232021-pplx-07b570",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/959/G095942/20260521009/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/959/G095942/20260521009/",
+    "page_title": "ææç¾åãµã¹ãã³ã¹ãã©ã¼ããã¤ãã¼ã»ã¦ã¼ãã©ãªã¢ãï¼Steamçã5æ22æ¥ã«çºå£²ãè¶å¿µååãæã¤æ¢åµã³ã³ããé£ç¶æ®ºäººäºä»¶ã«æã",
+    "published_date": "2026-05-21T12:37:06+09:00",
+    "og_image": "https://www.4gamer.net/games/959/G095942/20260521009/SS/001.jpg"
+  },
+  {
+    "index": 1,
+    "id": "game-202605232021-pplx-5e0d6e",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/959/G095942/20260521009/index_2.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/959/G095942/20260521009/index_2.html",
+    "page_title": "Page 2 / ææç¾åãµã¹ãã³ã¹ãã©ã¼ããã¤ãã¼ã»ã¦ã¼ãã©ãªã¢ãï¼Steamçã5æ22æ¥ã«çºå£²ãè¶å¿µååãæã¤æ¢åµã³ã³ããé£ç¶æ®ºäººäºä»¶ã«æã",
+    "published_date": "2026-05-21T12:37:06+09:00",
+    "og_image": "https://www.4gamer.net/games/959/G095942/20260521009/SS/001.jpg"
+  },
+  {
+    "index": 2,
+    "id": "game-202605232021-pplx-750718",
+    "ok": false,
+    "reason_ja": "page_titleとtitle_jaの内容が一致せず、別記事に飛んでいる疑いがあるため。",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/946/G094686/20260520054/index_2.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/946/G094686/20260520054/index_2.html",
+    "page_title": "Page 2 / ãå¤§æ¦ç¥SSB2ãï¼æ°åµå¨ãããããåè­·è¡è¦ã¡ããããï¼å·¡èªããµã¤ã«è£åï¼ããè¿½å ãDLCç¬¬4å¼¾ããã©ã³ã¹ãã5æ28æ¥éä¿¡",
+    "published_date": "2026-05-21T08:00:00+09:00",
+    "og_image": "https://www.4gamer.net/games/946/G094686/20260520054/SS/004.jpg"
+  }
+]
