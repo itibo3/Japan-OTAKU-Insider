@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "vtuber-202605252237-pplx-7c3f40",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.anycolor.co.jp/news/20260514-01",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://www.anycolor.co.jp/news/20260514-01",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.anycolor.co.jp/news/20260514-01",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "vtuber-202605252237-pplx-075826",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.anycolor.co.jp/news/20260518-01",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "vtuber",
+    "category_before": "vtuber",
+    "source_url": "https://www.anycolor.co.jp/news/20260518-01",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.anycolor.co.jp/news/20260518-01",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]

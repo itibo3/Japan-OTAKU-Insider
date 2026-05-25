@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "other-202605252237-pplx-5390f0",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=【GRAPHT】3周年を迎える「ストリートファイター 6」の新作コラボアイテムを発表 観虐さん描き下ろしの全30キャラク",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000097.000162957.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000000097.000162957.html",
+    "page_title": "【GRAPHT】3周年を迎える「ストリートファイター 6」の新作コラボアイテムを発表 観虐さん描き下ろしの全30キャラクターのアイテムを展開、5月20日よりEC予約開始",
+    "published_date": "2026-05-20 11:00:02",
+    "og_image": "https://prcdn.freetls.fastly.net/release_image/162957/97/162957-97-ca711708b3e987b02fb8feccef17968d-1920x1080.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  },
+  {
+    "index": 1,
+    "id": "other-202605252237-pplx-177117",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "other",
+    "source_url": "https://store.grapht.tokyo/blogs/events/grapht-popup-solamachi-2605",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://store.grapht.tokyo/blogs/events/grapht-popup-solamachi-2605",
+    "page_title": "【東京ソラマチ®】STREET FIGHTER 6 3rd Anniversary POP UP STORE in 東京ソラマチ® | GRAPHT OFFICIAL STORE",
+    "published_date": "",
+    "og_image": "http://store.grapht.tokyo/cdn/shop/articles/sf6_3rd_1920_1080.webp?v=1779242370"
+  }
+]
