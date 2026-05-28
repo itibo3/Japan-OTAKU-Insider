@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "game-202605282300-pplx-9c414f",
+    "ok": false,
+    "reason_ja": "[PPLX_OG_MISSING] Perplexity由来URLでOG画像取得不可",
+    "reason_code": "PPLX_OG_MISSING",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/words/018/W01893/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/words/018/W01893/",
+    "page_title": "State of Play 2026.2.13",
+    "published_date": "",
+    "og_image": ""
+  },
+  {
+    "index": 1,
+    "id": "game-202605282300-pplx-d3eaef",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=ææå­¦åãã 1äººã®å¥³å­çå¾ã¨ãã¦ï¼3äººã®å¹¼ã",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/959/G095984/20260528063/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/959/G095984/20260528063/",
+    "page_title": "ææå­¦åãã 1äººã®å¥³å­çå¾ã¨ãã¦ï¼3äººã®å¹¼ãªãã¿ã¨æ¥ã®æ¥ããéãããSwitchç§»æ¤çãStarryâSkyãSpring Memoriesããï¼æ¬æ¥çºå£²",
+    "published_date": "2026-05-28T21:31:11+09:00",
+    "og_image": "https://www.4gamer.net/games/959/G095984/20260528063/SS/001.jpg"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "cafe-202605282300-pplx-286ff1",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=《ゲームクリエイターになりきってゲームを改造!!》自分の力でゲームを面白くするうちに「Scratch」プログラミングが学",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "cafe",
+    "category_before": "cafe",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000999.000012109.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000000999.000012109.html",
+    "page_title": "《ゲームクリエイターになりきってゲームを改造!!》自分の力でゲームを面白くするうちに「Scratch」プログラミングが学べる、新感覚の学習本が登場！",
+    "published_date": "2020-06-26 08:30:01",
+    "og_image": "https://prtimes.jp/i/12109/999/resize/d12109-999-934291-0.jpg"
+  },
+  {
+    "index": 1,
+    "id": "cafe-202605282300-pplx-135aba",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://collabo-cafe.com/events/collabo/oshi-no-ko-collabo-index-shinjuku2026/",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "cafe",
+    "category_before": "cafe",
+    "source_url": "https://collabo-cafe.com/events/collabo/oshi-no-ko-collabo-index-shinjuku2026/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://collabo-cafe.com/events/collabo/oshi-no-ko-collabo-index-shinjuku2026/",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]
