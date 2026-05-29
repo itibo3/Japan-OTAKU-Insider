@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "game-202605292155-pplx-9c414f",
+    "ok": false,
+    "reason_ja": "[PPLX_OG_MISSING] Perplexity由来URLでOG画像取得不可",
+    "reason_code": "PPLX_OG_MISSING",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/words/018/W01893/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/words/018/W01893/",
+    "page_title": "State of Play 2026.2.13",
+    "published_date": "",
+    "og_image": ""
+  },
+  {
+    "index": 1,
+    "id": "game-202605292155-pplx-b20df6",
+    "ok": false,
+    "reason_ja": "記事の公開日が未来（2026年）であり、生成AI由来の候補であるため、現在のニュースとして内容の真偽が確認不可能。",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/947/G094707/20260527011/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/947/G094707/20260527011/",
+    "page_title": "é¸æã«å¿ãã¦ã¤ã³ãã¬åº¦ãå¤åããä¹å¥³ã²ã¼ã ãéããåã«è±æããBouquet for you in the darkããï¼Steamãªã©ã§éä¿¡ä¸­",
+    "published_date": "2026-05-27T14:10:42+09:00",
+    "og_image": "https://www.4gamer.net/games/947/G094707/20260527011/SS/001.jpg"
+  }
+]
