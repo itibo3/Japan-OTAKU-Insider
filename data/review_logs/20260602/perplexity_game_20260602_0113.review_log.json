@@ -1,0 +1,70 @@
+[
+  {
+    "index": 0,
+    "id": "game-202606020113-pplx-baf85b",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=Future Friends Games(çºå£²å)",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/publisher/066/P06658/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/publisher/066/P06658/",
+    "page_title": "Future Friends Games(çºå£²å)",
+    "published_date": "",
+    "og_image": ""
+  },
+  {
+    "index": 1,
+    "id": "game-202606020113-pplx-e10d89",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/010/G101014/20260526047/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/010/G101014/20260526047/",
+    "page_title": "ããããæçã§ã¯ã±ããç°ä¸çç·å­ã®èè¢ãæ´ãï¼ ãã¯ã­ãã»ã¬ã¹ãã©ã³ãè¿½æ¶ã®ã¬ã·ããæ±ãã¦ããï¼2026å¹´åå¤ã«ãªãªã¼ã¹",
+    "published_date": "2026-05-26T20:55:05+09:00",
+    "og_image": "https://www.4gamer.net/games/010/G101014/20260526047/SS/003.png"
+  },
+  {
+    "index": 2,
+    "id": "game-202606020113-pplx-d3eaef",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/959/G095984/20260528063/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/959/G095984/20260528063/",
+    "page_title": "ææå­¦åãã 1äººã®å¥³å­çå¾ã¨ãã¦ï¼3äººã®å¹¼ãªãã¿ã¨æ¥ã®æ¥ããéãããSwitchç§»æ¤çãStarryâSkyãSpring Memoriesããï¼æ¬æ¥çºå£²",
+    "published_date": "2026-05-28T21:31:11+09:00",
+    "og_image": "https://www.4gamer.net/games/959/G095984/20260528063/SS/001.jpg"
+  },
+  {
+    "index": 3,
+    "id": "game-202606020113-pplx-b20df6",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/947/G094707/20260527011/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/947/G094707/20260527011/",
+    "page_title": "é¸æã«å¿ãã¦ã¤ã³ãã¬åº¦ãå¤åããä¹å¥³ã²ã¼ã ãéããåã«è±æããBouquet for you in the darkããï¼Steamãªã©ã§éä¿¡ä¸­",
+    "published_date": "2026-05-27T14:10:42+09:00",
+    "og_image": "https://www.4gamer.net/games/947/G094707/20260527011/SS/001.jpg"
+  }
+]
