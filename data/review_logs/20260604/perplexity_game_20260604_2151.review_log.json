@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "game-202606042151-pplx-baf85b",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=Future Friends Games(çºå£²å)",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/publisher/066/P06658/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/publisher/066/P06658/",
+    "page_title": "Future Friends Games(çºå£²å)",
+    "published_date": "",
+    "og_image": ""
+  },
+  {
+    "index": 1,
+    "id": "game-202606042151-pplx-28c412",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/413/G041305/20260508071/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/413/G041305/20260508071/",
+    "page_title": "ï¼»ã¤ã³ã¿ãã¥ã¼ï¼½å¤§å¥½ããªâå½¼âã«ããä¸åº¦ä¼ããââãµã¼ãã¹çµäºã¿ã¤ãã«ããã©ã¦ã¶ã§æ¥½ããããDreamoireï¼ããªã¢ã¯ï¼ãéçºã®è£å´",
+    "published_date": "2026-05-29T12:00:00+09:00",
+    "og_image": "https://www.4gamer.net/games/413/G041305/20260508071/SS/013.jpg"
+  }
+]
