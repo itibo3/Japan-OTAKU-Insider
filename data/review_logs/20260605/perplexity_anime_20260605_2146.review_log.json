@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "anime-202606052146-pplx-7575ac",
+    "ok": false,
+    "reason_ja": "[PPLX_CONNECT_ERROR] Perplexity由来URLの疎通失敗: ConnectionError: HTTPSConnectionPool(host='comic.natalie.mu', port=443): Max retries exceeded with url: /comic/news/XXXX",
+    "reason_code": "PPLX_CONNECT_ERROR",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://comic.natalie.mu/comic/news/XXXXX",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": null,
+    "final_url": "https://comic.natalie.mu/comic/news/XXXXX",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  },
+  {
+    "index": 1,
+    "id": "anime-202606052146-pplx-28a2b2",
+    "ok": false,
+    "reason_ja": "[PPLX_CONNECT_ERROR] Perplexity由来URLの疎通失敗: ConnectionError: HTTPSConnectionPool(host='comic.natalie.mu', port=443): Max retries exceeded with url: /comic/news/YYYY",
+    "reason_code": "PPLX_CONNECT_ERROR",
+    "primary_category": "anime",
+    "category_before": "anime",
+    "source_url": "https://comic.natalie.mu/comic/news/YYYYY",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": null,
+    "final_url": "https://comic.natalie.mu/comic/news/YYYYY",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]
