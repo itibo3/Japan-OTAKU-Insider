@@ -1,0 +1,36 @@
+[
+  {
+    "index": 0,
+    "id": "other-202606062042-pplx-a7d25b",
+    "ok": false,
+    "reason_ja": "URLがエラーページにリダイレクトされており、記事内容が確認できません。",
+    "reason_code": "",
+    "primary_category": "anime",
+    "category_before": "other",
+    "source_url": "https://www.loft.co.jp/news/detail.php?news_id=123456",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.loft.co.jp/error.html",
+    "page_title": "アクセスエラー｜ロフト",
+    "published_date": "",
+    "og_image": "https://www.loft.co.jp/ogp.jpg"
+  },
+  {
+    "index": 1,
+    "id": "other-202606062042-pplx-d564e0",
+    "ok": false,
+    "reason_ja": "[PPLX_HTTP_STATUS] Perplexity由来URLがHTTP 404: https://www.animate.co.jp/event/123456/",
+    "reason_code": "PPLX_HTTP_STATUS",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://www.animate.co.jp/event/123456/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 404,
+    "final_url": "https://www.animate.co.jp/event/123456/",
+    "page_title": null,
+    "published_date": null,
+    "og_image": null
+  }
+]
