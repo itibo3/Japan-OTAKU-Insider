@@ -1,0 +1,87 @@
+[
+  {
+    "index": 0,
+    "id": "game-202606132102-pplx-82c40a",
+    "ok": false,
+    "reason_ja": "[PPLX_OG_MISSING] Perplexity由来URLでOG画像取得不可",
+    "reason_code": "PPLX_OG_MISSING",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/words/019/W01916/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/words/019/W01916/",
+    "page_title": "Nintendo Direct 2026.6.9",
+    "published_date": "",
+    "og_image": ""
+  },
+  {
+    "index": 1,
+    "id": "game-202606132102-pplx-a96115",
+    "ok": false,
+    "reason_ja": "架空のゲームタイトル（「ドラゴンズドグマ 2：ダークアリズン」）と未発表のハード（Switch2）の組み合わせであり、情報がでっち上げの可能性が高い。",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/999/G999903/20260610004/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/999/G999903/20260610004/",
+    "page_title": "ããã©ã´ã³ãºãã°ã 2ï¼ãã¼ã¯ã¢ãªãºã³ãï¼2026å¹´10æ9æ¥ã«çºå£²ãä»åº¦ããã¼ã¯ã¢ãªãºã³ã®åãå ãã¦ï¼æ°ããªä¸çã«è¸ã¿å¥ã",
+    "published_date": "2026-06-10T00:18:45+09:00",
+    "og_image": "https://www.4gamer.net/games/999/G999903/20260610004/SS/009.jpg"
+  },
+  {
+    "index": 2,
+    "id": "game-202606132102-pplx-ada913",
+    "ok": false,
+    "reason_ja": "架空のイベント（「Nintendo Direct 2026.6.9」）と未発表の新作ゲーム（「Star Fox」）の組み合わせであり、情報がでっち上げの可能性が高い。",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/999/G999903/20260609068/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/999/G999903/20260609068/",
+    "page_title": "ãStar Foxãä½é¨çãéä¿¡éå§ãçºå£²æ¥ã¾ã§ã«ãã¥ã¼ããªã¢ã«ä½é¨",
+    "published_date": "2026-06-09T23:15:29+09:00",
+    "og_image": "https://www.4gamer.net/games/999/G999903/20260609068/SS/001.jpg"
+  },
+  {
+    "index": 3,
+    "id": "game-202606132102-pplx-c97cbe",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=ãã¼ã«ãã®ä¼èª¬ æã®ãªã«ãªãããªã¡ã¤ã¯çã",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/015/G101542/20260610016/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/015/G101542/20260610016/",
+    "page_title": "ãã¼ã«ãã®ä¼èª¬ æã®ãªã«ãªãããªã¡ã¤ã¯çããXenoblade GENESISããªã©æ°ä½æå ±å¤æ°ã®ãNintendo Direct 2026.6.9ãã¾ã¨ã",
+    "published_date": "2026-06-10T01:37:41+09:00",
+    "og_image": "https://www.4gamer.net/games/015/G101542/20260610016/SS/002.jpg"
+  },
+  {
+    "index": 4,
+    "id": "game-202606132102-pplx-0b1d8e",
+    "ok": false,
+    "reason_ja": "未発表のハード（Switch2）向けにゲームが発売されるという情報であり、情報がでっち上げの可能性が高い。",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/016/G101602/20260610023/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/016/G101602/20260610023/",
+    "page_title": "ãWo Long: Fallen Dynasty Complete Editionãï¼Switch2çã9æ3æ¥ã«çºå£²æ±ºå®ãå¨DLCãç¹å¸ã¢ã¤ãã ãåé²",
+    "published_date": "2026-06-10T12:07:17+09:00",
+    "og_image": "https://www.4gamer.net/games/016/G101602/20260610023/SS/001.jpg"
+  }
+]
