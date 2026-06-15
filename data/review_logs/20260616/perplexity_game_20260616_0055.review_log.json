@@ -1,0 +1,70 @@
+[
+  {
+    "index": 0,
+    "id": "game-202606160055-pplx-f66c3a",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=Switch2/Switchçããã¸ã¢ã³ã¹ãã¼ãªã¼ ã¿ã¤ã ã¹",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/981/G098145/20260611016/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/981/G098145/20260611016/",
+    "page_title": "Switch2/Switchçããã¸ã¢ã³ã¹ãã¼ãªã¼ ã¿ã¤ã ã¹ãã¬ã³ã¸ã£ã¼ãï¼ã»ã¼ããã¼ã¿ãå¼ãç¶ããä½é¨çãéä¿¡ãéã³æ¹ãç´¹ä»ããææ°ãã¬ã¤ã©ã¼ãå¬é",
+    "published_date": "2026-06-11T14:10:07+09:00",
+    "og_image": "https://www.4gamer.net/games/981/G098145/20260611016/SS/001.jpg"
+  },
+  {
+    "index": 1,
+    "id": "game-202606160055-pplx-f80f73",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/930/G093056/20260612004/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/930/G093056/20260612004/",
+    "page_title": "ãStaffer Retro: è¶è½åæ¨çã¯ã¨ã¹ããï¼ä½é¨çAct 2ã6æ16æ¥ããæééå®ã§éä¿¡ãæ¨çã·ã¹ãã ãæ¥æ¬èªãã¤ã¹ãªã©ãæ¥½ããã",
+    "published_date": "2026-06-12T12:10:06+09:00",
+    "og_image": "https://www.4gamer.net/games/930/G093056/20260612004/SS/001.jpg"
+  },
+  {
+    "index": 2,
+    "id": "game-202606160055-pplx-82c40a",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=Nintendo Direct 2026.6.9",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/words/019/W01916/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/words/019/W01916/",
+    "page_title": "Nintendo Direct 2026.6.9",
+    "published_date": "",
+    "og_image": ""
+  },
+  {
+    "index": 3,
+    "id": "game-202606160055-pplx-c97cbe",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=ãã¼ã«ãã®ä¼èª¬ æã®ãªã«ãªãããªã¡ã¤ã¯çã",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/015/G101542/20260610016/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/015/G101542/20260610016/",
+    "page_title": "ãã¼ã«ãã®ä¼èª¬ æã®ãªã«ãªãããªã¡ã¤ã¯çããXenoblade GENESISããªã©æ°ä½æå ±å¤æ°ã®ãNintendo Direct 2026.6.9ãã¾ã¨ã",
+    "published_date": "2026-06-10T01:37:41+09:00",
+    "og_image": "https://www.4gamer.net/games/015/G101542/20260610016/SS/002.jpg"
+  }
+]
