@@ -1,0 +1,70 @@
+[
+  {
+    "index": 0,
+    "id": "game-202606170023-pplx-f66c3a",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/981/G098145/20260611016/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/981/G098145/20260611016/",
+    "page_title": "Switch2/Switchçããã¸ã¢ã³ã¹ãã¼ãªã¼ ã¿ã¤ã ã¹ãã¬ã³ã¸ã£ã¼ãï¼ã»ã¼ããã¼ã¿ãå¼ãç¶ããä½é¨çãéä¿¡ãéã³æ¹ãç´¹ä»ããææ°ãã¬ã¤ã©ã¼ãå¬é",
+    "published_date": "2026-06-11T14:10:07+09:00",
+    "og_image": "https://www.4gamer.net/games/981/G098145/20260611016/SS/001.jpg"
+  },
+  {
+    "index": 1,
+    "id": "game-202606170023-pplx-bdbe77",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/915/G091522/20260610039/index_2.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/915/G091522/20260610039/index_2.html",
+    "page_title": "Page 2 / ããµã«ã¤ã2026ãï¼Ver.2.0å¤§åã¢ãããã¼ããå®æ½ããªã¼ã°ï¼ã¯ã©ãï¼é¸æãã¼ã¿ãæ°ã·ã¼ãºã³ã«ç½®ãæãã",
+    "published_date": "2026-06-10T14:51:53+09:00",
+    "og_image": "https://www.4gamer.net/games/915/G091522/20260610039/SS/002.jpg"
+  },
+  {
+    "index": 2,
+    "id": "game-202606170023-pplx-c97cbe",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=ãã¼ã«ãã®ä¼èª¬ æã®ãªã«ãªãããªã¡ã¤ã¯çã",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/015/G101542/20260610016/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/015/G101542/20260610016/",
+    "page_title": "ãã¼ã«ãã®ä¼èª¬ æã®ãªã«ãªãããªã¡ã¤ã¯çããXenoblade GENESISããªã©æ°ä½æå ±å¤æ°ã®ãNintendo Direct 2026.6.9ãã¾ã¨ã",
+    "published_date": "2026-06-10T01:37:41+09:00",
+    "og_image": "https://www.4gamer.net/games/015/G101542/20260610016/SS/002.jpg"
+  },
+  {
+    "index": 3,
+    "id": "game-202606170023-pplx-bb0406",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/017/G101719/20260612064/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/017/G101719/20260612064/",
+    "page_title": "ãã¹ã¿ã¼ã¯ã©ãããã®åãã­ãéçºã«åå ããâæ¬¡ä¸ä»£RTSâãã¨ãZeroSpaceãã7æ20æ¥çºå£²ã¸ãSteamã¹ãã¢ãã¼ã¸ã§ã¯ä½é¨çãå¬éä¸­",
+    "published_date": "2026-06-12T23:13:08+09:00",
+    "og_image": "https://www.4gamer.net/games/017/G101719/20260612064/SS/002.jpg"
+  }
+]
