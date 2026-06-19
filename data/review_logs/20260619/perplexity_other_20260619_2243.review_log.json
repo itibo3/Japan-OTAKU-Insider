@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "other-202606192243-pplx-5cb1f7",
+    "ok": false,
+    "reason_ja": "[PPLX_OLD_ARTICLE] Perplexity由来URLが古い: published_date=2025-05-28 12:00:02",
+    "reason_code": "PPLX_OLD_ARTICLE",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000125.000074811.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000000125.000074811.html",
+    "page_title": "楳図かずお画業70周年記念。少女誌史上に残る伝説の衝撃作品をテーマにした限定ショップが池袋に!「赤んぼ少女 POP UP SHOP」開催！！",
+    "published_date": "2025-05-28 12:00:02",
+    "og_image": "https://prcdn.freetls.fastly.net/release_image/74811/125/74811-125-158851065f4713386e248f37bfb965e5-1076x1522.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  },
+  {
+    "index": 1,
+    "id": "other-202606192243-pplx-c9301e",
+    "ok": true,
+    "reason_ja": "",
+    "reason_code": "",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000794.000017258.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000000794.000017258.html",
+    "page_title": "アソビシステム、夏の東京を盛り上げる都市回遊型KAWAIIプロジェクト「東京KAWAII夏遊2026」を始動",
+    "published_date": "2026-06-18 15:00:29",
+    "og_image": "https://prcdn.freetls.fastly.net/release_image/17258/794/17258-794-30378492225e9460e1536325660cf59a-2812x2250.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  },
+  {
+    "index": 2,
+    "id": "other-202606192243-pplx-b0a318",
+    "ok": false,
+    "reason_ja": "オタク文化と無関係な一般イベントのため",
+    "reason_code": "",
+    "primary_category": "other",
+    "category_before": "other",
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000109.000042926.html",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://prtimes.jp/main/html/rd/p/000000109.000042926.html",
+    "page_title": "「好色一代男」日本舞踊 山村流 舞ざらえ 第3回　歌舞伎町のホスト、能舞台に舞う",
+    "published_date": "2026-06-15 16:06:15",
+    "og_image": "https://prcdn.freetls.fastly.net/release_image/42926/109/42926-109-d65ffe51cf32faa8619d4f24f04b727d-3900x2194.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+  }
+]

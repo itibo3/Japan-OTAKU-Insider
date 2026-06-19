@@ -1,0 +1,53 @@
+[
+  {
+    "index": 0,
+    "id": "game-202606192243-pplx-f560d1",
+    "ok": false,
+    "reason_ja": "[PPLX_OG_MISSING] Perplexity由来URLでOG画像取得不可",
+    "reason_code": "PPLX_OG_MISSING",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/616/G061641/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/616/G061641/",
+    "page_title": "PS5ç Mina the Hollower ã¾ã¨ããã¼ã¸",
+    "published_date": "",
+    "og_image": ""
+  },
+  {
+    "index": 1,
+    "id": "game-202606192243-pplx-49ba11",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=é±åSteamåºå ´ ç¬¬157å·ï¼ã¢ã³ã¹ã¿ã¼è²æã¢ã¯ã·",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/games/038/G003821/20260613006/",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/games/038/G003821/20260613006/",
+    "page_title": "é±åSteamåºå ´ ç¬¬157å·ï¼ã¢ã³ã¹ã¿ã¼è²æã¢ã¯ã·ã§ã³ãVoidling Boundããï¼ã­ã¼ã°ã©ã¤ãRTSãTabletop Tavernããçºå£²ã«",
+    "published_date": "2026-06-13T18:00:00+09:00",
+    "og_image": "https://www.4gamer.net/games/038/G003821/20260613006/TN/013.jpg"
+  },
+  {
+    "index": 2,
+    "id": "game-202606192243-pplx-bd58f7",
+    "ok": false,
+    "reason_ja": "[PPLX_TITLE_MISMATCH] Perplexity由来URLの内容不一致疑い: page_title=ä¸æè­°ãªçãç©ãç¨æããå½ããã®ã²ã¼ã ã«",
+    "reason_code": "PPLX_TITLE_MISMATCH",
+    "primary_category": "game",
+    "category_before": "game",
+    "source_url": "https://www.4gamer.net/s/G094498.260615007",
+    "source_type": "perplexity",
+    "source_id": null,
+    "url_status": 200,
+    "final_url": "https://www.4gamer.net/s/G094498.260615007",
+    "page_title": "ä¸æè­°ãªçãç©ãç¨æããå½ããã®ã²ã¼ã ã«æããã¼ã¯ãã¡ã³ã¿ã¸ã¼ãSullyland Nursery Rhymeãï¼ãã­ã¢ã¼ã·ã§ã³ã ã¼ãã¼ãå¬é",
+    "published_date": "2026-06-15T12:08:42+09:00",
+    "og_image": "https://www.4gamer.net/games/944/G094498/20260615007/SS/007.jpg"
+  }
+]

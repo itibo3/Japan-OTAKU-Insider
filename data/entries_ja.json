@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-18T22:09:32.786797+09:00",
-  "total_entries": 12205,
+  "last_updated": "2026-06-19T22:46:37.903991+09:00",
+  "total_entries": 12357,
   "lang": "ja",
   "entries": [
     {
@@ -33,6 +33,2267 @@
       "_source_id": "joi-weekly",
       "pinned_top": true,
       "_weekly_archived": false
+    },
+    {
+      "id": "other-202606192243-pplx-c9301e",
+      "categories": [
+        "other"
+      ],
+      "status": "active",
+      "title": "アソビシステム「東京KAWAII夏遊2026」FRUITS ZIPPER 超☆観測展 開催決定",
+      "title_ja": "アソビシステム「東京KAWAII夏遊2026」FRUITS ZIPPER 超☆観測展 開催決定",
+      "description": "As part of ASOBI SYSTEM's urban travel project \"Tokyo KAWAII Summer Trip 2026,\" the \"FRUITS ZIPPER Super Observation Exhibition\" will be held at Laforet Museum Harajuku, where you can experience the world of FRUITS ZIPPER. Early bird ticket sales will begin from June 19th, and venue-limited merchandise will also be available.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000794.000017258.html"
+      },
+      "tags": [
+        "other"
+      ],
+      "_source": "perplexity",
+      "dates": {
+        "display": "2026-06-19"
+      },
+      "location": "ラフォーレミュージアム原宿（東京都渋谷区神宮前1-11-6 ラフォーレ原宿6F）",
+      "_url_verified": {
+        "status": 200,
+        "final_url": "https://prtimes.jp/main/html/rd/p/000000794.000017258.html",
+        "error": "",
+        "page_title": "アソビシステム、夏の東京を盛り上げる都市回遊型KAWAIIプロジェクト「東京KAWAII夏遊2026」を始動",
+        "published_date": "2026-06-18 15:00:29",
+        "og_image": "https://prcdn.freetls.fastly.net/release_image/17258/794/17258-794-30378492225e9460e1536325660cf59a-2812x2250.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
+      },
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/17258/794/17258-794-30378492225e9460e1536325660cf59a-2812x2250.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260",
+      "_category_assigned_by": "gemini"
+    },
+    {
+      "id": "figure-202606192242-rss-a40120",
+      "categories": [
+        "figure",
+        "event"
+      ],
+      "status": "active",
+      "title": "Gugenka、韓国アニメイト弘大店にて 『ホロモデル体験会 in アニメイト弘大店』を開催",
+      "title_ja": "Gugenka、韓国アニメイト弘大店にて 『ホロモデル体験会 in アニメイト弘大店』を開催",
+      "dates": {},
+      "description": "[Gugenka Co., Ltd.]\nGugenka Co., Ltd. (Representative Director and CEO: Masashi Mikami) has launched a ``Holomodel'' app where you can experience the digital figure ``Holomodel'' and purchase the digital figure at the Animate Hongdae store in AK PLAZA Hongdae store in Seoul, South Korea.",
+      "source": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000353.000074603.html"
+      },
+      "tags": [
+        "figure",
+        "kotobukiya",
+        "merchandise"
+      ],
+      "thumbnail": "https://prcdn.freetls.fastly.net/release_image/74603/353/74603-353-69accc92a5bdc9cf1e07f53572bb1a1e-512x288.png?width=1950&height=1350&quality=85&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+      "_source_id": "prtimes-kotobukiya"
+    },
+    {
+      "id": "vtuber-202606192241-rss-2fc90e",
+      "categories": [
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "BEverse、VTuberとアニメ声優への挑戦機会を掛け合わせたオーディション開催",
+      "title_ja": "BEverse、VTuberとアニメ声優への挑戦機会を掛け合わせたオーディション開催",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Brave group Co., Ltd.'s next-generation content label \"BEverse\" has announced the holding of a new VTuber audition \"BEYOND VTuber Audition 2026.\" On official LINE from June 19th [&#8230;]\nThe post BEverse holds an audition that combines the opportunity to challenge VTuber and anime voice acting. Appeared first on Mogura VR.",
+      "source": {
+        "url": "https://www.moguravr.com/beverse-beyond-vtuber-audition-2026/"
+      },
+      "tags": [
+        "moguravr-com",
+        "vtuber"
+      ],
+      "thumbnail": "https://assets.moguravr.com/uploads/2018/12/0f69939dbb82766b69dbd526821d4611-kix.nyx5b9oymw4c-1024x538.webp",
+      "_source_id": "moguravr-com"
+    },
+    {
+      "id": "game-202606192241-rss-f24a10",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "日焼けしたキティちゃんが夏にぴったり！アベイルで「サンリオキャラクターズ」新作アイテムが発売",
+      "title_ja": "日焼けしたキティちゃんが夏にぴったり！アベイルで「サンリオキャラクターズ」新作アイテムが発売",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Tanned Sanrio characters are now available!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183251.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1738247.png",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192241-rss-bdf8a7",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "アベイルで「ジョジョ」グッズが発売！第4部より東方仗助、吉良吉影らをイメージしたバッグ・ポーチ類をラインナップ",
+      "title_ja": "アベイルで「ジョジョ」グッズが発売！第4部より東方仗助、吉良吉影らをイメージしたバッグ・ポーチ類をラインナップ",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Goods from the anime “JoJo’s Bizarre Adventure Diamond is Unbreakable” will go on sale at some Avail stores on June 20th!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183249.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1742807.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192241-rss-a672ae",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「パペットスンスン」生活に役立つ新商品がオンラインストアにて販売中！タンブラーやランチボックスなどラインナップ、なくなり次第終了",
+      "title_ja": "「パペットスンスン」生活に役立つ新商品がオンラインストアにて販売中！タンブラーやランチボックスなどラインナップ、なくなり次第終了",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "“Puppet Soonsun” new products are now on sale at the online store!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183253.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1745031.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192241-rss-794db0",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「ボンボンドロップシール」オリジナル ミニ シリーズが6月下旬より再販予告！なないろ、よるねこなど全4種",
+      "title_ja": "「ボンボンドロップシール」オリジナル ミニ シリーズが6月下旬より再販予告！なないろ、よるねこなど全4種",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "“Bonbon Drop Seal” original mini series is on sale again! Scheduled to be shipped sequentially from late June.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183252.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1742468.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192241-rss-616d1f",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "スシロー×『ゼンゼロ』コラボが間近に迫る！公式アカウントでは「対ホロウ6課」メンバーが寿司を楽しむお祝いイラストが公開",
+      "title_ja": "スシロー×『ゼンゼロ』コラボが間近に迫る！公式アカウントでは「対ホロウ6課」メンバーが寿司を楽しむお祝いイラストが公開",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "“Sushiro x Zenless Zone Zero” collaboration is scheduled to start from June 24, 2026!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183245.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1744802.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192241-rss-57e89d",
+      "categories": [
+        "cosplay",
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "【コスプレ】透き通る柔肌と豊かな曲線が織りなす圧巻の美ボディ！台湾美女が魅せる『NIKKE』ヘンゼルは出し惜しみなし【写真8枚】",
+      "title_ja": "【コスプレ】透き通る柔肌と豊かな曲線が織りなす圧巻の美ボディ！台湾美女が魅せる『NIKKE』ヘンゼルは出し惜しみなし【写真8枚】",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "I would like to introduce some beautiful cosplayers I found in Taiwan.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183247.html"
+      },
+      "tags": [
+        "inside-games-jp",
+        "cosplay"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1741968.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192241-rss-3d8359",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "手塚治虫「鉄腕アトム」「ブッダ」「ヒョウタンツギ」がゴールドミニフィギュア化！特製のディスプレイケースに納められた姿が神々しい",
+      "title_ja": "手塚治虫「鉄腕アトム」「ブッダ」「ヒョウタンツギ」がゴールドミニフィギュア化！特製のディスプレイケースに納められた姿が神々しい",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Pre-orders are now being accepted for the 3 “Osamu Tezuka World Gold Collection” products until June 22nd!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183246.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1730759.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192241-rss-2e9e08",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『FE万紫千紅』主人公4人の情報がついに出揃う！最後の1人は復讐に囚われたビウエラ奏者「レダ」",
+      "title_ja": "『FE万紫千紅』主人公4人の情報がついに出揃う！最後の1人は復讐に囚われたビウエラ奏者「レダ」",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "How will Leda's past, an \"event\" that happened five years ago, be related to the story?",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183243.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1745088.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192241-rss-1da092",
+      "categories": [
+        "game",
+        "otaku-news",
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "立ち上げから2年半、ホロライブの二次創作ゲームブランド「holo Indie」はなぜ今シーズン制へと移行した？総DL数は300万超え、カバー独自の「インディーゲーム」施策のこれまでを聞いた【インタビュー】",
+      "title_ja": "立ち上げから2年半、ホロライブの二次創作ゲームブランド「holo Indie」はなぜ今シーズン制へと移行した？総DL数は300万超え、カバー独自の「インディーゲーム」施策のこれまでを聞いた【インタビュー】",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "We conducted an interview with the person in charge of Hololive's derivative game brand \"holo Indie\". We talked about this system change, which they believe has great benefits for creators, by moving to a seasonal system, and what they have been up to in the two and a half years since its launch.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183244.html"
+      },
+      "tags": [
+        "inside-games-jp",
+        "vtuber"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1743394.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192241-rss-152108",
+      "categories": [
+        "game",
+        "otaku-news",
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "そんな隠れ方ある!? 話題の『めっちゃカメレオン』を遊ぶ「にじさんじ」ライバーが大胆すぎるー消化器になるシスター・クレア、足元に潜む花畑チャイカなどご紹介",
+      "title_ja": "そんな隠れ方ある!? 話題の『めっちゃカメレオン』を遊ぶ「にじさんじ」ライバーが大胆すぎるー消化器になるシスター・クレア、足元に潜む花畑チャイカなどご紹介",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "``Meccha Chameleon'' is a simple hide-and-seek game in which Nijisanji Liver shows off his clever ways of hiding. It is characterized by inventive plays that take advantage of psychological and visual gaps, such as disguising itself as a fire extinguisher, assimilating into the shadow of a chair, mimicking a carpet, and hiding in a painting.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183250.html"
+      },
+      "tags": [
+        "inside-games-jp",
+        "vtuber"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1744662.png",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192241-rss-074173",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "アベイルにて『ポケモン』グッズが6月27日発売！ニャオハらの大人可愛いショルダーバッグ、寝具類など豊富なデザイン",
+      "title_ja": "アベイルにて『ポケモン』グッズが6月27日発売！ニャオハらの大人可愛いショルダーバッグ、寝具類など豊富なデザイン",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "\"Pokemon\" goods will be on sale from June 27th at Avail stores! It will also be available at the online store from 12:00 on the same day.",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183248.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1745022.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "anime-202606192241-rss-e5d8d9",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "「恋せよまやかし天使ども」制作はMAPPA、アニメ映像初披露となるティザーPVも",
+      "title_ja": "「恋せよまやかし天使ども」制作はMAPPA、アニメ映像初披露となるティザーPVも",
+      "dates": {},
+      "description": "MAPPA is in charge of producing the TV anime \"Koisei Mayakashi Tenshi\" based on the original story by Koko Uzuki. Teaser visual and teaser PV have been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/676898"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/koidomo_teaser.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-e2c4c1",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "MAPPA設立15周年記念の展覧会「MAPPA EXPO 15th Anniversary」開催",
+      "title_ja": "MAPPA設立15周年記念の展覧会「MAPPA EXPO 15th Anniversary」開催",
+      "dates": {},
+      "description": "The exhibition \"MAPPA EXPO 15th Anniversary\" commemorating the 15th anniversary of MAPPA's establishment will be held at the YURAKUCHO MUSEUM in Tokyo from September 16th to December 7th.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/676939"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/01_setticket.jpg?impolicy=thumb_fit&width=180&height=180",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-d1fb95",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "「鎧真伝サムライトルーパー」第2クール、本PV第2弾公開　第1クール終盤の再放送も",
+      "title_ja": "「鎧真伝サムライトルーパー」第2クール、本PV第2弾公開　第1クール終盤の再放送も",
+      "dates": {},
+      "description": "The second PV for the second season of the TV anime \"Shinden Samurai Trooper\" has been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/676903"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/samuraitroopers_cool2_mainpv2_00002.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-c72a0f",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "娘を探して異世界へ、体は巨大ロボットに「おとぎの国のデスマシーン」1巻発売",
+      "title_ja": "娘を探して異世界へ、体は巨大ロボットに「おとぎの国のデスマシーン」1巻発売",
+      "dates": {},
+      "description": "Volume 1 of Chisato Hazama's ``Death Machine in Fairytale Land'' was released today, June 19th.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/677003"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/otoginokunino_1.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-c22bf2",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "「地元最高！」MAPPA制作でアニメ化決定！Netflixで世界独占配信",
+      "title_ja": "「地元最高！」MAPPA制作でアニメ化決定！Netflixで世界独占配信",
+      "dates": {},
+      "description": "It has been decided that USAGI's ``Local Best!'' will be made into an anime. It will be produced by MAPPA and distributed worldwide exclusively on Netflix.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/676932"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/jimoto_teaser.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-a07032",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "アニメ「忘却バッテリー」イベントのビジュアル公開　大塚剛央、石井マークら追加出演",
+      "title_ja": "アニメ「忘却バッテリー」イベントのビジュアル公開　大塚剛央、石井マークら追加出演",
+      "dates": {},
+      "description": "The visuals and second part of performer information for the large-scale event ``Oblivion Festa 2026'' of the TV anime ``Oblivion Battery'' based on the original work by Eko Mikawa have been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/676928"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/bokyakufesta2026.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-8194b6",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "「呪術廻戦」第4期「死滅回游 後編」ティザーPV公開、前編副監督の佐藤威が監督に",
+      "title_ja": "「呪術廻戦」第4期「死滅回游 後編」ティザーPV公開、前編副監督の佐藤威が監督に",
+      "dates": {},
+      "description": "The teaser PV for the 4th season of the TV anime \"Jujutsu Kaisen\", \"Death Kaiyu Part 2\", based on the original work by Gege Akutami, has been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/677010"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/jujutsu_season4_teaserpv_00001.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-6ec61d",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "「新劇場版☆ケロロ軍曹」×出前館、注文回数に応じたケロログッズが当たる",
+      "title_ja": "「新劇場版☆ケロロ軍曹」×出前館、注文回数に応じたケロログッズが当たる",
+      "dates": {},
+      "description": "A collaboration campaign between the delivery service Demae-kan and the original work by Yoshizaki Kannon, titled ``New Theatrical Version☆ Keroro Sergeant: Revival and the Earth is in danger of extinction!'' is being held from June 19th to July 3rd.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/676974"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/keroro_demaekan_main.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-6b3063",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "「らんま1/2」第3期、乱馬と良牙の激闘や新キャラも登場する第2弾PV",
+      "title_ja": "「らんま1/2」第3期、乱馬と良牙の激闘や新キャラも登場する第2弾PV",
+      "dates": {},
+      "description": "The second PV for the third season of the TV anime \"Ranma 1/2\" based on the original work by Rumiko Takahashi has been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/676922"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/ranma3_PV2-01_c.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-6436e0",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "“ダイビングアニメ”「ぐらんぶる」3期は「今までで一番海のシーンがある」安済知佳が証言",
+      "title_ja": "“ダイビングアニメ”「ぐらんぶる」3期は「今までで一番海のシーンがある」安済知佳が証言",
+      "dates": {},
+      "description": "An advance screening of the TV anime \"Grand Blue\" Season 3, based on the original work by Kenji Inoue and Kimihiro Yoshioka, was held today, June 19th, at Shinjuku Wald 9 in Tokyo, with Yuuma Uchida who plays Iori Kitahara, Ryohei Kimura who plays Kohei Imamura, Chika Anzai who plays Chisa Kotegawa, and Kana Asumi who plays Mana Yoshiwara on stage.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/677034"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/DSC_4762.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-469443",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "アニメ「BEAT＆MOTION」MAPPA制作で来年Netflix独占配信　梅田修一朗、胡麻鶴彩が出演",
+      "title_ja": "アニメ「BEAT＆MOTION」MAPPA制作で来年Netflix独占配信　梅田修一朗、胡麻鶴彩が出演",
+      "dates": {},
+      "description": "The anime \"BEAT & MOTION\" based on the original work by Naoki Fujita will be distributed exclusively on Netflix in 2027. The teaser visual, first PV, and cast information have been released. The animation production for the film will be handled by MAPPA.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/677020"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/beatandmotion-anime_teaser.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-2fb733",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "「チェンソーマン」新キャラ登場の「刺客篇」ティザーPV公開、スマホゲーム化も",
+      "title_ja": "「チェンソーマン」新キャラ登場の「刺客篇」ティザーPV公開、スマホゲーム化も",
+      "dates": {},
+      "description": "The second teaser PV for the anime ``Chainsaw Man: Assassins'' based on the original work by Tatsuki Fujimoto has been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/676954"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/chainsawman_sikakuhen_teaserpv2_00001.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-270567",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "「成瀬は天下を取りにいく」約1年ぶりに連載再開、新章「成瀬は信じた道をいく」編へ",
+      "title_ja": "「成瀬は天下を取りにいく」約1年ぶりに連載再開、新章「成瀬は信じた道をいく」編へ",
+      "dates": {},
+      "description": "The serialization of ``Naruse wa Tenka wo Oku Iku'', which was originally written by Mina Miyajima, composed by Kou Sakana, and illustrated by Kei Obata, resumed today, June 19th.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/677018"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/naruseakariseries_comic.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-121a48",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "MAPPA設立15周年記念ムービー公開、アニバーサリーソングはPEOPLE 1が担当",
+      "title_ja": "MAPPA設立15周年記念ムービー公開、アニバーサリーソングはPEOPLE 1が担当",
+      "dates": {},
+      "description": "The movie \"MAPPA 15th Anniversary Movie\" commemorating the 15th anniversary of MAPPA's establishment has been released.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/676959"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/MAPPA_15th_AnniversaryMovie_thumbnail.jpg?imwidth=1280&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "anime-202606192241-rss-049673",
+      "categories": [
+        "anime"
+      ],
+      "status": "active",
+      "title": "「超かぐや姫！」9月18日より4Dなど特別フォーマットで復活上映、特報を公開",
+      "title_ja": "「超かぐや姫！」9月18日より4Dなど特別フォーマットで復活上映、特報を公開",
+      "dates": {},
+      "description": "A revival screening of the original animated film \"Super Kaguyahime!\" has been decided. From September 18th, in addition to the regular version, it will be re-screened in MX4D, 4DX, SCREENX, ULTRA 4DX, and Dolby Atmos formats.",
+      "source": {
+        "url": "https://natalie.mu/comic/news/676938"
+      },
+      "tags": [
+        "anime-news",
+        "manga",
+        "pop-culture"
+      ],
+      "thumbnail": "https://ogre.natalie.mu/media/news/comic/2026/0619/chokaguyahime_fukkatsujoei.jpg?imwidth=640&imdensity=1",
+      "_source_id": "natalie-anime"
+    },
+    {
+      "id": "game-202606192240-rss-f6ff55",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "ニンテンドーミュージアムに新たな飲食施設「スーパーファミリーレストラン」が2026年秋オープン！「リンク」や「マスターソード」の等身大像らしき展示も",
+      "title_ja": "ニンテンドーミュージアムに新たな飲食施設「スーパーファミリーレストラン」が2026年秋オープン！「リンク」や「マスターソード」の等身大像らしき展示も",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "A new dining facility “Super Family Restaurant” will open at the Nintendo Museum in fall 2026!",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168201.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147725.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-f0ef52",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "【13,037円→330円】美少女鉄道ADV『まいてつ』全部入り版DLsiteで超お得！FANZAより33倍も高いけど桐谷華さんASMRなど特典マシマシ",
+      "title_ja": "【13,037円→330円】美少女鉄道ADV『まいてつ』全部入り版DLsiteで超お得！FANZAより33倍も高いけど桐谷華さんASMRなど特典マシマシ",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "This set is still a bargain, with bonus illustrations being added with upgrades. ``Ruel Romanesque Origin'' is also cheap.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168211.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147768.png",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-d6e9af",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "初代『DOOM』『Wolfenstein 3D』サントラで知られるボビー・プリンス氏が死去―退役軍人であり、弁護士でもあった作曲家",
+      "title_ja": "初代『DOOM』『Wolfenstein 3D』サントラで知られるボビー・プリンス氏が死去―退役軍人であり、弁護士でもあった作曲家",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The person who created the original DOOM soundtrack, which was recognized by the Library of Congress, dies.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168212.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147785.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-c98027",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『デジモンストーリー タイムストレンジャー』公式アンバサダー「テリアモン助手」がプレイアブル化！スイッチ、スイッチ2版リリースに合わせて既存ハードにも無料アップデート",
+      "title_ja": "『デジモンストーリー タイムストレンジャー』公式アンバサダー「テリアモン助手」がプレイアブル化！スイッチ、スイッチ2版リリースに合わせて既存ハードにも無料アップデート",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Nintendo Switch 2nd version/Nintendo Switch version \"Digimon Story Time Stranger\" is scheduled to be released on July 9, 2026!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183254.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1744991.png",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192240-rss-aa2d67",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "アベイルで「トイ・ストーリー」グッズが発売！ウッディやバズたちデザインのアパレルや雑貨などさまざま",
+      "title_ja": "アベイルで「トイ・ストーリー」グッズが発売！ウッディやバズたちデザインのアパレルや雑貨などさまざま",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "“Toy Story” goods will be released on June 20th at Avail!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183255.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1742461.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192240-rss-a1ea52",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "ソニーの年次報告書から「PCなどマルチプラットフォーム」と書かれた表記が消滅。2025年版にはあった文章が2026年版では削除",
+      "title_ja": "ソニーの年次報告書から「PCなどマルチプラットフォーム」と書かれた表記が消滅。2025年版にはあった文章が2026年版では削除",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The words \"for PC\" disappear from the game section of the Sony Group's annual report.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168207.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147754.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-8b582f",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "ヤンデレ悪魔とロシアンルーレット飲みサバイバル『PUKEY GODDESS SHOT TRICK』発売時期は「2026年秋冬」。地獄のサシ飲みまでもうすぐ",
+      "title_ja": "ヤンデレ悪魔とロシアンルーレット飲みサバイバル『PUKEY GODDESS SHOT TRICK』発売時期は「2026年秋冬」。地獄のサシ飲みまでもうすぐ",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The delivery date of Hell's Sashimi Russian Roulette has been decided for fall/winter 2026.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168213.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147769.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-677991",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "『ドラクエV』主人公の娘を「To LOVEる」矢吹健太朗先生が描く！ちいさなメダル見つけて得意げな表情のファンアートに反響",
+      "title_ja": "『ドラクエV』主人公の娘を「To LOVEる」矢吹健太朗先生が描く！ちいさなメダル見つけて得意げな表情のファンアートに反響",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Fan art of \"The Protagonist's Daughter (Dragon Quest V)\" by Kentaro Yabuki of \"To LOVE-Ru\" and \"Ayakashi Triangle\" has been released!",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168209.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147746.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-4b203e",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "「アクティビティが“すし詰め”状態だ」海外レビューハイスコア『デイヴ・ザ・ダイバー』DLC「イン・ザ・ジャングル」",
+      "title_ja": "「アクティビティが“すし詰め”状態だ」海外レビューハイスコア『デイヴ・ザ・ダイバー』DLC「イン・ザ・ジャングル」",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "We bring you an overseas review of \"Dave the Diver\" DLC \"In the Jungle\" released on June 18, 2026.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168203.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147705.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-41a271",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "コミュニケーションが大事、でも音量には注意…？「The Backrooms」がテーマの協力型サバイバルホラーが早期アクセス開始―採れたて！本日のSteam注目ゲーム15選【2026年6月19日】",
+      "title_ja": "コミュニケーションが大事、でも音量には注意…？「The Backrooms」がテーマの協力型サバイバルホラーが早期アクセス開始―採れたて！本日のSteam注目ゲーム15選【2026年6月19日】",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Cooperate with your friends and aim for survival while managing your resources and physical strength!",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168215.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147792.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-3a9708",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "【大喜利】『GTA6が予約受付を開始するとどうなる？』回答募集中！",
+      "title_ja": "【大喜利】『GTA6が予約受付を開始するとどうなる？』回答募集中！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "It's time for Game*Spark Ogiri, a weekend-only relaxing project. This week's topic is \"What will happen when GTA 6 opens for pre-orders?\" \"is.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168202.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147732.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-395c79",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "即完売のしまむら「競走馬」グッズ、受注締切迫る！ディープインパクトやサイレンススズカなど名馬6頭をデザイン",
+      "title_ja": "即完売のしまむら「競走馬」グッズ、受注締切迫る！ディープインパクトやサイレンススズカなど名馬6頭をデザイン",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "\"Racehorse\" T-shirts and miscellaneous goods released on June 6th at Shimamura's official online store have been well-received and are now being made to order!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183256.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1738969.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192240-rss-36e2a6",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "魔女狩りローグライトFPS『Witchfire』日本語対応アップデート配信！新ステージや武器も追加",
+      "title_ja": "魔女狩りローグライトFPS『Witchfire』日本語対応アップデート配信！新ステージや武器も追加",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "This work is in early access from 2023.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168205.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147760.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-342803",
+      "categories": [
+        "game",
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "ぶりぶりざえもんはエビ！？「クレヨンしんちゃん」しんちゃん、ひまわり、シロたちが“お寿司”になりきって可愛い",
+      "title_ja": "ぶりぶりざえもんはエビ！？「クレヨンしんちゃん」しんちゃん、ひまわり、シロたちが“お寿司”になりきって可愛い",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "“Crayon Shin-chan Osushin-chan” will be released from the third week of June!",
+      "source": {
+        "url": "https://www.inside-games.jp/article/2026/06/19/183257.html"
+      },
+      "tags": [
+        "inside-games-jp"
+      ],
+      "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1745015.jpg",
+      "_source_id": "inside-games-jp"
+    },
+    {
+      "id": "game-202606192240-rss-3026e6",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "「Steam Controller」新規注文の納期は2027年に－需要が予想を大幅に上回る",
+      "title_ja": "「Steam Controller」新規注文の納期は2027年に－需要が予想を大幅に上回る",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Valve has announced that demand for the Steam Controller is significantly higher than expected, and the current expected shipping date is ``2027.''",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168210.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147784.png",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-2a1d21",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "『ドラクエ』スライムチョコ缶の底に“お宝”を発見！？ 「ちいさなメダルをみつけた！」製品表示シールの裏に隠された公式の粋な遊び心",
+      "title_ja": "『ドラクエ』スライムチョコ缶の底に“お宝”を発見！？ 「ちいさなメダルをみつけた！」製品表示シールの裏に隠された公式の粋な遊び心",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Who would have thought that the Dragon Quest experience of examining walls, breaking pots, and opening treasure chests could be recreated in a real chocolate can?",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168206.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147595.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-184208",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "【吉田輝和の絵日記】俺達は犬だ！マイクに向かって吠えまくるワンちゃんなりきり対戦ゲーム『ワンワンバトル』",
+      "title_ja": "【吉田輝和の絵日記】俺達は犬だ！マイクに向かって吠えまくるワンちゃんなりきり対戦ゲーム『ワンワンバトル』",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Challenge yourself to online battles where fierce dogs are rampant!",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168208.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147462.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-05fd1f",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "未踏の地へ向かう最大規模アップデート「チャプター4」配信。ARPG『Titan Quest II』新エリア「ワイルドランド」解放やレベル上限引き上げなど",
+      "title_ja": "未踏の地へ向かう最大規模アップデート「チャプター4」配信。ARPG『Titan Quest II』新エリア「ワイルドランド」解放やレベル上限引き上げなど",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "In order to delve deeper into the in-game adventure, the range of strategy building for players has been greatly expanded.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168214.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147805.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "game-202606192240-rss-0030c3",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "初代PSからの新移植作品3本も発表！ QUByteショーケース「QUByte Reconnect 2026」開催",
+      "title_ja": "初代PSからの新移植作品3本も発表！ QUByteショーケース「QUByte Reconnect 2026」開催",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "A showcase that focuses 100% on porting retro classics to modern consoles.",
+      "source": {
+        "url": "http://www.gamespark.jp/article/2026/06/19/168204.html"
+      },
+      "tags": [
+        "game-spark"
+      ],
+      "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1147679.jpg",
+      "_source_id": "game-spark"
+    },
+    {
+      "id": "figure-202606192240-rss-ee4853",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "\"めしを喰うでごわす!!\"「ずんだどん」が1/12可動フィギュアで登場！霧隠サブロー氏と味噌グラム氏によって生み出された奇跡のミームキャラ",
+      "title_ja": "\"めしを喰うでごわす!!\"「ずんだどん」が1/12可動フィギュアで登場！霧隠サブロー氏と味噌グラム氏によって生み出された奇跡のミームキャラ",
+      "dates": {},
+      "description": "Daiki Kogyo will release the action figure \"Zundadon\" in November. The order period is until August 28th. The price is 14,300 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118492.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/492/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-e99283",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "『エイリアン2』の地球外生命体「エイリアン・ウォーリアー（2.0版）」がホットトイズのアクションフィギュアに登場！エイリアン・エッグとディスプレイベースが付属するDX版も！",
+      "title_ja": "『エイリアン2』の地球外生命体「エイリアン・ウォーリアー（2.0版）」がホットトイズのアクションフィギュアに登場！エイリアン・エッグとディスプレイベースが付属するDX版も！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "From the movie \"Alien 2\", the movable figure \"2.0 version\" of \"Alien Warrior\" is now available from Hot Toys! There is also a DX version that comes with an alien egg and display base that allows you to recreate the Alien Queen's lair! #Hot Toys #Alien",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/3054273/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/06/Alien_Warrior_1_n-sn1BKJglH3r1OKhijXpfUgThlfF2wB_wYONsQQgQy7D20LOreJh6ceZq7mahjXJ-440x310.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202606192240-rss-e868a7",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "アクションフィギュア「S.H.Figuarts『GAMERVERSE』」シリーズからX-MEN屈指のテレパス・サイロック（GAMERVERSE）が商品化決定！",
+      "title_ja": "アクションフィギュア「S.H.Figuarts『GAMERVERSE』」シリーズからX-MEN屈指のテレパス・サイロック（GAMERVERSE）が商品化決定！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Psylocke (GAMERVERSE) from the action figure \"S.H.Figuarts 'GAMERVERSE'\" series will be commercialized! Item images are also released! #t_shf #MARVEL",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/3054339/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://m.media-amazon.com/images/I/31EDXF9da1L._SL200_AA140_.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202606192240-rss-dabff1",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "復活の時！ 『伝説巨神イデオン』より「MODEROID ミニ合体変形 イデオン」が11月に発売",
+      "title_ja": "復活の時！ 『伝説巨神イデオン』より「MODEROID ミニ合体変形 イデオン」が11月に発売",
+      "dates": {},
+      "description": "Good Smile Company will release the plastic model ``MODEROID Mini Combined Transformation Ideon'' in November. The price is 4,400 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118552.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/552/main_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-d6ca2b",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "緜氏が描くビジュアルを元に初音ミク「マジカルミライ2026」Ver.のスケールフィギュア化が決定！",
+      "title_ja": "緜氏が描くビジュアルを元に初音ミク「マジカルミライ2026」Ver.のスケールフィギュア化が決定！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Hatsune Miku's \"Magical Mirai 2026\" Ver., based on the beautiful and adorable visuals drawn by Mizuki, will be made into a scale figure by Design Coco! #Hatsune Miku",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/3053499/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://m.media-amazon.com/images/I/B1u0nU7JVIL._SL200_AA140_.png",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202606192240-rss-c81bd0",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "『骸骨騎士様、只今異世界へお出掛け中』15巻、『現実主義勇者の王国再建記』15巻、『ネトゲの嫁が人気アイドルだった』5巻など6月20日配信のKindle本コミックをピックアップ！",
+      "title_ja": "『骸骨騎士様、只今異世界へお出掛け中』15巻、『現実主義勇者の王国再建記』15巻、『ネトゲの嫁が人気アイドルだった』5巻など6月20日配信のKindle本コミックをピックアップ！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Delivered on June 20th! Introducing selected Kindle book comics such as \"Skeleton Knight, Now Going to Another World\" Volume 15, \"Realist Hero's Kingdom Reconstruction Record\" Volume 15, \"Black Summoner\" Volume 25! #Kindle",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/3053933/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/06/1_gGyXT0bYsSQvO7_jfPJv3gJ5-YoUqvwn_soFCwYWIYgCETO08Qx-dxlcdThbKJQQG.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202606192240-rss-bb3f51",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "四方を囲ってカードを保護できる「フルプロテクト サイドローダー」がアクラスから6月発売！",
+      "title_ja": "四方を囲ってカードを保護できる「フルプロテクト サイドローダー」がアクラスから6月発売！",
+      "dates": {},
+      "description": "Acrus will release the trading card supply ``Full Protect Side Loader'' in June. The price is open, and the reference price is 680 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118533.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/533/011_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-a1c4dc",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "【ゾイド】「ADVANCED Zi」シリーズより「AZ-17EX ウルトラザウルス専用 グラビティカノン」が7月予約開始決定！",
+      "title_ja": "【ゾイド】「ADVANCED Zi」シリーズより「AZ-17EX ウルトラザウルス専用 グラビティカノン」が7月予約開始決定！",
+      "dates": {},
+      "description": "Takara Tomy's hobby label \"T-SPARK\" for high-end targets has announced that reservations for the \"AZ-17EX Ultrasaurus Gravity Canon\" will begin in July. Release date and price are both undecided.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118518.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/518/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-8d5a2b",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "2026年8月発売のホビーボス製プラモデルを一挙紹介！「1/48 フォッケウルフ」2アイテムに「1/35 CV90-35 歩兵戦闘車」「1/700 093型原子力潜水艦（商級）」など全8アイテム!!",
+      "title_ja": "2026年8月発売のホビーボス製プラモデルを一挙紹介！「1/48 フォッケウルフ」2アイテムに「1/35 CV90-35 歩兵戦闘車」「1/700 093型原子力潜水艦（商級）」など全8アイテム!!",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Introducing Doyusha's Hobby Boss plastic models to be released in August 2026!! A total of 8 types including \"F/A-18C Hornet\", \"American heavy tank T30\", and \"Chinese Navy Type 093 nuclear submarine (shang class)\" are now available! #Doyusha #Hobby Boss #Plastic model",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/3053810/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/06/6939319217905_2_zp_dahpYV-hvJe-RO4uzcv8YIqKuOkCA_u6eZTbrabERNtncqJPKVP2WxF0GDeNSs-440x165.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202606192240-rss-842fa9",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "「ウルトラマンZ」よりフィギュア「大怪獣シリーズ UNG ウルトラマンゼット オリジナル」が9月発売！両目とカラータイマーが発光する限定版も用意",
+      "title_ja": "「ウルトラマンZ」よりフィギュア「大怪獣シリーズ UNG ウルトラマンゼット オリジナル」が9月発売！両目とカラータイマーが発光する限定版も用意",
+      "dates": {},
+      "description": "Plex will release the figure ``Large Monster Series ULTRA NEW GENERATION Ultraman Z Original'' in September. The price is 25,300 yen for the regular version and 26,400 yen for the limited edition.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118445.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/445/011_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-81e1bb",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "『ガンダムSEED FREEDOM』マイティーストライクフリーダムの「HG」ガンプラがリサーキュレーションカラーで登場！Ξガンダム[クリアカラー]劇場公開記念パッケージのガンダムベース販売も！",
+      "title_ja": "『ガンダムSEED FREEDOM』マイティーストライクフリーダムの「HG」ガンプラがリサーキュレーションカラーで登場！Ξガンダム[クリアカラー]劇場公開記念パッケージのガンダムベース販売も！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Special color gunpla of \"HG 1/144 Mighty Strike Freedom Gundam\" and \"HG 1/144 Ξ Gundam\" will be released at Gundam Base on Friday, June 26th! #Gundam #Gunpla",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/3054269/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/06/638abff7bfecb9bd2a17074acddd4a33_DFHlArK_egy7H0O2j2T4XJHZHjtexcCv_hGBk08a3ty7dDuBeC9HU4zb5w3PJ57Dj.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202606192240-rss-69dbc3",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "「S.H.Figuarts『ONE PIECE』＜マリンフォード頂上決戦＞」シリーズの新作シルエットが公開！ついにあのキャラクターが参戦……！",
+      "title_ja": "「S.H.Figuarts『ONE PIECE』＜マリンフォード頂上決戦＞」シリーズの新作シルエットが公開！ついにあのキャラクターが参戦……！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "A new silhouette from the “S.H.Figuarts ONE PIECE” Battle at the Summit of Marineford has been released! The follow-up will be released in July! #One Piece Arts #ONEPIECE",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/3054321/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://m.media-amazon.com/images/I/31jBpjZ951L._SL200_AA140_.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202606192240-rss-67cd5f",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "プラモデル「1/24 シャコタン☆ブギ」シリーズから「道秋のケンメリ」、「京子のジャパン」が10月に発売予定",
+      "title_ja": "プラモデル「1/24 シャコタン☆ブギ」シリーズから「道秋のケンメリ」、「京子のジャパン」が10月に発売予定",
+      "dates": {},
+      "description": "Aoshima Bunka Kyozaisha will release plastic models ``1/24 Shakotan Boogie No.06 Michiaki no Kenmeri'' and ``1/24 Shakotan Boogie No.07 Kyoko's Japan'' in October. The price is 3,520 yen each. Reservations will be accepted from 2:00 pm on June 26th.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118674.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/674/main_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-4d2b82",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "プライム1スタジオの新作スタチューを紹介する「NEXT LEVEL SHOWCASE XVIII」が6月26日11時よりプレミア公開登場タイトルは劇場版「チェンソーマン レゼ篇」「トランスフォーマー／リベンジ」など4タイトル",
+      "title_ja": "プライム1スタジオの新作スタチューを紹介する「NEXT LEVEL SHOWCASE XVIII」が6月26日11時よりプレミア公開登場タイトルは劇場版「チェンソーマン レゼ篇」「トランスフォーマー／リベンジ」など4タイトル",
+      "dates": {},
+      "description": "Prime 1 Studio will premiere \"NEXT LEVEL SHOWCASE XVIII\" on June 26th at 11am on the \"Prime 1 Studio YouTube Channel\".",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118578.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/578/000_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-4c48fe",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "SWAV氏のオリジナル作品「Tactical Bride」よりオリキャラ「淡雪」が1/7スケールフィギュアで登場！2027年5月発売予定",
+      "title_ja": "SWAV氏のオリジナル作品「Tactical Bride」よりオリキャラ「淡雪」が1/7スケールフィギュアで登場！2027年5月発売予定",
+      "dates": {},
+      "description": "Q's Q will release the figure \"SWAV Original Tactical Bride 'Awayuki'\" in May 2027. The price is 34,100 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118596.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/596/011_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-432b6a",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "アオシマ、プラモデル「ザ・トラック No.02 1/32 日野 HE トレーラ」が12月に発売",
+      "title_ja": "アオシマ、プラモデル「ザ・トラック No.02 1/32 日野 HE トレーラ」が12月に発売",
+      "dates": {},
+      "description": "Aoshima Bunka Kyozaisha will release the plastic model ``The Truck No.02 1/32 Hino HE Trailer'' in December. The price is 14,300 yen. Reservations will be accepted from 2:00 pm on June 26th.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118692.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/692/sub1_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-3cf271",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "「バニーガーデン」より「花奈」や「美羽香」もメディコスから1/4スケール＆逆バニー衣装でフィギュア化決定！",
+      "title_ja": "「バニーガーデン」より「花奈」や「美羽香」もメディコスから1/4スケール＆逆バニー衣装でフィギュア化決定！",
+      "dates": {},
+      "description": "Medicos has announced the decision to commercialize the figure ``Kana/Miwaka 1/4 Reverse Bunny Ver.''. Release date and price are both undecided.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118644.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/644/011_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-35e475",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "「ローゼンメイデン」より「真紅 キャストドール＜特別再販 2026＞」が6月26日に受注開始",
+      "title_ja": "「ローゼンメイデン」より「真紅 キャストドール＜特別再販 2026＞」が6月26日に受注開始",
+      "dates": {},
+      "description": "DOLK will begin accepting orders for the cast doll \"Shinku Cast Doll <Special Resale 2026>\" on the e-commerce site \"DOLK Online\" from 7:00 pm on June 26th. The price is 143,000 yen. Shipping is scheduled to start around July 2027.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118711.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/711/main_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-35a090",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "みたか合体、ゲッターロボだ！ 「MODEROID ミニ合体変形 ゲッタードラゴン」が11月に発売",
+      "title_ja": "みたか合体、ゲッターロボだ！ 「MODEROID ミニ合体変形 ゲッタードラゴン」が11月に発売",
+      "dates": {},
+      "description": "Good Smile Company will release the plastic model ``MODEROID Mini Combined Transformation Getter Dragon'' in November. The price is 3,900 yen.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118545.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/545/main_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-338d7b",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "格闘ゲーム「ヴァンパイア」よりフィギュア「ヴァンパイア美少女 レイレイ」が黒を基調としたカラーリングで再登場！あみあみ＆コトブキヤショップ限定商品",
+      "title_ja": "格闘ゲーム「ヴァンパイア」よりフィギュア「ヴァンパイア美少女 レイレイ」が黒を基調としたカラーリングで再登場！あみあみ＆コトブキヤショップ限定商品",
+      "dates": {},
+      "description": "Kotobukiya will release the figure ``Vampire Bishoujo Reilei Limited Edition'' in August. The price is 25,300 yen. It is scheduled to be sold exclusively at AmiAmi and Kotobukiya shops.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118470.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/470/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-2b3dc4",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "『エイリアン2』シガニー・ウィーバーの肖像権をクリアしたエレン・リプリーの可動フィギュアが「2.0版」に進化して登場！エイリアン・エッグが付属するDX版、植毛仕様「アルチザン」版も同時展開！",
+      "title_ja": "『エイリアン2』シガニー・ウィーバーの肖像権をクリアしたエレン・リプリーの可動フィギュアが「2.0版」に進化して登場！エイリアン・エッグが付属するDX版、植毛仕様「アルチザン」版も同時展開！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "A 1/6 scale movable figure of Ellen Ripley from \"Alien 2\" that has cleared Sigourney Weaver's portrait rights, \"2.0 version\" is now available from Hot Toys! The DX version, which comes with alien eggs, etc., and the \"Artisan\" version, which comes with flocked hair, will also be released at the same time! #Hot Toys #Alien",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/3054199/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/06/Ripley-1_sy-LRyPVIt6mO1iNPUh0AXIpqsiM50pd_WnG18w7WqTKkUvOVEIOASFghFs40IOmj-440x309.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202606192240-rss-228e23",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "ダークな世界観を1,000パーツ超で表現！Soulingtoyの美少女プラモデル「罪斥黒月（The sin of dark moon）」が童友社より国内販売!!",
+      "title_ja": "ダークな世界観を1,000パーツ超で表現！Soulingtoyの美少女プラモデル「罪斥黒月（The sin of dark moon）」が童友社より国内販売!!",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "A beautiful girl plastic model \"The sin of dark moon\" is now available from China's rising star manufacturer Soulingtoy! A large volume with over 1,000 parts in total, expressing the dark worldview of the Sin Statue (Gordo) and Kurozuki (Lilithia)! #Doyusha #Plastic model",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/3054040/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/06/4975406510469_1_fPBUDv1VIen75pKzqmwRv1DiPPUgA82k__BU2WNs0QVcO1s8prZAz1Qg1ucSotnOv.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "figure-202606192240-rss-0f9d3b",
+      "categories": [
+        "figure",
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "ホロライブ「ReGLOSS」の賑やかしネタ枠担当「儒烏風亭らでん」さんがプライズ「#hololive IF -Relax time-」に登場11月展開予定",
+      "title_ja": "ホロライブ「ReGLOSS」の賑やかしネタ枠担当「儒烏風亭らでん」さんがプライズ「#hololive IF -Relax time-」に登場11月展開予定",
+      "dates": {},
+      "description": "BANDAI SPIRITS has announced that the prize ``Hololive #hololive IF -Relax time-Yukarasuutei Raden'' will be held in November.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118541.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit",
+        "vtuber"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/541/001_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-0d4e5a",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "「ガンダム アーティファクト ベストセレクション(10個入)」10月発売！　「高機動型ザクII」、「キュベレイ」などをセレクト",
+      "title_ja": "「ガンダム アーティファクト ベストセレクション(10個入)」10月発売！　「高機動型ザクII」、「キュベレイ」などをセレクト",
+      "dates": {},
+      "description": "Bandai will release the candy toy ``Gundam Artifact Best Selection (10 pieces)'' in October. The price is 5,500 yen. Registration starts from 13:00 on June 19th.",
+      "source": {
+        "url": "https://hobby.watch.impress.co.jp/docs/news/2118484.html"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://asset.watch.impress.co.jp/img/hbw/docs/2118/484/at_01_l.jpg",
+      "_source_id": "hobby-watch"
+    },
+    {
+      "id": "figure-202606192240-rss-030419",
+      "categories": [
+        "figure"
+      ],
+      "status": "active",
+      "title": "予約締切迫る！『ラブライブ！蓮ノ空女学院スクールアイドルクラブ』乙宗梢が1/7スケールフィギュア化！『LoveLive!Days』の表紙を飾った伊能津氏によるイラストをモチーフに立体化！カドストで予約受付中！",
+      "title_ja": "予約締切迫る！『ラブライブ！蓮ノ空女学院スクールアイドルクラブ』乙宗梢が1/7スケールフィギュア化！『LoveLive!Days』の表紙を飾った伊能津氏によるイラストをモチーフに立体化！カドストで予約受付中！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "“Love Live! From ``Hasu no Sora Girls' Academy School Idol Club'' comes a 1/7 scale figure of Kozue Otsumune! Pay attention to the beautiful dress with delicate gradation painting and clear parts at key points! Now accepting reservations until June 24th at Kadost! #lovelive",
+      "source": {
+        "url": "https://hobby.dengeki.com/news/3053591/"
+      },
+      "tags": [
+        "hobby",
+        "figure",
+        "model-kit"
+      ],
+      "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/06/302407002561_ifVuSAvFufvlJOWQyUWqfAayWc1fH5Z6_mYPMZ4x65zBT-_bbtBXJmYUFLIkjJ_fy.jpg",
+      "_source_id": "dengeki-hobby"
+    },
+    {
+      "id": "cosplay-202606192239-rss-da39e3",
+      "categories": [
+        "cosplay"
+      ],
+      "status": "active",
+      "title": "【コスプレイヤー検定！？】第２回 あなたはどこまで答えられますか？",
+      "title_ja": "【コスプレイヤー検定！？】第２回 あなたはどこまで答えられますか？",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "If you are a cosplayer, you will understand! ? This is Cospot Media's unique Nanchatte Test &#8220;Part 2&#8221;♪ We will introduce everything from cosplay events to popular cosplayers in a quiz format! Cosplayer [&#8230;]\nThe post [Cosplayer test! ? ] Part 2: How far can you answer? first appeared on Cospot media.",
+      "source": {
+        "url": "https://cospot-media.com/column/43156/"
+      },
+      "tags": [
+        "cospot-media-com",
+        "cosplay"
+      ],
+      "thumbnail": "https://cospot-media.com/wp-content/uploads/2026/06/20260501_column_02.jpg",
+      "_source_id": "cospot-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-ecd63f",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "『デイヴ・ザ・ダイバー イン・ザ・ジャングル』は開発者いわく「デイヴ・ザ・ダイバー1.7」で、“DLC遊ばない派も遊ぶ価値あり”。新しい遊びいっぱい、開発者に話を訊いた",
+      "title_ja": "『デイヴ・ザ・ダイバー イン・ザ・ジャングル』は開発者いわく「デイヴ・ザ・ダイバー1.7」で、“DLC遊ばない派も遊ぶ価値あり”。新しい遊びいっぱい、開発者に話を訊いた",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "We will dig deeper into the content of the new DLC, the concept behind its development, and future developments.",
+      "source": {
+        "url": "https://automaton-media.com/articles/interviewsjp/dave-the-diver-20260619-450563/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2016/11/automaton-forum-moderator-150x150.jpeg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-e2cc9f",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "“カラテと占いを融合”したゲーム『CHU!! KARATE URANAI VOXEL』発表。アボカドと礼で命運に立ち向かう、『NKODICE』作者の謎だらけ新作ゲーム",
+      "title_ja": "“カラテと占いを融合”したゲーム『CHU!! KARATE URANAI VOXEL』発表。アボカドと礼で命運に立ち向かう、『NKODICE』作者の謎だらけ新作ゲーム",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Individual developer ksym released the Steam store page for ``CHU!! KARATE URANAI VOXEL'' on June 19th.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/20260619-450705/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2019/04/yokoyama-150x150.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-c13d74",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Steam最大4人“マイク必須”アヒル誘導ゲーム『ドタバタ！ダックキャッチャー』6月24日配信へ。鳴きマネしたり叫んだり、やかましさ強烈協力マルチ",
+      "title_ja": "Steam最大4人“マイク必須”アヒル誘導ゲーム『ドタバタ！ダックキャッチャー』6月24日配信へ。鳴きマネしたり叫んだり、やかましさ強烈協力マルチ",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "2P Games will release the duck chasing party game “Slapstick!” on June 18th. It has been announced that ``Duck Catcher (Quack Quack Up)'' will be released on June 24th.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/20260619-450698/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2016/09/taijiro-yamanaka-250-150x150.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-bf57b7",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "ブラック社会面接官シム『ご応募ありがとうございます』配信開始。「電気ショック」付きハイパー圧迫面接もOK、家に帰ればひもじいSF社畜生活",
+      "title_ja": "ブラック社会面接官シム『ご応募ありがとうございます』配信開始。「電気ショック」付きハイパー圧迫面接もOK、家に帰ればひもじいSF社畜生活",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "No More Robots began distributing the interview simulation game ``Thank you for your application'' on June 19th.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/20260619-450769/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2025/12/IMG_5846_SnapseedCopy-1-1-150x150.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-bb3e53",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "SteamセクシーPT構築ローグライト『屍姫の夢』大型アプデで日本語が大改修、ぐっと読みやすく。DLCは日本語フルボイス、さらにご褒美CGも追加",
+      "title_ja": "SteamセクシーPT構築ローグライト『屍姫の夢』大型アプデで日本語が大改修、ぐっと読みやすく。DLCは日本語フルボイス、さらにご褒美CGも追加",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "In the major update of the beautiful girl party building roguelite ``Shikihime no Yume'', the Japanese localization has been significantly updated. The latest DLC ``Shinmei no Sanshi'' is also on sale.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/shikinoyume-20260619-450492/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2026/06/shikinoyume-20260619-450492-header.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-b58ffe",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "廃墟監視映像ホラー『FOCUS』発表、7月発売へ。徐々に変化していく怪異を見つける“ホラーアハ体験”",
+      "title_ja": "廃墟監視映像ホラー『FOCUS』発表、7月発売へ。徐々に変化していく怪異を見つける“ホラーアハ体験”",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "On June 19th, individual game developer Kuma Hacker announced the horror game ``FOCUS'' and announced that it is scheduled to be released in July.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/20260619-450742/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2025/12/IMG_5846_SnapseedCopy-1-1-150x150.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-a421fb",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "『Slay the Spire 2』にて数学者が「乱数の偏りバグ」をガチ分析し修正に至る。絶対に入手できないカードもあったバグ、“不運”は気のせいじゃなかった",
+      "title_ja": "『Slay the Spire 2』にて数学者が「乱数の偏りバグ」をガチ分析し修正に至る。絶対に入手できないカードもあったバグ、“不運”は気のせいじゃなかった",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "In Mega Crit's ``Slay the Spire 2'', an explanatory article was published by a user stating that ``the random numbers are biased.'' Based on this user survey, the bias was quickly corrected with an update by the developer.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/20260619-450723/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2026/02/01aaacb3916901d2d30a55c75662e7f39c2f7d7b63-150x150.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-9e1e8e",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "あるゲーム開発者、初制作タイトルに愛犬の“隠し追悼クエスト”を実装。発売目前の別れが訪れるも、「15年分の思い出」はゲームの中で生き続ける",
+      "title_ja": "あるゲーム開発者、初制作タイトルに愛犬の“隠し追悼クエスト”を実装。発売目前の別れが訪れるも、「15年分の思い出」はゲームの中で生き続ける",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Mr. Sansara plans to release ``Echowood'' on June 22nd. He recently lost his beloved dog, who was his companion for many years, and has implemented a \"hidden quest\" in the game to commemorate his beloved dog.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/echowood-20260619-450719/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2026/05/1779289538796-150x150.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-689d0f",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Steam約300円の謎のゲーム『Pickupbal』“好評率99％”の熱い高評価、ブームの兆し。物理演算ボールをもてあそび、もてあそばれるゲーム",
+      "title_ja": "Steam約300円の謎のゲーム『Pickupbal』“好評率99％”の熱い高評価、ブームの兆し。物理演算ボールをもてあそび、もてあそばれるゲーム",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Game developer Nikulas released ``Pickupbal'' on June 15th. It has continued to receive positive reviews since its release, with a 99% positive rating at the time of writing this article.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/20260619-450736/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2023/05/imageaki-150x150.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-45d00c",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "『デイヴ・ザ・ダイバー』Steam同接「4万7000人超」で正式リリース以来の人気爆発中。“ジャングル”実装大型DLC到来で再燃するデイヴ熱",
+      "title_ja": "『デイヴ・ザ・ダイバー』Steam同接「4万7000人超」で正式リリース以来の人気爆発中。“ジャングル”実装大型DLC到来で再燃するデイヴ熱",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "On June 18th, MINTROCKET released the new DLC ``Dave the Diver in the Jungle'' for the ocean exploration and sushi restaurant management game ``Dave the Diver.'' With the arrival of DLC, this work is gaining a lot of excitement.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/dave-the-diver-20260619-450691/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2023/08/photo_takenaka-150x150.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-419c59",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "大ボリューム王道SRPG『ユレイシア英雄戦記』Steamにて無料で7月3日リリースへ。25万字以上のテキストが彩る、“運ゲー感”抑えめ戦略物語",
+      "title_ja": "大ボリューム王道SRPG『ユレイシア英雄戦記』Steamにて無料で7月3日リリースへ。25万字以上のテキストが彩る、“運ゲー感”抑えめ戦略物語",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "On June 19th, individual game developer Ito Fuboki announced that he will release the simulation RPG ``Yurasia Heroic Chronicles'' on July 3rd.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/20260619-450677/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2026/06/20260619-450677-header.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-389240",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "『パルワールド オフィシャルカードゲーム』でもパルは当然「戦う」し、めちゃくちゃ「働く」。『パルワールド』をカードゲームでも",
+      "title_ja": "『パルワールド オフィシャルカードゲーム』でもパルは当然「戦う」し、めちゃくちゃ「働く」。『パルワールド』をカードゲームでも",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "“Pal World Official Card Game” trial report. It was a very \"Pal World\" TCG.",
+      "source": {
+        "url": "https://automaton-media.com/articles/reportjp/palworldtcg-20260619-450623/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2026/06/palworldtcg-20260619-450623-header.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-38667c",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "「脳で操作するコントローラー」の研究が進展。脳が“覚えやすい”入力方式、実用化の手がかりとなるか",
+      "title_ja": "「脳で操作するコントローラー」の研究が進展。脳が“覚えやすい”入力方式、実用化の手がかりとなるか",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "A research team at Yale University published a paper on June 9th entitled ``Human learning of non-invasive brain-computer interfaces through brain geometry.''",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/20260619-450761/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2026/05/e838c719dfeb953279045c327507a802-150x150.png",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-07a760",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "『デイヴ・ザ・ダイバー』はインディーゲームではありません。でも、いろいろ大変でした。開発者に訊いた、成功から話題の的に、ジャングルDLCに至るまで",
+      "title_ja": "『デイヴ・ザ・ダイバー』はインディーゲームではありません。でも、いろいろ大変でした。開発者に訊いた、成功から話題の的に、ジャングルDLCに至るまで",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "We asked him about his behind-the-scenes stories from the release of the main game up to the present, and his thoughts on the definition of indie.",
+      "source": {
+        "url": "https://automaton-media.com/articles/interviewsjp/dave-the-diver-20260619-450461/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2016/11/automaton-forum-moderator-150x150.jpeg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192238-rss-0035fb",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "『ウマ娘』6月29日のバランス調整で「トレーニング制限」の育成イベントにテコ入れ。ゴルシやファインモーションなどが育てやすく",
+      "title_ja": "『ウマ娘』6月29日のバランス調整で「トレーニング制限」の育成イベントにテコ入れ。ゴルシやファインモーションなどが育てやすく",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Cygames released the latest information on \"Uma Musume Pretty Derby\" on June 19th. It seems that events related to training restrictions will be adjusted in the update scheduled for June 29th.",
+      "source": {
+        "url": "https://automaton-media.com/articles/newsjp/umamusume-20260619-450753/"
+      },
+      "tags": [
+        "automaton-media-com"
+      ],
+      "thumbnail": "https://automaton-media.com/wp-content/uploads/2019/04/yokoyama-150x150.jpg",
+      "_source_id": "automaton-media-com"
+    },
+    {
+      "id": "game-202606192237-rss-defe9f",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "火をおこし，肉を焼き，ゲストに売ってがっぽり稼ごう。4人協力バーベキューゲーム「Barbecue」，Steamで配信開始",
+      "title_ja": "火をおこし，肉を焼き，ゲストに売ってがっぽり稼ごう。4人協力バーベキューゲーム「Barbecue」，Steamで配信開始",
+      "dates": {},
+      "description": "WMB released the new title \"Barbecue\" on Steam today (June 19, 2026). This is a cooperative party game that supports multiplayer for up to four people, where you entertain guests by having a barbecue in your garden and earn money to upgrade your equipment.",
+      "source": {
+        "url": "https://www.4gamer.net/games/018/G101856/20260619049/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/018/G101856/20260619049/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202606192237-rss-baf210",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "「プラグマタ」の大ヒットを記念した「父の日スペシャルイベント」をレポート。開発秘話やボイス収録時のエピソードなど，盛りだくさんの内容に",
+      "title_ja": "「プラグマタ」の大ヒットを記念した「父の日スペシャルイベント」をレポート。開発秘話やボイス収録時のエピソードなど，盛りだくさんの内容に",
+      "dates": {},
+      "description": "On June 18, 2026, Capcom held the \"Pragmata Big Hit Commemoration! Father's Day Special Event\" at esportsStyleUENO in Ueno, Tokyo. This event was planned as a token of gratitude for the worldwide sales of the company's sci-fi action adventure ``Pragmata,'' which exceeded 2 million copies in 16 days after its release.",
+      "source": {
+        "url": "https://www.4gamer.net/games/512/G051239/20260619028/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/512/G051239/20260619028/SS/023.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202606192237-rss-5cdacb",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "「刀剣乱舞ONLINE」とJリーグのコラボ企画「出陣！Jリーグ応援本丸」，特設サイトをオープン。グッズの先行販売を開始",
+      "title_ja": "「刀剣乱舞ONLINE」とJリーグのコラボ企画「出陣！Jリーグ応援本丸」，特設サイトをオープン。グッズの先行販売を開始",
+      "dates": {},
+      "description": "A follow-up report on the collaboration project between \"Touken Ranbu ONLINE\" and J.League, \"Departure! J.League Support Honmaru\" has been released. In the collaboration, 20 Furi from Touken Danshi will be appointed as the cheering captain of all 20 J1 clubs for the 2026/27 season, enlivening this season's J League. A special website has recently opened and pre-sale of goods has begun.",
+      "source": {
+        "url": "https://www.4gamer.net/games/274/G027460/20260619047/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/274/G027460/20260619047/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202606192237-rss-14cf92",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "「エージェント社会には憲法が必要。その最初の実験場はゲームだ」――AIエージェント社会の未来を語る［NDC26］",
+      "title_ja": "「エージェント社会には憲法が必要。その最初の実験場はゲームだ」――AIエージェント社会の未来を語る［NDC26］",
+      "dates": {},
+      "description": "The time may not be far off when AI agents will work in place of humans and take charge of economic activities. I would like to introduce a lecture on the theme of ``Games will be the first testing ground in an AI agent society.''",
+      "source": {
+        "url": "https://www.4gamer.net/games/991/G999104/20260619034/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/991/G999104/20260619034/SS/002.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "figure-202606192237-rss-724399",
+      "categories": [
+        "figure",
+        "event"
+      ],
+      "status": "active",
+      "title": "『マジンガーZ』BRICKROID マジンガーZ/ 機械獣セット(1) 可動フィギュア[グッドスマイルカンパニー]",
+      "title_ja": "『マジンガーZ』BRICKROID マジンガーZ/ 機械獣セット(1) 可動フィギュア[グッドスマイルカンパニー]",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Introducing Good Smile Company's new products with new images that can only be seen on AmiAmi! \"'Mazinger Z' BRICKROID Mazinger Z movable figure\" \"'Mazinger Z' BRICKROID mechanical beast set (1) movable [&#8230;]\nThe post \"Mazinger Z\" BRICKROID Mazinger Z/Machine Beast Set (1) Movable Figure [Good Smile Company] first appeared on AmiAmi News.",
+      "source": {
+        "url": "https://news.amiami.jp/review/2026/06/540838.html"
+      },
+      "tags": [
+        "figure",
+        "merchandise",
+        "amiami"
+      ],
+      "thumbnail": "https://news.amiami.jp/wp-content/uploads/2026/06/Muyte9epTTyh11z-ic.jpg",
+      "_source_id": "amiami-news"
+    },
+    {
+      "id": "figure-202606192237-rss-6c3200",
+      "categories": [
+        "figure",
+        "event"
+      ],
+      "status": "active",
+      "title": "ゲーム『崩壊：スターレイル』より、「キュレネ 素敵な休日 Ver.」が1/8スケールフィギュアで登場！",
+      "title_ja": "ゲーム『崩壊：スターレイル』より、「キュレネ 素敵な休日 Ver.」が1/8スケールフィギュアで登場！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "From the game ``Collapse: Star Rail'' comes ``Gift+ 1/8 Kyrene Wonderful Holiday Ver.''. Scheduled to be released in January 2027. Below is an excerpt from the press release. “Hello, it’s been a while! How did you spend this wonderful time just the two of us [&#8230;]\nThe post From the game \"Collapse: Star Rail\" comes a 1/8 scale figure of \"Kyrene Wonderful Holiday Ver.\"! first appeared on AmiAmi News.",
+      "source": {
+        "url": "https://news.amiami.jp/topics/2026/06/543537.html"
+      },
+      "tags": [
+        "figure",
+        "merchandise",
+        "amiami"
+      ],
+      "thumbnail": "https://news.amiami.jp/wp-content/uploads/2026/06/sutare260619-IC.jpg",
+      "_source_id": "amiami-news"
+    },
+    {
+      "id": "figure-202606192237-rss-34c249",
+      "categories": [
+        "figure",
+        "event"
+      ],
+      "status": "active",
+      "title": "『魔法少女まどか☆マギカ Magia Exedra』より、「トレーディングアクリルマスコット」などグッズ7種が発売決定！",
+      "title_ja": "『魔法少女まどか☆マギカ Magia Exedra』より、「トレーディングアクリルマスコット」などグッズ7種が発売決定！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "\"Puella Magi Madoka Magica Magia Exedra\" goods are now available from Alma Bianca. There are a total of 7 types in the lineup, including ``matte jewelry tin badges'' and ``card-shaped acrylic key chains with carabiners.'' Below is the press release [&#8230;]\nThe post From \"Puella Magi Madoka Magica Magia Exedra\", 7 types of goods including \"Trading Acrylic Mascot\" will be released! first appeared on AmiAmi News.",
+      "source": {
+        "url": "https://news.amiami.jp/topics/2026/06/543519.html"
+      },
+      "tags": [
+        "figure",
+        "merchandise",
+        "amiami"
+      ],
+      "thumbnail": "https://news.amiami.jp/wp-content/uploads/2026/06/madomaagi260618-IC.jpg",
+      "_source_id": "amiami-news"
+    },
+    {
+      "id": "figure-202606192237-rss-043e9f",
+      "categories": [
+        "figure",
+        "event"
+      ],
+      "status": "active",
+      "title": "『キャラクター・ボーカル・シリーズ01 初音ミク』より、「ひろはこ」2025年Ver.の「桜ミク」がねんどろいどどーる化！",
+      "title_ja": "『キャラクター・ボーカル・シリーズ01 初音ミク』より、「ひろはこ」2025年Ver.の「桜ミク」がねんどろいどどーる化！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "From \"Character Vocal Series 01 Hatsune Miku\", \"Sakura Miku Hirohako 2025Ver. (Hirosaki)\" and \"Sakura Miku Hirohako 2025Ver. (Hakodate)\" are now available. Each is scheduled to be released in January 2027. Below is an excerpt from the press release [&#8230;]\nThe post From \"Character Vocal Series 01 Hatsune Miku\", \"Hirohako\" 2025 version \"Sakura Miku\" is now a Nendoroid doll! first appeared on AmiAmi News.",
+      "source": {
+        "url": "https://news.amiami.jp/topics/2026/06/543552.html"
+      },
+      "tags": [
+        "figure",
+        "merchandise",
+        "amiami"
+      ],
+      "thumbnail": "https://news.amiami.jp/wp-content/uploads/2026/06/sakuramiku260619-IC-1.jpg",
+      "_source_id": "amiami-news"
+    },
+    {
+      "id": "game-202606192236-rss-ad9115",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "「ウマ娘 プリティーダービー」公式生配信番組「ぱかライブTV' ＃4」が6月26日20：00に配信。新育成シナリオ「らっしゃい！トレセン軒！ 〜恩返し，始めました〜」の情報を公開",
+      "title_ja": "「ウマ娘 プリティーダービー」公式生配信番組「ぱかライブTV' ＃4」が6月26日20：00に配信。新育成シナリオ「らっしゃい！トレセン軒！ 〜恩返し，始めました〜」の情報を公開",
+      "dates": {},
+      "description": "The official live streaming program ``Paka Live TV'#4'' of the cross-media content ``Uma Musume Pretty Derby'' developed by Cygames will be distributed on June 26, 2026 at 20:00. The program will include information on new training scenarios that will be implemented in the game soon, as well as a variety corner by the cast members.",
+      "source": {
+        "url": "https://www.4gamer.net/games/414/G041434/20260619064/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/414/G041434/20260619064/SS/002.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202606192236-rss-a8d6fd",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "「ペルソナ5 ザ・ロイヤル」のグッズが，全国の100円ショップ「ダイソー」「セリア」に6月下旬より登場",
+      "title_ja": "「ペルソナ5 ザ・ロイヤル」のグッズが，全国の100円ショップ「ダイソー」「セリア」に6月下旬より登場",
+      "dates": {},
+      "description": "Atlas announced today (June 19, 2026) that ``Persona 5 The Royal'' goods will be released sequentially from late June at 100 yen shops ``Daiso'' and ``Seria'' nationwide. Goods that will appear include acrylic stands, acrylic key chains, stuffed animal pouches, and rubber figures.",
+      "source": {
+        "url": "https://www.4gamer.net/games/637/G063753/20260619055/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/637/G063753/20260619055/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202606192236-rss-90a6ce",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "近未来のディストピアで面接官として応募者の合否を決める。「ご応募ありがとうございます」，Steamで配信開始",
+      "title_ja": "近未来のディストピアで面接官として応募者の合否を決める。「ご応募ありがとうございます」，Steamで配信開始",
+      "dates": {},
+      "description": "IceLemonTeaStudio today (June 19, 2026) released the new title ``Thank you for your application'' on Steam. This is an interview simulation game set in a dystopian city in 2066, where you play as an interviewer at the city's largest company and review applicants' resumes based on strict hiring conditions.",
+      "source": {
+        "url": "https://www.4gamer.net/games/906/G090645/20260619061/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/906/G090645/20260619061/SS/002.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202606192236-rss-68c1c8",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "魔法のダイスが世界を冒険する“ダイスビルディングストラテジーRPG”「Spellsided」，日本語対応を決定。体験版も日本語でプレイ可能に",
+      "title_ja": "魔法のダイスが世界を冒険する“ダイスビルディングストラテジーRPG”「Spellsided」，日本語対応を決定。体験版も日本語でプレイ可能に",
+      "dates": {},
+      "description": "MassTransferInteractive announced on June 19, 2026 that its new PC software \"Spellsided\" will be available in Japanese. In line with this, Japanese language has been added to the demo version currently being distributed. This work claims to be a \"dice building strategy RPG\" in which magic dice are the main character.",
+      "source": {
+        "url": "https://www.4gamer.net/games/018/G101875/20260619059/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/018/G101875/20260619059/SS/002.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202606192236-rss-5b9192",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "アニメ「チェンソーマン」のスマホゲーム化が発表。マキシマム ザ ホルモンによるオープニングテーマを聴けるOPムービーも公開に",
+      "title_ja": "アニメ「チェンソーマン」のスマホゲーム化が発表。マキシマム ザ ホルモンによるオープニングテーマを聴けるOPムービーも公開に",
+      "dates": {},
+      "description": "Today (June 19, 2026), MAPPA announced a smartphone game based on the anime ``Chainsaw Man'' on the official program ``MAPPA 15th Anniversary Lineup Presentation''. In line with this, it was also revealed that the opening theme has been decided to be ``All the Lynch All the Minch'' by Maximum the Hormone.",
+      "source": {
+        "url": "https://www.4gamer.net/games/018/G101879/20260619063/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/018/G101879/20260619063/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202606192236-rss-35637b",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "「塊魂」で知られる高橋慶太氏が開発した「to a T」のswitch2版がリリース。ローンチトレイラーを公開",
+      "title_ja": "「塊魂」で知られる高橋慶太氏が開発した「to a T」のswitch2版がリリース。ローンチトレイラーを公開",
+      "dates": {},
+      "description": "AnnapurnaInteractive today (June 19, 2026) released the launch trailer for the Nintendo Switch 2 version of \"toaT\". This is a 3D adventure game developed by Keita Takahashi, a game designer known for the Katamari Damacy series.",
+      "source": {
+        "url": "https://www.4gamer.net/games/016/G101696/20260619056/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/016/G101696/20260619056/SS/001.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202606192236-rss-1341d3",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "悪魔と乾杯を繰り返すロシアンルーレットに挑む「PUKEY GODDESS SHOT TRICK」，リリース時期を2026年秋冬に決定",
+      "title_ja": "悪魔と乾杯を繰り返すロシアンルーレットに挑む「PUKEY GODDESS SHOT TRICK」，リリース時期を2026年秋冬に決定",
+      "dates": {},
+      "description": "Alliance Arts announced today (June 19, 2026) that it will release a new PC title \"PUKEYGODDESSSHOTTRICK\" in the fall/winter of 2026. Additionally, Alliance Arts' official BOOTH has been opened and merchandise sales have begun.",
+      "source": {
+        "url": "https://www.4gamer.net/games/002/G100266/20260619060/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/002/G100266/20260619060/SS/006.jpg",
+      "_source_id": "4gamer"
+    },
+    {
+      "id": "game-202606192236-rss-10feb7",
+      "categories": [
+        "game"
+      ],
+      "status": "active",
+      "title": "Android向け「棋桜」，Google Play版を6月22日にリリース。現在は暫定措置として公式サイトでapk版が配信中",
+      "title_ja": "Android向け「棋桜」，Google Play版を6月22日にリリース。現在は暫定措置として公式サイトでapk版が配信中",
+      "dates": {},
+      "description": "Nekonome announced today (June 19, 2026) that it will release the Google Play version of the online shogi game \"Kizakura\" on June 22nd. The iOS version was released on June 12th and the PC version on June 15th, but the Android version was distributed as an APK version as a \"temporary offer until the Google Play version is released.\"",
+      "source": {
+        "url": "https://www.4gamer.net/games/017/G101718/20260619062/"
+      },
+      "tags": [
+        "game-news",
+        "anime"
+      ],
+      "thumbnail": "https://www.4gamer.net/games/017/G101718/20260619062/SS/001.jpg",
+      "_source_id": "4gamer"
     },
     {
       "id": "game-202606182204-pplx-448351",
@@ -91375,7 +93636,7 @@
       "categories": [
         "vtuber"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "この動画がすごい！ 今週のおすすめVTuber動画(～5月1日）",
       "title_ja": "この動画がすごい！ 今週のおすすめVTuber動画(～5月1日）",
       "dates": {
@@ -91390,7 +93651,8 @@
         "vtuber"
       ],
       "thumbnail": "https://assets.moguravr.com/uploads/2018/01/c76c2759f402562bf52b197a917e8948-kix.7olawnybkcp3-1024x434.webp",
-      "_source_id": "moguravr-com"
+      "_source_id": "moguravr-com",
+      "updated": "2026-06-19T22:46:37.870862+09:00"
     },
     {
       "id": "game-202605052021-rss-f4be04",
@@ -93112,7 +95374,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "『星のカービィ』新作一番くじに注目！炊飯器、トースター風タイマーなど“グルメテーマ”のグッズがズラリ",
       "title_ja": "『星のカービィ』新作一番くじに注目！炊飯器、トースター風タイマーなど“グルメテーマ”のグッズがズラリ",
       "dates": {
@@ -93126,7 +95388,8 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1714563.webp",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871211+09:00"
     },
     {
       "id": "anime-202605042057-rss-fe328c",
@@ -93365,7 +95628,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「ドラゴンボール」新作一番くじ、テーマは“悟空の歴史”！幼少期や超サイヤ人、身勝手の極意フィギュアなど壮観なラインナップ",
       "title_ja": "「ドラゴンボール」新作一番くじ、テーマは“悟空の歴史”！幼少期や超サイヤ人、身勝手の極意フィギュアなど壮観なラインナップ",
       "dates": {
@@ -93379,14 +95642,15 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1716499.webp",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871230+09:00"
     },
     {
       "id": "game-202605042056-rss-f22a52",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "本格ボクシングゲーム『Undisputed』のコンテンツ配信やアップデートが終了へ―新エンジンでの続編開発に注力",
       "title_ja": "本格ボクシングゲーム『Undisputed』のコンテンツ配信やアップデートが終了へ―新エンジンでの続編開発に注力",
       "dates": {
@@ -93400,7 +95664,8 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125176.jpg",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871241+09:00"
     },
     {
       "id": "game-202605042056-rss-ef18f8",
@@ -93408,7 +95673,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "“紳士要素”を抜きにしても「キュリエイトのゲームはいいぞ！」厳選タイトル3選",
       "title_ja": "“紳士要素”を抜きにしても「キュリエイトのゲームはいいぞ！」厳選タイトル3選",
       "dates": {
@@ -93422,14 +95687,15 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1718368.jpg",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871250+09:00"
     },
     {
       "id": "game-202605042056-rss-e971cd",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "MSX的グラフィックが新鮮なSTG！新しさと古さが交錯する『MECHANICAL BRAIN ReHash』【試遊レポ】",
       "title_ja": "MSX的グラフィックが新鮮なSTG！新しさと古さが交錯する『MECHANICAL BRAIN ReHash』【試遊レポ】",
       "dates": {
@@ -93443,7 +95709,8 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1124881.jpg",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871259+09:00"
     },
     {
       "id": "game-202605042056-rss-e67d59",
@@ -93451,7 +95718,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "“メカゴジラ”モチーフのエヴァ初号機が再販！高級感あふれるメインカラーは白銀色、豪華塗装済み仕様に",
       "title_ja": "“メカゴジラ”モチーフのエヴァ初号機が再販！高級感あふれるメインカラーは白銀色、豪華塗装済み仕様に",
       "dates": {
@@ -93465,7 +95732,8 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1703891.webp",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871268+09:00"
     },
     {
       "id": "game-202605042056-rss-e24d8a",
@@ -93475,7 +95743,7 @@
         "otaku-news",
         "vtuber"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "【コスプレ】まるで実写版のようなハイクオリティー美女が集結！ホロライブ「FLOW GLOW」の華やかな併せが見応え抜群【写真18枚】",
       "title_ja": "【コスプレ】まるで実写版のようなハイクオリティー美女が集結！ホロライブ「FLOW GLOW」の華やかな併せが見応え抜群【写真18枚】",
       "dates": {
@@ -93491,14 +95759,15 @@
         "vtuber"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1714845.jpg",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871276+09:00"
     },
     {
       "id": "game-202605042056-rss-df53b5",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "アートディンクが手がけた素晴らしい「マクロス」および「ガンダム」作品を振り返って【オリーさんのロボゲーコラム】",
       "title_ja": "アートディンクが手がけた素晴らしい「マクロス」および「ガンダム」作品を振り返って【オリーさんのロボゲーコラム】",
       "dates": {
@@ -93512,7 +95781,8 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125209.png",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871285+09:00"
     },
     {
       "id": "game-202605042056-rss-d951ee",
@@ -93520,7 +95790,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "劇場版「クレヨンしんちゃん」一番くじ第2弾も“曲者”揃い！ロボとーちゃんとの腕相撲フィギュアなど、名シーンモチーフグッズがズラリ",
       "title_ja": "劇場版「クレヨンしんちゃん」一番くじ第2弾も“曲者”揃い！ロボとーちゃんとの腕相撲フィギュアなど、名シーンモチーフグッズがズラリ",
       "dates": {
@@ -93534,14 +95804,15 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1716359.webp",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871294+09:00"
     },
     {
       "id": "game-202605042056-rss-d3f962",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「EVO Japan 2026」『スト6』に選手で参加してみた！エントリー方法から実際の試合の様子までレポートをお届け",
       "title_ja": "「EVO Japan 2026」『スト6』に選手で参加してみた！エントリー方法から実際の試合の様子までレポートをお届け",
       "dates": {
@@ -93555,14 +95826,15 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125100.jpg",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871304+09:00"
     },
     {
       "id": "game-202605042056-rss-d21f5b",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "『デビル メイ クライ』から影響、人妻剣士が夫を取り戻すために戦うスタイリッシュ横スク2DACT『SoulQuest』好評スタート。美麗ドット絵も魅力",
       "title_ja": "『デビル メイ クライ』から影響、人妻剣士が夫を取り戻すために戦うスタイリッシュ横スク2DACT『SoulQuest』好評スタート。美麗ドット絵も魅力",
       "dates": {
@@ -93576,14 +95848,15 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1113374.jpg",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871312+09:00"
     },
     {
       "id": "game-202605042056-rss-c59b06",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "ゴールデンウィークといえば……そう！「お嬢様」ですよね！金髪お嬢様に恋する『お嬢様を狙え！！』プレイ記【特集】",
       "title_ja": "ゴールデンウィークといえば……そう！「お嬢様」ですよね！金髪お嬢様に恋する『お嬢様を狙え！！』プレイ記【特集】",
       "dates": {
@@ -93597,14 +95870,15 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1121994.png",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871321+09:00"
     },
     {
       "id": "game-202605042056-rss-bc7af9",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "『ポケモンFRLG』GBAリアタイのポケモンおじさん回顧録。あの日届かなかったチケットはスイッチの中",
       "title_ja": "『ポケモンFRLG』GBAリアタイのポケモンおじさん回顧録。あの日届かなかったチケットはスイッチの中",
       "dates": {
@@ -93618,14 +95892,15 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1123373.png",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871330+09:00"
     },
     {
       "id": "game-202605042056-rss-bb9c31",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "『ドルフロ』シリーズ新作『少女前線：藍蝶契約』『Reverse Collapse: F』発表&トレイラー公開！Co-opシューター2作品が登場へ",
       "title_ja": "『ドルフロ』シリーズ新作『少女前線：藍蝶契約』『Reverse Collapse: F』発表&トレイラー公開！Co-opシューター2作品が登場へ",
       "dates": {
@@ -93639,7 +95914,8 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125163.png",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871339+09:00"
     },
     {
       "id": "game-202605042056-rss-9ec3fe",
@@ -93648,7 +95924,7 @@
         "otaku-news",
         "vtuber"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "チョコエッグプラスより「にじさんじ」第2弾が5月18日発売！剣持刀也、月ノ美兎ら全18種+シークレットが気になる",
       "title_ja": "チョコエッグプラスより「にじさんじ」第2弾が5月18日発売！剣持刀也、月ノ美兎ら全18種+シークレットが気になる",
       "dates": {
@@ -93663,7 +95939,8 @@
         "vtuber"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1693569.jpg",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871347+09:00"
     },
     {
       "id": "game-202605042056-rss-94d0ae",
@@ -93671,7 +95948,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "大成功したスト6大会「獅白杯オフライン」…ネットワークトラブルで長時間中断し、主催者平謝りしたのに“大成功”はなぜなのか？…関係者の発言から見えてきたのは大きな信頼関係だった",
       "title_ja": "大成功したスト6大会「獅白杯オフライン」…ネットワークトラブルで長時間中断し、主催者平謝りしたのに“大成功”はなぜなのか？…関係者の発言から見えてきたのは大きな信頼関係だった",
       "dates": {
@@ -93685,14 +95962,15 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1723687.png",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871356+09:00"
     },
     {
       "id": "game-202605042056-rss-606536",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「開発チームメンバーの多くは本物の馬のエキスパート」モンゴルオープンワールドADV『The Legend of Khiimori』【開発者インタビュー】",
       "title_ja": "「開発チームメンバーの多くは本物の馬のエキスパート」モンゴルオープンワールドADV『The Legend of Khiimori』【開発者インタビュー】",
       "dates": {
@@ -93706,14 +95984,15 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125149.jpg",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871365+09:00"
     },
     {
       "id": "game-202605042056-rss-4d3dba",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "【漫画じゃんげま】519.「お邪魔します」の巻",
       "title_ja": "【漫画じゃんげま】519.「お邪魔します」の巻",
       "dates": {
@@ -93727,14 +96006,15 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125191.jpg",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871373+09:00"
     },
     {
       "id": "game-202605042056-rss-4a9ae6",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "全3,072冊の本を片付ける図書館整理シム『司書のお仕事：魔導図書館を片付けろ！』“圧倒的に好評”スタート。さらなるアップデートも匂わせ？",
       "title_ja": "全3,072冊の本を片付ける図書館整理シム『司書のお仕事：魔導図書館を片付けろ！』“圧倒的に好評”スタート。さらなるアップデートも匂わせ？",
       "dates": {
@@ -93748,7 +96028,8 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125170.jpg",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871381+09:00"
     },
     {
       "id": "game-202605042056-rss-45a84f",
@@ -93756,7 +96037,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「ダイナミックチェンジ 真ゲッターロボ」が嬉しい再販！変形ギミックを搭載、ゲットマシン3機が真ゲッター各形態へ",
       "title_ja": "「ダイナミックチェンジ 真ゲッターロボ」が嬉しい再販！変形ギミックを搭載、ゲットマシン3機が真ゲッター各形態へ",
       "dates": {
@@ -93770,7 +96051,8 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1708922.webp",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871390+09:00"
     },
     {
       "id": "game-202605042056-rss-43c2cf",
@@ -93778,7 +96060,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "【特集】レンタルビデオ屋にコナン、パイパーにウマ娘、千夏にボカロ！『ゼンゼロ』ゲーム内に潜む日本カルチャーを探る元ネタ解説GW企画・第2回",
       "title_ja": "【特集】レンタルビデオ屋にコナン、パイパーにウマ娘、千夏にボカロ！『ゼンゼロ』ゲーム内に潜む日本カルチャーを探る元ネタ解説GW企画・第2回",
       "dates": {
@@ -93792,14 +96074,15 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1718190.jpg",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871399+09:00"
     },
     {
       "id": "game-202605042056-rss-35ad9a",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "生身と人型ロボで戦う、PS1時代をオマージュしたRPG『Lie of Caelum: Spirit』開発中！『ゼノギアス』などのファンに向けた作品",
       "title_ja": "生身と人型ロボで戦う、PS1時代をオマージュしたRPG『Lie of Caelum: Spirit』開発中！『ゼノギアス』などのファンに向けた作品",
       "dates": {
@@ -93813,7 +96096,8 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125188.jpg",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871407+09:00"
     },
     {
       "id": "game-202605042056-rss-358a55",
@@ -93821,7 +96105,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「お文具といっしょ」新作一番くじにワクワク！お文具さん型の調味料入れ、仕切りプレートなどで一緒にランチタイムを楽しめる",
       "title_ja": "「お文具といっしょ」新作一番くじにワクワク！お文具さん型の調味料入れ、仕切りプレートなどで一緒にランチタイムを楽しめる",
       "dates": {
@@ -93835,7 +96119,8 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1713865.webp",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871415+09:00"
     },
     {
       "id": "game-202605042056-rss-32acf8",
@@ -93844,7 +96129,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "【コスプレ】『NIKKE』3.5周年おめでとう！バニーにチアに夏衣装、美女レイヤーたちの魅惑の競演をまとめてお届け【写真38枚】",
       "title_ja": "【コスプレ】『NIKKE』3.5周年おめでとう！バニーにチアに夏衣装、美女レイヤーたちの魅惑の競演をまとめてお届け【写真38枚】",
       "dates": {
@@ -93859,14 +96144,15 @@
         "cosplay"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1724247.jpg",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871423+09:00"
     },
     {
       "id": "game-202605042056-rss-2aa47f",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "タンク専MMO風ローグライト『Don't Lose Aggro』次回アプデでサモナー系NPCやエンドレスモード実装へ！3段階のロードマップ公開",
       "title_ja": "タンク専MMO風ローグライト『Don't Lose Aggro』次回アプデでサモナー系NPCやエンドレスモード実装へ！3段階のロードマップ公開",
       "dates": {
@@ -93880,7 +96166,8 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125206.png",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871432+09:00"
     },
     {
       "id": "game-202605042056-rss-27f3de",
@@ -93888,7 +96175,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「mofusand」の新作ユニクロUTに癒される！にゃんこたちがアウトドアを楽しむ姿をデザイン",
       "title_ja": "「mofusand」の新作ユニクロUTに癒される！にゃんこたちがアウトドアを楽しむ姿をデザイン",
       "dates": {
@@ -93902,14 +96189,15 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1709952.jpg",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871440+09:00"
     },
     {
       "id": "game-202605042056-rss-26bef0",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "ぐちゃドロにやられてもシスターは戦う。2Dアクション『シニシスタ2』5月16日Steam版リリース！DLsiteでは10万本突破の人気作",
       "title_ja": "ぐちゃドロにやられてもシスターは戦う。2Dアクション『シニシスタ2』5月16日Steam版リリース！DLsiteでは10万本突破の人気作",
       "dates": {
@@ -93923,7 +96211,8 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125159.png",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871449+09:00"
     },
     {
       "id": "game-202605042056-rss-23bb26",
@@ -93931,7 +96220,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "君もアムロ、シャアになりきれる！「機動戦士ガンダム」 制服の柄をプリントしたTシャツが登場、キッズ・大人サイズそれぞれ用意",
       "title_ja": "君もアムロ、シャアになりきれる！「機動戦士ガンダム」 制服の柄をプリントしたTシャツが登場、キッズ・大人サイズそれぞれ用意",
       "dates": {
@@ -93945,14 +96234,15 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1713750.jpg",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871458+09:00"
     },
     {
       "id": "game-202605042056-rss-1fba19",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "【大喜利】『長期休暇で休みすぎたゲームキャラはどうなる？』審査結果発表！",
       "title_ja": "【大喜利】『長期休暇で休みすぎたゲームキャラはどうなる？』審査結果発表！",
       "dates": {
@@ -93966,7 +96256,8 @@
         "game-spark"
       ],
       "thumbnail": "http://www.gamespark.jp/imgs/p/L_EqOfJ3V1TiFw6lWe7uo28LtgaNBQQDAgEA/1125154.jpg",
-      "_source_id": "game-spark"
+      "_source_id": "game-spark",
+      "updated": "2026-06-19T22:46:37.871473+09:00"
     },
     {
       "id": "game-202605042056-rss-1316a8",
@@ -93974,7 +96265,7 @@
         "game",
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「パワプロ」好きならやっぱりサクセスは見逃せない！新作『パワプロアドベンチャーズ』の魅力をご紹介ーコラボシナリオにも期待大【GW特集】",
       "title_ja": "「パワプロ」好きならやっぱりサクセスは見逃せない！新作『パワプロアドベンチャーズ』の魅力をご紹介ーコラボシナリオにも期待大【GW特集】",
       "dates": {
@@ -93988,7 +96279,8 @@
         "inside-games-jp"
       ],
       "thumbnail": "https://www.inside-games.jp/imgs/p/-gem2APNTJ4d0Auzp-eLLG8LlgZ-YAQDAgEA/1719773.png",
-      "_source_id": "inside-games-jp"
+      "_source_id": "inside-games-jp",
+      "updated": "2026-06-19T22:46:37.871482+09:00"
     },
     {
       "id": "figure-202605042056-rss-ffe6f8",
@@ -94079,7 +96371,7 @@
       "categories": [
         "figure"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "55周年を迎える「ヤシノミ洗剤」のミニチュアマスコットがガチャに登場！クリアでかわいいめじるしアイテム!!",
       "title_ja": "55周年を迎える「ヤシノミ洗剤」のミニチュアマスコットがガチャに登場！クリアでかわいいめじるしアイテム!!",
       "dates": {
@@ -94095,7 +96387,8 @@
         "model-kit"
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/05/yashinomi_mejirushi_0416_EZwg0f95otdg1S7m7C30ObYLrt3pLnDK_1VTQPPwvYJgndC2QpsON2CW0J4Ldwfsq-440x623.jpg",
-      "_source_id": "dengeki-hobby"
+      "_source_id": "dengeki-hobby",
+      "updated": "2026-06-19T22:46:37.871492+09:00"
     },
     {
       "id": "figure-202605042056-rss-c127bf",
@@ -94228,7 +96521,7 @@
       "categories": [
         "figure"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "人気ストリーマー「Nachoneko」のフィギュア＆ぬいぐるみがフリュープライズから登場！無防備に寝転ぶ姿を「ぬースト」で立体化！",
       "title_ja": "人気ストリーマー「Nachoneko」のフィギュア＆ぬいぐるみがフリュープライズから登場！無防備に寝転ぶ姿を「ぬースト」で立体化！",
       "dates": {
@@ -94244,7 +96537,8 @@
         "model-kit"
       ],
       "thumbnail": "https://m.media-amazon.com/images/I/41sIkAcbJbL._SL200_AA140_.jpg",
-      "_source_id": "dengeki-hobby"
+      "_source_id": "dengeki-hobby",
+      "updated": "2026-06-19T22:46:37.871502+09:00"
     },
     {
       "id": "figure-202605042056-rss-934ded",
@@ -94293,7 +96587,7 @@
       "categories": [
         "figure"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "アニメ『地獄先生ぬ～べ～』より、鵺野鳴介、玉藻京介のリアルフィギュアがバンプレストから登場！「GLITTER＆GLAMOURS」シリーズにはゆきめが初登場！",
       "title_ja": "アニメ『地獄先生ぬ～べ～』より、鵺野鳴介、玉藻京介のリアルフィギュアがバンプレストから登場！「GLITTER＆GLAMOURS」シリーズにはゆきめが初登場！",
       "dates": {
@@ -94309,14 +96603,15 @@
         "model-kit"
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/668w_668h-1_6Q7k578GaYysl78rh1dFFv_AEu1ldKhA_yHYVMMeaiUeWNTrQjcAjjyoHU7VfBau2.jpg",
-      "_source_id": "dengeki-hobby"
+      "_source_id": "dengeki-hobby",
+      "updated": "2026-06-19T22:46:37.871511+09:00"
     },
     {
       "id": "figure-202605042056-rss-442640",
       "categories": [
         "figure"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "『HUNTER×HUNTER』より「絶対時間（エンペラータイム）」を使用するクラピカがバンプレストからプライズフィギュア化！ディスプレイを彩るアクリルパネル付き！",
       "title_ja": "『HUNTER×HUNTER』より「絶対時間（エンペラータイム）」を使用するクラピカがバンプレストからプライズフィギュア化！ディスプレイを彩るアクリルパネル付き！",
       "dates": {
@@ -94332,14 +96627,15 @@
         "model-kit"
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/668w_668h-3_8E8SX8yyqnF5bL5zWIB-jcXf-gSP5LY-__jI2eBJHVLicBs0luvFbrow8gDsWk6mq.jpg",
-      "_source_id": "dengeki-hobby"
+      "_source_id": "dengeki-hobby",
+      "updated": "2026-06-19T22:46:37.871519+09:00"
     },
     {
       "id": "figure-202605042056-rss-42c00f",
       "categories": [
         "figure"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "鉄道ライター・若林健矢が行く！Nゲージ・首都圏レンタルレイアウト探訪記 ～第14景・東京都八王子市「TOKYO N-Train」～ 旧店を受け継ぎさらに発展中！緑あふれる大型レイアウト",
       "title_ja": "鉄道ライター・若林健矢が行く！Nゲージ・首都圏レンタルレイアウト探訪記 ～第14景・東京都八王子市「TOKYO N-Train」～ 旧店を受け継ぎさらに発展中！緑あふれる大型レイアウト",
       "dates": {
@@ -94355,7 +96651,8 @@
         "model-kit"
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/05/599f1bc146c8ef059d01bda5216afd18_d3QgVkK0et-vD_SiczuT_ZmLO82tjYHs_64EQEB8WewCjmaIw-jCv44GuQGP2Iv88-440x293.jpg",
-      "_source_id": "dengeki-hobby"
+      "_source_id": "dengeki-hobby",
+      "updated": "2026-06-19T22:46:37.871527+09:00"
     },
     {
       "id": "figure-202605042056-rss-429607",
@@ -94425,7 +96722,7 @@
       "categories": [
         "figure"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "しゃがみポーズで見下ろす圧巻の存在感！『DEATH NOTE』のリュークをぬーどるストッパーフィギュア化！",
       "title_ja": "しゃがみポーズで見下ろす圧巻の存在感！『DEATH NOTE』のリュークをぬーどるストッパーフィギュア化！",
       "dates": {
@@ -94441,14 +96738,15 @@
         "model-kit"
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/1_zTHPyedtfQZ2txgZNUpHhf2QcTIEDmwi_-XU2k7pIttqku8dRrIUh0hm1cDJMMPmA.jpg",
-      "_source_id": "dengeki-hobby"
+      "_source_id": "dengeki-hobby",
+      "updated": "2026-06-19T22:46:37.871537+09:00"
     },
     {
       "id": "figure-202605042056-rss-081741",
       "categories": [
         "figure"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "『ハイキュー!!』の「Hide＆Seek（かくれんぼ）」フィギュアがタカラトミーアーツのガチャに登場！顔を隠したコミカルポーズで及川 徹、岩泉 一、木兎光太郎、赤葦京治が登場!!",
       "title_ja": "『ハイキュー!!』の「Hide＆Seek（かくれんぼ）」フィギュアがタカラトミーアーツのガチャに登場！顔を隠したコミカルポーズで及川 徹、岩泉 一、木兎光太郎、赤葦京治が登場!!",
       "dates": {
@@ -94464,14 +96762,15 @@
         "model-kit"
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/05/01_ToruOikawa_nkVOzNz-RzbHjTCkr-v_VPGxeF0ibnSL_p5Etc-INgQbepOozb90mnYuQcUmAMGPf.jpg",
-      "_source_id": "dengeki-hobby"
+      "_source_id": "dengeki-hobby",
+      "updated": "2026-06-19T22:46:37.871545+09:00"
     },
     {
       "id": "figure-202605042055-rss-fa9b58",
       "categories": [
         "figure"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "『劇場版マクロスF ～サヨナラノツバサ～』のイサム・スペシャル「VF-19EF/A」ファイター形態を1/48スケールでハセガワがキット化！スーパーパーツ、ミサイルポッドなどのパーツを新金型で追加！",
       "title_ja": "『劇場版マクロスF ～サヨナラノツバサ～』のイサム・スペシャル「VF-19EF/A」ファイター形態を1/48スケールでハセガワがキット化！スーパーパーツ、ミサイルポッドなどのパーツを新金型で追加！",
       "dates": {
@@ -94487,14 +96786,15 @@
         "model-kit"
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/05/65898_1_7ok-xoLHOasipGCq4NAat-k4jA7ayvnO_-Pzs_UCJ6YrQILBn4O0eYQjFGFT27Yar-440x224.jpg",
-      "_source_id": "dengeki-hobby"
+      "_source_id": "dengeki-hobby",
+      "updated": "2026-06-19T22:46:37.871554+09:00"
     },
     {
       "id": "figure-202605042055-rss-61c9d7",
       "categories": [
         "figure"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「UDF PEANUTS」シリーズにMLBとコラボしたニューアイテム！キャップを被ったチャーリー・ブラウンとスヌーピーの完成品フィギュアが登場！",
       "title_ja": "「UDF PEANUTS」シリーズにMLBとコラボしたニューアイテム！キャップを被ったチャーリー・ブラウンとスヌーピーの完成品フィギュアが登場！",
       "dates": {
@@ -94510,14 +96810,15 @@
         "model-kit"
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/la_7SW7IMxWrDnqWJfYRsMMC85WG7qEJX9F_Eok_Q12m0p7xty016Y-aqrqrfELTrFAk.jpg",
-      "_source_id": "dengeki-hobby"
+      "_source_id": "dengeki-hobby",
+      "updated": "2026-06-19T22:46:37.871562+09:00"
     },
     {
       "id": "figure-202605042055-rss-1e9ed3",
       "categories": [
         "figure"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「エヴァンゲリオン新2号機α」と「エヴァンゲリオン8号機β 臨時戦闘形態」のBE@RBRICKがリフト・オフ！100％サイズの2体セットと各400％アイテムが発売！",
       "title_ja": "「エヴァンゲリオン新2号機α」と「エヴァンゲリオン8号機β 臨時戦闘形態」のBE@RBRICKがリフト・オフ！100％サイズの2体セットと各400％アイテムが発売！",
       "dates": {
@@ -94533,14 +96834,15 @@
         "model-kit"
       ],
       "thumbnail": "https://hobby.dengeki.com/ss/hobby/2026/04/et_IlslsDDUhwxcOp-BhcNAwjdnpQ7MKBC3_wsM01ymrisN-A2116oXP2gD1UJbcRTTW-440x640.jpg",
-      "_source_id": "dengeki-hobby"
+      "_source_id": "dengeki-hobby",
+      "updated": "2026-06-19T22:46:37.871571+09:00"
     },
     {
       "id": "cosplay-202605042055-rss-82cabb",
       "categories": [
         "cosplay"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "Copsot Media独占【 美少女人気急上昇中コスプレイヤー】ねねさんのコスプレ背景や活動に独占インタビュー！",
       "title_ja": "Copsot Media独占【 美少女人気急上昇中コスプレイヤー】ねねさんのコスプレ背景や活動に独占インタビュー！",
       "dates": {
@@ -94555,14 +96857,15 @@
         "cosplay"
       ],
       "thumbnail": "https://cospot-media.com/wp-content/uploads/2026/05/20260403_news_01.jpg",
-      "_source_id": "cospot-media-com"
+      "_source_id": "cospot-media-com",
+      "updated": "2026-06-19T22:46:37.871579+09:00"
     },
     {
       "id": "game-202605042054-rss-f23afb",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "ステルスアクション×お店経営シム『ゴブリン ヴァイク：ヌスビトタイクーン』人集まる好調スタート。ダンジョンでこっそり宝を盗み、客に“ぼったくり価格”で売りつけるアコギ商売",
       "title_ja": "ステルスアクション×お店経営シム『ゴブリン ヴァイク：ヌスビトタイクーン』人集まる好調スタート。ダンジョンでこっそり宝を盗み、客に“ぼったくり価格”で売りつけるアコギ商売",
       "dates": {
@@ -94576,14 +96879,15 @@
         "automaton-media-com"
       ],
       "thumbnail": "https://automaton-media.com/wp-content/uploads/2023/05/imageaki-150x150.jpg",
-      "_source_id": "automaton-media-com"
+      "_source_id": "automaton-media-com",
+      "updated": "2026-06-19T22:46:37.871587+09:00"
     },
     {
       "id": "game-202605042054-rss-a782b4",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "サイコロ×デッキ構築型ローグライク『Die in the Dungeon』正式リリース。新要素どっさり大型アプデ到来、サイコロ鍛えて“出目に祈る”カエル戦士ダンジョン攻略",
       "title_ja": "サイコロ×デッキ構築型ローグライク『Die in the Dungeon』正式リリース。新要素どっさり大型アプデ到来、サイコロ鍛えて“出目に祈る”カエル戦士ダンジョン攻略",
       "dates": {
@@ -94597,14 +96901,15 @@
         "automaton-media-com"
       ],
       "thumbnail": "https://automaton-media.com/wp-content/uploads/2025/11/IMG_8528-150x150.jpeg",
-      "_source_id": "automaton-media-com"
+      "_source_id": "automaton-media-com",
+      "updated": "2026-06-19T22:46:37.871595+09:00"
     },
     {
       "id": "game-202605042054-rss-88687d",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "最大6人協力・はた迷惑ギャンブルゲーム『Gamble With Your Friends』同接3万人超の大ブレイク。お財布はみんなでひとつ、フレンドの金もつぎこめちゃうドタバタ博打ゲーム",
       "title_ja": "最大6人協力・はた迷惑ギャンブルゲーム『Gamble With Your Friends』同接3万人超の大ブレイク。お財布はみんなでひとつ、フレンドの金もつぎこめちゃうドタバタ博打ゲーム",
       "dates": {
@@ -94618,14 +96923,15 @@
         "automaton-media-com"
       ],
       "thumbnail": "https://automaton-media.com/wp-content/uploads/2023/05/imageaki-150x150.jpg",
-      "_source_id": "automaton-media-com"
+      "_source_id": "automaton-media-com",
+      "updated": "2026-06-19T22:46:37.871603+09:00"
     },
     {
       "id": "game-202605042054-rss-85c9c1",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "“ルール破壊”チェスローグライク『Gambonanza』リリース直後から大好評。多彩な強化で駒たちが躍動する、チェス版『Balatro』のようだとして",
       "title_ja": "“ルール破壊”チェスローグライク『Gambonanza』リリース直後から大好評。多彩な強化で駒たちが躍動する、チェス版『Balatro』のようだとして",
       "dates": {
@@ -94639,14 +96945,15 @@
         "automaton-media-com"
       ],
       "thumbnail": "https://automaton-media.com/wp-content/uploads/2025/02/naoto-morooka-150x150.jpg",
-      "_source_id": "automaton-media-com"
+      "_source_id": "automaton-media-com",
+      "updated": "2026-06-19T22:46:37.871611+09:00"
     },
     {
       "id": "game-202605042054-rss-253846",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "魔法図書館お片付けシム『司書のお仕事：魔導図書館を片付けろ！』さっそく盛況。散らかった3072冊の本をひたすら整理、「なぜか止められない」と評判の魔法司書ワーク",
       "title_ja": "魔法図書館お片付けシム『司書のお仕事：魔導図書館を片付けろ！』さっそく盛況。散らかった3072冊の本をひたすら整理、「なぜか止められない」と評判の魔法司書ワーク",
       "dates": {
@@ -94660,14 +96967,15 @@
         "automaton-media-com"
       ],
       "thumbnail": "https://automaton-media.com/wp-content/uploads/2024/05/IMG_7240-150x150.jpg",
-      "_source_id": "automaton-media-com"
+      "_source_id": "automaton-media-com",
+      "updated": "2026-06-19T22:46:37.871648+09:00"
     },
     {
       "id": "game-202605042054-rss-22cceb",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "“90年代の日本風”コンビニ経営『inKONBINI: One Store. Many Stories』さっそく「非常に好評」スタート。商品並べて客と語らう、棚も心も整える“しみじみ夜勤”ナラティブゲーム",
       "title_ja": "“90年代の日本風”コンビニ経営『inKONBINI: One Store. Many Stories』さっそく「非常に好評」スタート。商品並べて客と語らう、棚も心も整える“しみじみ夜勤”ナラティブゲーム",
       "dates": {
@@ -94681,14 +96989,15 @@
         "automaton-media-com"
       ],
       "thumbnail": "https://automaton-media.com/wp-content/uploads/2025/11/IMG_8528-150x150.jpeg",
-      "_source_id": "automaton-media-com"
+      "_source_id": "automaton-media-com",
+      "updated": "2026-06-19T22:46:37.871662+09:00"
     },
     {
       "id": "game-202605042054-rss-0b74f9",
       "categories": [
         "game"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "仏ゲーム産業労働組合が、大手パブリッシャーNaconタイトルの不買運動を開始。資金難による傘下スタジオ切りを“第一級殺人”と非難",
       "title_ja": "仏ゲーム産業労働組合が、大手パブリッシャーNaconタイトルの不買運動を開始。資金難による傘下スタジオ切りを“第一級殺人”と非難",
       "dates": {
@@ -94702,7 +97011,8 @@
         "automaton-media-com"
       ],
       "thumbnail": "https://automaton-media.com/wp-content/uploads/2026/02/01aaacb3916901d2d30a55c75662e7f39c2f7d7b63-150x150.jpg",
-      "_source_id": "automaton-media-com"
+      "_source_id": "automaton-media-com",
+      "updated": "2026-06-19T22:46:37.871677+09:00"
     },
     {
       "id": "game-202605042053-rss-bc961a",
@@ -188380,6 +190690,1006 @@
       "_source_id": "natalie-anime"
     },
     {
+      "id": "otaku-news-202606192241-rss-fb625e",
+      "categories": [
+        "otaku-news",
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "にじさんじ「にじネイル Shiny」が6月19日発売！魁星・葛葉ら7人のラメ入りネイルポリッシュ＆缶バッジ",
+      "title_ja": "にじさんじ「にじネイル Shiny」が6月19日発売！魁星・葛葉ら7人のラメ入りネイルポリッシュ＆缶バッジ",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "\"Niji Nail Shiny\" Goods Details &#160; This time, the lineup includes the first glitter nail polish in the series, inspired by a glittering party. &#160; Kaisei-san, Kaida Haru-san, Kano-san, Kitami Yusei-san, Kuzuha-san, Sakaki Ness-san, Lauren &#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/621609"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp",
+        "vtuber"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/easy-peasy_e5qfHiDACy-150x150.jpeg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-f501ac",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「ちいかわ×チロルチョコ」コラボ第4弾が6月22日発売！ちいかわたちの描かれたチョコが可愛すぎる",
+      "title_ja": "「ちいかわ×チロルチョコ」コラボ第4弾が6月22日発売！ちいかわたちの描かれたチョコが可愛すぎる",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "\"Chikawa\" x \"Tirol Chocolate\" 4th collaboration \"Chiikawa Tyrol Chocolate Can\" The can design of this collaboration has been powered up to a square shape with an original mold developed. The can lid is embossed and has a three-dimensional finish. &#160; It's also good for the Tyrol chocolate inside.&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/617159"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/IMG_7789-150x150.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-f4e4b6",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『ハイキュー!!』雨上がりの帰り道フェアがアニメイトで6月20日開催！傘を持つ日向・影山たちの描き下ろしグッズ＆ビジュアルカード特典",
+      "title_ja": "『ハイキュー!!』雨上がりの帰り道フェアがアニメイトで6月20日開催！傘を持つ日向・影山たちの描き下ろしグッズ＆ビジュアルカード特典",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Anime “Haikyu!!” Fair on the way home after the rain in Animate Details Goods using newly drawn illustrations with the theme “On the way home after the rain” will be available. &#160; The newly drawn characters are Shoyo Hinata, Tobio Kageyama, Kei Tsukishima, Tetsuro Kuroo, and Kozume&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/618632"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/05/hq_kv.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-c1da13",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『映画ちいかわ』コラボカフェがPARCOで7月10日開催！人魚の煮つけ＆シーサーの島ラーメンなど全16品",
+      "title_ja": "『映画ちいかわ』コラボカフェがPARCOで7月10日開催！人魚の煮つけ＆シーサーの島ラーメンなど全16品",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "&#160; “Chiikawa the Movie: The Secret of Mermaid Island” Collaboration Cafe Details “Chiikawa the Movie: The Secret of the Mermaid Island Collaboration CAFE” will be held for a limited time. &#160; Venues are Shibuya PARCO (6F), Shinsaibashi PARCO (6F), Nago&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/621689"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/05/s512_f_object_100_0bg-150x150.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-b55d9e",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「地縛少年花子くん２×アベイル」新作グッズが6月20日に発売！Tシャツ・タオル・アクキーなどが勢揃い",
+      "title_ja": "「地縛少年花子くん２×アベイル」新作グッズが6月20日に発売！Tシャツ・タオル・アクキーなどが勢揃い",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "\"Toilet-Bound Hanako-kun 2 x Avail\" Goods Details This time's goods use mini character illustrations exclusive to \"Avail.\" &#160; A collection of cute mini characters in a wide range of items, from T-shirts and room wear to towels, cushions, and acrylic goods.&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/620738"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/06/conv01-5.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-a987c8",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「ディズニー×アベイル」新作グッズが6月20日に発売！『トイ・ストーリー』のクッションや食器・Tシャツ・ルームウェアが登場",
+      "title_ja": "「ディズニー×アベイル」新作グッズが6月20日に発売！『トイ・ストーリー』のクッションや食器・Tシャツ・ルームウェアが登場",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Details of \"Disney (Toy Story) x Avail\" goods This time, a wide range of lineups including items featuring the logo of the movie \"Toy Story 5\" and designs of familiar friends such as Woody and Buzz Alien will be released. &#160;Intellectual&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/620730"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/IMG_7789-150x150.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-a2c6f7",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『Dr.STONE』POP UP SHOPが6月20日より開催！“旅”がテーマの描き下ろしグッズが登場",
+      "title_ja": "『Dr.STONE』POP UP SHOPが6月20日より開催！“旅”がテーマの描き下ろしグッズが登場",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "TV anime “Dr.STONE SCIENCE FUTURE” POP UP SHOP will be held At this event, visuals with the theme of “travel” will appear. Original goods focusing on Senku and his friends traveling around the world with cameras and tickets will be on sale. &#038;&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/617521"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/IMG_7789-150x150.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-9da0de",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『刀剣乱舞』×Jリーグ コラボ始動！刀剣男士20振りがJ1全20クラブの応援隊長に、グッズ先行販売も6月19日スタート",
+      "title_ja": "『刀剣乱舞』×Jリーグ コラボ始動！刀剣男士20振りがJ1全20クラブの応援隊長に、グッズ先行販売も6月19日スタート",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "&#160; &#160; \"Touken Ranbu ONLINE\" x J.League \"Go! J.League Support Honmaru\" has started Source: \"J.League Official\" special site &#160; Collaboration logo and collaboration visuals have been released, and the swordsmen are \"passionately cheering\" on the J.League stage.",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/621665"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/easy-peasy_e5qfHiDACy-150x150.jpeg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-9aabfc",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「シルバニアファミリー×アトレ」サマーカーニバルが6月26日開幕！フルーツ衣装のノベルティが盛りだくさん",
+      "title_ja": "「シルバニアファミリー×アトレ」サマーカーニバルが6月26日開幕！フルーツ衣装のノベルティが盛りだくさん",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "&#160; &#160; “Sylvanian Families x Atre” Summer Carnival 2026 Atre’s annual summer campaign “Atre Summer Carnival 2026” will be held at all 20 Atre stores and 5 AtreV stores. The theme is ``Get ready for summer in a sweet way for yourself&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/621426"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/05/s512_f_object_100_0bg-150x150.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-8a702d",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『ふしぎの国のアリス』ヤングオイスターの新作グッズが6月26日ディズニーストアで発売！",
+      "title_ja": "『ふしぎの国のアリス』ヤングオイスターの新作グッズが6月26日ディズニーストアで発売！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Young Oysters \"BABY OYSTERS\" Collection Details This collection features young oysters with rich expressions such as laughing and shyness, and original art depicting grandmother oysters with a gentle touch. &#160; Young Oysters&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/621557"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/05/s512_f_object_100_0bg-150x150.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-45436f",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『呪術廻戦』とは？キャラ一覧・声優・ランキング総まとめ【2026】",
+      "title_ja": "『呪術廻戦』とは？キャラ一覧・声優・ランキング総まとめ【2026】",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "&#160; &#160; What is “Jujutsu Kaisen”? &#160; Synopsis Jujutsu Kaisen is a huge hit comic by Gege Akutami that depicts the battle between a curse born from negative human emotions and a sorcerer who uses magic to exorcise it. Serialized in Shueisha's \"Weekly Shonen Jump\" from March 2018&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/621497"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/06/los.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-3ccf9f",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「ミッフィー×しまむら」コラボ商品が6月20日発売！キャラTシャツ・ルームウェア・冷感ケットなど夏のおうち時間にぴったり",
+      "title_ja": "「ミッフィー×しまむら」コラボ商品が6月20日発売！キャラTシャツ・ルームウェア・冷感ケットなど夏のおうち時間にぴったり",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "``Miffy x Shimamura'' collaboration item details We have a wide range of lineups, from women's apparel to summer bedding featuring ``Miffy'', a character familiar from picture books. &#160; Can be used for everyday use such as character T-shirts, shorts, loungewear, and sandals.&#8230;",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/621398"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/05/s512_f_object_100_0bg-150x150.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192241-rss-1c0b68",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『アイナナ（アイドリッシュセブン）』とは？キャラ一覧・声優・ランキング総まとめ【2026】",
+      "title_ja": "『アイナナ（アイドリッシュセブン）』とは？キャラ一覧・声優・ランキング総まとめ【2026】",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "&#160; &#160; What is \"IDOLiSH7\"? &#160; Synopsis Aspiring idols who will carry the future are gathered at the \"Kotoriyu Office\". The seven people, who have just met each other, have different personalities and personalities. However, each has a different charm, and each one has a different charm.",
+      "source": {
+        "url": "https://nijimen.kusuguru.co.jp/topics/620916"
+      },
+      "tags": [
+        "nijimen-kusuguru-co-jp"
+      ],
+      "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/06/kcg.jpg",
+      "_source_id": "nijimen-kusuguru-co-jp"
+    },
+    {
+      "id": "otaku-news-202606192238-rss-7be945",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「攻殻機動隊」新作アニメのTシャツや、メタリックボトルほか新グッズがラインナップ！「タチコマAI」も登場へ　「攻殻機動隊展」関西巡回展",
+      "title_ja": "「攻殻機動隊」新作アニメのTシャツや、メタリックボトルほか新グッズがラインナップ！「タチコマAI」も登場へ　「攻殻機動隊展」関西巡回展",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The Kansai touring exhibition ``Ghost and the Shell'', a large-scale exhibition spanning the entire Ghost in the Shell anime series, will be held from July 17th to August 30th, 2026 at the 3rd floor gallery of the Gallery Building of the Hyogo Prefectural Museum of Art. We have recently received information about new goods that will be available from the Kansai traveling exhibition, including new anime products and a new collaboration T-shirt with GEEKS RULE. Furthermore, it has been revealed that interactive AI content ``Tachikoma AI'' will appear at the venue on the opening day.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100203.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894138.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192238-rss-382acd",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「夏目友人帳」的場・名取・柊・依島が“祓い屋”テーマに描き下ろしグッズ化！ニャンコ先生の可愛い1日もアクリルチャームに【アニメイトフェア】",
+      "title_ja": "「夏目友人帳」的場・名取・柊・依島が“祓い屋”テーマに描き下ろしグッズ化！ニャンコ先生の可愛い1日もアクリルチャームに【アニメイトフェア】",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "From ``Natsume's Book of Friends'', a new product using newly drawn illustrations based on the concept of ``exorcist'' has been released. It will be pre-sold from September 12, 2026 at \"TV Anime 'Natsume's Book of Friends' Animate Fair in 2026\".",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100204.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/893321.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-fc2b6d",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "秋アニメ「らんま1/2 第3期」乱馬、あかね、良牙の関係はどうなる？ 恋のバトルの数々も…新キャラ登場の第2弾PV公開",
+      "title_ja": "秋アニメ「らんま1/2 第3期」乱馬、あかね、良牙の関係はどうなる？ 恋のバトルの数々も…新キャラ登場の第2弾PV公開",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The third season of the TV anime \"Ranma 1/2\" will be broadcast nationwide on Nippon Television from October 2026, and will also be exclusively distributed on Netflix immediately after the broadcast. The second PV of this work, featuring a new character, has been released.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100213.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894221.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-f18df9",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“朗読”を聞きたい声優は？ 石田彰、谷山紀章、中村悠一… 物語世界に誘う声の魅力に注目！＜男性声優編 26年版＞【朗読の日】",
+      "title_ja": "“朗読”を聞きたい声優は？ 石田彰、谷山紀章、中村悠一… 物語世界に誘う声の魅力に注目！＜男性声優編 26年版＞【朗読の日】",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "anime! anime! We conducted our annual reader survey titled, \"Which voice actor would you like to hear read aloud?\" In this article, we will announce the results of the male voice actor section.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100210.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894183.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-efa118",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Ex-Sガンダム Ka signature版ついに発売！ A.L.I.C.E.システム発動時の赤い目の頭部も付属",
+      "title_ja": "Ex-Sガンダム Ka signature版ついに発売！ A.L.I.C.E.システム発動時の赤い目の頭部も付属",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The Ex-S Gundam that appears in \"Gundam Sentinel\" will be released by METAL ROBOT Spirits (Ka signature) tomorrow, June 20, 2026. Also included is blue splitter camouflage and a head with red eyes when the A.L.I.C.E. system is activated.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100205.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/828364.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-e537b8",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“朗読”を聞きたい声優は？ 花澤香菜、沢城みゆき、早見沙織… 主人公やヒロインを多く演じたキャストが集結＜女性声優編 26年版＞【朗読の日】",
+      "title_ja": "“朗読”を聞きたい声優は？ 花澤香菜、沢城みゆき、早見沙織… 主人公やヒロインを多く演じたキャストが集結＜女性声優編 26年版＞【朗読の日】",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "anime! anime! We conducted our annual reader survey titled, \"Which voice actor would you like to hear read aloud?\" In this article, we will announce the results of the female voice actor section.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100209.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894158.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-a622a8",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "百瀬アキラの初恋破綻中。７巻　「かつてないほど…青春が爆ぜる時、です」",
+      "title_ja": "百瀬アキラの初恋破綻中。７巻　「かつてないほど…青春が爆ぜる時、です」",
+      "dates": {},
+      "description": "Shinta Harukawa's comic ``Akira Momose's first love is broken.'' Volume 7 [AA] was released on the 18th. Obi is a ``pure love comedy with beautiful illustrations'', ``Illustrator/animator/artist: Mai Yoneyama, acclaimed and hotly written'', and the back cover is ``That moment...suddenly comes.'' Bluer than ever...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51662163.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/5/2/52e3f9b6.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-99b80a",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「超かぐや姫！」かぐやたちがパワーアップして劇場に！ 特別フォーマット上映＆通常版の再上映が決定！ 9月18日より",
+      "title_ja": "「超かぐや姫！」かぐやたちがパワーアップして劇場に！ 特別フォーマット上映＆通常版の再上映が決定！ 9月18日より",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Original animation movie “Super Kaguyahime! ” will be screened in a special format and the regular version will be re-screened. A special format version of the special report has been released.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100216.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/893677.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-798916",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "魔老紳士ビーティー　「荒木飛呂彦の連載デビュー作のその後を超豪華タッグが描く！」",
+      "title_ja": "魔老紳士ビーティー　「荒木飛呂彦の連載デビュー作のその後を超豪華タッグが描く！」",
+      "dates": {},
+      "description": "``Mao Gentleman Beatty'' [AA], written by Isin Nishio and illustrated by Posuka Demizu, was released on the 18th. The insert flyer reads, ``High school students, young men, and elderly gentlemen. Every generation of Beatty makes evil pay! '', and the back cover is ``A super-luxurious look at the aftermath of Hirohiko Araki's serialized debut work ``Magical Boy Beatty''...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51662162.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/a/1/a14bdada.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-7124d6",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "Summer Pockets―なつのたからもの―１　「最高の夏を見つける少年少女たちの物語」",
+      "title_ja": "Summer Pockets―なつのたからもの―１　「最高の夏を見つける少年少女たちの物語」",
+      "dates": {},
+      "description": "Volume 1 [AA] of ``Summer Pockets - Summer's Treasures'', which is a comic adaptation of the TV anime of Key's game ``Summer Pockets'' by Mr. Wogura, was released on the 18th.\nObi is the official comic version of the TV anime “Summer Pockets”! '', the insert flyer was ``For boys and girls who find the best summer''...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51662171.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/8/5/855090a1.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-69aa14",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「ディズニー」ウッディー、バズ、プリンセスのビッグプリントが可愛い♪「トイ・ストーリー」＆「ディズニープリンセス」の新作アパレルが登場",
+      "title_ja": "「ディズニー」ウッディー、バズ、プリンセスのビッグプリントが可愛い♪「トイ・ストーリー」＆「ディズニープリンセス」の新作アパレルが登場",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "New apparel items such as T-shirts and sweatshirts with \"Toy Story\" and \"Disney Princess\" motifs are now available. It will be on sale at \"RODEO CROWNS WIDE BOWL\" stores and \"SHEL'TTER WEBSTORE\" nationwide from June 19, 2026 (Friday).",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100206.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894110.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-66d978",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "いとこのお姉ちゃんに甘えちゃう？５巻　「従姉のさや姉ちゃんと一緒にお風呂」",
+      "title_ja": "いとこのお姉ちゃんに甘えちゃう？５巻　「従姉のさや姉ちゃんと一緒にお風呂」",
+      "dates": {},
+      "description": "Volume 5 [AA] of Kyohei Igarashi's comic \"Are you spoiled by your cousin's sister?\" was released on the 18th. Obi is a romantic comedy about living together under the same roof with your super sexy cousin! '', the comic information is ``For some reason we ended up taking a bath together, we went to a manga cafe, and other important things...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51662165.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/4/7/4765087c.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-5ca708",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "ねこぐち　異世界陸上１巻　「ケモノ女子たちが、走る！跳ぶ！投げる！」",
+      "title_ja": "ねこぐち　異世界陸上１巻　「ケモノ女子たちが、走る！跳ぶ！投げる！」",
+      "dates": {},
+      "description": "Nekoguchi's comic ``Isekai Athletics'' volume 1 [AA] was released on the 18th. Obi's slogan is ``Modern track and field vs. the fittest,'' and the comic information is ``In the world, ``Kemono women's track and field'' was a very popular professional sport that excited people! '', and the back cover is ``Kemono girls run! jump! throw! '...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51662169.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/0/e/0e947598.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-56f7f1",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "紅野あつ　放課後、ボカ研で！１巻　「ミリしら新入生×ボカロのゆるかわ青春譚！」",
+      "title_ja": "紅野あつ　放課後、ボカ研で！１巻　「ミリしら新入生×ボカロのゆるかわ青春譚！」",
+      "dates": {},
+      "description": "Atsu Benino's comic \"After School, Bokaken De!\" Volume 1 [AA] was released on the 18th. The back cover says, ``There's no problem with Milli Shira! Surrounded by seniors who love Vocaloid, a creative after-school experience begins'', and the comic information is ``Miri Shira new student x Vocaloid's loose and cute youth story! '...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51662170.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/c/4/c44a095e.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-55202f",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "【コラム】 POISON「ギャル姉Ｚ」キャラ紹介動画＆立ち絵差分続々公開！Android版の90%オフクーポン配布中！",
+      "title_ja": "【コラム】 POISON「ギャル姉Ｚ」キャラ紹介動画＆立ち絵差分続々公開！Android版の90%オフクーポン配布中！",
+      "dates": {},
+      "description": "How are you all spending your time during this rainy and cold season? Thank you to everyone who plays and supports POISON works on a daily basis! Today, we will be summarizing various information released on the fan site \"Ci-en\" in June, focusing on the latest information on POISON's new work \"Gal Sister Z\" scheduled to be released on August 28th...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51662158.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/6/7/67a0c938.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-548ff9",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「ブルーロック」潔、凛、凪、玲王の制服フィギュア入り！お肌も心も潤う～♪ サッカーボール型バスボールが新登場",
+      "title_ja": "「ブルーロック」潔、凛、凪、玲王の制服フィギュア入り！お肌も心も潤う～♪ サッカーボール型バスボールが新登場",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Introducing a bath ball with cute deformed figures from the TV anime \"Blue Rock\". It will be on sale from Friday, June 19, 2026 on the TOKOTOYZ official EC site and other sites.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100207.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894126.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-4769c2",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "SNSで話題のマンガ「地元最高！」MAPPA制作でアニメ化！  原作ファン・aikoの「milk」にのせたティザーPV公開",
+      "title_ja": "SNSで話題のマンガ「地元最高！」MAPPA制作でアニメ化！  原作ファン・aikoの「milk」にのせたティザーPV公開",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The manga ``Local Best!'' is a hot topic on SNS with its cute pictures and unique story. ' has been decided to be made into an anime. In addition to announcing that it will be produced by MAPPA and distributed exclusively worldwide on Netflix, “Local Best! A PV featuring the song ``milk'' by Aiko, who is also a big fan of ``, has also been released.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100211.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894197.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-3f3398",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「チェンソーマン 刺客篇」デンジを狙う世界の刺客達が動き出す…最新PV公開！スマホゲーム化も決定&OPはホルモン新曲",
+      "title_ja": "「チェンソーマン 刺客篇」デンジを狙う世界の刺客達が動き出す…最新PV公開！スマホゲーム化も決定&OPはホルモン新曲",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The latest PV from the anime ``Chainsaw Man: Assassins'' has been released. Furthermore, it has been announced that ``Chainsaw Man'' will be made into a smartphone game, and the opening theme has been decided to be ``ALL THE LYNCH!! ALL THE MINCE!!'' by Maximum the Hormone. An opening movie produced by MAPPA that goes along with this song was also unveiled.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100217.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894245.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-3da99f",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「MAPPA」設立15周年を記念した展覧会を開催!!「チェンソーマン」「進撃の巨人」「呪術廻戦」の世界を体感できる！",
+      "title_ja": "「MAPPA」設立15周年を記念した展覧会を開催!!「チェンソーマン」「進撃の巨人」「呪術廻戦」の世界を体感できる！",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "It has been decided that the exhibition \"MAPPA EXPO 15th Anniversary\" will be held to commemorate the 15th anniversary of the establishment of animation studio MAPPA. It will be held at \"YURAKUCHO MUSEUM\" in Yurakucho, Tokyo for approximately 80 days from Wednesday, September 16, 2026 to Monday, December 7, 2026.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100215.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894177.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-3c30f5",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "印牧巻　勇者遺族１巻　「勇者の子供達による泥沼遺産争奪戦！」",
+      "title_ja": "印牧巻　勇者遺族１巻　「勇者の子供達による泥沼遺産争奪戦！」",
+      "dates": {},
+      "description": "Volume 1 [AA] of Mr. Inmaki's comic ``The Brave Bereaved Family'' was released on the 18th. The insert flyer reads, ``An elf, a giant, a dragon...a wide variety of half-brothers begin a bloody battle over the legacy of their father, the hero! ? '', and the back cover is ``An unusual parallel world story! '', Obi's slogan is ``The battle for the quagmire inheritance by the children of the brave! ...",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51662172.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/e/f/effb1e65.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-38a8e8",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "鐡のマビト１　「大正ロマン的世界で美少年と美少女が大暴れするダークファンタジー！」",
+      "title_ja": "鐡のマビト１　「大正ロマン的世界で美少年と美少女が大暴れするダークファンタジー！」",
+      "dates": {},
+      "description": "Takashi Shiina's comic \"Tetsu no Mabito\" Volume 1 [AA] was released on the 18th. The comic information is ``Majin (Mabito), whose body part is parasitized by a monster,'' and Obi's slogan is ``Sakamoto Ryoma is reincarnated as a beautiful girl!'' ? '', the back cover is ``A new sensation where beautiful boys and girls go wild in a Taisho romantic world...''",
+      "source": {
+        "url": "https://akibablog.blog.jp/archives/51662168.html"
+      },
+      "tags": [
+        "akihabara",
+        "cafe",
+        "event",
+        "figure"
+      ],
+      "thumbnail": "https://livedoor.blogimg.jp/geek/imgs/e/2/e244936e.jpg",
+      "_source_id": "akiba-blog"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-2c9aae",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「恋せよまやかし天使ども」制作はMAPPA！ アニメ映像初お披露目のティザーPVも公開",
+      "title_ja": "「恋せよまやかし天使ども」制作はMAPPA！ アニメ映像初お披露目のティザーPVも公開",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "It has been announced that MAPPA will be in charge of animation production for the TV anime ``Koisei Mayakashi Tenshi Domo''. It was announced at the \"MAPPA 15th Anniversary Lineup Presentation\" held on June 19, 2026, and a teaser visual and teaser PV were released accordingly. Comments have also arrived from the main staff.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100212.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894211.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-2219c7",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「ツイステ」サバナクロー寮のおしゃれリングが登場！レオナのリングも待望の再販決定",
+      "title_ja": "「ツイステ」サバナクロー寮のおしゃれリングが登場！レオナのリングも待望の再販決定",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The new \"Savannah Claw Dormitory\" series is now available from the \"Disney Twisted Wonderland\" collection jewelry. Reservations are now being accepted on the official \"TUfave\" shop website from 12:00 on Friday, June 19, 2026.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100208.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894049.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192237-rss-061d1d",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“あんまワクワクさせんなよ”「呪術廻戦」第4期「死滅回游 後編」の最新情報が到着！秤VS鹿紫雲、羂索VS脹相＆九十九のバトルがアツい!!",
+      "title_ja": "“あんまワクワクさせんなよ”「呪術廻戦」第4期「死滅回游 後編」の最新情報が到着！秤VS鹿紫雲、羂索VS脹相＆九十九のバトルがアツい!!",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The latest information on the 4th season of the TV anime “Jujutsu Kaisen” “Death Kaiyu Part 2” has arrived. A teaser PV featuring an intense battle has been released, as well as comments from director Takeshi Sato, who will be working on the fourth season.",
+      "source": {
+        "url": "https://animeanime.jp/article/2026/06/19/100214.html"
+      },
+      "tags": [
+        "animeanime-jp"
+      ],
+      "thumbnail": "https://animeanime.jp/imgs/ogp_f/894230.jpg",
+      "_source_id": "animeanime-jp"
+    },
+    {
+      "id": "otaku-news-202606192236-rss-f6ef35",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "グリッドマンユニバース・宝多六花が1万円×巨大サイズでフィギュア化！“足”の魅力際立つスポーツウェア姿",
+      "title_ja": "グリッドマンユニバース・宝多六花が1万円×巨大サイズでフィギュア化！“足”の魅力際立つスポーツウェア姿",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "On the 19th, Furyu Co., Ltd. began accepting orders for the new figure ``TENITOL TALL Rikka Takarada Sports wear ver.'' from the company's figure brand ``TENITOL.'' The price is 10,450 yen including tax. This product...",
+      "source": {
+        "url": "https://0115765.com/archives/191148"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/06/20260619-rfzk5l3u.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202606192236-rss-d9cb1d",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『ウマ娘』のはちみーがお酒になる！酒造コラボでトウカイテイオーの蜂蜜酒が登場",
+      "title_ja": "『ウマ娘』のはちみーがお酒になる！酒造コラボでトウカイテイオーの蜂蜜酒が登場",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Tentaka Sake Brewery has announced that it will be selling honey sake ``Tokai Teio Hachimi no Osake'' as a collaboration product with ``Uma Musume Pretty Derby'' at the official online shop from 3:00 pm on June 23rd. \"Tokai Teio Honey's Os...",
+      "source": {
+        "url": "https://0115765.com/archives/191042"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/06/20260618-2qndunhc.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202606192236-rss-b2e1b7",
+      "categories": [
+        "otaku-news",
+        "vtuber"
+      ],
+      "status": "active",
+      "title": "ホビー大手のコトブキヤ、VTuber事業に本格進出へ。動画配信・運営領域に参入目指し合弁会社「VEID」設立",
+      "title_ja": "ホビー大手のコトブキヤ、VTuber事業に本格進出へ。動画配信・運営領域に参入目指し合弁会社「VEID」設立",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "On the 15th, Juya Co., Ltd., which plans and sells hobby figure products, announced a joint venture called VEID Co., Ltd., a joint venture with Mujuryoku Co., Ltd., which is involved in the VTuber development business, etc., with the aim of making a full-scale entry into the digital content field.",
+      "source": {
+        "url": "https://0115765.com/archives/191056"
+      },
+      "tags": [
+        "0115765-com",
+        "vtuber"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/06/20260619-c3qyyult.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202606192236-rss-a87659",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "サンライズ、シャフトと初タッグで新作アニメ　独特な映像表現でどんな作品が生まれるか注目",
+      "title_ja": "サンライズ、シャフトと初タッグで新作アニメ　独特な映像表現でどんな作品が生まれるか注目",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Bandai Namco Filmworks announced on the 18th a new animation project, the first joint production between the company's animation production studio SUNRISE Studios and anime production company Shaft. Sunrise...",
+      "source": {
+        "url": "https://0115765.com/archives/191013"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/06/20260618-s9blkb4d.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202606192236-rss-a676fe",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "アニメ『転スラ』第4期、魔王ミリムのためにリムルは…第83話「ミリムの友達」【先行カット】",
+      "title_ja": "アニメ『転スラ』第4期、魔王ミリムのためにリムルは…第83話「ミリムの友達」【先行カット】",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Regarding the fourth season of the TV anime \"That Time I Got Reincarnated as a Slime\", which will be broadcast from April 2026, preliminary cuts and broadcast information for the 83rd episode, which will begin broadcasting and distribution from June 19th (Friday), have been released. Broadcasting will be the TV anime “FRIDAY ANIME...",
+      "source": {
+        "url": "https://0115765.com/archives/190987"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/06/20260618-zwb9pgd6-1024x576.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202606192236-rss-61aa02",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "『北斗の拳』新作アニメ、さらに2名の新キャラ登場！キャストの意気込みは…第13話「血塗られた罠」【先行カット】",
+      "title_ja": "『北斗の拳』新作アニメ、さらに2名の新キャラ登場！キャストの意気込みは…第13話「血塗られた罠」【先行カット】",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The 13th episode of the anime ``Fist of the North Star -FIST OF THE NORTH STAR-'' based on the original work by Buronson and manga by Tetsuo Hara will be aired on TOKYO MX and other channels from today, June 19th (Friday). The advance cut/synopsis has arrived...",
+      "source": {
+        "url": "https://0115765.com/archives/191136"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/06/20260619-opm649v0-1024x576.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202606192236-rss-431484",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "【全文】ウルトラマンの“ローカル中心”放送体制に株主懸念、円谷側「全国放送の実現」向け意欲示す…ティガ時代振り返り",
+      "title_ja": "【全文】ウルトラマンの“ローカル中心”放送体制に株主懸念、円谷側「全国放送の実現」向け意欲示す…ティガ時代振り返り",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "Tsuburaya Fields Holdings, which owns Tsuburaya Productions, held its 38th Ordinary General Meeting of Shareholders on the 18th. During the Q&A from participating shareholders, regarding the current broadcasting system of the \"Ultraman\" series, it was decided that the plan would be to consider realizing national broadcasting and reviewing the broadcasting time zone.",
+      "source": {
+        "url": "https://0115765.com/archives/190988"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/05/20260512-kkio5n4k-1024x683.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202606192236-rss-31e19b",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "「異世界の新たな金字塔」と銘打つ『ニセモノの錬金術師』アニメ化発表！インディー発漫画で100万部超え",
+      "title_ja": "「異世界の新たな金字塔」と銘打つ『ニセモノの錬金術師』アニメ化発表！インディー発漫画で100万部超え",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "It was announced on the 18th that the TV anime version of ``Nisemono Alchemist'', written by Jiro Sugiura and illustrated by Umemaru, will be made into a TV anime. As an indie work, it received a great response and the cumulative circulation of the commercial version exceeded 1 million copies. Passione was in charge of animation production.",
+      "source": {
+        "url": "https://0115765.com/archives/191017"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/06/20260618-py84hxxc-724x1024.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202606192236-rss-202d9c",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "“累計5クール”超大型企画の『転スラ』アニメ第4期、7月から第2クール目が開幕！連続枠では後半、新ビジュアルも",
+      "title_ja": "“累計5クール”超大型企画の『転スラ』アニメ第4期、7月から第2クール目が開幕！連続枠では後半、新ビジュアルも",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "The second key visual and second PV for the fourth season of the TV anime \"That Time I Got Reincarnated as a Slime\", which will be broadcast from April 2026, were released on the 19th. In addition, the second artist for the OP and ED theme songs has also been announced. April 2026...",
+      "source": {
+        "url": "https://0115765.com/archives/191112"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/06/20260619-ee9dao10-1024x576.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
+      "id": "otaku-news-202606192236-rss-173c27",
+      "categories": [
+        "otaku-news"
+      ],
+      "status": "active",
+      "title": "KADOKAWA、出版成績トップはマンガでも小説でもなく大人気絵本。業界商談会でキャラIP前面にアピール",
+      "title_ja": "KADOKAWA、出版成績トップはマンガでも小説でもなく大人気絵本。業界商談会でキャラIP前面にアピール",
+      "dates": {
+        "display": "Jun 19, 2026"
+      },
+      "description": "KADOKAWA will be exhibiting at \"Licensing Japan,\" a business meeting for industry stakeholders being held at Tokyo Big Sight from June 17th to 19th. The booth will feature new commercialization, collaborations, and licensing based on the company's signature titles...",
+      "source": {
+        "url": "https://0115765.com/archives/190946"
+      },
+      "tags": [
+        "0115765-com"
+      ],
+      "thumbnail": "https://0115765.com/wp-content/uploads/2026/06/20260619-pl4atq9m-1024x769.jpg",
+      "_source_id": "0115765-com"
+    },
+    {
       "id": "otaku-news-202606182203-rss-dbaa8c",
       "categories": [
         "otaku-news"
@@ -226350,7 +229660,7 @@
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "リアルさ追求の「キン肉マン」フィギュアに完全新作！原作38巻を徹底研究、顔の造形に注力",
       "title_ja": "リアルさ追求の「キン肉マン」フィギュアに完全新作！原作38巻を徹底研究、顔の造形に注力",
       "dates": {
@@ -226364,7 +229674,8 @@
         "0115765-com"
       ],
       "thumbnail": "https://0115765.com/wp-content/uploads/2026/05/0504-zyfsif12-1024x1024.jpg",
-      "_source_id": "0115765-com"
+      "_source_id": "0115765-com",
+      "updated": "2026-06-19T22:46:37.895059+09:00"
     },
     {
       "id": "otaku-news-202605052018-rss-efd3f5",
@@ -226839,7 +230150,7 @@
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "残りのGW連休で読みたい！7千人超が選ぶ「長編マンガ」ランキング…読書途中の完走にいかが",
       "title_ja": "残りのGW連休で読みたい！7千人超が選ぶ「長編マンガ」ランキング…読書途中の完走にいかが",
       "dates": {
@@ -226853,7 +230164,8 @@
         "0115765-com"
       ],
       "thumbnail": "https://0115765.com/wp-content/uploads/2026/03/0330-8317fls4-652x1024.jpg",
-      "_source_id": "0115765-com"
+      "_source_id": "0115765-com",
+      "updated": "2026-06-19T22:46:37.895177+09:00"
     },
     {
       "id": "otaku-news-202605052018-rss-150233",
@@ -227008,7 +230320,7 @@
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "週間JOI通信 Vol.19｜GW真っ只中！一番くじラッシュにコスプレ祭り、新作アニメ情報も盛りだくさんな一週間",
       "title_ja": "週間JOI通信 Vol.19｜GW真っ只中！一番くじラッシュにコスプレ祭り、新作アニメ情報も盛りだくさんな一週間",
       "dates": {
@@ -227039,14 +230351,15 @@
       "_source": "joi-weekly",
       "_source_id": "joi-weekly",
       "pinned_top": false,
-      "_weekly_archived": true
+      "_weekly_archived": true,
+      "updated": "2026-06-19T22:46:37.895218+09:00"
     },
     {
       "id": "otaku-news-202605042057-rss-e6ca6f",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "映画『ヒプマイ』Blu-ray発売記念アニメイトフェアが5月12日開始！全18種のステッカーがプレゼント",
       "title_ja": "映画『ヒプマイ』Blu-ray発売記念アニメイトフェアが5月12日開始！全18種のステッカーがプレゼント",
       "dates": {
@@ -227060,14 +230373,15 @@
         "nijimen-kusuguru-co-jp"
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/easy-peasy_e5qfHiDACy-150x150.jpeg",
-      "_source_id": "nijimen-kusuguru-co-jp"
+      "_source_id": "nijimen-kusuguru-co-jp",
+      "updated": "2026-06-19T22:46:37.895226+09:00"
     },
     {
       "id": "otaku-news-202605042057-rss-b673a5",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "オタクが選ぶ「小野大輔が演じるキャラ」ランキングTOP10！1位は『黒執事』セバスチャン【2026年版】",
       "title_ja": "オタクが選ぶ「小野大輔が演じるキャラ」ランキングTOP10！1位は『黒執事』セバスチャン【2026年版】",
       "dates": {
@@ -227081,14 +230395,15 @@
         "nijimen-kusuguru-co-jp"
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/05/eyecatch.jpg",
-      "_source_id": "nijimen-kusuguru-co-jp"
+      "_source_id": "nijimen-kusuguru-co-jp",
+      "updated": "2026-06-19T22:46:37.895236+09:00"
     },
     {
       "id": "otaku-news-202605042057-rss-b262c8",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「おそ松さん×やっぱりステーキ」コラボが5月18日スタート！6つ子が店員姿で登場&コラボメニュー・オリジナルグッズを販売",
       "title_ja": "「おそ松さん×やっぱりステーキ」コラボが5月18日スタート！6つ子が店員姿で登場&コラボメニュー・オリジナルグッズを販売",
       "dates": {
@@ -227102,14 +230417,15 @@
         "nijimen-kusuguru-co-jp"
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/easy-peasy_e5qfHiDACy-150x150.jpeg",
-      "_source_id": "nijimen-kusuguru-co-jp"
+      "_source_id": "nijimen-kusuguru-co-jp",
+      "updated": "2026-06-19T22:46:37.895246+09:00"
     },
     {
       "id": "otaku-news-202605042057-rss-98800b",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "『18TRIP』×タニタ コラボグッズが受注予約スタート！歩数計21種・温湿度計10種・久楽間潮デザインのクッキングスケールも登場",
       "title_ja": "『18TRIP』×タニタ コラボグッズが受注予約スタート！歩数計21種・温湿度計10種・久楽間潮デザインのクッキングスケールも登場",
       "dates": {
@@ -227123,14 +230439,15 @@
         "nijimen-kusuguru-co-jp"
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/easy-peasy_e5qfHiDACy-150x150.jpeg",
-      "_source_id": "nijimen-kusuguru-co-jp"
+      "_source_id": "nijimen-kusuguru-co-jp",
+      "updated": "2026-06-19T22:46:37.895256+09:00"
     },
     {
       "id": "otaku-news-202605042057-rss-8addc0",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "『18TRIP』×アニメイトカフェコラボが6月25日より開催決定！マリンパイレーツ衣装の描き下ろしイラスト＆ミニキャライラスト公開",
       "title_ja": "『18TRIP』×アニメイトカフェコラボが6月25日より開催決定！マリンパイレーツ衣装の描き下ろしイラスト＆ミニキャライラスト公開",
       "dates": {
@@ -227144,14 +230461,15 @@
         "nijimen-kusuguru-co-jp"
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/easy-peasy_e5qfHiDACy-150x150.jpeg",
-      "_source_id": "nijimen-kusuguru-co-jp"
+      "_source_id": "nijimen-kusuguru-co-jp",
+      "updated": "2026-06-19T22:46:37.895266+09:00"
     },
     {
       "id": "otaku-news-202605042057-rss-80b751",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「ミッフィー×しまむら」コラボアイテムが5月6日より全国販売！ポーチ・パジャマ・寝具など可愛すぎるラインナップが登場",
       "title_ja": "「ミッフィー×しまむら」コラボアイテムが5月6日より全国販売！ポーチ・パジャマ・寝具など可愛すぎるラインナップが登場",
       "dates": {
@@ -227165,14 +230483,15 @@
         "nijimen-kusuguru-co-jp"
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/easy-peasy_e5qfHiDACy-150x150.jpeg",
-      "_source_id": "nijimen-kusuguru-co-jp"
+      "_source_id": "nijimen-kusuguru-co-jp",
+      "updated": "2026-06-19T22:46:37.895274+09:00"
     },
     {
       "id": "otaku-news-202605042057-rss-728005",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "『リラックマ』×アベイル チャイロイコグマの「クマックマデイズ」シリーズが5月9日発売！クッション・お洋服・ポーチなどが登場",
       "title_ja": "『リラックマ』×アベイル チャイロイコグマの「クマックマデイズ」シリーズが5月9日発売！クッション・お洋服・ポーチなどが登場",
       "dates": {
@@ -227186,7 +230505,8 @@
         "nijimen-kusuguru-co-jp"
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/easy-peasy_e5qfHiDACy-150x150.jpeg",
-      "_source_id": "nijimen-kusuguru-co-jp"
+      "_source_id": "nijimen-kusuguru-co-jp",
+      "updated": "2026-06-19T22:46:37.895283+09:00"
     },
     {
       "id": "otaku-news-202605042057-rss-4584d2",
@@ -227215,7 +230535,7 @@
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「ハイキュー!!×しまむ」コラボグッズが5月6日発売！キャラぬいバッグチャームやカー用品など豊富なラインナップ",
       "title_ja": "「ハイキュー!!×しまむ」コラボグッズが5月6日発売！キャラぬいバッグチャームやカー用品など豊富なラインナップ",
       "dates": {
@@ -227229,14 +230549,15 @@
         "nijimen-kusuguru-co-jp"
       ],
       "thumbnail": "https://nijimen.kusuguru.co.jp/wp-content/uploads/2026/04/easy-peasy_e5qfHiDACy-150x150.jpeg",
-      "_source_id": "nijimen-kusuguru-co-jp"
+      "_source_id": "nijimen-kusuguru-co-jp",
+      "updated": "2026-06-19T22:46:37.895299+09:00"
     },
     {
       "id": "otaku-news-202605042054-rss-c94181",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "Netflixアニメ戦略はどう変わったのか？Netflix映画『超かぐや姫！』異例ヒットの裏側と、権利を独占しない「共創」の行方",
       "title_ja": "Netflixアニメ戦略はどう変わったのか？Netflix映画『超かぐや姫！』異例ヒットの裏側と、権利を独占しない「共創」の行方",
       "dates": {
@@ -227250,14 +230571,15 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/876230.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895307+09:00"
     },
     {
       "id": "otaku-news-202605042054-rss-8e2771",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「とんがり帽子のアトリエ」ココが大きなサイズで立体化！ ローブのしわや髪の広がりなどの造形は必見",
       "title_ja": "「とんがり帽子のアトリエ」ココが大きなサイズで立体化！ ローブのしわや髪の広がりなどの造形は必見",
       "dates": {
@@ -227271,14 +230593,15 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/877085.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895316+09:00"
     },
     {
       "id": "otaku-news-202605042054-rss-763116",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "共感しすぎて泣ける…「氷の城壁」小雪と美姫が抱える“言葉にできない痛み”とは",
       "title_ja": "共感しすぎて泣ける…「氷の城壁」小雪と美姫が抱える“言葉にできない痛み”とは",
       "dates": {
@@ -227292,14 +230615,15 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/876820.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895325+09:00"
     },
     {
       "id": "otaku-news-202605042054-rss-1014cb",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "【GWに見たい鬱アニメ】静かな地獄へようこそ…「死亡遊戯で飯を食う。」が描く“鬱くしき”デスゲーム",
       "title_ja": "【GWに見たい鬱アニメ】静かな地獄へようこそ…「死亡遊戯で飯を食う。」が描く“鬱くしき”デスゲーム",
       "dates": {
@@ -227313,7 +230637,8 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/875173.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895333+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-fccaae",
@@ -227342,7 +230667,7 @@
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「アイカツ！」いちご＆ユリカのプレミアムレアドレスがアクセサリートレイに♪ アイカツ！カード付きバッグチャーム、メモ帳も登場",
       "title_ja": "「アイカツ！」いちご＆ユリカのプレミアムレアドレスがアクセサリートレイに♪ アイカツ！カード付きバッグチャーム、メモ帳も登場",
       "dates": {
@@ -227356,14 +230681,15 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/875877.webp",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895342+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-e685d4",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "ボンボンドロップシール初の公式ファンブック登場！ 「お文具さん」「リラックマ」など最新のシールを含む全ラインナップを掲載",
       "title_ja": "ボンボンドロップシール初の公式ファンブック登場！ 「お文具さん」「リラックマ」など最新のシールを含む全ラインナップを掲載",
       "dates": {
@@ -227377,7 +230703,8 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/876453.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895350+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-e632b8",
@@ -227451,7 +230778,7 @@
         "otaku-news",
         "vtuber"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「ホロライブ」7thフェスの感動が再び！ ステージ衣装を着たメンバーの限定オリジナルグッズが登場♪ POPUP SHOPも開催",
       "title_ja": "「ホロライブ」7thフェスの感動が再び！ ステージ衣装を着たメンバーの限定オリジナルグッズが登場♪ POPUP SHOPも開催",
       "dates": {
@@ -227466,14 +230793,15 @@
         "vtuber"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/876696.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895360+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-b9ba97",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「名探偵コナン」クイズ！アニメの“アバン”、どれだけ覚えてる？＜その3＞【「名探偵コナン ハイウェイの堕天使」公開記念】",
       "title_ja": "「名探偵コナン」クイズ！アニメの“アバン”、どれだけ覚えてる？＜その3＞【「名探偵コナン ハイウェイの堕天使」公開記念】",
       "dates": {
@@ -227487,7 +230815,8 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/877277.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895368+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-b82d43",
@@ -227516,7 +230845,7 @@
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「CCさくら」幻想的なさくらの描き下ろしイラストがフィギュアに！「グッドスマイルフェス 2026」にて初公開",
       "title_ja": "「CCさくら」幻想的なさくらの描き下ろしイラストがフィギュアに！「グッドスマイルフェス 2026」にて初公開",
       "dates": {
@@ -227530,14 +230859,15 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/877239.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895377+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-b6d915",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「死亡遊戯で飯を食う。」幽鬼のお誕生日を記念したオンラインくじが登場！ドレス、ミニスカポリス、水着などキュートな幽鬼のグッズが盛りだくさん",
       "title_ja": "「死亡遊戯で飯を食う。」幽鬼のお誕生日を記念したオンラインくじが登場！ドレス、ミニスカポリス、水着などキュートな幽鬼のグッズが盛りだくさん",
       "dates": {
@@ -227551,7 +230881,8 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/873797.png",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895386+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-ac4628",
@@ -227580,7 +230911,7 @@
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "はなまる可愛い♪ 「たんプリ」キュアアンサー、キュアミスティック、キュアアルカナ・シャドウが登場！ キラキラの髪がボリューミーで可愛い",
       "title_ja": "はなまる可愛い♪ 「たんプリ」キュアアンサー、キュアミスティック、キュアアルカナ・シャドウが登場！ キラキラの髪がボリューミーで可愛い",
       "dates": {
@@ -227594,7 +230925,8 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/877253.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895395+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-616758",
@@ -227645,7 +230977,7 @@
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "カラフルでレトロポップな潔、凪たちが登場！「ブルーロック」GiGOコラボ企画開催！ “デコラ×シティポップ×Y2K”テーマのグッズ、キャラクター型のたい焼き販売",
       "title_ja": "カラフルでレトロポップな潔、凪たちが登場！「ブルーロック」GiGOコラボ企画開催！ “デコラ×シティポップ×Y2K”テーマのグッズ、キャラクター型のたい焼き販売",
       "dates": {
@@ -227659,14 +230991,15 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/875220.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895404+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-3bf609",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "【2026春アニメ：ライターが選ぶこの1か月でときめいた“百合”の3作品】  淡く、酔い、きらめく。“百合の豊作期”を彩る「淡島百景」「上伊那ぼたん」「一畳間まんきつ暮らし！」",
       "title_ja": "【2026春アニメ：ライターが選ぶこの1か月でときめいた“百合”の3作品】  淡く、酔い、きらめく。“百合の豊作期”を彩る「淡島百景」「上伊那ぼたん」「一畳間まんきつ暮らし！」",
       "dates": {
@@ -227680,14 +231013,15 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/877183.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895419+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-2e3420",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「ヒロアカ」特大オールマイト、見えちゃう葉隠透フィギュア!? GiGOグループのお店でコラボ企画開催",
       "title_ja": "「ヒロアカ」特大オールマイト、見えちゃう葉隠透フィギュア!? GiGOグループのお店でコラボ企画開催",
       "dates": {
@@ -227701,14 +231035,15 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/876831.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895428+09:00"
     },
     {
       "id": "otaku-news-202605042053-rss-161e0f",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「魔法の天使クリィミーマミ」「幽☆遊☆白書」「NARUTO-ナルト- 疾風伝」がTシャツに！「スタジオぴえろ」の新ブランドが誕生",
       "title_ja": "「魔法の天使クリィミーマミ」「幽☆遊☆白書」「NARUTO-ナルト- 疾風伝」がTシャツに！「スタジオぴえろ」の新ブランドが誕生",
       "dates": {
@@ -227722,14 +231057,15 @@
         "animeanime-jp"
       ],
       "thumbnail": "https://animeanime.jp/imgs/ogp_f/876865.jpg",
-      "_source_id": "animeanime-jp"
+      "_source_id": "animeanime-jp",
+      "updated": "2026-06-19T22:46:37.895437+09:00"
     },
     {
       "id": "otaku-news-202605042052-rss-ee7e56",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "今年のGWは“ゼロ年代アニメ”が続々無料開放中！サンデー原作『ハヤテのごとく！』も全編無料",
       "title_ja": "今年のGWは“ゼロ年代アニメ”が続々無料開放中！サンデー原作『ハヤテのごとく！』も全編無料",
       "dates": {
@@ -227743,14 +231079,15 @@
         "0115765-com"
       ],
       "thumbnail": "https://0115765.com/wp-content/uploads/2026/05/0503-ungy2wp0-1024x576.jpg",
-      "_source_id": "0115765-com"
+      "_source_id": "0115765-com",
+      "updated": "2026-06-19T22:46:37.895446+09:00"
     },
     {
       "id": "otaku-news-202605042052-rss-b6caff",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "日本の三国時代描く『日本三國』聖夷で起きた大変革、第5話「辺境将軍隊、出陣」【先行カット】",
       "title_ja": "日本の三国時代描く『日本三國』聖夷で起きた大変革、第5話「辺境将軍隊、出陣」【先行カット】",
       "dates": {
@@ -227764,7 +231101,8 @@
         "0115765-com"
       ],
       "thumbnail": "https://0115765.com/wp-content/uploads/2026/05/0503-kb4lxkxa-1024x576.jpg",
-      "_source_id": "0115765-com"
+      "_source_id": "0115765-com",
+      "updated": "2026-06-19T22:46:37.895454+09:00"
     },
     {
       "id": "otaku-news-202605042052-rss-b422e0",
@@ -227817,7 +231155,7 @@
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "単純な「権利者 vs AI」の対立構造に囚われるべきでない――自民党AI小委員会、クリエイターのAI活用保護で4つの提言",
       "title_ja": "単純な「権利者 vs AI」の対立構造に囚われるべきでない――自民党AI小委員会、クリエイターのAI活用保護で4つの提言",
       "dates": {
@@ -227831,14 +231169,15 @@
         "0115765-com"
       ],
       "thumbnail": "https://0115765.com/wp-content/uploads/2026/05/0503-5pyfmpkw-1024x768.jpg",
-      "_source_id": "0115765-com"
+      "_source_id": "0115765-com",
+      "updated": "2026-06-19T22:46:37.895477+09:00"
     },
     {
       "id": "otaku-news-202605042052-rss-410d33",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "「ちいかわ」初の映画、舞台“海”つながりで商船三井さんふらわあとコラボ　夏季クルーズ実施へ",
       "title_ja": "「ちいかわ」初の映画、舞台“海”つながりで商船三井さんふらわあとコラボ　夏季クルーズ実施へ",
       "dates": {
@@ -227851,7 +231190,8 @@
       "tags": [
         "0115765-com"
       ],
-      "_source_id": "0115765-com"
+      "_source_id": "0115765-com",
+      "updated": "2026-06-19T22:46:37.895486+09:00"
     },
     {
       "id": "otaku-news-202605042052-rss-1e6ae8",
@@ -227859,7 +231199,7 @@
         "otaku-news",
         "vtuber"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "長寿番組「笑点」がまさかのVTuberコラボ!?記念展にてにじさんじ「鷹宮リオン」グッズ販売",
       "title_ja": "長寿番組「笑点」がまさかのVTuberコラボ!?記念展にてにじさんじ「鷹宮リオン」グッズ販売",
       "dates": {
@@ -227874,14 +231214,15 @@
         "vtuber"
       ],
       "thumbnail": "https://0115765.com/wp-content/uploads/2026/05/0504-uxohi0hb-1024x1024.jpeg",
-      "_source_id": "0115765-com"
+      "_source_id": "0115765-com",
+      "updated": "2026-06-19T22:46:37.895495+09:00"
     },
     {
       "id": "otaku-news-202605042052-rss-1dd1ed",
       "categories": [
         "otaku-news"
       ],
-      "status": "active",
+      "status": "ended",
       "title": "住信SBIネット銀、優遇制度改定で「改悪」の声多数　ライト層に厳しい反面「改善」される層も",
       "title_ja": "住信SBIネット銀、優遇制度改定で「改悪」の声多数　ライト層に厳しい反面「改善」される層も",
       "dates": {
@@ -227895,7 +231236,8 @@
         "0115765-com"
       ],
       "thumbnail": "https://0115765.com/wp-content/uploads/2025/09/0927-pki3tzqc.jpg",
-      "_source_id": "0115765-com"
+      "_source_id": "0115765-com",
+      "updated": "2026-06-19T22:46:37.895503+09:00"
     },
     {
       "id": "otaku-news-202605032001-rss-ebe033",
