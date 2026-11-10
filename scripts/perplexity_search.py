@@ -97,6 +97,8 @@ _ALLOWED_DOMAINS = (
     "famitsu.com",
     "dengeki.com",
     "natalie.mu",
+    "animatetimes.com",
+    "anime.eiga.com",
     "nijisanji.jp",
     "hololive.tv",
     "bushiroad.com",
