@@ -74,6 +74,24 @@ jobs:
             mv "$log" "data/review_logs/${day}/${catname}.review_log.json" 2>/dev/null || true
           done
 
+      - name: Import Luna inbox (branch A)
+        run: |
+          echo "==> Import Luna inbox (data/inbox -> data/staging)"
+          mkdir -p data/staging
+          count=0
+          for f in data/inbox/*.json; do
+            [ -f "$f" ] || continue
+            echo "Importing $f -> data/staging/"
+            cp "$f" data/staging/
+            # Consumed: remove the inbox file. The deletion is committed by the
+            # "Commit and push" step below; if this run fails before that commit,
+            # the file stays in data/inbox and is retried next run (idempotent:
+            # add_entry dedupes by source.url).
+            rm -f "$f"
+            count=$((count+1))
+          done
+          echo "Imported $count inbox file(s)."
+
       - name: Translate staging
         env:
           DEEPL_AUTH_KEY: ${{ secrets.DEEPL_AUTH_KEY }}
@@ -173,6 +191,7 @@ jobs:
           git add articles 2>/dev/null || true
           git add sitemap.xml 2>/dev/null || true
           git add data/review_logs 2>/dev/null || true
+          git add -A data/inbox 2>/dev/null || true
           git add data/.x_posted_ids 2>/dev/null || true
           git add data/.x_post_run_state.json 2>/dev/null || true
           git add data/.x_api_pause.json 2>/dev/null || true
